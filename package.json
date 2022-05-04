@@ -1,0 +1,25 @@
+{
+  "name": "algorithms-with-predictions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "algorithms-with-predictions",
+  "author": "Alexander Lindermayr",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "gatsby": "^4.13.1",
+    "gatsby-plugin-emotion": "^7.13.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
