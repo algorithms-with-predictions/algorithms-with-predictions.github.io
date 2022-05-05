@@ -3,5 +3,5 @@ module.exports = {
     title: `AlgorithmsWithPredictions`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-emotion", `gatsby-plugin-material-ui`]
+  plugins: ["gatsby-plugin-emotion", `gatsby-plugin-material-ui`],
 };
