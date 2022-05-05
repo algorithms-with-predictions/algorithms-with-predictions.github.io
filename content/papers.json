@@ -1,28 +1,262 @@
 [
   {
     "title": "Permutation Predictions for Non-clairvoyant Scheduling",
-    "authors": ["Alexander Lindermayr", "Nicole Megow"],
+    "authors": [
+      "Alexander Lindermayr",
+      "Nicole Megow"
+    ],
     "publications": {
       "arXiv": {
-        "year": "2022",
+        "year": 2022,
         "url": "https://arxiv.org/pdf/2202.10199.pdf"
       }
     },
-    "labels": ["online scheduling"]
+    "labels": [
+      "online scheduling"
+    ]
   },
   {
     "title": "Double Coverage with Machine-Learned Advice",
-    "authors": ["Alexander Lindermayr", "Nicole Megow", "Bertrand Simon"],
+    "authors": [
+      "Alexander Lindermayr",
+      "Nicole Megow",
+      "Bertrand Simon"
+    ],
     "publications": {
       "arXiv": {
-        "year": "2021",
+        "year": 2021,
         "url": "https://drops.dagstuhl.de/opus/volltexte/2022/15695/pdf/LIPIcs-ITCS-2022-99.pdf"
       },
       "ITCS": {
-        "year": "2021",
+        "year": 2021,
         "url": "https://arxiv.org/pdf/2103.01640.pdf"
       }
     },
-    "labels": ["k-server", "online routing"]
+    "labels": [
+      "k-server",
+      "online routing"
+    ]
+  },
+  {
+    "title": "Online Computation with Untrusted Advice",
+    "authors": [
+      "Angelopoulos, Dürr, Jin, Kamali and Renault"
+    ],
+    "publications": {
+      "ITCS": {
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2020/11737/pdf/LIPIcs-ITCS-2020-52.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/1905.05655.pdf",
+        "year": 2019
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Online metric algorithms with untrusted predictions",
+    "authors": [
+      "Antoniadis, Coester, Elias, Polak and Simon"
+    ],
+    "publications": {
+      "ICML": {
+        "url": "http://proceedings.mlr.press/v119/antoniadis20a/antoniadis20a.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2003.02144.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Near-optimal bounds for online caching with machine learned advice",
+    "authors": [
+      "Dhruv Rohatgi"
+    ],
+    "publications": {
+      "SODA": {
+        "url": "https://epubs.siam.org/doi/pdf/10.1137/1.9781611975994.112)",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/1910.12172.pdf",
+        "year": 2019
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Better and simpler learning-augmented online caching",
+    "authors": [
+      "Alexander Wei"
+    ],
+    "publications": {
+      "APPROX": {
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2020/12663/pdf/LIPIcs-APPROX60.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2005.13716.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Online Algorithms for Weighted Paging with Predictions",
+    "authors": [
+      "Jiang, Panigrahi and Su"
+    ],
+    "publications": {
+      "ICALP": {
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2020/12476/pdf/LIPIcs-ICALP-2020-69.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2006.09509.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Online scheduling via learned weights",
+    "authors": [
+      "Moseley, Vassilvitskii, Lattanzi and Lavastida"
+    ],
+    "publications": {
+      "SODA": {
+        "url": "https://epubs.siam.org/doi/pdf/10.1137/1.9781611975994.114)",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Scheduling with Predictions and the Price of Misprediction",
+    "authors": [
+      "Michael Mitzenmacher"
+    ],
+    "publications": {
+      "ITCS": {
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2020/11699/pdf/LIPIcs-ITCS-2020-14.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/1902.00732.pdf",
+        "year": 2019
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Secretary and Online Matching Problems with Machine Learned Advice",
+    "authors": [
+      "Antoniadis, Gouleakis, Kleer and Kolev"
+    ],
+    "publications": {
+      "NeurIPS": {
+        "url": "https://papers.nips.cc/paper/2020/file/5a378f8490c8d6af8647a753812f6e31-Paper.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2006.01026.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Customizing ML Predictions For Online Algorithms",
+    "authors": [
+      "Anand, Ge and Panigrahi"
+    ],
+    "publications": {
+      "ICML": {
+        "url": "http://proceedings.mlr.press/v119/anand20a/anand20a.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "The Primal-Dual method for Learning Augmented Algorithms",
+    "authors": [
+      "Bamas, Maggiori and Svensson"
+    ],
+    "publications": {
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc//paper/2020/file/e834cb114d33f729dbc9c7fb0c6bb607-Paper.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2010.11632.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Learning Augmented Energy Minimization via Speed Scaling",
+    "authors": [
+      "Bamas, Maggiori, Rohwedder and Svensson"
+    ],
+    "publications": {
+      "NeurIPS": {
+        "url": "https://papers.nips.cc/paper/2020/file/af94ed0d6f5acc95f97170e3685f16c0-Paper.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2010.11629.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Improving Online Rent-or-Buy Algorithms with Sequential Decision Making and ML Predictions",
+    "authors": [
+      "Soumya Banerjee"
+    ],
+    "publications": {
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc/paper/2020/file/f12a6a7477077af66212ef0813bcf332-Paper.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Online Algorithms for Multi-shop Ski Rental with Machine Learned Advice",
+    "authors": [
+      "Wang, Li and Wang"
+    ],
+    "publications": {
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc/paper/2020/file/5cc4bb753030a3d804351b2dfec0d8b5-Paper.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
+  },
+  {
+    "title": "Optimal Robustness-Consistency Trade-offs for Learning-Augmented Online Algorithms",
+    "authors": [
+      "Wei and Zhang"
+    ],
+    "publications": {
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc/paper/2020/file/5bd844f11fa520d54fa5edec06ea2507-Paper.pdf",
+        "year": 2020
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2010.11443.pdf",
+        "year": 2020
+      }
+    },
+    "labels": []
   }
 ]

@@ -9,6 +9,7 @@ import {
   Divider,
   FormControl,
   FormGroup,
+  Grid,
   MenuItem,
   Select,
   Slider,
@@ -19,6 +20,7 @@ import {
 import "@fontsource/roboto/400.css";
 import styled from "@emotion/styled";
 import data from "../../content/papers.json";
+import { Box } from "@mui/system";
 
 const AuthorText = styled("div")`
   color: #878787;
@@ -57,7 +59,8 @@ function chips(paper) {
   return labels;
 }
 
-const items = data.map((paper) => (
+function buildListItems(data) {
+  return data.map((paper) => (
   <ListItem>
     <ListItemText
       primary={
@@ -71,16 +74,49 @@ const items = data.map((paper) => (
       }
     />
   </ListItem>
-));
+  ))
+}
+
+function minYearOfPaper(paper) {
+  const years = Object.values(paper.publications).map((pub) => pub.year)
+  return Math.min(...years)
+}
+
+const years = data.flatMap((paper) => Object.values(paper.publications).map((pub) => pub.year))
+const minYear = Math.min(...years)
+const maxYear = Math.max(...years)
+const marks = Array.from(new Array(maxYear - minYear + 1), (x, i) => i + minYear).map((year) => ({
+  value: year,
+  label: year.toString()
+}));
+
+function valuetext(value) {
+  return value
+}
+
+const SORT_YEAR_TOP_DOWN = "Newest first"
+const SORT_YEAR_BOTTOM_UP = "Oldest first"
+const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN]
 
 // markup
 const IndexPage = () => {
-  const [years, setYears] = React.useState([2018, 2022]);
-  const [sort, setSort] = React.useState("YearTopDown");
+  const [years, setYears] = React.useState([minYear, maxYear]);
+  const [sort, setSort] = React.useState(SORT_YEAR_TOP_DOWN);
 
   const handleSort = (event) => {
     setSort(event.target.value);
   };
+
+  const filteredData = data.filter(p => Object.values(p.publications).some(pub => years[0] <= pub.year && pub.year <= years[1]))
+  const sortedData = filteredData.sort(function(p1, p2) {
+    if(sort == SORT_YEAR_TOP_DOWN) {
+      return minYearOfPaper(p2) - minYearOfPaper(p1)
+    } else {
+      return minYearOfPaper(p1) - minYearOfPaper(p2)
+    }
+  })
+
+  const items = buildListItems(sortedData)
 
   return (
     <div>
@@ -92,28 +128,32 @@ const IndexPage = () => {
             </Typography>
           </Toolbar>
         </AppBar>
-       
-          <Stack direction="row" justifyContent={"space-between"} alignContent={"baseline"}>
-          <Slider
-            getAriaLabel={() => "Minimum distance"}
-            value={years}
-            min={2018}
-            max={2022}
-            onChange={(event, newValue) => setYears(newValue)}
-            valueLabelDisplay="auto"
-            marks={true}
-            disableSwap
-            />
-          <Select
-            value={sort}
-            label=""
-            onChange={handleSort}
-          >
-            <MenuItem value={"YearTopDown"}>Newest First</MenuItem>
-            <MenuItem value={"YearDownTop"}>Oldest First</MenuItem>
-          </Select>
-        </Stack>
-        
+          <Grid container spacing={6}>
+            <Grid item xs={5} />
+            <Grid item xs={5}>
+              <Slider
+              aria-label="Always visible"
+              getAriaLabelText={valuetext}
+              value={years}
+              min={minYear}
+              max={maxYear}
+              onChange={(event, newValue) => setYears(newValue)}
+              valueLabelDisplay="auto"
+              marks={marks}
+              disableSwap
+              />
+            </Grid>
+            <Grid item xs={2} justifyContent="flex-end">
+              <Select
+              value={sort}
+              autoWidth={true}
+              label=""
+              onChange={handleSort}
+              >
+                {sortOptions.map((opt) => <MenuItem value={opt}>{opt}</MenuItem>)}
+            </Select>
+            </Grid>
+          </Grid>
         <Divider></Divider>
         <List dense="true">{items}</List>
       </Container>
