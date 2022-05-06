@@ -5,7 +5,7 @@ import "@fontsource/roboto/400.css";
 
 
 
-const FurtherPage = () => {
+const AboutPage = () => {
 
 
     return (
@@ -19,4 +19,4 @@ const FurtherPage = () => {
 
 }
 
-export default FurtherPage
+export default AboutPage

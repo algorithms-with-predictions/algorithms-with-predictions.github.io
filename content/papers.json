@@ -1,80 +1,82 @@
 [
-{
-  "title": "Revenue optimization with approximate bid predictions",
-  "authors": [
-    "Medina",
-    "Vassilvitskii"
-  ],
-  "publications": {
-    "arXiv": {
-      "year": 2017,
-      "url": "https://arxiv.org/pdf/1706.04732.pdf"
+  {
+    "title": "Revenue optimization with approximate bid predictions",
+    "authors": [
+      "Medina",
+      "Vassilvitskii"
+    ],
+    "publications": {
+      "arXiv": {
+        "year": 2017,
+        "url": "https://arxiv.org/pdf/1706.04732.pdf"
+      },
+      "NeurIPS": {
+        "year": 2017,
+        "url": "https://proceedings.neurips.cc/paper/2017/file/884d79963bd8bc0ae9b13a1aa71add73-Paper.pdf"
+      }
     },
-    "NeurIPS": {
-      "year": 2017,
-      "url": "https://proceedings.neurips.cc/paper/2017/file/884d79963bd8bc0ae9b13a1aa71add73-Paper.pdf"
-    }
+    "labels": [
+      "auctions"
+    ]
   },
-  "labels": ["auctions"]
-},
-{
-  "title": "Competitive Caching with Machine Learned Advice",
-  "authors": [
-    "Lykouris",
-    "Vassilvitskii"
-  ],
-  "publications": {
-    "ICML": {
-      "year": 2018,
-      "url": "http://proceedings.mlr.press/v80/lykouris18a/lykouris18a.pdf"
+  {
+    "title": "Competitive Caching with Machine Learned Advice",
+    "authors": [
+      "Lykouris",
+      "Vassilvitskii"
+    ],
+    "publications": {
+      "ICML": {
+        "year": 2018,
+        "url": "http://proceedings.mlr.press/v80/lykouris18a/lykouris18a.pdf"
+      },
+      "arXiv": {
+        "year": 2018,
+        "url": "https://arxiv.org/pdf/1802.05399.pdf"
+      },
+      "J. ACM": {
+        "year": 2021,
+        "url": "https://dl.acm.org/doi/10.1145/3447579"
+      }
     },
-    "arXiv": {
-      "year": 2018,
-      "url": "https://arxiv.org/pdf/1802.05399.pdf"
+    "labels": [
+      "caching"
+    ]
+  },
+  {
+    "title": "Improving online algorithms via ML predictions",
+    "authors": [
+      "Purohit",
+      "Svitkina",
+      "Kumar"
+    ],
+    "publications": {
+      "NeurIPS": {
+        "year": 2018,
+        "url": "https://dl.acm.org/doi/pdf/10.5555/3327546.3327635"
+      }
     },
-    "J. ACM": {
-      "year": 2021,
-      "url": "https://dl.acm.org/doi/10.1145/3447579"
-    }
+    "labels": [
+      "scheduling",
+      "rent-or-buy"
+    ]
   },
-  "labels": [
-    "caching"
-  ]
-},
-{
-  "title": "Improving online algorithms via ML predictions",
-  "authors": [
-    "Purohit",
-    "Svitkina",
-    "Kumar"
-  ],
-  "publications": {
-    "NeurIPS": {
-      "year": 2018,
-      "url": "https://dl.acm.org/doi/pdf/10.5555/3327546.3327635"
-    }
+  {
+    "title": "Online algorithms for rent-or-buy with expert advice",
+    "authors": [
+      "Gollapudi",
+      "Panigrahi"
+    ],
+    "publications": {
+      "ICML": {
+        "year": 2019,
+        "url": "http://proceedings.mlr.press/v97/gollapudi19a/gollapudi19a.pdf"
+      }
+    },
+    "labels": [
+      "rent-or-buy"
+    ]
   },
-  "labels": [
-    "scheduling",
-    "rent-or-buy"
-  ]
-},
-{
-  "title": "Online algorithms for rent-or-buy with expert advice",
-  "authors": [
-    "Gollapudi",
-    "Panigrahi"
-  ],
-  "publications": {
-    "ICML": {
-      "year": 2019,
-      "url": "http://proceedings.mlr.press/v97/gollapudi19a/gollapudi19a.pdf"
-    }
-  },
-  "labels": [
-    "rent-or-buy"
-  ]
-},
   {
     "title": "Permutation Predictions for Non-clairvoyant Scheduling",
     "authors": [
@@ -115,7 +117,11 @@
   {
     "title": "Online Computation with Untrusted Advice",
     "authors": [
-      "Angelopoulos", "Dürr", "Jin", "Kamali", "Renault"
+      "Angelopoulos",
+      "Dürr",
+      "Jin",
+      "Kamali",
+      "Renault"
     ],
     "publications": {
       "ITCS": {
@@ -132,7 +138,11 @@
   {
     "title": "Online metric algorithms with untrusted predictions",
     "authors": [
-      "Antoniadis", "Coester", "Elias", "Polak", "Simon"
+      "Antoniadis",
+      "Coester",
+      "Elias",
+      "Polak",
+      "Simon"
     ],
     "publications": {
       "ICML": {
@@ -183,7 +193,9 @@
   {
     "title": "Online Algorithms for Weighted Paging with Predictions",
     "authors": [
-      "Jiang", "Panigrahi", "Su"
+      "Jiang",
+      "Panigrahi",
+      "Su"
     ],
     "publications": {
       "ICALP": {
@@ -200,7 +212,10 @@
   {
     "title": "Online scheduling via learned weights",
     "authors": [
-      "Moseley", "Vassilvitskii", "Lattanzi", "Lavastida"
+      "Moseley",
+      "Vassilvitskii",
+      "Lattanzi",
+      "Lavastida"
     ],
     "publications": {
       "SODA": {

@@ -8,7 +8,7 @@ import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 
 const pages = [
-    { "name": 'Paper List', "href": "/" }, { "name": 'Further Material', "href": "/further" }
+    { "name": 'Paper List', "href": "/" }, { "name": 'Further Material', "href": "/further" }, , { "name": 'About', "href": "/about" }
 ];
 
 
