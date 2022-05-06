@@ -4,12 +4,10 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItem from "@mui/material/ListItem";
 import Chip from "@mui/material/Chip";
 import {
-  AppBar,
   Container,
   Divider,
-  FormControl,
-  FormGroup,
   Grid,
+  Link,
   MenuItem,
   Select,
   Slider,
@@ -20,7 +18,7 @@ import {
 import "@fontsource/roboto/400.css";
 import styled from "@emotion/styled";
 import data from "../../content/papers.json";
-import { Box } from "@mui/system";
+import AppBar from "../components/bar";
 
 const AuthorText = styled("div")`
   color: #878787;
@@ -120,17 +118,10 @@ const IndexPage = () => {
 
   return (
     <div>
+      <AppBar />
       <Container maxWidth="None">
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Paper List
-            </Typography>
-          </Toolbar>
-        </AppBar>
-          <Grid container spacing={6}>
-            <Grid item xs={5} />
-            <Grid item xs={5}>
+          <Grid container spacing={6} justifyContent="flex-start" alignItems="center" sx={{ p: 1 }}>
+            <Grid item xs={4}>
               <Slider
               aria-label="Always visible"
               getAriaLabelText={valuetext}
@@ -143,7 +134,7 @@ const IndexPage = () => {
               disableSwap
               />
             </Grid>
-            <Grid item xs={2} justifyContent="flex-end">
+            <Grid item xs={2}>
               <Select
               value={sort}
               autoWidth={true}
@@ -152,6 +143,9 @@ const IndexPage = () => {
               >
                 {sortOptions.map((opt) => <MenuItem value={opt}>{opt}</MenuItem>)}
             </Select>
+            </Grid>
+            <Grid item xs={2}>
+              {items.length} papers found
             </Grid>
           </Grid>
         <Divider></Divider>

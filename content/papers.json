@@ -1,9 +1,85 @@
 [
+{
+  "title": "Revenue optimization with approximate bid predictions",
+  "authors": [
+    "Medina",
+    "Vassilvitskii"
+  ],
+  "publications": {
+    "arXiv": {
+      "year": 2017,
+      "url": "https://arxiv.org/pdf/1706.04732.pdf"
+    },
+    "NeurIPS": {
+      "year": 2017,
+      "url": "https://proceedings.neurips.cc/paper/2017/file/884d79963bd8bc0ae9b13a1aa71add73-Paper.pdf"
+    }
+  },
+  "labels": ["auctions"]
+},
+{
+  "title": "Competitive Caching with Machine Learned Advice",
+  "authors": [
+    "Lykouris",
+    "Vassilvitskii"
+  ],
+  "publications": {
+    "ICML": {
+      "year": 2018,
+      "url": "http://proceedings.mlr.press/v80/lykouris18a/lykouris18a.pdf"
+    },
+    "arXiv": {
+      "year": 2018,
+      "url": "https://arxiv.org/pdf/1802.05399.pdf"
+    },
+    "J. ACM": {
+      "year": 2021,
+      "url": "https://dl.acm.org/doi/10.1145/3447579"
+    }
+  },
+  "labels": [
+    "caching"
+  ]
+},
+{
+  "title": "Improving online algorithms via ML predictions",
+  "authors": [
+    "Purohit",
+    "Svitkina",
+    "Kumar"
+  ],
+  "publications": {
+    "NeurIPS": {
+      "year": 2018,
+      "url": "https://dl.acm.org/doi/pdf/10.5555/3327546.3327635"
+    }
+  },
+  "labels": [
+    "scheduling",
+    "rent-or-buy"
+  ]
+},
+{
+  "title": "Online algorithms for rent-or-buy with expert advice",
+  "authors": [
+    "Gollapudi",
+    "Panigrahi"
+  ],
+  "publications": {
+    "ICML": {
+      "year": 2019,
+      "url": "http://proceedings.mlr.press/v97/gollapudi19a/gollapudi19a.pdf"
+    }
+  },
+  "labels": [
+    "rent-or-buy"
+  ]
+},
   {
     "title": "Permutation Predictions for Non-clairvoyant Scheduling",
     "authors": [
-      "Alexander Lindermayr",
-      "Nicole Megow"
+      "Lindermayr",
+      "Megow"
     ],
     "publications": {
       "arXiv": {
@@ -18,9 +94,9 @@
   {
     "title": "Double Coverage with Machine-Learned Advice",
     "authors": [
-      "Alexander Lindermayr",
-      "Nicole Megow",
-      "Bertrand Simon"
+      "Lindermayr",
+      "Megow",
+      "Simon"
     ],
     "publications": {
       "arXiv": {
@@ -33,14 +109,13 @@
       }
     },
     "labels": [
-      "k-server",
-      "online routing"
+      "k-server"
     ]
   },
   {
     "title": "Online Computation with Untrusted Advice",
     "authors": [
-      "Angelopoulos, Dürr, Jin, Kamali and Renault"
+      "Angelopoulos", "Dürr", "Jin", "Kamali", "Renault"
     ],
     "publications": {
       "ITCS": {
@@ -57,7 +132,7 @@
   {
     "title": "Online metric algorithms with untrusted predictions",
     "authors": [
-      "Antoniadis, Coester, Elias, Polak and Simon"
+      "Antoniadis", "Coester", "Elias", "Polak", "Simon"
     ],
     "publications": {
       "ICML": {
@@ -74,7 +149,7 @@
   {
     "title": "Near-optimal bounds for online caching with machine learned advice",
     "authors": [
-      "Dhruv Rohatgi"
+      "Rohatgi"
     ],
     "publications": {
       "SODA": {
@@ -91,7 +166,7 @@
   {
     "title": "Better and simpler learning-augmented online caching",
     "authors": [
-      "Alexander Wei"
+      "Wei"
     ],
     "publications": {
       "APPROX": {
@@ -108,7 +183,7 @@
   {
     "title": "Online Algorithms for Weighted Paging with Predictions",
     "authors": [
-      "Jiang, Panigrahi and Su"
+      "Jiang", "Panigrahi", "Su"
     ],
     "publications": {
       "ICALP": {
@@ -125,7 +200,7 @@
   {
     "title": "Online scheduling via learned weights",
     "authors": [
-      "Moseley, Vassilvitskii, Lattanzi and Lavastida"
+      "Moseley", "Vassilvitskii", "Lattanzi", "Lavastida"
     ],
     "publications": {
       "SODA": {
@@ -138,7 +213,7 @@
   {
     "title": "Scheduling with Predictions and the Price of Misprediction",
     "authors": [
-      "Michael Mitzenmacher"
+      "Mitzenmacher"
     ],
     "publications": {
       "ITCS": {
@@ -155,7 +230,7 @@
   {
     "title": "Secretary and Online Matching Problems with Machine Learned Advice",
     "authors": [
-      "Antoniadis, Gouleakis, Kleer and Kolev"
+      "Antoniadis, Gouleakis, Kleer, Kolev"
     ],
     "publications": {
       "NeurIPS": {
@@ -172,7 +247,7 @@
   {
     "title": "Customizing ML Predictions For Online Algorithms",
     "authors": [
-      "Anand, Ge and Panigrahi"
+      "Anand, Ge, Panigrahi"
     ],
     "publications": {
       "ICML": {
@@ -185,7 +260,7 @@
   {
     "title": "The Primal-Dual method for Learning Augmented Algorithms",
     "authors": [
-      "Bamas, Maggiori and Svensson"
+      "Bamas, Maggiori, Svensson"
     ],
     "publications": {
       "NeurIPS": {
@@ -202,7 +277,7 @@
   {
     "title": "Learning Augmented Energy Minimization via Speed Scaling",
     "authors": [
-      "Bamas, Maggiori, Rohwedder and Svensson"
+      "Bamas, Maggiori, Rohwedder, Svensson"
     ],
     "publications": {
       "NeurIPS": {
@@ -219,7 +294,7 @@
   {
     "title": "Improving Online Rent-or-Buy Algorithms with Sequential Decision Making and ML Predictions",
     "authors": [
-      "Soumya Banerjee"
+      "Banerjee"
     ],
     "publications": {
       "NeurIPS": {
@@ -232,7 +307,7 @@
   {
     "title": "Online Algorithms for Multi-shop Ski Rental with Machine Learned Advice",
     "authors": [
-      "Wang, Li and Wang"
+      "Wang, Li, Wang"
     ],
     "publications": {
       "NeurIPS": {
@@ -245,7 +320,7 @@
   {
     "title": "Optimal Robustness-Consistency Trade-offs for Learning-Augmented Online Algorithms",
     "authors": [
-      "Wei and Zhang"
+      "Wei, Zhang"
     ],
     "publications": {
       "NeurIPS": {
