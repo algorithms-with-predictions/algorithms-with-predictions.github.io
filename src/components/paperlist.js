@@ -107,9 +107,7 @@ const PaperList = ({ data }) => {
   };
 
   const filteredData = data.filter((p) =>
-    p.publications.some(
-      (pub) => years[0] <= pub.year && pub.year <= years[1]
-    )
+    p.publications.some((pub) => years[0] <= pub.year && pub.year <= years[1])
   );
   const sortedData = filteredData.sort(function (p1, p2) {
     if (sort === SORT_YEAR_TOP_DOWN) {

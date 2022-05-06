@@ -8,6 +8,7 @@ import data from "../../content/papers.json";
 const IndexPage = () => {
   return (
     <div>
+      <title>ALPS</title>
       <Layout>
         <PaperList data={data} />
       </Layout>

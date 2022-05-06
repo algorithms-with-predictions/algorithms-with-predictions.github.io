@@ -8,9 +8,7 @@ export default function Template({ data }) {
   const { html } = markdownRemark;
   return (
     <Layout>
-      <div
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 }
