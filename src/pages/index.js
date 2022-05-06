@@ -32,9 +32,9 @@ const openInNewTab = (url) => {
 };
 
 function chips(paper) {
-  let labels = paper.labels.map((label) => (
+  let labels = "labels" in paper ? paper.labels.map((label) => (
     <Chip size="small" label={label} color="primary" />
-  ));
+  )) : [];
 
   for (const [conf, confObj] of Object.entries(paper.publications)) {
     let text = conf + " " + confObj.year;
@@ -78,9 +78,11 @@ function minYearOfPaper(paper) {
   return Math.min(...years)
 }
 
-const years = data.flatMap((paper) => Object.values(paper.publications).map((pub) => pub.year))
+const years = data.flatMap((paper) => Object.values(paper.publications).flatMap((pub) => pub.year))
 const minYear = Math.min(...years)
 const maxYear = Math.max(...years)
+console.log(minYear)
+console.log(maxYear)
 const marks = Array.from(new Array(maxYear - minYear + 1), (x, i) => i + minYear).map((year) => ({
   value: year,
   label: year.toString()

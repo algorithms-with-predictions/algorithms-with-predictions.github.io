@@ -90,7 +90,7 @@
       }
     },
     "labels": [
-      "online scheduling"
+      "scheduling"
     ]
   },
   {
@@ -363,7 +363,8 @@
         "url": "https://arxiv.org/pdf/2008.13729.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -379,7 +380,8 @@
         "url": "https://arxiv.org/pdf/2011.00172.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -395,7 +397,8 @@
         "url": "https://arxiv.org/pdf/2103.05604.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -411,7 +414,8 @@
         "url": "https://arxiv.org/pdf/2011.11743.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -427,7 +431,8 @@
         "url": "https://arxiv.org/pdf/2106.01079.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -436,9 +441,11 @@
     "title": "Non-Clairvoyant Scheduling with Predictions",
     "publications": {
       "SPAA": {
-        "url": "https://dl.acm.org/doi/10.1145/3409964.3461790"
+        "url": "https://dl.acm.org/doi/10.1145/3409964.3461790",
+        "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -454,7 +461,8 @@
         "url": "https://arxiv.org/pdf/2011.06726.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -470,7 +478,8 @@
         "url": "https://arxiv.org/pdf/2011.09439.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -486,7 +495,8 @@
         "url": "https://proceedings.neurips.cc/paper/2021/file/5616060fb8ae85d93f334e7267307664-Paper.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -498,7 +508,8 @@
         "url": "https://openreview.net/pdf?id=tilovEHA3YS",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -514,7 +525,8 @@
         "url": "https://arxiv.org/abs/2110.13116",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -526,7 +538,8 @@
         "url": "https://proceedings.neurips.cc/paper/2021/file/250473494b245120a7eaf8b2e6b1f17c-Paper.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -542,7 +555,8 @@
         "url": "https://proceedings.neurips.cc/paper/2021/file/55a988dfb00a914717b3000a3374694c-Paper.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -554,7 +568,8 @@
         "url": "https://proceedings.neurips.cc/paper/2021/file/161c5c5ad51fcc884157890511b3c8b0-Paper.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -566,7 +581,8 @@
         "url": "https://epubs.siam.org/doi/pdf/10.1137/1.9781611976830.1",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -578,7 +594,8 @@
         "url": "http://proceedings.mlr.press/v139/li21w/li21w.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -594,7 +611,8 @@
         "url": "https://arxiv.org/pdf/2112.11831.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -606,7 +624,8 @@
         "url": "https://epubs.siam.org/doi/10.1137/1.9781611977073.2",
         "year": 2022
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -618,7 +637,8 @@
         "url": "https://epubs.siam.org/doi/10.1137/1.9781611977073.1",
         "year": 2022
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -634,7 +654,8 @@
         "url": "https://arxiv.org/pdf/2109.08424.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -650,7 +671,8 @@
         "url": "https://arxiv.org/pdf/2011.09076.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -665,7 +687,8 @@
         "url": "https://arxiv.org/pdf/2112.05422.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -680,7 +703,8 @@
         "url": "https://arxiv.org/pdf/2112.05353.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -692,7 +716,8 @@
         "url": "https://drops.dagstuhl.de/opus/volltexte/2022/15710/pdf/LIPIcs-ITCS-2022-114.pdf",
         "year": 2022
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -704,7 +729,8 @@
         "url": "https://arxiv.org/pdf/1905.12155.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -716,7 +742,8 @@
         "url": "https://arxiv.org/pdf/2011.07385.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -728,7 +755,8 @@
         "url": "https://arxiv.org/pdf/2101.12160.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -740,7 +768,8 @@
         "url": "https://arxiv.org/pdf/2102.03311.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -752,7 +781,8 @@
         "url": "https://arxiv.org/pdf/2107.08277.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -764,7 +794,8 @@
         "url": "https://arxiv.org/pdf/2110.00391.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -776,7 +807,8 @@
         "url": "https://arxiv.org/abs/2110.11439",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -788,7 +820,8 @@
         "url": "https://arxiv.org/abs/2110.08840",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -800,7 +833,8 @@
         "url": "https://arxiv.org/pdf/2112.03082.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -812,7 +846,8 @@
         "url": "https://arxiv.org/pdf/2112.11927.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -824,7 +859,8 @@
         "url": "https://arxiv.org/pdf/2202.04262.pdf",
         "year": 2022
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -836,7 +872,8 @@
         "url": "https://arxiv.org/pdf/2202.10939.pdf",
         "year": 2022
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -848,7 +885,8 @@
         "url": "https://arxiv.org/pdf/2203.00285.pdf",
         "year": 2022
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -860,7 +898,8 @@
         "url": "https://arxiv.org/pdf/2204.12055.pdf",
         "year": 2022
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -872,7 +911,8 @@
         "url": "https://arxiv.org/pdf/2111.05281.pdf",
         "year": 2021
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -884,7 +924,8 @@
         "url": "https://arxiv.org/pdf/2006.09123.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -896,7 +937,8 @@
         "url": "https://arxiv.org/pdf/1908.05198.pdf",
         "year": 2020
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -912,7 +954,8 @@
         "url": "https://arxiv.org/pdf/1901.00902.pdf",
         "year": 2019
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
@@ -928,7 +971,8 @@
         "url": "https://arxiv.org/pdf/1910.13984.pdf",
         "year": 2019
       }
-    }
+    },
+    "labels": []
   },
   {
     "authors": [
