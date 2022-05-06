@@ -1,0 +1,9 @@
+authors: Eberle, Lindermayr, Megow, Nölke, Schlöter
+title: Robustification of Online Graph Exploration Methods
+publications:
+  - name: AAAI
+    year: 2022
+  - name: arXiv
+    url: https://arxiv.org/pdf/2112.05422.pdf
+    year: 2021
+labels: []

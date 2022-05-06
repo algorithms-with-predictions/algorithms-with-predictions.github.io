@@ -1,0 +1,10 @@
+authors: Lu, Ren, Sun, Zhang
+title: Generalized Sorting with Predictions
+publications:
+  - name: SOSA
+    url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976496.13
+    year: 2021
+  - name: arxiv
+    url: https://arxiv.org/pdf/2011.00172.pdf
+    year: 2020
+labels: []

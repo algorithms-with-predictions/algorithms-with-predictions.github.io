@@ -1,0 +1,11 @@
+title: Online Computation with Untrusted Advice
+authors: Angelopoulos, Dürr, Jin, Kamali, Renault
+publications:
+  - name: ITCS
+    url: >-
+      https://drops.dagstuhl.de/opus/volltexte/2020/11737/pdf/LIPIcs-ITCS-2020-52.pdf
+    year: 2020
+  - name: arXiv
+    url: https://arxiv.org/pdf/1905.05655.pdf
+    year: 2019
+labels: []

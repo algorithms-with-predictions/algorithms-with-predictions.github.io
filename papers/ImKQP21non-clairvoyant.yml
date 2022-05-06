@@ -1,0 +1,7 @@
+authors: Im, Kumar, Quaem, Purohit
+title: Non-Clairvoyant Scheduling with Predictions
+publications:
+  - name: SPAA
+    url: https://dl.acm.org/doi/10.1145/3409964.3461790
+    year: 2021
+labels: []

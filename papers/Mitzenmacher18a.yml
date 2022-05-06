@@ -1,0 +1,10 @@
+authors: Mitzenmacher
+title: A model for learned bloom filters and optimizing by sandwiching
+publications:
+  - name: NeurIPS
+    url: https://dl.acm.org/doi/pdf/10.5555/3326943.3326986
+    year: 2018
+  - name: arXiv
+    url: https://arxiv.org/pdf/1901.00902.pdf
+    year: 2019
+labels: []

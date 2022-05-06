@@ -1,0 +1,9 @@
+title: Improving online algorithms via ML predictions
+authors: Purohit, Svitkina, Kumar
+publications:
+  - name: NeurIPS
+    year: 2018
+    url: https://dl.acm.org/doi/pdf/10.5555/3327546.3327635
+labels:
+  - scheduling
+  - rent-or-buy

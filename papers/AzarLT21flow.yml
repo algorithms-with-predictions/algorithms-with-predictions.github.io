@@ -1,0 +1,10 @@
+authors: Azar, Leonardi, Touitou
+title: Flow Time Scheduling with Uncertain Processing Time
+publications:
+  - name: STOC
+    url: https://dl.acm.org/doi/10.1145/3406325.3451023
+    year: 2021
+  - name: arxiv
+    url: https://arxiv.org/pdf/2103.05604.pdf
+    year: 2021
+labels: []

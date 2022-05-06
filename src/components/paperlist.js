@@ -27,15 +27,15 @@ function chips(paper) {
         ))
       : [];
 
-  for (const [conf, confObj] of Object.entries(paper.publications)) {
-    let text = conf + " " + confObj.year;
-    if ("url" in confObj) {
+  for (const pub of paper.publications) {
+    let text = pub.name + " " + pub.year;
+    if ("url" in pub) {
       labels.push(
         <Chip
           size="small"
           label={text}
           color="secondary"
-          onClick={() => openInNewTab(confObj.url)}
+          onClick={() => openInNewTab(pub.url)}
         />
       );
     } else {
@@ -61,7 +61,7 @@ const buildListItems = (data) => {
         primary={
           <Stack direction="row" spacing={3}>
             <TitleText>{paper.title}</TitleText>
-            <AuthorText>{paper.authors.join(", ")}</AuthorText>
+            <AuthorText>{paper.authors}</AuthorText>
             <Stack direction="row" spacing={1}>
               {chips(paper)}
             </Stack>
@@ -73,7 +73,7 @@ const buildListItems = (data) => {
 };
 
 function minYearOfPaper(paper) {
-  const years = Object.values(paper.publications).map((pub) => pub.year);
+  const years = paper.publications.map((pub) => pub.year);
   return Math.min(...years);
 }
 
@@ -87,7 +87,7 @@ const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
 const PaperList = ({ data }) => {
   const allYears = data.flatMap((paper) =>
-    Object.values(paper.publications).flatMap((pub) => pub.year)
+    paper.publications.flatMap((pub) => pub.year)
   );
   const minYear = Math.min(...allYears);
   const maxYear = Math.max(...allYears);
@@ -107,7 +107,7 @@ const PaperList = ({ data }) => {
   };
 
   const filteredData = data.filter((p) =>
-    Object.values(p.publications).some(
+    p.publications.some(
       (pub) => years[0] <= pub.year && pub.year <= years[1]
     )
   );

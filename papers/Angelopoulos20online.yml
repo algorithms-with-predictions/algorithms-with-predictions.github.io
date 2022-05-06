@@ -1,0 +1,11 @@
+authors: Angelopoulos
+title: Online Search With a Hint
+publications:
+  - name: ITCS
+    url: >-
+      https://drops.dagstuhl.de/opus/volltexte/2021/13590/pdf/LIPIcs-ITCS-2021-51.pdf
+    year: 2021
+  - name: arxiv
+    url: https://arxiv.org/pdf/2008.13729.pdf
+    year: 2020
+labels: []

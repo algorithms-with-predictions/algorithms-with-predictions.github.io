@@ -1,0 +1,11 @@
+title: Learning Augmented Energy Minimization via Speed Scaling
+authors: Bamas, Maggiori, Rohwedder, Svensson
+publications:
+  - name: NeurIPS
+    url: >-
+      https://papers.nips.cc/paper/2020/file/af94ed0d6f5acc95f97170e3685f16c0-Paper.pdf
+    year: 2020
+  - name: arXiv
+    url: https://arxiv.org/pdf/2010.11629.pdf
+    year: 2020
+labels: []

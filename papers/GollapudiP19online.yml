@@ -1,0 +1,8 @@
+title: Online algorithms for rent-or-buy with expert advice
+authors: Gollapudi, Panigrahi
+publications:
+  - name: ICML
+    year: 2019
+    url: http://proceedings.mlr.press/v97/gollapudi19a/gollapudi19a.pdf
+labels:
+  - rent-or-buy

@@ -1,0 +1,10 @@
+authors: Azar, Panigrahi, Touitou
+title: Online Graph Algorithms with Predictions
+publications:
+  - name: SODA
+    url: https://epubs.siam.org/doi/10.1137/1.9781611977073.13
+    year: 2022
+  - name: arXiv
+    url: https://arxiv.org/pdf/2112.11831.pdf
+    year: 2021
+labels: []

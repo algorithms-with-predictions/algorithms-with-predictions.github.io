@@ -1,0 +1,12 @@
+title: Double Coverage with Machine-Learned Advice
+authors: Lindermayr, Megow, Simon
+publications:
+  - name: arXiv
+    year: 2021
+    url: >-
+      https://drops.dagstuhl.de/opus/volltexte/2022/15695/pdf/LIPIcs-ITCS-2022-99.pdf
+  - name: ITCS
+    year: 2021
+    url: https://arxiv.org/pdf/2103.01640.pdf
+labels:
+  - k-server

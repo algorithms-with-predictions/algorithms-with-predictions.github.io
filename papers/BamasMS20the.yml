@@ -1,0 +1,11 @@
+title: The Primal-Dual method for Learning Augmented Algorithms
+authors: Bamas, Maggiori, Svensson
+publications:
+  - name: NeurIPS
+    url: >-
+      https://proceedings.neurips.cc//paper/2020/file/e834cb114d33f729dbc9c7fb0c6bb607-Paper.pdf
+    year: 2020
+  - name: arXiv
+    url: https://arxiv.org/pdf/2010.11632.pdf
+    year: 2020
+labels: []

@@ -1,0 +1,10 @@
+authors: Lavastida, Moseley, Ravi, Xu
+title: Using Predicted Weights for Ad Delivery
+publications:
+  - name: ACDA
+    url: https://epubs.siam.org/doi/10.1137/1.9781611976830.3
+    year: 2021
+  - name: arxiv
+    url: https://arxiv.org/pdf/2106.01079.pdf
+    year: 2021
+labels: []
