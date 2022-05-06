@@ -579,5 +579,367 @@
         "year": 2021
       }
     }
+  },
+  {
+    "authors": [
+      "Azar, Panigrahi, Touitou"
+    ],
+    "title": "Online Graph Algorithms with Predictions",
+    "publications": {
+      "SODA": {
+        "url": "https://epubs.siam.org/doi/10.1137/1.9781611977073.13",
+        "year": 2022
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2112.11831.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Peng, Ahmadian, Esfandiari, Mirrokni"
+    ],
+    "title": "Robust Load Balancing with Machine Learned Advice",
+    "publications": {
+      "SODA": {
+        "url": "https://epubs.siam.org/doi/10.1137/1.9781611977073.2",
+        "year": 2022
+      }
+    }
+  },
+  {
+    "authors": [
+      "Banerjee, Gkatzelis, Gorokh, Jin"
+    ],
+    "title": "Online Nash Social Welfare Maximization with Predictions",
+    "publications": {
+      "SODA": {
+        "url": "https://epubs.siam.org/doi/10.1137/1.9781611977073.1",
+        "year": 2022
+      }
+    }
+  },
+  {
+    "authors": [
+      "Azar, Leonardi, Touitou"
+    ],
+    "title": "Distortion-Oblivious Algorithms for Minimizing Flow Time",
+    "publications": {
+      "SODA": {
+        "year": 2022,
+        "url": "https://epubs.siam.org/doi/10.1137/1.9781611977073.3"
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2109.08424.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Bansal, Coester, Kumar, Purohit, Vee"
+    ],
+    "title": "Learning-Augmented Weighted Paging",
+    "publications": {
+      "SODA": {
+        "url": "https://epubs.siam.org/doi/10.1137/1.9781611977073.4",
+        "year": 2022
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2011.09076.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Eberle, Lindermayr, Megow, Nölke, Schlöter"
+    ],
+    "title": "Robustification of Online Graph Exploration Methods",
+    "publications": {
+      "AAAI": {
+        "year": 2022
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2112.05422.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Xu, Moseley"
+    ],
+    "title": "Learning-Augmented Algorithms for Online Steiner Tree",
+    "publications": {
+      "AAAI": {
+        "year": 2022
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2112.05353.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Scully, Grosof, Mitzenmacher"
+    ],
+    "title": "Uniform Bounds for Scheduling with Job Size Estimates",
+    "publications": {
+      "ITCS": {
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2022/15710/pdf/LIPIcs-ITCS-2022-114.pdf",
+        "year": 2022
+      }
+    }
+  },
+  {
+    "authors": [
+      "Mitzenmacher, Dell Amico"
+    ],
+    "title": "The Supermarket Model with Known and Predicted Service Times",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/1905.12155.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Erlebach, Hoffmann, de Lima, Megow, Schlöter"
+    ],
+    "title": "Untrusted Predictions Improve Trustable Query Policies",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2011.07385.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Rutten, Mukherjee"
+    ],
+    "title": "A New Approach to Capacity Scaling Augmented With Unreliable Machine Learning Predictions",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2101.12160.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Angelopoulos, Kamali, Shadkami"
+    ],
+    "title": "Online Bin Packing with Predictions",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2102.03311.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Fotakis, Gergatsouli, Gouleakis, Patris"
+    ],
+    "title": "Learning Augmented Online Facility Location",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2107.08277.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Dürr, Thang"
+    ],
+    "title": "Online Primal-Dual Algorithms with Predictions for Packing Problems",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2110.00391.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Chen, Indyk"
+    ],
+    "title": "Online Bipartite Matching with Predicted Degrees",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/abs/2110.11439",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Jiang, Liu, Lyu, Tang, Zhang"
+    ],
+    "title": "Online Facility Location with Predictions",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/abs/2110.08840",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Antoniadis, Ganje, Shahkarami"
+    ],
+    "title": "A Novel Prediction Setup for Online Speed-Scaling",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2112.03082.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Feijen, Schäfer"
+    ],
+    "title": "Using Machine Learning Predictions to Speed-up Dijkstra's Shortest Path Algorithm",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2112.11927.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Im, Kumar, Petety, Purohit"
+    ],
+    "title": "Parsimonious Learning-Augmented Caching",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2202.04262.pdf",
+        "year": 2022
+      }
+    }
+  },
+  {
+    "authors": [
+      "Balseiro, Kroer, Kumar"
+    ],
+    "title": "Single-Leg Revenue Management with Advice",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2202.10939.pdf",
+        "year": 2022
+      }
+    }
+  },
+  {
+    "authors": [
+      "Boyar, Favrholdt, Larsen"
+    ],
+    "title": "Online Unit Profit Knapsack with Untrusted Predictions",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2203.00285.pdf",
+        "year": 2022
+      }
+    }
+  },
+  {
+    "authors": [
+      "Chen, Silwal, Vakilian, Zhang"
+    ],
+    "title": "Faster Fundamental Graph Algorithms via Learned Predictions",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2204.12055.pdf",
+        "year": 2022
+      }
+    }
+  },
+  {
+    "authors": [
+      "Angelopoulos, Kamali, Shadkami"
+    ],
+    "title": "Competitive Sequencing with Noisy Advice",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2111.05281.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Mitzenmacher, Vassilvitskii"
+    ],
+    "title": "Algorithms with Predictions",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2006.09123.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Aamand, Indyk, Vakilian"
+    ],
+    "title": "(Learned) Frequency Estimation Algorithms under Zipfian Distribution",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/1908.05198.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Mitzenmacher"
+    ],
+    "title": "A model for learned bloom filters and optimizing by sandwiching",
+    "publications": {
+      "NeurIPS": {
+        "url": "https://dl.acm.org/doi/pdf/10.5555/3326943.3326986",
+        "year": 2018
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/1901.00902.pdf",
+        "year": 2019
+      }
+    }
+  },
+  {
+    "authors": [
+      "Indyk, Vakilian, Yuan"
+    ],
+    "title": "Learning-Based Low-Rank Approximations",
+    "publications": {
+      "NeurIPS": {
+        "url": "https://par.nsf.gov/servlets/purl/10195163",
+        "year": 2019
+      },
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/1910.13984.pdf",
+        "year": 2019
+      }
+    }
+  },
+  {
+    "authors": [
+      "Hsu, Indyk, Katabi, Vakilian"
+    ],
+    "title": "Learning-Based Frequency Estimation Algorithms",
+    "publications": {
+      "ICLR": {
+        "url": "https://par.nsf.gov/servlets/purl/10112257",
+        "year": 2019
+      }
+    }
   }
 ]
