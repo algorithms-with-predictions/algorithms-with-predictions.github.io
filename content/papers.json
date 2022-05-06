@@ -348,5 +348,236 @@
       }
     },
     "labels": []
+  },
+  {
+    "authors": [
+      "Angelopoulos"
+    ],
+    "title": "Online Search With a Hint",
+    "publications": {
+      "ITCS": {
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2021/13590/pdf/LIPIcs-ITCS-2021-51.pdf",
+        "year": 2021
+      },
+      "arxiv": {
+        "url": "https://arxiv.org/pdf/2008.13729.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Lu, Ren, Sun, Zhang"
+    ],
+    "title": "Generalized Sorting with Predictions",
+    "publications": {
+      "SOSA": {
+        "url": "https://epubs.siam.org/doi/pdf/10.1137/1.9781611976496.13",
+        "year": 2021
+      },
+      "arxiv": {
+        "url": "https://arxiv.org/pdf/2011.00172.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Azar, Leonardi, Touitou"
+    ],
+    "title": "Flow Time Scheduling with Uncertain Processing Time",
+    "publications": {
+      "STOC": {
+        "url": "https://dl.acm.org/doi/10.1145/3406325.3451023",
+        "year": 2021
+      },
+      "arxiv": {
+        "url": "https://arxiv.org/pdf/2103.05604.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Lavastida, Moseley, Ravi, Xu"
+    ],
+    "title": "Learnable and Instance-Robust Predictions for Online Matching,Flows and Load Balancing",
+    "publications": {
+      "ESA": {
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2021/14640/pdf/LIPIcs-ESA-2021-59.pdf",
+        "year": 2021
+      },
+      "arxiv": {
+        "url": "https://arxiv.org/pdf/2011.11743.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Lavastida, Moseley, Ravi, Xu"
+    ],
+    "title": "Using Predicted Weights for Ad Delivery",
+    "publications": {
+      "ACDA": {
+        "url": "https://epubs.siam.org/doi/10.1137/1.9781611976830.3",
+        "year": 2021
+      },
+      "arxiv": {
+        "url": "https://arxiv.org/pdf/2106.01079.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Im, Kumar, Quaem, Purohit"
+    ],
+    "title": "Non-Clairvoyant Scheduling with Predictions",
+    "publications": {
+      "SPAA": {
+        "url": "https://dl.acm.org/doi/10.1145/3409964.3461790"
+      }
+    }
+  },
+  {
+    "authors": [
+      "Düttung, Lattanzi, Leme, Vassilvitskii"
+    ],
+    "title": "Secretaries with Advice",
+    "publications": {
+      "EC": {
+        "url": "https://dl.acm.org/doi/10.1145/3465456.3467623",
+        "year": 2021
+      },
+      "arxiv": {
+        "url": "https://arxiv.org/pdf/2011.06726.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Emek, Kutten, Shi"
+    ],
+    "title": "Online Paging with a Vanishing Regret",
+    "publications": {
+      "ITCS": {
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2021/13606/",
+        "year": 2021
+      },
+      "arxiv": {
+        "url": "https://arxiv.org/pdf/2011.09439.pdf",
+        "year": 2020
+      }
+    }
+  },
+  {
+    "authors": [
+      "Dinitz, Im, Lavastida, Moseley, Vassilvitskii"
+    ],
+    "title": "Faster Matchings via Learned Duals",
+    "publications": {
+      "arXiv": {
+        "url": "https://arxiv.org/pdf/2107.09770.pdf",
+        "year": 2021
+      },
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc/paper/2021/file/5616060fb8ae85d93f334e7267307664-Paper.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Eden, Indyk, Narayanan, Rubinfeld, Silwal, Wagner"
+    ],
+    "title": "Learning-based support estimation in sublinear time",
+    "publications": {
+      "ICLR": {
+        "url": "https://openreview.net/pdf?id=tilovEHA3YS",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Antoniadis, Coester, Elias, Polak, Simon"
+    ],
+    "title": "Learning-Augmented Dynamic Power Management with Multiple States via New Ski-Rental Bounds",
+    "publications": {
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc/paper/2021/file/8b8388180314a337c9aa3c5aa8e2f37a-Paper.pdf",
+        "year": 2021
+      },
+      "arxiv": {
+        "url": "https://arxiv.org/abs/2110.13116",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Almanza, Chierichetti, Lattanzi, Panconesi, Re"
+    ],
+    "title": "Online Facility Location with Multiple Advice",
+    "publications": {
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc/paper/2021/file/250473494b245120a7eaf8b2e6b1f17c-Paper.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Sun, Lee, Hajiesmaili, Wierman, Tsang"
+    ],
+    "title": "Pareto-optimal learning-augmented algorithms for online conversion problems",
+    "publications": {
+      "arxiv": {
+        "url": "https://arxiv.org/pdf/2109.01556.pdf",
+        "year": 2021
+      },
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc/paper/2021/file/55a988dfb00a914717b3000a3374694c-Paper.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Im, Kumar, Quaem, Purohit"
+    ],
+    "title": "Online Knapsack with Frequency Predictions",
+    "publications": {
+      "NeurIPS": {
+        "url": "https://proceedings.neurips.cc/paper/2021/file/161c5c5ad51fcc884157890511b3c8b0-Paper.pdf",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Mitzenmacher"
+    ],
+    "title": "Queues with Small Advice",
+    "publications": {
+      "ACDA": {
+        "url": "https://epubs.siam.org/doi/pdf/10.1137/1.9781611976830.1",
+        "year": 2021
+      }
+    }
+  },
+  {
+    "authors": [
+      "Li, Xian"
+    ],
+    "title": "Online Unrelated Machine Load Balancing with Predictions Revisite",
+    "publications": {
+      "ICML": {
+        "url": "http://proceedings.mlr.press/v139/li21w/li21w.pdf",
+        "year": 2021
+      }
+    }
   }
 ]
