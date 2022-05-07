@@ -19,12 +19,11 @@ const openInNewTab = (url) => {
   if (newWindow) newWindow.opener = null;
 };
 
+
 function chips(paper) {
   let labels =
     "labels" in paper
-      ? paper.labels.map((label) => (
-          <Chip size="small" label={label} color="primary" />
-        ))
+      ? paper.labels.map((label) => <Chip size="small" label={label} color="primary" />)
       : [];
 
   for (const pub of paper.publications) {
@@ -89,6 +88,10 @@ const PaperList = ({ data }) => {
   const allYears = data.flatMap((paper) =>
     paper.publications.flatMap((pub) => pub.year)
   );
+  const allLabels = data.flatMap(paper => paper.labels ? paper.labels : []);
+  let distinctLabels = [...new Set(allLabels)];
+  distinctLabels.sort();
+  console.log(distinctLabels)
   const minYear = Math.min(...allYears);
   const maxYear = Math.max(...allYears);
   const marks = Array.from(
@@ -144,7 +147,18 @@ const PaperList = ({ data }) => {
         <Typography>{items.length} papers</Typography>
       </Stack>
       <Divider />
-      <List dense="true">{items}</List>
+      
+        <Stack 
+          spacing={1} 
+          direction={{ xs: 'column', md: 'row' }} 
+          alignItems='flex-start'
+        >
+        <List dense="true">{items}</List>
+        <Divider orientation={ 'vertical' } flexItem />
+        <Stack pt={1} spacing={1} direction={{ md: 'row', lg: 'column' }}>
+          {distinctLabels.map(l => <Chip size="small" label={l} color="primary" />)}
+        </Stack>
+        </Stack>
     </div>
   );
 };
