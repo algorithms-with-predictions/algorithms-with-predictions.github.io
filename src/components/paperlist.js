@@ -21,25 +21,35 @@ const openInNewTab = (url) => {
 
 function paperChips(paper) {
   const labels = "labels" in paper ? paper.labels : [];
-
+  let pubs = paper.publications;
+  pubs.sort(function (a, b) {
+    var nameA = a.name.toUpperCase();
+    var nameB = b.name.toUpperCase();
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
   let chips = paper.publications.map((pub) => {
     let text = pub.name + " " + pub.year;
-    if ("url" in pub) {     
-        return <Chip
-          size="small"
-          label={text}
-          color="secondary"
-          onClick={() => openInNewTab(pub.url)}
-        />
-      
-    } else {
-      return <Chip size="small" label={text} color="secondary" />;
-    }
-  })
 
-  chips = chips.concat(labels.map((label) => (
-    <Chip size="small" label={label} color="primary" />
-  )))
+    return (
+      <Chip
+        size="small"
+        label={text}
+        variant={"arXiv" === pub.name ? "outlined" : "filled"}
+        color="secondary"
+        onClick={() => ("url" in pub ? openInNewTab(pub.url) : {})}
+      />
+    );
+  });
+
+  chips = chips.concat(
+    labels.map((label) => <Chip size="small" label={label} color="primary" />)
+  );
 
   return chips;
 }

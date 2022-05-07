@@ -7,7 +7,7 @@ publications:
     url: >-
       https://proceedings.neurips.cc/paper/2021/file/8b8388180314a337c9aa3c5aa8e2f37a-Paper.pdf
     year: 2021
-  - name: arxiv
+  - name: arXiv
     url: https://arxiv.org/abs/2110.13116
     year: 2021
 labels: [ rent-or-buy ]
