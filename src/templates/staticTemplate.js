@@ -6,13 +6,16 @@ import { Container } from "@mui/material";
 
 export default function Template({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
-  const { html } = markdownRemark;
+  const { frontmatter, html } = markdownRemark;
   return (
-    <Layout>
-      <Container>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </Container>
-    </Layout>
+    <>
+      <title>ALPS - {frontmatter.title}</title>
+      <Layout>
+        <Container>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </Container>
+      </Layout>
+    </>
   );
 }
 
@@ -22,6 +25,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         slug
+        title
       }
     }
   }

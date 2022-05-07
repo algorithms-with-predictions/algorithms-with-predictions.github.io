@@ -1,4 +1,5 @@
 ---
+title: "Further Material"
 slug: "/material"
 ---
 

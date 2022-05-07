@@ -12,6 +12,7 @@ exports.createPages = ({ actions, graphql }) => {
             node {
               frontmatter {
                 slug
+                title
               }
             }
           }
@@ -24,11 +25,12 @@ exports.createPages = ({ actions, graphql }) => {
   
       return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
-          path: node.frontmatter.slug,
+          path: node.frontmatter.slug,         
           component: blogPostTemplate,
           context: {
             // additional data can be passed via context
             slug: node.frontmatter.slug,
+            title: node.frontmatter.title,
           },
         })
       })

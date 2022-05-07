@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `AlgorithmsWithPredictions`,
+    title: `ALPS`,
     siteUrl: `https://www.algorithms-with-predictions.github.io`
   },
   plugins: [
