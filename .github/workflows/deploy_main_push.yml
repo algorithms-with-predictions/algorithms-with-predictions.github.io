@@ -20,9 +20,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Compose data
-        run: echo Hello, world!
+      - uses: actions/setup-node@v3.1.1
+        with:
+          node-version: 16
+          
+      - name: Compose Data
+        run: npm install && node scripts/composeData.js
 
       - name: Gatsby Publish
         uses: enriikke/gatsby-gh-pages-action@v2.2.0
