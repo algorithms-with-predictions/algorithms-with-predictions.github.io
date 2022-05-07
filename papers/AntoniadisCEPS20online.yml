@@ -7,4 +7,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2003.02144.pdf
     year: 2020
-labels: []
+labels: [ MTS, k-server, matching, caching]

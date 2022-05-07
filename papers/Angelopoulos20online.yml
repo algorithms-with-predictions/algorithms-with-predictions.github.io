@@ -8,4 +8,4 @@ publications:
   - name: arxiv
     url: https://arxiv.org/pdf/2008.13729.pdf
     year: 2020
-labels: []
+labels: [ search ]

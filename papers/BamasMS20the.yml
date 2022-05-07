@@ -8,4 +8,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2010.11632.pdf
     year: 2020
-labels: []
+labels: [ set cover, rent-or-buy ]

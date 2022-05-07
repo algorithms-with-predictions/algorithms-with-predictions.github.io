@@ -19,31 +19,29 @@ const openInNewTab = (url) => {
   if (newWindow) newWindow.opener = null;
 };
 
-function chips(paper) {
-  let labels =
-    "labels" in paper
-      ? paper.labels.map((label) => (
-          <Chip size="small" label={label} color="primary" />
-        ))
-      : [];
+function paperChips(paper) {
+  const labels = "labels" in paper ? paper.labels : [];
 
-  for (const pub of paper.publications) {
+  let chips = paper.publications.map((pub) => {
     let text = pub.name + " " + pub.year;
-    if ("url" in pub) {
-      labels.push(
-        <Chip
+    if ("url" in pub) {     
+        return <Chip
           size="small"
           label={text}
           color="secondary"
           onClick={() => openInNewTab(pub.url)}
         />
-      );
+      
     } else {
-      labels.push(<Chip size="small" label={text} color="secondary" />);
+      return <Chip size="small" label={text} color="secondary" />;
     }
-  }
+  })
 
-  return labels;
+  chips = chips.concat(labels.map((label) => (
+    <Chip size="small" label={label} color="primary" />
+  )))
+
+  return chips;
 }
 
 const AuthorText = styled("div")`
@@ -63,7 +61,7 @@ const buildListItems = (data) => {
             <TitleText>{paper.title}</TitleText>
             <AuthorText>{paper.authors}</AuthorText>
             <Stack direction="row" spacing={1}>
-              {chips(paper)}
+              {paperChips(paper)}
             </Stack>
           </Stack>
         }

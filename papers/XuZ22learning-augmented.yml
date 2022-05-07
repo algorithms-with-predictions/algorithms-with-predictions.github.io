@@ -5,4 +5,4 @@ publications:
   - name: J. Global Optimization
     url: https://link.springer.com/article/10.1007/s10898-022-01156-w
     year: 2022
-labels: [ ]
+labels: [ subset sum ]

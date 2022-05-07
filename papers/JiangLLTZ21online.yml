@@ -4,4 +4,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/abs/2110.08840
     year: 2021
-labels: []
+labels: [ network design ]
