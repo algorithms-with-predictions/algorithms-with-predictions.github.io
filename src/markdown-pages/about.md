@@ -8,7 +8,7 @@ Hi! This page is work in progress.
 
 ## How to Contribute in General
 
-The sources and data for this webpage is available on [GitHub](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io).
+The sources and data for this webpage are available on [GitHub](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io).
 
 We appreciate contributions of any kind:
 
@@ -17,11 +17,14 @@ We appreciate contributions of any kind:
 - adding materials / links
 - improvements to functionality and design
 
-Most contributions can be done via Pull Requests in the repository. For more detailed suggestions or discussions, feel free to contact us ([alps-web@uni-bremen.de](mailto:alps-web@uni-bremen.de)). 
+Most contributions can be done via Pull Requests directly in the repository. 
+For more detailed suggestions or discussions, feel free to contact us ([alps-web@uni-bremen.de](mailto:alps-web@uni-bremen.de)). 
 
 ## Adding and Editing Paper References
 
-The entries are based on a YAML files, which are located in the repository. 
+The entries are based on a YAML files, which are located in the directory `papers/`.
+
+Example (`LykourisV18competitive.yml`):
 
 ```yml
 title: Competitive Caching with Machine Learned Advice
@@ -40,4 +43,5 @@ labels:
   - caching
 ```
 
+If you want to add or change the entry of a paper, you can either add/edit the file via a Pull Request or send us the file via [e-mail](mailto:alps-web@uni-bremen.de). Please use a unique filename (as in the example above; but there are no strict conventions).
 

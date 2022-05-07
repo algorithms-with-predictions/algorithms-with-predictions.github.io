@@ -3,7 +3,7 @@ import PaperList from "../components/paperlist";
 import Layout from "../components/layout";
 import "@fontsource/roboto/400.css";
 
-import data from "../../content/papers.json";
+import data from "../../papers.json";
 
 const IndexPage = () => {
   return (
