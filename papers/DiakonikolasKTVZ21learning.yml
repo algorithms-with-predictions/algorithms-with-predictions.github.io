@@ -1,0 +1,7 @@
+authors: Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Ali Vakilian, Nikos Zarifis
+title: Learning Online Algorithms with Distributional Advice
+publications:
+  - name: ICML
+    url: http://proceedings.mlr.press/v139/diakonikolas21a.html
+    year: 2021
+labels: [ learning, rent-or-buy, prophet ]

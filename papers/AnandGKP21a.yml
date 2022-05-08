@@ -1,0 +1,7 @@
+authors: Anand, Ge, Kumar, Panigrahi
+title: A Regression Approach to Learning-Augmented Online Algorithms
+publications:
+  - name: NeurIPS
+    url: https://proceedings.neurips.cc/paper/2021/file/ffeed84c7cb1ae7bf4ec4bd78275bb98-Paper.pdf
+    year: 2021
+labels: [ learning ]

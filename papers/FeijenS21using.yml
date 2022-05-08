@@ -1,6 +1,5 @@
 authors: Feijen, Schäfer
-title: >-
-  Using Machine Learning Predictions to Speed-up Dijkstra's Shortest Path
+title: Using Machine Learning Predictions to Speed-up Dijkstra's Shortest Path
   Algorithm
 publications:
   - name: arXiv

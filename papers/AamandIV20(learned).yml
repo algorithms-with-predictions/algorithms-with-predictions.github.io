@@ -4,4 +4,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/1908.05198.pdf
     year: 2020
-labels: []
+labels: [ streaming ]

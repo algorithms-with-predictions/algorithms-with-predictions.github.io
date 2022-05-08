@@ -1,0 +1,7 @@
+authors: Golowich, Moitra
+title: Can Q-Learning be Improved with Advice?
+publications:
+  - name: arXiv
+    url: https://arxiv.org/pdf/2110.13052.pdf
+    year: 2021
+labels: [ learning ]

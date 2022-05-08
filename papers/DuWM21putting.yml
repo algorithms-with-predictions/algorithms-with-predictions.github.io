@@ -1,0 +1,7 @@
+authors: Du, Wang, Mitzenmacher
+title: Putting the \"Learning\" into Learning-Augmented Algorithms for Frequency Estimation
+publications:
+  - name: ICML
+    url: http://proceedings.mlr.press/v139/du21d.html
+    year: 2021
+labels: [ learning, streaming ]

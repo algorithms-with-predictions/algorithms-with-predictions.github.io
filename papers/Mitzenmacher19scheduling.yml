@@ -2,8 +2,7 @@ title: Scheduling with Predictions and the Price of Misprediction
 authors: Mitzenmacher
 publications:
   - name: ITCS
-    url: >-
-      https://drops.dagstuhl.de/opus/volltexte/2020/11699/pdf/LIPIcs-ITCS-2020-14.pdf
+    url: https://drops.dagstuhl.de/opus/volltexte/2020/11699/pdf/LIPIcs-ITCS-2020-14.pdf
     year: 2020
   - name: arXiv
     url: https://arxiv.org/pdf/1902.00732.pdf

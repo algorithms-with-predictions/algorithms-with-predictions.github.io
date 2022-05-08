@@ -1,0 +1,7 @@
+authors: Lee, Maghakian, Hajiesmaili, Sitaraman, Liu
+title: Online peak-aware energy scheduling with untrusted advice
+publications:
+  - name: SIGENERGY
+    url: https://dl.acm.org/doi/abs/10.1145/3508467.3508473
+    year: 2022
+labels: [ scheduling ]

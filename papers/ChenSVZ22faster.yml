@@ -4,4 +4,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2204.12055.pdf
     year: 2022
-labels: [ speed-up ]
+labels: [ speed-up, graphs ]

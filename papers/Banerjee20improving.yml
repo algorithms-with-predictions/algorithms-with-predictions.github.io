@@ -1,10 +1,8 @@
-title: >-
-  Improving Online Rent-or-Buy Algorithms with Sequential Decision Making and ML
+title: Improving Online Rent-or-Buy Algorithms with Sequential Decision Making and ML
   Predictions
 authors: Banerjee
 publications:
   - name: NeurIPS
-    url: >-
-      https://proceedings.neurips.cc/paper/2020/file/f12a6a7477077af66212ef0813bcf332-Paper.pdf
+    url: https://proceedings.neurips.cc/paper/2020/file/f12a6a7477077af66212ef0813bcf332-Paper.pdf
     year: 2020
-labels: []
+labels: [ rent-or-buy ]

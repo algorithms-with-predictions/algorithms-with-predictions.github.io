@@ -1,0 +1,7 @@
+authors: Chłędowski, Polak, Szabucki, Żołna
+title: "Robust Learning-Augmented Caching: An Experimental Study"
+publications:
+  - name: ICML
+    url: http://proceedings.mlr.press/v139/chledowski21a.html
+    year: 2021
+labels: [ caching, experiments ]

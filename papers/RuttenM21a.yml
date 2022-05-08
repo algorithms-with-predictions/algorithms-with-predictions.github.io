@@ -1,9 +1,8 @@
 authors: Rutten, Mukherjee
-title: >-
-  A New Approach to Capacity Scaling Augmented With Unreliable Machine Learning
+title: A New Approach to Capacity Scaling Augmented With Unreliable Machine Learning
   Predictions
 publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2101.12160.pdf
     year: 2021
-labels: []
+labels: [ scheduling ]

@@ -71,7 +71,7 @@ const PaperList = ({ data }) => {
       return 0;
     });
     let chips = paper.publications.map((pub) => {
-      let text = pub.name + " " + pub.year;
+      let text = pub.name + " '" + pub.year.toString().slice(-2);
 
       return (
         <Chip
@@ -163,7 +163,6 @@ const PaperList = ({ data }) => {
         >
           <Box sx={{ width: 300, pr: 2 }}>
             <Slider
-              aria-label="Always visible"
               getAriaLabelText={valuetext}
               value={years}
               min={minYear}
@@ -238,7 +237,7 @@ const PaperList = ({ data }) => {
 };
 
 PaperList.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.array
 }
 
 export default PaperList;
