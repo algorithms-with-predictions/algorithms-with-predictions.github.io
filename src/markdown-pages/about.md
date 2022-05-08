@@ -14,6 +14,7 @@ List of contributors:
 - Alexander Lindermayr, University of Bremen
 - Nicole Megow, University of Bremen
 
+
 ## How to Contribute in General
 
 The sources and data for this webpage are available on [GitHub](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io).
