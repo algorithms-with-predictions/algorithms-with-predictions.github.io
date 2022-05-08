@@ -24,6 +24,7 @@
     "gatsby": "^4.13.1",
     "gatsby-plugin-emotion": "^7.13.0",
     "gatsby-plugin-material-ui": "^4.0.2",
+    "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-prismjs": "^6.13.0",
     "gatsby-remark-prismjs-copy-button": "^0.3.1",
     "gatsby-source-filesystem": "next",

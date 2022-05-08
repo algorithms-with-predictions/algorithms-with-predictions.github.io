@@ -7,7 +7,7 @@ publications:
     url: >-
       https://drops.dagstuhl.de/opus/volltexte/2021/14640/pdf/LIPIcs-ESA-2021-59.pdf
     year: 2021
-  - name: arxiv
+  - name: arXiv
     url: https://arxiv.org/pdf/2011.11743.pdf
     year: 2020
-labels: []
+labels: [ matching ]

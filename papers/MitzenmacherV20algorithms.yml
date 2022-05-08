@@ -4,4 +4,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2006.09123.pdf
     year: 2020
-labels: []
+labels: [ survey ]
