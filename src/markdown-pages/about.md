@@ -51,3 +51,4 @@ labels:
 ```
 
 If you want to add or change the entry of a paper, you can either add/edit the file via a Pull Request or send us the file via [e-mail](mailto:alps-web@uni-bremen.de). In case you want to add a paper, please try to find a unique filename (as in the example above; but there are no strict conventions).
+
