@@ -26,6 +26,7 @@ const Header = () => {
           </Typography>
           {pages.map((page) => (
             <Button
+              key={page.name}
               sx={{ mr: 1 }}
               href={page.href}
               color="inherit"

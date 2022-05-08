@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import * as React from "react";
 import styled from "@emotion/styled";
+import PropTypes from 'prop-types';
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -76,6 +77,7 @@ const PaperList = ({ data }) => {
         <Chip
           size="small"
           label={text}
+          key={text}
           variant={"arXiv" === pub.name ? "outlined" : "filled"}
           color="secondary"
           onClick={() => ("url" in pub ? openInNewTab(pub.url) : {})}
@@ -87,6 +89,7 @@ const PaperList = ({ data }) => {
       labels.map((label) => (
         <Chip
           size="small"
+          key={label}
           label={label}
           color="primary"
           onClick={() => setSelLabels([label, ...selLabels])}
@@ -98,8 +101,8 @@ const PaperList = ({ data }) => {
   };
 
   const buildListItems = (data) => {
-    return data.map((paper) => (
-      <ListItem>
+    return data.map((paper, i) => (
+      <ListItem key={i}>
         <ListItemText
           primary={
             <Stack direction="row" spacing={3}>
@@ -171,9 +174,9 @@ const PaperList = ({ data }) => {
               disableSwap
             />
           </Box>
-          <Select value={sort} autoWidth={true} label="" onChange={handleSort}>
+          <Select value={sort} autoWidth={true} onChange={handleSort}>
             {sortOptions.map((opt) => (
-              <MenuItem value={opt}>{opt}</MenuItem>
+              <MenuItem key={opt} value={opt}>{opt}</MenuItem>
             ))}
           </Select>
           <Typography>{items.length} papers</Typography>
@@ -192,12 +195,12 @@ const PaperList = ({ data }) => {
       <Stack
         spacing={1}
         direction={{ xs: "column-reverse", md: "row" }}
-        alignItems="flex-start"
+        alignItems="stretch"
         justifyContent={"space-between"}
       >
         <List dense="true">{items}</List>
         <Box sx={{ display: "flex" }}>
-          <Divider orientation={"vertical"} flexItem sx={{}} />
+          <Divider orientation={"vertical"} flexItem />
           <Stack
             flexWrap={"wrap"}
             pl={1}
@@ -233,5 +236,9 @@ const PaperList = ({ data }) => {
     </div>
   );
 };
+
+PaperList.propTypes = {
+  data: PropTypes.object
+}
 
 export default PaperList;
