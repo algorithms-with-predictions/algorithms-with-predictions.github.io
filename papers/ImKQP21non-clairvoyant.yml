@@ -4,4 +4,4 @@ publications:
   - name: SPAA
     url: https://dl.acm.org/doi/10.1145/3409964.3461790
     year: 2021
-labels: [ scheduling ]
+labels: [ online, scheduling ]

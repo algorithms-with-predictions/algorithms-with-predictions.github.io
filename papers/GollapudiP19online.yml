@@ -4,5 +4,4 @@ publications:
   - name: ICML
     year: 2019
     url: http://proceedings.mlr.press/v97/gollapudi19a/gollapudi19a.pdf
-labels:
-  - rent-or-buy
+labels: [ online, rent-or-buy ]

@@ -5,4 +5,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2201.02890.pdf
     year: 2022
-labels: []
+labels: [ online, learning ]

@@ -10,4 +10,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2011.11743.pdf
     year: 2020
-labels: [ matching ]
+labels: [ online, matching ]

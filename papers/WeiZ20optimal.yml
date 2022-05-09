@@ -8,4 +8,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2010.11443.pdf
     year: 2020
-labels: [ rent-or-buy, scheduling ]
+labels: [ online, rent-or-buy, scheduling ]

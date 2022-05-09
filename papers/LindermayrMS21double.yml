@@ -10,3 +10,4 @@ publications:
     url: https://arxiv.org/pdf/2103.01640.pdf
 labels:
   - k-server
+  - online

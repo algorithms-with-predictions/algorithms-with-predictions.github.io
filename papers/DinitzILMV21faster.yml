@@ -8,4 +8,4 @@ publications:
     url: >-
       https://proceedings.neurips.cc/paper/2021/file/5616060fb8ae85d93f334e7267307664-Paper.pdf
     year: 2021
-labels: [ speed-up, matching ]
+labels: [ running time, matching ]

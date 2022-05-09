@@ -4,4 +4,4 @@ publications:
   - name: SODA
     url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611975994.114)
     year: 2020
-labels: [ scheduling ]
+labels: [ online, scheduling ]

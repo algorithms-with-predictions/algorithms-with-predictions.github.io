@@ -6,4 +6,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2112.05353.pdf
     year: 2021
-labels: [ network design ]
+labels: [ online, network design ]

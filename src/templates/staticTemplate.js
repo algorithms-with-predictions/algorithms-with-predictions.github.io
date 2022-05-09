@@ -6,7 +6,7 @@ import "@fontsource/roboto/400.css";
 import { Container } from "@mui/material";
 
 export default function Template({ data }) {
-  const { markdownRemark } = data; 
+  const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
     <>

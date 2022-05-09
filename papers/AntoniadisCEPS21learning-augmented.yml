@@ -10,4 +10,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/abs/2110.13116
     year: 2021
-labels: [ rent-or-buy ]
+labels: [ online, rent-or-buy ]

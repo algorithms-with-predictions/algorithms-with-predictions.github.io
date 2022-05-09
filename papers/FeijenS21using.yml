@@ -5,4 +5,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2112.11927.pdf
     year: 2021
-labels: [ speed-up ]
+labels: [ running time ]

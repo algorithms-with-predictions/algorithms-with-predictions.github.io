@@ -11,4 +11,4 @@ publications:
     year: 2021
     url: https://dl.acm.org/doi/10.1145/3447579
 labels:
-  - caching
+  - online, caching

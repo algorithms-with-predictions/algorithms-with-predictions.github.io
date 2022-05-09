@@ -4,4 +4,4 @@ publications:
   - name: HPSR
     url: https://ieeexplore.ieee.org/abstract/document/9481858
     year: 2021
-labels: [ routing ]
+labels: [ online, routing ]

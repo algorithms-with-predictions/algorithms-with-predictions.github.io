@@ -5,4 +5,4 @@ publications:
   - name: NeurIPS
     url: https://proceedings.neurips.cc/paper/2020/file/f12a6a7477077af66212ef0813bcf332-Paper.pdf
     year: 2020
-labels: [ rent-or-buy ]
+labels: [ online, rent-or-buy ]

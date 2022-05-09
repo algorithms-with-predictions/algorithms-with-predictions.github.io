@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import * as React from "react";
 import styled from "@emotion/styled";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -38,6 +38,18 @@ function valuetext(value) {
   return value;
 }
 
+function stringCmp(a, b) {
+  var nameA = a.toUpperCase();
+  var nameB = b.toUpperCase();
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+  return 0;
+}
+
 const SORT_YEAR_TOP_DOWN = "Newest first";
 const SORT_YEAR_BOTTOM_UP = "Oldest first";
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
@@ -48,7 +60,7 @@ const PaperList = ({ data }) => {
   );
   const allLabels = data.flatMap((paper) => (paper.labels ? paper.labels : []));
   let distinctLabels = [...new Set(allLabels)];
-  distinctLabels.sort();
+  distinctLabels.sort(stringCmp);
   const minYear = Math.min(...allYears);
   const maxYear = Math.max(...allYears);
 
@@ -56,20 +68,31 @@ const PaperList = ({ data }) => {
   const [sort, setSort] = React.useState(SORT_YEAR_TOP_DOWN);
   const [selLabels, setSelLabels] = React.useState([]);
 
+  const labelChip = (label, deleteable) => (
+    <Chip
+      size="small"
+      key={label}
+      label={label}
+      variant={deleteable && selLabels.includes(label) ? "outlined" : "filled"}
+      color={
+        label === "online" || label === "running time" ? "success" : "primary"
+      }
+      onClick={() => setSelLabels([label, ...selLabels])}
+      onDelete={
+        deleteable && selLabels.includes(label)
+          ? () => {
+              setSelLabels(selLabels.filter((l) => l !== label));
+            }
+          : undefined
+      }
+    />
+  );
+
   const paperChips = (paper) => {
     const labels = "labels" in paper ? paper.labels : [];
+    labels.sort(stringCmp);
     let pubs = paper.publications;
-    pubs.sort(function (a, b) {
-      var nameA = a.name.toUpperCase();
-      var nameB = b.name.toUpperCase();
-      if (nameA < nameB) {
-        return -1;
-      }
-      if (nameA > nameB) {
-        return 1;
-      }
-      return 0;
-    });
+    pubs.sort((a, b) => stringCmp(a.name, b.name));
     let chips = paper.publications.map((pub) => {
       let text = pub.name + " '" + pub.year.toString().slice(-2);
 
@@ -85,17 +108,7 @@ const PaperList = ({ data }) => {
       );
     });
 
-    chips = chips.concat(
-      labels.map((label) => (
-        <Chip
-          size="small"
-          key={label}
-          label={label}
-          color="primary"
-          onClick={() => setSelLabels([label, ...selLabels])}
-        />
-      ))
-    );
+    chips = chips.concat(labels.map((label) => labelChip(label, false)));
 
     return chips;
   };
@@ -175,7 +188,9 @@ const PaperList = ({ data }) => {
           </Box>
           <Select value={sort} autoWidth={true} onChange={handleSort}>
             {sortOptions.map((opt) => (
-              <MenuItem key={opt} value={opt}>{opt}</MenuItem>
+              <MenuItem key={opt} value={opt}>
+                {opt}
+              </MenuItem>
             ))}
           </Select>
           <Typography>{items.length} papers</Typography>
@@ -207,28 +222,7 @@ const PaperList = ({ data }) => {
             spacing={1}
             direction={{ md: "row", lg: "column" }}
           >
-            {distinctLabels.map((l) =>
-              selLabels.includes(l) ? (
-                <Chip
-                  size="small"
-                  label={l}
-                  variant="outlined"
-                  color="primary"
-                  onDelete={() => {
-                    setSelLabels(selLabels.filter((lab) => lab !== l));
-                  }}
-                />
-              ) : (
-                <Chip
-                  size="small"
-                  label={l}
-                  color="primary"
-                  onClick={() => {
-                    setSelLabels([l, ...selLabels]);
-                  }}
-                />
-              )
-            )}
+            {distinctLabels.map((l) => labelChip(l, true))}
           </Stack>
         </Box>
       </Stack>
@@ -237,7 +231,7 @@ const PaperList = ({ data }) => {
 };
 
 PaperList.propTypes = {
-  data: PropTypes.array
-}
+  data: PropTypes.array,
+};
 
 export default PaperList;

@@ -7,4 +7,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2008.13729.pdf
     year: 2020
-labels: [ search ]
+labels: [ online, search ]

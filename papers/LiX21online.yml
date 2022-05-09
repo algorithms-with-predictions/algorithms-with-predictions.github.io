@@ -4,4 +4,4 @@ publications:
   - name: ICML
     url: http://proceedings.mlr.press/v139/li21w/li21w.pdf
     year: 2021
-labels: [ scheduling ]
+labels: [ online, scheduling ]

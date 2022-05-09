@@ -17,10 +17,10 @@ const Header = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters spac>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="div"
-            sx={{ mr: 4, display: { xs: "none", md: "flex" } }}
+            sx={{ mr: 4, fontWeight: "bold" }}
           >
             Algorithms with Predictions
           </Typography>

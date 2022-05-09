@@ -7,4 +7,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/1905.05655.pdf
     year: 2019
-labels: [ rent-or-buy, bidding, packing ]
+labels: [ online, rent-or-buy, bidding, packing ]

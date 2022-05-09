@@ -4,4 +4,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2111.05281.pdf
     year: 2021
-labels: [ scheduling ]
+labels: [ online, scheduling ]

@@ -6,4 +6,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2112.05422.pdf
     year: 2021
-labels: [ exploration ]
+labels: [ online, exploration ]

@@ -5,5 +5,6 @@ publications:
     year: 2018
     url: https://dl.acm.org/doi/pdf/10.5555/3327546.3327635
 labels:
+  - online
   - scheduling
   - rent-or-buy
