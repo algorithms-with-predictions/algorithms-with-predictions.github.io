@@ -1,6 +1,6 @@
 # Website for Algorithms with Predictions (ALPS)
 
-The idea of this project is to create a better overview over the current state of research on Algorithms with Predictions as well as to collect links to further relevant material. This should especially help new researchers in this field to orient faster, but we also try to keep track over and cluster the large amount of results and publications in this field.
+The idea of this project is to maintain an overview over the current state of research on Algorithms with Predictions and collect links to further relevant material. This should especially help new researchers in this field to orient faster, but we also try to keep track over and cluster the large amount of results and publications in this field.
 
 ## How to Contribute in General
 
@@ -9,7 +9,7 @@ The sources and data for this webpage are available on [GitHub](https://github.c
 We appreciate contributions of any kind:
 
 - adding, updating and labeling references (see `papers/`)
-- adding/editing further material (the markdown file is located add `src/markdown-pages/material.md`)
+- adding/editing further material (the markdown file is located at `src/markdown-pages/material.md`)
 - improvements to functionality and design
 
 Most contributions can be done via Pull Requests directly in the repository (e.g. edit/add the data source for a paper entry, see more details in the next section). For more involved suggestions or discussions, feel free to contact us ([alps-web@uni-bremen.de](mailto:alps-web@uni-bremen.de)).
