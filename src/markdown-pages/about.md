@@ -5,15 +5,11 @@ slug: "/about"
 
 # About
 
-The idea of this project is to create a better overview over the current state of research on Algorithms with Predictions as well as to collect links to further relevant material. This should especially help new researchers in this field to orient faster, but we also try to keep track over and cluster the large amount of results and publications in this field.
+The idea of this project is to maintain an overview over the current state of research on Algorithms with Predictions and collect links to further relevant material. This should especially help new researchers in this field to orient faster, but we also try to keep track over and cluster the large amount of results and publications in this field.
 
-This is an [open source project](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io) and everybody is very welcome to contribute. Further details can be found below.
+This project has been set up by [Alexander Lindermayr](https://www.uni-bremen.de/en/cslog/team/alexander-lindermayr) and [Nicole Megow](https://www.uni-bremen.de/en/cslog/nmegow). It is an [open source project](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io) and everybody is very welcome to contribute. Further details can be found below.
 
-List of contributors:
-
-- Alexander Lindermayr, University of Bremen
-- Nicole Megow, University of Bremen
-
+List of further contributors: ...
 
 ## How to Contribute in General
 
