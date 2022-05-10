@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 
 const pages = [
   { name: "Paper List", href: "/" },
@@ -14,13 +13,12 @@ const pages = [
 const Header = () => {
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters spac>
+        <Toolbar disableGutters >
           <Typography
             variant="h5"
             noWrap
             component="div"
-            sx={{ mr: 4, fontWeight: "bold" }}
+            sx={{ ml: 2, mr: 4, fontWeight: "bold" }}
           >
             Algorithms with Predictions
           </Typography>
@@ -36,7 +34,6 @@ const Header = () => {
             </Button>
           ))}
         </Toolbar>
-      </Container>
     </AppBar>
   );
 };

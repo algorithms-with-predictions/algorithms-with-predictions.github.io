@@ -208,7 +208,7 @@ const PaperList = ({ data }) => {
       <Divider />
       <Stack
         spacing={1}
-        direction={{ xs: "column-reverse", md: "row" }}
+        direction="row" //{{ md: "column-reverse", lg: "row" }}
         alignItems="stretch"
         justifyContent={"space-between"}
       >
@@ -220,7 +220,7 @@ const PaperList = ({ data }) => {
             pl={1}
             pt={1}
             spacing={1}
-            direction={{ md: "row", lg: "column" }}
+            direction="column" //"row", lg: "column" }}
           >
             {distinctLabels.map((l) => labelChip(l, true))}
           </Stack>
