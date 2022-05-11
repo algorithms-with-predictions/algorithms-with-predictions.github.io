@@ -34,10 +34,6 @@ function minYearOfPaper(paper) {
   return Math.min(...years);
 }
 
-function valuetext(value) {
-  return value;
-}
-
 function stringCmp(a, b) {
   var nameA = a.toUpperCase();
   var nameB = b.toUpperCase();
@@ -58,13 +54,13 @@ const PaperList = ({ data }) => {
   const allYears = data.flatMap((paper) =>
     paper.publications.flatMap((pub) => pub.year)
   );
+  let distinctYears = [...new Set(allYears)];
+  distinctYears.sort();
   const allLabels = data.flatMap((paper) => (paper.labels ? paper.labels : []));
   let distinctLabels = [...new Set(allLabels)];
   distinctLabels.sort(stringCmp);
-  const minYear = Math.min(...allYears);
-  const maxYear = Math.max(...allYears);
 
-  const [years, setYears] = React.useState([minYear, maxYear]);
+  const [yearsIdx, setYearsIdx] = React.useState([0, distinctYears.length - 1]);
   const [sort, setSort] = React.useState(SORT_YEAR_TOP_DOWN);
   const [selLabels, setSelLabels] = React.useState([]);
 
@@ -137,7 +133,11 @@ const PaperList = ({ data }) => {
 
   const filteredData = data
     .filter((p) =>
-      p.publications.some((pub) => years[0] <= pub.year && pub.year <= years[1])
+      p.publications.some(
+        (pub) =>
+          distinctYears[yearsIdx[0]] <= pub.year &&
+          pub.year <= distinctYears[yearsIdx[1]]
+      )
     )
     .filter(
       (p) =>
@@ -152,13 +152,12 @@ const PaperList = ({ data }) => {
   });
 
   const items = buildListItems(sortedData);
-  const marks = Array.from(
-    new Array(maxYear - minYear + 1),
-    (x, i) => i + minYear
-  ).map((year) => ({
-    value: year,
-    label: year.toString(),
-  }));
+  const marks = Array.from(new Array(distinctYears.length), (x, i) => i).map(
+    (yearIdx) => ({
+      value: yearIdx,
+      label: distinctYears[yearIdx],
+    })
+  );
 
   return (
     <div>
@@ -174,13 +173,14 @@ const PaperList = ({ data }) => {
           alignItems="center"
           justifyContent={"flex-start"}
         >
-          <Box sx={{ width: 300, pr: 2 }}>
+          <Box sx={{ width: 350, pr: 2 }}>
             <Slider
-              getAriaLabelText={valuetext}
-              value={years}
-              min={minYear}
-              max={maxYear}
-              onChange={(_, newValue) => setYears(newValue)}
+              getAriaLabelText={(value) => distinctYears[value]}
+              value={yearsIdx}
+              step={null}
+              max={distinctYears.length - 1}
+              onChange={(_, newValue) => setYearsIdx(newValue)}
+              valueLabelFormat={(value) => distinctYears[value]}
               valueLabelDisplay="auto"
               marks={marks}
               disableSwap
