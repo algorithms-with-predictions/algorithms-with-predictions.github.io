@@ -13,27 +13,27 @@ const pages = [
 const Header = () => {
   return (
     <AppBar position="static">
-        <Toolbar disableGutters >
-          <Typography
-            variant="h5"
-            noWrap
-            component="div"
-            sx={{ ml: 2, mr: 4, fontWeight: "bold" }}
+      <Toolbar disableGutters>
+        <Typography
+          variant="h5"
+          noWrap
+          component="div"
+          sx={{ ml: 2, mr: 4, fontWeight: "bold" }}
+        >
+          Algorithms with Predictions
+        </Typography>
+        {pages.map((page) => (
+          <Button
+            key={page.name}
+            sx={{ mr: 1 }}
+            href={page.href}
+            color="inherit"
+            textAlign="center"
           >
-            Algorithms with Predictions
-          </Typography>
-          {pages.map((page) => (
-            <Button
-              key={page.name}
-              sx={{ mr: 1 }}
-              href={page.href}
-              color="inherit"
-              textAlign="center"
-            >
-              {page.name}
-            </Button>
-          ))}
-        </Toolbar>
+            {page.name}
+          </Button>
+        ))}
+      </Toolbar>
     </AppBar>
   );
 };
