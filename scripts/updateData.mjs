@@ -33,8 +33,7 @@ let updated = await Promise.all(
           return;
         }
 
-        if(paper.authors === undefined) {
-          console.log(hit.info.authors.author.map(a => a.split(' ')[-1]))
+        if (!('authors' in paper)) {
           paper.authors = hit.info.authors.author.map(a => a.split(' ').at(-1)).join(', ')
           console.log('Setting authors of ' + paper.title + ' to ' + paper.authors)
         }
@@ -42,7 +41,7 @@ let updated = await Promise.all(
         let title = hit.info.title;
         if (fastls.get(title, paper.title) < 10) {
           const venue = hit.info.venue === "CoRR" ? "arXiv" : hit.info.venue;
-          if (paper.publications === undefined) {
+          if (!('publications'  in paper)) {
             paper.publications = []
           }
           if (!paper.publications.some((pub) => pub.name === venue)) {
