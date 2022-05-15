@@ -33,10 +33,20 @@ let updated = await Promise.all(
           return;
         }
 
+        if(paper.authors === undefined) {
+          console.log(hit.info.authors.author.map(a => a.split(' ')[-1]))
+          paper.authors = hit.info.authors.author.map(a => a.split(' ').at(-1)).join(', ')
+          console.log('Setting authors of ' + paper.title + ' to ' + paper.authors)
+        }
+
         let title = hit.info.title;
         if (fastls.get(title, paper.title) < 10) {
           const venue = hit.info.venue === "CoRR" ? "arXiv" : hit.info.venue;
+          if (paper.publications === undefined) {
+            paper.publications = []
+          }
           if (!paper.publications.some((pub) => pub.name === venue)) {
+            console.log("Added publication at " + venue + " to " + paper.title);
             paper.publications.push({
               name: venue,
               year: hit.info.year,
@@ -53,8 +63,8 @@ let updated = await Promise.all(
   })
 );
 
-console.log(updated)
+//console.log(updated)
 
 updated.forEach(([file, paper]) =>
-  fs.writeFileSync("papers/" + file, yaml.dump(paper))
+  fs.writeFileSync("papers/" + file, yaml.dump(paper, { lineWidth: -1 }))
 );
