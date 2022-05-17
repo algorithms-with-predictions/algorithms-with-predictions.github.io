@@ -1,0 +1,10 @@
+authors: Zeynali, Sun, Hajiesmaili, Wierman
+title: Data-driven Competitive Algorithms for Online Knapsack and Set Cover
+publications:
+  - name: AAAI
+    year: 2021
+    url: https://ojs.aaai.org/index.php/AAAI/article/view/17294
+  - name: arXiv
+    url: https://arxiv.org/abs/2012.05361
+    year: 2021
+labels: [online, learning, knapsack, setcover]
