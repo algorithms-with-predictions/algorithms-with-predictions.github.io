@@ -7,4 +7,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/abs/2012.05361
     year: 2021
-labels: [online, learning, knapsack, setcover]
+labels: [online, learning, data-driven, knapsack, setcover]
