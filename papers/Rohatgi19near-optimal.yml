@@ -7,4 +7,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/1910.12172.pdf
     year: 2019
-labels: [ online, caching ]
+labels: [ online, caching/paging ]

@@ -8,4 +8,4 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2005.13716.pdf
     year: 2020
-labels: [ online, caching ]
+labels: [ online, caching/paging ]
