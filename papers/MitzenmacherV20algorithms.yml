@@ -4,4 +4,9 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2006.09123.pdf
     year: 2020
-labels: [ survey ]
+  - name: Beyond the Worst-Case Analysis of Algorithms
+    displayName: BWCA
+    year: 2020
+    url: https://doi.org/10.1017/9781108637435.037
+labels:
+  - survey

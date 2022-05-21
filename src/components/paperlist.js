@@ -90,14 +90,14 @@ const PaperList = ({ data }) => {
     let pubs = paper.publications;
     pubs.sort((a, b) => stringCmp(a.name, b.name));
     let chips = paper.publications.map((pub) => {
-      let text = pub.name + " '" + pub.year.toString().slice(-2);
-
+      let name = 'displayName' in pub ? pub.displayName : pub.name
+      let text = name + " '" + pub.year.toString().slice(-2);
       return (
         <Chip
           size="small"
           label={text}
           key={text}
-          variant={"arXiv" === pub.name ? "outlined" : "filled"}
+          variant={"arXiv" === name ? "outlined" : "filled"}
           color="secondary"
           onClick={() => ("url" in pub ? openInNewTab(pub.url) : {})}
         />

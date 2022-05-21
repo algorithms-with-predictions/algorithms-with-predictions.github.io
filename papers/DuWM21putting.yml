@@ -4,4 +4,6 @@ publications:
   - name: ICML
     url: http://proceedings.mlr.press/v139/du21d.html
     year: 2021
-labels: [ learning, streaming ]
+labels:
+  - learning
+  - streaming

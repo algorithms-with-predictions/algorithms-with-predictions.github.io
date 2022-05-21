@@ -4,4 +4,6 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2202.04262.pdf
     year: 2022
-labels: [ online, caching/paging ]
+labels:
+  - online
+  - caching/paging

@@ -4,4 +4,6 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2203.00285.pdf
     year: 2022
-labels: [ online, packing ]
+labels:
+  - online
+  - packing

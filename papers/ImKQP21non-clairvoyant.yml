@@ -4,4 +4,9 @@ publications:
   - name: SPAA
     url: https://dl.acm.org/doi/10.1145/3409964.3461790
     year: 2021
-labels: [ online, scheduling ]
+  - name: ISAIM
+    year: 2022
+    url: https://isaim2022.cs.ou.edu/papers/ISAIM2022_Sequencing_Im.pdf
+labels:
+  - online
+  - scheduling

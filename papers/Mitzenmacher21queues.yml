@@ -4,4 +4,9 @@ publications:
   - name: ACDA
     url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976830.1
     year: 2021
-labels: [ online, queueing ]
+  - name: arXiv
+    year: 2020
+    url: http://arxiv.org/pdf/2006.15463v1.pdf
+labels:
+  - online
+  - queueing

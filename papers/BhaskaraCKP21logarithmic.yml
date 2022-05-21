@@ -4,4 +4,9 @@ publications:
   - name: NeurIPS
     url: https://proceedings.neurips.cc/paper/2021/file/edb947f2bbceb132245fdde9c59d3f59-Paper.pdf
     year: 2021
-labels: [ online, learning ]
+  - name: arXiv
+    year: 2021
+    url: http://arxiv.org/pdf/2111.05257v1.pdf
+labels:
+  - online
+  - learning

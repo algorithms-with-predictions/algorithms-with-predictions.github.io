@@ -9,7 +9,7 @@ The idea of this project is to maintain an overview over the current state of re
 
 This project has been set up by [Alexander Lindermayr](https://www.uni-bremen.de/en/cslog/team/alexander-lindermayr) and [Nicole Megow](https://www.uni-bremen.de/en/cslog/nmegow). It is an [open source project](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io) and everybody is very welcome to contribute. Further details can be found below.
 
-List of further contributors: [Bertrand Simon](https://cclab.pages.in2p3.fr/bertrand.simon/)
+List of further contributors: [Bertrand Simon](https://cclab.pages.in2p3.fr/bertrand.simon/), [Adam Polak](https://adampolak.github.io/)
 
 ## How to Contribute in General
 
@@ -25,7 +25,7 @@ Most contributions can be done via Pull Requests directly in the repository (e.g
 
 ## Adding and Editing Paper References
 
-Paper entries are based on a YAML files, which are located in the directory `papers/`.
+Paper entries are based on YAML files, which are located in the directory `papers/`.
 
 As an example, this is the data file for the caching paper by Lykouris and Vassilvitskii (`LykourisV18competitive.yml`):
 
@@ -42,7 +42,24 @@ publications:
   - name: J. ACM
     year: 2021
     url: https://dl.acm.org/doi/10.1145/3447579
-labels: [ online, caching/paging ]
+labels: 
+  - online
+  - caching/paging 
 ```
 
 If you want to add or change the entry of a paper, you can either add/edit the file via a Pull Request or send us the file via [e-mail](mailto:alps-web@uni-bremen.de). In case you want to add a paper, please try to find a unique filename (as in the example above; but there are no strict conventions).
+
+## Automated Publication Fetching
+
+It is also possible to only add the title and labels of a paper:
+
+```yml
+title: Competitive Caching with Machine Learned Advice
+labels: 
+  - online
+  - caching/paging 
+```
+
+We use an automated procedure to fetch the authors last names and all publications which have an (almost) matching title from [DBLP](dblp.org) and [arXiv](arxiv.org). In this example, all three publications of this paper can be added automatically.
+
+TODO: explain more.

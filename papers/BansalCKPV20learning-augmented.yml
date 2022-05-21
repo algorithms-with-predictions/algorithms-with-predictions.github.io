@@ -7,4 +7,6 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2011.09076.pdf
     year: 2020
-labels: [ online, caching/paging ]
+labels:
+  - online
+  - caching/paging

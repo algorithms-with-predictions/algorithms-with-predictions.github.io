@@ -7,4 +7,6 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/1902.00732.pdf
     year: 2019
-labels: [ online, queueing ]
+labels:
+  - online
+  - queueing

@@ -4,4 +4,7 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2205.03921.pdf
     year: 2022
-labels: [ online, multiple predictions, cover problems ]
+labels:
+  - online
+  - multiple predictions
+  - cover problems
