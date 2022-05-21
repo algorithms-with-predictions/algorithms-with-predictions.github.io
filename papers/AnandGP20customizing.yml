@@ -4,6 +4,9 @@ publications:
   - name: ICML
     url: http://proceedings.mlr.press/v119/anand20a/anand20a.pdf
     year: 2020
+  - name: arXiv
+    year: 2022
+    url: http://arxiv.org/pdf/2205.08715v1.pdf
 labels:
   - online
   - learning

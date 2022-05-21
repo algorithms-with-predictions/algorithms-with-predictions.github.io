@@ -4,6 +4,9 @@ publications:
   - name: SIGENERGY
     url: https://dl.acm.org/doi/abs/10.1145/3508467.3508473
     year: 2022
+  - name: e-Energy
+    year: 2021
+    url: https://doi.org/10.1145/3447555.3464860
 labels:
   - online
   - scheduling
