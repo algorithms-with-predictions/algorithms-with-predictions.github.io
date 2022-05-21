@@ -5,12 +5,12 @@ import { XMLParser } from "fast-xml-parser";
 import fastls from "fast-levenshtein";
 
 const paper_dir = "papers";
-const papers = fs.readdirSync(paper_dir);//.slice(0, 10);
-
+const papers = fs.readdirSync(paper_dir); //.slice(0, 10);
 
 async function updateFromArxiv(paper) {
   let info = await axios.get(
-    "http://export.arxiv.org/api/query?search_query=" + paper.title.split(" ").join("+"),
+    "http://export.arxiv.org/api/query?search_query=" +
+      paper.title.split(" ").join("+"),
     { timeout: 20000 }
   );
   let data = info.data;
@@ -23,33 +23,33 @@ async function updateFromArxiv(paper) {
       return;
     }
 
-    if (!('authors' in paper)) {
-      paper.authors = hit.author.map(a => a.name.split(' ').at(-1)).join(', ')
-      console.log('Setting authors of ' + paper.title + ' to ' + paper.authors)
-    }
-
     let title = hit.title;
     if (fastls.get(title, paper.title) < 10) {
+      if (!("authors" in paper)) {
+        paper.authors = hit.author
+          .map((a) => a.name.split(" ").at(-1))
+          .join(", ");
+        console.log("Setting authors of " + paper.title + " to " + paper.authors);
+      }
+
       if (!paper.publications.some((pub) => pub.name === "arXiv")) {
         let date = new Date(hit.published);
         let year = date.getFullYear();
-        let pdfurl = hit.id.replace("abs", "pdf") + ".pdf" 
+        let pdfurl = hit.id.replace("abs", "pdf") + ".pdf";
         console.log("Added arXiv preprint to " + paper.title);
         paper.publications.push({
           name: "arXiv",
-          year: year.toString(),
+          year,
           url: pdfurl,
         });
       }
     }
   });
-
 }
 
 async function updateFromDBLP(paper) {
   let info = await axios.get(
-    "https://dblp.org/search/publ/api?q=" +
-      paper.title.split(" ").join("+"),
+    "https://dblp.org/search/publ/api?q=" + paper.title.split(" ").join("+"),
     { timeout: 20000 }
   );
 
@@ -63,13 +63,17 @@ async function updateFromDBLP(paper) {
       return;
     }
 
-    if (!('authors' in paper)) {
-      paper.authors = hit.info.authors.author.map(a => a.split(' ').at(-1)).join(', ')
-      console.log('Setting authors of ' + paper.title + ' to ' + paper.authors)
-    }
+   
 
     let title = hit.info.title;
     if (fastls.get(title, paper.title) < 10) {
+      if (!("authors" in paper)) {
+        paper.authors = hit.info.authors.author
+          .map((a) => a.split(" ").at(-1))
+          .join(", ");
+        console.log("Setting authors of " + paper.title + " to " + paper.authors);
+      }
+
       const venue = hit.info.venue;
       if (!paper.publications.some((pub) => pub.name === venue)) {
         console.log("Added publication at " + venue + " to " + paper.title);
@@ -83,16 +87,14 @@ async function updateFromDBLP(paper) {
   });
 }
 
-
-
 let updated = await Promise.all(
   papers.map(async (file) => {
     let paper = yaml.load(
       fs.readFileSync(paper_dir + "/" + file, { encoding: "utf-8" })
     );
 
-    if (!('publications'  in paper)) {
-      paper.publications = []
+    if (!("publications" in paper)) {
+      paper.publications = [];
     }
 
     try {
@@ -106,7 +108,6 @@ let updated = await Promise.all(
     }
   })
 );
-
 
 updated.forEach(([file, paper]) =>
   fs.writeFileSync("papers/" + file, yaml.dump(paper, { lineWidth: -1 }))
