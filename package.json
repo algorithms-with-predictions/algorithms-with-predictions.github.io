@@ -42,8 +42,6 @@
     "gatsby-remark-code-headers": "^1.1.0",
     "gh-pages": "^3.2.3",
     "js-yaml": "^4.1.0",
-    "node-fetch": "^3.2.4",
-    "prettier": "2.1.1",
-    "xml-js": "^1.6.11"
+    "prettier": "2.1.1"
   }
 }

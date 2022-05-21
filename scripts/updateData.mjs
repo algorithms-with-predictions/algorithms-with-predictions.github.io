@@ -5,7 +5,7 @@ import { XMLParser } from "fast-xml-parser";
 import fastls from "fast-levenshtein";
 
 const paper_dir = "papers";
-const papers = fs.readdirSync(paper_dir); //.slice(0, 10);
+const papers = fs.readdirSync(paper_dir);
 
 async function updateFromArxiv(paper) {
   let info = await axios.get(
