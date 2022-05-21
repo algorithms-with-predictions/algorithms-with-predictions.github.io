@@ -1,13 +1,12 @@
 authors: Lavastida, Moseley, Ravi, Xu
-title: >-
-  Learnable and Instance-Robust Predictions for Online Matching,Flows and Load
-  Balancing
+title: Learnable and Instance-Robust Predictions for Online Matching,Flows and Load Balancing
 publications:
   - name: ESA
-    url: >-
-      https://drops.dagstuhl.de/opus/volltexte/2021/14640/pdf/LIPIcs-ESA-2021-59.pdf
+    url: https://drops.dagstuhl.de/opus/volltexte/2021/14640/pdf/LIPIcs-ESA-2021-59.pdf
     year: 2021
   - name: arXiv
     url: https://arxiv.org/pdf/2011.11743.pdf
     year: 2020
-labels: [ online, matching ]
+labels:
+  - online
+  - matching

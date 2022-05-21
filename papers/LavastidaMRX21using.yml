@@ -7,4 +7,6 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2106.01079.pdf
     year: 2021
-labels: [ online, matching ]
+labels:
+  - online
+  - matching

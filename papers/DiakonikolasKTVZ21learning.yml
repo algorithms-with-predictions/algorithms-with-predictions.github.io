@@ -4,4 +4,8 @@ publications:
   - name: ICML
     url: http://proceedings.mlr.press/v139/diakonikolas21a.html
     year: 2021
-labels: [ online, learning, rent-or-buy, prophet ]
+labels:
+  - online
+  - learning
+  - rent-or-buy
+  - prophet

@@ -4,4 +4,6 @@ publications:
   - name: NeurIPS
     url: https://proceedings.neurips.cc/paper/2021/file/250473494b245120a7eaf8b2e6b1f17c-Paper.pdf
     year: 2021
-labels: [ online, network design ]
+labels:
+  - online
+  - network design

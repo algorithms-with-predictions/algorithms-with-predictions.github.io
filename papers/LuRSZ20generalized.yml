@@ -7,4 +7,6 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2011.00172.pdf
     year: 2020
-labels: [ running time, sorting ]
+labels:
+  - running time
+  - sorting

@@ -5,7 +5,8 @@ publications:
     url: https://arxiv.org/pdf/2107.09770.pdf
     year: 2021
   - name: NeurIPS
-    url: >-
-      https://proceedings.neurips.cc/paper/2021/file/5616060fb8ae85d93f334e7267307664-Paper.pdf
+    url: https://proceedings.neurips.cc/paper/2021/file/5616060fb8ae85d93f334e7267307664-Paper.pdf
     year: 2021
-labels: [ running time, matching ]
+labels:
+  - running time
+  - matching

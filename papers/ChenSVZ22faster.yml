@@ -4,4 +4,6 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2204.12055.pdf
     year: 2022
-labels: [ running time, graphs ]
+labels:
+  - running time
+  - graphs

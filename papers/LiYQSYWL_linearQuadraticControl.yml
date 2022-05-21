@@ -7,4 +7,6 @@ publications:
   - name: arXiv
     year: 2021
     url: https://arxiv.org/abs/2106.09659
-labels: [ online, linear quadratic control ]
+labels:
+  - online
+  - linear quadratic control

@@ -4,4 +4,6 @@ publications:
   - name: arXiv
     year: 2022
     url: https://arxiv.org/pdf/2202.10199.pdf
-labels: [ online, scheduling ]
+labels:
+  - online
+  - scheduling

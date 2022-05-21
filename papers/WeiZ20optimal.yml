@@ -1,5 +1,4 @@
-title: Optimal Robustness-Consistency Trade-offs for Learning-Augmented Online
-  Algorithms
+title: Optimal Robustness-Consistency Trade-offs for Learning-Augmented Online Algorithms
 authors: Wei, Zhang
 publications:
   - name: NeurIPS
@@ -8,4 +7,7 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2010.11443.pdf
     year: 2020
-labels: [ online, rent-or-buy, scheduling ]
+labels:
+  - online
+  - rent-or-buy
+  - scheduling

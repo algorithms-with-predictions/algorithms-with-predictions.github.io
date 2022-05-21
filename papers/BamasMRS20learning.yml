@@ -7,4 +7,6 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2010.11629.pdf
     year: 2020
-labels: [ online, scheduling ]
+labels:
+  - online
+  - scheduling
