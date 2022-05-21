@@ -7,53 +7,98 @@ import fastls from "fast-levenshtein";
 const paper_dir = "papers";
 const papers = fs.readdirSync(paper_dir);//.slice(0, 10);
 
+
+async function updateFromArxiv(paper) {
+  let info = await axios.get(
+    "http://export.arxiv.org/api/query?search_query=" + paper.title.split(" ").join("+"),
+    { timeout: 20000 }
+  );
+  let data = info.data;
+  let parser = new XMLParser();
+  let dataObj = parser.parse(data);
+  let hits = [dataObj.feed.entry].flat();
+
+  hits.forEach((hit) => {
+    if (hit === undefined) {
+      return;
+    }
+
+    if (!('authors' in paper)) {
+      paper.authors = hit.author.map(a => a.name.split(' ').at(-1)).join(', ')
+      console.log('Setting authors of ' + paper.title + ' to ' + paper.authors)
+    }
+
+    let title = hit.title;
+    if (fastls.get(title, paper.title) < 10) {
+      if (!paper.publications.some((pub) => pub.name === "arXiv")) {
+        let date = new Date(hit.published);
+        let year = date.getFullYear();
+        let pdfurl = hit.id.replace("abs", "pdf") + ".pdf" 
+        console.log("Added arXiv preprint to " + paper.title);
+        paper.publications.push({
+          name: "arXiv",
+          year: year.toString(),
+          url: pdfurl,
+        });
+      }
+    }
+  });
+
+}
+
+async function updateFromDBLP(paper) {
+  let info = await axios.get(
+    "https://dblp.org/search/publ/api?q=" +
+      paper.title.split(" ").join("+"),
+    { timeout: 20000 }
+  );
+
+  let data = info.data;
+  let parser = new XMLParser();
+  let dataObj = parser.parse(data);
+  let hits = [dataObj.result.hits.hit].flat();
+
+  hits.forEach((hit) => {
+    if (hit === undefined || hit.info.venue === "CoRR") {
+      return;
+    }
+
+    if (!('authors' in paper)) {
+      paper.authors = hit.info.authors.author.map(a => a.split(' ').at(-1)).join(', ')
+      console.log('Setting authors of ' + paper.title + ' to ' + paper.authors)
+    }
+
+    let title = hit.info.title;
+    if (fastls.get(title, paper.title) < 10) {
+      const venue = hit.info.venue;
+      if (!paper.publications.some((pub) => pub.name === venue)) {
+        console.log("Added publication at " + venue + " to " + paper.title);
+        paper.publications.push({
+          name: venue,
+          year: hit.info.year,
+          url: hit.info.ee,
+        });
+      }
+    }
+  });
+}
+
+
+
 let updated = await Promise.all(
   papers.map(async (file) => {
     let paper = yaml.load(
       fs.readFileSync(paper_dir + "/" + file, { encoding: "utf-8" })
     );
-    //console.log(paper.title);
+
+    if (!('publications'  in paper)) {
+      paper.publications = []
+    }
 
     try {
-      let info = await axios.get(
-        "https://dblp.org/search/publ/api?q=" +
-          paper.title.split(" ").join("+"),
-        { timeout: 10000 }
-      );
+      await updateFromArxiv(paper);
+      await updateFromDBLP(paper);
 
-      let data = info.data;
-      let parser = new XMLParser();
-      let dataObj = parser.parse(data);
-      let hits = [dataObj.result.hits.hit].flat();
-      //console.log(paper.title);
-
-      hits.forEach((hit) => {
-        //console.log(hit);
-        if (hit === undefined) {
-          return;
-        }
-
-        if (!('authors' in paper)) {
-          paper.authors = hit.info.authors.author.map(a => a.split(' ').at(-1)).join(', ')
-          console.log('Setting authors of ' + paper.title + ' to ' + paper.authors)
-        }
-
-        let title = hit.info.title;
-        if (fastls.get(title, paper.title) < 10) {
-          const venue = hit.info.venue === "CoRR" ? "arXiv" : hit.info.venue;
-          if (!('publications'  in paper)) {
-            paper.publications = []
-          }
-          if (!paper.publications.some((pub) => pub.name === venue)) {
-            console.log("Added publication at " + venue + " to " + paper.title);
-            paper.publications.push({
-              name: venue,
-              year: hit.info.year,
-              url: hit.info.ee,
-            });
-          }
-        }
-      });
       return [file, paper];
     } catch (error) {
       console.log(error);
@@ -62,7 +107,6 @@ let updated = await Promise.all(
   })
 );
 
-//console.log(updated)
 
 updated.forEach(([file, paper]) =>
   fs.writeFileSync("papers/" + file, yaml.dump(paper, { lineWidth: -1 }))
