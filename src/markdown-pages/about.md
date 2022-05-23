@@ -62,6 +62,6 @@ labels:
   - caching/paging 
 ```
 
-We use an automated procedure to fetch the authors last names and all publications which have an (almost) matching title from [DBLP](dblp.org) and [arXiv](arxiv.org). In this example, all three publications of this paper can be added automatically.
+We use an automated procedure to fetch the authors last names and all publications which have an (almost) matching title from [DBLP](https://dblp.org) and [arXiv](https://arxiv.org). In this example, all three publications of this paper can be added automatically.
 
 TODO: explain more.
