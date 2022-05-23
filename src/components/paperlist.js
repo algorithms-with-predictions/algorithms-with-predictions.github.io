@@ -29,9 +29,16 @@ const TitleText = styled("div")`
   font-weight: bold;
 `;
 
-function minYearOfPaper(paper) {
-  const years = paper.publications.map((pub) => pub.year);
-  return Math.min(...years);
+function minDateOfPaper(paper) {
+  const dates = paper.publications.map(
+    (pub) =>
+      new Date(
+        pub.year,
+        pub.month === undefined ? 0 : pub.month,
+        pub.day === undefined ? 0 : pub.day
+      )
+  );
+  return new Date(Math.min(...dates));
 }
 
 function stringCmp(a, b) {
@@ -90,7 +97,7 @@ const PaperList = ({ data }) => {
     let pubs = paper.publications;
     pubs.sort((a, b) => stringCmp(a.name, b.name));
     let chips = paper.publications.map((pub) => {
-      let name = 'displayName' in pub ? pub.displayName : pub.name
+      let name = "displayName" in pub ? pub.displayName : pub.name;
       let text = name + " '" + pub.year.toString().slice(-2);
       return (
         <Chip
@@ -145,9 +152,9 @@ const PaperList = ({ data }) => {
     );
   const sortedData = filteredData.sort(function (p1, p2) {
     if (sort === SORT_YEAR_TOP_DOWN) {
-      return minYearOfPaper(p2) - minYearOfPaper(p1);
+      return minDateOfPaper(p2) - minDateOfPaper(p1);
     } else {
-      return minYearOfPaper(p1) - minYearOfPaper(p2);
+      return minDateOfPaper(p1) - minDateOfPaper(p2);
     }
   });
 

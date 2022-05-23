@@ -29,9 +29,11 @@ async function updateFromArxiv(paper) {
         paper.authors = hit.author
           .map((a) => a.name.split(" ").at(-1))
           .join(", ");
-        console.log("Setting authors of " + paper.title + " to " + paper.authors);
+        console.log(
+          "Setting authors of " + paper.title + " to " + paper.authors
+        );
       }
-      
+
       let date = new Date(hit.published);
       let year = date.getFullYear();
       let month = date.getMonth();
@@ -48,12 +50,15 @@ async function updateFromArxiv(paper) {
           url: pdfurl,
         });
       } else {
-        let publ_index = paper.publications.findIndex(pub => pub.name === "arXiv"); 
-        let pub = { year, month, day, ...paper.publications[publ_index] }
-        if (pub !== paper.publications[publ_index]) {
-          console.log("Updating arXiv publication date for " + paper.title)
-          paper.publications[publ_index] = pub
-        }
+        let publ_index = paper.publications.findIndex(
+          (pub) => pub.name === "arXiv"
+        );
+        paper.publications[publ_index] = {
+          year,
+          month,
+          day,
+          ...paper.publications[publ_index],
+        };
       }
     }
   });
@@ -61,7 +66,8 @@ async function updateFromArxiv(paper) {
 
 async function updateFromDBLP(paper) {
   let info = await axios.get(
-    "https://dblp.org/search/publ/api?q=" + paper.title.replace("-", " ").split(" ").join("+"),
+    "https://dblp.org/search/publ/api?q=" +
+      paper.title.replace("-", " ").split(" ").join("+"),
     { timeout: 30000 }
   );
 
@@ -75,15 +81,15 @@ async function updateFromDBLP(paper) {
       return;
     }
 
-   
-
     let title = hit.info.title;
     if (fastls.get(title, paper.title) < 10) {
       if (!("authors" in paper)) {
         paper.authors = hit.info.authors.author
           .map((a) => a.split(" ").at(-1))
           .join(", ");
-        console.log("Setting authors of " + paper.title + " to " + paper.authors);
+        console.log(
+          "Setting authors of " + paper.title + " to " + paper.authors
+        );
       }
 
       const venue = hit.info.venue;
@@ -112,12 +118,16 @@ let updated = await Promise.all(
     try {
       await updateFromArxiv(paper);
     } catch (error) {
-      console.log("Failed to fetch data from arXiv for the paper: " + paper.title)
+      console.log(
+        "Failed to fetch data from arXiv for the paper: " + paper.title
+      );
     }
     try {
-      //await updateFromDBLP(paper);
+      await updateFromDBLP(paper);
     } catch (error) {
-      console.log("Failed to fetch data from DBLP for the paper: " + paper.title)
+      console.log(
+        "Failed to fetch data from DBLP for the paper: " + paper.title
+      );
     }
     return [file, paper];
   })

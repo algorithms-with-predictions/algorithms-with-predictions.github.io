@@ -29,6 +29,8 @@ publications:
     url: http://proceedings.mlr.press/v80/lykouris18a/lykouris18a.pdf
   - name: arXiv
     year: 2018
+    month: 1 # optional
+    day: 4 # optional
     url: https://arxiv.org/pdf/1802.05399.pdf
   - name: J. ACM
     year: 2021
