@@ -10,8 +10,8 @@ const papers = fs.readdirSync(paper_dir);
 async function updateFromArxiv(paper) {
   let info = await axios.get(
     "http://export.arxiv.org/api/query?search_query=" +
-      paper.title.split(" ").join("+"),
-    { timeout: 20000 }
+      paper.title.replace("-", " ").split(" ").join("+"),
+    { timeout: 30000 }
   );
   let data = info.data;
   let parser = new XMLParser();
@@ -49,8 +49,8 @@ async function updateFromArxiv(paper) {
 
 async function updateFromDBLP(paper) {
   let info = await axios.get(
-    "https://dblp.org/search/publ/api?q=" + paper.title.split(" ").join("+"),
-    { timeout: 20000 }
+    "https://dblp.org/search/publ/api?q=" + paper.title.replace("-", " ").split(" ").join("+"),
+    { timeout: 30000 }
   );
 
   let data = info.data;
@@ -99,13 +99,15 @@ let updated = await Promise.all(
 
     try {
       await updateFromArxiv(paper);
-      await updateFromDBLP(paper);
-
-      return [file, paper];
     } catch (error) {
-      console.log(error);
-      return [file, paper];
+      console.log("Failed to fetch data from arXiv for the paper: " + paper.title)
     }
+    try {
+      await updateFromDBLP(paper);
+    } catch (error) {
+      console.log("Failed to fetch data from DBLP for the paper: " + paper.title)
+    }
+    return [file, paper];
   })
 );
 

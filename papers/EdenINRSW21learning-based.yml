@@ -4,5 +4,8 @@ publications:
   - name: ICLR
     url: https://openreview.net/pdf?id=tilovEHA3YS
     year: 2021
+  - name: arXiv
+    year: 2021
+    url: http://arxiv.org/pdf/2106.08396v1.pdf
 labels:
   - running time

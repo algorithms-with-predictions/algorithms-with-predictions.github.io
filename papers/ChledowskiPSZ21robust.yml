@@ -4,6 +4,9 @@ publications:
   - name: ICML
     url: http://proceedings.mlr.press/v139/chledowski21a.html
     year: 2021
+  - name: arXiv
+    year: 2021
+    url: http://arxiv.org/pdf/2106.14693v1.pdf
 labels:
   - online
   - caching/paging
