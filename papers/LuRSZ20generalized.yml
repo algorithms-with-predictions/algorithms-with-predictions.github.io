@@ -4,9 +4,11 @@ publications:
   - name: SOSA
     url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976496.13
     year: 2021
-  - name: arXiv
+  - year: 2020
+    month: 9
+    day: 6
+    name: arXiv
     url: https://arxiv.org/pdf/2011.00172.pdf
-    year: 2020
 labels:
   - running time
   - sorting

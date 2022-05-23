@@ -4,9 +4,11 @@ publications:
   - name: ACDA
     url: https://epubs.siam.org/doi/10.1137/1.9781611976830.3
     year: 2021
-  - name: arXiv
+  - year: 2021
+    month: 5
+    day: 3
+    name: arXiv
     url: https://arxiv.org/pdf/2106.01079.pdf
-    year: 2021
 labels:
   - online
   - matching

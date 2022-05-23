@@ -31,17 +31,29 @@ async function updateFromArxiv(paper) {
           .join(", ");
         console.log("Setting authors of " + paper.title + " to " + paper.authors);
       }
+      
+      let date = new Date(hit.published);
+      let year = date.getFullYear();
+      let month = date.getMonth();
+      let day = date.getDay();
 
       if (!paper.publications.some((pub) => pub.name === "arXiv")) {
-        let date = new Date(hit.published);
-        let year = date.getFullYear();
         let pdfurl = hit.id.replace("abs", "pdf") + ".pdf";
         console.log("Added arXiv preprint to " + paper.title);
         paper.publications.push({
           name: "arXiv",
           year,
+          month,
+          day,
           url: pdfurl,
         });
+      } else {
+        let publ_index = paper.publications.findIndex(pub => pub.name === "arXiv"); 
+        let pub = { year, month, day, ...paper.publications[publ_index] }
+        if (pub !== paper.publications[publ_index]) {
+          console.log("Updating arXiv publication date for " + paper.title)
+          paper.publications[publ_index] = pub
+        }
       }
     }
   });
@@ -103,7 +115,7 @@ let updated = await Promise.all(
       console.log("Failed to fetch data from arXiv for the paper: " + paper.title)
     }
     try {
-      await updateFromDBLP(paper);
+      //await updateFromDBLP(paper);
     } catch (error) {
       console.log("Failed to fetch data from DBLP for the paper: " + paper.title)
     }

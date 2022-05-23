@@ -4,9 +4,11 @@ publications:
   - name: ITCS
     url: https://drops.dagstuhl.de/opus/volltexte/2021/13590/pdf/LIPIcs-ITCS-2021-51.pdf
     year: 2021
-  - name: arXiv
+  - year: 2020
+    month: 7
+    day: 1
+    name: arXiv
     url: https://arxiv.org/pdf/2008.13729.pdf
-    year: 2020
 labels:
   - online
   - search

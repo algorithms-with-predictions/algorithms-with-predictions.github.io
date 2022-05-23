@@ -4,9 +4,11 @@ publications:
   - name: SODA
     year: 2022
     url: https://epubs.siam.org/doi/10.1137/1.9781611977073.3
-  - name: arXiv
+  - year: 2021
+    month: 8
+    day: 5
+    name: arXiv
     url: https://arxiv.org/pdf/2109.08424.pdf
-    year: 2021
 labels:
   - online
   - scheduling

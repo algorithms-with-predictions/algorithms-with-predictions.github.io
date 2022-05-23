@@ -4,9 +4,11 @@ publications:
   - name: SODA
     url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611975994.112)
     year: 2020
-  - name: arXiv
+  - year: 2019
+    month: 9
+    day: 0
+    name: arXiv
     url: https://arxiv.org/pdf/1910.12172.pdf
-    year: 2019
 labels:
   - online
   - caching/paging

@@ -1,9 +1,11 @@
 authors: Khodak, Balcan, Talwalkar, Vassilvitskii
 title: Learning Predictions for Algorithms with Predictions
 publications:
-  - name: arXiv
+  - year: 2022
+    month: 1
+    day: 5
+    name: arXiv
     url: https://arxiv.org/pdf/2202.09312.pdf
-    year: 2022
 labels:
   - online
   - learning

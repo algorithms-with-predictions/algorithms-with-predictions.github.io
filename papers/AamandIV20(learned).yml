@@ -1,8 +1,10 @@
 authors: Aamand, Indyk, Vakilian
 title: (Learned) Frequency Estimation Algorithms under Zipfian Distribution
 publications:
-  - name: arXiv
+  - year: 2020
+    month: 7
+    day: 3
+    name: arXiv
     url: https://arxiv.org/pdf/1908.05198.pdf
-    year: 2020
 labels:
   - streaming

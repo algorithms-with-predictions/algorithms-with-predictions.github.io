@@ -4,9 +4,11 @@ publications:
   - name: AAAI
     url: https://ojs.aaai.org/index.php/AAAI/article/view/17394
     year: 2021
-  - name: arXiv
+  - year: 2020
+    month: 10
+    day: 3
+    name: arXiv
     url: https://arxiv.org/pdf/2011.12439.pdf
-    year: 2020
 labels:
   - online
   - scheduling

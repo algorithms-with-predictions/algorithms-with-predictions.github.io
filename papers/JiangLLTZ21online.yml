@@ -1,9 +1,11 @@
 authors: Jiang, Liu, Lyu, Tang, Zhang
 title: Online Facility Location with Predictions
 publications:
-  - name: arXiv
+  - year: 2021
+    month: 9
+    day: 0
+    name: arXiv
     url: https://arxiv.org/abs/2110.08840
-    year: 2021
 labels:
   - online
   - network design

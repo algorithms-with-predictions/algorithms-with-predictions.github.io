@@ -1,8 +1,10 @@
 title: Robustness and Consistency in Linear Quadratic Control with Untrusted Predictions
 authors: Li, Yang, Qu, Shi, Yu, Wierman, Low
 publications:
-  - name: arXiv
-    year: 2021
+  - year: 2021
+    month: 5
+    day: 4
+    name: arXiv
     url: https://arxiv.org/abs/2106.09659
   - name: Proc. ACM Meas. Anal. Comput. Syst.
     year: 2022

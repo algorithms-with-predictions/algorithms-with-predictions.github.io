@@ -1,9 +1,11 @@
 authors: Antoniadis, Ganje, Shahkarami
 title: A Novel Prediction Setup for Online Speed-Scaling
 publications:
-  - name: arXiv
+  - year: 2021
+    month: 11
+    day: 1
+    name: arXiv
     url: https://arxiv.org/pdf/2112.03082.pdf
-    year: 2021
 labels:
   - online
   - scheduling

@@ -4,9 +4,11 @@ publications:
   - name: STOC
     url: https://dl.acm.org/doi/10.1145/3406325.3451023
     year: 2021
-  - name: arXiv
+  - year: 2021
+    month: 2
+    day: 2
+    name: arXiv
     url: https://arxiv.org/pdf/2103.05604.pdf
-    year: 2021
 labels:
   - online
   - scheduling

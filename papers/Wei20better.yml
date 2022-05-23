@@ -1,9 +1,11 @@
 title: Better and simpler learning-augmented online caching
 authors: Wei
 publications:
-  - name: arXiv
+  - year: 2020
+    month: 4
+    day: 4
+    name: arXiv
     url: https://arxiv.org/pdf/2005.13716.pdf
-    year: 2020
   - name: APPROX-RANDOM
     year: 2020
     url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2020.60

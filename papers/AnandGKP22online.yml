@@ -1,9 +1,11 @@
 authors: Anand, Ge, Kumar, Panigrahi
 title: Online Algorithms with Multiple Predictions
 publications:
-  - name: arXiv
+  - year: 2022
+    month: 4
+    day: 0
+    name: arXiv
     url: https://arxiv.org/pdf/2205.03921.pdf
-    year: 2022
 labels:
   - online
   - multiple predictions

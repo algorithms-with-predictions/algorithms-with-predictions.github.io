@@ -4,9 +4,11 @@ publications:
   - name: ICALP
     url: https://drops.dagstuhl.de/opus/volltexte/2020/12476/pdf/LIPIcs-ICALP-2020-69.pdf
     year: 2020
-  - name: arXiv
+  - year: 2020
+    month: 5
+    day: 2
+    name: arXiv
     url: https://arxiv.org/pdf/2006.09509.pdf
-    year: 2020
 labels:
   - online
   - caching/paging

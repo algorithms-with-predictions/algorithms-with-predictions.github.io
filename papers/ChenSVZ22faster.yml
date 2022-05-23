@@ -1,9 +1,11 @@
 authors: Chen, Silwal, Vakilian, Zhang
 title: Faster Fundamental Graph Algorithms via Learned Predictions
 publications:
-  - name: arXiv
+  - year: 2022
+    month: 3
+    day: 2
+    name: arXiv
     url: https://arxiv.org/pdf/2204.12055.pdf
-    year: 2022
 labels:
   - running time
   - graphs

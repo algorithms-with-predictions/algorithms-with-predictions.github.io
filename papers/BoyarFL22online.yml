@@ -1,9 +1,11 @@
 authors: Boyar, Favrholdt, Larsen
 title: Online Unit Profit Knapsack with Untrusted Predictions
 publications:
-  - name: arXiv
+  - year: 2022
+    month: 2
+    day: 2
+    name: arXiv
     url: https://arxiv.org/pdf/2203.00285.pdf
-    year: 2022
 labels:
   - online
   - packing

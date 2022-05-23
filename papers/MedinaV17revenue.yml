@@ -1,8 +1,10 @@
 title: Revenue optimization with approximate bid predictions
 authors: Medina, Vassilvitskii
 publications:
-  - name: arXiv
-    year: 2017
+  - year: 2017
+    month: 5
+    day: 4
+    name: arXiv
     url: https://arxiv.org/pdf/1706.04732.pdf
   - name: NIPS
     year: 2017

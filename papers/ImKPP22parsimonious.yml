@@ -1,9 +1,11 @@
 authors: Im, Kumar, Petety, Purohit
 title: Parsimonious Learning-Augmented Caching
 publications:
-  - name: arXiv
+  - year: 2022
+    month: 1
+    day: 3
+    name: arXiv
     url: https://arxiv.org/pdf/2202.04262.pdf
-    year: 2022
 labels:
   - online
   - caching/paging

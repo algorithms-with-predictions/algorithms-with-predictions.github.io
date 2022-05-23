@@ -1,8 +1,10 @@
 title: Permutation Predictions for Non-clairvoyant Scheduling
 authors: Lindermayr, Megow
 publications:
-  - name: arXiv
-    year: 2022
+  - year: 2022
+    month: 1
+    day: 1
+    name: arXiv
     url: https://arxiv.org/pdf/2202.10199.pdf
 labels:
   - online

@@ -4,7 +4,9 @@ publications:
   - name: NeurIPS
     url: https://dl.acm.org/doi/pdf/10.5555/3326943.3326986
     year: 2018
-  - name: arXiv
+  - year: 2019
+    month: 0
+    day: 4
+    name: arXiv
     url: https://arxiv.org/pdf/1901.00902.pdf
-    year: 2019
 labels: []

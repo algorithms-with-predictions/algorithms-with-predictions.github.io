@@ -4,7 +4,9 @@ labels:
   - matching
   - matroid intersection
 publications:
-  - name: arXiv
-    year: 2022
+  - year: 2022
+    month: 4
+    day: 5
+    name: arXiv
     url: http://arxiv.org/pdf/2205.09961v1.pdf
 authors: Sakaue, Oki

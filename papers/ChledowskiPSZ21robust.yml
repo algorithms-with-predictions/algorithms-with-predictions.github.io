@@ -4,8 +4,10 @@ publications:
   - name: ICML
     url: http://proceedings.mlr.press/v139/chledowski21a.html
     year: 2021
-  - name: arXiv
-    year: 2021
+  - year: 2021
+    month: 5
+    day: 1
+    name: arXiv
     url: http://arxiv.org/pdf/2106.14693v1.pdf
 labels:
   - online

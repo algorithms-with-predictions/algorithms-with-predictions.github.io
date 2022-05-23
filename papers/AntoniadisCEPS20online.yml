@@ -4,9 +4,11 @@ publications:
   - name: ICML
     url: http://proceedings.mlr.press/v119/antoniadis20a/antoniadis20a.pdf
     year: 2020
-  - name: arXiv
+  - year: 2020
+    month: 2
+    day: 3
+    name: arXiv
     url: https://arxiv.org/pdf/2003.02144.pdf
-    year: 2020
 labels:
   - online
   - MTS
