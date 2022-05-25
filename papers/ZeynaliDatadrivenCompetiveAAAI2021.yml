@@ -13,5 +13,5 @@ labels:
   - online
   - learning
   - data-driven
-  - knapsack
-  - setcover
+  - packing
+  - set cover

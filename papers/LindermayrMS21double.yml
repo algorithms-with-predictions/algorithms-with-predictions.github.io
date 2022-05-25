@@ -5,10 +5,10 @@ publications:
     month: 2
     day: 2
     name: arXiv
-    url: https://drops.dagstuhl.de/opus/volltexte/2022/15695/pdf/LIPIcs-ITCS-2022-99.pdf
+    url: https://arxiv.org/pdf/2103.01640.pdf
   - name: ITCS
     year: 2021
-    url: https://arxiv.org/pdf/2103.01640.pdf
+    url: https://drops.dagstuhl.de/opus/volltexte/2022/15695/pdf/LIPIcs-ITCS-2022-99.pdf
 labels:
   - k-server
   - online
