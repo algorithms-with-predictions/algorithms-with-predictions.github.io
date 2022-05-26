@@ -1,9 +1,9 @@
 authors: Mitzenmacher, Dell Amico
 title: The Supermarket Model with Known and Predicted Service Times
 publications:
-  - year: 2020
+  - year: 2019
     month: 4
-    day: 4
+    day: 23
     name: arXiv
     url: https://arxiv.org/pdf/1905.12155.pdf
 labels: []

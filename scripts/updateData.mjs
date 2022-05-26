@@ -37,7 +37,7 @@ async function updateFromArxiv(paper) {
       let date = new Date(hit.published);
       let year = date.getFullYear();
       let month = date.getMonth();
-      let day = date.getDay();
+      let day = date.getDate();
 
       if (!paper.publications.some((pub) => pub.name === "arXiv")) {
         let pdfurl = hit.id.replace("abs", "pdf") + ".pdf";
@@ -54,10 +54,10 @@ async function updateFromArxiv(paper) {
           (pub) => pub.name === "arXiv"
         );
         paper.publications[publ_index] = {
+          ...paper.publications[publ_index],
           year,
           month,
           day,
-          ...paper.publications[publ_index],
         };
       }
     }

@@ -3,7 +3,7 @@ title: Faster Matchings via Learned Duals
 publications:
   - year: 2021
     month: 6
-    day: 2
+    day: 20
     name: arXiv
     url: https://arxiv.org/pdf/2107.09770.pdf
   - name: NeurIPS

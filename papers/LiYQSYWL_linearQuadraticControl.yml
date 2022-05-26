@@ -3,7 +3,7 @@ authors: Li, Yang, Qu, Shi, Yu, Wierman, Low
 publications:
   - year: 2021
     month: 5
-    day: 4
+    day: 17
     name: arXiv
     url: https://arxiv.org/abs/2106.09659
   - name: Proc. ACM Meas. Anal. Comput. Syst.

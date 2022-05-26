@@ -4,9 +4,9 @@ labels:
   - network design
   - online
 publications:
-  - name: arXiv
-    year: 2022
+  - year: 2022
     month: 4
-    day: 3
+    day: 25
+    name: arXiv
     url: http://arxiv.org/pdf/2205.12850v1.pdf
 authors: Bernardini, Lindermayr, Marchetti-Spaccamela, Megow, Stougie, Sweering
