@@ -24,7 +24,7 @@ async function updateFromArxiv(paper) {
     }
 
     let title = hit.title;
-    if (fastls.get(title, paper.title) < 10) {
+    if (fastls.get(title, paper.title) < 5) {
       if (!("authors" in paper)) {
         paper.authors = hit.author
           .map((a) => a.name.split(" ").at(-1))
@@ -38,9 +38,9 @@ async function updateFromArxiv(paper) {
       let year = date.getFullYear();
       let month = date.getMonth();
       let day = date.getDate();
+      let pdfurl = hit.id.replace("abs", "pdf").replace(/v\d+/,"").replace("http", "https") + ".pdf";
 
       if (!paper.publications.some((pub) => pub.name === "arXiv")) {
-        let pdfurl = hit.id.replace("abs", "pdf") + ".pdf";
         console.log("Added arXiv preprint to " + paper.title);
         paper.publications.push({
           name: "arXiv",
@@ -55,6 +55,7 @@ async function updateFromArxiv(paper) {
         );
         paper.publications[publ_index] = {
           ...paper.publications[publ_index],
+          url: pdfurl,
           year,
           month,
           day,
@@ -82,7 +83,7 @@ async function updateFromDBLP(paper) {
     }
 
     let title = hit.info.title;
-    if (fastls.get(title, paper.title) < 10) {
+    if (fastls.get(title, paper.title) < 5) {
       if (!("authors" in paper)) {
         paper.authors = hit.info.authors.author
           .map((a) => a.split(" ").at(-1))

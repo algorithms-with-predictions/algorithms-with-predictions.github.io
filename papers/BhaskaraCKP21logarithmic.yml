@@ -8,7 +8,7 @@ publications:
     month: 10
     day: 9
     name: arXiv
-    url: http://arxiv.org/pdf/2111.05257v1.pdf
+    url: https://arxiv.org/pdf/2111.05257.pdf
 labels:
   - online
   - learning

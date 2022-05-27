@@ -5,7 +5,7 @@ publications:
     month: 5
     day: 17
     name: arXiv
-    url: https://arxiv.org/abs/2106.09659
+    url: https://arxiv.org/pdf/2106.09659.pdf
   - name: Proc. ACM Meas. Anal. Comput. Syst.
     year: 2022
     url: https://doi.org/10.1145/3508038

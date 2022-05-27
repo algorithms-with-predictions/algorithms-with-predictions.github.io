@@ -8,7 +8,7 @@ publications:
     month: 5
     day: 28
     name: arXiv
-    url: http://arxiv.org/pdf/2106.14693v1.pdf
+    url: https://arxiv.org/pdf/2106.14693.pdf
 labels:
   - online
   - caching/paging
