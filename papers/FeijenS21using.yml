@@ -8,3 +8,4 @@ publications:
     url: https://arxiv.org/pdf/2112.11927.pdf
 labels:
   - running time
+  - shortest path

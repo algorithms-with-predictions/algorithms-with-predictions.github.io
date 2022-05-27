@@ -8,4 +8,5 @@ publications:
     url: https://arxiv.org/pdf/2204.12055.pdf
 labels:
   - running time
-  - graphs
+  - matching
+  - shortest path

@@ -101,7 +101,16 @@ async function updateFromDBLP(paper) {
           year: hit.info.year,
           url: hit.info.ee,
         });
-      }
+       } 
+    //else {
+    //     let publ_index = paper.publications.findIndex(
+    //         (pub) => pub.name === venue
+    //     );
+    //     paper.publications[publ_index] = {
+    //         ...paper.publications[publ_index],
+    //         year: hit.info.year,
+    //       };
+    //   }
     }
   });
 }
