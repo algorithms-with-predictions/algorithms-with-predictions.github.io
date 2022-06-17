@@ -9,6 +9,9 @@ publications:
   - name: Proc. ACM Meas. Anal. Comput. Syst.
     year: 2022
     url: https://doi.org/10.1145/3508038
+  - name: SIGMETRICS
+    year: 2022
+    url: https://doi.org/10.1145/3489048.3522658
 labels:
   - online
   - linear quadratic control
