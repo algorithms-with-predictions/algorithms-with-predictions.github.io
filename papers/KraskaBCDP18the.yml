@@ -1,0 +1,13 @@
+title: The Case for Learned Index Structures
+labels:
+  - data structure
+publications:
+  - name: arXiv
+    year: 2017
+    month: 11
+    day: 4
+    url: https://arxiv.org/pdf/1712.01208.pdf
+  - name: SIGMOD Conference
+    year: 2018
+    url: https://doi.org/10.1145/3183713.3196909
+authors: Kraska, Beutel, Chi, Dean, Polyzotis

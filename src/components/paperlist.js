@@ -57,7 +57,7 @@ const SORT_YEAR_TOP_DOWN = "Newest first";
 const SORT_YEAR_BOTTOM_UP = "Oldest first";
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
-const TYPE_LABELS = ["online", "running time"];
+const TYPE_LABELS = ["data structure", "online", "running time"];
 
 const PaperList = ({ data }) => {
   const allYears = data.flatMap((paper) =>

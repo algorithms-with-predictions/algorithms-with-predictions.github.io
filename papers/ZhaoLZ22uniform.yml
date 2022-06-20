@@ -3,7 +3,7 @@ authors: Zhao, Li, Zomaya
 labels:
   - online
   - scheduling
-publications: 
+publications:
   - name: ICAPS
     year: 2022
     url: https://ojs.aaai.org/index.php/ICAPS/article/view/19827
