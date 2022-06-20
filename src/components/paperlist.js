@@ -57,6 +57,8 @@ const SORT_YEAR_TOP_DOWN = "Newest first";
 const SORT_YEAR_BOTTOM_UP = "Oldest first";
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
+const TYPE_LABELS = ["online", "running time"];
+
 const PaperList = ({ data }) => {
   const allYears = data.flatMap((paper) =>
     paper.publications.flatMap((pub) => pub.year)
@@ -66,6 +68,7 @@ const PaperList = ({ data }) => {
   const allLabels = data.flatMap((paper) => (paper.labels ? paper.labels : []));
   let distinctLabels = [...new Set(allLabels)];
   distinctLabels.sort(stringCmp);
+  distinctLabels = distinctLabels.filter(el => !TYPE_LABELS.includes(el));
 
   const [yearsIdx, setYearsIdx] = React.useState([0, distinctYears.length - 1]);
   const [sort, setSort] = React.useState(SORT_YEAR_TOP_DOWN);
@@ -78,7 +81,7 @@ const PaperList = ({ data }) => {
       label={label}
       variant={deleteable && selLabels.includes(label) ? "outlined" : "filled"}
       color={
-        label === "online" || label === "running time" ? "success" : "primary"
+        TYPE_LABELS.includes(label) ? "success" : "primary"
       }
       onClick={() => setSelLabels([label, ...selLabels])}
       onDelete={
@@ -229,6 +232,8 @@ const PaperList = ({ data }) => {
             spacing={1}
             direction="column" //"row", lg: "column" }}
           >
+            {TYPE_LABELS.map((l) => labelChip(l, true))}
+            <Divider orientation={"horizontal"} flexItem />
             {distinctLabels.map((l) => labelChip(l, true))}
           </Stack>
         </Box>
