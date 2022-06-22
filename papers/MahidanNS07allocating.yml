@@ -1,9 +1,9 @@
-authors: Mahidan, Nazerzadeh, Saberi
 title: Allocating online advertisement space with unreliable estimates
+authors: Mahdian, Nazerzadeh, Saberi
 publications:
   - name: EC
-    url: https://dl.acm.org/doi/pdf/10.1145/1250910.1250952
     year: 2007
+    url: https://doi.org/10.1145/1250910.1250952
 labels:
   - online
   - rent-or-buy
