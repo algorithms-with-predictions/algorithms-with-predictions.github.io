@@ -6,6 +6,9 @@ publications:
     day: 1
     name: arXiv
     url: https://arxiv.org/pdf/2203.00285.pdf
+  - name: SWAT
+    year: 2022
+    url: https://doi.org/10.4230/LIPIcs.SWAT.2022.20
 labels:
   - online
   - packing
