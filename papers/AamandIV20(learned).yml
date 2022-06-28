@@ -5,6 +5,6 @@ publications:
     month: 7
     day: 14
     name: arXiv
-    url: https://arxiv.org/pdf/1908.05198.pdf
+    url: https://arxiv.org/abs/1908.05198
 labels:
   - streaming

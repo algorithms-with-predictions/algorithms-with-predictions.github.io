@@ -5,7 +5,7 @@ publications:
     month: 3
     day: 26
     name: arXiv
-    url: https://arxiv.org/pdf/2204.12055.pdf
+    url: https://arxiv.org/abs/2204.12055
 labels:
   - running time
   - matching

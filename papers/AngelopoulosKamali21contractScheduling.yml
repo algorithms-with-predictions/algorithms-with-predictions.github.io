@@ -8,7 +8,7 @@ publications:
     month: 10
     day: 25
     name: arXiv
-    url: https://arxiv.org/pdf/2011.12439.pdf
+    url: https://arxiv.org/abs/2011.12439
 labels:
   - online
   - scheduling

@@ -1,10 +1,11 @@
 title: Learning-Augmented Binary Search Trees
 labels:
   - data structure
+  - search
 publications:
   - name: arXiv
     year: 2022
     month: 5
     day: 24
-    url: https://arxiv.org/pdf/2206.12110.pdf
+    url: https://arxiv.org/abs/2206.12110
 authors: Lin, Luo, Woodruff

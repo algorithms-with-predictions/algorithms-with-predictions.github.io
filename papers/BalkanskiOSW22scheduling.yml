@@ -5,7 +5,7 @@ publications:
     month: 4
     day: 3
     name: arXiv
-    url: https://arxiv.org/pdf/2205.01247.pdf
+    url: https://arxiv.org/abs/2205.01247
 labels:
   - online
   - scheduling

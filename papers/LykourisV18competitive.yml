@@ -8,7 +8,7 @@ publications:
     month: 1
     day: 15
     name: arXiv
-    url: https://arxiv.org/pdf/1802.05399.pdf
+    url: https://arxiv.org/abs/1802.05399
   - name: J. ACM
     year: 2021
     url: https://dl.acm.org/doi/10.1145/3447579

@@ -5,7 +5,4 @@ publications:
     year: 2007
     url: https://doi.org/10.1145/1250910.1250952
 labels:
-  - online
-  - rent-or-buy
-  - search
-  - allocation
+  - prior/related work

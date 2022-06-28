@@ -8,7 +8,7 @@ publications:
     month: 1
     day: 2
     name: arXiv
-    url: https://arxiv.org/pdf/1902.00732.pdf
+    url: https://arxiv.org/abs/1902.00732
 labels:
   - online
   - queueing

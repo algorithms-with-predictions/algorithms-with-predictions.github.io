@@ -5,10 +5,9 @@ publications:
     month: 5
     day: 15
     name: arXiv
-    url: https://arxiv.org/pdf/1706.04732.pdf
+    url: https://arxiv.org/abs/1706.04732
   - name: NIPS
     year: 2017
     url: https://proceedings.neurips.cc/paper/2017/hash/884d79963bd8bc0ae9b13a1aa71add73-Abstract.html
 labels:
-  - auctions
-  - online
+  - prior/related work

@@ -8,7 +8,7 @@ publications:
     month: 8
     day: 17
     name: arXiv
-    url: https://arxiv.org/pdf/2109.08424.pdf
+    url: https://arxiv.org/abs/2109.08424
 labels:
   - online
   - scheduling

@@ -5,7 +5,7 @@ publications:
     month: 11
     day: 6
     name: arXiv
-    url: https://arxiv.org/pdf/2112.03082.pdf
+    url: https://arxiv.org/abs/2112.03082
   - name: SWAT
     year: 2022
     url: https://doi.org/10.4230/LIPIcs.SWAT.2022.9

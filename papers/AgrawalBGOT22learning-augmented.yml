@@ -5,7 +5,7 @@ publications:
     month: 3
     day: 3
     name: arXiv
-    url: https://arxiv.org/pdf/2204.01120.pdf
+    url: https://arxiv.org/abs/2204.01120
 labels:
   - AGT
   - network design

@@ -5,7 +5,7 @@ publications:
     month: 11
     day: 22
     name: arXiv
-    url: https://arxiv.org/pdf/2112.11927.pdf
+    url: https://arxiv.org/abs/2112.11927
 labels:
   - running time
   - shortest path

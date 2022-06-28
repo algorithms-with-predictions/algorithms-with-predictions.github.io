@@ -8,7 +8,7 @@ publications:
     month: 9
     day: 31
     name: arXiv
-    url: https://arxiv.org/pdf/2011.00172.pdf
+    url: https://arxiv.org/abs/2011.00172
 labels:
   - running time
   - sorting

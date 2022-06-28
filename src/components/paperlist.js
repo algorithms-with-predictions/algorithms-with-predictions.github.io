@@ -25,6 +25,11 @@ const AuthorText = styled("div")`
   color: #878787;
 `;
 
+const PriorTitleText = styled("div")`
+  color: #878787;
+  font-weight: bold;
+`;
+
 const TitleText = styled("div")`
   font-weight: bold;
 `;
@@ -58,8 +63,11 @@ const SORT_YEAR_BOTTOM_UP = "Oldest first";
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
 const TYPE_LABELS = ["data structure", "online", "running time"];
+const PRIOR_LABEL = "prior/related work";
+let SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL];
 
 const PaperList = ({ data }) => {
+  // preprocessing
   const allYears = data.flatMap((paper) =>
     paper.publications.flatMap((pub) => pub.year)
   );
@@ -68,21 +76,35 @@ const PaperList = ({ data }) => {
   const allLabels = data.flatMap((paper) => (paper.labels ? paper.labels : []));
   let distinctLabels = [...new Set(allLabels)];
   distinctLabels.sort(stringCmp);
-  distinctLabels = distinctLabels.filter(el => !TYPE_LABELS.includes(el));
+  distinctLabels = distinctLabels.filter((el) => !SPECIAL_LABELS.includes(el));
 
+  // component state definition
   const [yearsIdx, setYearsIdx] = React.useState([0, distinctYears.length - 1]);
   const [sort, setSort] = React.useState(SORT_YEAR_TOP_DOWN);
   const [selLabels, setSelLabels] = React.useState([]);
+
+  // helper functions
+  const labelColor = (label) => {
+    if (TYPE_LABELS.includes(label)) {
+      return "success";
+    } else if (label === PRIOR_LABEL) {
+      return "default";
+    } else {
+      return "primary";
+    }
+  };
 
   const labelChip = (label, deleteable) => (
     <Chip
       size="small"
       key={label}
       label={label}
-      variant={deleteable && selLabels.includes(label) ? "outlined" : "filled"}
-      color={
-        TYPE_LABELS.includes(label) ? "success" : "primary"
+      variant={
+        (deleteable && selLabels.includes(label)) || label === PRIOR_LABEL
+          ? "outlined"
+          : "filled"
       }
+      color={labelColor(label)}
       onClick={() => setSelLabels([label, ...selLabels])}
       onDelete={
         deleteable && selLabels.includes(label)
@@ -125,7 +147,11 @@ const PaperList = ({ data }) => {
         <ListItemText
           primary={
             <Stack direction="row" spacing={3}>
-              <TitleText>{paper.title}</TitleText>
+              {paper.labels.includes(PRIOR_LABEL) ? (
+                <PriorTitleText>{paper.title}</PriorTitleText>
+              ) : (
+                <TitleText>{paper.title}</TitleText>
+              )}
               <AuthorText>{paper.authors}</AuthorText>
               <Stack direction="row" spacing={1}>
                 {paperChips(paper)}
@@ -137,10 +163,7 @@ const PaperList = ({ data }) => {
     ));
   };
 
-  const handleSort = (event) => {
-    setSort(event.target.value);
-  };
-
+  // data preparation
   const filteredData = data
     .filter((p) =>
       p.publications.some(
@@ -160,12 +183,11 @@ const PaperList = ({ data }) => {
       return minDateOfPaper(p1) - minDateOfPaper(p2);
     }
   });
-
   const items = buildListItems(sortedData);
   const marks = Array.from(new Array(distinctYears.length), (x, i) => i).map(
     (yearIdx) => ({
       value: yearIdx,
-      label: distinctYears[yearIdx],
+      label: "'" + distinctYears[yearIdx].toString().slice(-2),
     })
   );
 
@@ -185,7 +207,6 @@ const PaperList = ({ data }) => {
         >
           <Box sx={{ width: 350, pr: 2 }}>
             <Slider
-              getAriaLabelText={(value) => distinctYears[value]}
               value={yearsIdx}
               step={null}
               max={distinctYears.length - 1}
@@ -196,7 +217,11 @@ const PaperList = ({ data }) => {
               disableSwap
             />
           </Box>
-          <Select value={sort} autoWidth={true} onChange={handleSort}>
+          <Select
+            value={sort}
+            autoWidth={true}
+            onChange={(event) => setSort(event.target.value)}
+          >
             {sortOptions.map((opt) => (
               <MenuItem key={opt} value={opt}>
                 {opt}
@@ -232,7 +257,7 @@ const PaperList = ({ data }) => {
             spacing={1}
             direction="column" //"row", lg: "column" }}
           >
-            {TYPE_LABELS.map((l) => labelChip(l, true))}
+            {SPECIAL_LABELS.map((l) => labelChip(l, true))}
             <Divider orientation={"horizontal"} flexItem />
             {distinctLabels.map((l) => labelChip(l, true))}
           </Stack>

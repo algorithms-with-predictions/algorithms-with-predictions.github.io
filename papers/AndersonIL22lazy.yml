@@ -5,7 +5,7 @@ publications:
     month: 0
     day: 8
     name: arXiv
-    url: https://arxiv.org/pdf/2201.02890.pdf
+    url: https://arxiv.org/abs/2201.02890
 labels:
   - online
   - learning

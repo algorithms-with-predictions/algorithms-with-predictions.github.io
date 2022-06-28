@@ -8,7 +8,7 @@ publications:
     month: 5
     day: 28
     name: arXiv
-    url: https://arxiv.org/pdf/2006.15463.pdf
+    url: https://arxiv.org/abs/2006.15463
 labels:
   - online
   - queueing

@@ -5,7 +5,7 @@ publications:
     month: 1
     day: 9
     name: arXiv
-    url: https://arxiv.org/pdf/2202.04262.pdf
+    url: https://arxiv.org/abs/2202.04262
 labels:
   - online
   - caching/paging

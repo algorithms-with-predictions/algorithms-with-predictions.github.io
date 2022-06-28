@@ -5,7 +5,7 @@ publications:
     month: 9
     day: 1
     name: arXiv
-    url: https://arxiv.org/pdf/2110.00391.pdf
+    url: https://arxiv.org/abs/2110.00391
 labels:
   - online
   - packing

@@ -8,6 +8,6 @@ publications:
     month: 5
     day: 15
     name: arXiv
-    url: https://arxiv.org/pdf/2106.08396.pdf
+    url: https://arxiv.org/abs/2106.08396
 labels:
   - running time

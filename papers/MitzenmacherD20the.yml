@@ -5,7 +5,7 @@ publications:
     month: 4
     day: 23
     name: arXiv
-    url: https://arxiv.org/pdf/1905.12155.pdf
+    url: https://arxiv.org/abs/1905.12155
   - name: IEEE Trans. Parallel Distributed Syst.
     year: 2022
     url: https://doi.org/10.1109/TPDS.2022.3146195

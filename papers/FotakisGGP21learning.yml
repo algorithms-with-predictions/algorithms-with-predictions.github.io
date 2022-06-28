@@ -5,7 +5,7 @@ publications:
     month: 6
     day: 17
     name: arXiv
-    url: https://arxiv.org/pdf/2107.08277.pdf
+    url: https://arxiv.org/abs/2107.08277
 labels:
   - online
   - network design
