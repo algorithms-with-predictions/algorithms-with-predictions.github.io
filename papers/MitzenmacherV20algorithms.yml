@@ -10,5 +10,8 @@ publications:
     displayName: BWCA
     year: 2020
     url: https://doi.org/10.1017/9781108637435.037
+  - name: Commun. ACM
+    year: 2022
+    url: https://doi.org/10.1145/3528087
 labels:
   - survey
