@@ -8,4 +8,7 @@ publications:
     month: 5
     day: 23
     url: https://arxiv.org/abs/2206.11780
+  - name: COLT
+    year: 2022
+    url: https://proceedings.mlr.press/v178/christianson22a.html
 authors: Christianson, Handina, Wierman
