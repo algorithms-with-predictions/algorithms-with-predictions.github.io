@@ -8,4 +8,7 @@ publications:
     month: 5
     day: 24
     url: https://arxiv.org/abs/2206.12110
+  - name: ICML
+    year: 2022
+    url: https://proceedings.mlr.press/v162/lin22f.html
 authors: Lin, Luo, Woodruff

@@ -6,6 +6,9 @@ publications:
     day: 9
     name: arXiv
     url: https://arxiv.org/abs/2202.04262
+  - name: ICML
+    year: 2022
+    url: https://proceedings.mlr.press/v162/im22a.html
 labels:
   - online
   - caching/paging
