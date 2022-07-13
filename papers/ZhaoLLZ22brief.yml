@@ -1,0 +1,9 @@
+title: 'Brief Announcement: Towards a More Robust Algorithm for Flow Time Scheduling with Predictions'
+labels:
+  - online
+  - scheduling
+publications:
+  - name: SPAA
+    year: 2022
+    url: https://doi.org/10.1145/3490148.3538557
+authors: Zhao, Li, Li, Zomaya

@@ -6,6 +6,9 @@ publications:
     day: 21
     name: arXiv
     url: https://arxiv.org/abs/2202.10199
+  - name: SPAA
+    year: 2022
+    url: https://doi.org/10.1145/3490148.3538579
 labels:
   - online
   - scheduling
