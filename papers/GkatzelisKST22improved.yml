@@ -7,4 +7,7 @@ publications:
     month: 4
     day: 9
     url: https://arxiv.org/abs/2205.04252
+  - name: EC
+    year: 2022
+    url: https://doi.org/10.1145/3490486.3538296
 authors: Gkatzelis, Kollias, Sgouritsa, Tan
