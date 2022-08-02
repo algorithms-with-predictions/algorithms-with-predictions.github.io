@@ -11,3 +11,5 @@ publications:
     url: https://arxiv.org/abs/2106.08396
 labels:
   - running time
+  - sublinear algorithms
+  - sample complexity
