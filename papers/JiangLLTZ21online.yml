@@ -6,6 +6,9 @@ publications:
     day: 17
     name: arXiv
     url: https://arxiv.org/abs/2110.08840
+  - name: ICLR
+    year: 2022
+    url: https://openreview.net/forum?id=DSQHjibtgKR
 labels:
   - online
   - network design
