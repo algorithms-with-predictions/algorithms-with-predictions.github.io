@@ -163,6 +163,9 @@ const PaperList = ({ data }) => {
     ));
   };
 
+  const selTypeLabels = selLabels.filter((l) => TYPE_LABELS.includes(l));
+  const selNonTypeLabels = selLabels.filter((l) => !TYPE_LABELS.includes(l));
+
   // data preparation
   const filteredData = data
     .filter((p) =>
@@ -174,7 +177,10 @@ const PaperList = ({ data }) => {
     )
     .filter(
       (p) =>
-        selLabels.length === 0 || p.labels.some((l) => selLabels.includes(l))
+        (selTypeLabels.length === 0 ||
+          selTypeLabels.every((l) => p.labels.includes(l))) &&
+        (selNonTypeLabels.length === 0 ||
+          p.labels.some((l) => selNonTypeLabels.includes(l)))
     );
   const sortedData = filteredData.sort(function (p1, p2) {
     if (sort === SORT_YEAR_TOP_DOWN) {

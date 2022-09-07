@@ -38,11 +38,10 @@ async function updateFromArxiv(paper) {
       let year = date.getFullYear();
       let month = date.getMonth();
       let day = date.getDate();
-      let pdfurl =
-        hit.id
-          //.replace("abs", "pdf")
-          .replace(/v\d+/, "")
-          .replace("http", "https");// + ".pdf";
+      let pdfurl = hit.id
+        //.replace("abs", "pdf")
+        .replace(/v\d+/, "")
+        .replace("http", "https"); // + ".pdf";
 
       if (!paper.publications.some((pub) => pub.name === "arXiv")) {
         console.log("Added arXiv preprint to " + paper.title);
