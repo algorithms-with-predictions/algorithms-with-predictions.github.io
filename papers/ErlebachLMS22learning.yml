@@ -4,6 +4,9 @@ labels:
   - explorable uncertainty
   - network design
 publications:
+  - name: ESA
+    url: https://drops.dagstuhl.de/opus/volltexte/2022/16987/pdf/LIPIcs-ESA-2022-49.pdf
+    year: 2022
   - name: arXiv
     year: 2022
     month: 5
