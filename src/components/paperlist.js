@@ -35,15 +35,29 @@ const TitleText = styled("div")`
 `;
 
 function minDateOfPaper(paper) {
-  const dates = paper.publications.map(
+
+  const fullDates = paper.publications.filter((pub) => pub.month !== undefined).map(
     (pub) =>
       new Date(
         pub.year,
-        pub.month === undefined ? 0 : pub.month,
-        pub.day === undefined ? 0 : pub.day
+        pub.month,
+        pub.day,  
       )
   );
-  return new Date(Math.min(...dates));
+
+  if (fullDates.length > 0) {
+    return new Date(Math.min(...fullDates));
+  } else {
+    const dates = paper.publications.map(
+      (pub) =>
+        new Date(
+          pub.year,
+          pub.month === undefined ? 0 : pub.month,
+          pub.day === undefined ? 0 : pub.day   
+        )
+    );
+    return new Date(Math.min(...dates))
+  }
 }
 
 function stringCmp(a, b) {
