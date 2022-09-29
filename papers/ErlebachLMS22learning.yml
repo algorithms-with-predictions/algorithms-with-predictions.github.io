@@ -9,4 +9,7 @@ publications:
     month: 5
     day: 30
     url: https://arxiv.org/abs/2206.15201
+  - name: ESA
+    year: 2022
+    url: https://doi.org/10.4230/LIPIcs.ESA.2022.49
 authors: Erlebach, Lima, Megow, Schlöter
