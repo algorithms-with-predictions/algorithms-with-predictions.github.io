@@ -1,0 +1,11 @@
+title: Paging with Succinct Predictions
+labels:
+  - caching/paging
+  - online
+publications:
+  - name: arXiv
+    year: 2022
+    month: 9
+    day: 6
+    url: https://arxiv.org/abs/2210.02775
+authors: Antoniadis, Boyar, Eliáš, Favrholdt, Hoeksma, Larsen, Polak, Simon
