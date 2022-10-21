@@ -76,7 +76,7 @@ const SORT_YEAR_TOP_DOWN = "Newest first";
 const SORT_YEAR_BOTTOM_UP = "Oldest first";
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
-const TYPE_LABELS = ["data structure", "online", "running time", "AGT"];
+const TYPE_LABELS = ["data structure", "online", "running time", "AGT", "differential privacy"];
 const PRIOR_LABEL = "prior/related work";
 let SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL];
 
