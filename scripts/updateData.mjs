@@ -9,7 +9,7 @@ const papers = fs.readdirSync(paper_dir);
 
 async function updateFromArxiv(paper) {
   let info = await axios.get(
-    "http://export.arxiv.org/api/query?search_query=" +
+    "http://export.arxiv.org/api/query?max_results=30&search_query=" +
       paper.title.replace("-", " ").split(" ").join("+"),
     { timeout: 30000 }
   );
