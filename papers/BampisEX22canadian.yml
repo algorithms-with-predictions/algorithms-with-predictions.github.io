@@ -8,4 +8,7 @@ publications:
     month: 8
     day: 22
     url: https://arxiv.org/abs/2209.11100
+  - name: WAOA
+    year: 2022
+    url: https://doi.org/10.1007/978-3-031-18367-6_6
 authors: Bampis, Escoffier, Xefteris
