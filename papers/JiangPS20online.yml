@@ -9,6 +9,9 @@ publications:
     day: 16
     name: arXiv
     url: https://arxiv.org/abs/2006.09509
+  - name: ACM Trans. Algorithms
+    year: 2022
+    url: https://doi.org/10.1145/3548774
 labels:
   - online
   - caching/paging
