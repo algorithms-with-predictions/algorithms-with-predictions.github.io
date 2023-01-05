@@ -3,8 +3,8 @@ authors: Istrate, Bonchis
 publications:
   - name: arXiv
     year: 2022
-    month: 12 # optional
-    day: 19 # optional
+    month: 11 # optional
+    day: 18 # optional
     url: https://arxiv.org/pdf/2212.09521
 labels: 
   - AGT
