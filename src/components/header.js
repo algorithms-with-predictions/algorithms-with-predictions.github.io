@@ -12,7 +12,7 @@ const pages = [
 
 const Header = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="primary">
       <Toolbar disableGutters>
         <Typography
           variant="h5"

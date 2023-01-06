@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import "@fontsource/roboto/400.css";
 import { Container } from "@mui/material";
+import { graphql } from "gatsby";
+import "@fontsource/roboto/400.css";
+import { ThemeProvider } from "@mui/material/styles";
+import Layout from "../components/layout";
+import theme from "../theme";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
@@ -11,11 +13,13 @@ export default function Template({ data }) {
   return (
     <>
       <title>ALPS - {frontmatter.title}</title>
-      <Layout>
-        <Container>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-        </Container>
-      </Layout>
+      <ThemeProvider theme={theme}>
+        <Layout>
+          <Container>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </Container>
+        </Layout>
+      </ThemeProvider>
     </>
   );
 }

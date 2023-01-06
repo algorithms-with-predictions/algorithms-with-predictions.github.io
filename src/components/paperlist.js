@@ -35,15 +35,9 @@ const TitleText = styled("div")`
 `;
 
 function minDateOfPaper(paper) {
-
-  const fullDates = paper.publications.filter((pub) => pub.month !== undefined).map(
-    (pub) =>
-      new Date(
-        pub.year,
-        pub.month,
-        pub.day,  
-      )
-  );
+  const fullDates = paper.publications
+    .filter((pub) => pub.month !== undefined)
+    .map((pub) => new Date(pub.year, pub.month, pub.day));
 
   if (fullDates.length > 0) {
     return new Date(Math.min(...fullDates));
@@ -53,10 +47,10 @@ function minDateOfPaper(paper) {
         new Date(
           pub.year,
           pub.month === undefined ? 0 : pub.month,
-          pub.day === undefined ? 0 : pub.day   
+          pub.day === undefined ? 0 : pub.day
         )
     );
-    return new Date(Math.min(...dates))
+    return new Date(Math.min(...dates));
   }
 }
 
@@ -76,7 +70,13 @@ const SORT_YEAR_TOP_DOWN = "Newest first";
 const SORT_YEAR_BOTTOM_UP = "Oldest first";
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
-const TYPE_LABELS = ["data structure", "online", "running time", "AGT", "differential privacy"];
+const TYPE_LABELS = [
+  "data structure",
+  "online",
+  "running time",
+  "AGT",
+  "differential privacy",
+];
 const PRIOR_LABEL = "prior/related work";
 let SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL];
 
@@ -100,11 +100,11 @@ const PaperList = ({ data }) => {
   // helper functions
   const labelColor = (label) => {
     if (TYPE_LABELS.includes(label)) {
-      return "success";
+      return "typeLabels";
     } else if (label === PRIOR_LABEL) {
       return "default";
     } else {
-      return "primary";
+      return "labels";
     }
   };
 
@@ -144,7 +144,7 @@ const PaperList = ({ data }) => {
           label={text}
           key={text}
           variant={"arXiv" === name ? "outlined" : "filled"}
-          color="secondary"
+          color="pubLabels"
           onClick={() => ("url" in pub ? openInNewTab(pub.url) : {})}
         />
       );
