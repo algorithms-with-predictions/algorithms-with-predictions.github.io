@@ -3,9 +3,9 @@ authors: Istrate, Bonchis
 publications:
   - name: arXiv
     year: 2022
-    month: 11 # optional
-    day: 18 # optional
-    url: https://arxiv.org/pdf/2212.09521
-labels: 
+    month: 11
+    day: 19
+    url: https://arxiv.org/abs/2212.09521
+labels:
   - AGT
   - mechanism design
