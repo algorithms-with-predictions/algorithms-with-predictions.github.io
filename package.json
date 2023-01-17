@@ -8,9 +8,9 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
+    "develop": "node scripts/composeData.js && gatsby develop",
+    "start": "node scripts/composeData.js && gatsby develop",
+    "build": "node scripts/composeData.js && gatsby build",
     "serve": "gatsby serve",
     "format": "prettier --write src/**/*.js && prettier --write scripts/*js",
     "clean": "gatsby clean",

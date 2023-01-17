@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 const pages = [
   { name: "Paper List", href: "/" },
   { name: "Further Material", href: "/material" },
+  { name: "How to Contribute", href: "/contribute" },
   { name: "About", href: "/about" },
 ];
 

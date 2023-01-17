@@ -3,8 +3,6 @@ title: "Further Material"
 slug: "/material"
 ---
 
-# Material
-
 ## Where to start?
 
 ## Lecture Notes

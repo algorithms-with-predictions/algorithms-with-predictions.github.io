@@ -1,6 +1,8 @@
-# Website for Algorithms with Predictions (ALPS)
+---
+title: "How to Contribute"
+slug: "/contribute"
+---
 
-The idea of this project is to maintain an overview over the current state of research on Algorithms with Predictions and collect links to further relevant material. This should especially help new researchers in this field to orient faster, but we also try to keep track over and cluster the large amount of results and publications in this field.
 
 ## How to Contribute in General
 
