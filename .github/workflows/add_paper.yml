@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v3.6.0
         with:
           node-version: 18
-      - name: Create new file
+      - name: Download node packages
         shell: bash
         run: |
           yarn
@@ -40,5 +40,12 @@ jobs:
       - name: Fetch 
         shell: bash
         run: |
-          node scrips/updateData.mjs
+          node scripts/updateData.mjs
+      - name: Add paper and commit
+        # You may pin to the exact commit or the version.
+        # uses: EndBug/add-and-commit@61a88be553afe4206585b31aa72387c64295d08b
+        uses: EndBug/add-and-commit@v9.1.1
+        with:
+          add: papers/
+          message: "Add paper via workflow"
           
