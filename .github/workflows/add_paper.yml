@@ -17,8 +17,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3    
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.6.0
+        with:
+          node-version: 18
       - name: Create new file
         shell: bash
         env:
@@ -28,6 +31,7 @@ jobs:
         run: |
           cd papers/
           echo 'title: $title \nlabels: [$labels]' >> $filename.yml
+          cat $filename.yml
           cd ..
       - name: Fetch 
         shell: bash
