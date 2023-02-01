@@ -24,6 +24,10 @@ jobs:
           node-version: 18
       - name: Create new file
         shell: bash
+        run: |
+          yarn
+      - name: Create new file
+        shell: bash
         env:
           title: ${{ inputs.title}}
           filename: ${{ inputs.filename}}
