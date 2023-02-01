@@ -1,18 +1,36 @@
+name: Add paper
+
 on:
   workflow_dispatch:
     inputs:
-      custom_param:
-        description: Custom input parameter
+      title:
+        description: paper title
+        required: true
+      filename:
+        description: filename
+        required: true
+      labels:
+        description: labels
         required: true
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        name: Print the parameter value
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.6.0
+      - name: Create new file
+        shell: bash
         env:
-          custom_param: ${{ inputs.custom_param }}
+          title: ${{ inputs.title}}
+          filename: ${{ inputs.filename}}
+          labels: ${{ inputs.labels}}
         run: |
-          echo 'About to echo the parameter value'
-          echo "$custom_param"
+          cd papers/
+          echo 'title: $title \nlabels: [$labels]' >> $filename.yml
+          cd ..
+      - name: Fetch 
+        shell: bash
+        run: |
+          node scrips/updateData.mjs
+          
