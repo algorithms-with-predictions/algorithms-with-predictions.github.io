@@ -1,0 +1,18 @@
+on:
+  workflow_dispatch:
+    inputs:
+      custom_param:
+        description: Custom input parameter
+        required: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        name: Print the parameter value
+        env:
+          custom_param: ${{ inputs.custom_param }}
+        run: |
+          echo 'About to echo the parameter value'
+          echo "$custom_param"
