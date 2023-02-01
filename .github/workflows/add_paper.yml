@@ -34,7 +34,7 @@ jobs:
           labels: ${{ inputs.labels}}
         run: |
           cd papers/
-          echo "title: $title \r\nlabels: [ $labels ]" >> $filename.yml
+          echo -e "title: $title \nlabels: [ $labels ]" >> $filename.yml
           cat $filename.yml
           cd ..
       - name: Fetch 
