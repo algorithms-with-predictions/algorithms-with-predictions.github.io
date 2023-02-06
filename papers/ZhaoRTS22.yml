@@ -1,0 +1,9 @@
+title: 'Real-Time Scheduling with Predictions'
+labels:
+  - online
+  - scheduling
+publications:
+  - name: IEEE
+    year: 2022
+    url: https://doi.org/10.1109/RTSS55097.2022.00036
+authors: Zhao, Li, Zomaya
