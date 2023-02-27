@@ -1,0 +1,11 @@
+authors: Berg, Boyar, Favrholdt, Larsen
+title: Online Minimum Spanning Trees with Weight Predictions
+publications:
+  - year: 2023
+    month: 2
+    day: 23
+    name: arXiv
+    url: https://arxiv.org/abs/2302.12029
+labels:
+  - online
+  - minimum spanning tree
