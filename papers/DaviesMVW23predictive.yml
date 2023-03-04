@@ -1,0 +1,11 @@
+title: Predictive Flows for Faster Ford-Fulkerson
+labels:
+  - running time
+  - max flow
+publications:
+  - name: arXiv
+    year: 2023
+    month: 2
+    day: 1
+    url: https://arxiv.org/abs/2303.00837
+authors: Davies, Moseley, Vassilvitskii, Wang
