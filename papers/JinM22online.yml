@@ -8,4 +8,7 @@ publications:
     month: 5
     day: 22
     url: https://arxiv.org/abs/2206.11397
+  - name: NeurIPS
+    year: 2022
+    url: http://papers.nips.cc/paper_files/paper/2022/hash/5d68a3f05ee2aae6a0fb2d94959082a0-Abstract-Conference.html
 authors: Jin, Ma

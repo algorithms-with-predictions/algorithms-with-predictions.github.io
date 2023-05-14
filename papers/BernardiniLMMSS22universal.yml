@@ -9,4 +9,7 @@ publications:
     day: 25
     name: arXiv
     url: https://arxiv.org/abs/2205.12850
+  - name: NeurIPS
+    year: 2022
+    url: http://papers.nips.cc/paper_files/paper/2022/hash/15212bd2265c4a3ab0dbc1b1982c1b69-Abstract-Conference.html
 authors: Bernardini, Lindermayr, Marchetti-Spaccamela, Megow, Stougie, Sweering

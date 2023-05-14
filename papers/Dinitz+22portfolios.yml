@@ -11,4 +11,7 @@ publications:
     month: 9
     day: 22
     url: https://arxiv.org/abs/2210.12438
+  - name: NeurIPS
+    year: 2022
+    url: http://papers.nips.cc/paper_files/paper/2022/hash/7f9220f90cc85b0da693643add6618e6-Abstract-Conference.html
 authors: Dinitz, Im, Lavastida, Moseley, Vassilvitskii
