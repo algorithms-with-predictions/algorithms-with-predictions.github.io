@@ -1,0 +1,14 @@
+authors: Cohen, Panigrahi
+title: A General Framework for Learning-Augmented Online Allocation
+publications:
+  - year: 2023
+    month: 5
+    day: 30
+    name: arXiv
+    url: https://arxiv.org/abs/2305.18861
+  - name: ICALP
+    year: 2023
+labels:
+  - online
+  - scheduling
+  - allocation
