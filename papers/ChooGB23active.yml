@@ -1,0 +1,9 @@
+authors: Choo, Gouleakis, Bhattacharyya
+title: Active causal structure learning with advice
+publications:
+  - name: arXiv
+    url: https://arxiv.org/abs/2305.19588
+    year: 2023
+labels:
+  - causality
+  - causal structure learning
