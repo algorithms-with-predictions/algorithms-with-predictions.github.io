@@ -9,6 +9,9 @@ publications:
     day: 25
     name: arXiv
     url: https://arxiv.org/abs/2011.12439
+  - name: J. Artif. Intell. Res.
+    year: 2023
+    url: https://doi.org/10.1613/jair.1.14117
 labels:
   - online
   - scheduling

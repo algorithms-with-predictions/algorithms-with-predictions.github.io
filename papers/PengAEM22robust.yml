@@ -4,6 +4,9 @@ publications:
   - name: SODA
     url: https://epubs.siam.org/doi/10.1137/1.9781611977073.2
     year: 2022
+  - name: J. Mach. Learn. Res.
+    year: 2023
+    url: http://jmlr.org/papers/v24/22-0629.html
 labels:
   - online
   - scheduling
