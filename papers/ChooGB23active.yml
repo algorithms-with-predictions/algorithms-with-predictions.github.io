@@ -4,6 +4,8 @@ publications:
   - name: arXiv
     url: https://arxiv.org/abs/2305.19588
     year: 2023
+    month: 4
+    day: 31
 labels:
   - causality
   - causal structure learning
