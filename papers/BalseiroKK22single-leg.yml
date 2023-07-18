@@ -6,4 +6,7 @@ publications:
     day: 18
     name: arXiv
     url: https://arxiv.org/abs/2202.10939
+  - name: EC
+    year: 2023
+    url: https://doi.org/10.1145/3580507.3597704
 labels: []
