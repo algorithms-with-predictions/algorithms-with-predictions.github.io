@@ -1,0 +1,9 @@
+title: Online Algorithms with Costly Predictions
+labels:
+  - online
+  - rent-or-buy
+publications:
+  - name: AISTATS
+    year: 2023
+    url: https://proceedings.mlr.press/v206/drygala23a.html
+authors: Drygala, Nagarajan, Svensson

@@ -1,0 +1,11 @@
+title: 'LearnedSort as a learning-augmented SampleSort: Analysis and Parallelization'
+labels:
+  - running time
+  - sorting
+publications:
+  - name: arXiv
+    year: 2023
+    month: 6
+    day: 17
+    url: https://arxiv.org/abs/2307.08637
+authors: Carvalho, Lawrence
