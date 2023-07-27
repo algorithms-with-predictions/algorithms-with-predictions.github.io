@@ -1,0 +1,11 @@
+title: Speeding Up Bellman Ford via Minimum Violation Permutations
+authors: Lattanzi, Svensson, Vassilvitskii
+labels:
+  - running time
+  - graph algorithms
+  - shortest path
+publications:
+  - name: ICML
+    year: 2023
+    url: https://proceedings.mlr.press/v202/lattanzi23a.html
+
