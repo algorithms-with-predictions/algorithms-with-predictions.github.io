@@ -8,4 +8,7 @@ publications:
     month: 5
     day: 1
     url: https://arxiv.org/abs/2206.00655
+  - name: AAAI
+    year: 2023
+    url: https://ojs.aaai.org/index.php/AAAI/article/view/26414
 authors: Gouleakis, Lakis, Shahkarami

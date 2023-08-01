@@ -1,4 +1,11 @@
-title: "On the Complexity of Algorithms with Predictions for Dynamic Graph Problems"
-labels: 
+title: On the Complexity of Algorithms with Predictions for Dynamic Graph Problems
+labels:
   - data structure
   - running time
+publications:
+  - name: arXiv
+    year: 2023
+    month: 6
+    day: 31
+    url: https://arxiv.org/abs/2307.16771
+authors: Henzinger, Lincoln, Saha, Seybold, Ye
