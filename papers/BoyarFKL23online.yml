@@ -9,4 +9,7 @@ publications:
     month: 1
     day: 27
     url: https://arxiv.org/abs/2302.13701
+  - name: WADS
+    year: 2023
+    url: https://doi.org/10.1007/978-3-031-38906-1_14
 authors: Boyar, Favrholdt, Kamali, Larsen
