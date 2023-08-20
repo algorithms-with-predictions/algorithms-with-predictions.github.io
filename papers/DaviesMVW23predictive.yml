@@ -8,4 +8,7 @@ publications:
     month: 2
     day: 1
     url: https://arxiv.org/abs/2303.00837
+  - name: ICML
+    year: 2023
+    url: https://proceedings.mlr.press/v202/davies23b.html
 authors: Davies, Moseley, Vassilvitskii, Wang

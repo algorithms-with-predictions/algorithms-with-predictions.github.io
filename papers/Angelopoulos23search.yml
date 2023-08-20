@@ -1,0 +1,9 @@
+title: Competitive Search in the Line and the Star with Predictions
+authors: Angelopoulos
+publications:
+  - name: MFCS
+    url: https://drops.dagstuhl.de/opus/volltexte/2023/18546/pdf/LIPIcs-MFCS-2023-12.pdf
+    year: 2023
+labels:
+  - online
+  - search

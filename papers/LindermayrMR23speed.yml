@@ -9,3 +9,6 @@ publications:
     month: 1
     day: 2
     url: https://arxiv.org/abs/2302.00985
+  - name: ICML
+    year: 2023
+    url: https://proceedings.mlr.press/v202/lindermayr23a.html
