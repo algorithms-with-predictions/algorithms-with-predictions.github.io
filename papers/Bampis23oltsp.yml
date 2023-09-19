@@ -8,4 +8,7 @@ publications:
     month: 4
     day: 3
     url: https://arxiv.org/abs/2305.02169
+  - name: ESA
+    year: 2023
+    url: https://doi.org/10.4230/LIPIcs.ESA.2023.12
 authors: Bampis, Escoffier, Gouleakis, Hahn, Lakis, Shahkarami, Xefteris
