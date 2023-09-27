@@ -8,4 +8,7 @@ publications:
     month: 6
     day: 17
     url: https://arxiv.org/abs/2307.08637
+  - name: SSDBM
+    year: 2023
+    url: https://doi.org/10.1145/3603719.3603731
 authors: Carvalho, Lawrence

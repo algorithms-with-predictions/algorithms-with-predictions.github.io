@@ -1,0 +1,11 @@
+title: 'Online State Exploration: Competitive Worst Case and Learning-Augmented Algorithms'
+labels:
+  - online
+  - state exploration
+  - bidding
+  - search
+publications:
+  - name: ECML/PKDD
+    year: 2023
+    url: https://doi.org/10.1007/978-3-031-43421-1_20
+authors: Im, Moseley, Xu, Zhang
