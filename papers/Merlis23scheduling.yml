@@ -1,9 +1,14 @@
-authors: Merlis, Richard, Sentenac,  Odic, Molina, Perchet 
+authors: Merlis, Richard, Sentenac,  Odic, Molina, Perchet
 title: On Preemption and Learning in Stochastic Scheduling
 publications:
   - name: ICML
     url: https://proceedings.mlr.press/v202/merlis23a/merlis23a.pdf
     year: 2023
+  - name: arXiv
+    year: 2022
+    month: 4
+    day: 31
+    url: https://arxiv.org/abs/2205.15695
 labels:
   - scheduling
   - learning
