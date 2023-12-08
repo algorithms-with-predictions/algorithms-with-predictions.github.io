@@ -9,6 +9,9 @@ publications:
     day: 31
     name: arXiv
     url: https://arxiv.org/abs/2008.13729
+  - name: Inf. Comput.
+    year: 2023
+    url: https://doi.org/10.1016/j.ic.2023.105091
 labels:
   - online
   - search
