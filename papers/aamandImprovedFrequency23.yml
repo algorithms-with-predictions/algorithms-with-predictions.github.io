@@ -1,0 +1,12 @@
+authors: Aamand, Chen, Nguyen, Silwal, Vakilian 
+title: 'Improved Frequency Estimation Algorithms with and without Predictions'
+publications:
+  - name: NeurIPS
+    url: https://arxiv.org/abs/2312.07535
+    year: 2023
+labels:
+  - frequency estimation
+  - streaming algorithms
+  - count sketch
+  - sublinear algorithms
+  - parsimonious
