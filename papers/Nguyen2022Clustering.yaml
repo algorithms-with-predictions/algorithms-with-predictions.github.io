@@ -6,7 +6,7 @@ publications:
     year: 2023
   - year: 2022
     month: 9
-    day: 31
+    day: 30
     name: arXiv
     url: https://arxiv.org/abs/2210.17028
 labels:
