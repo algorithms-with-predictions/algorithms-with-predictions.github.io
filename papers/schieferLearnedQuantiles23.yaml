@@ -4,6 +4,11 @@ publications:
   - name: ACDA
     url: https://arxiv.org/abs/2304.07652
     year: 2023
+  - name: arXiv
+    year: 2023
+    month: 3
+    day: 15
+    url: https://arxiv.org/abs/2304.07652
 labels:
   - streaming algorithms
   - quantiles

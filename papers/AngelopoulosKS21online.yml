@@ -9,6 +9,9 @@ publications:
   - name: IJCAI
     year: 2022
     url: https://doi.org/10.24963/ijcai.2022/635
+  - name: J. Artif. Intell. Res.
+    year: 2023
+    url: https://doi.org/10.1613/jair.1.14820
 labels:
   - online
   - packing
