@@ -1,0 +1,13 @@
+title: "Credence: Augmenting Datacenter Switch Buffer Sharing with ML Predictions"
+authors: Addanki, Pacut, Schmid
+publications:
+  - name: NSDI
+    year: 2024
+  - name: arXiv
+    year: 2024
+    url: https://arxiv.org/pdf/2401.02801.pdf
+labels:
+  - online
+  - queuing
+  - buffer sharing
+  - communication networks
