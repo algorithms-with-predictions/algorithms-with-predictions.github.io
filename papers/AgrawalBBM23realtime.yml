@@ -1,0 +1,9 @@
+title: The Safe and Effective Use of Low-Assurance Predictions in Safety-Critical Systems
+labels:
+  - scheduling
+  - real-time
+publications:
+  - name: ECRTS
+    year: 2023
+    url: https://doi.org/10.4230/LIPIcs.ECRTS.2023.3
+authors: Agrawal, Baruah, Bender, Marchetti-Spaccamela
