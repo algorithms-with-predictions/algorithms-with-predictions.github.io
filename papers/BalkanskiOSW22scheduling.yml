@@ -6,6 +6,9 @@ publications:
     day: 3
     name: arXiv
     url: https://arxiv.org/abs/2205.01247
+  - name: WAOA
+    year: 2023
+    url: https://doi.org/10.1007/978-3-031-49815-2_6
 labels:
   - online
   - scheduling
