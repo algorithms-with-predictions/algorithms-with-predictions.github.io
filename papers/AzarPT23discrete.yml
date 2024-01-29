@@ -1,0 +1,10 @@
+title: Discrete-Smoothness in Online Algorithms with Predictions
+labels:
+  - online
+  - set cover
+  - covering problems
+publications:
+  - name: NeurIPS
+    year: 2023
+    url: https://openreview.net/forum?id=DDmH3H78iJ
+authors: Azar, Panigrahi, Touitou
