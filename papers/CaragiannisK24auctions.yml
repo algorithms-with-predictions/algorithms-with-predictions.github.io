@@ -1,0 +1,10 @@
+authors: Caragiannis, Kalantzis
+title: Randomized learning-augmented auctions with revenue guarantees
+publications:
+  - year: 2024
+    month: 1
+    day: 24
+    name: arXiv
+    url: https://arxiv.org/abs/2401.13384
+labels:
+  - auctions
