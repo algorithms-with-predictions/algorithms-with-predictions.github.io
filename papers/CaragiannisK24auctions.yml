@@ -7,4 +7,6 @@ publications:
     name: arXiv
     url: https://arxiv.org/abs/2401.13384
 labels:
+  - AGT
+  - mechanism design
   - auctions
