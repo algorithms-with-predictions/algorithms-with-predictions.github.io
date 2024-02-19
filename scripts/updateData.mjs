@@ -9,9 +9,9 @@ const papers = fs.readdirSync(paper_dir);
 
 async function updateFromArxiv(paper) {
   let info = await axios.get(
-    "http://export.arxiv.org/api/query?max_results=10&search_query=" +
+    "http://export.arxiv.org/api/query?max_results=30&search_query=" +
       paper.title.replace("-", " ").split(" ").join("+"),
-    { timeout: 30000 }
+    { timeout: 40000 }
   );
   let data = info.data;
   let parser = new XMLParser();
@@ -72,7 +72,7 @@ async function updateFromDBLP(paper) {
   let info = await axios.get(
     "https://dblp.org/search/publ/api?h=30&q=" +
       paper.title.replace("-", " ").split(" ").join("+"),
-    { timeout: 30000 }
+    { timeout: 40000 }
   );
 
   let data = info.data;
