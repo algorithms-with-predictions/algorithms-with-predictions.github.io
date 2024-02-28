@@ -70,9 +70,9 @@ async function updateFromArxiv(paper) {
 
 async function updateFromDBLP(paper) {
   let info = await axios.get(
-    "https://dblp.org/search/publ/api?h=30&q=" +
+    "https://dblp.org/search/publ/api?h=20&q=" +
       paper.title.replace("-", " ").split(" ").join("+"),
-    { timeout: 40000 }
+    { timeout: 100000 }
   );
 
   let data = info.data;
