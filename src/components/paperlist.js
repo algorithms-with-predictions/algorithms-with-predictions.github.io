@@ -74,6 +74,7 @@ const TYPE_LABELS = [
   "data structure",
   "online",
   "running time",
+  "approximation",
   "AGT",
   "differential privacy",
 ];

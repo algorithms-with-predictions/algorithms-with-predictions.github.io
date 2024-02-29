@@ -2,4 +2,10 @@ title: 'Online Search with Predictions: Pareto-optimal Algorithm and its Applica
 labels:
   - online
   - search
-publications: []
+publications:
+  - name: arXiv
+    year: 2022
+    month: 10
+    day: 12
+    url: https://arxiv.org/abs/2211.06567
+authors: Lee, Sun, Hajiesmaili, Lui
