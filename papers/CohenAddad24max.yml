@@ -2,4 +2,10 @@ title: Max-Cut with ε-Accurate Predictions
 labels:
   - approximation
   - max-cut
-publications: []
+publications:
+  - name: arXiv
+    year: 2024
+    month: 1
+    day: 27
+    url: https://arxiv.org/abs/2402.18263
+authors: Cohen-Addad, d'Orsi, Gupta, Lee, Panigrahi
