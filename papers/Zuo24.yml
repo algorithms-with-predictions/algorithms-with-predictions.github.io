@@ -1,6 +1,11 @@
 title: Cost-Driven Data Replication with Predictions
-
 labels:
   - online
   - data replication
-publications: []
+publications:
+  - name: arXiv
+    year: 2024
+    month: 3
+    day: 25
+    url: https://arxiv.org/abs/2404.16489
+authors: Zuo, Tang, Lee
