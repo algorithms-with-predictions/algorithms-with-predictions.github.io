@@ -11,6 +11,6 @@ publications:
     day: 5
 labels:
   - online
-  - queuing
+  - queueing
   - buffer sharing
   - communication networks
