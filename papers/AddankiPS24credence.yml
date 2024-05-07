@@ -3,6 +3,7 @@ authors: Addanki, Pacut, Schmid
 publications:
   - name: NSDI
     year: 2024
+    url: https://www.usenix.org/conference/nsdi24/presentation/addanki-credence
   - name: arXiv
     year: 2024
     url: https://arxiv.org/abs/2401.02801
@@ -10,6 +11,6 @@ publications:
     day: 5
 labels:
   - online
-  - queuing
+  - queueing
   - buffer sharing
   - communication networks
