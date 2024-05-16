@@ -1,0 +1,12 @@
+title: Incremental Topological Ordering and Cycle Detection with Predictions
+labels:
+  - data structure
+  - graph algorithms
+  - running time
+publications:
+  - name: arXiv
+    year: 2024
+    month: 1
+    day: 16
+    url: https://arxiv.org/abs/2402.11028
+authors: McCauley, Moseley, Niaparast, Singh
