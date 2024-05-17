@@ -3,4 +3,7 @@ authors: Hajiesmaili
 labels:
   - online
   - knapsack
-publications: []
+publications:
+  - name: SIGMETRICS Perform. Evaluation Rev.
+    year: 2023
+    url: https://doi.org/10.1145/3626570.3626590

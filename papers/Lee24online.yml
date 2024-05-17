@@ -8,4 +8,7 @@ publications:
     month: 10
     day: 12
     url: https://arxiv.org/abs/2211.06567
+  - name: e-Energy
+    year: 2024
+    url: https://doi.org/10.1145/3632775.3639590
 authors: Lee, Sun, Hajiesmaili, Lui

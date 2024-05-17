@@ -3,4 +3,7 @@ authors: Gehnen, Lotze, Rossmanith
 labels:
   - online
   - knapsack
-publications: []
+publications:
+  - name: STACS
+    year: 2024
+    url: https://doi.org/10.4230/LIPIcs.STACS.2024.37
