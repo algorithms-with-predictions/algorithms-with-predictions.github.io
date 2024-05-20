@@ -1,0 +1,12 @@
+title: Online Lead Time Quotation with Predictions
+authors: Huo, Tianming; Cheung, Wang Chi
+publications:
+  - name: SSRN
+    year: 2024
+    month: 5 # optional
+    day: 15 # optional
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4828469
+labels: 
+  - online
+  - lead time quotation
+  - competitive analysis
