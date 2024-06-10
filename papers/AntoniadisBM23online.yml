@@ -8,4 +8,7 @@ publications:
     month: 11
     day: 1
     url: https://arxiv.org/abs/2312.00601
+  - name: ISCO
+    year: 2024
+    url: https://doi.org/10.1007/978-3-031-60924-4_22
 authors: Antoniadis, Broersma, Meng

@@ -2,7 +2,7 @@ title: Warm-starting Push-Relabel
 labels:
   - running time
   - max flow
-publications: 
+publications:
   - name: arXiv
     year: 2024
     month: 4
