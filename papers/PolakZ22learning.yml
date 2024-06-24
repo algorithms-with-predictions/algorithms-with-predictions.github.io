@@ -9,3 +9,6 @@ publications:
     month: 6
     day: 26
     url: https://arxiv.org/abs/2207.12911
+  - name: IPL
+    year: 2024
+    url: https://doi.org/10.1016/j.ipl.2024.106487
