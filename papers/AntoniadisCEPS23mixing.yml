@@ -9,4 +9,7 @@ publications:
     month: 3
     day: 4
     url: https://arxiv.org/abs/2304.01781
+  - name: ICML
+    year: 2023
+    url: https://proceedings.mlr.press/v202/antoniadis23b.html
 authors: Antoniadis, Coester, Eliáš, Polak, Simon
