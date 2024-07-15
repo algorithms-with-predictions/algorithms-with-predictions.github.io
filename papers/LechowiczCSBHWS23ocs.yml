@@ -1,0 +1,15 @@
+authors: Lechowicz, Christianson, Sun, Bashir, Hajiesmaili, Wierman, Shenoy
+title: 'Online Conversion with Switching Costs: Robust and Learning-Augmented Algorithms'
+publications:
+  - year: 2023
+    month: 9
+    day: 31
+    name: arXiv
+    url: https://arxiv.org/abs/2310.20598
+  - name: SIGMETRICS/Performance
+    year: 2024
+    url: https://doi.org/10.1145/3652963.3655074
+labels:
+  - online
+  - search
+  - convex optimization

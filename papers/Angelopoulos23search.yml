@@ -4,6 +4,11 @@ publications:
   - name: MFCS
     url: https://drops.dagstuhl.de/opus/volltexte/2023/18546/pdf/LIPIcs-MFCS-2023-12.pdf
     year: 2023
+  - name: arXiv
+    year: 2023
+    month: 11
+    day: 29
+    url: https://arxiv.org/abs/2312.17539
 labels:
   - online
   - search

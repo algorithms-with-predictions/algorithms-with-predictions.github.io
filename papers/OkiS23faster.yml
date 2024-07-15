@@ -7,4 +7,7 @@ publications:
     month: 5
     day: 9
     url: https://arxiv.org/abs/2306.05865
+  - name: NeurIPS
+    year: 2023
+    url: http://papers.nips.cc/paper_files/paper/2023/hash/d84c0dd9b1bfeee361f3268dcaebf849-Abstract-Conference.html
 authors: Oki, Sakaue

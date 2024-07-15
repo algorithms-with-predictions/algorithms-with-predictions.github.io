@@ -9,4 +9,7 @@ publications:
     month: 6
     day: 19
     url: https://arxiv.org/abs/2307.09961
+  - name: SODA
+    year: 2024
+    url: https://doi.org/10.1137/1.9781611977912.126
 authors: Brand, Forster, Nazari, Polak

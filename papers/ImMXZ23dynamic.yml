@@ -8,4 +8,7 @@ publications:
     month: 4
     day: 25
     url: https://arxiv.org/abs/2305.18227
+  - name: INFOCOM
+    year: 2023
+    url: https://doi.org/10.1109/INFOCOM53939.2023.10228882
 authors: Im, Moseley, Xu, Zhang

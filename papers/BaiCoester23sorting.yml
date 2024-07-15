@@ -1,0 +1,14 @@
+title: Sorting with Predictions
+labels:
+  - running time
+  - sorting
+publications:
+  - name: arXiv
+    year: 2023
+    month: 10
+    day: 1
+    url: https://arxiv.org/abs/2311.00749
+  - name: NeurIPS
+    year: 2023
+    url: https://openreview.net/forum?id=Qv7rWR9JWa
+authors: Bai, Coester

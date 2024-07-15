@@ -9,9 +9,9 @@ const papers = fs.readdirSync(paper_dir);
 
 async function updateFromArxiv(paper) {
   let info = await axios.get(
-    "http://export.arxiv.org/api/query?max_results=10&search_query=" +
+    "http://export.arxiv.org/api/query?max_results=30&search_query=" +
       paper.title.replace("-", " ").split(" ").join("+"),
-    { timeout: 30000 }
+    { timeout: 40000 }
   );
   let data = info.data;
   let parser = new XMLParser();
@@ -70,9 +70,9 @@ async function updateFromArxiv(paper) {
 
 async function updateFromDBLP(paper) {
   let info = await axios.get(
-    "https://dblp.org/search/publ/api?h=30&q=" +
+    "https://dblp.org/search/publ/api?h=20&q=" +
       paper.title.replace("-", " ").split(" ").join("+"),
-    { timeout: 30000 }
+    { timeout: 5000 }
   );
 
   let data = info.data;
@@ -118,11 +118,45 @@ async function updateFromDBLP(paper) {
   });
 }
 
-let updated = await Promise.all(
-  papers.map(async (file) => {
+// async function update_async() {
+//   let updated = await Promise.all(
+//     papers.map(async (file) => {
+//       let paper = yaml.load(
+//         fs.readFileSync(paper_dir + "/" + file, { encoding: "utf-8" })
+//       );
+
+//       if (!("publications" in paper)) {
+//         paper.publications = [];
+//       }
+
+//       try {
+//         await updateFromArxiv(paper);
+//       } catch (error) {
+//         console.log(
+//           "Failed to fetch data from arXiv for the paper: " + paper.title
+//         );
+//       }
+//       try {
+//         await updateFromDBLP(paper);
+//       } catch (error) {
+//         console.log(
+//           "Failed to fetch data from DBLP for the paper: " + paper.title
+//         );
+//       }
+//       return [file, paper];
+//     })
+//   );
+//   return updated;
+// }
+
+async function update_sync() {
+  let updated = [];
+  for (let i = 0; i < papers.length; i++) {
+    let file = papers[i];
     let paper = yaml.load(
       fs.readFileSync(paper_dir + "/" + file, { encoding: "utf-8" })
     );
+    console.log("Update " + paper.title);
 
     if (!("publications" in paper)) {
       paper.publications = [];
@@ -142,9 +176,15 @@ let updated = await Promise.all(
         "Failed to fetch data from DBLP for the paper: " + paper.title
       );
     }
-    return [file, paper];
-  })
-);
+
+    await new Promise(resolve => setTimeout(resolve, 10000))
+    updated.push([file, paper]);
+  }
+
+  return updated;
+}
+
+let updated = await update_sync();
 
 updated.forEach(([file, paper]) =>
   fs.writeFileSync("papers/" + file, yaml.dump(paper, { lineWidth: -1 }))

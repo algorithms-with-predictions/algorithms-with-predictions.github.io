@@ -4,6 +4,9 @@ publications:
   - name: arXiv
     url: https://arxiv.org/pdf/2101.12160.pdf
     year: 2021
+  - name: Math. Oper. Res.
+    year: 2024
+    url: https://doi.org/10.1287/moor.2023.1364
 labels:
   - online
   - scheduling

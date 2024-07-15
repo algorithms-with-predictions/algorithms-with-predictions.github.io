@@ -1,0 +1,14 @@
+title: Energy-Efficient Scheduling with Predictions
+labels:
+  - online
+  - scheduling
+publications:
+  - name: arXiv
+    year: 2024
+    month: 1
+    day: 27
+    url: https://arxiv.org/abs/2402.17143
+  - name: NeurIPS
+    year: 2023
+    url: http://papers.nips.cc/paper_files/paper/2023/hash/f99bb39502f09c4825e89760b4e1ad04-Abstract-Conference.html
+authors: Balkanski, Perivier, Stein, Wei

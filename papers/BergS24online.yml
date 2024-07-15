@@ -1,0 +1,14 @@
+title: Online Bin Covering with Frequency Predictions
+labels:
+  - online
+  - covering problems
+publications:
+  - name: arXiv
+    year: 2024
+    month: 0
+    day: 26
+    url: https://arxiv.org/abs/2401.14881
+  - name: SWAT
+    year: 2024
+    url: https://doi.org/10.4230/LIPIcs.SWAT.2024.10
+authors: Berg, Kamali

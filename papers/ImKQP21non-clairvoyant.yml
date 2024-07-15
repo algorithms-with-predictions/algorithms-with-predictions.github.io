@@ -7,6 +7,9 @@ publications:
   - name: ISAIM
     year: 2022
     url: https://isaim2022.cs.ou.edu/papers/ISAIM2022_Sequencing_Im.pdf
+  - name: ACM Trans. Parallel Comput.
+    year: 2023
+    url: https://doi.org/10.1145/3593969
 labels:
   - online
   - scheduling

@@ -8,4 +8,7 @@ publications:
     month: 1
     day: 28
     url: https://arxiv.org/abs/2302.14234
+  - name: NeurIPS
+    year: 2023
+    url: http://papers.nips.cc/paper_files/paper/2023/hash/8039ca1e9860daab3a79e45d010d5398-Abstract-Conference.html
 authors: Balcan, Prasad, Sandholm

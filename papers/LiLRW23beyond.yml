@@ -1,0 +1,14 @@
+title: 'Beyond Black-Box Advice: Learning-Augmented Algorithms for MDPs with Q-Value Predictions'
+labels:
+  - online
+  - MDP
+publications:
+  - name: arXiv
+    year: 2023
+    month: 6
+    day: 20
+    url: https://arxiv.org/abs/2307.10524
+  - name: NeurIPS
+    year: 2023
+    url: http://papers.nips.cc/paper_files/paper/2023/hash/8e806d3c56ed5f1dab85d601e13cbe38-Abstract-Conference.html
+authors: Li, Lin, Ren, Wierman

@@ -8,7 +8,7 @@ publications:
     month: 9
     day: 27
     name: arXiv
-    url: https://arxiv.org/pdf/1910.12172.pdf
+    url: https://arxiv.org/abs/1910.12172
 labels:
   - online
   - caching/paging

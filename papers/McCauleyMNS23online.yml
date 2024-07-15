@@ -3,6 +3,9 @@ labels:
   - data structure
   - list labeling
 publications:
+  - name: NeurIPS
+    year: 2023
+    url: https://papers.nips.cc/paper_files/paper/2023/hash/bd8284e53b6d177cbede82def77d4951-Abstract-Conference.html
   - name: arXiv
     year: 2023
     month: 4

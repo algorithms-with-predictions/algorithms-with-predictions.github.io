@@ -8,4 +8,7 @@ publications:
     month: 6
     day: 31
     url: https://arxiv.org/abs/2307.16771
+  - name: ITCS
+    year: 2024
+    url: https://doi.org/10.4230/LIPIcs.ITCS.2024.62
 authors: Henzinger, Lincoln, Saha, Seybold, Ye

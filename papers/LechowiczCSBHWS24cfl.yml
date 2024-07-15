@@ -1,0 +1,13 @@
+authors: Lechowicz, Christianson, Sun, Bashir, Hajiesmaili, Wierman, Shenoy
+title: Chasing Convex Functions with Long-term Constraints
+publications:
+  - year: 2024
+    month: 1
+    day: 21
+    name: arXiv
+    url: https://arxiv.org/abs/2402.14012
+labels:
+  - online
+  - search
+  - MTS
+  - convex optimization
