@@ -9,6 +9,9 @@ publications:
     day: 14
     name: arXiv
     url: https://arxiv.org/abs/1905.05655
+  - name: J. Comput. Syst. Sci.
+    year: 2024
+    url: https://doi.org/10.1016/j.jcss.2024.103545
 labels:
   - online
   - rent-or-buy

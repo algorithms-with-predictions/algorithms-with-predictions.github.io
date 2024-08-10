@@ -149,8 +149,17 @@ async function updateFromDBLP(paper) {
 //   return updated;
 // }
 
+
+function shuffle_array(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 async function update_sync() {
   let updated = [];
+  shuffle_array(papers)
   for (let i = 0; i < papers.length; i++) {
     let file = papers[i];
     let paper = yaml.load(

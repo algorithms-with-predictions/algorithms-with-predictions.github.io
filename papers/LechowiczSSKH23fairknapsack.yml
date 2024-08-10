@@ -6,6 +6,9 @@ publications:
     day: 22
     name: arXiv
     url: https://arxiv.org/abs/2305.13293
+  - name: ICLR
+    year: 2024
+    url: https://openreview.net/forum?id=9kG7TwgLYu
 labels:
   - online
   - allocation

@@ -4,6 +4,11 @@ publications:
   - name: NeurIPS
     year: 2018
     url: https://dl.acm.org/doi/pdf/10.5555/3327546.3327635
+  - name: arXiv
+    year: 2024
+    month: 6
+    day: 25
+    url: https://arxiv.org/abs/2407.17712
 labels:
   - online
   - scheduling
