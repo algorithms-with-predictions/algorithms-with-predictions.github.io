@@ -8,4 +8,7 @@ publications:
     month: 3
     day: 25
     url: https://arxiv.org/abs/2404.16489
+  - name: SPAA
+    year: 2024
+    url: https://doi.org/10.1145/3626183.3659964
 authors: Zuo, Tang, Lee
