@@ -1,0 +1,11 @@
+title: 'CarbonClipper: Optimal Algorithms for Carbon-Aware Spatiotemporal Workload Management'
+labels:
+  - online
+  - allocation
+publications:
+  - name: arXiv
+    year: 2024
+    month: 7
+    day: 15
+    url: https://arxiv.org/abs/2408.07831
+authors: Lechowicz, Christianson, Sun, Bashir, Hajiesmaili, Wierman, Shenoy
