@@ -9,4 +9,7 @@ publications:
     month: 9
     day: 17
     url: https://arxiv.org/abs/2310.11558
+  - name: ICML
+    year: 2024
+    url: https://openreview.net/forum?id=xF656w37Mj
 authors: Sun, Huang, Christianson, Hajiesmaili, Wierman

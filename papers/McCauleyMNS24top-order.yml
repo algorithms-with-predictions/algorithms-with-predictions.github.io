@@ -9,4 +9,7 @@ publications:
     month: 1
     day: 16
     url: https://arxiv.org/abs/2402.11028
+  - name: ICML
+    year: 2024
+    url: https://openreview.net/forum?id=wea7nsJdMc
 authors: McCauley, Moseley, Niaparast, Singh

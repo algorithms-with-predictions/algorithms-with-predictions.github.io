@@ -9,4 +9,7 @@ publications:
     month: 4
     day: 16
     url: https://arxiv.org/abs/2405.09784
+  - name: ICML
+    year: 2024
+    url: https://openreview.net/forum?id=61WtHsVKWF
 authors: Choo, Gouleakis, Ling, Bhattacharyya

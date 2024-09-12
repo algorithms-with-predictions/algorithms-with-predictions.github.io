@@ -9,4 +9,7 @@ publications:
     month: 1
     day: 3
     url: https://arxiv.org/abs/2402.02062
+  - name: ICML
+    year: 2024
+    url: https://openreview.net/forum?id=AD5QC1BTJL
 authors: Bampis, Escoffier, Xefteris
