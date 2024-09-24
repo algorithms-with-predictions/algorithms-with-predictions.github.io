@@ -8,4 +8,7 @@ publications:
     month: 11
     day: 13
     url: https://arxiv.org/abs/2312.08489
+  - name: ESA
+    year: 2024
+    url: https://doi.org/10.4230/LIPIcs.ESA.2024.72
 authors: Hu, Kosinas, Polak

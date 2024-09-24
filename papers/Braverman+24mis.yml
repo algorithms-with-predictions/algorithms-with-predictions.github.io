@@ -8,4 +8,7 @@ publications:
     month: 6
     day: 16
     url: https://arxiv.org/abs/2407.11364
+  - name: APPROX/RANDOM
+    year: 2024
+    url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2024.24
 authors: Braverman, Dharangutte, Shah, Wang

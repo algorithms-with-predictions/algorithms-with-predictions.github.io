@@ -8,4 +8,7 @@ publications:
     month: 3
     day: 4
     url: https://arxiv.org/abs/2304.01958
+  - name: APPROX/RANDOM
+    year: 2024
+    url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2024.2
 authors: Chawla, Christou

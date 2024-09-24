@@ -1,0 +1,11 @@
+title: Learning-Augmented Frequency Estimation in Sliding Windows
+labels:
+  - streaming
+  - frequency estimation
+publications:
+  - name: arXiv
+    year: 2024
+    month: 8
+    day: 17
+    url: https://arxiv.org/abs/2409.11516
+authors: Shahout, Sabek, Mitzenmacher
