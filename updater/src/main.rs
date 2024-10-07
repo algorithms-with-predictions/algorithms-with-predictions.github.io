@@ -3,7 +3,10 @@ use chrono::{DateTime, Datelike};
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_yml;
-use std::{fs, io::{BufWriter, Write}};
+use std::{
+    fs,
+    io::{BufWriter, Write},
+};
 
 #[derive(Serialize, Deserialize, PartialEq, Debug)]
 struct Paper {
@@ -29,9 +32,7 @@ async fn update_paper_from_arxiv(paper: &mut Paper) -> Result<(), Box<dyn std::e
         "http://export.arxiv.org/api/query?max_results=20&search_query={}",
         paper.title.replace("-", "+").replace(" ", "+")
     );
-
     let resp = reqwest::get(query).await?.text().await?;
-
     let tree = roxmltree::Document::parse(&resp)?;
 
     let entries = tree
@@ -104,14 +105,12 @@ async fn update_paper_from_arxiv(paper: &mut Paper) -> Result<(), Box<dyn std::e
                 });
             }
 
-            println!("{:?}", paper);
             break;
         }
     }
 
     Ok(())
 }
-
 
 async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::error::Error>> {
     let query = format!(
@@ -121,9 +120,7 @@ async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::er
     let resp = reqwest::get(query).await?.text().await?;
     let tree = roxmltree::Document::parse(&resp)?;
 
-    let hits = tree
-        .descendants()
-        .filter(|e| e.tag_name().name() == "hit");
+    let hits = tree.descendants().filter(|e| e.tag_name().name() == "hit");
 
     for hit in hits {
         let title = hit
@@ -146,38 +143,42 @@ async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::er
             }
 
             let venue = hit
-            .descendants()
-            .find(|c| c.tag_name().name() == "venue")
-            .unwrap()
-            .text()
-            .unwrap();
+                .descendants()
+                .find(|c| c.tag_name().name() == "venue")
+                .unwrap()
+                .text()
+                .unwrap();
 
             let year = hit
-            .descendants()
-            .find(|c| c.tag_name().name() == "year")
-            .unwrap()
-            .text()
-            .unwrap();
+                .descendants()
+                .find(|c| c.tag_name().name() == "year")
+                .unwrap()
+                .text()
+                .unwrap();
 
             let key = hit
-            .descendants()
-            .find(|c| c.tag_name().name() == "key")
-            .unwrap()
-            .text()
-            .unwrap();
+                .descendants()
+                .find(|c| c.tag_name().name() == "key")
+                .unwrap()
+                .text()
+                .unwrap();
 
             let url = hit
-            .descendants()
-            .find(|c| c.tag_name().name() == "ee")
-            .unwrap()
-            .text()
-            .unwrap();
+                .descendants()
+                .find(|c| c.tag_name().name() == "ee")
+                .unwrap()
+                .text()
+                .unwrap();
 
             let bibtex_query = format!("https://dblp.org/rec/{key}.bib?param=0");
             let bibtex = reqwest::get(bibtex_query).await?.text().await?;
-            println!("{}",bibtex);
-            
-            if let Some(publ) = paper.publications.iter_mut().find(|p| p.name.to_lowercase() == venue.to_lowercase()) {
+            println!("{}", bibtex);
+
+            if let Some(publ) = paper
+                .publications
+                .iter_mut()
+                .find(|p| p.name.to_lowercase() == venue.to_lowercase())
+            {
                 if publ.dblp_key.is_none() {
                     publ.dblp_key = Some(key.to_string());
                 }
@@ -185,7 +186,10 @@ async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::er
                     publ.bibtex = Some(bibtex.to_string());
                 }
             } else {
-                println!("Added publication in {} to {} from DBLP.", venue, paper.title);
+                println!(
+                    "Added publication in {} to {} from DBLP.",
+                    venue, paper.title
+                );
                 paper.publications.push(Publication {
                     name: venue.into(),
                     url: url.to_string().into(),
@@ -197,7 +201,6 @@ async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::er
                 });
             }
 
-            println!("{:?}", paper);
             break;
         }
     }
@@ -206,17 +209,16 @@ async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::er
 }
 
 #[tokio::main]
-async fn main() -> Result<()> {
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
     for entry in fs::read_dir("../papers")? {
         let entry = entry?;
         let file = std::fs::File::open(entry.path())?;
-        println!("{:?}", entry.path());
         let mut paper: Paper = serde_yml::from_reader(file)?;
 
-        update_paper_from_arxiv(&mut paper).await;
-        update_paper_from_dblp(&mut paper).await;
+        update_paper_from_arxiv(&mut paper).await?;
+        update_paper_from_dblp(&mut paper).await?;
 
-        let file = std::fs::File::create(entry.path())?; 
+        let file = std::fs::File::create(entry.path())?;
         let mut writer = BufWriter::new(file);
         serde_yml::to_writer(&mut writer, &paper)?;
         writer.flush()?;
