@@ -1,9 +1,26 @@
 title: Scheduling with Untrusted Predictions
-labels:
-  - online
-  - scheduling
-publications:
-  - name: IJCAI
-    year: 2022
-    url: https://doi.org/10.24963/ijcai.2022/636
 authors: Bampis, Dogeas, Kononov, Lucarelli, Pascual
+labels:
+- online
+- scheduling
+publications:
+- name: IJCAI
+  url: https://doi.org/10.24963/ijcai.2022/636
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/ijcai/BampisDKLP22
+  bibtex: |+
+    @inproceedings{DBLP:conf/ijcai/BampisDKLP22,
+      author       = {Evripidis Bampis and
+                      Konstantinos Dogeas and
+                      Alexander V. Kononov and
+                      Giorgio Lucarelli and
+                      Fanny Pascual},
+      title        = {Scheduling with Untrusted Predictions},
+      booktitle    = {{IJCAI}},
+      pages        = {4581--4587},
+      publisher    = {ijcai.org},
+      year         = {2022}
+    }
+

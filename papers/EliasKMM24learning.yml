@@ -1,13 +1,15 @@
 title: Learning-Augmented Algorithms with Explicit Predictors
-labels:
-  - online
-  - caching
-  - load balancing
-  - scheduling
-publications:
-  - name: arXiv
-    year: 2024
-    month: 2
-    day: 12
-    url: https://arxiv.org/abs/2403.07413
 authors: Elias, Kaplan, Mansour, Moran
+labels:
+- online
+- caching
+- load balancing
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2403.07413
+  year: 2024
+  month: 3
+  day: 12
+  dblp_key: null
+  bibtex: null

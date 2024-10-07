@@ -1,12 +1,31 @@
-authors: Xu, Zhang
 title: Learning-augmented algorithms for online subset sum
-publications:
-  - name: J. Global Optimization
-    url: https://link.springer.com/article/10.1007/s10898-022-01156-w
-    year: 2022
-  - name: J. Glob. Optim.
-    year: 2023
-    url: https://doi.org/10.1007/s10898-022-01156-w
+authors: Xu, Zhang
 labels:
-  - online
-  - subset sum
+- online
+- subset sum
+publications:
+- name: J. Global Optimization
+  url: https://link.springer.com/article/10.1007/s10898-022-01156-w
+  year: 2022
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
+- name: J. Glob. Optim.
+  url: https://doi.org/10.1007/s10898-022-01156-w
+  year: 2023
+  month: null
+  day: null
+  dblp_key: journals/jgo/XuZ23
+  bibtex: |+
+    @article{DBLP:journals/jgo/XuZ23,
+      author       = {Chenyang Xu and
+                      Guochuan Zhang},
+      title        = {Learning-augmented algorithms for online subset sum},
+      journal      = {J. Glob. Optim.},
+      volume       = {87},
+      number       = {2},
+      pages        = {989--1008},
+      year         = {2023}
+    }
+

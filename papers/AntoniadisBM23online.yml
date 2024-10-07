@@ -1,14 +1,33 @@
 title: Online Graph Coloring with Predictions
-labels:
-  - online
-  - graph coloring
-publications:
-  - name: arXiv
-    year: 2023
-    month: 11
-    day: 1
-    url: https://arxiv.org/abs/2312.00601
-  - name: ISCO
-    year: 2024
-    url: https://doi.org/10.1007/978-3-031-60924-4_22
 authors: Antoniadis, Broersma, Meng
+labels:
+- online
+- graph coloring
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2312.00601
+  year: 2023
+  month: 12
+  day: 1
+  dblp_key: null
+  bibtex: null
+- name: ISCO
+  url: https://doi.org/10.1007/978-3-031-60924-4_22
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/iscopt/AntoniadisBM24
+  bibtex: |+
+    @inproceedings{DBLP:conf/iscopt/AntoniadisBM24,
+      author       = {Antonios Antoniadis and
+                      Hajo Broersma and
+                      Yang Meng},
+      title        = {Online Graph Coloring with Predictions},
+      booktitle    = {{ISCO}},
+      series       = {Lecture Notes in Computer Science},
+      volume       = {14594},
+      pages        = {289--302},
+      publisher    = {Springer},
+      year         = {2024}
+    }
+

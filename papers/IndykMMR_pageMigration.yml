@@ -1,14 +1,34 @@
 title: Online Page Migration with ML Advice
 authors: Indyk, Mallmann-Trenn, Mitrovic, Rubinfeld
-publications:
-  - name: AISTATS
-    url: https://proceedings.mlr.press/v151/indyk22a.html
-    year: 2022
-  - year: 2020
-    month: 5
-    day: 9
-    name: arXiv
-    url: https://arxiv.org/abs/2006.05028
 labels:
-  - online
-  - page migration
+- online
+- page migration
+publications:
+- name: AISTATS
+  url: https://proceedings.mlr.press/v151/indyk22a.html
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/aistats/IndykMMR22
+  bibtex: |+
+    @inproceedings{DBLP:conf/aistats/IndykMMR22,
+      author       = {Piotr Indyk and
+                      Frederik Mallmann{-}Trenn and
+                      Slobodan Mitrovic and
+                      Ronitt Rubinfeld},
+      title        = {Online Page Migration with {ML} Advice},
+      booktitle    = {{AISTATS}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {151},
+      pages        = {1655--1670},
+      publisher    = {{PMLR}},
+      year         = {2022}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2006.05028
+  year: 2020
+  month: 6
+  day: 9
+  dblp_key: null
+  bibtex: null

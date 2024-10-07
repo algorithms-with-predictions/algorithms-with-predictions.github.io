@@ -1,14 +1,33 @@
-authors: Cohen, Panigrahi
 title: A General Framework for Learning-Augmented Online Allocation
-publications:
-  - year: 2023
-    month: 4
-    day: 30
-    name: arXiv
-    url: https://arxiv.org/abs/2305.18861
-  - name: ICALP
-    year: 2023
+authors: Cohen, Panigrahi
 labels:
-  - online
-  - scheduling
-  - allocation
+- online
+- scheduling
+- allocation
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2305.18861
+  year: 2023
+  month: 5
+  day: 30
+  dblp_key: null
+  bibtex: null
+- name: ICALP
+  url: null
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/icalp/CohenP23
+  bibtex: |+
+    @inproceedings{DBLP:conf/icalp/CohenP23,
+      author       = {Ilan Reuven Cohen and
+                      Debmalya Panigrahi},
+      title        = {A General Framework for Learning-Augmented Online Allocation},
+      booktitle    = {{ICALP}},
+      series       = {LIPIcs},
+      volume       = {261},
+      pages        = {43:1--43:21},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2023}
+    }
+

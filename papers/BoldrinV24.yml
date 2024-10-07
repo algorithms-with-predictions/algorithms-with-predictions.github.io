@@ -1,4 +1,12 @@
 title: Fast and Accurate Triangle Counting in Graph Streams Using Predictions
+authors: Cristian Boldrin, Fabio Vandin
 labels:
-  - streaming
-publications: []
+- streaming
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2409.15205
+  year: 2024
+  month: 9
+  day: 23
+  dblp_key: null
+  bibtex: null

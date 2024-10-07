@@ -1,16 +1,33 @@
 title: 'Credence: Augmenting Datacenter Switch Buffer Sharing with ML Predictions'
 authors: Addanki, Pacut, Schmid
-publications:
-  - name: NSDI
-    year: 2024
-    url: https://www.usenix.org/conference/nsdi24/presentation/addanki-credence
-  - name: arXiv
-    year: 2024
-    url: https://arxiv.org/abs/2401.02801
-    month: 0
-    day: 5
 labels:
-  - online
-  - queueing
-  - buffer sharing
-  - communication networks
+- online
+- queueing
+- buffer sharing
+- communication networks
+publications:
+- name: NSDI
+  url: https://www.usenix.org/conference/nsdi24/presentation/addanki-credence
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/nsdi/AddankiP024
+  bibtex: |+
+    @inproceedings{DBLP:conf/nsdi/AddankiP024,
+      author       = {Vamsi Addanki and
+                      Maciej Pacut and
+                      Stefan Schmid},
+      title        = {Credence: Augmenting Datacenter Switch Buffer Sharing with {ML} Predictions},
+      booktitle    = {{NSDI}},
+      pages        = {613--634},
+      publisher    = {{USENIX} Association},
+      year         = {2024}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2401.02801
+  year: 2024
+  month: 1
+  day: 5
+  dblp_key: null
+  bibtex: null

@@ -1,13 +1,32 @@
 title: The Case for Learned Index Structures
-labels:
-  - data structure
-publications:
-  - name: arXiv
-    year: 2017
-    month: 11
-    day: 4
-    url: https://arxiv.org/abs/1712.01208
-  - name: SIGMOD Conference
-    year: 2018
-    url: https://doi.org/10.1145/3183713.3196909
 authors: Kraska, Beutel, Chi, Dean, Polyzotis
+labels:
+- data structure
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/1712.01208
+  year: 2017
+  month: 12
+  day: 4
+  dblp_key: null
+  bibtex: null
+- name: SIGMOD Conference
+  url: https://doi.org/10.1145/3183713.3196909
+  year: 2018
+  month: null
+  day: null
+  dblp_key: conf/sigmod/KraskaBCDP18
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigmod/KraskaBCDP18,
+      author       = {Tim Kraska and
+                      Alex Beutel and
+                      Ed H. Chi and
+                      Jeffrey Dean and
+                      Neoklis Polyzotis},
+      title        = {The Case for Learned Index Structures},
+      booktitle    = {{SIGMOD} Conference},
+      pages        = {489--504},
+      publisher    = {{ACM}},
+      year         = {2018}
+    }
+

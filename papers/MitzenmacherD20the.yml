@@ -1,12 +1,29 @@
-authors: Mitzenmacher, Dell Amico
 title: The Supermarket Model with Known and Predicted Service Times
-publications:
-  - year: 2019
-    month: 4
-    day: 23
-    name: arXiv
-    url: https://arxiv.org/abs/1905.12155
-  - name: IEEE Trans. Parallel Distributed Syst.
-    year: 2022
-    url: https://doi.org/10.1109/TPDS.2022.3146195
+authors: Mitzenmacher, Dell Amico
 labels: []
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/1905.12155
+  year: 2019
+  month: 5
+  day: 23
+  dblp_key: null
+  bibtex: null
+- name: IEEE Trans. Parallel Distributed Syst.
+  url: https://doi.org/10.1109/TPDS.2022.3146195
+  year: 2022
+  month: null
+  day: null
+  dblp_key: journals/tpds/MitzenmacherD22
+  bibtex: |+
+    @article{DBLP:journals/tpds/MitzenmacherD22,
+      author       = {Michael Mitzenmacher and
+                      Matteo Dell'Amico},
+      title        = {The Supermarket Model With Known and Predicted Service Times},
+      journal      = {{IEEE} Trans. Parallel Distributed Syst.},
+      volume       = {33},
+      number       = {11},
+      pages        = {2740--2751},
+      year         = {2022}
+    }
+

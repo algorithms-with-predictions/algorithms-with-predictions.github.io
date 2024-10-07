@@ -1,14 +1,30 @@
 title: Learning Augmented Energy Minimization via Speed Scaling
 authors: Bamas, Maggiori, Rohwedder, Svensson
-publications:
-  - name: NeurIPS
-    url: https://papers.nips.cc/paper/2020/file/af94ed0d6f5acc95f97170e3685f16c0-Paper.pdf
-    year: 2020
-  - year: 2020
-    month: 9
-    day: 22
-    name: arXiv
-    url: https://arxiv.org/abs/2010.11629
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
+publications:
+- name: NeurIPS
+  url: https://papers.nips.cc/paper/2020/file/af94ed0d6f5acc95f97170e3685f16c0-Paper.pdf
+  year: 2020
+  month: null
+  day: null
+  dblp_key: conf/nips/BamasMRS20
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/BamasMRS20,
+      author       = {{\'{E}}tienne Bamas and
+                      Andreas Maggiori and
+                      Lars Rohwedder and
+                      Ola Svensson},
+      title        = {Learning Augmented Energy Minimization via Speed Scaling},
+      booktitle    = {NeurIPS},
+      year         = {2020}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2010.11629
+  year: 2020
+  month: 10
+  day: 22
+  dblp_key: null
+  bibtex: null
