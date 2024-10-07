@@ -1,11 +1,13 @@
 title: Competitive strategies to use "warm start" algorithms with predictions
-labels:
-  - online
-  - multiple predictions
-publications:
-  - name: arXiv
-    year: 2024
-    month: 4
-    day: 6
-    url: https://arxiv.org/abs/2405.03661
 authors: Srinivas, Blum
+labels:
+- online
+- multiple predictions
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2405.03661
+  year: 2024
+  month: 5
+  day: 6
+  dblp_key: null
+  bibtex: null

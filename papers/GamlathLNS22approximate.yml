@@ -1,9 +1,27 @@
 title: Approximate Cluster Recovery from Noisy Labels
 authors: Gamlath, Lattanzi, Norouzi-Fard, Svensson
 labels:
-  - approximation
-  - clustering
+- approximation
+- clustering
 publications:
-  - name: COLT
-    year: 2022
-    url: https://proceedings.mlr.press/v178/gamlath22a.html
+- name: COLT
+  url: https://proceedings.mlr.press/v178/gamlath22a.html
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/colt/GamlathLNS22
+  bibtex: |+
+    @inproceedings{DBLP:conf/colt/GamlathLNS22,
+      author       = {Buddhima Gamlath and
+                      Silvio Lattanzi and
+                      Ashkan Norouzi{-}Fard and
+                      Ola Svensson},
+      title        = {Approximate Cluster Recovery from Noisy Labels},
+      booktitle    = {{COLT}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {178},
+      pages        = {1463--1509},
+      publisher    = {{PMLR}},
+      year         = {2022}
+    }
+

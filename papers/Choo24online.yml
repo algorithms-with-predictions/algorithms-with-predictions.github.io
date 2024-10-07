@@ -1,15 +1,32 @@
 title: Online bipartite matching with imperfect advice
-labels:
-  - online
-  - matching
-  - allocation
-publications:
-  - name: arXiv
-    year: 2024
-    month: 4
-    day: 16
-    url: https://arxiv.org/abs/2405.09784
-  - name: ICML
-    year: 2024
-    url: https://openreview.net/forum?id=61WtHsVKWF
 authors: Choo, Gouleakis, Ling, Bhattacharyya
+labels:
+- online
+- matching
+- allocation
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2405.09784
+  year: 2024
+  month: 5
+  day: 16
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://openreview.net/forum?id=61WtHsVKWF
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/icml/ChooGL024
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/ChooGL024,
+      author       = {Davin Choo and
+                      Themistoklis Gouleakis and
+                      Chun Kai Ling and
+                      Arnab Bhattacharyya},
+      title        = {Online bipartite matching with imperfect advice},
+      booktitle    = {{ICML}},
+      publisher    = {OpenReview.net},
+      year         = {2024}
+    }
+

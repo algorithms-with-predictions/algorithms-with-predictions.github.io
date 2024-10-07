@@ -1,14 +1,30 @@
 title: Permutation Predictions for Non-Clairvoyant Scheduling
 authors: Lindermayr, Megow
-publications:
-  - year: 2022
-    month: 1
-    day: 21
-    name: arXiv
-    url: https://arxiv.org/abs/2202.10199
-  - name: SPAA
-    year: 2022
-    url: https://doi.org/10.1145/3490148.3538579
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2202.10199
+  year: 2022
+  month: 2
+  day: 21
+  dblp_key: null
+  bibtex: null
+- name: SPAA
+  url: https://doi.org/10.1145/3490148.3538579
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/spaa/LindermayrM22
+  bibtex: |+
+    @inproceedings{DBLP:conf/spaa/LindermayrM22,
+      author       = {Alexander Lindermayr and
+                      Nicole Megow},
+      title        = {Permutation Predictions for Non-Clairvoyant Scheduling},
+      booktitle    = {{SPAA}},
+      pages        = {357--368},
+      publisher    = {{ACM}},
+      year         = {2022}
+    }
+

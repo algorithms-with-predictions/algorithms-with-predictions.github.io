@@ -1,8 +1,23 @@
 title: Allocating online advertisement space with unreliable estimates
 authors: Mahdian, Nazerzadeh, Saberi
-publications:
-  - name: EC
-    year: 2007
-    url: https://doi.org/10.1145/1250910.1250952
 labels:
-  - prior/related work
+- prior/related work
+publications:
+- name: EC
+  url: https://doi.org/10.1145/1250910.1250952
+  year: 2007
+  month: null
+  day: null
+  dblp_key: conf/sigecom/MahdianNS07
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigecom/MahdianNS07,
+      author       = {Mohammad Mahdian and
+                      Hamid Nazerzadeh and
+                      Amin Saberi},
+      title        = {Allocating online advertisement space with unreliable estimates},
+      booktitle    = {{EC}},
+      pages        = {288--294},
+      publisher    = {{ACM}},
+      year         = {2007}
+    }
+

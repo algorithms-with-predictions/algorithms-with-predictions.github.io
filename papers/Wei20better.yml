@@ -1,14 +1,31 @@
 title: Better and simpler learning-augmented online caching
 authors: Wei
-publications:
-  - year: 2020
-    month: 4
-    day: 28
-    name: arXiv
-    url: https://arxiv.org/abs/2005.13716
-  - name: APPROX-RANDOM
-    year: 2020
-    url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2020.60
 labels:
-  - online
-  - caching/paging
+- online
+- caching/paging
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2005.13716
+  year: 2020
+  month: 5
+  day: 28
+  dblp_key: null
+  bibtex: null
+- name: APPROX-RANDOM
+  url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2020.60
+  year: 2020
+  month: null
+  day: null
+  dblp_key: conf/approx/Wei20
+  bibtex: |+
+    @inproceedings{DBLP:conf/approx/Wei20,
+      author       = {Alexander Wei},
+      title        = {Better and Simpler Learning-Augmented Online Caching},
+      booktitle    = {{APPROX-RANDOM}},
+      series       = {LIPIcs},
+      volume       = {176},
+      pages        = {60:1--60:17},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2020}
+    }
+

@@ -1,12 +1,14 @@
 title: Online Covering with Multiple Experts
-labels:
-  - online
-  - covering problems
-  - multiple predictions
-publications:
-  - name: arXiv
-    year: 2023
-    month: 11
-    day: 22
-    url: https://arxiv.org/abs/2312.14564
 authors: Kevi, Nguyen
+labels:
+- online
+- covering problems
+- multiple predictions
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2312.14564
+  year: 2023
+  month: 12
+  day: 22
+  dblp_key: null
+  bibtex: null

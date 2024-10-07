@@ -1,15 +1,35 @@
-authors: Chłędowski, Polak, Szabucki, Żołna
 title: 'Robust Learning-Augmented Caching: An Experimental Study'
-publications:
-  - name: ICML
-    url: http://proceedings.mlr.press/v139/chledowski21a.html
-    year: 2021
-  - year: 2021
-    month: 5
-    day: 28
-    name: arXiv
-    url: https://arxiv.org/abs/2106.14693
+authors: Chłędowski, Polak, Szabucki, Żołna
 labels:
-  - online
-  - caching/paging
-  - experiments
+- online
+- caching/paging
+- experiments
+publications:
+- name: ICML
+  url: http://proceedings.mlr.press/v139/chledowski21a.html
+  year: 2021
+  month: null
+  day: null
+  dblp_key: conf/icml/Chledowski0SZ21
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/Chledowski0SZ21,
+      author       = {Jakub Chledowski and
+                      Adam Polak and
+                      Bartosz Szabucki and
+                      Konrad Tomasz Zolna},
+      title        = {Robust Learning-Augmented Caching: An Experimental Study},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {139},
+      pages        = {1920--1930},
+      publisher    = {{PMLR}},
+      year         = {2021}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2106.14693
+  year: 2021
+  month: 6
+  day: 28
+  dblp_key: null
+  bibtex: null

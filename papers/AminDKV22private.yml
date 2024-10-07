@@ -1,10 +1,12 @@
 title: Private Algorithms with Private Predictions
-labels:
-  - differential privacy
-publications:
-  - name: arXiv
-    year: 2022
-    month: 9
-    day: 20
-    url: https://arxiv.org/abs/2210.11222
 authors: Amin, Dick, Khodak, Vassilvitskii
+labels:
+- differential privacy
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2210.11222
+  year: 2022
+  month: 9
+  day: 20
+  dblp_key: null
+  bibtex: null

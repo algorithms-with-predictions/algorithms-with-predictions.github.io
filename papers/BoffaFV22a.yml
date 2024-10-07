@@ -1,10 +1,38 @@
 title: A learned approach to design compressed rank/select data structures
-labels:
-  - data structure
-publications:
-  - name: ALENEX
-    year: 2021
-    url: https://epubs.siam.org/doi/10.1137/1.9781611976472.4
-  - name: TALG
-    year: 2022
 authors: Boffa, Ferragina, Vinciguerra
+labels:
+- data structure
+publications:
+- name: ALENEX
+  url: https://epubs.siam.org/doi/10.1137/1.9781611976472.4
+  year: 2021
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
+- name: TALG
+  url: null
+  year: 2022
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
+- name: ACM Trans. Algorithms
+  url: https://doi.org/10.1145/3524060
+  year: 2022
+  month: null
+  day: null
+  dblp_key: journals/talg/BoffaFV22
+  bibtex: |+
+    @article{DBLP:journals/talg/BoffaFV22,
+      author       = {Antonio Boffa and
+                      Paolo Ferragina and
+                      Giorgio Vinciguerra},
+      title        = {A Learned Approach to Design Compressed Rank/Select Data Structures},
+      journal      = {{ACM} Trans. Algorithms},
+      volume       = {18},
+      number       = {3},
+      pages        = {24:1--24:28},
+      year         = {2022}
+    }
+

@@ -1,11 +1,13 @@
 title: 'The Predicted-Deletion Dynamic Model: Taking Advantage of ML Predictions, for Free'
 authors: Liu, Srinivas
 labels:
-  - data structure
-  - running time
+- data structure
+- running time
 publications:
-  - name: arXiv
-    year: 2023
-    month: 6
-    day: 18
-    url: https://arxiv.org/abs/2307.08890
+- name: arXiv
+  url: https://arxiv.org/abs/2307.08890
+  year: 2023
+  month: 6
+  day: 18
+  dblp_key: null
+  bibtex: null

@@ -54,7 +54,7 @@ async fn update_paper_from_arxiv(paper: &mut Paper, acc: usize) -> Result<(), Bo
                 let authors = entry
                     .descendants()
                     .filter(|c| c.tag_name().name() == "name")
-                    .map(|c| c.text().unwrap())
+                    .map(|c| c.text().unwrap().split(" ").last().unwrap())
                     .collect::<Vec<&str>>()
                     .join(", ");
 
@@ -136,7 +136,7 @@ async fn update_paper_from_dblp(paper: &mut Paper, acc: usize) -> Result<(), Box
                 let authors = hit
                     .descendants()
                     .filter(|c| c.tag_name().name() == "author")
-                    .map(|c| c.text().unwrap())
+                    .map(|c| c.text().unwrap().split(" ").last().unwrap())
                     .collect::<Vec<&str>>()
                     .join(", ");
 

@@ -1,11 +1,13 @@
 title: On Optimal Consistency-Robustness Trade-Off for Learning-Augmented Multi-Option Ski Rental
-labels:
-  - online
-  - rent-or-buy
-publications:
-  - name: arXiv
-    year: 2023
-    month: 11
-    day: 5
-    url: https://arxiv.org/abs/2312.02547
 authors: Shin, Lee, An
+labels:
+- online
+- rent-or-buy
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2312.02547
+  year: 2023
+  month: 12
+  day: 5
+  dblp_key: null
+  bibtex: null

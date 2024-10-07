@@ -1,12 +1,14 @@
 title: MAC Advice for Facility Location Mechanism Design
-labels:
-  - AGT
-  - mechanism design
-  - facility location
-publications:
-  - name: arXiv
-    year: 2024
-    month: 2
-    day: 18
-    url: https://arxiv.org/abs/2403.12181
 authors: Barak, Gupta, Talgam-Cohen
+labels:
+- AGT
+- mechanism design
+- facility location
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2403.12181
+  year: 2024
+  month: 3
+  day: 18
+  dblp_key: null
+  bibtex: null

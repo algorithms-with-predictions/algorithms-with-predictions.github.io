@@ -1,17 +1,36 @@
-authors: Mitzenmacher, Vassilvitskii
 title: Algorithms with Predictions
-publications:
-  - year: 2020
-    month: 5
-    day: 16
-    name: arXiv
-    url: https://arxiv.org/abs/2006.09123
-  - name: Beyond the Worst-Case Analysis of Algorithms
-    displayName: BWCA
-    year: 2020
-    url: https://doi.org/10.1017/9781108637435.037
-  - name: Commun. ACM
-    year: 2022
-    url: https://doi.org/10.1145/3528087
+authors: Mitzenmacher, Vassilvitskii
 labels:
-  - survey
+- survey
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2006.09123
+  year: 2020
+  month: 6
+  day: 16
+  dblp_key: null
+  bibtex: null
+- name: Beyond the Worst-Case Analysis of Algorithms
+  url: https://doi.org/10.1017/9781108637435.037
+  year: 2020
+  month: null
+  day: null
+  dblp_key: books/cu/20/MitzenmacherV20
+  bibtex: |+
+    @incollection{DBLP:books/cu/20/MitzenmacherV20,
+      author       = {Michael Mitzenmacher and
+                      Sergei Vassilvitskii},
+      title        = {Algorithms with Predictions},
+      booktitle    = {Beyond the Worst-Case Analysis of Algorithms},
+      pages        = {646--662},
+      publisher    = {Cambridge University Press},
+      year         = {2020}
+    }
+
+- name: Commun. ACM
+  url: https://doi.org/10.1145/3528087
+  year: 2022
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null

@@ -1,17 +1,35 @@
-authors: Lechowicz, Sengupta, Sun, Kamali, Hajiesmaili
 title: Time Fairness in Online Knapsack Problems
-publications:
-  - year: 2023
-    month: 4
-    day: 22
-    name: arXiv
-    url: https://arxiv.org/abs/2305.13293
-  - name: ICLR
-    year: 2024
-    url: https://openreview.net/forum?id=9kG7TwgLYu
+authors: Lechowicz, Sengupta, Sun, Kamali, Hajiesmaili
 labels:
-  - online
-  - allocation
-  - packing
-  - knapsack
-  - fairness
+- online
+- allocation
+- packing
+- knapsack
+- fairness
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2305.13293
+  year: 2023
+  month: 5
+  day: 22
+  dblp_key: null
+  bibtex: null
+- name: ICLR
+  url: https://openreview.net/forum?id=9kG7TwgLYu
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/iclr/LechowiczS0KH24
+  bibtex: |+
+    @inproceedings{DBLP:conf/iclr/LechowiczS0KH24,
+      author       = {Adam Lechowicz and
+                      Rik Sengupta and
+                      Bo Sun and
+                      Shahin Kamali and
+                      Mohammad Hajiesmaili},
+      title        = {Time Fairness in Online Knapsack Problems},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2024}
+    }
+

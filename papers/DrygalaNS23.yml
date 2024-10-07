@@ -1,9 +1,26 @@
 title: Online Algorithms with Costly Predictions
-labels:
-  - online
-  - rent-or-buy
-publications:
-  - name: AISTATS
-    year: 2023
-    url: https://proceedings.mlr.press/v206/drygala23a.html
 authors: Drygala, Nagarajan, Svensson
+labels:
+- online
+- rent-or-buy
+publications:
+- name: AISTATS
+  url: https://proceedings.mlr.press/v206/drygala23a.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/aistats/DrygalaNS23
+  bibtex: |+
+    @inproceedings{DBLP:conf/aistats/DrygalaNS23,
+      author       = {Marina Drygala and
+                      Sai Ganesh Nagarajan and
+                      Ola Svensson},
+      title        = {Online Algorithms with Costly Predictions},
+      booktitle    = {{AISTATS}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {206},
+      pages        = {8078--8101},
+      publisher    = {{PMLR}},
+      year         = {2023}
+    }
+

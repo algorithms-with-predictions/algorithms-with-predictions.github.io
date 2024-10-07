@@ -1,9 +1,23 @@
-authors: Kodialam, Lakshman
 title: Prediction Augmented Segment Routing
-publications:
-  - name: HPSR
-    url: https://ieeexplore.ieee.org/abstract/document/9481858
-    year: 2021
+authors: Kodialam, Lakshman
 labels:
-  - online
-  - routing
+- online
+- routing
+publications:
+- name: HPSR
+  url: https://ieeexplore.ieee.org/abstract/document/9481858
+  year: 2021
+  month: null
+  day: null
+  dblp_key: conf/hpsr/KodialamL21
+  bibtex: |+
+    @inproceedings{DBLP:conf/hpsr/KodialamL21,
+      author       = {Murali S. Kodialam and
+                      T. V. Lakshman},
+      title        = {Prediction Augmented Segment Routing},
+      booktitle    = {{HPSR}},
+      pages        = {1--6},
+      publisher    = {{IEEE}},
+      year         = {2021}
+    }
+

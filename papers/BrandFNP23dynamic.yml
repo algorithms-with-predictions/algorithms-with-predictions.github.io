@@ -1,15 +1,33 @@
 title: On Dynamic Graph Algorithms with Predictions
-labels:
-  - running time
-  - data structure
-  - graph algorithms
-publications:
-  - name: arXiv
-    year: 2023
-    month: 6
-    day: 19
-    url: https://arxiv.org/abs/2307.09961
-  - name: SODA
-    year: 2024
-    url: https://doi.org/10.1137/1.9781611977912.126
 authors: Brand, Forster, Nazari, Polak
+labels:
+- running time
+- data structure
+- graph algorithms
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2307.09961
+  year: 2023
+  month: 7
+  day: 19
+  dblp_key: null
+  bibtex: null
+- name: SODA
+  url: https://doi.org/10.1137/1.9781611977912.126
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/soda/BrandFNP24
+  bibtex: |+
+    @inproceedings{DBLP:conf/soda/BrandFNP24,
+      author       = {Jan van den Brand and
+                      Sebastian Forster and
+                      Yasamin Nazari and
+                      Adam Polak},
+      title        = {On Dynamic Graph Algorithms with Predictions},
+      booktitle    = {{SODA}},
+      pages        = {3534--3557},
+      publisher    = {{SIAM}},
+      year         = {2024}
+    }
+
