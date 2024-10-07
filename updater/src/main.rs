@@ -28,7 +28,7 @@ struct Publication {
     bibtex: Option<String>,
 }
 
-async fn update_paper_from_arxiv(paper: &mut Paper) -> Result<(), Box<dyn std::error::Error>> {
+async fn update_paper_from_arxiv(paper: &mut Paper, acc: usize) -> Result<(), Box<dyn std::error::Error>> {
     let query = format!(
         "http://export.arxiv.org/api/query?max_results=20&search_query={}",
         paper.title.replace("-", "+").replace(" ", "+")
@@ -48,7 +48,7 @@ async fn update_paper_from_arxiv(paper: &mut Paper) -> Result<(), Box<dyn std::e
             .text()
             .unwrap();
 
-        if levenshtein::levenshtein(&title.to_lowercase(), &paper.title.to_lowercase()) < 7 {
+        if levenshtein::levenshtein(&title.to_lowercase(), &paper.title.to_lowercase()) < acc {
             if paper.authors.is_none() {
                 println!("Setting authors of {} from arXiv!", paper.title);
                 let authors = entry
@@ -113,7 +113,7 @@ async fn update_paper_from_arxiv(paper: &mut Paper) -> Result<(), Box<dyn std::e
     Ok(())
 }
 
-async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::error::Error>> {
+async fn update_paper_from_dblp(paper: &mut Paper, acc: usize) -> Result<(), Box<dyn std::error::Error>> {
     let query = format!(
         "https://dblp.org/search/publ/api?h=20&q={}",
         paper.title.replace("-", "+").replace(" ", "+")
@@ -131,7 +131,7 @@ async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::er
             .text()
             .unwrap();
 
-        if levenshtein::levenshtein(&title.to_lowercase(), &paper.title.to_lowercase()) < 7 {
+        if levenshtein::levenshtein(&title.to_lowercase(), &paper.title.to_lowercase()) < acc {
             if paper.authors.is_none() {
                 let authors = hit
                     .descendants()
@@ -149,6 +149,10 @@ async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::er
                 .unwrap()
                 .text()
                 .unwrap();
+
+            if venue == "CoRR" {
+                continue;
+            }
 
             let year = hit
                 .descendants()
@@ -215,8 +219,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         let file = std::fs::File::open(entry.path())?;
         let mut paper: Paper = serde_yml::from_reader(file)?;
 
-        update_paper_from_arxiv(&mut paper).await?;
-        update_paper_from_dblp(&mut paper).await?;
+        update_paper_from_arxiv(&mut paper, 4).await?;
+        update_paper_from_dblp(&mut paper, 4).await?;
 
         let file = std::fs::File::create(entry.path())?;
         let mut writer = BufWriter::new(file);
