@@ -1,14 +1,35 @@
 title: On the Complexity of Algorithms with Predictions for Dynamic Graph Problems
-labels:
-  - data structure
-  - running time
-publications:
-  - name: arXiv
-    year: 2023
-    month: 6
-    day: 31
-    url: https://arxiv.org/abs/2307.16771
-  - name: ITCS
-    year: 2024
-    url: https://doi.org/10.4230/LIPIcs.ITCS.2024.62
 authors: Henzinger, Lincoln, Saha, Seybold, Ye
+labels:
+- data structure
+- running time
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2307.16771
+  year: 2023
+  month: 6
+  day: 31
+  dblp_key: null
+  bibtex: null
+- name: ITCS
+  url: https://doi.org/10.4230/LIPIcs.ITCS.2024.62
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/innovations/HenzingerSSY24
+  bibtex: |+
+    @inproceedings{DBLP:conf/innovations/HenzingerSSY24,
+      author       = {Monika Henzinger and
+                      Barna Saha and
+                      Martin P. Seybold and
+                      Christopher Ye},
+      title        = {On the Complexity of Algorithms with Predictions for Dynamic Graph
+                      Problems},
+      booktitle    = {{ITCS}},
+      series       = {LIPIcs},
+      volume       = {287},
+      pages        = {62:1--62:25},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2024}
+    }
+

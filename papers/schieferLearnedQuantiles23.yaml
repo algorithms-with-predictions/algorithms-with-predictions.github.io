@@ -1,15 +1,36 @@
-authors: Schiefer, Chen, Indyk, Narayanan, Silwal, Wagner
 title: 'Learned Interpolation for Better Streaming Quantile Approximation with Worst Case Guarantees '
-publications:
-  - name: ACDA
-    url: https://arxiv.org/abs/2304.07652
-    year: 2023
-  - name: arXiv
-    year: 2023
-    month: 3
-    day: 16
-    url: https://arxiv.org/abs/2304.07652
+authors: Schiefer, Chen, Indyk, Narayanan, Silwal, Wagner
 labels:
-  - streaming algorithms
-  - quantiles
-  - sublinear algorithms
+- streaming algorithms
+- quantiles
+- sublinear algorithms
+publications:
+- name: ACDA
+  url: https://arxiv.org/abs/2304.07652
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/acda/SchieferCINSW23
+  bibtex: |+
+    @inproceedings{DBLP:conf/acda/SchieferCINSW23,
+      author       = {Nicholas Schiefer and
+                      Justin Y. Chen and
+                      Piotr Indyk and
+                      Shyam Narayanan and
+                      Sandeep Silwal and
+                      Tal Wagner},
+      title        = {Learned Interpolation for Better Streaming Quantile Approximation
+                      with Worst-Case Guarantees},
+      booktitle    = {{ACDA}},
+      pages        = {87--97},
+      publisher    = {{SIAM}},
+      year         = {2023}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2304.07652
+  year: 2023
+  month: 3
+  day: 16
+  dblp_key: null
+  bibtex: null

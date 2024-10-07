@@ -1,16 +1,37 @@
-authors: Lavastida, Moseley, Ravi, Xu
 title: Learnable and Instance-Robust Predictions for Online Matching, Flows and Load Balancing
-publications:
-  - name: ESA
-    url: https://drops.dagstuhl.de/opus/volltexte/2021/14640/pdf/LIPIcs-ESA-2021-59.pdf
-    year: 2021
-  - year: 2020
-    month: 10
-    day: 23
-    name: arXiv
-    url: https://arxiv.org/abs/2011.11743
+authors: Lavastida, Moseley, Ravi, Xu
 labels:
-  - online
-  - matching
-  - allocation
-  - scheduling
+- online
+- matching
+- allocation
+- scheduling
+publications:
+- name: ESA
+  url: https://drops.dagstuhl.de/opus/volltexte/2021/14640/pdf/LIPIcs-ESA-2021-59.pdf
+  year: 2021
+  month: null
+  day: null
+  dblp_key: conf/esa/LavastidaM0X21
+  bibtex: |+
+    @inproceedings{DBLP:conf/esa/LavastidaM0X21,
+      author       = {Thomas Lavastida and
+                      Benjamin Moseley and
+                      R. Ravi and
+                      Chenyang Xu},
+      title        = {Learnable and Instance-Robust Predictions for Online Matching, Flows
+                      and Load Balancing},
+      booktitle    = {{ESA}},
+      series       = {LIPIcs},
+      volume       = {204},
+      pages        = {59:1--59:17},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2021}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2011.11743
+  year: 2020
+  month: 10
+  day: 23
+  dblp_key: null
+  bibtex: null

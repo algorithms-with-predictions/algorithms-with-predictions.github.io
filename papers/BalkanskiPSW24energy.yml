@@ -1,14 +1,30 @@
 title: Energy-Efficient Scheduling with Predictions
-labels:
-  - online
-  - scheduling
-publications:
-  - name: arXiv
-    year: 2024
-    month: 1
-    day: 27
-    url: https://arxiv.org/abs/2402.17143
-  - name: NeurIPS
-    year: 2023
-    url: http://papers.nips.cc/paper_files/paper/2023/hash/f99bb39502f09c4825e89760b4e1ad04-Abstract-Conference.html
 authors: Balkanski, Perivier, Stein, Wei
+labels:
+- online
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2402.17143
+  year: 2024
+  month: 1
+  day: 27
+  dblp_key: null
+  bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2023/hash/f99bb39502f09c4825e89760b4e1ad04-Abstract-Conference.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/nips/BalkanskiP0W23
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/BalkanskiP0W23,
+      author       = {Eric Balkanski and
+                      No{\'{e}}mie P{\'{e}}rivier and
+                      Clifford Stein and
+                      Hao{-}Ting Wei},
+      title        = {Energy-Efficient Scheduling with Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2023}
+    }
+

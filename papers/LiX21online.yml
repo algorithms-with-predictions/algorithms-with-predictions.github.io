@@ -1,9 +1,25 @@
-authors: Li, Xian
 title: Online Unrelated Machine Load Balancing with Predictions Revisited
-publications:
-  - name: ICML
-    url: http://proceedings.mlr.press/v139/li21w/li21w.pdf
-    year: 2021
+authors: Li, Xian
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
+publications:
+- name: ICML
+  url: http://proceedings.mlr.press/v139/li21w/li21w.pdf
+  year: 2021
+  month: null
+  day: null
+  dblp_key: conf/icml/0001X21
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/0001X21,
+      author       = {Shi Li and
+                      Jiayi Xian},
+      title        = {Online Unrelated Machine Load Balancing with Predictions Revisited},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {139},
+      pages        = {6523--6532},
+      publisher    = {{PMLR}},
+      year         = {2021}
+    }
+

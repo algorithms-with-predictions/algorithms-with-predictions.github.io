@@ -1,8 +1,23 @@
-authors: Hsu, Indyk, Katabi, Vakilian
 title: Learning-Based Frequency Estimation Algorithms
-publications:
-  - name: ICLR
-    url: https://par.nsf.gov/servlets/purl/10112257
-    year: 2019
+authors: Hsu, Indyk, Katabi, Vakilian
 labels:
-  - streaming
+- streaming
+publications:
+- name: ICLR
+  url: https://par.nsf.gov/servlets/purl/10112257
+  year: 2019
+  month: null
+  day: null
+  dblp_key: conf/iclr/HsuIKV19
+  bibtex: |+
+    @inproceedings{DBLP:conf/iclr/HsuIKV19,
+      author       = {Chen{-}Yu Hsu and
+                      Piotr Indyk and
+                      Dina Katabi and
+                      Ali Vakilian},
+      title        = {Learning-Based Frequency Estimation Algorithms},
+      booktitle    = {{ICLR} (Poster)},
+      publisher    = {OpenReview.net},
+      year         = {2019}
+    }
+

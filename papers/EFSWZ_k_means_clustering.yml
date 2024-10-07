@@ -1,16 +1,34 @@
-authors: Ergun, Feng, Silwal, Woodruff, Zhou
 title: Learning-Augmented k-means Clustering
-publications:
-  - name: ICLR
-    url: https://openreview.net/forum?id=X8cLTHexYyY
-    year: 2022
-  - year: 2022
-    month: 3
-    day: 19
-    name: arXiv
-    url: https://arxiv.org/abs/2110.14094
+authors: Ergun, Feng, Silwal, Woodruff, Zhou
 labels:
-  - running time
-  - beyond NP hardness
-  - clustering
-  - approximation
+- running time
+- beyond NP hardness
+- clustering
+- approximation
+publications:
+- name: ICLR
+  url: https://openreview.net/forum?id=X8cLTHexYyY
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/iclr/ErgunFSWZ22
+  bibtex: |+
+    @inproceedings{DBLP:conf/iclr/ErgunFSWZ22,
+      author       = {Jon C. Ergun and
+                      Zhili Feng and
+                      Sandeep Silwal and
+                      David P. Woodruff and
+                      Samson Zhou},
+      title        = {Learning-Augmented {\textdollar}k{\textdollar}-means Clustering},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2022}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2110.14094
+  year: 2022
+  month: 3
+  day: 19
+  dblp_key: null
+  bibtex: null

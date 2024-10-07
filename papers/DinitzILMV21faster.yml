@@ -1,14 +1,32 @@
-authors: Dinitz, Im, Lavastida, Moseley, Vassilvitskii
 title: Faster Matchings via Learned Duals
-publications:
-  - year: 2021
-    month: 6
-    day: 20
-    name: arXiv
-    url: https://arxiv.org/abs/2107.09770
-  - name: NeurIPS
-    url: https://proceedings.neurips.cc/paper/2021/file/5616060fb8ae85d93f334e7267307664-Paper.pdf
-    year: 2021
+authors: Dinitz, Im, Lavastida, Moseley, Vassilvitskii
 labels:
-  - running time
-  - matching
+- running time
+- matching
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2107.09770
+  year: 2021
+  month: 6
+  day: 20
+  dblp_key: null
+  bibtex: null
+- name: NeurIPS
+  url: https://proceedings.neurips.cc/paper/2021/file/5616060fb8ae85d93f334e7267307664-Paper.pdf
+  year: 2021
+  month: null
+  day: null
+  dblp_key: conf/nips/DinitzILMV21
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/DinitzILMV21,
+      author       = {Michael Dinitz and
+                      Sungjin Im and
+                      Thomas Lavastida and
+                      Benjamin Moseley and
+                      Sergei Vassilvitskii},
+      title        = {Faster Matchings via Learned Duals},
+      booktitle    = {NeurIPS},
+      pages        = {10393--10406},
+      year         = {2021}
+    }
+

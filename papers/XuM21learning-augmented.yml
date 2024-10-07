@@ -1,13 +1,30 @@
-authors: Xu, Moseley
 title: Learning-Augmented Algorithms for Online Steiner Tree
-publications:
-  - name: AAAI
-    year: 2022
-  - year: 2021
-    month: 11
-    day: 10
-    name: arXiv
-    url: https://arxiv.org/abs/2112.05353
+authors: Xu, Moseley
 labels:
-  - online
-  - network design
+- online
+- network design
+publications:
+- name: AAAI
+  url: null
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/aaai/0002M22
+  bibtex: |+
+    @inproceedings{DBLP:conf/aaai/0002M22,
+      author       = {Chenyang Xu and
+                      Benjamin Moseley},
+      title        = {Learning-Augmented Algorithms for Online Steiner Tree},
+      booktitle    = {{AAAI}},
+      pages        = {8744--8752},
+      publisher    = {{AAAI} Press},
+      year         = {2022}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2112.05353
+  year: 2021
+  month: 11
+  day: 10
+  dblp_key: null
+  bibtex: null

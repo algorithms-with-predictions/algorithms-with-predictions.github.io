@@ -1,14 +1,34 @@
-authors: Im, Kumar, Petety, Purohit
 title: Parsimonious Learning-Augmented Caching
-publications:
-  - year: 2022
-    month: 1
-    day: 9
-    name: arXiv
-    url: https://arxiv.org/abs/2202.04262
-  - name: ICML
-    year: 2022
-    url: https://proceedings.mlr.press/v162/im22a.html
+authors: Im, Kumar, Petety, Purohit
 labels:
-  - online
-  - caching/paging
+- online
+- caching/paging
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2202.04262
+  year: 2022
+  month: 1
+  day: 9
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://proceedings.mlr.press/v162/im22a.html
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/icml/Im0PP22
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/Im0PP22,
+      author       = {Sungjin Im and
+                      Ravi Kumar and
+                      Aditya Petety and
+                      Manish Purohit},
+      title        = {Parsimonious Learning-Augmented Caching},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {162},
+      pages        = {9588--9601},
+      publisher    = {{PMLR}},
+      year         = {2022}
+    }
+

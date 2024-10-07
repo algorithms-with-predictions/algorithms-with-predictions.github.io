@@ -1,14 +1,38 @@
 title: Learning-Augmented Online TSP on Rings, Trees, Flowers and (almost) Everywhere Else
-labels:
-  - online
-  - routing
-publications:
-  - name: arXiv
-    year: 2023
-    month: 4
-    day: 3
-    url: https://arxiv.org/abs/2305.02169
-  - name: ESA
-    year: 2023
-    url: https://doi.org/10.4230/LIPIcs.ESA.2023.12
 authors: Bampis, Escoffier, Gouleakis, Hahn, Lakis, Shahkarami, Xefteris
+labels:
+- online
+- routing
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2305.02169
+  year: 2023
+  month: 4
+  day: 3
+  dblp_key: null
+  bibtex: null
+- name: ESA
+  url: https://doi.org/10.4230/LIPIcs.ESA.2023.12
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/esa/BampisEGHLSX23
+  bibtex: |+
+    @inproceedings{DBLP:conf/esa/BampisEGHLSX23,
+      author       = {Evripidis Bampis and
+                      Bruno Escoffier and
+                      Themis Gouleakis and
+                      Niklas Hahn and
+                      Kostas Lakis and
+                      Golnoosh Shahkarami and
+                      Michalis Xefteris},
+      title        = {Learning-Augmented Online {TSP} on Rings, Trees, Flowers and (Almost)
+                      Everywhere Else},
+      booktitle    = {{ESA}},
+      series       = {LIPIcs},
+      volume       = {274},
+      pages        = {12:1--12:17},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2023}
+    }
+

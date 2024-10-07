@@ -1,14 +1,33 @@
-authors: Antoniadis, Ganje, Shahkarami
 title: A Novel Prediction Setup for Online Speed-Scaling
-publications:
-  - year: 2021
-    month: 11
-    day: 6
-    name: arXiv
-    url: https://arxiv.org/abs/2112.03082
-  - name: SWAT
-    year: 2022
-    url: https://doi.org/10.4230/LIPIcs.SWAT.2022.9
+authors: Antoniadis, Ganje, Shahkarami
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2112.03082
+  year: 2021
+  month: 11
+  day: 6
+  dblp_key: null
+  bibtex: null
+- name: SWAT
+  url: https://doi.org/10.4230/LIPIcs.SWAT.2022.9
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/swat/AntoniadisGS22
+  bibtex: |+
+    @inproceedings{DBLP:conf/swat/AntoniadisGS22,
+      author       = {Antonios Antoniadis and
+                      Peyman Jabbarzade and
+                      Golnoosh Shahkarami},
+      title        = {A Novel Prediction Setup for Online Speed-Scaling},
+      booktitle    = {{SWAT}},
+      series       = {LIPIcs},
+      volume       = {227},
+      pages        = {9:1--9:20},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2022}
+    }
+

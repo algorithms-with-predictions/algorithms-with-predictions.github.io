@@ -219,7 +219,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         let file = std::fs::File::open(entry.path())?;
         let mut paper: Paper = serde_yml::from_reader(file)?;
 
-        update_paper_from_arxiv(&mut paper, 4).await?;
+        //update_paper_from_arxiv(&mut paper, 4).await?;
         update_paper_from_dblp(&mut paper, 4).await?;
 
         let file = std::fs::File::create(entry.path())?;

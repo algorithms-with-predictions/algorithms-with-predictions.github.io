@@ -1,14 +1,34 @@
-authors: Balkanski, Ou, Stein, Wei
 title: Scheduling with Speed Predictions
-publications:
-  - year: 2022
-    month: 4
-    day: 3
-    name: arXiv
-    url: https://arxiv.org/abs/2205.01247
-  - name: WAOA
-    year: 2023
-    url: https://doi.org/10.1007/978-3-031-49815-2_6
+authors: Balkanski, Ou, Stein, Wei
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2205.01247
+  year: 2022
+  month: 4
+  day: 3
+  dblp_key: null
+  bibtex: null
+- name: WAOA
+  url: https://doi.org/10.1007/978-3-031-49815-2_6
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/waoa/BalkanskiOSW23
+  bibtex: |+
+    @inproceedings{DBLP:conf/waoa/BalkanskiOSW23,
+      author       = {Eric Balkanski and
+                      Tingting Ou and
+                      Clifford Stein and
+                      Hao{-}Ting Wei},
+      title        = {Scheduling with Speed Predictions},
+      booktitle    = {{WAOA}},
+      series       = {Lecture Notes in Computer Science},
+      volume       = {14297},
+      pages        = {74--89},
+      publisher    = {Springer},
+      year         = {2023}
+    }
+

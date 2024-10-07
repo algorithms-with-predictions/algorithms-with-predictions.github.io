@@ -1,14 +1,32 @@
 title: Online Bin Covering with Frequency Predictions
-labels:
-  - online
-  - covering problems
-publications:
-  - name: arXiv
-    year: 2024
-    month: 0
-    day: 26
-    url: https://arxiv.org/abs/2401.14881
-  - name: SWAT
-    year: 2024
-    url: https://doi.org/10.4230/LIPIcs.SWAT.2024.10
 authors: Berg, Kamali
+labels:
+- online
+- covering problems
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2401.14881
+  year: 2024
+  month: 0
+  day: 26
+  dblp_key: null
+  bibtex: null
+- name: SWAT
+  url: https://doi.org/10.4230/LIPIcs.SWAT.2024.10
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/swat/BergK24
+  bibtex: |+
+    @inproceedings{DBLP:conf/swat/BergK24,
+      author       = {Magnus Berg and
+                      Shahin Kamali},
+      title        = {Online Bin Covering with Frequency Predictions},
+      booktitle    = {{SWAT}},
+      series       = {LIPIcs},
+      volume       = {294},
+      pages        = {10:1--10:17},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2024}
+    }
+

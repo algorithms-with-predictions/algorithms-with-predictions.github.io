@@ -1,15 +1,35 @@
 title: Online Interval Scheduling with Predictions
-labels:
-  - online
-  - scheduling
-  - allocation
-publications:
-  - name: arXiv
-    year: 2023
-    month: 1
-    day: 27
-    url: https://arxiv.org/abs/2302.13701
-  - name: WADS
-    year: 2023
-    url: https://doi.org/10.1007/978-3-031-38906-1_14
 authors: Boyar, Favrholdt, Kamali, Larsen
+labels:
+- online
+- scheduling
+- allocation
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2302.13701
+  year: 2023
+  month: 1
+  day: 27
+  dblp_key: null
+  bibtex: null
+- name: WADS
+  url: https://doi.org/10.1007/978-3-031-38906-1_14
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/wads/BoyarFKL23
+  bibtex: |+
+    @inproceedings{DBLP:conf/wads/BoyarFKL23,
+      author       = {Joan Boyar and
+                      Lene M. Favrholdt and
+                      Shahin Kamali and
+                      Kim S. Larsen},
+      title        = {Online Interval Scheduling with Predictions},
+      booktitle    = {{WADS}},
+      series       = {Lecture Notes in Computer Science},
+      volume       = {14079},
+      pages        = {193--207},
+      publisher    = {Springer},
+      year         = {2023}
+    }
+

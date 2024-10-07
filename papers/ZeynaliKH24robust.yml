@@ -1,15 +1,31 @@
 title: Robust Learning-Augmented Dictionaries
-labels:
-  - data structure
-  - dictionary
-  - search
-publications:
-  - name: arXiv
-    year: 2024
-    month: 1
-    day: 15
-    url: https://arxiv.org/abs/2402.09687
-  - name: ICML
-    year: 2024
-    url: https://openreview.net/forum?id=XyhgssAo5b
 authors: Zeynali, Kamali, Hajiesmaili
+labels:
+- data structure
+- dictionary
+- search
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2402.09687
+  year: 2024
+  month: 1
+  day: 15
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://openreview.net/forum?id=XyhgssAo5b
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/icml/ZeynaliKH24
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/ZeynaliKH24,
+      author       = {Ali Zeynali and
+                      Shahin Kamali and
+                      Mohammad Hajiesmaili},
+      title        = {Robust Learning-Augmented Dictionaries},
+      booktitle    = {{ICML}},
+      publisher    = {OpenReview.net},
+      year         = {2024}
+    }
+

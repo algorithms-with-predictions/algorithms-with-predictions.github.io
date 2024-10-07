@@ -1,15 +1,35 @@
-authors: Anand, Ge, Kumar, Panigrahi
 title: Online Algorithms with Multiple Predictions
-publications:
-  - year: 2022
-    month: 4
-    day: 8
-    name: arXiv
-    url: https://arxiv.org/abs/2205.03921
-  - name: ICML
-    year: 2022
-    url: https://proceedings.mlr.press/v162/anand22a.html
+authors: Anand, Ge, Kumar, Panigrahi
 labels:
-  - online
-  - multiple predictions
-  - cover problems
+- online
+- multiple predictions
+- cover problems
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2205.03921
+  year: 2022
+  month: 4
+  day: 8
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://proceedings.mlr.press/v162/anand22a.html
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/icml/Anand0KP22
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/Anand0KP22,
+      author       = {Keerti Anand and
+                      Rong Ge and
+                      Amit Kumar and
+                      Debmalya Panigrahi},
+      title        = {Online Algorithms with Multiple Predictions},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {162},
+      pages        = {582--598},
+      publisher    = {{PMLR}},
+      year         = {2022}
+    }
+

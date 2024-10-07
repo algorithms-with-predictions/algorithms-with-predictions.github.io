@@ -1,14 +1,33 @@
 title: Strategyproof Scheduling with Predictions
-labels:
-  - AGT
-  - scheduling
-publications:
-  - name: arXiv
-    year: 2022
-    month: 8
-    day: 9
-    url: https://arxiv.org/abs/2209.04058
-  - name: ITCS
-    year: 2023
-    url: https://doi.org/10.4230/LIPIcs.ITCS.2023.11
 authors: Balkanski, Gkatzelis, Tan
+labels:
+- AGT
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2209.04058
+  year: 2022
+  month: 8
+  day: 9
+  dblp_key: null
+  bibtex: null
+- name: ITCS
+  url: https://doi.org/10.4230/LIPIcs.ITCS.2023.11
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/innovations/BalkanskiGT23
+  bibtex: |+
+    @inproceedings{DBLP:conf/innovations/BalkanskiGT23,
+      author       = {Eric Balkanski and
+                      Vasilis Gkatzelis and
+                      Xizhi Tan},
+      title        = {Strategyproof Scheduling with Predictions},
+      booktitle    = {{ITCS}},
+      series       = {LIPIcs},
+      volume       = {251},
+      pages        = {11:1--11:22},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2023}
+    }
+

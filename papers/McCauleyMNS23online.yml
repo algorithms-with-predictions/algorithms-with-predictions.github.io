@@ -1,14 +1,30 @@
 title: Online List Labeling with Predictions
-labels:
-  - data structure
-  - list labeling
-publications:
-  - name: NeurIPS
-    year: 2023
-    url: https://papers.nips.cc/paper_files/paper/2023/hash/bd8284e53b6d177cbede82def77d4951-Abstract-Conference.html
-  - name: arXiv
-    year: 2023
-    month: 4
-    day: 17
-    url: https://arxiv.org/abs/2305.10536
 authors: McCauley, Moseley, Niaparast, Singh
+labels:
+- data structure
+- list labeling
+publications:
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2023/hash/bd8284e53b6d177cbede82def77d4951-Abstract-Conference.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/nips/McCauleyMN023
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/McCauleyMN023,
+      author       = {Samuel McCauley and
+                      Benjamin Moseley and
+                      Aidin Niaparast and
+                      Shikha Singh},
+      title        = {Online List Labeling with Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2023}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2305.10536
+  year: 2023
+  month: 4
+  day: 17
+  dblp_key: null
+  bibtex: null

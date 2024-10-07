@@ -1,13 +1,28 @@
 title: 'Faster Discrete Convex Function Minimization with Predictions: The M-Convex Case'
-labels:
-  - running time
-publications:
-  - name: arXiv
-    year: 2023
-    month: 5
-    day: 9
-    url: https://arxiv.org/abs/2306.05865
-  - name: NeurIPS
-    year: 2023
-    url: http://papers.nips.cc/paper_files/paper/2023/hash/d84c0dd9b1bfeee361f3268dcaebf849-Abstract-Conference.html
 authors: Oki, Sakaue
+labels:
+- running time
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2306.05865
+  year: 2023
+  month: 5
+  day: 9
+  dblp_key: null
+  bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2023/hash/d84c0dd9b1bfeee361f3268dcaebf849-Abstract-Conference.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/nips/OkiS23
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/OkiS23,
+      author       = {Taihei Oki and
+                      Shinsaku Sakaue},
+      title        = {Faster Discrete Convex Function Minimization with Predictions: The
+                      M-Convex Case},
+      booktitle    = {NeurIPS},
+      year         = {2023}
+    }
+

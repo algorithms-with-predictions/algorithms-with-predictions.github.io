@@ -1,14 +1,34 @@
-authors: Agrawal, Balkanski, Gkatzelis, Ou, Tan
 title: 'Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location'
-publications:
-  - year: 2022
-    month: 3
-    day: 3
-    name: arXiv
-    url: https://arxiv.org/abs/2204.01120
-  - name: EC
-    year: 2022
-    url: https://doi.org/10.1145/3490486.3538306
+authors: Agrawal, Balkanski, Gkatzelis, Ou, Tan
 labels:
-  - AGT
-  - network design
+- AGT
+- network design
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2204.01120
+  year: 2022
+  month: 3
+  day: 3
+  dblp_key: null
+  bibtex: null
+- name: EC
+  url: https://doi.org/10.1145/3490486.3538306
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/sigecom/AgrawalBGOT22
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigecom/AgrawalBGOT22,
+      author       = {Priyank Agrawal and
+                      Eric Balkanski and
+                      Vasilis Gkatzelis and
+                      Tingting Ou and
+                      Xizhi Tan},
+      title        = {Learning-Augmented Mechanism Design: Leveraging Predictions for Facility
+                      Location},
+      booktitle    = {{EC}},
+      pages        = {497--528},
+      publisher    = {{ACM}},
+      year         = {2022}
+    }
+

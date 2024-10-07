@@ -1,14 +1,33 @@
 title: Chasing Convex Bodies and Functions with Black-Box Advice
-labels:
-  - online
-  - convex body chasing
-publications:
-  - name: arXiv
-    year: 2022
-    month: 5
-    day: 23
-    url: https://arxiv.org/abs/2206.11780
-  - name: COLT
-    year: 2022
-    url: https://proceedings.mlr.press/v178/christianson22a.html
 authors: Christianson, Handina, Wierman
+labels:
+- online
+- convex body chasing
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2206.11780
+  year: 2022
+  month: 5
+  day: 23
+  dblp_key: null
+  bibtex: null
+- name: COLT
+  url: https://proceedings.mlr.press/v178/christianson22a.html
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/colt/ChristiansonHW22
+  bibtex: |+
+    @inproceedings{DBLP:conf/colt/ChristiansonHW22,
+      author       = {Nicolas Christianson and
+                      Tinashe Handina and
+                      Adam Wierman},
+      title        = {Chasing Convex Bodies and Functions with Black-Box Advice},
+      booktitle    = {{COLT}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {178},
+      pages        = {867--908},
+      publisher    = {{PMLR}},
+      year         = {2022}
+    }
+

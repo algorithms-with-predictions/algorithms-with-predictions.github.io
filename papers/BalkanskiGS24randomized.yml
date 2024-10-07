@@ -1,11 +1,13 @@
 title: Randomized Strategic Facility Location with Predictions
-labels:
-  - AGT
-  - facility location
-publications:
-  - name: arXiv
-    year: 2024
-    month: 8
-    day: 11
-    url: https://arxiv.org/abs/2409.07142
 authors: Balkanski, Gkatzelis, Shahkarami
+labels:
+- AGT
+- facility location
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2409.07142
+  year: 2024
+  month: 8
+  day: 11
+  dblp_key: null
+  bibtex: null

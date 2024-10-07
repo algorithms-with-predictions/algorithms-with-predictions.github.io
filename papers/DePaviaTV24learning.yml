@@ -1,15 +1,34 @@
 title: Learning-Based Algorithms for Graph Searching Problems
-labels:
-  - online
-  - exploration
-  - search
-publications:
-  - name: arXiv
-    year: 2024
-    month: 1
-    day: 27
-    url: https://arxiv.org/abs/2402.17736
-  - name: AISTATS
-    year: 2024
-    url: https://proceedings.mlr.press/v238/depavia24a.html
 authors: DePavia, Tani, Vakilian
+labels:
+- online
+- exploration
+- search
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2402.17736
+  year: 2024
+  month: 1
+  day: 27
+  dblp_key: null
+  bibtex: null
+- name: AISTATS
+  url: https://proceedings.mlr.press/v238/depavia24a.html
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/aistats/DePaviaTV24
+  bibtex: |+
+    @inproceedings{DBLP:conf/aistats/DePaviaTV24,
+      author       = {Adela Frances DePavia and
+                      Erasmo Tani and
+                      Ali Vakilian},
+      title        = {Learning-Based Algorithms for Graph Searching Problems},
+      booktitle    = {{AISTATS}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {238},
+      pages        = {928--936},
+      publisher    = {{PMLR}},
+      year         = {2024}
+    }
+

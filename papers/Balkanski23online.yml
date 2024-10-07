@@ -1,12 +1,14 @@
 title: Online Mechanism Design with Predictions
-labels:
-  - AGT
-  - mechanism design
-  - auctions
-publications:
-  - name: arXiv
-    year: 2023
-    month: 9
-    day: 4
-    url: https://arxiv.org/abs/2310.02879
 authors: Balkanski, Gkatzelis, Tan, Zhu
+labels:
+- AGT
+- mechanism design
+- auctions
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2310.02879
+  year: 2023
+  month: 9
+  day: 4
+  dblp_key: null
+  bibtex: null

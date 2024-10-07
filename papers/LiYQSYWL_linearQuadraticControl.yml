@@ -1,17 +1,43 @@
 title: Robustness and Consistency in Linear Quadratic Control with Untrusted Predictions
 authors: Li, Yang, Qu, Shi, Yu, Wierman, Low
-publications:
-  - year: 2021
-    month: 5
-    day: 17
-    name: arXiv
-    url: https://arxiv.org/abs/2106.09659
-  - name: Proc. ACM Meas. Anal. Comput. Syst.
-    year: 2022
-    url: https://doi.org/10.1145/3508038
-  - name: SIGMETRICS
-    year: 2022
-    url: https://doi.org/10.1145/3489048.3522658
 labels:
-  - online
-  - linear quadratic control
+- online
+- linear quadratic control
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2106.09659
+  year: 2021
+  month: 5
+  day: 17
+  dblp_key: null
+  bibtex: null
+- name: Proc. ACM Meas. Anal. Comput. Syst.
+  url: https://doi.org/10.1145/3508038
+  year: 2022
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
+- name: SIGMETRICS
+  url: https://doi.org/10.1145/3489048.3522658
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/sigmetrics/LiYQSYWL22
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigmetrics/LiYQSYWL22,
+      author       = {Tongxin Li and
+                      Ruixiao Yang and
+                      Guannan Qu and
+                      Guanya Shi and
+                      Chenkai Yu and
+                      Adam Wierman and
+                      Steven H. Low},
+      title        = {Robustness and Consistency in Linear Quadratic Control with Untrusted
+                      Predictions},
+      booktitle    = {{SIGMETRICS} (Abstracts)},
+      pages        = {107--108},
+      publisher    = {{ACM}},
+      year         = {2022}
+    }
+

@@ -1,14 +1,33 @@
 title: Canadian Traveller Problem with Predictions
-labels:
-  - online
-  - routing
-publications:
-  - name: arXiv
-    year: 2022
-    month: 8
-    day: 22
-    url: https://arxiv.org/abs/2209.11100
-  - name: WAOA
-    year: 2022
-    url: https://doi.org/10.1007/978-3-031-18367-6_6
 authors: Bampis, Escoffier, Xefteris
+labels:
+- online
+- routing
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2209.11100
+  year: 2022
+  month: 8
+  day: 22
+  dblp_key: null
+  bibtex: null
+- name: WAOA
+  url: https://doi.org/10.1007/978-3-031-18367-6_6
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/waoa/BampisEX22
+  bibtex: |+
+    @inproceedings{DBLP:conf/waoa/BampisEX22,
+      author       = {Evripidis Bampis and
+                      Bruno Escoffier and
+                      Michalis Xefteris},
+      title        = {Canadian Traveller Problem with Predictions},
+      booktitle    = {{WAOA}},
+      series       = {Lecture Notes in Computer Science},
+      volume       = {13538},
+      pages        = {116--133},
+      publisher    = {Springer},
+      year         = {2022}
+    }
+

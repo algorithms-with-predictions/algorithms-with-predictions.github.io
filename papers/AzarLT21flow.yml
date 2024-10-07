@@ -1,14 +1,31 @@
-authors: Azar, Leonardi, Touitou
 title: Flow Time Scheduling with Uncertain Processing Time
-publications:
-  - name: STOC
-    url: https://dl.acm.org/doi/10.1145/3406325.3451023
-    year: 2021
-  - year: 2021
-    month: 2
-    day: 9
-    name: arXiv
-    url: https://arxiv.org/abs/2103.05604
+authors: Azar, Leonardi, Touitou
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
+publications:
+- name: STOC
+  url: https://dl.acm.org/doi/10.1145/3406325.3451023
+  year: 2021
+  month: null
+  day: null
+  dblp_key: conf/stoc/AzarLT21
+  bibtex: |+
+    @inproceedings{DBLP:conf/stoc/AzarLT21,
+      author       = {Yossi Azar and
+                      Stefano Leonardi and
+                      Noam Touitou},
+      title        = {Flow time scheduling with uncertain processing time},
+      booktitle    = {{STOC}},
+      pages        = {1070--1080},
+      publisher    = {{ACM}},
+      year         = {2021}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2103.05604
+  year: 2021
+  month: 2
+  day: 9
+  dblp_key: null
+  bibtex: null

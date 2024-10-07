@@ -1,11 +1,13 @@
 title: Online Classification with Predictions
-labels:
-  - online
-  - learning
-publications:
-  - name: arXiv
-    year: 2024
-    month: 4
-    day: 23
-    url: https://arxiv.org/abs/2405.14066
 authors: Raman, Tewari
+labels:
+- online
+- learning
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2405.14066
+  year: 2024
+  month: 4
+  day: 23
+  dblp_key: null
+  bibtex: null

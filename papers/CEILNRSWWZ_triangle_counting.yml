@@ -1,15 +1,38 @@
-authors: Chen, Eden, Indyk, Lin, Narayanan, Rubinfeld, Silwal, Wagner, Woodruff, Zhang
 title: Triangle and Four Cycle Counting with Predictions in Graph Streams
-publications:
-  - name: ICLR
-    url: https://openreview.net/forum?id=8in_5gN9I0
-    year: 2022
-  - year: 2022
-    month: 2
-    day: 17
-    name: arXiv
-    url: https://arxiv.org/abs/2203.09572
+authors: Chen, Eden, Indyk, Lin, Narayanan, Rubinfeld, Silwal, Wagner, Woodruff, Zhang
 labels:
-  - streaming
-  - sublinear algorithms
-  - subgraph counting
+- streaming
+- sublinear algorithms
+- subgraph counting
+publications:
+- name: ICLR
+  url: https://openreview.net/forum?id=8in_5gN9I0
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/iclr/ChenEILNRSWWZ22
+  bibtex: |+
+    @inproceedings{DBLP:conf/iclr/ChenEILNRSWWZ22,
+      author       = {Justin Y. Chen and
+                      Talya Eden and
+                      Piotr Indyk and
+                      Honghao Lin and
+                      Shyam Narayanan and
+                      Ronitt Rubinfeld and
+                      Sandeep Silwal and
+                      Tal Wagner and
+                      David P. Woodruff and
+                      Michael Zhang},
+      title        = {Triangle and Four Cycle Counting with Predictions in Graph Streams},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2022}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2203.09572
+  year: 2022
+  month: 2
+  day: 17
+  dblp_key: null
+  bibtex: null

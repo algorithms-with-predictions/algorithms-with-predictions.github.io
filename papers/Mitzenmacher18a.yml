@@ -1,12 +1,26 @@
-authors: Mitzenmacher
 title: A model for learned bloom filters and optimizing by sandwiching
-publications:
-  - name: NeurIPS
-    url: https://dl.acm.org/doi/pdf/10.5555/3326943.3326986
-    year: 2018
-  - year: 2019
-    month: 0
-    day: 3
-    name: arXiv
-    url: https://arxiv.org/abs/1901.00902
+authors: Mitzenmacher
 labels: []
+publications:
+- name: NeurIPS
+  url: https://dl.acm.org/doi/pdf/10.5555/3326943.3326986
+  year: 2018
+  month: null
+  day: null
+  dblp_key: conf/nips/Mitzenmacher18
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/Mitzenmacher18,
+      author       = {Michael Mitzenmacher},
+      title        = {A Model for Learned Bloom Filters and Optimizing by Sandwiching},
+      booktitle    = {NeurIPS},
+      pages        = {462--471},
+      year         = {2018}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/1901.00902
+  year: 2019
+  month: 0
+  day: 3
+  dblp_key: null
+  bibtex: null

@@ -1,10 +1,27 @@
 title: Speeding Up Bellman Ford via Minimum Violation Permutations
 authors: Lattanzi, Svensson, Vassilvitskii
 labels:
-  - running time
-  - graph algorithms
-  - shortest path
+- running time
+- graph algorithms
+- shortest path
 publications:
-  - name: ICML
-    year: 2023
-    url: https://proceedings.mlr.press/v202/lattanzi23a.html
+- name: ICML
+  url: https://proceedings.mlr.press/v202/lattanzi23a.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/icml/LattanziSV23
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/LattanziSV23,
+      author       = {Silvio Lattanzi and
+                      Ola Svensson and
+                      Sergei Vassilvitskii},
+      title        = {Speeding Up Bellman Ford via Minimum Violation Permutations},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {202},
+      pages        = {18584--18598},
+      publisher    = {{PMLR}},
+      year         = {2023}
+    }
+

@@ -1,8 +1,23 @@
 title: Optimal online assignment with forecasts
-labels:
-  - prior/related work
-publications:
-  - name: EC
-    year: 2010
-    url: https://doi.org/10.1145/1807342.1807360
 authors: Vee, Vassilvitskii, Shanmugasundaram
+labels:
+- prior/related work
+publications:
+- name: EC
+  url: https://doi.org/10.1145/1807342.1807360
+  year: 2010
+  month: null
+  day: null
+  dblp_key: conf/sigecom/VeeVS10
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigecom/VeeVS10,
+      author       = {Erik Vee and
+                      Sergei Vassilvitskii and
+                      Jayavel Shanmugasundaram},
+      title        = {Optimal online assignment with forecasts},
+      booktitle    = {{EC}},
+      pages        = {109--118},
+      publisher    = {{ACM}},
+      year         = {2010}
+    }
+

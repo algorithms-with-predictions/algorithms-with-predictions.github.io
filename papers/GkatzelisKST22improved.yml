@@ -1,13 +1,31 @@
 title: Improved Price of Anarchy via Predictions
-labels:
-  - AGT
-publications:
-  - name: arXiv
-    year: 2022
-    month: 4
-    day: 9
-    url: https://arxiv.org/abs/2205.04252
-  - name: EC
-    year: 2022
-    url: https://doi.org/10.1145/3490486.3538296
 authors: Gkatzelis, Kollias, Sgouritsa, Tan
+labels:
+- AGT
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2205.04252
+  year: 2022
+  month: 4
+  day: 9
+  dblp_key: null
+  bibtex: null
+- name: EC
+  url: https://doi.org/10.1145/3490486.3538296
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/sigecom/GkatzelisKST22
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigecom/GkatzelisKST22,
+      author       = {Vasilis Gkatzelis and
+                      Kostas Kollias and
+                      Alkmini Sgouritsa and
+                      Xizhi Tan},
+      title        = {Improved Price of Anarchy via Predictions},
+      booktitle    = {{EC}},
+      pages        = {529--557},
+      publisher    = {{ACM}},
+      year         = {2022}
+    }
+

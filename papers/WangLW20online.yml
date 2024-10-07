@@ -1,14 +1,29 @@
 title: Online Algorithms for Multi-shop Ski Rental with Machine Learned Advice
 authors: Wang, Li, Wang
-publications:
-  - name: NeurIPS
-    url: https://proceedings.neurips.cc/paper/2020/file/5cc4bb753030a3d804351b2dfec0d8b5-Paper.pdf
-    year: 2020
-  - year: 2020
-    month: 1
-    day: 13
-    name: arXiv
-    url: https://arxiv.org/abs/2002.05808
 labels:
-  - online
-  - rent-or-buy
+- online
+- rent-or-buy
+publications:
+- name: NeurIPS
+  url: https://proceedings.neurips.cc/paper/2020/file/5cc4bb753030a3d804351b2dfec0d8b5-Paper.pdf
+  year: 2020
+  month: null
+  day: null
+  dblp_key: conf/nips/WangLW20
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/WangLW20,
+      author       = {Shufan Wang and
+                      Jian Li and
+                      Shiqiang Wang},
+      title        = {Online Algorithms for Multi-shop Ski Rental with Machine Learned Advice},
+      booktitle    = {NeurIPS},
+      year         = {2020}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2002.05808
+  year: 2020
+  month: 1
+  day: 13
+  dblp_key: null
+  bibtex: null

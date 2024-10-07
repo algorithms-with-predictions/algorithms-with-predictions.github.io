@@ -1,15 +1,30 @@
 title: Algorithms for Caching and MTS with Reduced Number of Predictions
-labels:
-  - online
-  - caching/paging
-  - MTS
-publications:
-  - name: arXiv
-    year: 2024
-    month: 3
-    day: 9
-    url: https://arxiv.org/abs/2404.06280
-  - name: ICLR
-    year: 2024
-    url: https://openreview.net/forum?id=QuIiLSktO4
 authors: Sadek, Elias
+labels:
+- online
+- caching/paging
+- MTS
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2404.06280
+  year: 2024
+  month: 3
+  day: 9
+  dblp_key: null
+  bibtex: null
+- name: ICLR
+  url: https://openreview.net/forum?id=QuIiLSktO4
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/iclr/Sadek024
+  bibtex: |+
+    @inproceedings{DBLP:conf/iclr/Sadek024,
+      author       = {Karim Abdel Sadek and
+                      Marek Eli{\'{a}}s},
+      title        = {Algorithms for Caching and {MTS} with reduced number of predictions},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2024}
+    }
+

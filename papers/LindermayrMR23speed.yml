@@ -1,14 +1,34 @@
 title: 'Speed-Oblivious Online Scheduling: Knowing (Precise) Speeds is not Necessary'
 authors: Lindermayr, Megow, Rapp
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
 publications:
-  - name: arXiv
-    year: 2023
-    month: 1
-    day: 2
-    url: https://arxiv.org/abs/2302.00985
-  - name: ICML
-    year: 2023
-    url: https://proceedings.mlr.press/v202/lindermayr23a.html
+- name: arXiv
+  url: https://arxiv.org/abs/2302.00985
+  year: 2023
+  month: 1
+  day: 2
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://proceedings.mlr.press/v202/lindermayr23a.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/icml/LindermayrMR23
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/LindermayrMR23,
+      author       = {Alexander Lindermayr and
+                      Nicole Megow and
+                      Martin Rapp},
+      title        = {Speed-Oblivious Online Scheduling: Knowing (Precise) Speeds is not
+                      Necessary},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {202},
+      pages        = {21312--21334},
+      publisher    = {{PMLR}},
+      year         = {2023}
+    }
+

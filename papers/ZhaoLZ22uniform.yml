@@ -1,9 +1,24 @@
 title: Uniform Machine Scheduling with Predictions
 authors: Zhao, Li, Zomaya
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
 publications:
-  - name: ICAPS
-    year: 2022
-    url: https://ojs.aaai.org/index.php/ICAPS/article/view/19827
+- name: ICAPS
+  url: https://ojs.aaai.org/index.php/ICAPS/article/view/19827
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/aips/Zhao0Z22
+  bibtex: |+
+    @inproceedings{DBLP:conf/aips/Zhao0Z22,
+      author       = {Tianming Zhao and
+                      Wei Li and
+                      Albert Y. Zomaya},
+      title        = {Uniform Machine Scheduling with Predictions},
+      booktitle    = {{ICAPS}},
+      pages        = {413--422},
+      publisher    = {{AAAI} Press},
+      year         = {2022}
+    }
+

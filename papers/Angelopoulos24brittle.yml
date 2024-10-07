@@ -1,11 +1,13 @@
 title: Overcoming Brittleness in Pareto-Optimal Learning-Augmented Algorithms
-labels:
-  - online
-  - trading
-publications:
-  - name: arXiv
-    year: 2024
-    month: 7
-    day: 8
-    url: https://arxiv.org/abs/2408.04122
 authors: Angelopoulos, Dürr, Elenter, Lefki
+labels:
+- online
+- trading
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2408.04122
+  year: 2024
+  month: 7
+  day: 8
+  dblp_key: null
+  bibtex: null

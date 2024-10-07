@@ -1,15 +1,31 @@
 title: Mechanism Design with Predictions
-labels:
-  - AGT
-  - auctions
-  - scheduling
-publications:
-  - name: arXiv
-    year: 2022
-    month: 4
-    day: 23
-    url: https://arxiv.org/abs/2205.11313
-  - name: IJCAI
-    year: 2022
-    url: https://doi.org/10.24963/ijcai.2022/81
 authors: Xu, Lu
+labels:
+- AGT
+- auctions
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2205.11313
+  year: 2022
+  month: 4
+  day: 23
+  dblp_key: null
+  bibtex: null
+- name: IJCAI
+  url: https://doi.org/10.24963/ijcai.2022/81
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/ijcai/XuL22
+  bibtex: |+
+    @inproceedings{DBLP:conf/ijcai/XuL22,
+      author       = {Chenyang Xu and
+                      Pinyan Lu},
+      title        = {Mechanism Design with Predictions},
+      booktitle    = {{IJCAI}},
+      pages        = {571--577},
+      publisher    = {ijcai.org},
+      year         = {2022}
+    }
+

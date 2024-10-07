@@ -1,9 +1,25 @@
-authors: Bhattacharya, Das
 title: Machine Learning Advised Ski Rental Problem with a Discount
-publications:
-  - name: WALCOM
-    url: https://link.springer.com/chapter/10.1007/978-3-030-96731-4_18
-    year: 2022
+authors: Bhattacharya, Das
 labels:
-  - online
-  - rent-or-buy
+- online
+- rent-or-buy
+publications:
+- name: WALCOM
+  url: https://link.springer.com/chapter/10.1007/978-3-030-96731-4_18
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/walcom/BhattacharyaD22
+  bibtex: |+
+    @inproceedings{DBLP:conf/walcom/BhattacharyaD22,
+      author       = {Arghya Bhattacharya and
+                      Rathish Das},
+      title        = {Machine Learning Advised Ski Rental Problem with a Discount},
+      booktitle    = {{WALCOM}},
+      series       = {Lecture Notes in Computer Science},
+      volume       = {13174},
+      pages        = {213--224},
+      publisher    = {Springer},
+      year         = {2022}
+    }
+

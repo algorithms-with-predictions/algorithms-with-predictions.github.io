@@ -1,14 +1,32 @@
-authors: Lu, Ren, Sun, Zhang
 title: Generalized Sorting with Predictions
-publications:
-  - name: SOSA
-    url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976496.13
-    year: 2021
-  - year: 2020
-    month: 9
-    day: 31
-    name: arXiv
-    url: https://arxiv.org/abs/2011.00172
+authors: Lu, Ren, Sun, Zhang
 labels:
-  - running time
-  - sorting
+- running time
+- sorting
+publications:
+- name: SOSA
+  url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976496.13
+  year: 2021
+  month: null
+  day: null
+  dblp_key: conf/sosa/LuRSZ21
+  bibtex: |+
+    @inproceedings{DBLP:conf/sosa/LuRSZ21,
+      author       = {Pinyan Lu and
+                      Xuandi Ren and
+                      Enze Sun and
+                      Yubo Zhang},
+      title        = {Generalized Sorting with Predictions},
+      booktitle    = {{SOSA}},
+      pages        = {111--117},
+      publisher    = {{SIAM}},
+      year         = {2021}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/abs/2011.00172
+  year: 2020
+  month: 9
+  day: 31
+  dblp_key: null
+  bibtex: null

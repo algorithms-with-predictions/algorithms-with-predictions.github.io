@@ -1,13 +1,33 @@
-authors: Peng, Ahmadian, Esfandiari, Mirrokni
 title: Robust Load Balancing with Machine Learned Advice
-publications:
-  - name: SODA
-    url: https://epubs.siam.org/doi/10.1137/1.9781611977073.2
-    year: 2022
-  - name: J. Mach. Learn. Res.
-    year: 2023
-    url: http://jmlr.org/papers/v24/22-0629.html
+authors: Peng, Ahmadian, Esfandiari, Mirrokni
 labels:
-  - online
-  - scheduling
-  - load balancing
+- online
+- scheduling
+- load balancing
+publications:
+- name: SODA
+  url: https://epubs.siam.org/doi/10.1137/1.9781611977073.2
+  year: 2022
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
+- name: J. Mach. Learn. Res.
+  url: http://jmlr.org/papers/v24/22-0629.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: journals/jmlr/AhmadianEMP23
+  bibtex: |+
+    @article{DBLP:journals/jmlr/AhmadianEMP23,
+      author       = {Sara Ahmadian and
+                      Hossein Esfandiari and
+                      Vahab Mirrokni and
+                      Binghui Peng},
+      title        = {Robust Load Balancing with Machine Learned Advice},
+      journal      = {J. Mach. Learn. Res.},
+      volume       = {24},
+      pages        = {44:1--44:46},
+      year         = {2023}
+    }
+

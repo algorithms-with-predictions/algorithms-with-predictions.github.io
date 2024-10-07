@@ -1,14 +1,32 @@
-authors: Jiang, Liu, Lyu, Tang, Zhang
 title: Online Facility Location with Predictions
-publications:
-  - year: 2021
-    month: 9
-    day: 17
-    name: arXiv
-    url: https://arxiv.org/abs/2110.08840
-  - name: ICLR
-    year: 2022
-    url: https://openreview.net/forum?id=DSQHjibtgKR
+authors: Jiang, Liu, Lyu, Tang, Zhang
 labels:
-  - online
-  - network design
+- online
+- network design
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2110.08840
+  year: 2021
+  month: 9
+  day: 17
+  dblp_key: null
+  bibtex: null
+- name: ICLR
+  url: https://openreview.net/forum?id=DSQHjibtgKR
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/iclr/JiangLLTZ22
+  bibtex: |+
+    @inproceedings{DBLP:conf/iclr/JiangLLTZ22,
+      author       = {Shaofeng H.{-}C. Jiang and
+                      Erzhi Liu and
+                      You Lyu and
+                      Zhihao Gavin Tang and
+                      Yubo Zhang},
+      title        = {Online Facility Location with Predictions},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2022}
+    }
+

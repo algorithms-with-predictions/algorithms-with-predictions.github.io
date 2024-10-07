@@ -1,14 +1,38 @@
 title: Paging with Succinct Predictions
-labels:
-  - caching/paging
-  - online
-publications:
-  - name: arXiv
-    year: 2022
-    month: 9
-    day: 6
-    url: https://arxiv.org/abs/2210.02775
-  - name: ICML
-    year: 2023
-    url: https://proceedings.mlr.press/v202/antoniadis23a.html
 authors: Antoniadis, Boyar, Eliáš, Favrholdt, Hoeksma, Larsen, Polak, Simon
+labels:
+- caching/paging
+- online
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2210.02775
+  year: 2022
+  month: 9
+  day: 6
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://proceedings.mlr.press/v202/antoniadis23a.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/icml/0001B0FHL0S23
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/0001B0FHL0S23,
+      author       = {Antonios Antoniadis and
+                      Joan Boyar and
+                      Marek Eli{\'{a}}s and
+                      Lene Monrad Favrholdt and
+                      Ruben Hoeksma and
+                      Kim S. Larsen and
+                      Adam Polak and
+                      Bertrand Simon},
+      title        = {Paging with Succinct Predictions},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {202},
+      pages        = {952--968},
+      publisher    = {{PMLR}},
+      year         = {2023}
+    }
+

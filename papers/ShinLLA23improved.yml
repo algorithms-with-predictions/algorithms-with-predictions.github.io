@@ -1,14 +1,35 @@
 title: Improved Learning-Augmented Algorithms for the Multi-Option Ski Rental Problem via Best-Possible Competitive Analysis
-labels:
-  - online
-  - rent-or-buy
-publications:
-  - name: arXiv
-    year: 2023
-    month: 1
-    day: 14
-    url: https://arxiv.org/abs/2302.06832
-  - name: ICML
-    year: 2023
-    url: https://proceedings.mlr.press/v202/shin23c.html
 authors: Shin, Lee, Lee, An
+labels:
+- online
+- rent-or-buy
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2302.06832
+  year: 2023
+  month: 1
+  day: 14
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://proceedings.mlr.press/v202/shin23c.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/icml/ShinLLA23
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/ShinLLA23,
+      author       = {Yongho Shin and
+                      Changyeol Lee and
+                      Gukryeol Lee and
+                      Hyung{-}Chan An},
+      title        = {Improved Learning-Augmented Algorithms for the Multi-Option Ski Rental
+                      Problem via Best-Possible Competitive Analysis},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {202},
+      pages        = {31539--31561},
+      publisher    = {{PMLR}},
+      year         = {2023}
+    }
+

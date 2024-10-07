@@ -1,11 +1,13 @@
 title: Learning-Augmented Priority Queues
-labels:
-  - data structure
-  - priority queue
-publications:
-  - name: arXiv
-    year: 2024
-    month: 5
-    day: 7
-    url: https://arxiv.org/abs/2406.04793
 authors: Benomar, Coester
+labels:
+- data structure
+- priority queue
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2406.04793
+  year: 2024
+  month: 5
+  day: 7
+  dblp_key: null
+  bibtex: null

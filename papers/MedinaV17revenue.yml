@@ -1,13 +1,28 @@
 title: Revenue optimization with approximate bid predictions
 authors: Medina, Vassilvitskii
-publications:
-  - year: 2017
-    month: 5
-    day: 15
-    name: arXiv
-    url: https://arxiv.org/abs/1706.04732
-  - name: NIPS
-    year: 2017
-    url: https://proceedings.neurips.cc/paper/2017/hash/884d79963bd8bc0ae9b13a1aa71add73-Abstract.html
 labels:
-  - prior/related work
+- prior/related work
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/1706.04732
+  year: 2017
+  month: 5
+  day: 15
+  dblp_key: null
+  bibtex: null
+- name: NIPS
+  url: https://proceedings.neurips.cc/paper/2017/hash/884d79963bd8bc0ae9b13a1aa71add73-Abstract.html
+  year: 2017
+  month: null
+  day: null
+  dblp_key: conf/nips/MedinaV17
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/MedinaV17,
+      author       = {Andres Mu{\~{n}}oz Medina and
+                      Sergei Vassilvitskii},
+      title        = {Revenue Optimization with Approximate Bid Predictions},
+      booktitle    = {{NIPS}},
+      pages        = {1858--1866},
+      year         = {2017}
+    }
+

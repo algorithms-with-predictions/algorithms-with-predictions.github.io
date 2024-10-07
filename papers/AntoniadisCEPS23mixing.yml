@@ -1,15 +1,36 @@
 title: Mixing predictions for online metric algorithms
-labels:
-  - online
-  - MTS
-  - multiple predictions
-publications:
-  - name: arXiv
-    year: 2023
-    month: 3
-    day: 4
-    url: https://arxiv.org/abs/2304.01781
-  - name: ICML
-    year: 2023
-    url: https://proceedings.mlr.press/v202/antoniadis23b.html
 authors: Antoniadis, Coester, Eliáš, Polak, Simon
+labels:
+- online
+- MTS
+- multiple predictions
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2304.01781
+  year: 2023
+  month: 3
+  day: 4
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://proceedings.mlr.press/v202/antoniadis23b.html
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/icml/0001C00S23
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/0001C00S23,
+      author       = {Antonios Antoniadis and
+                      Christian Coester and
+                      Marek Eli{\'{a}}s and
+                      Adam Polak and
+                      Bertrand Simon},
+      title        = {Mixing Predictions for Online Metric Algorithms},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {202},
+      pages        = {969--983},
+      publisher    = {{PMLR}},
+      year         = {2023}
+    }
+

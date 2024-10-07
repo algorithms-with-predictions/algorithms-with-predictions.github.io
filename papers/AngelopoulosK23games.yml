@@ -1,16 +1,34 @@
 title: Renyi-Ulam Games and Online Computation with Imperfect Advice
-labels:
-  - online
-  - search
-  - packing
-  - auctions
-publications:
-  - name: arXiv
-    year: 2023
-    month: 0
-    day: 4
-    url: https://arxiv.org/abs/2301.01631
-  - name: MFCS
-    year: 2023
-    url: https://doi.org/10.4230/LIPIcs.MFCS.2023.13
 authors: Angelopoulos, Kamali
+labels:
+- online
+- search
+- packing
+- auctions
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2301.01631
+  year: 2023
+  month: 0
+  day: 4
+  dblp_key: null
+  bibtex: null
+- name: MFCS
+  url: https://doi.org/10.4230/LIPIcs.MFCS.2023.13
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/mfcs/0001K23
+  bibtex: |+
+    @inproceedings{DBLP:conf/mfcs/0001K23,
+      author       = {Spyros Angelopoulos and
+                      Shahin Kamali},
+      title        = {R{\'{e}}nyi-Ulam Games and Online Computation with Imperfect Advice},
+      booktitle    = {{MFCS}},
+      series       = {LIPIcs},
+      volume       = {272},
+      pages        = {13:1--13:15},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2023}
+    }
+

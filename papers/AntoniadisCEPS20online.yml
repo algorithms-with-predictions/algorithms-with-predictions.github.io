@@ -1,17 +1,44 @@
 title: Online metric algorithms with untrusted predictions
 authors: Antoniadis, Coester, Elias, Polak, Simon
-publications:
-  - name: ICML
-    url: http://proceedings.mlr.press/v119/antoniadis20a/antoniadis20a.pdf
-    year: 2020
-  - year: 2020
-    month: 2
-    day: 4
-    name: arXiv
-    url: https://arxiv.org/abs/2003.02144
 labels:
-  - online
-  - MTS
-  - k-server
-  - matching
-  - caching/paging
+- online
+- MTS
+- k-server
+- matching
+- caching/paging
+publications:
+- name: ICML
+  url: http://proceedings.mlr.press/v119/antoniadis20a/antoniadis20a.pdf
+  year: 2020
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
+- name: arXiv
+  url: https://arxiv.org/abs/2003.02144
+  year: 2020
+  month: 2
+  day: 4
+  dblp_key: null
+  bibtex: null
+- name: ACM Trans. Algorithms
+  url: https://doi.org/10.1145/3582689
+  year: 2023
+  month: null
+  day: null
+  dblp_key: journals/talg/AntoniadisCEPS23
+  bibtex: |+
+    @article{DBLP:journals/talg/AntoniadisCEPS23,
+      author       = {Antonios Antoniadis and
+                      Christian Coester and
+                      Marek Eli{\'{a}}s and
+                      Adam Polak and
+                      Bertrand Simon},
+      title        = {Online Metric Algorithms with Untrusted Predictions},
+      journal      = {{ACM} Trans. Algorithms},
+      volume       = {19},
+      number       = {2},
+      pages        = {19:1--19:34},
+      year         = {2023}
+    }
+

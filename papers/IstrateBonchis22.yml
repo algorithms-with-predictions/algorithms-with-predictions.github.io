@@ -1,11 +1,13 @@
 title: Mechanism Design With Predictions for Obnoxious Facility Location
 authors: Istrate, Bonchis
-publications:
-  - name: arXiv
-    year: 2022
-    month: 11
-    day: 19
-    url: https://arxiv.org/abs/2212.09521
 labels:
-  - AGT
-  - mechanism design
+- AGT
+- mechanism design
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2212.09521
+  year: 2022
+  month: 11
+  day: 19
+  dblp_key: null
+  bibtex: null

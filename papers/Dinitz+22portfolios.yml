@@ -1,17 +1,34 @@
 title: Algorithms with Prediction Portfolios
-labels:
-  - online
-  - scheduling
-  - multiple predictions
-  - matching
-  - load balancing
-publications:
-  - name: arXiv
-    year: 2022
-    month: 9
-    day: 22
-    url: https://arxiv.org/abs/2210.12438
-  - name: NeurIPS
-    year: 2022
-    url: http://papers.nips.cc/paper_files/paper/2022/hash/7f9220f90cc85b0da693643add6618e6-Abstract-Conference.html
 authors: Dinitz, Im, Lavastida, Moseley, Vassilvitskii
+labels:
+- online
+- scheduling
+- multiple predictions
+- matching
+- load balancing
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2210.12438
+  year: 2022
+  month: 9
+  day: 22
+  dblp_key: null
+  bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2022/hash/7f9220f90cc85b0da693643add6618e6-Abstract-Conference.html
+  year: 2022
+  month: null
+  day: null
+  dblp_key: conf/nips/DinitzILMV22
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/DinitzILMV22,
+      author       = {Michael Dinitz and
+                      Sungjin Im and
+                      Thomas Lavastida and
+                      Benjamin Moseley and
+                      Sergei Vassilvitskii},
+      title        = {Algorithms with Prediction Portfolios},
+      booktitle    = {NeurIPS},
+      year         = {2022}
+    }
+

@@ -1,12 +1,14 @@
 title: 'To Trust or Not to Trust: Assignment Mechanisms with Predictions in the Private Graph Model'
-labels:
-  - AGT
-  - graph problems
-  - assignment problem
-publications:
-  - name: arXiv
-    year: 2024
-    month: 2
-    day: 6
-    url: https://arxiv.org/abs/2403.03725
 authors: Colini-Baldeschi, Klumper, Schäfer, Tsikiridis
+labels:
+- AGT
+- graph problems
+- assignment problem
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2403.03725
+  year: 2024
+  month: 2
+  day: 6
+  dblp_key: null
+  bibtex: null

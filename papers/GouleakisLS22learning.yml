@@ -1,14 +1,31 @@
 title: Learning-Augmented Algorithms for Online TSP on the Line
-labels:
-  - routing
-  - online
-publications:
-  - name: arXiv
-    year: 2022
-    month: 5
-    day: 1
-    url: https://arxiv.org/abs/2206.00655
-  - name: AAAI
-    year: 2023
-    url: https://ojs.aaai.org/index.php/AAAI/article/view/26414
 authors: Gouleakis, Lakis, Shahkarami
+labels:
+- routing
+- online
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2206.00655
+  year: 2022
+  month: 5
+  day: 1
+  dblp_key: null
+  bibtex: null
+- name: AAAI
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/26414
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/aaai/GouleakisLS23
+  bibtex: |+
+    @inproceedings{DBLP:conf/aaai/GouleakisLS23,
+      author       = {Themistoklis Gouleakis and
+                      Konstantinos Lakis and
+                      Golnoosh Shahkarami},
+      title        = {Learning-Augmented Algorithms for Online {TSP} on the Line},
+      booktitle    = {{AAAI}},
+      pages        = {11989--11996},
+      publisher    = {{AAAI} Press},
+      year         = {2023}
+    }
+

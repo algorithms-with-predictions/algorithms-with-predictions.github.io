@@ -1,10 +1,28 @@
-authors: Indyk, Vakilian, Yuan
 title: Learning-Based Low-Rank Approximations
-publications:
-  - name: NeurIPS
-    url: https://par.nsf.gov/servlets/purl/10195163
-    year: 2019
-  - name: arXiv
-    url: https://arxiv.org/pdf/1910.13984.pdf
-    year: 2019
+authors: Indyk, Vakilian, Yuan
 labels: []
+publications:
+- name: NeurIPS
+  url: https://par.nsf.gov/servlets/purl/10195163
+  year: 2019
+  month: null
+  day: null
+  dblp_key: conf/nips/IndykVY19
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/IndykVY19,
+      author       = {Piotr Indyk and
+                      Ali Vakilian and
+                      Yang Yuan},
+      title        = {Learning-Based Low-Rank Approximations},
+      booktitle    = {NeurIPS},
+      pages        = {7400--7410},
+      year         = {2019}
+    }
+
+- name: arXiv
+  url: https://arxiv.org/pdf/1910.13984.pdf
+  year: 2019
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null

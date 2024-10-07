@@ -1,12 +1,14 @@
-authors: Caragiannis, Kalantzis
 title: Randomized learning-augmented auctions with revenue guarantees
-publications:
-  - year: 2024
-    month: 0
-    day: 24
-    name: arXiv
-    url: https://arxiv.org/abs/2401.13384
+authors: Caragiannis, Kalantzis
 labels:
-  - AGT
-  - mechanism design
-  - auctions
+- AGT
+- mechanism design
+- auctions
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2401.13384
+  year: 2024
+  month: 0
+  day: 24
+  dblp_key: null
+  bibtex: null

@@ -1,8 +1,25 @@
 title: Repetition- and Linearity-Aware Rank/Select Dictionaries
-labels:
-  - data structure
-publications:
-  - name: ISAAC
-    year: 2021
-    url: https://doi.org/10.4230/LIPIcs.ISAAC.2021.64
 authors: Ferragina, Manzini, Vinciguerra
+labels:
+- data structure
+publications:
+- name: ISAAC
+  url: https://doi.org/10.4230/LIPIcs.ISAAC.2021.64
+  year: 2021
+  month: null
+  day: null
+  dblp_key: conf/isaac/FerraginaMV21
+  bibtex: |+
+    @inproceedings{DBLP:conf/isaac/FerraginaMV21,
+      author       = {Paolo Ferragina and
+                      Giovanni Manzini and
+                      Giorgio Vinciguerra},
+      title        = {Repetition- and Linearity-Aware Rank/Select Dictionaries},
+      booktitle    = {{ISAAC}},
+      series       = {LIPIcs},
+      volume       = {212},
+      pages        = {64:1--64:16},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2021}
+    }
+

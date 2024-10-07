@@ -1,12 +1,14 @@
 title: The Nonstationary Newsvendor with (and without) Predictions
-labels:
-  - online
-  - newsvendor
-  - regret analysis
-publications:
-  - name: arXiv
-    year: 2023
-    month: 4
-    day: 13
-    url: https://arxiv.org/abs/2305.07993
 authors: An, Li, Moseley, Ravi
+labels:
+- online
+- newsvendor
+- regret analysis
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2305.07993
+  year: 2023
+  month: 4
+  day: 13
+  dblp_key: null
+  bibtex: null

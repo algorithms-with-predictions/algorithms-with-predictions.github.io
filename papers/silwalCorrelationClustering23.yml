@@ -1,15 +1,37 @@
-authors: Silwal, Ahmadian, Nystrom, McCallum, Ramachandran, Kazemi
 title: 'KwikBucks: Correlation Clustering with Cheap-Weak and Expensive-Strong Signals'
-publications:
-  - name: ICLR
-    url: https://openreview.net/pdf?id=p0JSSa1AuV
-    year: 2023
-  - name: SustaiNLP
-    year: 2023
-    url: https://aclanthology.org/2023.sustainlp-1.1
+authors: Silwal, Ahmadian, Nystrom, McCallum, Ramachandran, Kazemi
 labels:
-  - clustering
-  - large language models
-  - weak and strong signals
-  - query complexity
-  - correlation clustering
+- clustering
+- large language models
+- weak and strong signals
+- query complexity
+- correlation clustering
+publications:
+- name: ICLR
+  url: https://openreview.net/pdf?id=p0JSSa1AuV
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/iclr/SilwalANMRK23
+  bibtex: |+
+    @inproceedings{DBLP:conf/iclr/SilwalANMRK23,
+      author       = {Sandeep Silwal and
+                      Sara Ahmadian and
+                      Andrew Nystrom and
+                      Andrew McCallum and
+                      Deepak Ramachandran and
+                      Seyed Mehran Kazemi},
+      title        = {KwikBucks: Correlation Clustering with Cheap-Weak and Expensive-Strong
+                      Signals},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2023}
+    }
+
+- name: SustaiNLP
+  url: https://aclanthology.org/2023.sustainlp-1.1
+  year: 2023
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null

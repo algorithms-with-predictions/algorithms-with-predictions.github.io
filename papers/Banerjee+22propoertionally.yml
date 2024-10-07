@@ -1,14 +1,34 @@
 title: Proportionally Fair Online Allocation of Public Goods with Predictions
-labels:
-  - online
-  - allocation
-publications:
-  - name: arXiv
-    year: 2022
-    month: 8
-    day: 30
-    url: https://arxiv.org/abs/2209.15305
-  - name: IJCAI
-    year: 2023
-    url: https://doi.org/10.24963/ijcai.2023/3
 authors: Banerjee, Gkatzelis, Hossain, Jin, Micha, Shah
+labels:
+- online
+- allocation
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2209.15305
+  year: 2022
+  month: 8
+  day: 30
+  dblp_key: null
+  bibtex: null
+- name: IJCAI
+  url: https://doi.org/10.24963/ijcai.2023/3
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/ijcai/BanerjeeGHJM023
+  bibtex: |+
+    @inproceedings{DBLP:conf/ijcai/BanerjeeGHJM023,
+      author       = {Siddhartha Banerjee and
+                      Vasilis Gkatzelis and
+                      Safwan Hossain and
+                      Billy Jin and
+                      Evi Micha and
+                      Nisarg Shah},
+      title        = {Proportionally Fair Online Allocation of Public Goods with Predictions},
+      booktitle    = {{IJCAI}},
+      pages        = {20--28},
+      publisher    = {ijcai.org},
+      year         = {2023}
+    }
+

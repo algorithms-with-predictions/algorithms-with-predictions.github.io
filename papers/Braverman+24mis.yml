@@ -1,14 +1,34 @@
 title: Learning-augmented Maximum Independent Set
-labels:
-  - approximation
-  - graph problems
-publications:
-  - name: arXiv
-    year: 2024
-    month: 6
-    day: 16
-    url: https://arxiv.org/abs/2407.11364
-  - name: APPROX/RANDOM
-    year: 2024
-    url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2024.24
 authors: Braverman, Dharangutte, Shah, Wang
+labels:
+- approximation
+- graph problems
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2407.11364
+  year: 2024
+  month: 6
+  day: 16
+  dblp_key: null
+  bibtex: null
+- name: APPROX/RANDOM
+  url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2024.24
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/approx/BravermanDSW24
+  bibtex: |+
+    @inproceedings{DBLP:conf/approx/BravermanDSW24,
+      author       = {Vladimir Braverman and
+                      Prathamesh Dharangutte and
+                      Vihan Shah and
+                      Chen Wang},
+      title        = {Learning-Augmented Maximum Independent Set},
+      booktitle    = {{APPROX/RANDOM}},
+      series       = {LIPIcs},
+      volume       = {317},
+      pages        = {24:1--24:18},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2024}
+    }
+

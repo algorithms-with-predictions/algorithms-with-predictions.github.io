@@ -1,14 +1,32 @@
 title: Online Dynamic Acknowledgement with Learned Predictions
-labels:
-  - online
-  - dynamic acknowledgement
-publications:
-  - name: arXiv
-    year: 2023
-    month: 4
-    day: 25
-    url: https://arxiv.org/abs/2305.18227
-  - name: INFOCOM
-    year: 2023
-    url: https://doi.org/10.1109/INFOCOM53939.2023.10228882
 authors: Im, Moseley, Xu, Zhang
+labels:
+- online
+- dynamic acknowledgement
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2305.18227
+  year: 2023
+  month: 4
+  day: 25
+  dblp_key: null
+  bibtex: null
+- name: INFOCOM
+  url: https://doi.org/10.1109/INFOCOM53939.2023.10228882
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/infocom/ImMXZ23
+  bibtex: |+
+    @inproceedings{DBLP:conf/infocom/ImMXZ23,
+      author       = {Sungjin Im and
+                      Benjamin Moseley and
+                      Chenyang Xu and
+                      Ruilong Zhang},
+      title        = {Online Dynamic Acknowledgement with Learned Predictions},
+      booktitle    = {{INFOCOM}},
+      pages        = {1--10},
+      publisher    = {{IEEE}},
+      year         = {2023}
+    }
+
