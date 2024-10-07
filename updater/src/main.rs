@@ -3,9 +3,10 @@ use chrono::{DateTime, Datelike};
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_yml;
+use tokio::time::sleep;
 use std::{
     fs,
-    io::{BufWriter, Write},
+    io::{BufWriter, Write}, time::Duration,
 };
 
 #[derive(Serialize, Deserialize, PartialEq, Debug)]
@@ -172,7 +173,6 @@ async fn update_paper_from_dblp(paper: &mut Paper) -> Result<(), Box<dyn std::er
 
             let bibtex_query = format!("https://dblp.org/rec/{key}.bib?param=0");
             let bibtex = reqwest::get(bibtex_query).await?.text().await?;
-            println!("{}", bibtex);
 
             if let Some(publ) = paper
                 .publications
@@ -222,6 +222,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         let mut writer = BufWriter::new(file);
         serde_yml::to_writer(&mut writer, &paper)?;
         writer.flush()?;
+        sleep(Duration::from_millis(10000)).await;
     }
 
     Ok(())
