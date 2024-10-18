@@ -1,5 +1,13 @@
 title: Strategic Facility Location via Predictions
+authors: Chen, Gravin, Im
 labels:
-  - AGT
-  - facility location
-publications: []
+- AGT
+- facility location
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2410.07497
+  year: 2024
+  month: 10
+  day: 10
+  dblp_key: null
+  bibtex: null
