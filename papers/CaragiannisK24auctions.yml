@@ -12,3 +12,20 @@ publications:
   day: 24
   dblp_key: null
   bibtex: null
+- name: IJCAI
+  url: https://www.ijcai.org/proceedings/2024/297
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/ijcai/Caragiannis024
+  bibtex: |+
+    @inproceedings{DBLP:conf/ijcai/Caragiannis024,
+      author       = {Ioannis Caragiannis and
+                      Georgios Kalantzis},
+      title        = {Randomized Learning-Augmented Auctions with Revenue Guarantees},
+      booktitle    = {{IJCAI}},
+      pages        = {2687--2694},
+      publisher    = {ijcai.org},
+      year         = {2024}
+    }
+
