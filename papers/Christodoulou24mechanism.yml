@@ -1,12 +1,16 @@
 title: Mechanism Design Augmented with Output Advice
 authors: Christodoulou, Sgouritsa, Vlachos
+labels:
+- AGT
+- mechanism design
+- facility location
+- scheduling
+- auctions
 publications:
-  - name: arXiv
-    year: 2024
-    url: https://arxiv.org/pdf/2406.14165
-labels: 
-  - AGT
-  - mechanism design
-  - facility location
-  - scheduling
-  - auctions
+- name: arXiv
+  url: https://arxiv.org/abs/2406.14165
+  year: 2024
+  month: 6
+  day: 20
+  dblp_key: null
+  bibtex: null
