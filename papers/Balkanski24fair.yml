@@ -1,5 +1,13 @@
 title: Fair Secretaries with Unfair Predictions
+authors: Balkanski, Ma, Maggiori
 labels:
-  - online
-  - secretary
-  
+- online
+- secretary
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2411.09854
+  year: 2024
+  month: 11
+  day: 15
+  dblp_key: null
+  bibtex: null

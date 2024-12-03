@@ -13,3 +13,10 @@ publications:
   day: 25
   dblp_key: null
   bibtex: null
+- name: arXiv
+  url: https://arxiv.org/abs/2411.16030
+  year: 2024
+  month: 11
+  day: 25
+  dblp_key: null
+  bibtex: null

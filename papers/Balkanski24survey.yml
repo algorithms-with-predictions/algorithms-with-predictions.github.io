@@ -1,4 +1,11 @@
-title: "Mechanism Design with Predictions: An Annotated Reading List"
+title: 'Mechanism Design with Predictions: An Annotated Reading List'
+authors: Balkanski, Gkatzelis, Tan
 labels:
-  - AGT
-  - survey
+- AGT
+- survey
+publications:
+- name: ACM SiGecom
+  url: https://dl.acm.org/doi/abs/10.1145/3699814.3699821
+  year: 2024
+  dblp_key: null
+  bibtex: null
