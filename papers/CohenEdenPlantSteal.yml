@@ -20,7 +20,7 @@ publications:
   day: null
   dblp_key: conf/nips/CohenEEV24
   bibtex: |+
-    @inproceedings{DBLP:conf/nop/CohenEEV24,
+    @inproceedings{DBLP:conf/nips/CohenEEV24,
       author       = {Ilan Reuven Cohen and
                       Alon Eden and 
 			Talya Eden and
