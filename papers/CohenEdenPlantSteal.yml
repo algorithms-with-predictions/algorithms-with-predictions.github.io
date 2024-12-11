@@ -1,4 +1,4 @@
-title: Plant-and-Steal: Truthful Fair Allocations via Predictions
+title: "Plant-and-Steal: Truthful Fair Allocations via Predictions"
 authors: Cohen, Eden, Eden, Vasilyan
 labels:
 - AGT
@@ -19,19 +19,5 @@ publications:
   month: null
   day: null
   dblp_key: conf/nips/CohenEEV24
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/CohenEEV24,
-      author       = {Ilan Reuven Cohen and
-                      Alon Eden and 
-			Talya Eden and
-			Arsen Vasilyan},
-      title        = {Plant-and-Steal: Truthful Fair Allocations via Predictions},
-      booktitle    = {{NeruIPS}},
-      series       = {},
-      volume       = {},
-      pages        = {},
-      publisher    = {},
-      url         =  {https://nips.cc/virtual/2024/poster/94573},
-      year         = {2024}
-    }
+  bibtex: null
 
