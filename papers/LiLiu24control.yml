@@ -1,8 +1,8 @@
 title: Disentangling Linear Quadratic Control with Untrusted ML Predictions
 authors: Li, Liu, Yue
 labels:
-  - online
-  - linear quadratic control
+- online
+- linear quadratic control
 publications:
 - name: NeurIPS
   url: https://openreview.net/forum?id=WXqukapoa7
