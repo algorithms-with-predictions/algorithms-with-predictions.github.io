@@ -11,3 +11,10 @@ publications:
   day: 11
   dblp_key: null
   bibtex: null
+- name: NeurIPS
+  url: https://nips.cc/virtual/2024/poster/94665
+  year: 2024
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
