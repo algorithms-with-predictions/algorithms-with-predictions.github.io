@@ -2,10 +2,8 @@ title: 'KwikBucks: Correlation Clustering with Cheap-Weak and Expensive-Strong S
 authors: Silwal, Ahmadian, Nystrom, McCallum, Ramachandran, Kazemi
 labels:
 - clustering
-- large language models
-- weak and strong signals
-- query complexity
-- correlation clustering
+- two-oracle
+- running time
 publications:
 - name: ICLR
   url: https://openreview.net/pdf?id=p0JSSa1AuV

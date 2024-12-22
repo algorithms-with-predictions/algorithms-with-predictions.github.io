@@ -2,6 +2,7 @@ title: (Learned) Frequency Estimation Algorithms under Zipfian Distribution
 authors: Aamand, Indyk, Vakilian
 labels:
 - streaming
+- frequency estimation
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/1908.05198

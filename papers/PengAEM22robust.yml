@@ -3,7 +3,7 @@ authors: Peng, Ahmadian, Esfandiari, Mirrokni
 labels:
 - online
 - scheduling
-- load balancing
+- allocation / matching
 publications:
 - name: SODA
   url: https://epubs.siam.org/doi/10.1137/1.9781611977073.2

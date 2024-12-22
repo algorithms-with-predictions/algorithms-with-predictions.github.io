@@ -2,10 +2,8 @@ title: Time Fairness in Online Knapsack Problems
 authors: Lechowicz, Sengupta, Sun, Kamali, Hajiesmaili
 labels:
 - online
-- allocation
+- allocation / matching
 - packing
-- knapsack
-- fairness
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2305.13293

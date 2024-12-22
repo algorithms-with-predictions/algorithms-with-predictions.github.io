@@ -2,8 +2,7 @@ title: 'Robust Learning-Augmented Caching: An Experimental Study'
 authors: Chłędowski, Polak, Szabucki, Żołna
 labels:
 - online
-- caching/paging
-- experiments
+- caching / paging
 publications:
 - name: ICML
   url: http://proceedings.mlr.press/v139/chledowski21a.html

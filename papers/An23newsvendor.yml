@@ -2,8 +2,6 @@ title: The Nonstationary Newsvendor with (and without) Predictions
 authors: An, Li, Moseley, Ravi
 labels:
 - online
-- newsvendor
-- regret analysis
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2305.07993

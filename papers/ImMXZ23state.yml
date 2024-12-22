@@ -2,8 +2,7 @@ title: 'Online State Exploration: Competitive Worst Case and Learning-Augmented 
 authors: Im, Moseley, Xu, Zhang
 labels:
 - online
-- state exploration
-- bidding
+- exploration
 - search
 publications:
 - name: ECML/PKDD

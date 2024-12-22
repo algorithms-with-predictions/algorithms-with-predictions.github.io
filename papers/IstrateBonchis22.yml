@@ -1,8 +1,8 @@
 title: Mechanism Design With Predictions for Obnoxious Facility Location
 authors: Istrate, Bonchis
 labels:
-- AGT
-- mechanism design
+- game theory / mechanism design
+- facility location
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2212.09521

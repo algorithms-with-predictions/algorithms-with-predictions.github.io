@@ -2,7 +2,7 @@ title: Near-optimal bounds for online caching with machine learned advice
 authors: Rohatgi
 labels:
 - online
-- caching/paging
+- caching / paging
 publications:
 - name: SODA
   url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611975994.112

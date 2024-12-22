@@ -2,7 +2,7 @@ title: Trade-off Analysis in Learning-augmented Algorithms with Societal Design 
 authors: Hajiesmaili
 labels:
 - online
-- knapsack
+- packing
 publications:
 - name: SIGMETRICS Perform. Evaluation Rev.
   url: https://doi.org/10.1145/3626570.3626590

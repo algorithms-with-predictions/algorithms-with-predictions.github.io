@@ -2,7 +2,7 @@ title: Predictive Flows for Faster Ford-Fulkerson
 authors: Davies, Moseley, Vassilvitskii, Wang
 labels:
 - running time
-- max flow
+- graph problems
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2303.00837

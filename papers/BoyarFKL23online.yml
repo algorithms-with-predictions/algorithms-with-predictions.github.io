@@ -3,7 +3,7 @@ authors: Boyar, Favrholdt, Kamali, Larsen
 labels:
 - online
 - scheduling
-- allocation
+- allocation / matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2302.13701

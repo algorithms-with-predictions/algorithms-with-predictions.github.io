@@ -3,8 +3,7 @@ authors: Lechowicz, Christianson, Sun, Bashir, Hajiesmaili, Wierman, Shenoy
 labels:
 - online
 - search
-- MTS
-- convex optimization
+- k-server / MTS
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2402.14012

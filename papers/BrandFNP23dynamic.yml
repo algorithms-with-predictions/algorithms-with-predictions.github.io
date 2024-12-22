@@ -2,8 +2,8 @@ title: On Dynamic Graph Algorithms with Predictions
 authors: Brand, Forster, Nazari, Polak
 labels:
 - running time
-- data structure
-- graph algorithms
+- dynamic / data structure
+- graph problems
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2307.09961

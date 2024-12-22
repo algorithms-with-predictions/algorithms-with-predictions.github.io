@@ -1,7 +1,7 @@
 title: Repetition- and Linearity-Aware Rank/Select Dictionaries
 authors: Ferragina, Manzini, Vinciguerra
 labels:
-- data structure
+- dynamic / data structure
 publications:
 - name: ISAAC
   url: https://doi.org/10.4230/LIPIcs.ISAAC.2021.64

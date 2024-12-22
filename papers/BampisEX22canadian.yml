@@ -2,7 +2,7 @@ title: Canadian Traveller Problem with Predictions
 authors: Bampis, Escoffier, Xefteris
 labels:
 - online
-- routing
+- routing / TSP
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2209.11100

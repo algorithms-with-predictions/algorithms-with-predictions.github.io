@@ -3,6 +3,7 @@ authors: Lindermayr, Megow
 labels:
 - online
 - scheduling
+- parsimonious / succinct
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2202.10199

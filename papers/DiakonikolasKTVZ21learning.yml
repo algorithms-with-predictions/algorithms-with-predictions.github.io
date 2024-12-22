@@ -4,7 +4,6 @@ labels:
 - online
 - learning
 - rent-or-buy
-- prophet
 publications:
 - name: ICML
   url: http://proceedings.mlr.press/v139/diakonikolas21a.html

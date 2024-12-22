@@ -2,7 +2,7 @@ title: Competitive Caching with Machine Learned Advice
 authors: Lykouris, Vassilvitskii
 labels:
 - online
-- caching/paging
+- caching / paging
 publications:
 - name: ICML
   url: http://proceedings.mlr.press/v80/lykouris18a/lykouris18a.pdf

@@ -4,8 +4,7 @@ labels:
 - online
 - scheduling
 - multiple predictions
-- matching
-- load balancing
+- allocation / matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2210.12438

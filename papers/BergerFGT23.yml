@@ -1,8 +1,7 @@
 title: Learning-Augmented Metric Distortion via (p,q)-Veto Core
 authors: Berger, Feldman, Gkatzelis, Tan
 labels:
-- AGT
-- metric distortion
+- game theory / mechanism design
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2307.07495

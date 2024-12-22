@@ -2,8 +2,7 @@ title: Online bipartite matching with imperfect advice
 authors: Choo, Gouleakis, Ling, Bhattacharyya
 labels:
 - online
-- matching
-- allocation
+- allocation / matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2405.09784

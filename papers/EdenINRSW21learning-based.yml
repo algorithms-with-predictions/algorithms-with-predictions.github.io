@@ -2,7 +2,6 @@ title: Learning-based support estimation in sublinear time
 authors: Eden, Indyk, Narayanan, Rubinfeld, Silwal, Wagner
 labels:
 - running time
-- sublinear algorithms
 - sample complexity
 publications:
 - name: ICLR

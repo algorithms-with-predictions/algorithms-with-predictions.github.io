@@ -1,8 +1,8 @@
 title: Connectivity Oracles for Predictable Vertex Failures
 authors: Hu, Kosinas, Polak
 labels:
-- data structure
-- connectivity oracle
+- dynamic / data structure
+- network design
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2312.08489

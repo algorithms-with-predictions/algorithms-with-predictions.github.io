@@ -2,8 +2,8 @@ title: Algorithms for Caching and MTS with Reduced Number of Predictions
 authors: Sadek, Elias
 labels:
 - online
-- caching/paging
-- MTS
+- caching / paging
+- k-server / MTS
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2404.06280

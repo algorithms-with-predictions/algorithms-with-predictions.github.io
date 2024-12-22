@@ -2,8 +2,8 @@ title: Learning-Augmented Algorithms with Explicit Predictors
 authors: Elias, Kaplan, Mansour, Moran
 labels:
 - online
-- caching
-- load balancing
+- caching / paging
+- allocation / matching
 - scheduling
 publications:
 - name: arXiv

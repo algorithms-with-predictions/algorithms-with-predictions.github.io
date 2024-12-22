@@ -1,10 +1,8 @@
 title: Binary Search with Distributional Predictions
 authors: Dinitz, Im, Lavastida, Moseley, Niaparast, Vassilvitskii
 labels:
-- data structure
-- binary search
+- dynamic / data structure
 - search
-- query complexity
 publications:
 - name: NeurIPS
   url: https://neurips.cc/virtual/2024/poster/95727

@@ -3,8 +3,7 @@ authors: Addanki, Pacut, Schmid
 labels:
 - online
 - queueing
-- buffer sharing
-- communication networks
+- networks
 publications:
 - name: NSDI
   url: https://www.usenix.org/conference/nsdi24/presentation/addanki-credence

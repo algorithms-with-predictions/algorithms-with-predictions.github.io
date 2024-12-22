@@ -2,7 +2,7 @@ title: Mixing predictions for online metric algorithms
 authors: Antoniadis, Coester, Eliáš, Polak, Simon
 labels:
 - online
-- MTS
+- k-server / MTS
 - multiple predictions
 publications:
 - name: arXiv

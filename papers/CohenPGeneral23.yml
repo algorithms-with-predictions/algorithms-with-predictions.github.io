@@ -3,7 +3,7 @@ authors: Cohen, Panigrahi
 labels:
 - online
 - scheduling
-- allocation
+- allocation / matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2305.18861

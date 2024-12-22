@@ -1,7 +1,7 @@
 title: 'The PGM-index: a fully-dynamic compressed learned index with provable worst-case bounds'
 authors: Ferragina, Vinciguerra
 labels:
-- data structure
+- dynamic / data structure
 publications:
 - name: Proc. VLDB Endow.
   url: http://www.vldb.org/pvldb/vol13/p1162-ferragina.pdf

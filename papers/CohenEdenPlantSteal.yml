@@ -1,10 +1,8 @@
 title: 'Plant-and-Steal: Truthful Fair Allocations via Predictions'
 authors: Cohen, Eden, Eden, Vasilyan
 labels:
-- AGT
-- allocation
-- fairness
-- mechanism design
+- game theory / mechanism design
+- allocation / matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2406.07024

@@ -1,9 +1,7 @@
 title: 'Learned Interpolation for Better Streaming Quantile Approximation with Worst Case Guarantees '
 authors: Schiefer, Chen, Indyk, Narayanan, Silwal, Wagner
 labels:
-- streaming algorithms
-- quantiles
-- sublinear algorithms
+- streaming
 publications:
 - name: ACDA
   url: https://arxiv.org/abs/2304.07652

@@ -2,10 +2,9 @@ title: Online metric algorithms with untrusted predictions
 authors: Antoniadis, Coester, Elias, Polak, Simon
 labels:
 - online
-- MTS
-- k-server
-- matching
-- caching/paging
+- k-server / MTS
+- allocation / matching
+- caching / paging
 publications:
 - name: ICML
   url: http://proceedings.mlr.press/v119/antoniadis20a/antoniadis20a.pdf

@@ -1,8 +1,7 @@
 title: Learning-Augmented Priority Queues
 authors: Benomar, Coester
 labels:
-- data structure
-- priority queue
+- dynamic / data structure
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2406.04793

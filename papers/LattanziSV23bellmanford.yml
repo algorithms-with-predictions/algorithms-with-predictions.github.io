@@ -2,7 +2,7 @@ title: Speeding Up Bellman Ford via Minimum Violation Permutations
 authors: Lattanzi, Svensson, Vassilvitskii
 labels:
 - running time
-- graph algorithms
+- graph problems
 - shortest path
 publications:
 - name: ICML

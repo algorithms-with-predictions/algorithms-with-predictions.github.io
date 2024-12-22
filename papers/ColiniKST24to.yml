@@ -1,9 +1,9 @@
 title: 'To Trust or Not to Trust: Assignment Mechanisms with Predictions in the Private Graph Model'
 authors: Colini-Baldeschi, Klumper, Schäfer, Tsikiridis
 labels:
-- AGT
+- game theory / mechanism design
 - graph problems
-- assignment problem
+- allocation / matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2403.03725

@@ -3,7 +3,7 @@ authors: Dong, Peng, Vakilian
 labels:
 - approximation
 - streaming
-- max-cut
+- graph problems
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2412.09773

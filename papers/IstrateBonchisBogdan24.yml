@@ -3,8 +3,7 @@ authors: Istrate, Bonchis, Bogdan
 labels:
 - online
 - rent-or-buy
-- multiagent
-- AGT
+- game theory / mechanism design
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2405.11873

@@ -2,7 +2,7 @@ title: Faster Fundamental Graph Algorithms via Learned Predictions
 authors: Chen, Silwal, Vakilian, Zhang
 labels:
 - running time
-- matching
+- allocation / matching
 - shortest path
 publications:
 - name: arXiv

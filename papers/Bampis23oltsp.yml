@@ -2,7 +2,7 @@ title: Learning-Augmented Online TSP on Rings, Trees, Flowers and (almost) Every
 authors: Bampis, Escoffier, Gouleakis, Hahn, Lakis, Shahkarami, Xefteris
 labels:
 - online
-- routing
+- routing / TSP
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2305.02169

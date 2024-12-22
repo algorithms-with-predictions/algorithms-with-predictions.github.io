@@ -2,7 +2,7 @@ title: Warm-starting Push-Relabel
 authors: Davies, Vassilvitskii, Wang
 labels:
 - running time
-- max flow
+- graph problems
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2405.18568

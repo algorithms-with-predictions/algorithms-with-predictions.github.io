@@ -3,9 +3,8 @@ authors: Zeynali, Sun, Hajiesmaili, Wierman
 labels:
 - online
 - learning
-- data-driven
 - packing
-- set cover
+- covering
 publications:
 - name: AAAI
   url: https://ojs.aaai.org/index.php/AAAI/article/view/17294

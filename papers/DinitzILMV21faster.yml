@@ -2,7 +2,7 @@ title: Faster Matchings via Learned Duals
 authors: Dinitz, Im, Lavastida, Moseley, Vassilvitskii
 labels:
 - running time
-- matching
+- allocation / matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2107.09770

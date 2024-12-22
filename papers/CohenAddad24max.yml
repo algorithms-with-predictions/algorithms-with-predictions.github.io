@@ -2,7 +2,7 @@ title: Max-Cut with ε-Accurate Predictions
 authors: Cohen-Addad, d'Orsi, Gupta, Lee, Panigrahi
 labels:
 - approximation
-- max-cut
+- graph problems
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2402.18263

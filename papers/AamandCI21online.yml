@@ -2,7 +2,7 @@ title: Online Bipartite Matching with Predicted Degrees
 authors: Aamand, Chen, Indyk
 labels:
 - online
-- matching
+- allocation / matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2110.11439

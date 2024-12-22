@@ -3,7 +3,7 @@ authors: Maghakian, Lee, Hajiesmaili, Li, Sitaraman, Liu
 labels:
 - online
 - multiple predictions
-- rent/buy
+- rent-or-buy
 publications:
 - name: ICML
   url: https://openreview.net/pdf?id=wHmP0NGVd9

@@ -71,12 +71,14 @@ const SORT_YEAR_BOTTOM_UP = "Oldest first";
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
 const TYPE_LABELS = [
-  "data structure",
+  "dynamic / data structures",
   "online",
   "running time",
   "approximation",
-  "AGT",
+  "streaming",
+  "game theory / mechanism design",
   "differential privacy",
+  "survey",
 ];
 const PRIOR_LABEL = "prior/related work";
 let SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL];

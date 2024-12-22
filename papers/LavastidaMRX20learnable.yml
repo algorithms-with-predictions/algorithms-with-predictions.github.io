@@ -2,8 +2,7 @@ title: Learnable and Instance-Robust Predictions for Online Matching, Flows and 
 authors: Lavastida, Moseley, Ravi, Xu
 labels:
 - online
-- matching
-- allocation
+- allocation / matching
 - scheduling
 publications:
 - name: ESA

@@ -2,8 +2,6 @@ title: Triangle and Four Cycle Counting with Predictions in Graph Streams
 authors: Chen, Eden, Indyk, Lin, Narayanan, Rubinfeld, Silwal, Wagner, Woodruff, Zhang
 labels:
 - streaming
-- sublinear algorithms
-- subgraph counting
 publications:
 - name: ICLR
   url: https://openreview.net/forum?id=8in_5gN9I0

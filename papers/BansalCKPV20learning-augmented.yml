@@ -2,7 +2,7 @@ title: Learning-Augmented Weighted Paging
 authors: Bansal, Coester, Kumar, Purohit, Vee
 labels:
 - online
-- caching/paging
+- caching / paging
 publications:
 - name: SODA
   url: https://epubs.siam.org/doi/10.1137/1.9781611977073.4

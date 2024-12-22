@@ -2,7 +2,7 @@ title: The Primal-Dual method for Learning Augmented Algorithms
 authors: Bamas, Maggiori, Svensson
 labels:
 - online
-- set cover
+- covering
 - rent-or-buy
 publications:
 - name: NeurIPS

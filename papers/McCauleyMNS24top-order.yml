@@ -1,8 +1,8 @@
 title: Incremental Topological Ordering and Cycle Detection with Predictions
 authors: McCauley, Moseley, Niaparast, Singh
 labels:
-- data structure
-- graph algorithms
+- dynamic / data structure
+- graph problems
 - running time
 publications:
 - name: arXiv

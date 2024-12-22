@@ -2,8 +2,7 @@ title: Discrete-Smoothness in Online Algorithms with Predictions
 authors: Azar, Panigrahi, Touitou
 labels:
 - online
-- set cover
-- covering problems
+- covering
 publications:
 - name: NeurIPS
   url: https://openreview.net/forum?id=DDmH3H78iJ

@@ -2,7 +2,7 @@ title: Online Simple Knapsack with Bounded Predictions
 authors: Gehnen, Lotze, Rossmanith
 labels:
 - online
-- knapsack
+- packing
 publications:
 - name: STACS
   url: https://doi.org/10.4230/LIPIcs.STACS.2024.37

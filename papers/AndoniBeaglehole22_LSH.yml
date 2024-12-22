@@ -2,8 +2,7 @@ title: Learning to Hash Robustly, Guaranteed
 authors: Andoni, Beaglehole
 labels:
 - running time
-- locality sensitive hashing
-- nearest neighbors search
+- hashing
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2108.05433

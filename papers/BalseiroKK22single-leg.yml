@@ -1,6 +1,7 @@
 title: Single-Leg Revenue Management with Advice
 authors: Balseiro, Kroer, Kumar
-labels: []
+labels: 
+- online
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2202.10939
