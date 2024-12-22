@@ -1,7 +1,6 @@
 title: Improved Frequency Estimation Algorithms with and without Predictions
 authors: Aamand, Chen, Nguyen, Silwal, Vakilian
 labels:
-- frequency estimation
 - streaming
 - parsimonious / succinct
 publications:

@@ -71,7 +71,7 @@ const SORT_YEAR_BOTTOM_UP = "Oldest first";
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
 const TYPE_LABELS = [
-  "dynamic / data structures",
+  "dynamic / data structure",
   "online",
   "running time",
   "approximation",

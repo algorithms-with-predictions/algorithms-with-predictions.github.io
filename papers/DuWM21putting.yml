@@ -3,7 +3,6 @@ authors: Du, Wang, Mitzenmacher
 labels:
 - learning
 - streaming
-- frequency estimation
 publications:
 - name: ICML
   url: http://proceedings.mlr.press/v139/du21d.html

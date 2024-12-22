@@ -2,7 +2,6 @@ title: Learning-Based Frequency Estimation Algorithms
 authors: Hsu, Indyk, Katabi, Vakilian
 labels:
 - streaming
-- frequency estimation
 publications:
 - name: ICLR
   url: https://par.nsf.gov/servlets/purl/10112257

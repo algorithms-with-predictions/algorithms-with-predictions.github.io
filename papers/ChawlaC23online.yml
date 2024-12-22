@@ -2,7 +2,7 @@ title: Online Time-Windows TSP with Predictions
 authors: Chawla, Christou
 labels:
 - online
-- routing
+- routing / TSP
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2304.01958
