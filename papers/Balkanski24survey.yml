@@ -4,10 +4,22 @@ labels:
 - game theory / mechanism design
 - survey
 publications:
-- name: ACM SiGecom
-  url: https://dl.acm.org/doi/abs/10.1145/3699814.3699821
-  year: 2024
+- name: SIGecom Exch.
+  url: https://doi.org/10.1145/3699814.3699821
+  year: 2023
   month: null
   day: null
-  dblp_key: null
-  bibtex: null
+  dblp_key: journals/sigecom/BalkanskiGT23
+  bibtex: |+
+    @article{DBLP:journals/sigecom/BalkanskiGT23,
+      author       = {Eric Balkanski and
+                      Vasilis Gkatzelis and
+                      Xizhi Tan},
+      title        = {Mechanism Design with Predictions: An Annotated Reading List},
+      journal      = {SIGecom Exch.},
+      volume       = {21},
+      number       = {1},
+      pages        = {54--57},
+      year         = {2023}
+    }
+

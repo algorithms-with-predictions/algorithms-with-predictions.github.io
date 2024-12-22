@@ -1,7 +1,8 @@
 title: Allocating online advertisement space with unreliable estimates
 authors: Mahdian, Nazerzadeh, Saberi
 labels:
-- prior/related work
+- online
+- matching / allocation
 publications:
 - name: EC
   url: https://doi.org/10.1145/1250910.1250952
