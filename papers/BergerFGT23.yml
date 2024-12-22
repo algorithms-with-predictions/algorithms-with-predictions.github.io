@@ -11,3 +11,10 @@ publications:
   day: 14
   dblp_key: null
   bibtex: null
+- name: EC
+  url: https://dl.acm.org/doi/10.1145/3670865.3673456
+  year: 2024
+  month: 12
+  day: 17
+  dblp_key: null
+  bibtex: null
