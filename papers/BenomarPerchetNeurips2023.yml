@@ -5,6 +5,7 @@ labels:
 - rent-or-buy
 - scheduling
 - secretary
+- parsimonious / succinct
 publications:
 - name: NeurIPS
   url: https://openreview.net/forum?id=QpZubU4yD9
