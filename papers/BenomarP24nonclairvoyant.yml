@@ -3,6 +3,7 @@ authors: Benomar, Perchet
 labels:
 - online
 - scheduling
+- parsimonious / succinct
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2405.01013
