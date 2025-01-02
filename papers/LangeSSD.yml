@@ -1,0 +1,12 @@
+title: Offline and Online Algorithms for SSD Management
+authors: Lange, Naor, Yadgar
+publications:
+  - name: SIGMETRICS
+    year: 2022
+    url: https://dl.acm.org/doi/abs/10.1145/3491045
+  - name: CACM
+    year: 2023
+    url: https://dl.acm.org/doi/abs/10.1145/3596205
+labels: 
+  - online
+  - scheduling
