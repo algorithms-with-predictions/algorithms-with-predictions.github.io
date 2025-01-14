@@ -18,7 +18,8 @@ publications:
   year: 2024
   month: null
   day: null
-  bibtex: |+
+  dblp_key: null
+  bibtex: |
     @inproceedings{
     benomar2024learningaugmented,
     title={Learning-Augmented Priority Queues},
