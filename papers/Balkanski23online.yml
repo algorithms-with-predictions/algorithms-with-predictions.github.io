@@ -16,5 +16,17 @@ publications:
   year: 2024
   month: 12
   day: 17
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/sigecom/BalkanskiGTZ24
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigecom/BalkanskiGTZ24,
+      author       = {Eric Balkanski and
+                      Vasilis Gkatzelis and
+                      Xizhi Tan and
+                      Cherlin Zhu},
+      title        = {Online Mechanism Design with Predictions},
+      booktitle    = {{EC}},
+      pages        = {1184},
+      publisher    = {{ACM}},
+      year         = {2024}
+    }
+

@@ -10,3 +10,23 @@ publications:
   day: 16
   dblp_key: null
   bibtex: null
+- name: Proc. ACM Meas. Anal. Comput. Syst.
+  url: https://doi.org/10.1145/3700420
+  year: 2024
+  month: null
+  day: null
+  dblp_key: journals/pomacs/LiYWR24
+  bibtex: |+
+    @article{DBLP:journals/pomacs/LiYWR24,
+      author       = {Pengfei Li and
+                      Jianyi Yang and
+                      Adam Wierman and
+                      Shaolei Ren},
+      title        = {Learning-Augmented Decentralized Online Convex Optimization in Networks},
+      journal      = {Proc. {ACM} Meas. Anal. Comput. Syst.},
+      volume       = {8},
+      number       = {3},
+      pages        = {38:1--38:42},
+      year         = {2024}
+    }
+

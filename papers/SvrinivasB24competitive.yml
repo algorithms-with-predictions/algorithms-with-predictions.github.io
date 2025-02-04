@@ -11,3 +11,20 @@ publications:
   day: 6
   dblp_key: null
   bibtex: null
+- name: SODA
+  url: https://doi.org/10.1137/1.9781611978322.127
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/soda/BlumS25
+  bibtex: |+
+    @inproceedings{DBLP:conf/soda/BlumS25,
+      author       = {Avrim Blum and
+                      Vaidehi Srinivas},
+      title        = {Competitive strategies to use "warm start" algorithms with predictions},
+      booktitle    = {{SODA}},
+      pages        = {3775--3801},
+      publisher    = {{SIAM}},
+      year         = {2025}
+    }
+

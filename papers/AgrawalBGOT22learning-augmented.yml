@@ -32,3 +32,25 @@ publications:
       year         = {2022}
     }
 
+- name: Math. Oper. Res.
+  url: https://doi.org/10.1287/moor.2022.0225
+  year: 2024
+  month: null
+  day: null
+  dblp_key: journals/mor/AgrawalBGOT24
+  bibtex: |+
+    @article{DBLP:journals/mor/AgrawalBGOT24,
+      author       = {Priyank Agrawal and
+                      Eric Balkanski and
+                      Vasilis Gkatzelis and
+                      Tingting Ou and
+                      Xizhi Tan},
+      title        = {Learning-Augmented Mechanism Design: Leveraging Predictions for Facility
+                      Location},
+      journal      = {Math. Oper. Res.},
+      volume       = {49},
+      number       = {4},
+      pages        = {2626--2651},
+      year         = {2024}
+    }
+

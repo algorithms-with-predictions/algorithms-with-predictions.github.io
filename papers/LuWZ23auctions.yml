@@ -16,5 +16,16 @@ publications:
   year: 2024
   month: 12
   day: 17
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/sigecom/LuW024
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigecom/LuW024,
+      author       = {Pinyan Lu and
+                      Zongqi Wan and
+                      Jialin Zhang},
+      title        = {Competitive Auctions with Imperfect Predictions},
+      booktitle    = {{EC}},
+      pages        = {1155--1183},
+      publisher    = {{ACM}},
+      year         = {2024}
+    }
+

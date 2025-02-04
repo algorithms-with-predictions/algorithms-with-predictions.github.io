@@ -17,5 +17,18 @@ publications:
   year: 2024
   month: 12
   day: 17
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/sigecom/Colini-Baldeschi24
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigecom/Colini-Baldeschi24,
+      author       = {Riccardo Colini{-}Baldeschi and
+                      Sophie Klumper and
+                      Guido Sch{\"{a}}fer and
+                      Artem Tsikiridis},
+      title        = {To Trust or Not to Trust: Assignment Mechanisms with Predictions in
+                      the Private Graph Model},
+      booktitle    = {{EC}},
+      pages        = {1134--1154},
+      publisher    = {{ACM}},
+      year         = {2024}
+    }
+
