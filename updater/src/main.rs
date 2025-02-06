@@ -221,14 +221,14 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         println!("Updating {}", paper.title);
 
-        update_paper_from_arxiv(&mut paper, 5).await?;
+        update_paper_from_arxiv(&mut paper, 4).await?;
         //update_paper_from_dblp(&mut paper, 5).await?;
 
         let file = std::fs::File::create(entry.path())?;
         let mut writer = BufWriter::new(file);
         serde_yml::to_writer(&mut writer, &paper)?;
         writer.flush()?;
-        sleep(Duration::from_millis(1000)).await;
+        sleep(Duration::from_millis(100)).await;
     }
 
     Ok(())
