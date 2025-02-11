@@ -11,3 +11,18 @@ publications:
   day: 22
   dblp_key: null
   bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/657ce8a0bb63ef46a81a76bfc82d261a-Abstract-Conference.html
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/nips/RamanT24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/RamanT24,
+      author       = {Vinod Raman and
+                      Ambuj Tewari},
+      title        = {Online Classification with Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

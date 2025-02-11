@@ -11,3 +11,19 @@ publications:
   day: 15
   dblp_key: null
   bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/06dc3d10e257563416d838f377d31b86-Abstract-Conference.html
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/nips/BalkanskiMM24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/BalkanskiMM24,
+      author       = {Eric Balkanski and
+                      Will Ma and
+                      Andreas Maggiori},
+      title        = {Fair Secretaries with Unfair Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

@@ -16,5 +16,14 @@ publications:
   year: 2024
   month: null
   day: null
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/nips/BalkanskiGS24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/BalkanskiGS24,
+      author       = {Eric Balkanski and
+                      Vasilis Gkatzelis and
+                      Golnoosh Shahkarami},
+      title        = {Randomized Strategic Facility Location with Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

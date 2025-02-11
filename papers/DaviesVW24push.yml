@@ -11,3 +11,19 @@ publications:
   day: 28
   dblp_key: null
   bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/39ec972afab01e0d8ddc6834a9d12ac1-Abstract-Conference.html
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/nips/DaviesVW24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/DaviesVW24,
+      author       = {Sami Davies and
+                      Sergei Vassilvitskii and
+                      Yuyan Wang},
+      title        = {Warm-starting Push-Relabel},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

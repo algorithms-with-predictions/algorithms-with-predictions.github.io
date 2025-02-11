@@ -18,5 +18,14 @@ publications:
   year: 2024
   month: null
   day: null
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/nips/000SV24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/000SV24,
+      author       = {George Christodoulou and
+                      Alkmini Sgouritsa and
+                      Ioannis Vlachos},
+      title        = {Mechanism design augmented with output advice},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

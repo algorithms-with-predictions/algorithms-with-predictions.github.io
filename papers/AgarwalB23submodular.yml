@@ -12,3 +12,18 @@ publications:
   day: 21
   dblp_key: null
   bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/19cdab1dee61d55158cf106244ceab08-Abstract-Conference.html
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/nips/AgarwalB24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/AgarwalB24,
+      author       = {Arpit Agarwal and
+                      Eric Balkanski},
+      title        = {Learning-Augmented Dynamic Submodular Maximization},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+
