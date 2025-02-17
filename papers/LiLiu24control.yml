@@ -9,5 +9,14 @@ publications:
   year: 2024
   month: null
   day: null
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/nips/LiLY24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/LiLY24,
+      author       = {Tongxin Li and
+                      Hao Liu and
+                      Yisong Yue},
+      title        = {Disentangling Linear Quadratic Control with Untrusted {ML} Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

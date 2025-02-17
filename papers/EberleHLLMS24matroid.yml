@@ -12,3 +12,22 @@ publications:
   day: 5
   dblp_key: null
   bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/aa76039e10ccb71d2922e87a87240f72-Abstract-Conference.html
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/nips/EberleHLLMS24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/EberleHLLMS24,
+      author       = {Franziska Eberle and
+                      Felix Hommelsheim and
+                      Alexander Lindermayr and
+                      Zhenwei Liu and
+                      Nicole Megow and
+                      Jens Schl{\"{o}}ter},
+      title        = {Accelerating Matroid Optimization through Fast Imprecise Oracles},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

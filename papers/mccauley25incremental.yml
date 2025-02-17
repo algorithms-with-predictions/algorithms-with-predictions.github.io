@@ -1,0 +1,14 @@
+title: Incremental Approximate Single-Source Shortest Paths with Predictions
+authors: McCauley, Moseley, Niaparast, Niaparast, Singh
+labels:
+- dynamic / data structure
+- graph problems
+- shortest path
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2502.08125
+  year: 2025
+  month: 2
+  day: 12
+  dblp_key: null
+  bibtex: null

@@ -16,5 +16,14 @@ publications:
   year: 2024
   month: null
   day: null
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/nips/Barak0T24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/Barak0T24,
+      author       = {Zohar Barak and
+                      Anupam Gupta and
+                      Inbal Talgam{-}Cohen},
+      title        = {{MAC} Advice for facility location mechanism design},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

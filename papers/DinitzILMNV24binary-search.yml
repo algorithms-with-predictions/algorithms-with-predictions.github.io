@@ -9,8 +9,20 @@ publications:
   year: 2024
   month: 9
   day: 25
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/nips/DinitzILMNV24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/DinitzILMNV24,
+      author       = {Michael Dinitz and
+                      Sungjin Im and
+                      Thomas Lavastida and
+                      Benjamin Moseley and
+                      Aidin Niaparast and
+                      Sergei Vassilvitskii},
+      title        = {Binary Search with Distributional Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+
 - name: arXiv
   url: https://arxiv.org/abs/2411.16030
   year: 2024

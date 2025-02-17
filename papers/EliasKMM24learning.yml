@@ -13,3 +13,20 @@ publications:
   day: 12
   dblp_key: null
   bibtex: null
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/b1a72c79ac7512df8d7b573f38143ac4-Abstract-Conference.html
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/nips/0001KMM24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/0001KMM24,
+      author       = {Marek Eli{\'{a}}s and
+                      Haim Kaplan and
+                      Yishay Mansour and
+                      Shay Moran},
+      title        = {Learning-Augmented Algorithms with Explicit Predictors},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

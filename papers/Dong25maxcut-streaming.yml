@@ -12,3 +12,23 @@ publications:
   day: 13
   dblp_key: null
   bibtex: null
+- name: ITCS
+  url: https://doi.org/10.4230/LIPIcs.ITCS.2025.44
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/innovations/Dong0V25
+  bibtex: |+
+    @inproceedings{DBLP:conf/innovations/Dong0V25,
+      author       = {Yinhao Dong and
+                      Pan Peng and
+                      Ali Vakilian},
+      title        = {Learning-Augmented Streaming Algorithms for Approximating {MAX-CUT}},
+      booktitle    = {{ITCS}},
+      series       = {LIPIcs},
+      volume       = {325},
+      pages        = {44:1--44:24},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2025}
+    }
+

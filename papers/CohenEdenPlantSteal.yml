@@ -17,4 +17,14 @@ publications:
   month: null
   day: null
   dblp_key: conf/nips/CohenEEV24
-  bibtex: null
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/CohenEEV24,
+      author       = {Ilan Reuven Cohen and
+                      Alon Eden and
+                      Talya Eden and
+                      Arsen Vasilyan},
+      title        = {Plant-and-Steal: Truthful Fair Allocations via Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+

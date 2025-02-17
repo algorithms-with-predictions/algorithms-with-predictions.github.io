@@ -16,5 +16,15 @@ publications:
   year: 2024
   month: null
   day: null
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/nips/ZhaoTCD24
+  bibtex: |+
+    @inproceedings{DBLP:conf/nips/ZhaoTCD24,
+      author       = {Hailiang Zhao and
+                      Xueyan Tang and
+                      Peng Chen and
+                      Shuiguang Deng},
+      title        = {Learning-Augmented Algorithms for the Bahncard Problem},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+
