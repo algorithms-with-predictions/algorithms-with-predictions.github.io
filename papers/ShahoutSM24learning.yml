@@ -10,3 +10,21 @@ publications:
   day: 17
   dblp_key: null
   bibtex: null
+- name: ICNP
+  url: https://doi.org/10.1109/ICNP61940.2024.10858536
+  year: 2024
+  month: null
+  day: null
+  dblp_key: conf/icnp/ShahoutSM24
+  bibtex: |+
+    @inproceedings{DBLP:conf/icnp/ShahoutSM24,
+      author       = {Rana Shahout and
+                      Ibrahim Sabek and
+                      Michael Mitzenmacher},
+      title        = {Learning-Augmented Frequency Estimation in Sliding Windows},
+      booktitle    = {{ICNP}},
+      pages        = {1--6},
+      publisher    = {{IEEE}},
+      year         = {2024}
+    }
+
