@@ -1,9 +1,9 @@
 title: Bayesian Binary Search
 authors: Vikash Singh, Matthew Khanzadeh, Vincent Davis, Harrison Rush, Emanuele Rossi, Jesse Shrader, Pietro Lio
 labels:
-- bitcoin/lightning
-- binary search
-- probabilistic machine learning 
+- search
+- running time
+- experimental evaluation
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2410.01771

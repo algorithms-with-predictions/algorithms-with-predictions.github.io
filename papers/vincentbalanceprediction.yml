@@ -1,8 +1,10 @@
 title: Channel Balance Interpolation in the Lightning Network via Machine Learning
 authors: Vincent, Emanuele Rossi, Vikash Singh
 labels:
-- bitcoin/lightning
-- pathfinding
+- search
+- routing
+- running time
+- experimental evaluation
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2405.12087
