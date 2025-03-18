@@ -4,6 +4,7 @@ labels:
 - game theory / mechanism design
 - auctions
 - scheduling
+- facility location
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2205.11313

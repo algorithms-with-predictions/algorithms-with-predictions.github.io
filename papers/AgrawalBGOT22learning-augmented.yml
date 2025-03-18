@@ -2,7 +2,8 @@ title: 'Learning-Augmented Mechanism Design: Leveraging Predictions for Facility
 authors: Agrawal, Balkanski, Gkatzelis, Ou, Tan
 labels:
 - game theory / mechanism design
-- network design
+- facility location
+
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2204.01120
