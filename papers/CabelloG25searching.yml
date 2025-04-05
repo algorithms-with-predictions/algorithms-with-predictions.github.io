@@ -1,0 +1,15 @@
+title: Searching in Euclidean Spaces with Predictions
+authors: Cabello, Giannopoulos
+publications:
+  - name: WAOA
+    year: 2024
+    url: https://link.springer.com/chapter/10.1007/978-3-031-81396-2_3
+  - name: arXiv
+    year: 2024
+    month:
+    day:
+    url: https://arxiv.org/abs/2408.04964
+labels:
+  - online
+  - search
+  - computational geometry 
