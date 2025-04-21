@@ -9,8 +9,20 @@ publications:
   year: 2025
   month: null
   day: null
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/alt/BalkanskiZ25
+  bibtex: |+
+    @inproceedings{DBLP:conf/alt/BalkanskiZ25,
+      author       = {Eric Balkanski and
+                      Cherlin Zhu},
+      title        = {Strategyproof Learning with Advice},
+      booktitle    = {{ALT}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {272},
+      pages        = {163--166},
+      publisher    = {{PMLR}},
+      year         = {2025}
+    }
+
 - name: arXiv
   url: https://arxiv.org/abs/2411.07354
   year: 2024
