@@ -1,4 +1,4 @@
-title: Learning to Price with Resource Constraints: From Full Information to Machine-Learned Prices
+title: "Learning to Price with Resource Constraints: From Full Information to Machine-Learned Prices"
 authors: Ruicheng Ao, Jiashuo Jiang, David Simchi-Levi
 publications:
   - name: arXiv
@@ -9,8 +9,6 @@ publications:
     bibtex: null
     url: https://arxiv.org/abs/2501.14155
     labels:
-      - Dynamic pricing
-      - Resource constraints 
-      - Machine learning
-      - Full information
-      - Partial information
+      - online
+      - learning
+      - dynamic pricing
