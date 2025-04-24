@@ -8,7 +8,7 @@ publications:
     dblp_key: null
     bibtex: null
     url: https://arxiv.org/abs/2501.14155
-    labels:
-      - online
-      - learning
-      - dynamic pricing
+labels:
+  - online
+  - learning
+  - dynamic pricing
