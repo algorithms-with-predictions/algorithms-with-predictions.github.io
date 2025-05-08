@@ -1,0 +1,14 @@
+title: Online Ad Allocation with Predictions
+authors: Spaeh, Ene
+publications:
+  - name: ICML
+    year: 2023
+    url: https://proceedings.neurips.cc/paper_files/paper/2023/file/3815d62554efad0878fad6c1c30ffda0-Paper-Conference.pdf
+  - name: arXiv
+    year: 2023
+    month: 5
+    day: 24
+    url: https://arxiv.org/pdf/2302.01827
+labels:
+  - online
+  - allocation/matching
