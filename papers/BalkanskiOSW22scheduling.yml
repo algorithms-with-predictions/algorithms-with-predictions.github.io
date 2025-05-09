@@ -32,3 +32,23 @@ publications:
       year         = {2023}
     }
 
+- name: Theory Comput. Syst.
+  url: https://doi.org/10.1007/s00224-024-10200-z
+  year: 2025
+  month: null
+  day: null
+  dblp_key: journals/mst/BalkanskiOSW25
+  bibtex: |+
+    @article{DBLP:journals/mst/BalkanskiOSW25,
+      author       = {Eric Balkanski and
+                      Tingting Ou and
+                      Clifford Stein and
+                      Hao{-}Ting Wei},
+      title        = {Scheduling with Speed Predictions},
+      journal      = {Theory Comput. Syst.},
+      volume       = {69},
+      number       = {1},
+      pages        = {16},
+      year         = {2025}
+    }
+
