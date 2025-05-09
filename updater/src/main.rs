@@ -5,8 +5,7 @@ use serde::{Deserialize, Serialize};
 use serde_yml;
 use tokio::time::sleep;
 use std::{
-    fs,
-    io::{BufWriter, Write}, time::Duration,
+    fs, io::{BufWriter, Write}, path::PathBuf, time::Duration
 };
 
 #[derive(Serialize, Deserialize, PartialEq, Debug)]
@@ -214,21 +213,29 @@ async fn update_paper_from_dblp(paper: &mut Paper, acc: usize) -> Result<(), Box
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let mut papers: Vec<(PathBuf, Paper)> = Vec::new();
+
     for entry in fs::read_dir("../papers")? {
         let entry = entry?;
         let file = std::fs::File::open(entry.path())?;
-        let mut paper: Paper = serde_yml::from_reader(file)?;
+        let paper: Paper = serde_yml::from_reader(file)?;
+        papers.push((entry.path(), paper));
+    }
+
+    papers.sort_by_key(|paper| paper.1.publications.len());
+
+    for (path, mut paper) in papers {
 
         println!("Updating {}", paper.title);
 
         update_paper_from_arxiv(&mut paper, 4).await?;
         update_paper_from_dblp(&mut paper, 5).await?;
 
-        let file = std::fs::File::create(entry.path())?;
+        let file = std::fs::File::create(path)?;
         let mut writer = BufWriter::new(file);
         serde_yml::to_writer(&mut writer, &paper)?;
         writer.flush()?;
-        sleep(Duration::from_millis(15000)).await;
+        sleep(Duration::from_millis(10000)).await;
     }
 
     Ok(())
