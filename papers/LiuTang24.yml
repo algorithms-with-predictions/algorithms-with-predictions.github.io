@@ -1,0 +1,9 @@
+title: Tight Bounds for Dynamic Bin Packing with Predictions
+authors: Liu, Tang
+labels:
+- online
+- scheduling
+publications:
+- name: POMACS
+  url: https://dl.acm.org/doi/10.1145/3700437
+  year: 2024
