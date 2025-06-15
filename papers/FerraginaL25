@@ -1,0 +1,10 @@
+title: FL-RMQ: A Learned Approach to Range Minimum Queries
+authors: Ferragina, Lari
+publications:
+  - name: CPM
+    year: 2025
+    month: 6
+    day: 10
+    url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CPM.2025.7
+labels: 
+  - dynamic / data structure
