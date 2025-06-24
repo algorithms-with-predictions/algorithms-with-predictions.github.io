@@ -10,3 +10,23 @@ publications:
   day: 13
   dblp_key: null
   bibtex: null
+- name: Manuf. Serv. Oper. Manag.
+  url: https://doi.org/10.1287/msom.2024.1168
+  year: 2025
+  month: null
+  day: null
+  dblp_key: journals/msom/AnLMR25
+  bibtex: |+
+    @article{DBLP:journals/msom/AnLMR25,
+      author       = {Lin An and
+                      Andrew A. Li and
+                      Benjamin Moseley and
+                      R. Ravi},
+      title        = {The Nonstationary Newsvendor with (and Without) Predictions},
+      journal      = {Manuf. Serv. Oper. Manag.},
+      volume       = {27},
+      number       = {3},
+      pages        = {881--896},
+      year         = {2025}
+    }
+
