@@ -12,3 +12,22 @@ publications:
   day: 14
   dblp_key: null
   bibtex: null
+- name: SIGMETRICS
+  url: https://doi.org/10.1145/3726854.3727315
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/sigmetrics/MoseleyNPZ25
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigmetrics/MoseleyNPZ25,
+      author       = {Benjamin Moseley and
+                      Heather Newman and
+                      Kirk Pruhs and
+                      Rudy Zhou},
+      title        = {Robust Gittins for Stochastic Scheduling},
+      booktitle    = {{SIGMETRICS} (Abstracts)},
+      pages        = {166--168},
+      publisher    = {{ACM}},
+      year         = {2025}
+    }
+
