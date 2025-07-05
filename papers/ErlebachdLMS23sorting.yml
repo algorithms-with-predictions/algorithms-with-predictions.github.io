@@ -1,0 +1,29 @@
+title: Sorting and Hypergraph Orientation under Uncertainty with Predictions
+authors: Erlebach, de Lima, Megow, Schlöter
+labels: 
+  - online
+  - explorable uncertainty
+  - sorting 
+publications:
+  - name: IJCAI
+    year: 2023
+    url: http://proceedings.mlr.press/v80/lykouris18a/lykouris18a.pdf
+    dblp_key: conf/ijcai/ErlebachLMS23
+    bibtex: |+
+      @inproceedings{DBLP:conf/ijcai/ErlebachLMS23,
+      author       = {Thomas Erlebach and
+                     Murilo S. de Lima and
+                     Nicole Megow and
+                     Jens Schl{\"{o}}ter},
+     title        = {Sorting and Hypergraph Orientation under Uncertainty with Predictions},
+     booktitle    = {{IJCAI}},
+     pages        = {5577--5585},
+     publisher    = {ijcai.org},
+     year         = {2023},
+     doi          = {10.24963/IJCAI.2023/619},
+     }  
+  - name: arXiv
+    year: 2023
+    month: 1 # optional
+    day: 4 # optional
+    url: https://arxiv.org/abs/2305.09245
