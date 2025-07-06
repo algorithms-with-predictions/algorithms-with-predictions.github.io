@@ -16,13 +16,6 @@ publications:
   year: 2024
   month: null
   day: null
-  dblp_key: null
-  bibtex: null
-- name: Inf. Process. Lett.
-  url: https://doi.org/10.1016/j.ipl.2024.106487
-  year: 2024
-  month: null
-  day: null
   dblp_key: journals/ipl/PolakZ24
   bibtex: |+
     @article{DBLP:journals/ipl/PolakZ24,
