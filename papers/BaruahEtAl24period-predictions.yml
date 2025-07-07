@@ -8,18 +8,4 @@ publications:
     year: 2024
     url: https://dl.acm.org/doi/10.1145/3696355.3696356
     dblp_key: conf/rtns/BaruahELMMS24
-    bibtex: |+
-      @inproceedings{DBLP:conf/rtns/BaruahELMMS24,
-  author       = {Sanjoy K. Baruah and
-                  Pontus Ekberg and
-                  Alexander Lindermayr and
-                  Alberto Marchetti{-}Spaccamela and
-                  Nicole Megow and
-                  Leen Stougie},
-  title        = {The Safe and Effective Use of Optimistic Period Predictions},
-  booktitle    = {{RTNS}},
-  pages        = {197--206},
-  publisher    = {{ACM}},
-  year         = {2024}
-} 
  
