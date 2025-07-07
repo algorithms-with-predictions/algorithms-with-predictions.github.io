@@ -12,3 +12,25 @@ publications:
   day: 12
   dblp_key: null
   bibtex: null
+- name: ICALP
+  url: https://doi.org/10.4230/LIPIcs.ICALP.2025.117
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/icalp/McCauleyMNN025
+  bibtex: |+
+    @inproceedings{DBLP:conf/icalp/McCauleyMNN025,
+      author       = {Samuel McCauley and
+                      Benjamin Moseley and
+                      Aidin Niaparast and
+                      Helia Niaparast and
+                      Shikha Singh},
+      title        = {Incremental Approximate Single-Source Shortest Paths with Predictions},
+      booktitle    = {{ICALP}},
+      series       = {LIPIcs},
+      volume       = {334},
+      pages        = {117:1--117:20},
+      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+      year         = {2025}
+    }
+

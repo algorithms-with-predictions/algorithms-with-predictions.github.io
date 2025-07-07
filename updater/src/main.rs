@@ -228,8 +228,12 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         println!("Updating {}", paper.title);
 
-        update_paper_from_arxiv(&mut paper, 4).await?;
-        update_paper_from_dblp(&mut paper, 5).await?;
+        if let Err(e) = update_paper_from_arxiv(&mut paper, 4).await {
+            eprintln!("Error updating from arXiv for {}: {}", paper.title, e);
+        }
+        if let Err(e) = update_paper_from_dblp(&mut paper, 5).await {
+            eprintln!("Error updating from DBLP for {}: {}", paper.title, e);
+        }
 
         let file = std::fs::File::create(path)?;
         let mut writer = BufWriter::new(file);
