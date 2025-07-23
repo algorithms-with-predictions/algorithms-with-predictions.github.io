@@ -1,4 +1,12 @@
 title: Efficient Approximate Temporal Triangle Counting in Streaming with Predictions
+authors: Venturin, Sarpe, Vandin
 labels:
-  - streaming
-publications: []
+- streaming
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2506.13173
+  year: 2025
+  month: 6
+  day: 16
+  dblp_key: null
+  bibtex: null

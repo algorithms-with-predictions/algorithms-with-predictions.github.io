@@ -10,3 +10,22 @@ publications:
   day: 19
   dblp_key: null
   bibtex: null
+- name: IJTCS-FAW
+  url: https://doi.org/10.1007/978-981-96-8312-3_3
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/faw/Berg25
+  bibtex: |+
+    @inproceedings{DBLP:conf/faw/Berg25,
+      author       = {Magnus Berg},
+      title        = {Comparing the Hardness of Online Minimization and Maximization Problems
+                      with Predictions},
+      booktitle    = {{IJTCS-FAW}},
+      series       = {Lecture Notes in Computer Science},
+      volume       = {15828},
+      pages        = {33--48},
+      publisher    = {Springer},
+      year         = {2025}
+    }
+
