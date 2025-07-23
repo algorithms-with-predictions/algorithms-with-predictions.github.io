@@ -1,0 +1,30 @@
+title: Online delay management on a single train line with predictions
+authors: Eichhorn, Krumke
+labels:
+- online
+- rent-or-buy
+publications:
+- name: IPL
+  url: https://doi.org/10.1016/j.ipl.2025.106569
+  year: 2025
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
+- name: Inf. Process. Lett.
+  url: https://doi.org/10.1016/j.ipl.2025.106569
+  year: 2025
+  month: null
+  day: null
+  dblp_key: journals/ipl/EichhornK25
+  bibtex: |+
+    @article{DBLP:journals/ipl/EichhornK25,
+      author       = {Daniel Eichhorn and
+                      Sven O. Krumke},
+      title        = {Online delay management on a single train line with predictions},
+      journal      = {Inf. Process. Lett.},
+      volume       = {190},
+      pages        = {106569},
+      year         = {2025}
+    }
+

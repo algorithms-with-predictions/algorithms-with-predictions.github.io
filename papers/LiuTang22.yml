@@ -7,6 +7,24 @@ publications:
 - name: POMACS
   url: https://dl.acm.org/doi/10.1145/3570605
   year: 2022
+  month: null
+  day: null
+  dblp_key: null
+  bibtex: null
 - name: SIGMETRICS
   url: https://dl.acm.org/doi/10.1145/3578338.3593538
   year: 2023
+  month: null
+  day: null
+  dblp_key: conf/sigmetrics/LiuT23
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigmetrics/LiuT23,
+      author       = {Mozhengfu Liu and
+                      Xueyan Tang},
+      title        = {Dynamic Bin Packing with Predictions},
+      booktitle    = {{SIGMETRICS} (Abstracts)},
+      pages        = {57--58},
+      publisher    = {{ACM}},
+      year         = {2023}
+    }
+

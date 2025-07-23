@@ -10,3 +10,22 @@ publications:
   day: 2
   dblp_key: null
   bibtex: null
+- name: ICLR
+  url: https://openreview.net/forum?id=WcZLG8XxhD
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/iclr/AamandCGSW25
+  bibtex: |+
+    @inproceedings{DBLP:conf/iclr/AamandCGSW25,
+      author       = {Anders Aamand and
+                      Justin Y. Chen and
+                      Siddharth Gollapudi and
+                      Sandeep Silwal and
+                      Hao Wu},
+      title        = {Learning-Augmented Frequent Directions},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2025}
+    }
+
