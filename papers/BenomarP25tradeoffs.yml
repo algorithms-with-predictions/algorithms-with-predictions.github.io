@@ -12,3 +12,22 @@ publications:
   day: 22
   dblp_key: null
   bibtex: null
+- name: AISTATS
+  url: https://proceedings.mlr.press/v258/benomar25a.html
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/aistats/BenomarP25
+  bibtex: |+
+    @inproceedings{DBLP:conf/aistats/BenomarP25,
+      author       = {Ziyad Benomar and
+                      Vianney Perchet},
+      title        = {On Tradeoffs in Learning-Augmented Algorithms},
+      booktitle    = {{AISTATS}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {258},
+      pages        = {802--810},
+      publisher    = {{PMLR}},
+      year         = {2025}
+    }
+

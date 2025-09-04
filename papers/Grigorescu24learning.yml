@@ -11,3 +11,24 @@ publications:
   day: 13
   dblp_key: null
   bibtex: null
+- name: AISTATS
+  url: https://proceedings.mlr.press/v258/grigorescu25a.html
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/aistats/GrigorescuLS25
+  bibtex: |+
+    @inproceedings{DBLP:conf/aistats/GrigorescuLS25,
+      author       = {Elena Grigorescu and
+                      Young{-}San Lin and
+                      Maoyuan Song},
+      title        = {Learning-Augmented Algorithms for Online Concave Packing and Convex
+                      Covering Problems},
+      booktitle    = {{AISTATS}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {258},
+      pages        = {1072--1080},
+      publisher    = {{PMLR}},
+      year         = {2025}
+    }
+

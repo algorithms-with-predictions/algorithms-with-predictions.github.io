@@ -29,3 +29,21 @@ publications:
       year         = {2022}
     }
 
+- name: ACM Trans. Parallel Comput.
+  url: https://doi.org/10.1145/3711872
+  year: 2025
+  month: null
+  day: null
+  dblp_key: journals/topc/LindermayrM25
+  bibtex: |+
+    @article{DBLP:journals/topc/LindermayrM25,
+      author       = {Alexander Lindermayr and
+                      Nicole Megow},
+      title        = {Permutation Predictions for Non-Clairvoyant Scheduling},
+      journal      = {{ACM} Trans. Parallel Comput.},
+      volume       = {12},
+      number       = {2},
+      pages        = {4:1--4:26},
+      year         = {2025}
+    }
+

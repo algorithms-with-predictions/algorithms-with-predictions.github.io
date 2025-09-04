@@ -15,5 +15,16 @@ publications:
   year: 2025
   month: 7
   day: 2
-  dblp_key: null
-  bibtex: null
+  dblp_key: conf/sigecom/Filos-Ratsikas025
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigecom/Filos-Ratsikas025,
+      author       = {Aris Filos{-}Ratsikas and
+                      Georgios Kalantzis and
+                      Alexandros A. Voudouris},
+      title        = {Utilitarian Distortion with Predictions},
+      booktitle    = {{EC}},
+      pages        = {254--271},
+      publisher    = {{ACM}},
+      year         = {2025}
+    }
+
