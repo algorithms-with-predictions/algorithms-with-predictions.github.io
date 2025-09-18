@@ -1,8 +1,7 @@
 title: Online Budget-Feasible Mechanism Design with Predictions
 authors: Amanatidis, Markakis, Santorinaios, Schäfer, Tsamopoulos, Tsikiridis
 labels:
-- AGT
-- mechanism design
+- game theory / mechanism design
 - auctions
 - secretary
 publications:
@@ -13,3 +12,22 @@ publications:
   day: 30
   dblp_key: null
   bibtex: null
+- name: SAGT
+  url: https://link.springer.com/chapter/10.1007/978-3-032-03639-1_22
+  year: 2025
+  month: 9
+  day: 1
+  dblp_key: conf/sagt/AmanatidisMSSTT25.html
+  bibtex: |+
+    @inproceedings{DBLP:conf/sagt/AmanatidisMSSTT25,
+      author       = {Georgios Amanatidis and
+                      Evangelos Markakis and
+                      Christodoulos Santorinaios and
+                      Guido Sch{\"{a}}fer and
+                      Panagiotis Tsamopoulos and
+                      Artem Tsikiridis}, 
+      title        = {Online Budget-Feasible Mechanism Design with Predictions},
+      booktitle    = {{SAGT}},
+      publisher    = {Springer},
+      year         = {2025},
+}
