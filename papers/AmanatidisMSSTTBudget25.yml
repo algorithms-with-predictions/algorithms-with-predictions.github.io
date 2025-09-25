@@ -18,7 +18,7 @@ publications:
   month: 9
   day: 1
   dblp_key: conf/sagt/AmanatidisMSSTT25.html
-  bibtex: |+
+  bibtex: |
     @inproceedings{DBLP:conf/sagt/AmanatidisMSSTT25,
       author       = {Georgios Amanatidis and
                       Evangelos Markakis and
