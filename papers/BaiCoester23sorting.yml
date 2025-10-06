@@ -2,6 +2,7 @@ title: Sorting with Predictions
 authors: Bai, Coester
 labels:
 - running time
+- two-oracle
 - sorting
 publications:
 - name: arXiv
