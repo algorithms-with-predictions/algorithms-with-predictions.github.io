@@ -1,0 +1,20 @@
+title: Indulgent algorithms
+authors: Rachid Guerraoui
+labels:
+- prior/related work
+publications:
+- name: PODC
+  url: https://doi.org/10.1145/343477.343630}
+  year: 2000
+  month: null
+  day: null
+  dblp_key: conf/podc/Guerraoui00
+  bibtex: |+
+    @inproceedings{DBLP:conf/podc/Guerraoui00,
+  author       = {Rachid Guerraoui},
+  title        = {Indulgent algorithms (preliminary version)},
+  booktitle    = {{PODC}},
+  pages        = {289--297},
+  publisher    = {{ACM}},
+  year         = {2000}
+}
