@@ -80,7 +80,7 @@ const TYPE_LABELS = [
   "differential privacy",
   "survey",
 ];
-const PRIOR_LABEL = "prior/related work";
+const PRIOR_LABEL = "prior / related work";
 let SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL];
 
 const PaperList = ({ data }) => {

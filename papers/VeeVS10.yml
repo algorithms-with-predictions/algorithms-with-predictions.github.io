@@ -1,7 +1,7 @@
 title: Optimal online assignment with forecasts
 authors: Vee, Vassilvitskii, Shanmugasundaram
 labels:
-- prior/related work
+- prior / related work
 publications:
 - name: EC
   url: https://doi.org/10.1145/1807342.1807360
@@ -20,4 +20,3 @@ publications:
       publisher    = {{ACM}},
       year         = {2010}
     }
-
