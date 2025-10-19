@@ -9,7 +9,7 @@ publications:
   month: null
   day: null
   dblp_key: conf/sigecom/VeeVS10
-  bibtex: |+
+  bibtex: |
     @inproceedings{DBLP:conf/sigecom/VeeVS10,
       author       = {Erik Vee and
                       Sergei Vassilvitskii and

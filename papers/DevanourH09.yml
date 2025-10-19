@@ -9,7 +9,7 @@ publications:
   month: null
   day: null
   dblp_key: conf/sigecom/DevenurH09
-  bibtex: |+
+  bibtex: |
     @inproceedings{DBLP:conf/sigecom/DevenurH09,
       author       = {Nikhil R. Devanur and
                       Thomas P. Hayes},

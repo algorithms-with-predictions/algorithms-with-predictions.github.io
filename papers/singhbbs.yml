@@ -12,3 +12,26 @@ publications:
   day: 2
   dblp_key: null
   bibtex: null
+- name: Algorithms
+  url: https://doi.org/10.3390/a18080452
+  year: 2025
+  month: null
+  day: null
+  dblp_key: journals/algorithms/SinghKDRRSL25
+  bibtex: |+
+    @article{DBLP:journals/algorithms/SinghKDRRSL25,
+      author       = {Vikash Singh and
+                      Matthew Khanzadeh and
+                      Vincent Davis and
+                      Harrison Rush and
+                      Emanuele Rossi and
+                      Jesse Shrader and
+                      Pietro Lio'},
+      title        = {Bayesian Binary Search},
+      journal      = {Algorithms},
+      volume       = {18},
+      number       = {8},
+      pages        = {452},
+      year         = {2025}
+    }
+

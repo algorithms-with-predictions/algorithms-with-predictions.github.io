@@ -16,7 +16,7 @@ publications:
   month: null
   day: null
   dblp_key: conf/nips/MedinaV17
-  bibtex: |+
+  bibtex: |
     @inproceedings{DBLP:conf/nips/MedinaV17,
       author       = {Andres Mu{\~{n}}oz Medina and
                       Sergei Vassilvitskii},

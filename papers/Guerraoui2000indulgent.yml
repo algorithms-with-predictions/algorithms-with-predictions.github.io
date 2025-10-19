@@ -9,7 +9,7 @@ publications:
   month: null
   day: null
   dblp_key: conf/podc/Guerraoui00
-  bibtex: |+
+  bibtex: |
     @inproceedings{DBLP:conf/podc/Guerraoui00,
       author       = {Rachid Guerraoui},
       title        = {Indulgent algorithms (preliminary version)},
