@@ -1,4 +1,4 @@
-title: 'CarbonClipper: Optimal Algorithms for Carbon-Aware Spatiotemporal Workload Management'
+title: 'Learning-Augmented Competitive Algorithms for Spatiotemporal Online Allocation with Deadline Constraints'
 authors: Lechowicz, Christianson, Sun, Bashir, Hajiesmaili, Wierman, Shenoy
 labels:
 - online
@@ -11,3 +11,57 @@ publications:
   day: 14
   dblp_key: null
   bibtex: null
+- name: SIGMETRICS
+  url: https://doi.org/10.1145/3711701
+  year: 2025
+  month: null
+  day: null
+  dblp_key: conf/sigmetrics/LechowiczC0BHWS25
+  bibtex: |+
+    @inproceedings{DBLP:conf/sigmetrics/LechowiczC0BHWS25,
+      author       = {Adam Lechowicz and
+                      Nicolas Christianson and
+                      Bo Sun and
+                      Noman Bashir and
+                      Mohammad Hajiesmaili and
+                      Adam Wierman and
+                      Prashant J. Shenoy},
+      editor       = {Anshul Gandhi and
+                      Zhenhua Liu and
+                      Sewoong Oh and
+                      Ramesh K. Sitaraman and
+                      Benny Van Houdt},
+      title        = {Learning-Augmented Competitive Algorithms for Spatiotemporal Online
+                      Allocation with Deadline Constraints},
+      booktitle    = {Abstracts of the 2025 {ACM} {SIGMETRICS} International Conference
+                      on Measurement and Modeling of Computer Systems, {SIGMETRICS} 2025,
+                      Stony Brook, NY, USA, June 9-13, 2025},
+      pages        = {169--171},
+      publisher    = {{ACM}},
+      year         = {2025}
+    }
+- name: POMACS
+  url: https://doi.org/10.1145/3711701
+  year: 2025
+  month: null
+  day: null
+  dblp_key: journals/pomacs/LechowiczCSBHWS25
+  bibtex: |+
+    @article{DBLP:journals/pomacs/LechowiczCSBHWS25,
+      author       = {Adam Lechowicz and
+                      Nicolas Christianson and
+                      Bo Sun and
+                      Noman Bashir and
+                      Mohammad Hajiesmaili and
+                      Adam Wierman and
+                      Prashant J. Shenoy},
+      title        = {Learning-Augmented Competitive Algorithms for Spatiotemporal Online
+                      Allocation with Deadline Constraints},
+      journal      = {Proc. {ACM} Meas. Anal. Comput. Syst.},
+      volume       = {9},
+      number       = {1},
+      pages        = {8:1--8:49},
+      year         = {2025}
+    }
+
+
