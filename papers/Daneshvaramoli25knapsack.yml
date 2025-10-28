@@ -1,0 +1,35 @@
+title: Near-Optimal Consistency-Robustness Trade-Offs for Learning-Augmented Online Knapsack Problems
+authors: Daneshvaramoli, Karisani, Lechowicz, Sun, Musco, Hajiesmaili
+labels:
+- online
+- allocation / matching
+- packing
+- parsimonious / succinct
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2406.18752
+  year: 2024
+  month: 6
+  day: 26
+  dblp_key: null
+  bibtex: null
+- name: ICML
+  url: https://proceedings.mlr.press/v267/daneshvaramoli25a.html
+  year: 2025
+  month: null
+  day: null
+  bibtex: |+
+    @inproceedings{pmlr-v267-daneshvaramoli25a,
+      title = 	 {Near-Optimal Consistency-Robustness Trade-Offs for Learning-Augmented Online Knapsack Problems},
+      author =       {Daneshvaramoli, Mohammadreza and Karisani, Helia and Lechowicz, Adam and Sun, Bo and Musco, Cameron N and Hajiesmaili, Mohammad},
+      booktitle = 	 {{ICML}},
+      pages = 	 {12459--12489},
+      year = 	 {2025},
+      editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+      volume = 	 {267},
+      series = 	 {Proceedings of Machine Learning Research},
+      month = 	 {13--19 Jul},
+      publisher =    {PMLR}
+    }
+
+
