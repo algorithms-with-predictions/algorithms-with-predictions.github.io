@@ -3,9 +3,8 @@ import React from 'react';
 import { Container } from '@mui/material';
 import { graphql } from 'gatsby';
 import '@fontsource/roboto/400.css';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeContextProvider } from '../contexts/ThemeContext';
 import Layout from '../components/layout';
-import theme from '../theme';
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
@@ -13,13 +12,13 @@ export default function Template({ data }) {
   return (
     <>
       <title>ALPS - {frontmatter.title}</title>
-      <ThemeProvider theme={theme}>
+      <ThemeContextProvider>
         <Layout>
           <Container>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </Container>
         </Layout>
-      </ThemeProvider>
+      </ThemeContextProvider>
     </>
   );
 }

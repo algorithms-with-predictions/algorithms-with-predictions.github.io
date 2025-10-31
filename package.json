@@ -29,7 +29,7 @@
     "clean": "gatsby clean",
     "clean:all": "gatsby clean && rm -rf node_modules package-lock.json",
     "deploy": "node scripts/composeData.js && gatsby build && gh-pages -d public -b deploy",
-    "analyze": "npm run build && npx gatsby-plugin-webpack-bundle-analyser-v2",
+    "analyze": "npm run build && npx gatsby-plugin-webpack-bundle-analyzer-v2",
     "update-data": "node scripts/updateData.mjs",
     "prepare": "husky install"
   },

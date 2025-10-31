@@ -1,7 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `ALPS`,
-    siteUrl: `https://www.algorithms-with-predictions.github.io`,
+    siteUrl: `https://algorithms-with-predictions.github.io`,
+    description: `Comprehensive resource for research on Algorithms with Predictions`,
+    author: `Alexander Lindermayr`,
+    keywords: [`algorithms`, `machine learning`, `predictions`, `research`],
+  },
+  flags: {
+    FAST_DEV: true,
+    PARALLEL_SOURCING: true,
   },
   plugins: [
     `gatsby-plugin-emotion`,
