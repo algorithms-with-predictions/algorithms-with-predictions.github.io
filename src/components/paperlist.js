@@ -13,7 +13,10 @@ import {
   Button,
   Container,
   Fade,
+  IconButton,
+  Tooltip,
 } from '@mui/material';
+import { Download } from '@mui/icons-material';
 import * as React from 'react';
 import { useState, useMemo } from 'react';
 import styled from '@emotion/styled';
@@ -114,6 +117,35 @@ const PaperList = ({ data }) => {
   const [selectedAuthors, setSelectedAuthors] = useState([]);
   const [selectedVenues, setSelectedVenues] = useState([]);
   const [showAdvanced, setShowAdvanced] = useState(false);
+
+  // BibTeX export function
+  const handleExportBibtex = () => {
+    const bibtexEntries = sortedData
+      .flatMap(
+        paper =>
+          paper.publications
+            ?.filter(pub => pub.bibtex)
+            .map(pub => pub.bibtex.trim()) || []
+      )
+      .filter(Boolean);
+
+    if (bibtexEntries.length === 0) {
+      alert('No BibTeX entries found in the current selection.');
+      return;
+    }
+
+    const bibtexContent = bibtexEntries.join('\n\n');
+    const blob = new Blob([bibtexContent], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `alps-papers-${new Date().toISOString().split('T')[0]}.bib`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
 
   // Extract unique authors and venues for autocomplete
   const allAuthors = useMemo(() => {
@@ -323,6 +355,13 @@ const PaperList = ({ data }) => {
     });
   }, [filteredData, sort]);
 
+  // Count papers with BibTeX entries for display
+  const bibtexCount = useMemo(() => {
+    return sortedData.filter(paper =>
+      paper.publications?.some(pub => pub.bibtex)
+    ).length;
+  }, [sortedData]);
+
   return (
     <Container maxWidth="xl" sx={{ py: 2 }}>
       {/* Stats Dashboard */}
@@ -381,20 +420,53 @@ const PaperList = ({ data }) => {
               )}
             </Typography>
 
-            {(selLabels.length > 0 || searchQuery) && (
-              <Button
-                variant="outlined"
-                size="small"
-                color="primary"
-                onClick={() => {
-                  setSearchQuery('');
-                  setSelLabels([]);
-                }}
-                sx={{ borderRadius: 2, px: 2 }}
-              >
-                Clear All
-              </Button>
-            )}
+            <Stack direction="row" spacing={1} alignItems="center">
+              {/* Export BibTeX Button */}
+              {sortedData.length > 0 && (
+                <Tooltip
+                  title={`Export BibTeX entries (${bibtexCount} of ${sortedData.length} papers have BibTeX)`}
+                >
+                  <IconButton
+                    onClick={handleExportBibtex}
+                    size="small"
+                    color="primary"
+                    disabled={bibtexCount === 0}
+                    sx={{
+                      border: theme =>
+                        `1px solid ${theme.palette.primary.main}`,
+                      borderRadius: 2,
+                      '&:hover': {
+                        backgroundColor: 'primary.light',
+                        color: 'primary.contrastText',
+                      },
+                      '&.Mui-disabled': {
+                        border: theme =>
+                          `1px solid ${theme.palette.action.disabled}`,
+                        opacity: 0.5,
+                      },
+                    }}
+                  >
+                    <Download sx={{ fontSize: 18 }} />
+                  </IconButton>
+                </Tooltip>
+              )}
+
+              {/* Clear All Button */}
+              {(selLabels.length > 0 || searchQuery) && (
+                <Button
+                  variant="outlined"
+                  size="small"
+                  color="primary"
+                  onClick={() => {
+                    setSearchQuery('');
+                    setSelLabels([]);
+                  }}
+                  sx={{ borderRadius: 2, px: 2 }}
+                >
+                  Clear All
+                </Button>
+              )}
+            </Stack>
           </Stack>
 
           {/* Compact Active filters display */}
