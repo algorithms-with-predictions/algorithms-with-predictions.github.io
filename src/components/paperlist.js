@@ -11,39 +11,39 @@ import {
   List,
   MenuItem,
   Button,
-} from "@mui/material";
-import * as React from "react";
-import styled from "@emotion/styled";
-import PropTypes from "prop-types";
+} from '@mui/material';
+import * as React from 'react';
+import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 
-const openInNewTab = (url) => {
-  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+const openInNewTab = url => {
+  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
   if (newWindow) newWindow.opener = null;
 };
 
-const AuthorText = styled("div")`
+const AuthorText = styled('div')`
   color: #878787;
 `;
 
-const PriorTitleText = styled("div")`
+const PriorTitleText = styled('div')`
   color: #878787;
   font-weight: bold;
 `;
 
-const TitleText = styled("div")`
+const TitleText = styled('div')`
   font-weight: bold;
 `;
 
 function minDateOfPaper(paper) {
   const fullDates = paper.publications
-    .filter((pub) => pub.month !== undefined)
-    .map((pub) => new Date(pub.year, pub.month, pub.day));
+    .filter(pub => pub.month !== undefined)
+    .map(pub => new Date(pub.year, pub.month, pub.day));
 
   if (fullDates.length > 0) {
     return new Date(Math.min(...fullDates));
   } else {
     const dates = paper.publications.map(
-      (pub) =>
+      pub =>
         new Date(
           pub.year,
           pub.month === undefined ? 0 : pub.month,
@@ -66,34 +66,34 @@ function stringCmp(a, b) {
   return 0;
 }
 
-const SORT_YEAR_TOP_DOWN = "Newest first";
-const SORT_YEAR_BOTTOM_UP = "Oldest first";
+const SORT_YEAR_TOP_DOWN = 'Newest first';
+const SORT_YEAR_BOTTOM_UP = 'Oldest first';
 const sortOptions = [SORT_YEAR_BOTTOM_UP, SORT_YEAR_TOP_DOWN];
 
 const TYPE_LABELS = [
-  "dynamic / data structure",
-  "online",
-  "running time",
-  "approximation",
-  "streaming",
-  "game theory / mechanism design",
-  "differential privacy",
-  "survey",
+  'dynamic / data structure',
+  'online',
+  'running time',
+  'approximation',
+  'streaming',
+  'game theory / mechanism design',
+  'differential privacy',
+  'survey',
 ];
-const PRIOR_LABEL = "prior / related work";
+const PRIOR_LABEL = 'prior / related work';
 let SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL];
 
 const PaperList = ({ data }) => {
   // preprocessing
-  const allYears = data.flatMap((paper) =>
-    paper.publications.flatMap((pub) => pub.year)
+  const allYears = data.flatMap(paper =>
+    paper.publications.flatMap(pub => pub.year)
   );
   let distinctYears = [...new Set(allYears)];
   distinctYears.sort();
-  const allLabels = data.flatMap((paper) => (paper.labels ? paper.labels : []));
+  const allLabels = data.flatMap(paper => (paper.labels ? paper.labels : []));
   let distinctLabels = [...new Set(allLabels)];
   distinctLabels.sort(stringCmp);
-  distinctLabels = distinctLabels.filter((el) => !SPECIAL_LABELS.includes(el));
+  distinctLabels = distinctLabels.filter(el => !SPECIAL_LABELS.includes(el));
 
   // component state definition
   const [yearsIdx, setYearsIdx] = React.useState([0, distinctYears.length - 1]);
@@ -101,13 +101,13 @@ const PaperList = ({ data }) => {
   const [selLabels, setSelLabels] = React.useState([]);
 
   // helper functions
-  const labelColor = (label) => {
+  const labelColor = label => {
     if (TYPE_LABELS.includes(label)) {
-      return "typeLabels";
+      return 'typeLabels';
     } else if (label === PRIOR_LABEL) {
-      return "default";
+      return 'default';
     } else {
-      return "labels";
+      return 'labels';
     }
   };
 
@@ -118,47 +118,47 @@ const PaperList = ({ data }) => {
       label={label}
       variant={
         (deleteable && selLabels.includes(label)) || label === PRIOR_LABEL
-          ? "outlined"
-          : "filled"
+          ? 'outlined'
+          : 'filled'
       }
       color={labelColor(label)}
       onClick={() => setSelLabels([label, ...selLabels])}
       onDelete={
         deleteable && selLabels.includes(label)
           ? () => {
-              setSelLabels(selLabels.filter((l) => l !== label));
+              setSelLabels(selLabels.filter(l => l !== label));
             }
           : undefined
       }
     />
   );
 
-  const paperChips = (paper) => {
-    const labels = "labels" in paper ? paper.labels : [];
+  const paperChips = paper => {
+    const labels = 'labels' in paper ? paper.labels : [];
     labels.sort(stringCmp);
     let pubs = paper.publications;
     pubs.sort((a, b) => stringCmp(a.name, b.name));
-    let chips = paper.publications.map((pub) => {
-      let name = "displayName" in pub ? pub.displayName : pub.name;
+    let chips = paper.publications.map(pub => {
+      let name = 'displayName' in pub ? pub.displayName : pub.name;
       let text = name + " '" + pub.year.toString().slice(-2);
       return (
         <Chip
           size="small"
           label={text}
           key={text}
-          variant={"arXiv" === name ? "outlined" : "filled"}
+          variant={'arXiv' === name ? 'outlined' : 'filled'}
           color="pubLabels"
-          onClick={() => ("url" in pub ? openInNewTab(pub.url) : {})}
+          onClick={() => ('url' in pub ? openInNewTab(pub.url) : {})}
         />
       );
     });
 
-    chips = chips.concat(labels.map((label) => labelChip(label, false)));
+    chips = chips.concat(labels.map(label => labelChip(label, false)));
 
     return chips;
   };
 
-  const buildListItems = (data) => {
+  const buildListItems = data => {
     return data.map((paper, i) => (
       <ListItem key={i}>
         <ListItemText
@@ -180,24 +180,24 @@ const PaperList = ({ data }) => {
     ));
   };
 
-  const selTypeLabels = selLabels.filter((l) => TYPE_LABELS.includes(l));
-  const selNonTypeLabels = selLabels.filter((l) => !TYPE_LABELS.includes(l));
+  const selTypeLabels = selLabels.filter(l => TYPE_LABELS.includes(l));
+  const selNonTypeLabels = selLabels.filter(l => !TYPE_LABELS.includes(l));
 
   // data preparation
   const filteredData = data
-    .filter((p) =>
+    .filter(p =>
       p.publications.some(
-        (pub) =>
+        pub =>
           distinctYears[yearsIdx[0]] <= pub.year &&
           pub.year <= distinctYears[yearsIdx[1]]
       )
     )
     .filter(
-      (p) =>
+      p =>
         (selTypeLabels.length === 0 ||
-          selTypeLabels.every((l) => p.labels.includes(l))) &&
+          selTypeLabels.every(l => p.labels.includes(l))) &&
         (selNonTypeLabels.length === 0 ||
-          p.labels.some((l) => selNonTypeLabels.includes(l)))
+          p.labels.some(l => selNonTypeLabels.includes(l)))
     );
   const sortedData = filteredData.sort(function (p1, p2) {
     if (sort === SORT_YEAR_TOP_DOWN) {
@@ -208,7 +208,7 @@ const PaperList = ({ data }) => {
   });
   const items = buildListItems(sortedData);
   const marks = Array.from(new Array(distinctYears.length), (x, i) => i).map(
-    (yearIdx) => ({
+    yearIdx => ({
       value: yearIdx,
       label: "'" + distinctYears[yearIdx].toString().slice(-2),
     })
@@ -218,7 +218,7 @@ const PaperList = ({ data }) => {
     <div>
       <Stack
         direction="row"
-        justifyContent={"space-between"}
+        justifyContent={'space-between'}
         alignItems="center"
       >
         <Stack
@@ -226,7 +226,7 @@ const PaperList = ({ data }) => {
           p={1}
           spacing={2}
           alignItems="center"
-          justifyContent={"flex-start"}
+          justifyContent={'flex-start'}
         >
           <Box sx={{ width: 350, pr: 2 }}>
             <Slider
@@ -234,7 +234,7 @@ const PaperList = ({ data }) => {
               step={null}
               max={distinctYears.length - 1}
               onChange={(_, newValue) => setYearsIdx(newValue)}
-              valueLabelFormat={(value) => distinctYears[value]}
+              valueLabelFormat={value => distinctYears[value]}
               valueLabelDisplay="auto"
               marks={marks}
               disableSwap
@@ -243,9 +243,9 @@ const PaperList = ({ data }) => {
           <Select
             value={sort}
             autoWidth={true}
-            onChange={(event) => setSort(event.target.value)}
+            onChange={event => setSort(event.target.value)}
           >
-            {sortOptions.map((opt) => (
+            {sortOptions.map(opt => (
               <MenuItem key={opt} value={opt}>
                 {opt}
               </MenuItem>
@@ -268,21 +268,21 @@ const PaperList = ({ data }) => {
         spacing={1}
         direction="row" //{{ md: "column-reverse", lg: "row" }}
         alignItems="stretch"
-        justifyContent={"space-between"}
+        justifyContent={'space-between'}
       >
         <List dense="true">{items}</List>
-        <Box sx={{ display: "flex" }}>
-          <Divider orientation={"vertical"} flexItem />
+        <Box sx={{ display: 'flex' }}>
+          <Divider orientation={'vertical'} flexItem />
           <Stack
-            flexWrap={"wrap"}
+            flexWrap={'wrap'}
             pl={1}
             pt={1}
             spacing={1}
             direction="column" //"row", lg: "column" }}
           >
-            {SPECIAL_LABELS.map((l) => labelChip(l, true))}
-            <Divider orientation={"horizontal"} flexItem />
-            {distinctLabels.map((l) => labelChip(l, true))}
+            {SPECIAL_LABELS.map(l => labelChip(l, true))}
+            <Divider orientation={'horizontal'} flexItem />
+            {distinctLabels.map(l => labelChip(l, true))}
           </Stack>
         </Box>
       </Stack>

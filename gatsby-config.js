@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `ALPS`,
-    siteUrl: `https://www.algorithms-with-predictions.github.io`
+    siteUrl: `https://www.algorithms-with-predictions.github.io`,
   },
   plugins: [
-    `gatsby-plugin-emotion`, 
-    `gatsby-plugin-material-ui`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,11 +17,11 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-external-links",
+            resolve: 'gatsby-remark-external-links',
             options: {
-              target: "_blank",
-              rel: "noopener noreferrer"
-            }
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            },
           },
           `gatsby-remark-prismjs-copy-button`,
           {
@@ -35,7 +34,7 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-",
+              classPrefix: 'language-',
               // This is used to allow setting a language for inline code
               // (i.e. single backticks) by creating a separator.
               // This separator is a string and will do no white-space
@@ -63,12 +62,12 @@ module.exports = {
               // existing language definition. More details on this option can be
               // found under the header "Add new language definition or extend an
               // existing language" below.
-              languageExtensions: [ ],
+              languageExtensions: [],
               // Customize the prompt used in shell output
               // Values below are default
               prompt: {
-                user: "root",
-                host: "localhost",
+                user: 'root',
+                host: 'localhost',
                 global: false,
               },
               // By default the HTML entities <>&'" are escaped.
@@ -84,13 +83,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-WJCFMQ7HGP"
-        ],
+        trackingIds: ['G-WJCFMQ7HGP'],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
         gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
+          optimize_id: 'OPT_CONTAINER_ID',
           anonymize_ip: true,
           cookie_expires: 0,
         },
@@ -101,9 +98,9 @@ module.exports = {
           // Setting this parameter is also optional
           respectDNT: true,
           // Avoids sending pageview hits from custom paths
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
+          exclude: ['/preview/**', '/do-not-track/me/too/'],
           // Defaults to https://www.googletagmanager.com
-          origin: "YOUR_SELF_HOSTED_ORIGIN",
+          origin: 'YOUR_SELF_HOSTED_ORIGIN',
           // Delays processing pageview events on route update (in milliseconds)
           delayOnRouteUpdate: 0,
         },

@@ -1,11 +1,11 @@
-import * as React from "react";
-import { ThemeProvider } from "@mui/material/styles";
-import "@fontsource/roboto/400.css";
+import * as React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import '@fontsource/roboto/400.css';
 
-import theme from "../theme";
-import PaperList from "../components/paperlist";
-import Layout from "../components/layout";
-import data from "../../papers.json";
+import theme from '../theme';
+import PaperList from '../components/paperlist';
+import Layout from '../components/layout';
+import data from '../../papers.json';
 
 const IndexPage = () => {
   return (

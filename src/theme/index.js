@@ -1,5 +1,5 @@
-import { blueGrey, amber, green, lightBlue } from "@mui/material/colors";
-import { createTheme } from "@mui/material/styles";
+import { blueGrey, amber, green, lightBlue } from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
@@ -10,19 +10,19 @@ const theme = createTheme({
       light: lightBlue[400],
       main: lightBlue[600],
       dark: lightBlue[800],
-      contrastText: "#ffffff",
+      contrastText: '#ffffff',
     },
     typeLabels: {
       light: green[400],
       main: green[600],
       dark: green[800],
-      contrastText: "#ffffff",
+      contrastText: '#ffffff',
     },
     pubLabels: {
       light: amber[600],
       main: amber[800],
       dark: amber[900],
-      contrastText: "#ffffff",
+      contrastText: '#ffffff',
     },
   },
 });

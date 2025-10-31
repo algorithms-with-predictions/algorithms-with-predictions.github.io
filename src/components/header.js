@@ -1,14 +1,14 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Button from "@mui/material/Button";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Button from '@mui/material/Button';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 
 const pages = [
-  { name: "Paper List", href: "/" },
-  { name: "Further Material", href: "/material" },
-  { name: "How to Contribute", href: "/contribute" },
-  { name: "About", href: "/about" },
+  { name: 'Paper List', href: '/' },
+  { name: 'Further Material', href: '/material' },
+  { name: 'How to Contribute', href: '/contribute' },
+  { name: 'About', href: '/about' },
 ];
 
 const Header = () => {
@@ -19,11 +19,11 @@ const Header = () => {
           variant="h5"
           noWrap
           component="div"
-          sx={{ ml: 2, mr: 4, fontWeight: "bold" }}
+          sx={{ ml: 2, mr: 4, fontWeight: 'bold' }}
         >
           Algorithms with Predictions
         </Typography>
-        {pages.map((page) => (
+        {pages.map(page => (
           <Button
             key={page.name}
             sx={{ mr: 1 }}
