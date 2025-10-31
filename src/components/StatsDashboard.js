@@ -58,7 +58,7 @@ const StatCard = ({
             </Box>
             <Box sx={{ flex: 1 }}>
               <Typography
-                variant={{ xs: 'h6', sm: 'h4' }}
+                variant="h4"
                 fontWeight="bold"
                 color="text.primary"
                 sx={{ fontSize: { xs: '1.1rem', sm: '2.125rem' } }}
@@ -97,7 +97,7 @@ const StatCard = ({
               </Box>
               <Box sx={{ flex: 1 }}>
                 <Typography
-                  variant={{ xs: 'h6', sm: 'h4' }}
+                  variant="h4"
                   fontWeight="bold"
                   color="text.primary"
                   sx={{ fontSize: { xs: '1.1rem', sm: '2.125rem' } }}
@@ -133,7 +133,7 @@ const StatCard = ({
             </Box>
             <Box sx={{ flex: 1 }}>
               <Typography
-                variant={{ xs: 'h6', sm: 'h4' }}
+                variant="h4"
                 fontWeight="bold"
                 color="text.primary"
                 sx={{ fontSize: { xs: '1.1rem', sm: '2.125rem' } }}
