@@ -1,6 +1,15 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { blueGrey, amber, green, lightBlue, grey } from '@mui/material/colors';
+import {
+  blueGrey,
+  amber,
+  green,
+  lightBlue,
+  grey,
+  orange,
+  blue,
+  deepOrange,
+} from '@mui/material/colors';
 
 const ThemeContext = createContext();
 
@@ -19,39 +28,51 @@ const createCustomTheme = mode => {
     palette: {
       mode,
       primary: {
-        main: isDark ? '#42A5F5' : '#1565C0',
+        main: isDark ? '#42A5F5' : '#1976D2', // Rich blue
         light: isDark ? '#80D6FF' : '#42A5F5',
-        dark: isDark ? '#0D47A1' : '#003C8F',
+        dark: isDark ? '#1565C0' : '#0D47A1',
       },
       secondary: {
-        main: lightBlue[600],
+        main: isDark ? orange[400] : orange[600], // Orange secondary
+        light: isDark ? orange[300] : orange[400],
+        dark: isDark ? orange[600] : orange[800],
       },
       background: {
-        default: isDark ? '#0a0a0a' : '#fafafa',
+        default: isDark ? '#0a0a0a' : '#f8faff', // Slightly blue-tinted background
         paper: isDark ? '#1a1a1a' : '#ffffff',
       },
       text: {
-        primary: isDark ? '#ffffff' : '#000000',
+        primary: isDark ? '#ffffff' : '#1a1a1a',
         secondary: isDark ? grey[400] : grey[600],
       },
-      // Custom colors for paper labels
+      // Custom colors for paper labels - cohesive blue-orange palette
       labels: {
-        light: isDark ? lightBlue[300] : lightBlue[400],
-        main: isDark ? lightBlue[400] : lightBlue[600],
-        dark: isDark ? lightBlue[600] : lightBlue[800],
+        light: isDark ? blue[300] : blue[400],
+        main: isDark ? blue[400] : blue[600],
+        dark: isDark ? blue[600] : blue[800],
         contrastText: '#ffffff',
       },
       typeLabels: {
-        light: isDark ? green[300] : green[400],
-        main: isDark ? green[400] : green[600],
-        dark: isDark ? green[600] : green[800],
+        light: isDark ? orange[300] : orange[400], // Orange for type labels (highlight)
+        main: isDark ? orange[400] : orange[600],
+        dark: isDark ? orange[600] : orange[800],
         contrastText: '#ffffff',
       },
       pubLabels: {
-        light: isDark ? amber[400] : amber[600],
-        main: isDark ? amber[500] : amber[800],
-        dark: isDark ? amber[700] : amber[900],
+        light: isDark ? deepOrange[300] : deepOrange[400],
+        main: isDark ? deepOrange[400] : deepOrange[600],
+        dark: isDark ? deepOrange[600] : deepOrange[800],
         contrastText: '#ffffff',
+      },
+      success: {
+        main: isDark ? '#4CAF50' : '#2E7D32', // Consistent with theme
+        light: isDark ? '#81C784' : '#4CAF50',
+        dark: isDark ? '#2E7D32' : '#1B5E20',
+      },
+      warning: {
+        main: isDark ? orange[400] : orange[600], // Orange warnings match secondary
+        light: isDark ? orange[300] : orange[400],
+        dark: isDark ? orange[600] : orange[800],
       },
     },
     typography: {
@@ -67,14 +88,15 @@ const createCustomTheme = mode => {
       },
     },
     shape: {
-      borderRadius: 8,
+      borderRadius: 2, // Consistent with updated design
     },
     components: {
       MuiButton: {
         styleOverrides: {
           root: {
             textTransform: 'none',
-            borderRadius: 8,
+            borderRadius: 2,
+            fontWeight: 500,
             '&:hover': {
               transform: 'translateY(-1px)',
               transition: 'all 0.2s ease-in-out',
@@ -85,7 +107,8 @@ const createCustomTheme = mode => {
       MuiChip: {
         styleOverrides: {
           root: {
-            borderRadius: 16,
+            borderRadius: 2, // Consistent with theme
+            fontWeight: 500,
           },
         },
       },

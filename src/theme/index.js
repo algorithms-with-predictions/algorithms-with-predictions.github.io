@@ -1,38 +1,58 @@
-import { blueGrey, amber, green, lightBlue } from '@mui/material/colors';
+import {
+  blueGrey,
+  amber,
+  green,
+  lightBlue,
+  orange,
+  blue,
+  deepOrange,
+} from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
-    mode: 'light', // Enable dark mode support later
+    mode: 'light',
     primary: {
-      main: '#1565C0', // Modern blue
+      main: '#1976D2', // Rich blue - consistent with theme context
       light: '#42A5F5',
       dark: '#0D47A1',
     },
     secondary: {
-      main: lightBlue[600],
+      main: orange[600], // Orange secondary for highlights
+      light: orange[400],
+      dark: orange[800],
     },
     background: {
-      default: '#fafafa',
+      default: '#f8faff', // Slightly blue-tinted background
       paper: '#ffffff',
     },
     labels: {
-      light: lightBlue[400],
-      main: lightBlue[600],
-      dark: lightBlue[800],
+      light: blue[400],
+      main: blue[600],
+      dark: blue[800],
       contrastText: '#ffffff',
     },
     typeLabels: {
-      light: green[400],
-      main: green[600],
-      dark: green[800],
+      light: orange[400], // Orange for type labels (highlights)
+      main: orange[600],
+      dark: orange[800],
       contrastText: '#ffffff',
     },
     pubLabels: {
-      light: amber[600],
-      main: amber[800],
-      dark: amber[900],
+      light: deepOrange[400],
+      main: deepOrange[600],
+      dark: deepOrange[800],
       contrastText: '#ffffff',
+    },
+    success: {
+      main: '#2E7D32',
+      light: '#4CAF50',
+      dark: '#1B5E20',
+    },
+    warning: {
+      main: orange[600], // Orange warnings match secondary
+      light: orange[400],
+      dark: orange[800],
     },
   },
   typography: {
@@ -59,7 +79,7 @@ const theme = createTheme({
     MuiChip: {
       styleOverrides: {
         root: {
-          borderRadius: 16, // More modern chip styling
+          borderRadius: 2, // Consistent with theme
         },
       },
     },

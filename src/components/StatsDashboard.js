@@ -168,8 +168,9 @@ const StatCard = ({
             <Chip
               label={trend}
               size="small"
-              color={trend.startsWith('+') ? 'success' : 'default'}
+              color={trend.startsWith('+') ? 'secondary' : 'default'}
               variant="outlined"
+              sx={{ borderRadius: 2 }}
             />
           </Box>
         )}

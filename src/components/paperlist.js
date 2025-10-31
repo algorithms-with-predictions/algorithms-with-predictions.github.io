@@ -173,6 +173,7 @@ const PaperList = ({ data }) => {
             }
           : undefined
       }
+      sx={{ borderRadius: 2 }}
     />
   );
 
@@ -192,6 +193,7 @@ const PaperList = ({ data }) => {
           variant={'arXiv' === name ? 'outlined' : 'filled'}
           color="pubLabels"
           onClick={() => ('url' in pub ? openInNewTab(pub.url) : {})}
+          sx={{ borderRadius: 2 }}
         />
       );
     });
@@ -410,7 +412,7 @@ const PaperList = ({ data }) => {
                   size="small"
                   color="primary"
                   variant="outlined"
-                  sx={{ height: 24 }}
+                  sx={{ height: 24, borderRadius: 2 }}
                 />
               )}
 
@@ -422,9 +424,9 @@ const PaperList = ({ data }) => {
                     setSelLabels(prev => prev.filter(l => l !== label))
                   }
                   size="small"
-                  color="success"
+                  color="secondary"
                   variant="outlined"
-                  sx={{ height: 24 }}
+                  sx={{ height: 24, borderRadius: 2 }}
                 />
               ))}
             </Stack>

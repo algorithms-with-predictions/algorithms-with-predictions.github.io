@@ -131,6 +131,7 @@ const SearchAndFilter = ({
                     sx={{
                       height: 26,
                       fontSize: '0.7rem',
+                      borderRadius: 2,
                       '& .MuiChip-label': { px: 1.5 },
                       transition: 'all 0.2s ease',
                       '&:hover': {
@@ -163,6 +164,7 @@ const SearchAndFilter = ({
                     sx={{
                       height: 26,
                       fontSize: '0.7rem',
+                      borderRadius: 2,
                       '& .MuiChip-label': { px: 1.5 },
                       transition: 'all 0.2s ease',
                       '&:hover': {
