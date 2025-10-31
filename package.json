@@ -34,11 +34,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@fontsource/roboto": "^5.2.8",
-    "@mui/material": "^5.18.0",
     "@mui/icons-material": "^5.18.0",
+    "@mui/material": "^5.18.0",
     "gatsby": "^5.15.0",
     "gatsby-plugin-emotion": "^8.15.0",
     "gatsby-plugin-google-gtag": "^5.15.0",
@@ -61,9 +62,9 @@
     "fast-xml-parser": "^4.5.3",
     "gatsby-remark-code-headers": "^1.1.0",
     "gh-pages": "^6.3.0",
-    "js-yaml": "^4.1.0",
-    "prettier": "^3.6.2",
     "husky": "^9.1.6",
-    "lint-staged": "^15.2.10"
+    "js-yaml": "^4.1.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.6.2"
   }
 }

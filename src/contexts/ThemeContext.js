@@ -74,6 +74,12 @@ const createCustomTheme = mode => {
         light: isDark ? orange[300] : orange[400],
         dark: isDark ? orange[600] : orange[800],
       },
+      // Custom link colors for markdown content
+      link: {
+        main: isDark ? '#64B5F6' : '#1976D2', // Bright blue for dark mode, standard blue for light
+        hover: isDark ? '#90CAF9' : '#1565C0',
+        visited: isDark ? '#BA68C8' : '#7B1FA2', // Purple tint for visited links
+      },
     },
     typography: {
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
@@ -127,15 +133,40 @@ const createCustomTheme = mode => {
           },
         },
       },
+      // Global CSS for markdown content links
+      MuiCssBaseline: {
+        styleOverrides: {
+          a: {
+            color: isDark ? '#64B5F6' : '#1976D2',
+            textDecoration: 'underline',
+            textDecorationColor: 'rgba(100, 181, 246, 0.4)',
+            transition:
+              'color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out',
+            '&:hover': {
+              color: isDark ? '#90CAF9' : '#1565C0',
+              textDecoration: 'underline',
+              textDecorationColor: isDark ? '#90CAF9' : '#1565C0',
+            },
+            '&:visited': {
+              color: isDark ? '#BA68C8' : '#7B1FA2',
+            },
+            '&:visited:hover': {
+              color: isDark ? '#CE93D8' : '#8E24AA',
+            },
+          },
+        },
+      },
     },
   });
 };
 
 export const ThemeContextProvider = ({ children }) => {
   const [mode, setMode] = useState('light');
+  const [isHydrated, setIsHydrated] = useState(false);
 
   // Load saved theme preference on mount
   useEffect(() => {
+    setIsHydrated(true);
     const savedMode = localStorage.getItem('themeMode');
     if (savedMode && (savedMode === 'light' || savedMode === 'dark')) {
       setMode(savedMode);
@@ -148,21 +179,25 @@ export const ThemeContextProvider = ({ children }) => {
     }
   }, []);
 
-  // Save theme preference when changed
+  // Save theme preference when changed (only after hydration)
   useEffect(() => {
-    localStorage.setItem('themeMode', mode);
-  }, [mode]);
+    if (isHydrated) {
+      localStorage.setItem('themeMode', mode);
+    }
+  }, [mode, isHydrated]);
 
   const toggleTheme = () => {
     setMode(prevMode => (prevMode === 'light' ? 'dark' : 'light'));
   };
 
-  const theme = createCustomTheme(mode);
+  // Use light theme during SSR and initial render to prevent hydration mismatch
+  const effectiveMode = isHydrated ? mode : 'light';
+  const theme = createCustomTheme(effectiveMode);
 
   const value = {
-    mode,
+    mode: effectiveMode,
     toggleTheme,
-    isDark: mode === 'dark',
+    isDark: effectiveMode === 'dark',
   };
 
   return (

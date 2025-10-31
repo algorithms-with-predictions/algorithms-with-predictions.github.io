@@ -8,19 +8,23 @@ import Layout from '../components/layout';
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { html } = markdownRemark;
   return (
-    <>
-      <title>ALPS - {frontmatter.title}</title>
-      <ThemeContextProvider>
-        <Layout>
-          <Container>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
-          </Container>
-        </Layout>
-      </ThemeContextProvider>
-    </>
+    <ThemeContextProvider>
+      <Layout>
+        <Container>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </Container>
+      </Layout>
+    </ThemeContextProvider>
   );
+}
+
+export function Head({ data }) {
+  const { markdownRemark } = data;
+  const { frontmatter } = markdownRemark;
+  const titleText = `ALPS - ${frontmatter.title}`;
+  return <title>{titleText}</title>;
 }
 
 export const pageQuery = graphql`

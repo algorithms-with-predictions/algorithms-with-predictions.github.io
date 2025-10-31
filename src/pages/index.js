@@ -8,15 +8,16 @@ import data from '../../papers.json';
 
 const IndexPage = () => {
   return (
-    <div>
-      <title>ALPS</title>
-      <ThemeContextProvider>
-        <Layout>
-          <PaperList data={data} />
-        </Layout>
-      </ThemeContextProvider>
-    </div>
+    <ThemeContextProvider>
+      <Layout>
+        <PaperList data={data} />
+      </Layout>
+    </ThemeContextProvider>
   );
 };
 
 export default IndexPage;
+
+export function Head() {
+  return <title>ALPS</title>;
+}

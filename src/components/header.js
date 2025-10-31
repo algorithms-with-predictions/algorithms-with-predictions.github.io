@@ -64,9 +64,15 @@ const Header = () => {
                 px: 2,
                 py: 1,
                 borderRadius: 2,
+                color: 'white !important',
+                textDecoration: 'none !important',
                 '&:hover': {
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   transform: 'translateY(-1px)',
+                  color: 'white !important',
+                },
+                '&:visited': {
+                  color: 'white !important',
                 },
                 transition: 'all 0.2s ease-in-out',
               }}
@@ -114,8 +120,14 @@ const Header = () => {
                   px: 3,
                   py: 1.5,
                   borderRadius: 0,
+                  color: 'white !important',
+                  textDecoration: 'none !important',
                   '&:hover': {
                     backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    color: 'white !important',
+                  },
+                  '&:visited': {
+                    color: 'white !important',
                   },
                   fontSize: '0.95rem',
                   fontWeight: 500,
