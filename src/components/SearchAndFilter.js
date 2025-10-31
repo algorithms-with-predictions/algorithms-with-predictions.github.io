@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   TextField,
   InputAdornment,
@@ -6,286 +6,176 @@ import {
   Box,
   Chip,
   Stack,
-  Autocomplete,
-  Collapse,
-  Typography,
-  Select,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Slider,
 } from '@mui/material';
-import {
-  Search,
-  Clear,
-  FilterList,
-  ExpandMore,
-  ExpandLess,
-} from '@mui/icons-material';
+import { Search, Clear } from '@mui/icons-material';
 
 const SearchAndFilter = ({
   searchQuery,
   onSearchChange,
-  selectedAuthors = [],
-  onAuthorsChange,
-  selectedVenues = [],
-  onVenuesChange,
-  allAuthors = [],
-  allVenues = [],
-  showAdvanced = false,
-  onAdvancedToggle,
-  // Legacy props integration
-  yearRange = [2020, 2025],
-  onYearRangeChange = () => {},
-  availableYears = [],
-  sortOrder = 'Sort by year (newest first)',
-  onSortOrderChange = () => {},
   selectedLabels = [],
   onLabelsChange = () => {},
   availableLabels = [],
   specialLabels = [],
 }) => {
-  const sortOptions = [
-    'Sort by year (newest first)',
-    'Sort by year (oldest first)',
-  ];
+  const [localSearchQuery, setLocalSearchQuery] = useState(searchQuery);
 
-  const yearMarks =
-    availableYears.length > 0
-      ? availableYears.map((year, index) => ({
-          value: index,
-          label: `'${year.toString().slice(-2)}`,
-        }))
-      : [];
+  // Debounced search function
+  const debouncedSearch = useCallback(
+    (() => {
+      let timeoutId;
+      return query => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          onSearchChange(query);
+        }, 300); // 300ms delay
+      };
+    })(),
+    [onSearchChange]
+  );
 
+  // Update local state when external searchQuery changes
+  useEffect(() => {
+    setLocalSearchQuery(searchQuery);
+  }, [searchQuery]);
+
+  // Handle input change with debouncing
+  const handleInputChange = e => {
+    const value = e.target.value;
+    setLocalSearchQuery(value);
+    debouncedSearch(value);
+  };
+
+  // Handle clear with immediate update
+  const handleClear = () => {
+    setLocalSearchQuery('');
+    onSearchChange('');
+  };
   return (
-    <Box sx={{ mb: 3 }}>
-      <Stack spacing={2}>
-        {/* Main Search Bar */}
+    <Box sx={{ mb: 2 }}>
+      <Stack spacing={1.5}>
+        {/* Compact Search Bar */}
         <TextField
           fullWidth
+          size="small"
           variant="outlined"
           placeholder="Search papers by title, authors, or keywords..."
-          value={searchQuery}
-          onChange={e => onSearchChange(e.target.value)}
+          value={localSearchQuery}
+          onChange={handleInputChange}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <Search color="action" />
+                <Search color="action" sx={{ fontSize: 20 }} />
               </InputAdornment>
             ),
             endAdornment: (
               <InputAdornment position="end">
-                {searchQuery && (
-                  <IconButton
-                    edge="end"
-                    onClick={() => onSearchChange('')}
-                    size="small"
-                  >
-                    <Clear />
+                {localSearchQuery && (
+                  <IconButton edge="end" onClick={handleClear} size="small">
+                    <Clear sx={{ fontSize: 18 }} />
                   </IconButton>
                 )}
-                <IconButton
-                  edge="end"
-                  onClick={() => onAdvancedToggle && onAdvancedToggle()}
-                  size="small"
-                  color={showAdvanced ? 'primary' : 'default'}
-                >
-                  <FilterList />
-                </IconButton>
               </InputAdornment>
             ),
           }}
           sx={{
             '& .MuiOutlinedInput-root': {
-              borderRadius: 3,
+              borderRadius: 2,
               backgroundColor: 'background.paper',
               '&:hover': {
-                boxShadow: theme => theme.shadows[2],
+                boxShadow: theme => theme.shadows[1],
               },
               '&.Mui-focused': {
-                boxShadow: theme => theme.shadows[4],
+                boxShadow: theme => theme.shadows[2],
               },
             },
           }}
         />
 
-        {/* Advanced Filters */}
-        <Collapse in={showAdvanced}>
-          <Stack
-            spacing={3}
+        {/* Topic Filter Labels */}
+        {(availableLabels.length > 0 || specialLabels.length > 0) && (
+          <Box
             sx={{
-              p: 3,
+              p: 1.5,
               bgcolor: 'background.paper',
-              borderRadius: 3,
-              boxShadow: 2,
+              borderRadius: 2,
               border: theme => `1px solid ${theme.palette.divider}`,
+              boxShadow: 1,
             }}
           >
-            <Typography variant="h6" color="primary" sx={{ mb: 1 }}>
-              Advanced Filters
-            </Typography>
-
-            <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
-              {/* Author Filter */}
-              <Box sx={{ flex: 1 }}>
-                <Autocomplete
-                  multiple
-                  options={allAuthors}
-                  value={selectedAuthors}
-                  onChange={(_, newValue) => onAuthorsChange(newValue)}
-                  renderTags={(value, getTagProps) =>
-                    value.map((option, index) => (
-                      <Chip
-                        variant="outlined"
-                        label={option}
-                        size="small"
-                        color="secondary"
-                        {...getTagProps({ index })}
-                        key={option}
-                      />
-                    ))
-                  }
-                  renderInput={params => (
-                    <TextField
-                      {...params}
-                      label="Filter by Authors"
-                      placeholder="Select authors..."
-                      size="small"
-                    />
-                  )}
-                  sx={{ borderRadius: 2 }}
-                />
-              </Box>
-
-              {/* Venue Filter */}
-              <Box sx={{ flex: 1 }}>
-                <Autocomplete
-                  multiple
-                  options={allVenues}
-                  value={selectedVenues}
-                  onChange={(_, newValue) => onVenuesChange(newValue)}
-                  renderTags={(value, getTagProps) =>
-                    value.map((option, index) => (
-                      <Chip
-                        variant="outlined"
-                        label={option}
-                        size="small"
-                        color="info"
-                        {...getTagProps({ index })}
-                        key={option}
-                      />
-                    ))
-                  }
-                  renderInput={params => (
-                    <TextField
-                      {...params}
-                      label="Filter by Venues"
-                      placeholder="Select venues..."
-                      size="small"
-                    />
-                  )}
-                  sx={{ borderRadius: 2 }}
-                />
-              </Box>
-            </Stack>
-
-            {/* Sort and Year Controls */}
             <Stack
-              direction={{ xs: 'column', md: 'row' }}
-              spacing={2}
-              alignItems="center"
+              direction="row"
+              spacing={0.5}
+              flexWrap="wrap"
+              sx={{ gap: 0.5 }}
             >
-              <FormControl size="small" sx={{ minWidth: 200 }}>
-                <InputLabel>Sort Order</InputLabel>
-                <Select
-                  value={sortOrder}
-                  label="Sort Order"
-                  onChange={e => onSortOrderChange(e.target.value)}
-                >
-                  {sortOptions.map(option => (
-                    <MenuItem key={option} value={option}>
-                      {option}
-                    </MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-
-              {availableYears.length > 0 && (
-                <Box sx={{ flex: 1, minWidth: 200 }}>
-                  <Typography
-                    gutterBottom
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    Publication Years: {yearRange[0]} - {yearRange[1]}
-                  </Typography>
-                  <Slider
-                    value={[
-                      availableYears.indexOf(yearRange[0]),
-                      availableYears.indexOf(yearRange[1]),
-                    ]}
-                    onChange={(_, newValue) => {
-                      onYearRangeChange([
-                        availableYears[newValue[0]],
-                        availableYears[newValue[1]],
-                      ]);
-                    }}
-                    valueLabelDisplay="auto"
-                    valueLabelFormat={value => availableYears[value]}
-                    marks={yearMarks}
-                    min={0}
-                    max={availableYears.length - 1}
+              {/* Special Labels First */}
+              {specialLabels.map(label => {
+                const isSelected = selectedLabels.includes(label);
+                const labelColor =
+                  label === 'prior / related work' ? 'default' : 'typeLabels';
+                return (
+                  <Chip
+                    key={label}
+                    label={label}
                     size="small"
+                    clickable
+                    color={labelColor}
+                    variant={isSelected ? 'filled' : 'outlined'}
+                    onClick={() => {
+                      if (isSelected) {
+                        onLabelsChange(selectedLabels.filter(l => l !== label));
+                      } else {
+                        onLabelsChange([...selectedLabels, label]);
+                      }
+                    }}
+                    sx={{
+                      height: 26,
+                      fontSize: '0.7rem',
+                      '& .MuiChip-label': { px: 1.5 },
+                      transition: 'all 0.2s ease',
+                      '&:hover': {
+                        transform: 'translateY(-1px)',
+                        boxShadow: 2,
+                      },
+                    }}
                   />
-                </Box>
-              )}
-            </Stack>
+                );
+              })}
 
-            {/* Topic Labels */}
-            {(availableLabels.length > 0 || specialLabels.length > 0) && (
-              <Box>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ mb: 1 }}
-                >
-                  Research Topics:
-                </Typography>
-                <Stack
-                  direction="row"
-                  spacing={1}
-                  flexWrap="wrap"
-                  sx={{ gap: 1 }}
-                >
-                  {[...specialLabels, ...availableLabels].map(label => (
-                    <Chip
-                      key={label}
-                      label={label}
-                      size="small"
-                      clickable
-                      color={
-                        selectedLabels.includes(label) ? 'success' : 'default'
+              {/* Regular Labels - Show All */}
+              {availableLabels.map(label => {
+                const isSelected = selectedLabels.includes(label);
+                return (
+                  <Chip
+                    key={label}
+                    label={label}
+                    size="small"
+                    clickable
+                    color="labels"
+                    variant={isSelected ? 'filled' : 'outlined'}
+                    onClick={() => {
+                      if (isSelected) {
+                        onLabelsChange(selectedLabels.filter(l => l !== label));
+                      } else {
+                        onLabelsChange([...selectedLabels, label]);
                       }
-                      variant={
-                        selectedLabels.includes(label) ? 'filled' : 'outlined'
-                      }
-                      onClick={() => {
-                        if (selectedLabels.includes(label)) {
-                          onLabelsChange(
-                            selectedLabels.filter(l => l !== label)
-                          );
-                        } else {
-                          onLabelsChange([...selectedLabels, label]);
-                        }
-                      }}
-                    />
-                  ))}
-                </Stack>
-              </Box>
-            )}
-          </Stack>
-        </Collapse>
+                    }}
+                    sx={{
+                      height: 26,
+                      fontSize: '0.7rem',
+                      '& .MuiChip-label': { px: 1.5 },
+                      transition: 'all 0.2s ease',
+                      '&:hover': {
+                        transform: 'translateY(-1px)',
+                        boxShadow: 2,
+                      },
+                    }}
+                  />
+                );
+              })}
+            </Stack>
+          </Box>
+        )}
       </Stack>
     </Box>
   );

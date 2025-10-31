@@ -45,14 +45,14 @@ const theme = createTheme({
     },
   },
   shape: {
-    borderRadius: 8, // Modern rounded corners
+    borderRadius: 2, // Consistent rounded corners
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
           textTransform: 'none', // Modern button styling
-          borderRadius: 8,
+          borderRadius: 2,
         },
       },
     },

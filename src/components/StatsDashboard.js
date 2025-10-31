@@ -27,37 +27,26 @@ const StatCard = ({
 }) => (
   <Card sx={{ height: '100%', borderRadius: 2 }}>
     <CardContent>
-      <Stack spacing={2}>
-        {/* Primary Metric */}
-        <Stack direction="row" alignItems="center" spacing={2}>
-          <Box
-            sx={{
-              p: 1.2,
-              borderRadius: 2,
-              bgcolor: `${color}.light`,
-              color: `${color}.contrastText`,
-              display: 'flex',
-              alignItems: 'center',
-            }}
+      <Stack spacing={{ xs: 1, sm: 2 }}>
+        {/* Mobile: Horizontal layout, Desktop: Vertical layout */}
+        <Stack
+          direction={{ xs: 'row', sm: 'column' }}
+          spacing={{ xs: 2, sm: 2 }}
+          sx={{
+            justifyContent: { xs: 'space-between', sm: 'flex-start' },
+            alignItems: { xs: 'center', sm: 'stretch' },
+          }}
+        >
+          {/* Primary Metric */}
+          <Stack
+            direction="row"
+            alignItems="center"
+            spacing={2}
+            sx={{ flex: { xs: 1, sm: 'none' } }}
           >
-            <Icon sx={{ fontSize: 20 }} />
-          </Box>
-          <Box sx={{ flex: 1 }}>
-            <Typography variant="h4" fontWeight="bold" color="text.primary">
-              ~{value}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {title}
-            </Typography>
-          </Box>
-        </Stack>
-
-        {/* Secondary Metric */}
-        {secondaryValue && SecondaryIcon && (
-          <Stack direction="row" alignItems="center" spacing={2}>
             <Box
               sx={{
-                p: 1.2,
+                p: { xs: 0.8, sm: 1.2 },
                 borderRadius: 2,
                 bgcolor: `${color}.light`,
                 color: `${color}.contrastText`,
@@ -65,25 +54,74 @@ const StatCard = ({
                 alignItems: 'center',
               }}
             >
-              <SecondaryIcon sx={{ fontSize: 20 }} />
+              <Icon sx={{ fontSize: { xs: 16, sm: 20 } }} />
             </Box>
             <Box sx={{ flex: 1 }}>
-              <Typography variant="h4" fontWeight="bold" color="text.primary">
-                ~{secondaryValue}
+              <Typography
+                variant={{ xs: 'h6', sm: 'h4' }}
+                fontWeight="bold"
+                color="text.primary"
+                sx={{ fontSize: { xs: '1.1rem', sm: '2.125rem' } }}
+              >
+                ~{value}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {secondaryTitle}
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ fontSize: { xs: '0.75rem', sm: '0.875rem' } }}
+              >
+                {title}
               </Typography>
             </Box>
           </Stack>
-        )}
 
-        {/* Tertiary Metric */}
+          {/* Secondary Metric */}
+          {secondaryValue && SecondaryIcon && (
+            <Stack
+              direction="row"
+              alignItems="center"
+              spacing={2}
+              sx={{ flex: { xs: 1, sm: 'none' } }}
+            >
+              <Box
+                sx={{
+                  p: { xs: 0.8, sm: 1.2 },
+                  borderRadius: 2,
+                  bgcolor: `${color}.light`,
+                  color: `${color}.contrastText`,
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+              >
+                <SecondaryIcon sx={{ fontSize: { xs: 16, sm: 20 } }} />
+              </Box>
+              <Box sx={{ flex: 1 }}>
+                <Typography
+                  variant={{ xs: 'h6', sm: 'h4' }}
+                  fontWeight="bold"
+                  color="text.primary"
+                  sx={{ fontSize: { xs: '1.1rem', sm: '2.125rem' } }}
+                >
+                  ~{secondaryValue}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ fontSize: { xs: '0.75rem', sm: '0.875rem' } }}
+                >
+                  {secondaryTitle}
+                </Typography>
+              </Box>
+            </Stack>
+          )}
+        </Stack>
+
+        {/* Tertiary Metric - Now visible on mobile with responsive sizing */}
         {tertiaryValue && TertiaryIcon && (
           <Stack direction="row" alignItems="center" spacing={2}>
             <Box
               sx={{
-                p: 1.2,
+                p: { xs: 0.8, sm: 1.2 },
                 borderRadius: 2,
                 bgcolor: `${color}.light`,
                 color: `${color}.contrastText`,
@@ -91,13 +129,22 @@ const StatCard = ({
                 alignItems: 'center',
               }}
             >
-              <TertiaryIcon sx={{ fontSize: 20 }} />
+              <TertiaryIcon sx={{ fontSize: { xs: 16, sm: 20 } }} />
             </Box>
             <Box sx={{ flex: 1 }}>
-              <Typography variant="h4" fontWeight="bold" color="text.primary">
+              <Typography
+                variant={{ xs: 'h6', sm: 'h4' }}
+                fontWeight="bold"
+                color="text.primary"
+                sx={{ fontSize: { xs: '1.1rem', sm: '2.125rem' } }}
+              >
                 ~{tertiaryValue}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ fontSize: { xs: '0.75rem', sm: '0.875rem' } }}
+              >
                 {tertiaryTitle}
               </Typography>
             </Box>
@@ -171,9 +218,23 @@ const YearDistributionChart = ({ yearData }) => {
   return (
     <Card sx={{ height: '100%', borderRadius: 2 }}>
       <CardContent
-        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+        sx={{
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          py: { xs: 1, sm: 2 },
+          px: { xs: 1.5, sm: 2 },
+        }}
       >
-        <Typography variant="h6" gutterBottom fontWeight="bold">
+        <Typography
+          variant="h6"
+          gutterBottom
+          fontWeight="bold"
+          sx={{
+            fontSize: { xs: '1rem', sm: '1.25rem' },
+            mb: { xs: 1, sm: 2 },
+          }}
+        >
           Paper Distribution by Year
         </Typography>
         <Box
@@ -182,9 +243,10 @@ const YearDistributionChart = ({ yearData }) => {
             display: 'flex',
             alignItems: 'end',
             justifyContent: 'space-around',
-            mt: 2,
-            mb: 2,
-            minHeight: '120px',
+            mt: { xs: 1, sm: 2 },
+            mb: { xs: 1, sm: 2 },
+            minHeight: { xs: '80px', sm: '120px' },
+            px: { xs: 0.5, sm: 1 },
           }}
         >
           {years.map(year => (
@@ -195,15 +257,18 @@ const YearDistributionChart = ({ yearData }) => {
                 flexDirection: 'column',
                 alignItems: 'center',
                 flex: 1,
-                mx: 0.5,
+                mx: { xs: 0.2, sm: 0.5 },
               }}
             >
               {/* Bar */}
               <Box
                 sx={{
                   width: '100%',
-                  maxWidth: '24px',
-                  height: `${(yearData[year] / maxCount) * 80 + 10}px`,
+                  maxWidth: { xs: '16px', sm: '24px' },
+                  height: {
+                    xs: `${(yearData[year] / maxCount) * 50 + 8}px`,
+                    sm: `${(yearData[year] / maxCount) * 80 + 10}px`,
+                  },
                   backgroundColor: theme => theme.palette.primary.main,
                   borderRadius: '4px 4px 0 0',
                   display: 'flex',
@@ -222,9 +287,9 @@ const YearDistributionChart = ({ yearData }) => {
                   variant="caption"
                   sx={{
                     position: 'absolute',
-                    top: -20,
+                    top: { xs: -16, sm: -20 },
                     color: 'text.secondary',
-                    fontSize: '0.7rem',
+                    fontSize: { xs: '0.6rem', sm: '0.7rem' },
                     fontWeight: 'medium',
                   }}
                 >
@@ -236,10 +301,11 @@ const YearDistributionChart = ({ yearData }) => {
               <Typography
                 variant="body2"
                 sx={{
-                  mt: 1,
-                  fontSize: '0.75rem',
+                  mt: { xs: 0.5, sm: 1 },
+                  fontSize: { xs: '0.65rem', sm: '0.75rem' },
                   fontWeight: 'medium',
                   color: 'text.secondary',
+                  textAlign: 'center',
                 }}
               >
                 {year}
@@ -316,9 +382,9 @@ const StatsDashboard = ({ data }) => {
     .slice(0, 5);
   return (
     <Box sx={{ mb: 3 }}>
-      <Grid container spacing={2} alignItems="stretch">
+      <Grid container spacing={{ xs: 1.5, sm: 2 }} alignItems="stretch">
         {/* Compact Total Papers & Authors & Venues */}
-        <Grid item xs={12} sm={4} md={2.5}>
+        <Grid item xs={12} sm={6} md={2.5}>
           <StatCard
             title="Papers"
             value={totalPapers}
@@ -334,7 +400,7 @@ const StatsDashboard = ({ data }) => {
         </Grid>
 
         {/* Year Distribution Chart */}
-        <Grid item xs={12} sm={8} md={4.5}>
+        <Grid item xs={12} sm={6} md={4.5}>
           <YearDistributionChart yearData={yearDistribution} />
         </Grid>
 

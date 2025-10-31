@@ -14,20 +14,10 @@ import { ContentCopy } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 
 const StyledCard = styled(Card)(({ theme }) => ({
-  borderRadius: 0,
+  borderRadius: 2,
   border: `1px solid ${theme.palette.divider}`,
-  borderTop: 0,
   transition: 'all 0.2s ease',
   margin: 0,
-  '&:first-of-type': {
-    borderTop: `1px solid ${theme.palette.divider}`,
-    borderTopLeftRadius: 8,
-    borderTopRightRadius: 8,
-  },
-  '&:last-of-type': {
-    borderBottomLeftRadius: 8,
-    borderBottomRightRadius: 8,
-  },
   '&:hover': {
     transform: 'translateY(-1px)',
     boxShadow: theme.shadows[4],
@@ -54,7 +44,31 @@ const openInNewTab = url => {
   if (newWindow) newWindow.opener = null;
 };
 
-const PaperCard = ({ paper }) => {
+// Type labels that get special green color
+const TYPE_LABELS = [
+  'dynamic / data structure',
+  'online',
+  'running time',
+  'approximation',
+  'streaming',
+  'game theory / mechanism design',
+  'differential privacy',
+  'survey',
+];
+const PRIOR_LABEL = 'prior / related work';
+
+// Color matching the quick filter system
+const getLabelColor = label => {
+  if (TYPE_LABELS.includes(label)) {
+    return 'typeLabels';
+  } else if (label === PRIOR_LABEL) {
+    return 'default';
+  } else {
+    return 'labels';
+  }
+};
+
+const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
   const mainPublication =
     paper.publications?.find(pub => pub.name !== 'arXiv') ||
     paper.publications?.[0];
@@ -99,19 +113,32 @@ const PaperCard = ({ paper }) => {
               </PaperTitle>
 
               {/* Topic labels inline with title */}
-              {paper.labels?.map(label => (
-                <Chip
-                  key={`label-${label}`}
-                  label={label}
-                  size="small"
-                  variant="outlined"
-                  sx={{
-                    borderRadius: 1.5,
-                    fontSize: '0.75rem',
-                    height: 22,
-                  }}
-                />
-              ))}
+              {paper.labels?.map(label => {
+                const isSelected = selectedLabels.includes(label);
+                const labelColor = getLabelColor(label);
+                return (
+                  <Chip
+                    key={`label-${label}`}
+                    label={label}
+                    size="small"
+                    variant={isSelected ? 'filled' : 'outlined'}
+                    color={labelColor}
+                    clickable
+                    onClick={() => onLabelClick && onLabelClick(label)}
+                    sx={{
+                      borderRadius: 2,
+                      fontSize: '0.75rem',
+                      height: 22,
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease',
+                      '&:hover': {
+                        transform: 'scale(1.05)',
+                        boxShadow: 2,
+                      },
+                    }}
+                  />
+                );
+              })}
             </Stack>
           </Box>
 

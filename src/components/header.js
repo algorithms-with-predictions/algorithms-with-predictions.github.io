@@ -1,9 +1,19 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { Box } from '@mui/material';
+import {
+  AppBar,
+  Button,
+  Toolbar,
+  Typography,
+  Box,
+  IconButton,
+  Menu,
+  MenuItem,
+  useMediaQuery,
+  useTheme,
+  Collapse,
+  Stack,
+} from '@mui/material';
+import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import ThemeToggle from './ThemeToggle';
 
 const pages = [
@@ -14,23 +24,38 @@ const pages = [
 ];
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
+  const handleMobileMenuToggle = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const handleMobileMenuClose = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <AppBar position="static" color="primary" elevation={2}>
       <Toolbar disableGutters sx={{ px: 2 }}>
         <Typography
-          variant="h5"
+          variant={isMobile ? 'h6' : 'h5'}
           noWrap
           component="div"
           sx={{
-            mr: 4,
+            mr: { xs: 1, md: 4 },
             fontWeight: 600,
             letterSpacing: '-0.02em',
             flexGrow: 1,
+            fontSize: { xs: '1.1rem', sm: '1.25rem', md: '1.5rem' },
           }}
         >
-          Algorithms with Predictions
+          {isMobile ? 'ALPS' : 'Algorithms with Predictions'}
         </Typography>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+
+        {/* Desktop Navigation */}
+        <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
           {pages.map(page => (
             <Button
               key={page.name}
@@ -53,7 +78,55 @@ const Header = () => {
           ))}
           <ThemeToggle />
         </Box>
+
+        {/* Mobile Navigation */}
+        <Box sx={{ display: { xs: 'flex', md: 'none' }, alignItems: 'center' }}>
+          <ThemeToggle />
+          <IconButton
+            color="inherit"
+            aria-label="open mobile menu"
+            onClick={handleMobileMenuToggle}
+            sx={{ ml: 1 }}
+          >
+            {mobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
+          </IconButton>
+        </Box>
       </Toolbar>
+
+      {/* Mobile Menu Collapse */}
+      <Collapse in={mobileMenuOpen && isMobile}>
+        <Box
+          sx={{
+            bgcolor: 'primary.dark',
+            borderTop: 1,
+            borderColor: 'primary.light',
+          }}
+        >
+          <Stack spacing={0}>
+            {pages.map(page => (
+              <Button
+                key={page.name}
+                href={page.href}
+                color="inherit"
+                onClick={handleMobileMenuClose}
+                sx={{
+                  justifyContent: 'flex-start',
+                  px: 3,
+                  py: 1.5,
+                  borderRadius: 0,
+                  '&:hover': {
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  },
+                  fontSize: '0.95rem',
+                  fontWeight: 500,
+                }}
+              >
+                {page.name}
+              </Button>
+            ))}
+          </Stack>
+        </Box>
+      </Collapse>
     </AppBar>
   );
 };

@@ -23,7 +23,6 @@ import PropTypes from 'prop-types';
 import SearchAndFilter from './SearchAndFilter';
 import PaperCard from './PaperCard';
 import StatsDashboard from './StatsDashboard';
-import VirtualizedPaperList from './VirtualizedPaperList';
 
 const openInNewTab = url => {
   const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
@@ -322,13 +321,6 @@ const PaperList = ({ data }) => {
     });
   }, [filteredData, sort]);
 
-  // Render function for virtualized list
-  const renderPaperItem = (paper, index) => (
-    <Box sx={{ p: 0, height: '100%' }}>
-      <PaperCard paper={paper} />
-    </Box>
-  );
-
   return (
     <Container maxWidth="xl" sx={{ py: 2 }}>
       {/* Stats Dashboard */}
@@ -344,24 +336,6 @@ const PaperList = ({ data }) => {
           <SearchAndFilter
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
-            selectedAuthors={selectedAuthors}
-            onAuthorsChange={setSelectedAuthors}
-            selectedVenues={selectedVenues}
-            onVenuesChange={setSelectedVenues}
-            allAuthors={allAuthors}
-            allVenues={allVenues}
-            showAdvanced={showAdvanced}
-            onAdvancedToggle={() => setShowAdvanced(!showAdvanced)}
-            // Legacy controls integration
-            yearRange={[distinctYears[yearsIdx[0]], distinctYears[yearsIdx[1]]]}
-            onYearRangeChange={range => {
-              const minIdx = distinctYears.indexOf(range[0]);
-              const maxIdx = distinctYears.indexOf(range[1]);
-              setYearsIdx([minIdx, maxIdx]);
-            }}
-            availableYears={distinctYears}
-            sortOrder={sort}
-            onSortOrderChange={setSort}
             selectedLabels={selLabels}
             onLabelsChange={setSelLabels}
             availableLabels={distinctLabels}
@@ -370,90 +344,87 @@ const PaperList = ({ data }) => {
         </Box>
       </Fade>
 
-      {/* Results Summary */}
+      {/* Compact Results Summary */}
       <Fade in timeout={1000}>
-        <Box sx={{ mb: 3 }}>
+        <Box sx={{ mb: 2 }}>
           <Stack
-            direction="row"
+            direction={{ xs: 'column', sm: 'row' }}
             justifyContent="space-between"
-            alignItems="center"
-            sx={{ mb: 2 }}
+            alignItems={{ xs: 'flex-start', sm: 'center' }}
+            spacing={1}
+            sx={{
+              mb: 1.5,
+              p: 2,
+              bgcolor: 'background.paper',
+              borderRadius: 2,
+              border: theme => `1px solid ${theme.palette.divider}`,
+            }}
           >
-            <Typography variant="h6" color="text.primary">
-              {sortedData.length} papers found
-              {searchQuery && ` for "${searchQuery}"`}
+            <Typography
+              variant="subtitle1"
+              color="text.primary"
+              sx={{ fontWeight: 600 }}
+            >
+              {sortedData.length} paper{sortedData.length !== 1 ? 's' : ''}{' '}
+              found
+              {searchQuery && (
+                <Typography
+                  component="span"
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ ml: 1 }}
+                >
+                  for "{searchQuery}"
+                </Typography>
+              )}
             </Typography>
 
-            {(selLabels.length > 0 ||
-              searchQuery ||
-              selectedAuthors.length > 0 ||
-              selectedVenues.length > 0) && (
+            {(selLabels.length > 0 || searchQuery) && (
               <Button
                 variant="outlined"
+                size="small"
                 color="primary"
                 onClick={() => {
                   setSearchQuery('');
-                  setSelectedAuthors([]);
-                  setSelectedVenues([]);
                   setSelLabels([]);
-                  setYearsIdx([0, distinctYears.length - 1]);
                 }}
-                sx={{ borderRadius: 2 }}
+                sx={{ borderRadius: 2, px: 2 }}
               >
-                Clear All Filters
+                Clear All
               </Button>
             )}
           </Stack>
 
-          {/* Active filters display */}
-          {(searchQuery ||
-            selectedAuthors.length > 0 ||
-            selectedVenues.length > 0 ||
-            selLabels.length > 0) && (
-            <Stack direction="row" spacing={1} flexWrap="wrap" sx={{ gap: 1 }}>
+          {/* Compact Active filters display */}
+          {(searchQuery || selLabels.length > 0) && (
+            <Stack
+              direction="row"
+              spacing={0.5}
+              flexWrap="wrap"
+              sx={{ gap: 0.5, mb: 1 }}
+            >
               {searchQuery && (
                 <Chip
-                  label={`Search: "${searchQuery}"`}
+                  label={`"${searchQuery}"`}
                   onDelete={() => setSearchQuery('')}
                   size="small"
                   color="primary"
                   variant="outlined"
+                  sx={{ height: 24 }}
                 />
               )}
-              {selectedAuthors.map(author => (
-                <Chip
-                  key={author}
-                  label={`Author: ${author}`}
-                  onDelete={() =>
-                    setSelectedAuthors(prev => prev.filter(a => a !== author))
-                  }
-                  size="small"
-                  color="secondary"
-                  variant="outlined"
-                />
-              ))}
-              {selectedVenues.map(venue => (
-                <Chip
-                  key={venue}
-                  label={`Venue: ${venue}`}
-                  onDelete={() =>
-                    setSelectedVenues(prev => prev.filter(v => v !== venue))
-                  }
-                  size="small"
-                  color="info"
-                  variant="outlined"
-                />
-              ))}
+
               {selLabels.map(label => (
                 <Chip
                   key={label}
-                  label={`Topic: ${label}`}
+                  label={label}
                   onDelete={() =>
                     setSelLabels(prev => prev.filter(l => l !== label))
                   }
                   size="small"
                   color="success"
                   variant="outlined"
+                  sx={{ height: 24 }}
                 />
               ))}
             </Stack>
@@ -461,38 +432,44 @@ const PaperList = ({ data }) => {
         </Box>
       </Fade>
 
-      {/* Quick Topic Filters */}
-      <Fade in timeout={1100}>
-        <Box sx={{ mb: 3 }}>
-          <Typography variant="h6" gutterBottom sx={{ mb: 2 }}>
-            Quick Filter by Topic
-          </Typography>
-          <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', gap: 1 }}>
-            {/* Special Labels */}
-            {SPECIAL_LABELS.map(label => labelChip(label, true))}
-            <Divider orientation="vertical" flexItem sx={{ mx: 1 }} />
-            {/* Regular Labels */}
-            {distinctLabels.map(label => labelChip(label, true))}
-          </Stack>
-        </Box>
-      </Fade>
-
-      {/* Papers List with Virtualization */}
+      {/* Papers List */}
       <Fade in timeout={1200}>
         <Box>
-          <VirtualizedPaperList
-            papers={sortedData}
-            renderItem={renderPaperItem}
-            containerHeight={800}
-            emptyMessage={
-              searchQuery ||
-              selectedAuthors.length > 0 ||
-              selectedVenues.length > 0 ||
-              selLabels.length > 0
-                ? 'No papers match your search criteria.'
-                : 'No papers available.'
-            }
-          />
+          {sortedData.length === 0 ? (
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: 400,
+                textAlign: 'center',
+                color: 'text.secondary',
+              }}
+            >
+              <Stack spacing={2} alignItems="center">
+                <Typography variant="h6" color="text.secondary">
+                  {searchQuery || selLabels.length > 0
+                    ? 'No papers match your search criteria.'
+                    : 'No papers available.'}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Try adjusting your search terms or filters.
+                </Typography>
+              </Stack>
+            </Box>
+          ) : (
+            <Stack spacing={1}>
+              {sortedData.map((paper, index) => (
+                <Box key={`${paper.id}-${index}`}>
+                  <PaperCard
+                    paper={paper}
+                    selectedLabels={selLabels}
+                    onLabelClick={label => setSelLabels([label, ...selLabels])}
+                  />
+                </Box>
+              ))}
+            </Stack>
+          )}
         </Box>
       </Fade>
     </Container>
