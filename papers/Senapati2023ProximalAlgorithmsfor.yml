@@ -1,0 +1,13 @@
+title: Proximal Algorithms for Smoothed Online Convex Optimization With Predictions.
+authors: Spandan Senapati, Ashwin Shenai, Ketan Rajawat
+labels:
+  - online
+  - convex optimization
+publications:
+  - name: IEEE Trans. Signal Process.
+    url: https://dblp.org/rec/journals/tsp/SenapatiSR23
+    year: 2023
+    month: null
+    day: null
+    dblp_key: journals/tsp/SenapatiSR23
+    bibtex: null
