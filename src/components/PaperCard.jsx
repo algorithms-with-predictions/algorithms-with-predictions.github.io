@@ -8,7 +8,8 @@ import {
   Box,
   IconButton,
   Tooltip,
-  Badge,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material';
 import { ContentCopy } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
@@ -30,14 +31,8 @@ const StyledCard = styled(Card)(({ theme }) => ({
 const PaperTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
   lineHeight: 1.1,
-  marginBottom: theme.spacing(0.25),
+  marginBottom: theme.spacing(0.1),
   fontSize: '1rem',
-}));
-
-const AuthorText = styled(Typography)(({ theme }) => ({
-  color: theme.palette.text.secondary,
-  fontSize: '0.8rem',
-  fontWeight: 500,
 }));
 
 const openInNewTab = url => {
@@ -73,6 +68,9 @@ const getLabelColor = label => {
 };
 
 const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
   const mainPublication =
     paper.publications?.find(pub => pub.name !== 'arXiv') ||
     paper.publications?.[0];
@@ -113,88 +111,248 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
   return (
     <StyledCard>
       <CardContent sx={{ py: 0.5, px: 1, '&:last-child': { pb: 0.5 } }}>
-        {/* Header with title, labels, and BibTeX action */}
+        {/* Header with title */}
         <Stack
           direction="row"
           justifyContent="space-between"
           alignItems="flex-start"
-          sx={{ mb: 0.5 }}
+          sx={{ mb: 0.0 }}
         >
-          <Box sx={{ flex: 1 }}>
+          <Box sx={{ flex: 1, pr: isMobile ? 0 : 1 }}>
+            {/* Desktop: Title and labels inline */}
+            {!isMobile && (
+              <Stack
+                direction="row"
+                alignItems="center"
+                spacing={0.5}
+                sx={{ flexWrap: 'wrap', gap: 0.5 }}
+              >
+                <PaperTitle
+                  variant="subtitle1"
+                  component="h3"
+                  sx={{ display: 'inline', mb: 0 }}
+                >
+                  {paper.title}
+                </PaperTitle>
+
+                {/* Topic labels inline with title on desktop */}
+                {paper.labels?.map(label => {
+                  const isSelected = selectedLabels.includes(label);
+                  const labelColor = getLabelColor(label);
+                  return (
+                    <Chip
+                      key={`label-${label}`}
+                      label={label}
+                      size="small"
+                      variant={isSelected ? 'filled' : 'outlined'}
+                      color={labelColor}
+                      clickable
+                      onClick={() => {
+                        if (onLabelClick) {
+                          trackEvent('paper_label_click', {
+                            category: 'paper_interaction',
+                            label: label,
+                            custom_parameter_1: paper.title || 'Unknown paper',
+                          });
+                          onLabelClick(label);
+                        }
+                      }}
+                      sx={{
+                        borderRadius: 2,
+                        fontSize: '0.75rem',
+                        height: 22,
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease',
+                        '&:hover': {
+                          transform: 'scale(1.05)',
+                          boxShadow: 2,
+                        },
+                      }}
+                    />
+                  );
+                })}
+              </Stack>
+            )}
+
+            {/* Mobile: Title, then authors, then labels and badges */}
+            {isMobile && (
+              <>
+                <PaperTitle
+                  variant="subtitle1"
+                  component="h3"
+                  sx={{ display: 'block', mb: 0.25 }}
+                >
+                  {paper.title}
+                </PaperTitle>
+
+                {/* Authors */}
+                <Typography
+                  variant="caption"
+                  color="text.secondary"
+                  sx={{
+                    fontSize: '0.8rem',
+                    lineHeight: 1.2,
+                    display: 'block',
+                    mb: 0.5,
+                  }}
+                >
+                  By{' '}
+                  {paper.authors
+                    ? typeof paper.authors === 'string'
+                      ? paper.authors
+                      : paper.authors.join(', ')
+                    : 'Unknown authors'}
+                </Typography>
+
+                {/* Labels and badges */}
+                <Stack
+                  direction="row"
+                  alignItems="center"
+                  spacing={0.5}
+                  sx={{ flexWrap: 'wrap', gap: 0.5 }}
+                >
+                  {/* Topic labels */}
+                  {paper.labels?.map(label => {
+                    const isSelected = selectedLabels.includes(label);
+                    const labelColor = getLabelColor(label);
+                    return (
+                      <Chip
+                        key={`label-${label}`}
+                        label={label}
+                        size="small"
+                        variant={isSelected ? 'filled' : 'outlined'}
+                        color={labelColor}
+                        clickable
+                        onClick={() => {
+                          if (onLabelClick) {
+                            trackEvent('paper_label_click', {
+                              category: 'paper_interaction',
+                              label: label,
+                              custom_parameter_1:
+                                paper.title || 'Unknown paper',
+                            });
+                            onLabelClick(label);
+                          }
+                        }}
+                        sx={{
+                          borderRadius: 2,
+                          fontSize: '0.75rem',
+                          height: 22,
+                          cursor: 'pointer',
+                          transition: 'all 0.2s ease',
+                          '&:hover': {
+                            transform: 'scale(1.05)',
+                            boxShadow: 2,
+                          },
+                        }}
+                      />
+                    );
+                  })}
+
+                  {/* Publication badges inline with labels on mobile */}
+                  {paper.publications?.map((pub, index) => (
+                    <Tooltip
+                      key={`pub-${index}`}
+                      title={`${pub.name} ${pub.year}${pub.url ? ' - Click to view' : ''}`}
+                    >
+                      <Chip
+                        label={`${pub.name} '${pub.year.toString().slice(-2)}`}
+                        size="small"
+                        variant={pub.name === 'arXiv' ? 'outlined' : 'filled'}
+                        color={pub.name === 'arXiv' ? 'default' : 'primary'}
+                        onClick={() => {
+                          if (pub.url) {
+                            trackEvent('publication_link_click', {
+                              category: 'paper_interaction',
+                              label: paper.title || 'Unknown paper',
+                              custom_parameter_1: pub.name,
+                              custom_parameter_2: pub.year?.toString(),
+                            });
+                            openInNewTab(pub.url);
+                          }
+                        }}
+                        sx={{
+                          cursor: pub.url ? 'pointer' : 'default',
+                          '&:hover': pub.url
+                            ? {
+                                transform: 'scale(1.05)',
+                              }
+                            : {},
+                          transition: 'transform 0.2s',
+                          height: 20,
+                          fontSize: '0.75rem',
+                        }}
+                      />
+                    </Tooltip>
+                  ))}
+                </Stack>
+              </>
+            )}
+          </Box>
+
+          {/* Publication badges and BibTeX button on the right (desktop only) */}
+          {!isMobile && (
             <Stack
               direction="row"
               alignItems="center"
               spacing={0.5}
-              sx={{ flexWrap: 'wrap', gap: 0.5 }}
+              sx={{ flexShrink: 0 }}
             >
-              <PaperTitle
-                variant="subtitle1"
-                component="h3"
-                sx={{ display: 'inline', mb: 0 }}
-              >
-                {paper.title}
-              </PaperTitle>
-
-              {/* Topic labels inline with title */}
-              {paper.labels?.map(label => {
-                const isSelected = selectedLabels.includes(label);
-                const labelColor = getLabelColor(label);
-                return (
+              {/* Publication badges */}
+              {paper.publications?.map((pub, index) => (
+                <Tooltip
+                  key={`pub-${index}`}
+                  title={`${pub.name} ${pub.year}${pub.url ? ' - Click to view' : ''}`}
+                >
                   <Chip
-                    key={`label-${label}`}
-                    label={label}
+                    label={`${pub.name} '${pub.year.toString().slice(-2)}`}
                     size="small"
-                    variant={isSelected ? 'filled' : 'outlined'}
-                    color={labelColor}
-                    clickable
+                    variant={pub.name === 'arXiv' ? 'outlined' : 'filled'}
+                    color={pub.name === 'arXiv' ? 'default' : 'primary'}
                     onClick={() => {
-                      if (onLabelClick) {
-                        trackEvent('paper_label_click', {
+                      if (pub.url) {
+                        trackEvent('publication_link_click', {
                           category: 'paper_interaction',
-                          label: label,
-                          custom_parameter_1: paper.title || 'Unknown paper',
+                          label: paper.title || 'Unknown paper',
+                          custom_parameter_1: pub.name,
+                          custom_parameter_2: pub.year?.toString(),
                         });
-                        onLabelClick(label);
+                        openInNewTab(pub.url);
                       }
                     }}
                     sx={{
-                      borderRadius: 2,
+                      cursor: pub.url ? 'pointer' : 'default',
+                      '&:hover': pub.url
+                        ? {
+                            transform: 'scale(1.05)',
+                          }
+                        : {},
+                      transition: 'transform 0.2s',
+                      height: 20,
                       fontSize: '0.75rem',
-                      height: 22,
-                      cursor: 'pointer',
-                      transition: 'all 0.2s ease',
-                      '&:hover': {
-                        transform: 'scale(1.05)',
-                        boxShadow: 2,
-                      },
                     }}
                   />
-                );
-              })}
-            </Stack>
-          </Box>
+                </Tooltip>
+              ))}
 
-          {hasBibtex && (
-            <Tooltip title="Copy BibTeX">
-              <IconButton
-                onClick={handleCopyBibtex}
-                size="small"
-                color="primary"
-                sx={{ p: 0.5 }}
-              >
-                <ContentCopy sx={{ fontSize: 18 }} />
-              </IconButton>
-            </Tooltip>
+              {hasBibtex && (
+                <Tooltip title="Copy BibTeX">
+                  <IconButton
+                    onClick={handleCopyBibtex}
+                    size="small"
+                    color="primary"
+                    sx={{ p: 0.5 }}
+                  >
+                    <ContentCopy sx={{ fontSize: 18 }} />
+                  </IconButton>
+                </Tooltip>
+              )}
+            </Stack>
           )}
         </Stack>
 
-        {/* Authors and publication badges on second line */}
-        <Stack
-          direction="row"
-          alignItems="center"
-          spacing={0.5}
-          sx={{ flexWrap: 'wrap', gap: 0.5 }}
-        >
+        {/* Authors on second line (desktop only) */}
+        {!isMobile && (
           <Typography
             variant="caption"
             color="text.secondary"
@@ -207,44 +365,7 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
                 : paper.authors.join(', ')
               : 'Unknown authors'}
           </Typography>
-
-          {/* Publication badges inline with authors */}
-          {paper.publications?.map((pub, index) => (
-            <Tooltip
-              key={`pub-${index}`}
-              title={`${pub.name} ${pub.year}${pub.url ? ' - Click to view' : ''}`}
-            >
-              <Chip
-                label={`${pub.name} '${pub.year.toString().slice(-2)}`}
-                size="small"
-                variant={pub.name === 'arXiv' ? 'outlined' : 'filled'}
-                color={pub.name === 'arXiv' ? 'default' : 'primary'}
-                onClick={() => {
-                  if (pub.url) {
-                    trackEvent('publication_link_click', {
-                      category: 'paper_interaction',
-                      label: paper.title || 'Unknown paper',
-                      custom_parameter_1: pub.name,
-                      custom_parameter_2: pub.year?.toString(),
-                    });
-                    openInNewTab(pub.url);
-                  }
-                }}
-                sx={{
-                  cursor: pub.url ? 'pointer' : 'default',
-                  '&:hover': pub.url
-                    ? {
-                        transform: 'scale(1.05)',
-                      }
-                    : {},
-                  transition: 'transform 0.2s',
-                  height: 20,
-                  fontSize: '0.75rem',
-                }}
-              />
-            </Tooltip>
-          ))}
-        </Stack>
+        )}
       </CardContent>
     </StyledCard>
   );
