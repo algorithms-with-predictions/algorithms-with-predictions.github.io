@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import {
   Box,
   Typography,
@@ -129,6 +130,11 @@ const CookieConsent = ({ onAccept, onDecline }) => {
       </Paper>
     </Fade>
   );
+};
+
+CookieConsent.propTypes = {
+  onAccept: PropTypes.func.isRequired,
+  onDecline: PropTypes.func.isRequired,
 };
 
 export default CookieConsent;

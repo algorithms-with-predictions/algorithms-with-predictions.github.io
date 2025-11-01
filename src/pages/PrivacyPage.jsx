@@ -37,7 +37,7 @@ const PrivacyPage = () => {
         </Box>
 
         <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
-          What We Don't Collect
+          What We Don&apos;t Collect
         </Typography>
         <Box component="ul" sx={{ pl: 2 }}>
           <li>Personal identifying information</li>
@@ -60,7 +60,7 @@ const PrivacyPage = () => {
         </Typography>
         <Typography paragraph>
           Analytics data is automatically deleted after 14 months. We do not
-          retain personal data beyond what's necessary for understanding website
+          retain personal data beyond what&apos;s necessary for understanding website
           usage.
         </Typography>
 

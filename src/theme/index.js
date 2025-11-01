@@ -1,8 +1,4 @@
 import {
-  blueGrey,
-  amber,
-  green,
-  lightBlue,
   orange,
   blue,
   deepOrange,

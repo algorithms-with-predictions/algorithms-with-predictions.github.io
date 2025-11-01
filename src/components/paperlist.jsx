@@ -6,7 +6,6 @@ import {
   Fade,
   IconButton,
   Tooltip,
-  Chip,
 } from '@mui/material';
 import { Download, Clear } from '@mui/icons-material';
 import * as React from 'react';
@@ -129,16 +128,6 @@ const PaperList = ({ data }) => {
   const handleClearFilters = () => {
     setSearchQuery('');
     setSelLabels([]);
-  };
-
-  const labelColor = label => {
-    if (TYPE_LABELS.includes(label)) {
-      return 'typeLabels';
-    } else if (label === PRIOR_LABEL) {
-      return 'default';
-    } else {
-      return 'labels';
-    }
   };
 
   return (

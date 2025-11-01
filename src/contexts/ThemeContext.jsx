@@ -1,13 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {
-  blueGrey,
-  amber,
-  green,
-  lightBlue,
   grey,
-  orange,
   blue,
+  orange,
   deepOrange,
 } from '@mui/material/colors';
 
@@ -215,4 +212,8 @@ export const ThemeContextProvider = ({ children }) => {
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemeContext.Provider>
   );
+};
+
+ThemeContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };

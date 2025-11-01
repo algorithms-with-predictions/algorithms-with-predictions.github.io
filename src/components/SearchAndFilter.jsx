@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import {
   TextField,
   InputAdornment,
@@ -20,34 +21,27 @@ const SearchAndFilter = ({
 }) => {
   const [localSearchQuery, setLocalSearchQuery] = useState(searchQuery);
 
-  // Debounced search function
-  const debouncedSearch = useCallback(
-    (() => {
-      let timeoutId;
-      return query => {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-          onSearchChange(query);
-          // Track search queries that are not empty
-          if (query.trim()) {
-            trackSearch(query.trim(), 0); // We don't have results count here, will be 0
-          }
-        }, 300); // 300ms delay
-      };
-    })(),
-    [onSearchChange]
-  );
-
   // Update local state when external searchQuery changes
   useEffect(() => {
     setLocalSearchQuery(searchQuery);
   }, [searchQuery]);
 
   // Handle input change with debouncing
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      if (localSearchQuery) {
+        trackSearch(localSearchQuery);
+      }
+      onSearchChange(localSearchQuery);
+    }, 300);
+
+    return () => clearTimeout(timeoutId);
+  }, [localSearchQuery, onSearchChange]);
+
+  // Handle input change
   const handleInputChange = e => {
     const value = e.target.value;
     setLocalSearchQuery(value);
-    debouncedSearch(value);
   };
 
   // Handle clear with immediate update
@@ -190,6 +184,15 @@ const SearchAndFilter = ({
       </Stack>
     </Box>
   );
+};
+
+SearchAndFilter.propTypes = {
+  searchQuery: PropTypes.string.isRequired,
+  onSearchChange: PropTypes.func.isRequired,
+  selectedLabels: PropTypes.arrayOf(PropTypes.string),
+  onLabelsChange: PropTypes.func,
+  availableLabels: PropTypes.arrayOf(PropTypes.string),
+  specialLabels: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default SearchAndFilter;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   Box,
   Typography,
@@ -110,8 +110,6 @@ const EnhancedMarkdownContent = ({
   showTOC = true,
   showWordCount = true,
 }) => {
-  const [headingIds, setHeadingIds] = useState(new Set());
-
   // Generate word count and reading time
   const { wordCount, readingTime } = useMemo(() => {
     const words = content.split(/\s+/).length;

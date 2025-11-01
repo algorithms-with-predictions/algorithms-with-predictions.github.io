@@ -47,6 +47,7 @@ export const trackSimpleEvent = async (eventType, data = {}) => {
     });
   } catch (error) {
     // Fail silently to not break the site
+    // eslint-disable-next-line no-console
     console.debug('Analytics request failed:', error);
   }
 };
@@ -69,6 +70,7 @@ export const initGoatCounter = () => {
 // Opt-out function for users who don't want tracking
 export const optOutAnalytics = () => {
   localStorage.setItem('analytics_opt_out', 'true');
+  // eslint-disable-next-line no-console
   console.log('Analytics tracking disabled');
 };
 

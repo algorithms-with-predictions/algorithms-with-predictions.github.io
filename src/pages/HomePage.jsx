@@ -13,6 +13,8 @@ const HomePage = () => {
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
+        // Log error to console for debugging
+        // eslint-disable-next-line no-console
         console.error('Failed to load papers data:', error);
       } finally {
         setLoading(false);

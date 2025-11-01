@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Typography, Box } from '@mui/material';
+import { Container, Box } from '@mui/material';
 import EnhancedMarkdownContent from '../components/EnhancedMarkdownContent.jsx';
 import { loadMarkdownFile } from '../utils/markdownLoader.js';
 
