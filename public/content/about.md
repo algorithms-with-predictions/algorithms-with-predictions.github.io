@@ -1,57 +1,18 @@
 ---
-title: 'About'
-slug: '/about'
+title: "About"
+slug: "/about"
 ---
 
 ## About
 
-This website aims to collect and organize research papers on **algorithms with predictions** (also known as **algorithms with machine learning advice** or **learning-augmented algorithms**).
+The goal of this project is to provide a comprehensive overview of the current state of research on Algorithms with Predictions and to curate links to further relevant materials. This resource is intended to help new researchers quickly orient themselves in the field while also serving as a valuable reference for the broader research community to organize and cluster the rapidly growing body of results and publications in this area.
 
-### What are Algorithms with Predictions?
+This project and its webpage are led and managed by [Alexander Lindermayr](https://www.alexanderlindermayr.com) and [Nicole Megow](https://www.uni-bremen.de/en/cslog/nmegow).
 
-Algorithms with predictions represent a fascinating intersection of theoretical computer science and machine learning. These algorithms leverage machine learning predictions to improve their performance beyond worst-case guarantees, while maintaining robustness when predictions are inaccurate.
+It is an [open source initiative](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io), and contributions from the community are highly encouraged, such as submitting references or links, suggesting improvements to presentation and organization, or sharing ideas for enhancing the platform. If you have any questions or suggestions, please don’t hesitate to reach out directly to [Alexander and Nicole](mailto:alps-web@uni-bremen.de).
 
-Key characteristics include:
+Further contributors: [Bertrand Simon](https://cclab.pages.in2p3.fr/bertrand.simon/), [Adam Polak](https://adampolak.github.io/), [Niklas Hahn](https://webia.lip6.fr/~nhahn/index.html), [Christoph Dürr](https://webia.lip6.fr/~durrc/), [Ola Svensson](https://theory.epfl.ch/osven/)
 
-- **Consistency**: Good performance when predictions are accurate
-- **Robustness**: Reasonable performance when predictions are wrong  
-- **Smoothness**: Performance degrades gracefully with prediction quality
+Fortunately, the idea of this project has been picked up by other communities. The following forks of this project exist.
 
-### Research Areas
-
-This field spans multiple domains of algorithmic research:
-
-- **Online Algorithms**: Making decisions without knowing future inputs
-- **Approximation Algorithms**: Finding near-optimal solutions efficiently
-- **Streaming Algorithms**: Processing data with limited memory
-- **Data Structures**: Optimizing access patterns with predicted queries
-- **Scheduling**: Improving job scheduling with workload predictions
-- **Network Problems**: Route optimization with traffic forecasts
-
-### Community
-
-The algorithms with predictions community has grown rapidly, with dedicated workshops, conference sessions, and research groups worldwide. This website serves as a central hub for:
-
-- Paper discovery and organization
-- Research trend identification  
-- Community building
-- Educational resources
-
-### Contact
-
-For questions, suggestions, or contributions to this website:
-
-- Email: [alps-web@uni-bremen.de](mailto:alps-web@uni-bremen.de)
-- GitHub: [algorithms-with-predictions organization](https://github.com/algorithms-with-predictions)
-
-### Technical Details
-
-This website is built with:
-
-- **React** and **Vite** for fast development and building
-- **Material-UI** for consistent design
-- **YAML** files for paper data management
-- **Markdown** for content pages
-- **GitHub Pages** for hosting
-
-All code is open source and contributions are welcome!
+- [Satisfiability for Mathematics](https://bsubercaseaux.github.io/sat-for-math/) created and maintained by [Bernardo Subercaseaux](https://bsubercaseaux.github.io/)

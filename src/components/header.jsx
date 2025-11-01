@@ -67,6 +67,7 @@ const Header = () => {
                 borderRadius: 2,
                 color: 'white !important',
                 textDecoration: 'none !important',
+                fontSize: '1.1rem',
                 '&:hover': {
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
                   transform: 'translateY(-1px)',
@@ -130,7 +131,7 @@ const Header = () => {
                   '&:visited': {
                     color: 'white !important',
                   },
-                  fontSize: '0.95rem',
+                  fontSize: '1rem',
                   fontWeight: 500,
                 }}
               >

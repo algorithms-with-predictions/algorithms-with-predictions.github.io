@@ -8,7 +8,7 @@ import {
   Tooltip,
   Chip,
 } from '@mui/material';
-import { Download } from '@mui/icons-material';
+import { Download, Clear } from '@mui/icons-material';
 import * as React from 'react';
 import { useState, useMemo } from 'react';
 import PropTypes from 'prop-types';
@@ -126,6 +126,11 @@ const PaperList = ({ data }) => {
     }
   };
 
+  const handleClearFilters = () => {
+    setSearchQuery('');
+    setSelLabels([]);
+  };
+
   const labelColor = label => {
     if (TYPE_LABELS.includes(label)) {
       return 'typeLabels';
@@ -200,62 +205,48 @@ const PaperList = ({ data }) => {
               )}
             </Typography>
 
-            {/* Export BibTeX button */}
-            {papersWithBibtex > 0 && (
-              <Tooltip
-                title={`Export BibTeX for ${papersWithBibtex} papers with bibliography`}
-              >
-                <IconButton
-                  size="small"
-                  onClick={handleExportBibtex}
-                  sx={{
-                    color: 'primary.main',
-                    '&:hover': {
-                      bgcolor: 'primary.light',
-                      color: 'primary.contrastText',
-                    },
-                  }}
-                >
-                  <Download fontSize="small" />
-                </IconButton>
-              </Tooltip>
-            )}
-          </Stack>
-
-          {/* Active filters display */}
-          {(searchQuery || selLabels.length > 0) && (
-            <Stack
-              direction="row"
-              spacing={0.5}
-              flexWrap="wrap"
-              sx={{ gap: 0.5, mb: 1 }}
-            >
-              {searchQuery && (
-                <Chip
-                  label={`"${searchQuery}"`}
-                  onDelete={() => setSearchQuery('')}
-                  size="small"
-                  color="primary"
-                  variant="outlined"
-                  sx={{ height: 24, borderRadius: 2 }}
-                />
+            <Stack direction="row" spacing={0.5}>
+              {/* Clear filters button */}
+              {(searchQuery || selLabels.length > 0) && (
+                <Tooltip title="Clear all filters">
+                  <IconButton
+                    size="small"
+                    onClick={handleClearFilters}
+                    sx={{
+                      color: 'secondary.main',
+                      '&:hover': {
+                        bgcolor: 'secondary.light',
+                        color: 'secondary.contrastText',
+                      },
+                    }}
+                  >
+                    <Clear fontSize="small" />
+                  </IconButton>
+                </Tooltip>
               )}
 
-              {selLabels.map(label => (
-                <Chip
-                  key={label}
-                  label={label}
-                  onDelete={() =>
-                    setSelLabels(prev => prev.filter(l => l !== label))
-                  }
-                  size="small"
-                  color={labelColor(label)}
-                  variant="outlined"
-                  sx={{ height: 24, borderRadius: 2 }}
-                />
-              ))}
+              {/* Export BibTeX button */}
+              {papersWithBibtex > 0 && (
+                <Tooltip
+                  title={`Export BibTeX for ${papersWithBibtex} papers with bibliography`}
+                >
+                  <IconButton
+                    size="small"
+                    onClick={handleExportBibtex}
+                    sx={{
+                      color: 'primary.main',
+                      '&:hover': {
+                        bgcolor: 'primary.light',
+                        color: 'primary.contrastText',
+                      },
+                    }}
+                  >
+                    <Download fontSize="small" />
+                  </IconButton>
+                </Tooltip>
+              )}
             </Stack>
-          )}
+          </Stack>
         </Box>
       </Fade>
 
