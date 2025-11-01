@@ -75,6 +75,28 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
     paper.publications?.find(pub => pub.name !== 'arXiv') ||
     paper.publications?.[0];
 
+  // Sort labels: type labels (orange) first, then regular labels (blue)
+  const sortedLabels = React.useMemo(() => {
+    if (!paper.labels) return [];
+    return [...paper.labels].sort((a, b) => {
+      const aIsType = TYPE_LABELS.includes(a);
+      const bIsType = TYPE_LABELS.includes(b);
+      const aIsPrior = a === PRIOR_LABEL;
+      const bIsPrior = b === PRIOR_LABEL;
+
+      // Type labels (orange) come first
+      if (aIsType && !bIsType) return -1;
+      if (!aIsType && bIsType) return 1;
+
+      // Prior label (gray) comes last
+      if (aIsPrior && !bIsPrior) return 1;
+      if (!aIsPrior && bIsPrior) return -1;
+
+      // Otherwise maintain original order
+      return 0;
+    });
+  }, [paper.labels]);
+
   // Track paper view when card is rendered
   React.useEffect(() => {
     trackPaperView(
@@ -136,7 +158,7 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
                 </PaperTitle>
 
                 {/* Topic labels inline with title on desktop */}
-                {paper.labels?.map(label => {
+                {sortedLabels.map(label => {
                   const isSelected = selectedLabels.includes(label);
                   const labelColor = getLabelColor(label);
                   return (
@@ -212,7 +234,7 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
                   sx={{ flexWrap: 'wrap', gap: 0.5 }}
                 >
                   {/* Topic labels */}
-                  {paper.labels?.map(label => {
+                  {sortedLabels.map(label => {
                     const isSelected = selectedLabels.includes(label);
                     const labelColor = getLabelColor(label);
                     return (
