@@ -1,0 +1,14 @@
+authors:
+  Nate Veldt, Thomas Stanley, Benjamin W. Priest, Trevor Steil, Keita Iwabuchi,
+  T. S. Jayram, Geoffrey Sanders
+labels:
+  - online
+publications:
+  - bibtex: null
+    day: null
+    dblp_key: journals/corr/abs-2502-12993
+    month: null
+    name: CoRR
+    url: https://dblp.org/rec/journals/corr/abs-2502-12993
+    year: 2025
+title: Approximate Tree Completion and Learning-Augmented Algorithms for Metric Minimum Spanning Trees
