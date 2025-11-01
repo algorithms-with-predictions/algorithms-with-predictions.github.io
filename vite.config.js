@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/algorithms-with-predictions.github.io/',
+  base: '/',
   build: {
     outDir: 'dist',
     sourcemap: true,
