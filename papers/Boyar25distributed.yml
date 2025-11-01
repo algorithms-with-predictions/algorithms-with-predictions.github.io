@@ -9,5 +9,12 @@ publications:
   year: 2025
   month: 1
   day: 9
-  dblp_key: null
-  bibtex: null
+- name: PODC
+  url: https://doi.org/10.1145/3732772.3733530
+  year: 2025
+  dblp_key: conf/podc/BoyarEL25
+  bibtex: "@inproceedings{DBLP:conf/podc/BoyarEL25,\n  author       = {Joan Boyar\
+    \ and\n                  Faith Ellen and\n                  Kim S. Larsen},\n\
+    \  title        = {Brief Announcement: Distributed Graph Algorithms with Predictions},\n\
+    \  booktitle    = {{PODC}},\n  pages        = {322--325},\n  publisher    = {{ACM}},\n\
+    \  year         = {2025}\n}\n\n"

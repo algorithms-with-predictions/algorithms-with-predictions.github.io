@@ -7,20 +7,15 @@ publications:
 - name: AISTATS
   url: https://proceedings.mlr.press/v206/drygala23a.html
   year: 2023
-  month: null
-  day: null
   dblp_key: conf/aistats/DrygalaNS23
-  bibtex: |+
-    @inproceedings{DBLP:conf/aistats/DrygalaNS23,
-      author       = {Marina Drygala and
-                      Sai Ganesh Nagarajan and
-                      Ola Svensson},
-      title        = {Online Algorithms with Costly Predictions},
-      booktitle    = {{AISTATS}},
-      series       = {Proceedings of Machine Learning Research},
-      volume       = {206},
-      pages        = {8078--8101},
-      publisher    = {{PMLR}},
-      year         = {2023}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/aistats/DrygalaNS23,\n  author       = {Marina\
+    \ Drygala and\n                  Sai Ganesh Nagarajan and\n                  Ola\
+    \ Svensson},\n  title        = {Online Algorithms with Costly Predictions},\n\
+    \  booktitle    = {{AISTATS}},\n  series       = {Proceedings of Machine Learning\
+    \ Research},\n  volume       = {206},\n  pages        = {8078--8101},\n  publisher\
+    \    = {{PMLR}},\n  year         = {2023}\n}\n\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2205.03921
+  year: 2022
+  month: 5
+  day: 8

@@ -1,12 +1,14 @@
+title: Learning-Augmented Algorithms for Boolean Satisfiability
 authors: Idan Attias, Xing Gao, Lev Reyzin
 labels:
 - online
 publications:
-- bibtex: null
-  day: null
-  dblp_key: journals/corr/abs-2505-06146
-  month: null
-  name: CoRR
+- name: CoRR
   url: https://dblp.org/rec/journals/corr/abs-2505-06146
   year: 2025
-title: Learning-Augmented Algorithms for Boolean Satisfiability
+  dblp_key: journals/corr/abs-2505-06146
+- name: arXiv
+  url: https://arxiv.org/abs/2505.06146
+  year: 2025
+  month: 5
+  day: 9

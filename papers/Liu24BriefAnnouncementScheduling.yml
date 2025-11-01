@@ -1,13 +1,15 @@
+title: 'Scheduling Jobs for Minimum Span: Improved Bounds and Learning-Augmented Algorithms'
 authors: Mozhengfu Liu, Xueyan Tang
 labels:
-  - online
-  - scheduling
+- online
+- scheduling
 publications:
-  - bibtex: null
-    day: null
-    dblp_key: conf/spaa/LiuT24
-    month: null
-    name: SPAA
-    url: https://dblp.org/rec/conf/spaa/LiuT24
-    year: 2024
-title: "Scheduling Jobs for Minimum Span: Improved Bounds and Learning-Augmented Algorithms"
+- name: SPAA
+  url: https://dblp.org/rec/conf/spaa/LiuT24
+  year: 2024
+  dblp_key: conf/spaa/LiuT24
+  bibtex: "@inproceedings{DBLP:conf/spaa/LiuT24,\n  author       = {Mozhengfu Liu\
+    \ and\n                  Xueyan Tang},\n  title        = {Brief Announcement:\
+    \ Scheduling Jobs for Minimum Span: Improved Bounds\n                  and Learning-Augmented\
+    \ Algorithms},\n  booktitle    = {{SPAA}},\n  pages        = {141--143},\n  publisher\
+    \    = {{ACM}},\n  year         = {2024}\n}\n\n"

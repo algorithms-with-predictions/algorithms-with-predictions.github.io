@@ -1,13 +1,20 @@
 title: Approximation algorithms for combinatorial optimization with predictions
 authors: Antonios Antoniadis, Marek Eliás, Adam Polak, Moritz Venzin
 labels:
-  - approximation
-  - online
+- approximation
+- online
 publications:
-  - name: ICLR
-    url: https://dblp.org/rec/conf/iclr/000100V25
-    year: 2025
-    month: null
-    day: null
-    dblp_key: conf/iclr/000100V25
-    bibtex: null
+- name: ICLR
+  url: https://dblp.org/rec/conf/iclr/000100V25
+  year: 2025
+  dblp_key: conf/iclr/000100V25
+  bibtex: "@inproceedings{DBLP:conf/iclr/000100V25,\n  author       = {Antonios Antoniadis\
+    \ and\n                  Marek Eli{\\'{a}}s and\n                  Adam Polak\
+    \ and\n                  Moritz Venzin},\n  title        = {Approximation algorithms\
+    \ for combinatorial optimization with predictions},\n  booktitle    = {{ICLR}},\n\
+    \  publisher    = {OpenReview.net},\n  year         = {2025}\n}\n\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2411.16600
+  year: 2024
+  month: 11
+  day: 25
