@@ -44,11 +44,11 @@ export default [
       ...reactHooks.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'warn',
-      
+
       // General rules
       'no-unused-vars': 'warn',
       'no-console': 'warn',
-      
+
       // React Hooks rules
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
