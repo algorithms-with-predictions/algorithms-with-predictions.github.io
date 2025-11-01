@@ -8,6 +8,7 @@ const __dirname = dirname(__filename);
 
 const paper_dir = join(__dirname, '..', 'papers');
 const outputJSON = join(__dirname, '..', 'papers.json');
+const publicJSON = join(__dirname, '..', 'public', 'papers.json');
 
 console.log('📚 Processing papers from:', paper_dir);
 
@@ -19,5 +20,13 @@ const paper_objs = papers.map(paper => {
   return yaml.load(fs.readFileSync(filePath, { encoding: 'utf-8' }));
 });
 
-fs.writeFileSync(outputJSON, JSON.stringify(paper_objs, null, 2));
-console.log('✅ Generated papers.json successfully!');
+const jsonContent = JSON.stringify(paper_objs, null, 2);
+
+// Write to root (for development/legacy compatibility)
+fs.writeFileSync(outputJSON, jsonContent);
+// Write to public folder (for production build)
+fs.writeFileSync(publicJSON, jsonContent);
+
+console.log(
+  '✅ Generated papers.json successfully in both root and public folders!'
+);

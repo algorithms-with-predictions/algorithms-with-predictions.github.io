@@ -6,7 +6,6 @@ yarn-error.log*
 
 # Build outputs
 .cache/
-public/
 dist/
 build/
 
@@ -19,6 +18,7 @@ build/
 
 # Generated files
 papers.json
+public/papers.json
 *.tsbuildinfo
 
 # Logs
