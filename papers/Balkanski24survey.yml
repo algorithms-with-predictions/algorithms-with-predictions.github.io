@@ -7,19 +7,7 @@ publications:
 - name: SIGecom Exch.
   url: https://doi.org/10.1145/3699814.3699821
   year: 2023
-  month: null
-  day: null
   dblp_key: journals/sigecom/BalkanskiGT23
-  bibtex: |+
-    @article{DBLP:journals/sigecom/BalkanskiGT23,
-      author       = {Eric Balkanski and
-                      Vasilis Gkatzelis and
-                      Xizhi Tan},
-      title        = {Mechanism Design with Predictions: An Annotated Reading List},
-      journal      = {SIGecom Exch.},
-      volume       = {21},
-      number       = {1},
-      pages        = {54--57},
-      year         = {2023}
-    }
-
+  bibtex: "@article{DBLP:journals/sigecom/BalkanskiGT23,\n  author       = {Eric Balkanski and\n  Vasilis Gkatzelis and\n\
+    \  Xizhi Tan},\n  title        = {Mechanism Design with Predictions: An Annotated Reading List},\n  journal      = {SIGecom\
+    \ Exch.},\n  volume       = {21},\n  number       = {1},\n  pages        = {54--57},\n  year         = {2023}\n}\n"

@@ -1,13 +1,11 @@
 title: Lazy Lagrangians with Predictions for Online Learning
 authors: Anderson, Iosifidis, Leith
 labels:
-- online
 - learning
+- online
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2201.02890
   year: 2022
   month: 1
   day: 8
-  dblp_key: null
-  bibtex: null

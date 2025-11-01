@@ -3,27 +3,15 @@ authors: Angelopoulos, Dürr, Elenter, Lefki
 labels:
 - online
 publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/11c6625b0481a7d5625831369f6b7c82-Abstract-Conference.html
+  year: 2024
+  dblp_key: conf/nips/Elenter0DL24
+  bibtex: "@inproceedings{DBLP:conf/nips/Elenter0DL24,\n  author       = {Alex Elenter and\n  Spyros Angelopoulos and\n  Christoph\
+    \ D{\"{u}}rr and\n  Yanni Lefki},\n  title        = {Overcoming Brittleness in Pareto-Optimal Learning Augmented Algorithms},\n\
+    \  booktitle    = {NeurIPS},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2408.04122
   year: 2024
   month: 8
   day: 7
-  dblp_key: null
-  bibtex: null
-- name: NeurIPS
-  url: http://papers.nips.cc/paper_files/paper/2024/hash/11c6625b0481a7d5625831369f6b7c82-Abstract-Conference.html
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/nips/Elenter0DL24
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/Elenter0DL24,
-      author       = {Alex Elenter and
-                      Spyros Angelopoulos and
-                      Christoph D{\"{u}}rr and
-                      Yanni Lefki},
-      title        = {Overcoming Brittleness in Pareto-Optimal Learning Augmented Algorithms},
-      booktitle    = {NeurIPS},
-      year         = {2024}
-    }
-

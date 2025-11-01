@@ -1,25 +1,13 @@
 title: Online Facility Location with Multiple Advice
 authors: Almanza, Chierichetti, Lattanzi, Panconesi, Re
 labels:
-- online
 - network design
+- online
 publications:
 - name: NeurIPS
   url: https://proceedings.neurips.cc/paper/2021/file/250473494b245120a7eaf8b2e6b1f17c-Paper.pdf
   year: 2021
-  month: null
-  day: null
   dblp_key: conf/nips/AlmanzaCLPR21
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/AlmanzaCLPR21,
-      author       = {Matteo Almanza and
-                      Flavio Chierichetti and
-                      Silvio Lattanzi and
-                      Alessandro Panconesi and
-                      Giuseppe Re},
-      title        = {Online Facility Location with Multiple Advice},
-      booktitle    = {NeurIPS},
-      pages        = {4661--4673},
-      year         = {2021}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/nips/AlmanzaCLPR21,\n  author       = {Matteo Almanza and\n  Flavio Chierichetti and\n\
+    \  Silvio Lattanzi and\n  Alessandro Panconesi and\n  Giuseppe Re},\n  title        = {Online Facility Location with Multiple\
+    \ Advice},\n  booktitle    = {NeurIPS},\n  pages        = {4661--4673},\n  year         = {2021}\n}\n"

@@ -1,39 +1,21 @@
 title: Online Algorithms for Weighted Paging with Predictions
 authors: Jiang, Panigrahi, Su
 labels:
-- online
 - caching / paging
+- online
 publications:
 - name: ICALP
   url: https://drops.dagstuhl.de/opus/volltexte/2020/12476/pdf/LIPIcs-ICALP-2020-69.pdf
   year: 2020
-  month: null
-  day: null
-  dblp_key: null
-  bibtex: null
+- name: ACM Trans. Algorithms
+  url: https://doi.org/10.1145/3548774
+  year: 2022
+  dblp_key: journals/talg/JiangPS22
+  bibtex: "@article{DBLP:journals/talg/JiangPS22,\n  author       = {Zhihao Jiang and\n  Debmalya Panigrahi and\n  Kevin Sun},\n\
+    \  title        = {Online Algorithms for Weighted Paging with Predictions},\n  journal      = {{ACM} Trans. Algorithms},\n\
+    \  volume       = {18},\n  number       = {4},\n  pages        = {39:1--39:27},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2006.09509
   year: 2020
   month: 6
   day: 16
-  dblp_key: null
-  bibtex: null
-- name: ACM Trans. Algorithms
-  url: https://doi.org/10.1145/3548774
-  year: 2022
-  month: null
-  day: null
-  dblp_key: journals/talg/JiangPS22
-  bibtex: |+
-    @article{DBLP:journals/talg/JiangPS22,
-      author       = {Zhihao Jiang and
-                      Debmalya Panigrahi and
-                      Kevin Sun},
-      title        = {Online Algorithms for Weighted Paging with Predictions},
-      journal      = {{ACM} Trans. Algorithms},
-      volume       = {18},
-      number       = {4},
-      pages        = {39:1--39:27},
-      year         = {2022}
-    }
-

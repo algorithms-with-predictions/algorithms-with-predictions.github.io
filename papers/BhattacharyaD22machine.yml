@@ -4,22 +4,18 @@ labels:
 - online
 - rent-or-buy
 publications:
-- name: WALCOM
-  url: https://link.springer.com/chapter/10.1007/978-3-030-96731-4_18
-  year: 2022
-  dblp_key: conf/walcom/BhattacharyaD22
-  bibtex: "@inproceedings{DBLP:conf/walcom/BhattacharyaD22,\n  author       = {Arghya\
-    \ Bhattacharya and\n                  Rathish Das},\n  title        = {Machine\
-    \ Learning Advised Ski Rental Problem with a Discount},\n  booktitle    = {{WALCOM}},\n\
-    \  series       = {Lecture Notes in Computer Science},\n  volume       = {13174},\n\
-    \  pages        = {213--224},\n  publisher    = {Springer},\n  year         =\
-    \ {2022}\n}\n\n"
 - name: Theor. Comput. Sci.
   url: https://doi.org/10.1016/j.tcs.2022.10.006
   year: 2022
   dblp_key: journals/tcs/BhattacharyaD22
-  bibtex: "@article{DBLP:journals/tcs/BhattacharyaD22,\n  author       = {Arghya Bhattacharya\
-    \ and\n                  Rathish Das},\n  title        = {Machine learning advised\
-    \ algorithms for the ski rental problem with\n                  a discount},\n\
-    \  journal      = {Theor. Comput. Sci.},\n  volume       = {938},\n  pages   \
-    \     = {39--49},\n  year         = {2022}\n}\n\n"
+  bibtex: "@article{DBLP:journals/tcs/BhattacharyaD22,\n  author       = {Arghya Bhattacharya and\n  Rathish Das},\n  title\
+    \        = {Machine learning advised algorithms for the ski rental problem with\n  a discount},\n  journal      = {Theor.\
+    \ Comput. Sci.},\n  volume       = {938},\n  pages        = {39--49},\n  year         = {2022}\n}\n"
+- name: WALCOM
+  url: https://link.springer.com/chapter/10.1007/978-3-030-96731-4_18
+  year: 2022
+  dblp_key: conf/walcom/BhattacharyaD22
+  bibtex: "@inproceedings{DBLP:conf/walcom/BhattacharyaD22,\n  author       = {Arghya Bhattacharya and\n  Rathish Das},\n\
+    \  title        = {Machine Learning Advised Ski Rental Problem with a Discount},\n  booktitle    = {{WALCOM}},\n  series\
+    \       = {Lecture Notes in Computer Science},\n  volume       = {13174},\n  pages        = {213--224},\n  publisher \
+    \   = {Springer},\n  year         = {2022}\n}\n"

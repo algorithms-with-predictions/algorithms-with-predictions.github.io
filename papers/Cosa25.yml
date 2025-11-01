@@ -1,13 +1,11 @@
 title: Learning-Augmented Algorithms for MTS with Bandit Access to Multiple Predictors
 authors: Coşa, Eliáš
 labels:
-- online
 - k-server / MTS
+- online
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2506.05479
   year: 2025
   month: 6
   day: 5
-  dblp_key: null
-  bibtex: null

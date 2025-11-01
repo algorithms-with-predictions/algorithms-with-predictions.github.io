@@ -1,34 +1,22 @@
 title: 'To Trust or Not to Trust: Assignment Mechanisms with Predictions in the Private Graph Model'
 authors: Colini-Baldeschi, Klumper, Schäfer, Tsikiridis
 labels:
+- allocation / matching
 - game theory / mechanism design
 - graph problems
-- allocation / matching
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2403.03725
-  year: 2024
-  month: 3
-  day: 6
-  dblp_key: null
-  bibtex: null
 - name: EC
   url: https://dl.acm.org/doi/10.1145/3670865.3673578
   year: 2024
   month: 12
   day: 17
   dblp_key: conf/sigecom/Colini-Baldeschi24
-  bibtex: |+
-    @inproceedings{DBLP:conf/sigecom/Colini-Baldeschi24,
-      author       = {Riccardo Colini{-}Baldeschi and
-                      Sophie Klumper and
-                      Guido Sch{\"{a}}fer and
-                      Artem Tsikiridis},
-      title        = {To Trust or Not to Trust: Assignment Mechanisms with Predictions in
-                      the Private Graph Model},
-      booktitle    = {{EC}},
-      pages        = {1134--1154},
-      publisher    = {{ACM}},
-      year         = {2024}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/sigecom/Colini-Baldeschi24,\n  author       = {Riccardo Colini{-}Baldeschi and\n  Sophie\
+    \ Klumper and\n  Guido Sch{\"{a}}fer and\n  Artem Tsikiridis},\n  title        = {To Trust or Not to Trust: Assignment\
+    \ Mechanisms with Predictions in\n  the Private Graph Model},\n  booktitle    = {{EC}},\n  pages        = {1134--1154},\n\
+    \  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2403.03725
+  year: 2024
+  month: 3
+  day: 6

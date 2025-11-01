@@ -3,26 +3,15 @@ authors: Balcan, Prasad, Sandholm
 labels:
 - game theory / mechanism design
 publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2023/hash/8039ca1e9860daab3a79e45d010d5398-Abstract-Conference.html
+  year: 2023
+  dblp_key: conf/nips/PrasadBS23
+  bibtex: "@inproceedings{DBLP:conf/nips/PrasadBS23,\n  author       = {Siddharth Prasad and\n  Maria{-}Florina Balcan and\n\
+    \  Tuomas Sandholm},\n  title        = {Bicriteria Multidimensional Mechanism Design with Side Information},\n  booktitle\
+    \    = {NeurIPS},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2302.14234
   year: 2023
   month: 2
   day: 28
-  dblp_key: null
-  bibtex: null
-- name: NeurIPS
-  url: http://papers.nips.cc/paper_files/paper/2023/hash/8039ca1e9860daab3a79e45d010d5398-Abstract-Conference.html
-  year: 2023
-  month: null
-  day: null
-  dblp_key: conf/nips/PrasadBS23
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/PrasadBS23,
-      author       = {Siddharth Prasad and
-                      Maria{-}Florina Balcan and
-                      Tuomas Sandholm},
-      title        = {Bicriteria Multidimensional Mechanism Design with Side Information},
-      booktitle    = {NeurIPS},
-      year         = {2023}
-    }
-

@@ -2,34 +2,19 @@ title: Minimalistic Predictions to Schedule Jobs with Online Precedence Constrai
 authors: Lassota, Lindermayr, Megow, Schlöter
 labels:
 - online
-- scheduling
 - parsimonious / succinct
+- scheduling
 publications:
+- name: ICML
+  url: https://proceedings.mlr.press/v202/lassota23a.html
+  year: 2023
+  dblp_key: conf/icml/LassotaLMS23
+  bibtex: "@inproceedings{DBLP:conf/icml/LassotaLMS23,\n  author       = {Alexandra Anna Lassota and\n  Alexander Lindermayr\
+    \ and\n  Nicole Megow and\n  Jens Schl{\"{o}}ter},\n  title        = {Minimalistic Predictions to Schedule Jobs with Online\
+    \ Precedence Constraints},\n  booktitle    = {{ICML}},\n  series       = {Proceedings of Machine Learning Research},\n\
+    \  volume       = {202},\n  pages        = {18563--18583},\n  publisher    = {{PMLR}},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2301.12863
   year: 2023
   month: 1
   day: 30
-  dblp_key: null
-  bibtex: null
-- name: ICML
-  url: https://proceedings.mlr.press/v202/lassota23a.html
-  year: 2023
-  month: null
-  day: null
-  dblp_key: conf/icml/LassotaLMS23
-  bibtex: |+
-    @inproceedings{DBLP:conf/icml/LassotaLMS23,
-      author       = {Alexandra Anna Lassota and
-                      Alexander Lindermayr and
-                      Nicole Megow and
-                      Jens Schl{\"{o}}ter},
-      title        = {Minimalistic Predictions to Schedule Jobs with Online Precedence Constraints},
-      booktitle    = {{ICML}},
-      series       = {Proceedings of Machine Learning Research},
-      volume       = {202},
-      pages        = {18563--18583},
-      publisher    = {{PMLR}},
-      year         = {2023}
-    }
-

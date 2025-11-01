@@ -6,19 +6,7 @@ publications:
 - name: ICLR
   url: https://openreview.net/forum?id=HyxJ1xBYDH
   year: 2020
-  month: null
-  day: null
   dblp_key: conf/iclr/JiangLLRW20
-  bibtex: |+
-    @inproceedings{DBLP:conf/iclr/JiangLLRW20,
-      author       = {Tanqiu Jiang and
-                      Yi Li and
-                      Honghao Lin and
-                      Yisong Ruan and
-                      David P. Woodruff},
-      title        = {Learning-Augmented Data Stream Algorithms},
-      booktitle    = {{ICLR}},
-      publisher    = {OpenReview.net},
-      year         = {2020}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/iclr/JiangLLRW20,\n  author       = {Tanqiu Jiang and\n  Yi Li and\n  Honghao Lin and\n\
+    \  Yisong Ruan and\n  David P. Woodruff},\n  title        = {Learning-Augmented Data Stream Algorithms},\n  booktitle\
+    \    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year         = {2020}\n}\n"

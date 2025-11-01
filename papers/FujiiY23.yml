@@ -4,28 +4,15 @@ labels:
 - online
 - secretary
 publications:
+- name: Math. Oper. Res.
+  url: https://doi.org/10.1287/moor.2022.0031
+  year: 2024
+  dblp_key: journals/mor/FujiiY24
+  bibtex: "@article{DBLP:journals/mor/FujiiY24,\n  author       = {Kaito Fujii and\n  Yuichi Yoshida},\n  title        = {The\
+    \ Secretary Problem with Predictions},\n  journal      = {Math. Oper. Res.},\n  volume       = {49},\n  number       =\
+    \ {2},\n  pages        = {1241--1262},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2306.08340
   year: 2023
   month: 6
   day: 14
-  dblp_key: null
-  bibtex: null
-- name: Math. Oper. Res.
-  url: https://doi.org/10.1287/moor.2022.0031
-  year: 2024
-  month: null
-  day: null
-  dblp_key: journals/mor/FujiiY24
-  bibtex: |+
-    @article{DBLP:journals/mor/FujiiY24,
-      author       = {Kaito Fujii and
-                      Yuichi Yoshida},
-      title        = {The Secretary Problem with Predictions},
-      journal      = {Math. Oper. Res.},
-      volume       = {49},
-      number       = {2},
-      pages        = {1241--1262},
-      year         = {2024}
-    }
-

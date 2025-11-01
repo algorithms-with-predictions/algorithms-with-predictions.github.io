@@ -1,33 +1,20 @@
-title: 'Rethinking Warm-Starts with Predictions: Learning Predictions Close to Sets of Optimal Solutions for Faster L-/L-Convex Function Minimization'
+title: 'Rethinking Warm-Starts with Predictions: Learning Predictions Close to Sets of Optimal Solutions for Faster L-/L-Convex
+  Function Minimization'
 authors: Sakaue, Oki
 labels:
 - running time
 publications:
+- name: ICML
+  url: https://proceedings.mlr.press/v202/sakaue23a.html
+  year: 2023
+  dblp_key: conf/icml/SakaueO23
+  bibtex: "@inproceedings{DBLP:conf/icml/SakaueO23,\n  author       = {Shinsaku Sakaue and\n  Taihei Oki},\n  title      \
+    \  = {Rethinking Warm-Starts with Predictions: Learning Predictions Close\n  to Sets of Optimal Solutions for Faster L-/L\\\
+    ({}^{\\mbox{{\\unicode{9838}}}}\\)-Convex\n  Function Minimization},\n  booktitle    = {{ICML}},\n  series       = {Proceedings\
+    \ of Machine Learning Research},\n  volume       = {202},\n  pages        = {29760--29776},\n  publisher    = {{PMLR}},\n\
+    \  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2302.00928
   year: 2023
   month: 1
   day: 2
-  dblp_key: null
-  bibtex: null
-- name: ICML
-  url: https://proceedings.mlr.press/v202/sakaue23a.html
-  year: 2023
-  month: null
-  day: null
-  dblp_key: conf/icml/SakaueO23
-  bibtex: |+
-    @inproceedings{DBLP:conf/icml/SakaueO23,
-      author       = {Shinsaku Sakaue and
-                      Taihei Oki},
-      title        = {Rethinking Warm-Starts with Predictions: Learning Predictions Close
-                      to Sets of Optimal Solutions for Faster L-/L\({}^{\mbox{{\unicode{9838}}}}\)-Convex
-                      Function Minimization},
-      booktitle    = {{ICML}},
-      series       = {Proceedings of Machine Learning Research},
-      volume       = {202},
-      pages        = {29760--29776},
-      publisher    = {{PMLR}},
-      year         = {2023}
-    }
-

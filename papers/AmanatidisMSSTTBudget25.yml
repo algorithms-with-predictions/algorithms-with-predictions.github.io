@@ -1,33 +1,22 @@
 title: Online Budget-Feasible Mechanism Design with Predictions
 authors: Amanatidis, Markakis, Santorinaios, Schäfer, Tsamopoulos, Tsikiridis
 labels:
-- game theory / mechanism design
 - auctions
+- game theory / mechanism design
 - secretary
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2505.24624
-  year: 2025
-  month: 5
-  day: 30
-  dblp_key: null
-  bibtex: null
 - name: SAGT
   url: https://link.springer.com/chapter/10.1007/978-3-032-03639-1_22
   year: 2025
   month: 9
   day: 1
   dblp_key: conf/sagt/AmanatidisMSSTT25.html
-  bibtex: |
-    @inproceedings{DBLP:conf/sagt/AmanatidisMSSTT25,
-      author       = {Georgios Amanatidis and
-                      Evangelos Markakis and
-                      Christodoulos Santorinaios and
-                      Guido Sch{\"{a}}fer and
-                      Panagiotis Tsamopoulos and
-                      Artem Tsikiridis},
-      title        = {Online Budget-Feasible Mechanism Design with Predictions},
-      booktitle    = {{SAGT}},
-      publisher    = {Springer},
-      year         = {2025},
-    }
+  bibtex: "@inproceedings{DBLP:conf/sagt/AmanatidisMSSTT25,\n  author       = {Georgios Amanatidis and\n  Evangelos Markakis\
+    \ and\n  Christodoulos Santorinaios and\n  Guido Sch{\"{a}}fer and\n  Panagiotis Tsamopoulos and\n  Artem Tsikiridis},\n\
+    \  title        = {Online Budget-Feasible Mechanism Design with Predictions},\n  booktitle    = {{SAGT}},\n  publisher\
+    \    = {Springer},\n  year         = {2025},\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2505.24624
+  year: 2025
+  month: 5
+  day: 30

@@ -7,18 +7,7 @@ publications:
 - name: ICAPS
   url: https://ojs.aaai.org/index.php/ICAPS/article/view/19827
   year: 2022
-  month: null
-  day: null
   dblp_key: conf/aips/Zhao0Z22
-  bibtex: |+
-    @inproceedings{DBLP:conf/aips/Zhao0Z22,
-      author       = {Tianming Zhao and
-                      Wei Li and
-                      Albert Y. Zomaya},
-      title        = {Uniform Machine Scheduling with Predictions},
-      booktitle    = {{ICAPS}},
-      pages        = {413--422},
-      publisher    = {{AAAI} Press},
-      year         = {2022}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/aips/Zhao0Z22,\n  author       = {Tianming Zhao and\n  Wei Li and\n  Albert Y. Zomaya},\n\
+    \  title        = {Uniform Machine Scheduling with Predictions},\n  booktitle    = {{ICAPS}},\n  pages        = {413--422},\n\
+    \  publisher    = {{AAAI} Press},\n  year         = {2022}\n}\n"

@@ -7,20 +7,8 @@ publications:
 - name: ISAAC
   url: https://doi.org/10.4230/LIPIcs.ISAAC.2022.16
   year: 2022
-  month: null
-  day: null
   dblp_key: conf/isaac/AzarPT22
-  bibtex: |+
-    @inproceedings{DBLP:conf/isaac/AzarPT22,
-      author       = {Yossi Azar and
-                      Eldad Peretz and
-                      Noam Touitou},
-      title        = {Distortion-Oblivious Algorithms for Scheduling on Multiple Machines},
-      booktitle    = {{ISAAC}},
-      series       = {LIPIcs},
-      volume       = {248},
-      pages        = {16:1--16:18},
-      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
-      year         = {2022}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/isaac/AzarPT22,\n  author       = {Yossi Azar and\n  Eldad Peretz and\n  Noam Touitou},\n\
+    \  title        = {Distortion-Oblivious Algorithms for Scheduling on Multiple Machines},\n  booktitle    = {{ISAAC}},\n\
+    \  series       = {LIPIcs},\n  volume       = {248},\n  pages        = {16:1--16:18},\n  publisher    = {Schloss Dagstuhl\
+    \ - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2022}\n}\n"

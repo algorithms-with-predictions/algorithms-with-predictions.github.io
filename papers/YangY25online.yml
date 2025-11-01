@@ -1,13 +1,11 @@
 title: 'Online Metric Matching: Beyond the Worst Case'
 authors: Yang, Yu
 labels:
-- online
 - allocation / matching
+- online
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2407.14785
   year: 2024
   month: 7
   day: 20
-  dblp_key: null
-  bibtex: null

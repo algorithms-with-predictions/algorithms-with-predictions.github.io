@@ -1,33 +1,20 @@
 title: Searching in Euclidean Spaces with Predictions
 authors: Cabello, Giannopoulos
 labels:
+- computational geometry
 - online
 - search
-- computational geometry
 publications:
 - name: WAOA
   url: https://link.springer.com/chapter/10.1007/978-3-031-81396-2_3
   year: 2024
-  month: null
-  day: null
   dblp_key: conf/waoa/CabelloG24
-  bibtex: |+
-    @inproceedings{DBLP:conf/waoa/CabelloG24,
-      author       = {Sergio Cabello and
-                      Panos Giannopoulos},
-      title        = {Searching in Euclidean Spaces with Predictions},
-      booktitle    = {{WAOA}},
-      series       = {Lecture Notes in Computer Science},
-      volume       = {15269},
-      pages        = {31--45},
-      publisher    = {Springer},
-      year         = {2024}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/waoa/CabelloG24,\n  author       = {Sergio Cabello and\n  Panos Giannopoulos},\n  title\
+    \        = {Searching in Euclidean Spaces with Predictions},\n  booktitle    = {{WAOA}},\n  series       = {Lecture Notes\
+    \ in Computer Science},\n  volume       = {15269},\n  pages        = {31--45},\n  publisher    = {Springer},\n  year \
+    \        = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2408.04964
   year: 2024
   month: 8
   day: 9
-  dblp_key: null
-  bibtex: null

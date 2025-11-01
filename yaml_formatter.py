@@ -250,16 +250,21 @@ class YAMLFormatter:
                 self.stats["backups_created"] += 1
 
             with open(file_path, "w", encoding="utf-8") as f:
-                yaml.dump(
-                    data,
-                    f,
-                    default_flow_style=False,
-                    allow_unicode=True,
-                    sort_keys=False,
-                    width=120,
-                    indent=2,
-                    block_seq_indent=0,  # Don't indent list items
-                )
+                # Use compatible YAML dump options
+                yaml_options = {
+                    "default_flow_style": False,
+                    "allow_unicode": True,
+                    "sort_keys": False,
+                    "width": 120,
+                    "indent": 2,
+                }
+
+                # Only add block_seq_indent if supported (newer PyYAML versions)
+                try:
+                    yaml.dump(data, f, **yaml_options, block_seq_indent=0)
+                except TypeError:
+                    # Fallback for older PyYAML versions
+                    yaml.dump(data, f, **yaml_options)
 
             return True
         except Exception as e:

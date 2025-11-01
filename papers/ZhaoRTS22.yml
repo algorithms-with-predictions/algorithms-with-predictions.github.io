@@ -7,18 +7,7 @@ publications:
 - name: RTSS
   url: https://doi.org/10.1109/RTSS55097.2022.00036
   year: 2022
-  month: null
-  day: null
   dblp_key: conf/rtss/0002LZ22
-  bibtex: |+
-    @inproceedings{DBLP:conf/rtss/0002LZ22,
-      author       = {Tianming Zhao and
-                      Wei Li and
-                      Albert Y. Zomaya},
-      title        = {Real-Time Scheduling with Predictions},
-      booktitle    = {{RTSS}},
-      pages        = {331--343},
-      publisher    = {{IEEE}},
-      year         = {2022}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/rtss/0002LZ22,\n  author       = {Tianming Zhao and\n  Wei Li and\n  Albert Y. Zomaya},\n\
+    \  title        = {Real-Time Scheduling with Predictions},\n  booktitle    = {{RTSS}},\n  pages        = {331--343},\n\
+    \  publisher    = {{IEEE}},\n  year         = {2022}\n}\n"

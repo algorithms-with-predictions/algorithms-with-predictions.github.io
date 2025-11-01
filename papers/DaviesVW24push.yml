@@ -1,29 +1,17 @@
 title: Warm-starting Push-Relabel
 authors: Davies, Vassilvitskii, Wang
 labels:
-- running time
 - graph problems
+- running time
 publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/39ec972afab01e0d8ddc6834a9d12ac1-Abstract-Conference.html
+  year: 2024
+  dblp_key: conf/nips/DaviesVW24
+  bibtex: "@inproceedings{DBLP:conf/nips/DaviesVW24,\n  author       = {Sami Davies and\n  Sergei Vassilvitskii and\n  Yuyan\
+    \ Wang},\n  title        = {Warm-starting Push-Relabel},\n  booktitle    = {NeurIPS},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2405.18568
   year: 2024
   month: 5
   day: 28
-  dblp_key: null
-  bibtex: null
-- name: NeurIPS
-  url: http://papers.nips.cc/paper_files/paper/2024/hash/39ec972afab01e0d8ddc6834a9d12ac1-Abstract-Conference.html
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/nips/DaviesVW24
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/DaviesVW24,
-      author       = {Sami Davies and
-                      Sergei Vassilvitskii and
-                      Yuyan Wang},
-      title        = {Warm-starting Push-Relabel},
-      booktitle    = {NeurIPS},
-      year         = {2024}
-    }
-

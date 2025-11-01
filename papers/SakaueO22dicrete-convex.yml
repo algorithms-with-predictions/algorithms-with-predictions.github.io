@@ -1,30 +1,19 @@
 title: Discrete-Convex-Analysis-Based Framework for Warm-Starting Algorithms with Predictions
 authors: Sakaue, Oki
 labels:
-- running time
 - allocation / matching
 - matroid
+- running time
 publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2022/hash/844e61124d9e1f58632bf0c8968ad728-Abstract-Conference.html
+  year: 2022
+  dblp_key: conf/nips/SakaueO22a
+  bibtex: "@inproceedings{DBLP:conf/nips/SakaueO22a,\n  author       = {Shinsaku Sakaue and\n  Taihei Oki},\n  title     \
+    \   = {Discrete-Convex-Analysis-Based Framework for Warm-Starting Algorithms\n  with Predictions},\n  booktitle    = {NeurIPS},\n\
+    \  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2205.09961
   year: 2022
   month: 5
   day: 20
-  dblp_key: null
-  bibtex: null
-- name: NeurIPS
-  url: http://papers.nips.cc/paper_files/paper/2022/hash/844e61124d9e1f58632bf0c8968ad728-Abstract-Conference.html
-  year: 2022
-  month: null
-  day: null
-  dblp_key: conf/nips/SakaueO22a
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/SakaueO22a,
-      author       = {Shinsaku Sakaue and
-                      Taihei Oki},
-      title        = {Discrete-Convex-Analysis-Based Framework for Warm-Starting Algorithms
-                      with Predictions},
-      booktitle    = {NeurIPS},
-      year         = {2022}
-    }
-

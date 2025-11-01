@@ -1,29 +1,18 @@
 title: Randomized Strategic Facility Location with Predictions
 authors: Balkanski, Gkatzelis, Shahkarami
 labels:
-- game theory / mechanism design
 - facility location
+- game theory / mechanism design
 publications:
+- name: NeurIPS
+  url: https://nips.cc/virtual/2024/poster/94665
+  year: 2024
+  dblp_key: conf/nips/BalkanskiGS24
+  bibtex: "@inproceedings{DBLP:conf/nips/BalkanskiGS24,\n  author       = {Eric Balkanski and\n  Vasilis Gkatzelis and\n \
+    \ Golnoosh Shahkarami},\n  title        = {Randomized Strategic Facility Location with Predictions},\n  booktitle    =\
+    \ {NeurIPS},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2409.07142
   year: 2024
   month: 9
   day: 11
-  dblp_key: null
-  bibtex: null
-- name: NeurIPS
-  url: https://nips.cc/virtual/2024/poster/94665
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/nips/BalkanskiGS24
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/BalkanskiGS24,
-      author       = {Eric Balkanski and
-                      Vasilis Gkatzelis and
-                      Golnoosh Shahkarami},
-      title        = {Randomized Strategic Facility Location with Predictions},
-      booktitle    = {NeurIPS},
-      year         = {2024}
-    }
-

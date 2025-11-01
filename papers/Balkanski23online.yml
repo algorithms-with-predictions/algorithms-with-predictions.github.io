@@ -1,32 +1,20 @@
 title: Online Mechanism Design with Predictions
 authors: Balkanski, Gkatzelis, Tan, Zhu
 labels:
-- game theory / mechanism design
 - auctions
+- game theory / mechanism design
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2310.02879
-  year: 2023
-  month: 10
-  day: 4
-  dblp_key: null
-  bibtex: null
 - name: EC
   url: https://dl.acm.org/doi/10.1145/3670865.3673478
   year: 2024
   month: 12
   day: 17
   dblp_key: conf/sigecom/BalkanskiGTZ24
-  bibtex: |+
-    @inproceedings{DBLP:conf/sigecom/BalkanskiGTZ24,
-      author       = {Eric Balkanski and
-                      Vasilis Gkatzelis and
-                      Xizhi Tan and
-                      Cherlin Zhu},
-      title        = {Online Mechanism Design with Predictions},
-      booktitle    = {{EC}},
-      pages        = {1184},
-      publisher    = {{ACM}},
-      year         = {2024}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/sigecom/BalkanskiGTZ24,\n  author       = {Eric Balkanski and\n  Vasilis Gkatzelis and\n\
+    \  Xizhi Tan and\n  Cherlin Zhu},\n  title        = {Online Mechanism Design with Predictions},\n  booktitle    = {{EC}},\n\
+    \  pages        = {1184},\n  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2310.02879
+  year: 2023
+  month: 10
+  day: 4

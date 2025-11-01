@@ -2,48 +2,25 @@ title: Permutation Predictions for Non-Clairvoyant Scheduling
 authors: Lindermayr, Megow
 labels:
 - online
-- scheduling
 - parsimonious / succinct
+- scheduling
 publications:
+- name: ACM Trans. Parallel Comput.
+  url: https://doi.org/10.1145/3711872
+  year: 2025
+  dblp_key: journals/topc/LindermayrM25
+  bibtex: "@article{DBLP:journals/topc/LindermayrM25,\n  author       = {Alexander Lindermayr and\n  Nicole Megow},\n  title\
+    \        = {Permutation Predictions for Non-Clairvoyant Scheduling},\n  journal      = {{ACM} Trans. Parallel Comput.},\n\
+    \  volume       = {12},\n  number       = {2},\n  pages        = {4:1--4:26},\n  year         = {2025}\n}\n"
+- name: SPAA
+  url: https://doi.org/10.1145/3490148.3538579
+  year: 2022
+  dblp_key: conf/spaa/LindermayrM22
+  bibtex: "@inproceedings{DBLP:conf/spaa/LindermayrM22,\n  author       = {Alexander Lindermayr and\n  Nicole Megow},\n  title\
+    \        = {Permutation Predictions for Non-Clairvoyant Scheduling},\n  booktitle    = {{SPAA}},\n  pages        = {357--368},\n\
+    \  publisher    = {{ACM}},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2202.10199
   year: 2022
   month: 2
   day: 21
-  dblp_key: null
-  bibtex: null
-- name: SPAA
-  url: https://doi.org/10.1145/3490148.3538579
-  year: 2022
-  month: null
-  day: null
-  dblp_key: conf/spaa/LindermayrM22
-  bibtex: |+
-    @inproceedings{DBLP:conf/spaa/LindermayrM22,
-      author       = {Alexander Lindermayr and
-                      Nicole Megow},
-      title        = {Permutation Predictions for Non-Clairvoyant Scheduling},
-      booktitle    = {{SPAA}},
-      pages        = {357--368},
-      publisher    = {{ACM}},
-      year         = {2022}
-    }
-
-- name: ACM Trans. Parallel Comput.
-  url: https://doi.org/10.1145/3711872
-  year: 2025
-  month: null
-  day: null
-  dblp_key: journals/topc/LindermayrM25
-  bibtex: |+
-    @article{DBLP:journals/topc/LindermayrM25,
-      author       = {Alexander Lindermayr and
-                      Nicole Megow},
-      title        = {Permutation Predictions for Non-Clairvoyant Scheduling},
-      journal      = {{ACM} Trans. Parallel Comput.},
-      volume       = {12},
-      number       = {2},
-      pages        = {4:1--4:26},
-      year         = {2025}
-    }
-

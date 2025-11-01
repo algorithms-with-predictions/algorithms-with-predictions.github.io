@@ -4,26 +4,15 @@ labels:
 - allocation / matching
 - online
 publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2022/hash/5d68a3f05ee2aae6a0fb2d94959082a0-Abstract-Conference.html
+  year: 2022
+  dblp_key: conf/nips/JinM22
+  bibtex: "@inproceedings{DBLP:conf/nips/JinM22,\n  author       = {Billy Jin and\n  Will Ma},\n  title        = {Online Bipartite\
+    \ Matching with Advice: Tight Robustness-Consistency\n  Tradeoffs for the Two-Stage Model},\n  booktitle    = {NeurIPS},\n\
+    \  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2206.11397
   year: 2022
   month: 6
   day: 22
-  dblp_key: null
-  bibtex: null
-- name: NeurIPS
-  url: http://papers.nips.cc/paper_files/paper/2022/hash/5d68a3f05ee2aae6a0fb2d94959082a0-Abstract-Conference.html
-  year: 2022
-  month: null
-  day: null
-  dblp_key: conf/nips/JinM22
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/JinM22,
-      author       = {Billy Jin and
-                      Will Ma},
-      title        = {Online Bipartite Matching with Advice: Tight Robustness-Consistency
-                      Tradeoffs for the Two-Stage Model},
-      booktitle    = {NeurIPS},
-      year         = {2022}
-    }
-

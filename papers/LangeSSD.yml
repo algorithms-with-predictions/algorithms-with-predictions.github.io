@@ -4,28 +4,13 @@ labels:
 - online
 - scheduling
 publications:
-- name: SIGMETRICS
-  url: https://dl.acm.org/doi/abs/10.1145/3491045
-  year: 2022
-  month: null
-  day: null
-  dblp_key: conf/sigmetrics/LangeNY22
-  bibtex: |+
-    @inproceedings{DBLP:conf/sigmetrics/LangeNY22,
-      author       = {Tomer Lange and
-                      Joseph (Seffi) Naor and
-                      Gala Yadgar},
-      title        = {Offline and Online Algorithms for {SSD} Management},
-      booktitle    = {{SIGMETRICS} (Abstracts)},
-      pages        = {89--90},
-      publisher    = {{ACM}},
-      year         = {2022}
-    }
-
 - name: CACM
   url: https://dl.acm.org/doi/abs/10.1145/3596205
   year: 2023
-  month: null
-  day: null
-  dblp_key: null
-  bibtex: null
+- name: SIGMETRICS
+  url: https://dl.acm.org/doi/abs/10.1145/3491045
+  year: 2022
+  dblp_key: conf/sigmetrics/LangeNY22
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/LangeNY22,\n  author       = {Tomer Lange and\n  Joseph (Seffi) Naor and\n\
+    \  Gala Yadgar},\n  title        = {Offline and Online Algorithms for {SSD} Management},\n  booktitle    = {{SIGMETRICS}\
+    \ (Abstracts)},\n  pages        = {89--90},\n  publisher    = {{ACM}},\n  year         = {2022}\n}\n"

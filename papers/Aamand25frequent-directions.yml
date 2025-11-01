@@ -3,29 +3,15 @@ authors: Aamand, Chen, Gollapudi, Silwal, Wu
 labels:
 - streaming
 publications:
+- name: ICLR
+  url: https://openreview.net/forum?id=WcZLG8XxhD
+  year: 2025
+  dblp_key: conf/iclr/AamandCGSW25
+  bibtex: "@inproceedings{DBLP:conf/iclr/AamandCGSW25,\n  author       = {Anders Aamand and\n  Justin Y. Chen and\n  Siddharth\
+    \ Gollapudi and\n  Sandeep Silwal and\n  Hao Wu},\n  title        = {Learning-Augmented Frequent Directions},\n  booktitle\
+    \    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2503.00937
   year: 2025
   month: 3
   day: 2
-  dblp_key: null
-  bibtex: null
-- name: ICLR
-  url: https://openreview.net/forum?id=WcZLG8XxhD
-  year: 2025
-  month: null
-  day: null
-  dblp_key: conf/iclr/AamandCGSW25
-  bibtex: |+
-    @inproceedings{DBLP:conf/iclr/AamandCGSW25,
-      author       = {Anders Aamand and
-                      Justin Y. Chen and
-                      Siddharth Gollapudi and
-                      Sandeep Silwal and
-                      Hao Wu},
-      title        = {Learning-Augmented Frequent Directions},
-      booktitle    = {{ICLR}},
-      publisher    = {OpenReview.net},
-      year         = {2025}
-    }
-

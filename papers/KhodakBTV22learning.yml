@@ -1,30 +1,18 @@
 title: Learning Predictions for Algorithms with Predictions
 authors: Khodak, Balcan, Talwalkar, Vassilvitskii
 labels:
-- online
 - learning
+- online
 publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2022/hash/17061a94c3c7fda5fa24bbdd1832fa99-Abstract-Conference.html
+  year: 2022
+  dblp_key: conf/nips/KhodakBTV22
+  bibtex: "@inproceedings{DBLP:conf/nips/KhodakBTV22,\n  author       = {Misha Khodak and\n  Maria{-}Florina Balcan and\n\
+    \  Ameet Talwalkar and\n  Sergei Vassilvitskii},\n  title        = {Learning Predictions for Algorithms with Predictions},\n\
+    \  booktitle    = {NeurIPS},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2202.09312
   year: 2022
   month: 2
   day: 18
-  dblp_key: null
-  bibtex: null
-- name: NeurIPS
-  url: http://papers.nips.cc/paper_files/paper/2022/hash/17061a94c3c7fda5fa24bbdd1832fa99-Abstract-Conference.html
-  year: 2022
-  month: null
-  day: null
-  dblp_key: conf/nips/KhodakBTV22
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/KhodakBTV22,
-      author       = {Misha Khodak and
-                      Maria{-}Florina Balcan and
-                      Ameet Talwalkar and
-                      Sergei Vassilvitskii},
-      title        = {Learning Predictions for Algorithms with Predictions},
-      booktitle    = {NeurIPS},
-      year         = {2022}
-    }
-

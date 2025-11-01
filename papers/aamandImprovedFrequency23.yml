@@ -1,31 +1,18 @@
 title: Improved Frequency Estimation Algorithms with and without Predictions
 authors: Aamand, Chen, Nguyen, Silwal, Vakilian
 labels:
-- streaming
 - parsimonious / succinct
+- streaming
 publications:
 - name: NeurIPS
   url: https://arxiv.org/abs/2312.07535
   year: 2023
-  month: null
-  day: null
   dblp_key: conf/nips/AamandCNSV23
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/AamandCNSV23,
-      author       = {Anders Aamand and
-                      Justin Y. Chen and
-                      Huy L{\^{e}} Nguyen and
-                      Sandeep Silwal and
-                      Ali Vakilian},
-      title        = {Improved Frequency Estimation Algorithms with and without Predictions},
-      booktitle    = {NeurIPS},
-      year         = {2023}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/nips/AamandCNSV23,\n  author       = {Anders Aamand and\n  Justin Y. Chen and\n  Huy L{\\\
+    ^{e}} Nguyen and\n  Sandeep Silwal and\n  Ali Vakilian},\n  title        = {Improved Frequency Estimation Algorithms with\
+    \ and without Predictions},\n  booktitle    = {NeurIPS},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2312.07535
   year: 2023
   month: 12
   day: 12
-  dblp_key: null
-  bibtex: null

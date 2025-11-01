@@ -6,15 +6,7 @@ publications:
 - name: PODC
   url: https://doi.org/10.1145/343477.343630
   year: 2000
-  month: null
-  day: null
   dblp_key: conf/podc/Guerraoui00
-  bibtex: |
-    @inproceedings{DBLP:conf/podc/Guerraoui00,
-      author       = {Rachid Guerraoui},
-      title        = {Indulgent algorithms (preliminary version)},
-      booktitle    = {{PODC}},
-      pages        = {289--297},
-      publisher    = {{ACM}},
-      year         = {2000}
-    }
+  bibtex: "@inproceedings{DBLP:conf/podc/Guerraoui00,\n  author       = {Rachid Guerraoui},\n  title        = {Indulgent algorithms\
+    \ (preliminary version)},\n  booktitle    = {{PODC}},\n  pages        = {289--297},\n  publisher    = {{ACM}},\n  year\
+    \         = {2000}\n}\n"

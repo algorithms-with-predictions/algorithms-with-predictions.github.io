@@ -2,30 +2,18 @@ title: Improving online algorithms via ML predictions
 authors: Purohit, Svitkina, Kumar
 labels:
 - online
-- scheduling
 - rent-or-buy
+- scheduling
 publications:
 - name: NeurIPS
   url: https://dl.acm.org/doi/pdf/10.5555/3327546.3327635
   year: 2018
-  month: null
-  day: null
   dblp_key: conf/nips/PurohitSK18
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/PurohitSK18,
-      author       = {Manish Purohit and
-                      Zoya Svitkina and
-                      Ravi Kumar},
-      title        = {Improving Online Algorithms via {ML} Predictions},
-      booktitle    = {NeurIPS},
-      pages        = {9684--9693},
-      year         = {2018}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/nips/PurohitSK18,\n  author       = {Manish Purohit and\n  Zoya Svitkina and\n  Ravi Kumar},\n\
+    \  title        = {Improving Online Algorithms via {ML} Predictions},\n  booktitle    = {NeurIPS},\n  pages        = {9684--9693},\n\
+    \  year         = {2018}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2407.17712
   year: 2024
   month: 7
   day: 25
-  dblp_key: null
-  bibtex: null

@@ -3,49 +3,24 @@ authors: Li, Yang, Wierman, Ren
 labels:
 - online
 publications:
+- name: SIGMETRICS
+  url: https://doi.org/10.1145/3726854.3727293
+  year: 2025
+  dblp_key: conf/sigmetrics/00080WR25
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/00080WR25,\n  author       = {Pengfei Li and\n  Jianyi Yang and\n  Adam Wierman\
+    \ and\n  Shaolei Ren},\n  title        = {Learning-Augmented Decentralized Online Convex Optimization in Networks},\n\
+    \  booktitle    = {{SIGMETRICS} (Abstracts)},\n  pages        = {163--165},\n  publisher    = {{ACM}},\n  year       \
+    \  = {2025}\n}\n"
+- name: Proc. ACM Meas. Anal. Comput. Syst.
+  url: https://doi.org/10.1145/3700420
+  year: 2024
+  dblp_key: journals/pomacs/LiYWR24
+  bibtex: "@article{DBLP:journals/pomacs/LiYWR24,\n  author       = {Pengfei Li and\n  Jianyi Yang and\n  Adam Wierman and\n\
+    \  Shaolei Ren},\n  title        = {Learning-Augmented Decentralized Online Convex Optimization in Networks},\n  journal\
+    \      = {Proc. {ACM} Meas. Anal. Comput. Syst.},\n  volume       = {8},\n  number       = {3},\n  pages        = {38:1--38:42},\n\
+    \  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2306.10158
   year: 2023
   month: 6
   day: 16
-  dblp_key: null
-  bibtex: null
-- name: Proc. ACM Meas. Anal. Comput. Syst.
-  url: https://doi.org/10.1145/3700420
-  year: 2024
-  month: null
-  day: null
-  dblp_key: journals/pomacs/LiYWR24
-  bibtex: |+
-    @article{DBLP:journals/pomacs/LiYWR24,
-      author       = {Pengfei Li and
-                      Jianyi Yang and
-                      Adam Wierman and
-                      Shaolei Ren},
-      title        = {Learning-Augmented Decentralized Online Convex Optimization in Networks},
-      journal      = {Proc. {ACM} Meas. Anal. Comput. Syst.},
-      volume       = {8},
-      number       = {3},
-      pages        = {38:1--38:42},
-      year         = {2024}
-    }
-
-- name: SIGMETRICS
-  url: https://doi.org/10.1145/3726854.3727293
-  year: 2025
-  month: null
-  day: null
-  dblp_key: conf/sigmetrics/00080WR25
-  bibtex: |+
-    @inproceedings{DBLP:conf/sigmetrics/00080WR25,
-      author       = {Pengfei Li and
-                      Jianyi Yang and
-                      Adam Wierman and
-                      Shaolei Ren},
-      title        = {Learning-Augmented Decentralized Online Convex Optimization in Networks},
-      booktitle    = {{SIGMETRICS} (Abstracts)},
-      pages        = {163--165},
-      publisher    = {{ACM}},
-      year         = {2025}
-    }
-

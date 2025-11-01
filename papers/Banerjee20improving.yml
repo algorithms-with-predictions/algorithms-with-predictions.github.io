@@ -7,15 +7,7 @@ publications:
 - name: NeurIPS
   url: https://proceedings.neurips.cc/paper/2020/file/f12a6a7477077af66212ef0813bcf332-Paper.pdf
   year: 2020
-  month: null
-  day: null
   dblp_key: conf/nips/Banerjee20
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/Banerjee20,
-      author       = {Soumya Banerjee},
-      title        = {Improving Online Rent-or-Buy Algorithms with Sequential Decision Making
-                      and {ML} Predictions},
-      booktitle    = {NeurIPS},
-      year         = {2020}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/nips/Banerjee20,\n  author       = {Soumya Banerjee},\n  title        = {Improving Online\
+    \ Rent-or-Buy Algorithms with Sequential Decision Making\n  and {ML} Predictions},\n  booktitle    = {NeurIPS},\n  year\
+    \         = {2020}\n}\n"
