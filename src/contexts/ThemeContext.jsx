@@ -1,12 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {
-  grey,
-  blue,
-  orange,
-  deepOrange,
-} from '@mui/material/colors';
+import { grey, blue, orange, deepOrange } from '@mui/material/colors';
 
 const ThemeContext = createContext();
 

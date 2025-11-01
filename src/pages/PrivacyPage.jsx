@@ -60,8 +60,8 @@ const PrivacyPage = () => {
         </Typography>
         <Typography paragraph>
           Analytics data is automatically deleted after 14 months. We do not
-          retain personal data beyond what&apos;s necessary for understanding website
-          usage.
+          retain personal data beyond what&apos;s necessary for understanding
+          website usage.
         </Typography>
 
         <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
