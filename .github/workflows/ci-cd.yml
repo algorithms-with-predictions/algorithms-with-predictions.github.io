@@ -28,6 +28,8 @@ jobs:
       - name: Check formatting
         run: npm run format:check
       - name: Build project
+        env:
+          VITE_GA_MEASUREMENT_ID: ${{ secrets.VITE_GA_MEASUREMENT_ID }}
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
