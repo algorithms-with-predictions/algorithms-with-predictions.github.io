@@ -12,6 +12,7 @@ import {
 } from '@mui/material';
 import { ContentCopy } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
+import { trackPaperView, trackEvent } from '../utils/analytics.js';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   borderRadius: 2,
@@ -76,6 +77,14 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
     paper.publications?.find(pub => pub.name !== 'arXiv') ||
     paper.publications?.[0];
 
+  // Track paper view when card is rendered
+  React.useEffect(() => {
+    trackPaperView(
+      paper.title || 'Unknown paper',
+      paper.labels?.join(', ') || 'no_category'
+    );
+  }, [paper.title, paper.labels]);
+
   const handleCopyBibtex = () => {
     // Only run in client-side environment
     if (typeof window === 'undefined' || typeof navigator === 'undefined') {
@@ -89,6 +98,12 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
 
     if (bibtexEntries) {
       navigator.clipboard?.writeText(bibtexEntries);
+      // Track BibTeX copy action
+      trackEvent('bibtex_copy', {
+        category: 'paper_interaction',
+        label: paper.title || 'Unknown paper',
+        custom_parameter_1: mainPublication?.name || 'unknown_venue',
+      });
       // You could add a toast notification here
     }
   };
@@ -132,7 +147,16 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
                     variant={isSelected ? 'filled' : 'outlined'}
                     color={labelColor}
                     clickable
-                    onClick={() => onLabelClick && onLabelClick(label)}
+                    onClick={() => {
+                      if (onLabelClick) {
+                        trackEvent('paper_label_click', {
+                          category: 'paper_interaction',
+                          label: label,
+                          custom_parameter_1: paper.title || 'Unknown paper',
+                        });
+                        onLabelClick(label);
+                      }
+                    }}
                     sx={{
                       borderRadius: 2,
                       fontSize: '0.75rem',
@@ -195,7 +219,17 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
                 size="small"
                 variant={pub.name === 'arXiv' ? 'outlined' : 'filled'}
                 color={pub.name === 'arXiv' ? 'default' : 'primary'}
-                onClick={() => pub.url && openInNewTab(pub.url)}
+                onClick={() => {
+                  if (pub.url) {
+                    trackEvent('publication_link_click', {
+                      category: 'paper_interaction',
+                      label: paper.title || 'Unknown paper',
+                      custom_parameter_1: pub.name,
+                      custom_parameter_2: pub.year?.toString(),
+                    });
+                    openInNewTab(pub.url);
+                  }
+                }}
                 sx={{
                   cursor: pub.url ? 'pointer' : 'default',
                   '&:hover': pub.url

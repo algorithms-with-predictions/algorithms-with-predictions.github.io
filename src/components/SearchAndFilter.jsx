@@ -8,6 +8,7 @@ import {
   Stack,
 } from '@mui/material';
 import { Search, Clear } from '@mui/icons-material';
+import { trackSearch, trackFilter } from '../utils/analytics.js';
 
 const SearchAndFilter = ({
   searchQuery,
@@ -27,6 +28,10 @@ const SearchAndFilter = ({
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => {
           onSearchChange(query);
+          // Track search queries that are not empty
+          if (query.trim()) {
+            trackSearch(query.trim(), 0); // We don't have results count here, will be 0
+          }
         }, 300); // 300ms delay
       };
     })(),
@@ -124,8 +129,10 @@ const SearchAndFilter = ({
                     onClick={() => {
                       if (isSelected) {
                         onLabelsChange(selectedLabels.filter(l => l !== label));
+                        trackFilter('special_label', `remove_${label}`);
                       } else {
                         onLabelsChange([...selectedLabels, label]);
+                        trackFilter('special_label', `add_${label}`);
                       }
                     }}
                     sx={{
@@ -157,8 +164,10 @@ const SearchAndFilter = ({
                     onClick={() => {
                       if (isSelected) {
                         onLabelsChange(selectedLabels.filter(l => l !== label));
+                        trackFilter('regular_label', `remove_${label}`);
                       } else {
                         onLabelsChange([...selectedLabels, label]);
+                        trackFilter('regular_label', `add_${label}`);
                       }
                     }}
                     sx={{
