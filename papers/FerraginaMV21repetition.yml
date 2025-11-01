@@ -6,20 +6,8 @@ publications:
 - name: ISAAC
   url: https://doi.org/10.4230/LIPIcs.ISAAC.2021.64
   year: 2021
-  month: null
-  day: null
   dblp_key: conf/isaac/FerraginaMV21
-  bibtex: |+
-    @inproceedings{DBLP:conf/isaac/FerraginaMV21,
-      author       = {Paolo Ferragina and
-                      Giovanni Manzini and
-                      Giorgio Vinciguerra},
-      title        = {Repetition- and Linearity-Aware Rank/Select Dictionaries},
-      booktitle    = {{ISAAC}},
-      series       = {LIPIcs},
-      volume       = {212},
-      pages        = {64:1--64:16},
-      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
-      year         = {2021}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/isaac/FerraginaMV21,\n  author       = {Paolo Ferragina and\n  Giovanni Manzini and\n\
+    \  Giorgio Vinciguerra},\n  title        = {Repetition- and Linearity-Aware Rank/Select Dictionaries},\n  booktitle  \
+    \  = {{ISAAC}},\n  series       = {LIPIcs},\n  volume       = {212},\n  pages        = {64:1--64:16},\n  publisher   \
+    \ = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2021}\n}\n"

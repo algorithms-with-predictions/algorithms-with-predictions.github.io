@@ -1,14 +1,12 @@
 title: 'With a Little Help From My Friends: Exploiting Probability Distribution Advice in Algorithm Design'
 authors: Canonne, Chen, Mestre
 labels:
-- prophet inequality
-- online
 - allocation / matching
+- online
+- prophet inequality
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2505.04949
   year: 2025
   month: 5
   day: 8
-  dblp_key: null
-  bibtex: null

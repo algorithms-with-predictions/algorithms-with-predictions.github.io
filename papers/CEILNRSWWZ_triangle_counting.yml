@@ -6,31 +6,13 @@ publications:
 - name: ICLR
   url: https://openreview.net/forum?id=8in_5gN9I0
   year: 2022
-  month: null
-  day: null
   dblp_key: conf/iclr/ChenEILNRSWWZ22
-  bibtex: |+
-    @inproceedings{DBLP:conf/iclr/ChenEILNRSWWZ22,
-      author       = {Justin Y. Chen and
-                      Talya Eden and
-                      Piotr Indyk and
-                      Honghao Lin and
-                      Shyam Narayanan and
-                      Ronitt Rubinfeld and
-                      Sandeep Silwal and
-                      Tal Wagner and
-                      David P. Woodruff and
-                      Michael Zhang},
-      title        = {Triangle and Four Cycle Counting with Predictions in Graph Streams},
-      booktitle    = {{ICLR}},
-      publisher    = {OpenReview.net},
-      year         = {2022}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/iclr/ChenEILNRSWWZ22,\n  author       = {Justin Y. Chen and\n  Talya Eden and\n  Piotr\
+    \ Indyk and\n  Honghao Lin and\n  Shyam Narayanan and\n  Ronitt Rubinfeld and\n  Sandeep Silwal and\n  Tal Wagner and\n\
+    \  David P. Woodruff and\n  Michael Zhang},\n  title        = {Triangle and Four Cycle Counting with Predictions in Graph\
+    \ Streams},\n  booktitle    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2203.09572
   year: 2022
   month: 3
   day: 17
-  dblp_key: null
-  bibtex: null

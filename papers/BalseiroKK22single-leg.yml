@@ -3,28 +3,15 @@ authors: Balseiro, Kroer, Kumar
 labels:
 - online
 publications:
+- name: EC
+  url: https://doi.org/10.1145/3580507.3597704
+  year: 2023
+  dblp_key: conf/sigecom/BalseiroKK23
+  bibtex: "@inproceedings{DBLP:conf/sigecom/BalseiroKK23,\n  author       = {Santiago R. Balseiro and\n  Christian Kroer and\n\
+    \  Rachitesh Kumar},\n  title        = {Single-Leg Revenue Management with Advice},\n  booktitle    = {{EC}},\n  pages\
+    \        = {207},\n  publisher    = {{ACM}},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2202.10939
   year: 2022
   month: 2
   day: 18
-  dblp_key: null
-  bibtex: null
-- name: EC
-  url: https://doi.org/10.1145/3580507.3597704
-  year: 2023
-  month: null
-  day: null
-  dblp_key: conf/sigecom/BalseiroKK23
-  bibtex: |+
-    @inproceedings{DBLP:conf/sigecom/BalseiroKK23,
-      author       = {Santiago R. Balseiro and
-                      Christian Kroer and
-                      Rachitesh Kumar},
-      title        = {Single-Leg Revenue Management with Advice},
-      booktitle    = {{EC}},
-      pages        = {207},
-      publisher    = {{ACM}},
-      year         = {2023}
-    }
-

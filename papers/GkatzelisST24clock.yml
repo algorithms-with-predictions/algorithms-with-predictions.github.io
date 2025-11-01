@@ -1,31 +1,18 @@
 title: Clock Auctions Augmented with Unreliable Advice
 authors: Gkatzelis, Schoepflin, Tan
 labels:
-- game theory / mechanism design
 - auctions
+- game theory / mechanism design
 publications:
+- name: SODA
+  url: https://doi.org/10.1137/1.9781611978322.86
+  year: 2025
+  dblp_key: conf/soda/Gkatzelis0T25
+  bibtex: "@inproceedings{DBLP:conf/soda/Gkatzelis0T25,\n  author       = {Vasilis Gkatzelis and\n  Daniel Schoepflin and\n\
+    \  Xizhi Tan},\n  title        = {Clock Auctions Augmented with Unreliable Advice},\n  booktitle    = {{SODA}},\n  pages\
+    \        = {2629--2655},\n  publisher    = {{SIAM}},\n  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2408.06483
   year: 2024
   month: 8
   day: 12
-  dblp_key: null
-  bibtex: null
-- name: SODA
-  url: https://doi.org/10.1137/1.9781611978322.86
-  year: 2025
-  month: null
-  day: null
-  dblp_key: conf/soda/Gkatzelis0T25
-  bibtex: |+
-    @inproceedings{DBLP:conf/soda/Gkatzelis0T25,
-      author       = {Vasilis Gkatzelis and
-                      Daniel Schoepflin and
-                      Xizhi Tan},
-      title        = {Clock Auctions Augmented with Unreliable Advice},
-      booktitle    = {{SODA}},
-      pages        = {2629--2655},
-      publisher    = {{SIAM}},
-      year         = {2025}
-    }
-

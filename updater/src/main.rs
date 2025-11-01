@@ -3,10 +3,13 @@ use chrono::{DateTime, Datelike};
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_yml;
-use tokio::time::sleep;
 use std::{
-    fs, io::{BufWriter, Write}, path::PathBuf, time::Duration
+    fs,
+    io::{BufWriter, Write},
+    path::PathBuf,
+    time::Duration,
 };
+use tokio::time::sleep;
 
 #[derive(Serialize, Deserialize, PartialEq, Debug)]
 struct Paper {
@@ -27,7 +30,10 @@ struct Publication {
     bibtex: Option<String>,
 }
 
-async fn update_paper_from_arxiv(paper: &mut Paper, acc: usize) -> Result<(), Box<dyn std::error::Error>> {
+async fn update_paper_from_arxiv(
+    paper: &mut Paper,
+    acc: usize,
+) -> Result<(), Box<dyn std::error::Error>> {
     let query = format!(
         "http://export.arxiv.org/api/query?max_results=30&search_query={}",
         paper.title.replace("-", "+").replace(" ", "+")
@@ -112,7 +118,10 @@ async fn update_paper_from_arxiv(paper: &mut Paper, acc: usize) -> Result<(), Bo
     Ok(())
 }
 
-async fn update_paper_from_dblp(paper: &mut Paper, acc: usize) -> Result<(), Box<dyn std::error::Error>> {
+async fn update_paper_from_dblp(
+    paper: &mut Paper,
+    acc: usize,
+) -> Result<(), Box<dyn std::error::Error>> {
     let query = format!(
         "https://dblp.org/search/publ/api?h=20&q={}",
         paper.title.replace("-", "+").replace(" ", "+")
@@ -225,7 +234,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     papers.sort_by_key(|paper| paper.1.publications.len());
 
     for (path, mut paper) in papers {
-
         println!("Updating {}", paper.title);
 
         if let Err(e) = update_paper_from_arxiv(&mut paper, 4).await {
@@ -239,7 +247,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         let mut writer = BufWriter::new(file);
         serde_yml::to_writer(&mut writer, &paper)?;
         writer.flush()?;
-        sleep(Duration::from_millis(10000)).await;
+        sleep(Duration::from_millis(1000)).await;
     }
 
     Ok(())

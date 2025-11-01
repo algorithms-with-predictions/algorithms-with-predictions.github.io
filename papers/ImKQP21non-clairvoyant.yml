@@ -4,37 +4,17 @@ labels:
 - online
 - scheduling
 publications:
-- name: SPAA
-  url: https://dl.acm.org/doi/10.1145/3409964.3461790
-  year: 2021
-  month: null
-  day: null
-  dblp_key: null
-  bibtex: null
-- name: ISAIM
-  url: https://isaim2022.cs.ou.edu/papers/ISAIM2022_Sequencing_Im.pdf
-  year: 2022
-  month: null
-  day: null
-  dblp_key: null
-  bibtex: null
 - name: ACM Trans. Parallel Comput.
   url: https://doi.org/10.1145/3593969
   year: 2023
-  month: null
-  day: null
   dblp_key: journals/topc/ImKQP23
-  bibtex: |+
-    @article{DBLP:journals/topc/ImKQP23,
-      author       = {Sungjin Im and
-                      Ravi Kumar and
-                      Mahshid Montazer Qaem and
-                      Manish Purohit},
-      title        = {Non-clairvoyant Scheduling with Predictions},
-      journal      = {{ACM} Trans. Parallel Comput.},
-      volume       = {10},
-      number       = {4},
-      pages        = {19:1--19:26},
-      year         = {2023}
-    }
-
+  bibtex: "@article{DBLP:journals/topc/ImKQP23,\n  author       = {Sungjin Im and\n  Ravi Kumar and\n  Mahshid Montazer Qaem\
+    \ and\n  Manish Purohit},\n  title        = {Non-clairvoyant Scheduling with Predictions},\n  journal      = {{ACM} Trans.\
+    \ Parallel Comput.},\n  volume       = {10},\n  number       = {4},\n  pages        = {19:1--19:26},\n  year         =\
+    \ {2023}\n}\n"
+- name: ISAIM
+  url: https://isaim2022.cs.ou.edu/papers/ISAIM2022_Sequencing_Im.pdf
+  year: 2022
+- name: SPAA
+  url: https://dl.acm.org/doi/10.1145/3409964.3461790
+  year: 2021

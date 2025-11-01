@@ -1,7 +1,15 @@
 [package]
 name = "updater"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
+
+[[bin]]
+name = "main_improved"
+path = "src/main_improved.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
 
 [dependencies]
 anyhow = "1.0.89"
@@ -13,3 +21,4 @@ roxmltree = "0.20.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_yml = "0.0.12"
 tokio = { version = "1.40.0", features = ["full"] }
+urlencoding = "2.1.3"

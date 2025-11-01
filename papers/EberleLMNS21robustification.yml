@@ -1,34 +1,19 @@
 title: Robustification of Online Graph Exploration Methods
 authors: Eberle, Lindermayr, Megow, Nölke, Schlöter
 labels:
-- online
 - exploration
+- online
 - search
 publications:
 - name: AAAI
-  url: null
   year: 2022
-  month: null
-  day: null
   dblp_key: conf/aaai/EberleLMNS22
-  bibtex: |+
-    @inproceedings{DBLP:conf/aaai/EberleLMNS22,
-      author       = {Franziska Eberle and
-                      Alexander Lindermayr and
-                      Nicole Megow and
-                      Lukas N{\"{o}}lke and
-                      Jens Schl{\"{o}}ter},
-      title        = {Robustification of Online Graph Exploration Methods},
-      booktitle    = {{AAAI}},
-      pages        = {9732--9740},
-      publisher    = {{AAAI} Press},
-      year         = {2022}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/aaai/EberleLMNS22,\n  author       = {Franziska Eberle and\n  Alexander Lindermayr and\n\
+    \  Nicole Megow and\n  Lukas N{\"{o}}lke and\n  Jens Schl{\"{o}}ter},\n  title        = {Robustification of Online Graph\
+    \ Exploration Methods},\n  booktitle    = {{AAAI}},\n  pages        = {9732--9740},\n  publisher    = {{AAAI} Press},\n\
+    \  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2112.05422
   year: 2021
   month: 12
   day: 10
-  dblp_key: null
-  bibtex: null

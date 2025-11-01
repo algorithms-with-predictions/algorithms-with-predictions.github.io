@@ -1,0 +1,19 @@
+# Build outputs
+public/
+.cache/
+dist/
+build/
+
+# Dependencies
+node_modules/
+
+# Generated files
+*.log
+.DS_Store
+.env*
+coverage/
+
+# Specific files
+package-lock.json
+yarn.lock
+papers.json

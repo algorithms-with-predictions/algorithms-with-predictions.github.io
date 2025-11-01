@@ -1,34 +1,20 @@
 title: A Universal Error Measure for Input Predictions Applied to Online Graph Problems
 authors: Bernardini, Lindermayr, Marchetti-Spaccamela, Megow, Stougie, Sweering
 labels:
-- routing / TSP
 - network design
 - online
+- routing / TSP
 publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2022/hash/15212bd2265c4a3ab0dbc1b1982c1b69-Abstract-Conference.html
+  year: 2022
+  dblp_key: conf/nips/0001LMMSS22
+  bibtex: "@inproceedings{DBLP:conf/nips/0001LMMSS22,\n  author       = {Giulia Bernardini and\n  Alexander Lindermayr and\n\
+    \  Alberto Marchetti{-}Spaccamela and\n  Nicole Megow and\n  Leen Stougie and\n  Michelle Sweering},\n  title        =\
+    \ {A Universal Error Measure for Input Predictions Applied to Online\n  Graph Problems},\n  booktitle    = {NeurIPS},\n\
+    \  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2205.12850
   year: 2022
   month: 5
   day: 25
-  dblp_key: null
-  bibtex: null
-- name: NeurIPS
-  url: http://papers.nips.cc/paper_files/paper/2022/hash/15212bd2265c4a3ab0dbc1b1982c1b69-Abstract-Conference.html
-  year: 2022
-  month: null
-  day: null
-  dblp_key: conf/nips/0001LMMSS22
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/0001LMMSS22,
-      author       = {Giulia Bernardini and
-                      Alexander Lindermayr and
-                      Alberto Marchetti{-}Spaccamela and
-                      Nicole Megow and
-                      Leen Stougie and
-                      Michelle Sweering},
-      title        = {A Universal Error Measure for Input Predictions Applied to Online
-                      Graph Problems},
-      booktitle    = {NeurIPS},
-      year         = {2022}
-    }
-

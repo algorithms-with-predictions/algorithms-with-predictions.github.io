@@ -6,26 +6,12 @@ publications:
 - name: SODA
   url: https://epubs.siam.org/doi/10.1137/1.9781611977073.1
   year: 2022
-  month: null
-  day: null
   dblp_key: conf/soda/BanerjeeGGJ22
-  bibtex: |+
-    @inproceedings{DBLP:conf/soda/BanerjeeGGJ22,
-      author       = {Siddhartha Banerjee and
-                      Vasilis Gkatzelis and
-                      Artur Gorokh and
-                      Billy Jin},
-      title        = {Online Nash Social Welfare Maximization with Predictions},
-      booktitle    = {{SODA}},
-      pages        = {1--19},
-      publisher    = {{SIAM}},
-      year         = {2022}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/soda/BanerjeeGGJ22,\n  author       = {Siddhartha Banerjee and\n  Vasilis Gkatzelis and\n\
+    \  Artur Gorokh and\n  Billy Jin},\n  title        = {Online Nash Social Welfare Maximization with Predictions},\n  booktitle\
+    \    = {{SODA}},\n  pages        = {1--19},\n  publisher    = {{SIAM}},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2008.03564
   year: 2020
   month: 8
   day: 8
-  dblp_key: null
-  bibtex: null

@@ -1,0 +1,14 @@
+title: 'Smoothed Online Optimization for Target Tracking: Robust and Learning-Augmented Algorithms'
+authors: Ali Zeynali, Mahsa Sahebdel, Qingsong Liu, Mohammad Hajiesmaili, Ramesh K. Sitaraman
+labels:
+- online
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2509.05930
+  year: 2025
+  month: 9
+  day: 7
+- name: CoRR
+  url: https://dblp.org/rec/journals/corr/abs-2509-05930
+  year: 2025
+  dblp_key: journals/corr/abs-2509-05930

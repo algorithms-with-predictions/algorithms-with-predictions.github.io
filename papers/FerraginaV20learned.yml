@@ -6,19 +6,8 @@ publications:
 - name: INNSBDDL
   url: https://doi.org/10.1007/978-3-030-43883-8_2
   year: 2019
-  month: null
-  day: null
   dblp_key: conf/inns/FerraginaV19
-  bibtex: |+
-    @inproceedings{DBLP:conf/inns/FerraginaV19,
-      author       = {Paolo Ferragina and
-                      Giorgio Vinciguerra},
-      title        = {Learned Data Structures},
-      booktitle    = {{INNSBDDL} (Tutorials)},
-      series       = {Studies in Computational Intelligence},
-      volume       = {896},
-      pages        = {5--41},
-      publisher    = {Springer},
-      year         = {2019}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/inns/FerraginaV19,\n  author       = {Paolo Ferragina and\n  Giorgio Vinciguerra},\n \
+    \ title        = {Learned Data Structures},\n  booktitle    = {{INNSBDDL} (Tutorials)},\n  series       = {Studies in\
+    \ Computational Intelligence},\n  volume       = {896},\n  pages        = {5--41},\n  publisher    = {Springer},\n  year\
+    \         = {2019}\n}\n"

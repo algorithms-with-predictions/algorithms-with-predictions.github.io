@@ -7,25 +7,13 @@ publications:
 - name: ITCS
   url: https://drops.dagstuhl.de/opus/volltexte/2020/11699/pdf/LIPIcs-ITCS-2020-14.pdf
   year: 2020
-  month: null
-  day: null
   dblp_key: conf/innovations/Mitzenmacher20
-  bibtex: |+
-    @inproceedings{DBLP:conf/innovations/Mitzenmacher20,
-      author       = {Michael Mitzenmacher},
-      title        = {Scheduling with Predictions and the Price of Misprediction},
-      booktitle    = {{ITCS}},
-      series       = {LIPIcs},
-      volume       = {151},
-      pages        = {14:1--14:18},
-      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
-      year         = {2020}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/innovations/Mitzenmacher20,\n  author       = {Michael Mitzenmacher},\n  title       \
+    \ = {Scheduling with Predictions and the Price of Misprediction},\n  booktitle    = {{ITCS}},\n  series       = {LIPIcs},\n\
+    \  volume       = {151},\n  pages        = {14:1--14:18},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r\
+    \ Informatik},\n  year         = {2020}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/1902.00732
   year: 2019
   month: 2
   day: 2
-  dblp_key: null
-  bibtex: null

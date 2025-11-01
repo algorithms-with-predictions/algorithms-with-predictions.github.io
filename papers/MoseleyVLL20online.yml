@@ -7,19 +7,7 @@ publications:
 - name: SODA
   url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611975994.114
   year: 2020
-  month: null
-  day: null
   dblp_key: conf/soda/LattanziLMV20
-  bibtex: |+
-    @inproceedings{DBLP:conf/soda/LattanziLMV20,
-      author       = {Silvio Lattanzi and
-                      Thomas Lavastida and
-                      Benjamin Moseley and
-                      Sergei Vassilvitskii},
-      title        = {Online Scheduling via Learned Weights},
-      booktitle    = {{SODA}},
-      pages        = {1859--1877},
-      publisher    = {{SIAM}},
-      year         = {2020}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/soda/LattanziLMV20,\n  author       = {Silvio Lattanzi and\n  Thomas Lavastida and\n \
+    \ Benjamin Moseley and\n  Sergei Vassilvitskii},\n  title        = {Online Scheduling via Learned Weights},\n  booktitle\
+    \    = {{SODA}},\n  pages        = {1859--1877},\n  publisher    = {{SIAM}},\n  year         = {2020}\n}\n"

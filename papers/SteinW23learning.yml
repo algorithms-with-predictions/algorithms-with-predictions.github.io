@@ -2,13 +2,11 @@ title: Learning-Augmented Online Packet Scheduling with Deadlines
 authors: Stein, Wei
 labels:
 - online
-- scheduling
 - routing / TSP
+- scheduling
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2305.07164
   year: 2023
   month: 5
   day: 11
-  dblp_key: null
-  bibtex: null

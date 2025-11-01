@@ -4,30 +4,16 @@ labels:
 - dynamic / data structure
 - network design
 publications:
+- name: ESA
+  url: https://doi.org/10.4230/LIPIcs.ESA.2024.72
+  year: 2024
+  dblp_key: conf/esa/HuK024
+  bibtex: "@inproceedings{DBLP:conf/esa/HuK024,\n  author       = {Bingbing Hu and\n  Evangelos Kosinas and\n  Adam Polak},\n\
+    \  title        = {Connectivity Oracles for Predictable Vertex Failures},\n  booktitle    = {{ESA}},\n  series       =\
+    \ {LIPIcs},\n  volume       = {308},\n  pages        = {72:1--72:16},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum\
+    \ f{\"{u}}r Informatik},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2312.08489
   year: 2023
   month: 12
   day: 13
-  dblp_key: null
-  bibtex: null
-- name: ESA
-  url: https://doi.org/10.4230/LIPIcs.ESA.2024.72
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/esa/HuK024
-  bibtex: |+
-    @inproceedings{DBLP:conf/esa/HuK024,
-      author       = {Bingbing Hu and
-                      Evangelos Kosinas and
-                      Adam Polak},
-      title        = {Connectivity Oracles for Predictable Vertex Failures},
-      booktitle    = {{ESA}},
-      series       = {LIPIcs},
-      volume       = {308},
-      pages        = {72:1--72:16},
-      publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
-      year         = {2024}
-    }
-

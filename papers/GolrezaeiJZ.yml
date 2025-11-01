@@ -1,13 +1,11 @@
 title: Online Resource Allocation with Convex-set Machine-Learned Advice
 authors: Golrezaei, Jaillet, Zhou
 labels:
-- online
 - allocation / matching
+- online
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2306.12282
   year: 2023
   month: 6
   day: 21
-  dblp_key: null
-  bibtex: null

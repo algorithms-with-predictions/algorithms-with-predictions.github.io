@@ -1,22 +1,13 @@
 title: Discrete-Smoothness in Online Algorithms with Predictions
 authors: Azar, Panigrahi, Touitou
 labels:
-- online
 - covering
+- online
 publications:
 - name: NeurIPS
   url: https://openreview.net/forum?id=DDmH3H78iJ
   year: 2023
-  month: null
-  day: null
   dblp_key: conf/nips/AzarPT23
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/AzarPT23,
-      author       = {Yossi Azar and
-                      Debmalya Panigrahi and
-                      Noam Touitou},
-      title        = {Discrete-Smoothness in Online Algorithms with Predictions},
-      booktitle    = {NeurIPS},
-      year         = {2023}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/nips/AzarPT23,\n  author       = {Yossi Azar and\n  Debmalya Panigrahi and\n  Noam Touitou},\n\
+    \  title        = {Discrete-Smoothness in Online Algorithms with Predictions},\n  booktitle    = {NeurIPS},\n  year  \
+    \       = {2023}\n}\n"

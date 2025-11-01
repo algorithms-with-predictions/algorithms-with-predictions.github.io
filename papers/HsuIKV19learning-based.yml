@@ -6,18 +6,7 @@ publications:
 - name: ICLR
   url: https://par.nsf.gov/servlets/purl/10112257
   year: 2019
-  month: null
-  day: null
   dblp_key: conf/iclr/HsuIKV19
-  bibtex: |+
-    @inproceedings{DBLP:conf/iclr/HsuIKV19,
-      author       = {Chen{-}Yu Hsu and
-                      Piotr Indyk and
-                      Dina Katabi and
-                      Ali Vakilian},
-      title        = {Learning-Based Frequency Estimation Algorithms},
-      booktitle    = {{ICLR} (Poster)},
-      publisher    = {OpenReview.net},
-      year         = {2019}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/iclr/HsuIKV19,\n  author       = {Chen{-}Yu Hsu and\n  Piotr Indyk and\n  Dina Katabi\
+    \ and\n  Ali Vakilian},\n  title        = {Learning-Based Frequency Estimation Algorithms},\n  booktitle    = {{ICLR}\
+    \ (Poster)},\n  publisher    = {OpenReview.net},\n  year         = {2019}\n}\n"

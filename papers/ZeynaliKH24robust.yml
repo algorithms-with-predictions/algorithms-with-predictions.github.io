@@ -4,27 +4,15 @@ labels:
 - dynamic / data structure
 - search
 publications:
+- name: ICML
+  url: https://openreview.net/forum?id=XyhgssAo5b
+  year: 2024
+  dblp_key: conf/icml/ZeynaliKH24
+  bibtex: "@inproceedings{DBLP:conf/icml/ZeynaliKH24,\n  author       = {Ali Zeynali and\n  Shahin Kamali and\n  Mohammad\
+    \ Hajiesmaili},\n  title        = {Robust Learning-Augmented Dictionaries},\n  booktitle    = {{ICML}},\n  publisher \
+    \   = {OpenReview.net},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2402.09687
   year: 2024
   month: 2
   day: 15
-  dblp_key: null
-  bibtex: null
-- name: ICML
-  url: https://openreview.net/forum?id=XyhgssAo5b
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/icml/ZeynaliKH24
-  bibtex: |+
-    @inproceedings{DBLP:conf/icml/ZeynaliKH24,
-      author       = {Ali Zeynali and
-                      Shahin Kamali and
-                      Mohammad Hajiesmaili},
-      title        = {Robust Learning-Augmented Dictionaries},
-      booktitle    = {{ICML}},
-      publisher    = {OpenReview.net},
-      year         = {2024}
-    }
-

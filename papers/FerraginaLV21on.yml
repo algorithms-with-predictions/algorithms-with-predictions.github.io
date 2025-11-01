@@ -6,18 +6,7 @@ publications:
 - name: Theor. Comput. Sci.
   url: https://doi.org/10.1016/j.tcs.2021.04.015
   year: 2021
-  month: null
-  day: null
   dblp_key: journals/tcs/FerraginaLV21
-  bibtex: |+
-    @article{DBLP:journals/tcs/FerraginaLV21,
-      author       = {Paolo Ferragina and
-                      Fabrizio Lillo and
-                      Giorgio Vinciguerra},
-      title        = {On the performance of learned data structures},
-      journal      = {Theor. Comput. Sci.},
-      volume       = {871},
-      pages        = {107--120},
-      year         = {2021}
-    }
-
+  bibtex: "@article{DBLP:journals/tcs/FerraginaLV21,\n  author       = {Paolo Ferragina and\n  Fabrizio Lillo and\n  Giorgio\
+    \ Vinciguerra},\n  title        = {On the performance of learned data structures},\n  journal      = {Theor. Comput. Sci.},\n\
+    \  volume       = {871},\n  pages        = {107--120},\n  year         = {2021}\n}\n"

@@ -1,35 +1,20 @@
 title: Chasing Convex Functions with Long-term Constraints
 authors: Lechowicz, Christianson, Sun, Bashir, Hajiesmaili, Wierman, Shenoy
 labels:
+- k-server / MTS
 - online
 - search
-- k-server / MTS
 publications:
+- name: ICML
+  url: https://openreview.net/forum?id=hRBdOHVn7y
+  year: 2024
+  dblp_key: conf/icml/LechowiczC0BHWS24
+  bibtex: "@inproceedings{DBLP:conf/icml/LechowiczC0BHWS24,\n  author       = {Adam Lechowicz and\n  Nicolas Christianson\
+    \ and\n  Bo Sun and\n  Noman Bashir and\n  Mohammad Hajiesmaili and\n  Adam Wierman and\n  Prashant J. Shenoy},\n  title\
+    \        = {Chasing Convex Functions with Long-term Constraints},\n  booktitle    = {{ICML}},\n  publisher    = {OpenReview.net},\n\
+    \  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2402.14012
   year: 2024
   month: 2
   day: 21
-  dblp_key: null
-  bibtex: null
-- name: ICML
-  url: https://openreview.net/forum?id=hRBdOHVn7y
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/icml/LechowiczC0BHWS24
-  bibtex: |+
-    @inproceedings{DBLP:conf/icml/LechowiczC0BHWS24,
-      author       = {Adam Lechowicz and
-                      Nicolas Christianson and
-                      Bo Sun and
-                      Noman Bashir and
-                      Mohammad Hajiesmaili and
-                      Adam Wierman and
-                      Prashant J. Shenoy},
-      title        = {Chasing Convex Functions with Long-term Constraints},
-      booktitle    = {{ICML}},
-      publisher    = {OpenReview.net},
-      year         = {2024}
-    }
-

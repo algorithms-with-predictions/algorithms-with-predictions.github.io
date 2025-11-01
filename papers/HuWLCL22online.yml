@@ -1,13 +1,11 @@
 title: Online TSP with Predictions
 authors: Hu, Wei, Li, Chung, Liao
 labels:
-- routing / TSP
 - online
+- routing / TSP
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2206.15364
   year: 2022
   month: 6
   day: 30
-  dblp_key: null
-  bibtex: null

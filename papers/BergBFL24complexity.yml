@@ -3,31 +3,16 @@ authors: Berg, Boyar, Favrholdt, Larsen
 labels:
 - online
 publications:
+- name: IJTCS-FAW
+  url: https://doi.org/10.1007/978-981-96-8312-3_4
+  year: 2025
+  dblp_key: conf/faw/BergBFL25
+  bibtex: "@inproceedings{DBLP:conf/faw/BergBFL25,\n  author       = {Magnus Berg and\n  Joan Boyar and\n  Lene M. Favrholdt\
+    \ and\n  Kim S. Larsen},\n  title        = {Complexity Classes for Online Problems with and Without Predictions},\n  booktitle\
+    \    = {{IJTCS-FAW}},\n  series       = {Lecture Notes in Computer Science},\n  volume       = {15828},\n  pages     \
+    \   = {49--63},\n  publisher    = {Springer},\n  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2406.18265
   year: 2024
   month: 6
   day: 26
-  dblp_key: null
-  bibtex: null
-- name: IJTCS-FAW
-  url: https://doi.org/10.1007/978-981-96-8312-3_4
-  year: 2025
-  month: null
-  day: null
-  dblp_key: conf/faw/BergBFL25
-  bibtex: |+
-    @inproceedings{DBLP:conf/faw/BergBFL25,
-      author       = {Magnus Berg and
-                      Joan Boyar and
-                      Lene M. Favrholdt and
-                      Kim S. Larsen},
-      title        = {Complexity Classes for Online Problems with and Without Predictions},
-      booktitle    = {{IJTCS-FAW}},
-      series       = {Lecture Notes in Computer Science},
-      volume       = {15828},
-      pages        = {49--63},
-      publisher    = {Springer},
-      year         = {2025}
-    }
-

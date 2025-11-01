@@ -1,31 +1,20 @@
 title: Competitive Auctions with Imperfect Predictions
 authors: Lu, Wan, Zhang
 labels:
-- game theory / mechanism design
 - auctions
+- game theory / mechanism design
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2309.15414
-  year: 2023
-  month: 9
-  day: 27
-  dblp_key: null
-  bibtex: null
 - name: EC
   url: https://dl.acm.org/doi/10.1145/3670865.3673586
   year: 2024
   month: 12
   day: 17
   dblp_key: conf/sigecom/LuW024
-  bibtex: |+
-    @inproceedings{DBLP:conf/sigecom/LuW024,
-      author       = {Pinyan Lu and
-                      Zongqi Wan and
-                      Jialin Zhang},
-      title        = {Competitive Auctions with Imperfect Predictions},
-      booktitle    = {{EC}},
-      pages        = {1155--1183},
-      publisher    = {{ACM}},
-      year         = {2024}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/sigecom/LuW024,\n  author       = {Pinyan Lu and\n  Zongqi Wan and\n  Jialin Zhang},\n\
+    \  title        = {Competitive Auctions with Imperfect Predictions},\n  booktitle    = {{EC}},\n  pages        = {1155--1183},\n\
+    \  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2309.15414
+  year: 2023
+  month: 9
+  day: 27

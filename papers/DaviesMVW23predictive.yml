@@ -1,34 +1,19 @@
 title: Predictive Flows for Faster Ford-Fulkerson
 authors: Davies, Moseley, Vassilvitskii, Wang
 labels:
-- running time
 - graph problems
+- running time
 publications:
+- name: ICML
+  url: https://proceedings.mlr.press/v202/davies23b.html
+  year: 2023
+  dblp_key: conf/icml/DaviesMVW23
+  bibtex: "@inproceedings{DBLP:conf/icml/DaviesMVW23,\n  author       = {Sami Davies and\n  Benjamin Moseley and\n  Sergei\
+    \ Vassilvitskii and\n  Yuyan Wang},\n  title        = {Predictive Flows for Faster Ford-Fulkerson},\n  booktitle    =\
+    \ {{ICML}},\n  series       = {Proceedings of Machine Learning Research},\n  volume       = {202},\n  pages        = {7231--7248},\n\
+    \  publisher    = {{PMLR}},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2303.00837
   year: 2023
   month: 3
   day: 1
-  dblp_key: null
-  bibtex: null
-- name: ICML
-  url: https://proceedings.mlr.press/v202/davies23b.html
-  year: 2023
-  month: null
-  day: null
-  dblp_key: conf/icml/DaviesMVW23
-  bibtex: |+
-    @inproceedings{DBLP:conf/icml/DaviesMVW23,
-      author       = {Sami Davies and
-                      Benjamin Moseley and
-                      Sergei Vassilvitskii and
-                      Yuyan Wang},
-      title        = {Predictive Flows for Faster Ford-Fulkerson},
-      booktitle    = {{ICML}},
-      series       = {Proceedings of Machine Learning Research},
-      volume       = {202},
-      pages        = {7231--7248},
-      publisher    = {{PMLR}},
-      year         = {2023}
-    }
-

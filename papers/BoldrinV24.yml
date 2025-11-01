@@ -3,27 +3,15 @@ authors: Boldrin, Vandin
 labels:
 - streaming
 publications:
+- name: ICDM
+  url: https://doi.org/10.1109/ICDM59182.2024.00010
+  year: 2024
+  dblp_key: conf/icdm/BoldrinV24
+  bibtex: "@inproceedings{DBLP:conf/icdm/BoldrinV24,\n  author       = {Cristian Boldrin and\n  Fabio Vandin},\n  title  \
+    \      = {Fast and Accurate Triangle Counting in Graph Streams Using Predictions},\n  booktitle    = {{ICDM}},\n  pages\
+    \        = {31--40},\n  publisher    = {{IEEE}},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2409.15205
   year: 2024
   month: 9
   day: 23
-  dblp_key: null
-  bibtex: null
-- name: ICDM
-  url: https://doi.org/10.1109/ICDM59182.2024.00010
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/icdm/BoldrinV24
-  bibtex: |+
-    @inproceedings{DBLP:conf/icdm/BoldrinV24,
-      author       = {Cristian Boldrin and
-                      Fabio Vandin},
-      title        = {Fast and Accurate Triangle Counting in Graph Streams Using Predictions},
-      booktitle    = {{ICDM}},
-      pages        = {31--40},
-      publisher    = {{IEEE}},
-      year         = {2024}
-    }
-

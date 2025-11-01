@@ -5,28 +5,15 @@ labels:
 - graph problems
 - running time
 publications:
+- name: ICML
+  url: https://openreview.net/forum?id=wea7nsJdMc
+  year: 2024
+  dblp_key: conf/icml/McCauleyMN024
+  bibtex: "@inproceedings{DBLP:conf/icml/McCauleyMN024,\n  author       = {Samuel McCauley and\n  Benjamin Moseley and\n \
+    \ Aidin Niaparast and\n  Shikha Singh},\n  title        = {Incremental Topological Ordering and Cycle Detection with Predictions},\n\
+    \  booktitle    = {{ICML}},\n  publisher    = {OpenReview.net},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2402.11028
   year: 2024
   month: 2
   day: 16
-  dblp_key: null
-  bibtex: null
-- name: ICML
-  url: https://openreview.net/forum?id=wea7nsJdMc
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/icml/McCauleyMN024
-  bibtex: |+
-    @inproceedings{DBLP:conf/icml/McCauleyMN024,
-      author       = {Samuel McCauley and
-                      Benjamin Moseley and
-                      Aidin Niaparast and
-                      Shikha Singh},
-      title        = {Incremental Topological Ordering and Cycle Detection with Predictions},
-      booktitle    = {{ICML}},
-      publisher    = {OpenReview.net},
-      year         = {2024}
-    }
-

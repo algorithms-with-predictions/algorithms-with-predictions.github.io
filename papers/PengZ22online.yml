@@ -1,30 +1,18 @@
 title: Online Prediction in Sub-linear Space
 authors: Peng, Zhang
 labels:
-- online
 - learning
+- online
 publications:
+- name: SODA
+  url: https://doi.org/10.1137/1.9781611977554.ch60
+  year: 2023
+  dblp_key: conf/soda/PengZ23
+  bibtex: "@inproceedings{DBLP:conf/soda/PengZ23,\n  author       = {Binghui Peng and\n  Fred Zhang},\n  title        = {Online\
+    \ Prediction in Sub-linear Space},\n  booktitle    = {{SODA}},\n  pages        = {1611--1634},\n  publisher    = {{SIAM}},\n\
+    \  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2207.07974
   year: 2022
   month: 7
   day: 16
-  dblp_key: null
-  bibtex: null
-- name: SODA
-  url: https://doi.org/10.1137/1.9781611977554.ch60
-  year: 2023
-  month: null
-  day: null
-  dblp_key: conf/soda/PengZ23
-  bibtex: |+
-    @inproceedings{DBLP:conf/soda/PengZ23,
-      author       = {Binghui Peng and
-                      Fred Zhang},
-      title        = {Online Prediction in Sub-linear Space},
-      booktitle    = {{SODA}},
-      pages        = {1611--1634},
-      publisher    = {{SIAM}},
-      year         = {2023}
-    }
-

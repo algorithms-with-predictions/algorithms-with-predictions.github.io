@@ -4,29 +4,14 @@ labels:
 - online
 - scheduling
 publications:
-- name: arXiv
-  url: https://arxiv.org/pdf/2101.12160.pdf
-  year: 2021
-  month: null
-  day: null
-  dblp_key: null
-  bibtex: null
 - name: Math. Oper. Res.
   url: https://doi.org/10.1287/moor.2023.1364
   year: 2024
-  month: null
-  day: null
   dblp_key: journals/mor/RuttenM24
-  bibtex: |+
-    @article{DBLP:journals/mor/RuttenM24,
-      author       = {Daan Rutten and
-                      Debankur Mukherjee},
-      title        = {A New Approach to Capacity Scaling Augmented with Unreliable Machine
-                      Learning Predictions},
-      journal      = {Math. Oper. Res.},
-      volume       = {49},
-      number       = {1},
-      pages        = {476--508},
-      year         = {2024}
-    }
-
+  bibtex: "@article{DBLP:journals/mor/RuttenM24,\n  author       = {Daan Rutten and\n  Debankur Mukherjee},\n  title     \
+    \   = {A New Approach to Capacity Scaling Augmented with Unreliable Machine\n  Learning Predictions},\n  journal     \
+    \ = {Math. Oper. Res.},\n  volume       = {49},\n  number       = {1},\n  pages        = {476--508},\n  year         =\
+    \ {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/pdf/2101.12160.pdf
+  year: 2021

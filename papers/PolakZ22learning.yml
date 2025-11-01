@@ -1,30 +1,18 @@
 title: Learning-Augmented Maximum Flow
 authors: Polak, Zub
 labels:
-- running time
 - graph problems
+- running time
 publications:
+- name: Inf. Process. Lett.
+  url: https://doi.org/10.1016/j.ipl.2024.106487
+  year: 2024
+  dblp_key: journals/ipl/PolakZ24
+  bibtex: "@article{DBLP:journals/ipl/PolakZ24,\n  author       = {Adam Polak and\n  Maksym Zub},\n  title        = {Learning-augmented\
+    \ maximum flow},\n  journal      = {Inf. Process. Lett.},\n  volume       = {186},\n  pages        = {106487},\n  year\
+    \         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2207.12911
   year: 2022
   month: 7
   day: 26
-  dblp_key: null
-  bibtex: null
-- name: Inf. Process. Lett.
-  url: https://doi.org/10.1016/j.ipl.2024.106487
-  year: 2024
-  month: null
-  day: null
-  dblp_key: journals/ipl/PolakZ24
-  bibtex: |+
-    @article{DBLP:journals/ipl/PolakZ24,
-      author       = {Adam Polak and
-                      Maksym Zub},
-      title        = {Learning-augmented maximum flow},
-      journal      = {Inf. Process. Lett.},
-      volume       = {186},
-      pages        = {106487},
-      year         = {2024}
-    }
-

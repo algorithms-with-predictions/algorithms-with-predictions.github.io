@@ -1,30 +1,18 @@
 title: Randomized learning-augmented auctions with revenue guarantees
 authors: Caragiannis, Kalantzis
 labels:
-- game theory / mechanism design
 - auctions
+- game theory / mechanism design
 publications:
+- name: IJCAI
+  url: https://www.ijcai.org/proceedings/2024/297
+  year: 2024
+  dblp_key: conf/ijcai/Caragiannis024
+  bibtex: "@inproceedings{DBLP:conf/ijcai/Caragiannis024,\n  author       = {Ioannis Caragiannis and\n  Georgios Kalantzis},\n\
+    \  title        = {Randomized Learning-Augmented Auctions with Revenue Guarantees},\n  booktitle    = {{IJCAI}},\n  pages\
+    \        = {2687--2694},\n  publisher    = {ijcai.org},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2401.13384
   year: 2024
   month: 1
   day: 24
-  dblp_key: null
-  bibtex: null
-- name: IJCAI
-  url: https://www.ijcai.org/proceedings/2024/297
-  year: 2024
-  month: null
-  day: null
-  dblp_key: conf/ijcai/Caragiannis024
-  bibtex: |+
-    @inproceedings{DBLP:conf/ijcai/Caragiannis024,
-      author       = {Ioannis Caragiannis and
-                      Georgios Kalantzis},
-      title        = {Randomized Learning-Augmented Auctions with Revenue Guarantees},
-      booktitle    = {{IJCAI}},
-      pages        = {2687--2694},
-      publisher    = {ijcai.org},
-      year         = {2024}
-    }
-

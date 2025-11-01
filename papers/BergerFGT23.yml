@@ -3,29 +3,17 @@ authors: Berger, Feldman, Gkatzelis, Tan
 labels:
 - game theory / mechanism design
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2307.07495
-  year: 2023
-  month: 7
-  day: 14
-  dblp_key: null
-  bibtex: null
 - name: EC
   url: https://dl.acm.org/doi/10.1145/3670865.3673456
   year: 2024
   month: 12
   day: 17
   dblp_key: conf/sigecom/BergerFGT24
-  bibtex: |+
-    @inproceedings{DBLP:conf/sigecom/BergerFGT24,
-      author       = {Ben Berger and
-                      Michal Feldman and
-                      Vasilis Gkatzelis and
-                      Xizhi Tan},
-      title        = {Learning-Augmented Metric Distortion via (p, q)-Veto Core},
-      booktitle    = {{EC}},
-      pages        = {984},
-      publisher    = {{ACM}},
-      year         = {2024}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/sigecom/BergerFGT24,\n  author       = {Ben Berger and\n  Michal Feldman and\n  Vasilis\
+    \ Gkatzelis and\n  Xizhi Tan},\n  title        = {Learning-Augmented Metric Distortion via (p, q)-Veto Core},\n  booktitle\
+    \    = {{EC}},\n  pages        = {984},\n  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2307.07495
+  year: 2023
+  month: 7
+  day: 14

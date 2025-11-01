@@ -3,28 +3,17 @@ authors: Filos-Ratsikas, Kalantzis, Voudouris
 labels:
 - game theory / mechanism design
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2502.06489
-  year: 2025
-  month: 2
-  day: 10
-  dblp_key: null
-  bibtex: null
 - name: EC
   url: https://dl.acm.org/doi/abs/10.1145/3736252.3742526
   year: 2025
   month: 7
   day: 2
   dblp_key: conf/sigecom/Filos-Ratsikas025
-  bibtex: |+
-    @inproceedings{DBLP:conf/sigecom/Filos-Ratsikas025,
-      author       = {Aris Filos{-}Ratsikas and
-                      Georgios Kalantzis and
-                      Alexandros A. Voudouris},
-      title        = {Utilitarian Distortion with Predictions},
-      booktitle    = {{EC}},
-      pages        = {254--271},
-      publisher    = {{ACM}},
-      year         = {2025}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/sigecom/Filos-Ratsikas025,\n  author       = {Aris Filos{-}Ratsikas and\n  Georgios Kalantzis\
+    \ and\n  Alexandros A. Voudouris},\n  title        = {Utilitarian Distortion with Predictions},\n  booktitle    = {{EC}},\n\
+    \  pages        = {254--271},\n  publisher    = {{ACM}},\n  year         = {2025}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2502.06489
+  year: 2025
+  month: 2
+  day: 10

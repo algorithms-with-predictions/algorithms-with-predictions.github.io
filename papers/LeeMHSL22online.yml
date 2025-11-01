@@ -7,28 +7,11 @@ publications:
 - name: SIGENERGY
   url: https://dl.acm.org/doi/abs/10.1145/3508467.3508473
   year: 2022
-  month: null
-  day: null
-  dblp_key: null
-  bibtex: null
 - name: e-Energy
   url: https://doi.org/10.1145/3447555.3464860
   year: 2021
-  month: null
-  day: null
   dblp_key: conf/eenergy/LeeMHLSL21
-  bibtex: |+
-    @inproceedings{DBLP:conf/eenergy/LeeMHLSL21,
-      author       = {Russell Lee and
-                      Jessica Maghakian and
-                      Mohammad H. Hajiesmaili and
-                      Jian Li and
-                      Ramesh K. Sitaraman and
-                      Zhenhua Liu},
-      title        = {Online Peak-Aware Energy Scheduling with Untrusted Advice},
-      booktitle    = {e-Energy},
-      pages        = {107--123},
-      publisher    = {{ACM}},
-      year         = {2021}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/eenergy/LeeMHLSL21,\n  author       = {Russell Lee and\n  Jessica Maghakian and\n  Mohammad\
+    \ H. Hajiesmaili and\n  Jian Li and\n  Ramesh K. Sitaraman and\n  Zhenhua Liu},\n  title        = {Online Peak-Aware Energy\
+    \ Scheduling with Untrusted Advice},\n  booktitle    = {e-Energy},\n  pages        = {107--123},\n  publisher    = {{ACM}},\n\
+    \  year         = {2021}\n}\n"

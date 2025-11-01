@@ -6,19 +6,8 @@ publications:
 - name: Proc. VLDB Endow.
   url: http://www.vldb.org/pvldb/vol13/p1162-ferragina.pdf
   year: 2020
-  month: null
-  day: null
   dblp_key: journals/pvldb/FerraginaV20
-  bibtex: |+
-    @article{DBLP:journals/pvldb/FerraginaV20,
-      author       = {Paolo Ferragina and
-                      Giorgio Vinciguerra},
-      title        = {The PGM-index: a fully-dynamic compressed learned index with provable
-                      worst-case bounds},
-      journal      = {Proc. {VLDB} Endow.},
-      volume       = {13},
-      number       = {8},
-      pages        = {1162--1175},
-      year         = {2020}
-    }
-
+  bibtex: "@article{DBLP:journals/pvldb/FerraginaV20,\n  author       = {Paolo Ferragina and\n  Giorgio Vinciguerra},\n  title\
+    \        = {The PGM-index: a fully-dynamic compressed learned index with provable\n  worst-case bounds},\n  journal  \
+    \    = {Proc. {VLDB} Endow.},\n  volume       = {13},\n  number       = {8},\n  pages        = {1162--1175},\n  year \
+    \        = {2020}\n}\n"

@@ -1,28 +1,17 @@
 title: Online Ad Allocation with Predictions
 authors: Spaeh, Ene
 labels:
-- online
 - allocation / matching
+- online
 publications:
 - name: NeurIPS
   url: https://proceedings.neurips.cc/paper_files/paper/2023/file/3815d62554efad0878fad6c1c30ffda0-Paper-Conference.pdf
   year: 2023
-  month: null
-  day: null
   dblp_key: conf/nips/SpaehE23
-  bibtex: |+
-    @inproceedings{DBLP:conf/nips/SpaehE23,
-      author       = {Fabian Spaeh and
-                      Alina Ene},
-      title        = {Online Ad Allocation with Predictions},
-      booktitle    = {NeurIPS},
-      year         = {2023}
-    }
-
+  bibtex: "@inproceedings{DBLP:conf/nips/SpaehE23,\n  author       = {Fabian Spaeh and\n  Alina Ene},\n  title        = {Online\
+    \ Ad Allocation with Predictions},\n  booktitle    = {NeurIPS},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2302.01827
   year: 2023
   month: 2
   day: 3
-  dblp_key: null
-  bibtex: null
