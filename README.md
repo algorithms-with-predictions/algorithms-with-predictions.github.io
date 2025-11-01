@@ -1,4 +1,4 @@
-# 🔬 Algorithms with Predictions (ALPS)
+# Algorithms with Predictions (ALPS)
 
 [![Build Status](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io/actions)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Falgorithms-with-predictions.github.io)](https://algorithms-with-predictions.github.io)
@@ -8,36 +8,28 @@ A comprehensive, community-driven resource for research on **Algorithms with Pre
 maintaining an overview of the current state of research and collecting links to relevant materials
 to help researchers navigate this rapidly growing field.
 
-## 🎯 Mission
+## Mission
 
 The idea of this project is to maintain an overview over the current state of research on Algorithms
 with Predictions and collect links to further relevant material. This should especially help new
 researchers in this field to orient faster, but we also try to keep track over and cluster the large
 amount of results and publications in this field.
 
-## ✨ Features
-
-- 📚 **Comprehensive Paper Database**: Curated collection of research papers with metadata
-- 🔍 **Smart Filtering**: Filter by publication year, venue, research area, and more
-- 🏷️ **Topic Classification**: Papers organized by problem types and methodologies
-- 🔗 **Direct Links**: Quick access to PDFs from arXiv, conference proceedings, and journals
-- 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
-- 🤖 **Automated Updates**: Integration with DBLP and arXiv for automatic paper metadata fetching
-
 ## How to Contribute in General
 
 The sources and data for this webpage are available on
 [GitHub](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io). It
-uses [Gatsby](https://www.gatsbyjs.com/) for static site rendering and is hosted via
-[GitHub Pages](https://pages.github.com/).
+uses [Vite](https://vitejs.dev/) + [React 18](https://react.dev/) to build a static site and is
+hosted via [GitHub Pages](https://pages.github.com/).
 
 Everyone is very welcome to contribute:
 
 - Maintain paper references, e.g. adding, updating and labeling references (see `papers/` directory
   and syntax below)
-- Add and edit further material. This page is generated from the
-  [Markdown](https://en.wikipedia.org/wiki/Markdown) file `src/markdown-pages/material.md` and is
-  thus easy to modify.
+- Add and edit further material. Key Markdown sources live in `public/content/`:
+  - `public/content/material.md` (Material page)
+  - `public/content/about.md` (About page)
+  - `public/content/contribute.md` (Contribute page)
 - Improve layout or design, add new features.
 
 Most contributions can be done via Pull Requests directly in the repository. For more involved
@@ -95,7 +87,7 @@ this paper can be added automatically.
 
 ## Local Development
 
-You can start a local development instance of this webpage as follows:
+Prerequisites: Node.js >= 18 and npm >= 8.
 
 First, clone
 [this repository](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io)
@@ -108,17 +100,19 @@ npm install
 Then start the development server:
 
 ```bash
-npm run develop
+npm run dev
 ```
 
-The site will be available at `http://localhost:8000`
+The site will be available at `http://localhost:3000`.
 
 ## 🛠️ Technology Stack
 
-- **Framework**: [Gatsby 5](https://www.gatsbyjs.com/) - React-based static site generator
-- **UI Library**: [Material-UI (MUI) v5](https://mui.com/) - Modern React component library
-- **Styling**: [Emotion](https://emotion.sh/) - CSS-in-JS styling solution
-- **Data Processing**: Node.js scripts with YAML parsing
+- **Build Tool**: [Vite 5](https://vitejs.dev/)
+- **Framework**: [React 18](https://react.dev/)
+- **UI Library**: [Material-UI (MUI) v5](https://mui.com/)
+- **Styling**: [Emotion](https://emotion.sh/)
+- **Content**: Markdown files in `public/content/*.md`
+- **Data Processing**: Node.js scripts for YAML and JSON generation (`scripts/`)
 - **Code Quality**: ESLint, Prettier, Husky for git hooks
 - **CI/CD**: GitHub Actions for automated testing and deployment
 - **Hosting**: GitHub Pages with automated deployments
@@ -126,13 +120,19 @@ The site will be available at `http://localhost:8000`
 ## 📊 Project Scripts
 
 ```bash
-npm run develop        # Start development server
-npm run build         # Build production site
-npm run format        # Format code with Prettier
-npm run lint          # Run ESLint checks
-npm run clean         # Clean Gatsby cache
-npm run update-data   # Update paper metadata from external sources
-npm run deploy        # Deploy to GitHub Pages
+npm run dev             # Compose data and start Vite dev server
+npm run start           # Alias for dev
+npm run build           # Compose data and build production site
+npm run preview         # Preview the built site locally
+npm run format          # Format code with Prettier
+npm run format:check    # Check formatting without writing
+npm run lint            # Run ESLint checks
+npm run lint:fix        # Fix lint issues automatically
+npm run type-check      # Run TypeScript type checks
+npm run clean           # Clean build cache (dist and Vite cache)
+npm run clean:all       # Remove dist, node_modules, and lockfile
+npm run update-data     # Update paper metadata from external sources
+npm run deploy          # Deploy to GitHub Pages (branch: deploy)
 ```
 
 ## 🤝 Contributing
