@@ -40,8 +40,11 @@ const AuthorText = styled(Typography)(({ theme }) => ({
 }));
 
 const openInNewTab = url => {
-  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-  if (newWindow) newWindow.opener = null;
+  // Only run in client-side environment
+  if (typeof window !== 'undefined') {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  }
 };
 
 // Type labels that get special green color
@@ -74,6 +77,11 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
     paper.publications?.[0];
 
   const handleCopyBibtex = () => {
+    // Only run in client-side environment
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') {
+      return;
+    }
+
     const bibtexEntries = paper.publications
       ?.filter(pub => pub.bibtex)
       .map(pub => pub.bibtex.trim())

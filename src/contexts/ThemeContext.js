@@ -167,21 +167,31 @@ export const ThemeContextProvider = ({ children }) => {
   // Load saved theme preference on mount
   useEffect(() => {
     setIsHydrated(true);
-    const savedMode = localStorage.getItem('themeMode');
-    if (savedMode && (savedMode === 'light' || savedMode === 'dark')) {
-      setMode(savedMode);
-    } else {
-      // Detect system preference
-      const prefersDark = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      ).matches;
-      setMode(prefersDark ? 'dark' : 'light');
+
+    // Only access browser APIs in client-side environment
+    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+      const savedMode = localStorage.getItem('themeMode');
+      if (savedMode && (savedMode === 'light' || savedMode === 'dark')) {
+        setMode(savedMode);
+      } else {
+        // Detect system preference
+        if (typeof window.matchMedia !== 'undefined') {
+          const prefersDark = window.matchMedia(
+            '(prefers-color-scheme: dark)'
+          ).matches;
+          setMode(prefersDark ? 'dark' : 'light');
+        }
+      }
     }
   }, []);
 
   // Save theme preference when changed (only after hydration)
   useEffect(() => {
-    if (isHydrated) {
+    if (
+      isHydrated &&
+      typeof window !== 'undefined' &&
+      typeof localStorage !== 'undefined'
+    ) {
       localStorage.setItem('themeMode', mode);
     }
   }, [mode, isHydrated]);

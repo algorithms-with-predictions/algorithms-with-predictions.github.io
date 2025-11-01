@@ -225,6 +225,7 @@ const YearDistributionChart = ({ yearData }) => {
           flexDirection: 'column',
           py: { xs: 1, sm: 2 },
           px: { xs: 1.5, sm: 2 },
+          overflow: 'hidden', // Prevent any overflow
         }}
       >
         <Typography
@@ -234,6 +235,7 @@ const YearDistributionChart = ({ yearData }) => {
           sx={{
             fontSize: { xs: '1rem', sm: '1.25rem' },
             mb: { xs: 1, sm: 2 },
+            flexShrink: 0, // Don't shrink the title
           }}
         >
           Paper Distribution by Year
@@ -242,12 +244,13 @@ const YearDistributionChart = ({ yearData }) => {
           sx={{
             flex: 1,
             display: 'flex',
-            alignItems: 'end',
+            alignItems: 'flex-end', // Align all bars to bottom
             justifyContent: 'space-around',
-            mt: { xs: 1, sm: 2 },
-            mb: { xs: 1, sm: 2 },
-            minHeight: { xs: '80px', sm: '120px' },
+            position: 'relative',
+            minHeight: { xs: '100px', sm: '140px' }, // Set consistent minimum height
             px: { xs: 0.5, sm: 1 },
+            pb: { xs: 2, sm: 2.5 }, // Space for year labels
+            pt: { xs: 2, sm: 2.5 }, // Space for count labels
           }}
         >
           {years.map(year => (
@@ -259,54 +262,58 @@ const YearDistributionChart = ({ yearData }) => {
                 alignItems: 'center',
                 flex: 1,
                 mx: { xs: 0.2, sm: 0.5 },
+                height: '100%', // Full height of container
+                position: 'relative',
+                justifyContent: 'flex-end', // Push content to bottom
               }}
             >
-              {/* Bar */}
+              {/* Count label positioned at top */}
+              <Typography
+                variant="caption"
+                sx={{
+                  position: 'absolute',
+                  top: { xs: -20, sm: -24 },
+                  color: 'text.secondary',
+                  fontSize: { xs: '0.6rem', sm: '0.7rem' },
+                  fontWeight: 'medium',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                {yearData[year]}
+              </Typography>
+
+              {/* Bar - proportional height based on data */}
               <Box
                 sx={{
                   width: '100%',
                   maxWidth: { xs: '16px', sm: '24px' },
+                  // Height proportional to data value, using available chart space
                   height: {
-                    xs: `${(yearData[year] / maxCount) * 50 + 8}px`,
-                    sm: `${(yearData[year] / maxCount) * 80 + 10}px`,
+                    xs: `${Math.max((yearData[year] / maxCount) * 60, 4)}px`, // Min 4px, max 60px
+                    sm: `${Math.max((yearData[year] / maxCount) * 90, 6)}px`, // Min 6px, max 90px
                   },
                   backgroundColor: theme => theme.palette.primary.main,
                   borderRadius: '4px 4px 0 0',
-                  display: 'flex',
-                  alignItems: 'end',
-                  justifyContent: 'center',
-                  position: 'relative',
                   transition: 'all 0.3s ease',
                   '&:hover': {
                     backgroundColor: theme => theme.palette.primary.dark,
                     transform: 'scaleY(1.05)',
+                    transformOrigin: 'bottom',
                   },
                 }}
-              >
-                {/* Count label on top of bar */}
-                <Typography
-                  variant="caption"
-                  sx={{
-                    position: 'absolute',
-                    top: { xs: -16, sm: -20 },
-                    color: 'text.secondary',
-                    fontSize: { xs: '0.6rem', sm: '0.7rem' },
-                    fontWeight: 'medium',
-                  }}
-                >
-                  {yearData[year]}
-                </Typography>
-              </Box>
+              />
 
-              {/* Year label */}
+              {/* Year label positioned at bottom */}
               <Typography
                 variant="body2"
                 sx={{
-                  mt: { xs: 0.5, sm: 1 },
+                  position: 'absolute',
+                  bottom: { xs: -18, sm: -22 },
                   fontSize: { xs: '0.65rem', sm: '0.75rem' },
                   fontWeight: 'medium',
                   color: 'text.secondary',
                   textAlign: 'center',
+                  whiteSpace: 'nowrap',
                 }}
               >
                 {year}

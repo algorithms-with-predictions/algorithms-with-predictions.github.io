@@ -26,10 +26,14 @@ import PropTypes from 'prop-types';
 import SearchAndFilter from './SearchAndFilter';
 import PaperCard from './PaperCard';
 import StatsDashboard from './StatsDashboard';
+import { useHydration } from '../hooks/useHydration';
 
 const openInNewTab = url => {
-  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-  if (newWindow) newWindow.opener = null;
+  // Only run in client-side environment
+  if (typeof window !== 'undefined') {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  }
 };
 
 const AuthorText = styled('div')(({ theme }) => ({
@@ -47,20 +51,28 @@ const TitleText = styled('div')(({ theme }) => ({
 }));
 
 function minDateOfPaper(paper) {
+  // Create a safe date creator that works in both SSR and client
+  const createSafeDate = (year, month = 0, day = 1) => {
+    // Ensure consistent date creation between server and client
+    const safeYear = typeof year === 'number' ? year : parseInt(year) || 2000;
+    const safeMonth = typeof month === 'number' ? month : parseInt(month) || 0;
+    const safeDay = typeof day === 'number' ? day : parseInt(day) || 1;
+    return new Date(safeYear, safeMonth, safeDay);
+  };
+
   const fullDates = paper.publications
     .filter(pub => pub.month !== undefined)
-    .map(pub => new Date(pub.year, pub.month, pub.day));
+    .map(pub => createSafeDate(pub.year, pub.month, pub.day));
 
   if (fullDates.length > 0) {
     return new Date(Math.min(...fullDates));
   } else {
-    const dates = paper.publications.map(
-      pub =>
-        new Date(
-          pub.year,
-          pub.month === undefined ? 0 : pub.month,
-          pub.day === undefined ? 0 : pub.day
-        )
+    const dates = paper.publications.map(pub =>
+      createSafeDate(
+        pub.year,
+        pub.month === undefined ? 0 : pub.month,
+        pub.day === undefined ? 1 : pub.day
+      )
     );
     return new Date(Math.min(...dates));
   }
@@ -120,6 +132,11 @@ const PaperList = ({ data }) => {
 
   // BibTeX export function
   const handleExportBibtex = () => {
+    // Only run in client-side environment
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      return;
+    }
+
     const bibtexEntries = sortedData
       .flatMap(
         paper =>
@@ -138,9 +155,11 @@ const PaperList = ({ data }) => {
     const blob = new Blob([bibtexContent], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
 
+    // Create download with current date
+    const currentDate = new Date().toISOString().split('T')[0];
     const link = document.createElement('a');
     link.href = url;
-    link.download = `alps-papers-${new Date().toISOString().split('T')[0]}.bib`;
+    link.download = `alps-papers-${currentDate}.bib`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -496,7 +515,7 @@ const PaperList = ({ data }) => {
                     setSelLabels(prev => prev.filter(l => l !== label))
                   }
                   size="small"
-                  color="secondary"
+                  color={labelColor(label)}
                   variant="outlined"
                   sx={{ height: 24, borderRadius: 2 }}
                 />
