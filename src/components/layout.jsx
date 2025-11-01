@@ -1,14 +1,11 @@
 import { Container, Box, CssBaseline } from '@mui/material';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Header from './header';
-import { useThemeMode } from '../contexts/ThemeContext';
+import Header from './header.jsx';
 
 import './layout.css';
 
 const Layout = ({ children }) => {
-  const { isDark } = useThemeMode();
-
   return (
     <>
       <CssBaseline />

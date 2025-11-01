@@ -1,1 +1,8 @@
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+   0.054571812s  INFO prepare_target{force=false package_id=updater v0.2.0 (/home/alex/dev/alps/updater) target="main_improved"}: cargo::core::compiler::fingerprint: fingerprint dirty for updater v0.2.0 (/home/alex/dev/alps/updater)/Check { test: false }/TargetInner { name: "main_improved", doc: true, ..: with_path("/home/alex/dev/alps/updater/src/main_improved.rs", Edition2021) }
+   0.054592910s  INFO prepare_target{force=false package_id=updater v0.2.0 (/home/alex/dev/alps/updater) target="main_improved"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(Stale)
+   0.054893030s  INFO prepare_target{force=false package_id=updater v0.2.0 (/home/alex/dev/alps/updater) target="main_improved"}: cargo::core::compiler::fingerprint: fingerprint dirty for updater v0.2.0 (/home/alex/dev/alps/updater)/Check { test: true }/TargetInner { name: "main_improved", doc: true, ..: with_path("/home/alex/dev/alps/updater/src/main_improved.rs", Edition2021) }
+   0.054896953s  INFO prepare_target{force=false package_id=updater v0.2.0 (/home/alex/dev/alps/updater) target="main_improved"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(Stale)
+    Checking updater v0.2.0 (/home/alex/dev/alps/updater)
+error: could not compile `updater` (bin "main_improved" test) due to 3 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `updater` (bin "main_improved") due to 3 previous errors

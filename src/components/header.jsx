@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import { Link as RouterLink } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle';
+import ThemeToggle from './ThemeToggle.jsx';
 
 const pages = [
   { name: 'Paper List', href: '/' },
