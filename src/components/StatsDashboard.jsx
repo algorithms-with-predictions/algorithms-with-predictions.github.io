@@ -390,9 +390,9 @@ const StatsDashboard = ({ data }) => {
     .slice(0, 5);
   return (
     <Box sx={{ mb: 3 }}>
-      <Grid container spacing={{ xs: 1.5, sm: 2 }} alignItems="stretch">
+      <Grid container spacing={{ xs: 1.5, sm: 2 }}>
         {/* Compact Total Papers & Authors & Venues */}
-        <Grid item xs={12} sm={6} md={2.5}>
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <StatCard
             title="Papers"
             value={totalPapers}
@@ -408,12 +408,12 @@ const StatsDashboard = ({ data }) => {
         </Grid>
 
         {/* Year Distribution Chart */}
-        <Grid item xs={12} sm={6} md={4.5}>
+        <Grid size={{ xs: 12, sm: 6, md: 4 }}>
           <YearDistributionChart yearData={yearDistribution} />
         </Grid>
 
         {/* Compact Top Venues */}
-        <Grid item xs={12} md={5}>
+        <Grid size={{ xs: 12, md: 5 }}>
           <TopVenuesCard venues={venueStats} />
         </Grid>
       </Grid>
