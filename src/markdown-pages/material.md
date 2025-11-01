@@ -15,9 +15,12 @@ slug: '/material'
 - **Dagstuhl 2025**
   [Seminar 25471: Online Algorithms beyond Competitive Analysis](https://www.dagstuhl.de/de/seminars/seminar-calendar/seminar-details/25471),
   _Schloss Dagstuhl, Germany, November 2025_
+- **CWI Research Program Learning Enhanced Optimization**
+  [Learning augmented algorithms](https://www.cwi.nl/en/events/research-semester-programmes/satellite-workshop-1-learning-augmented-algorithms/),
+  _CWI, Amsterdam, October 2025_
 - **ICALP 2025** Satellite Workshop on
-  [Theory and Applications of Algorithms with Predictions](https://taap25.github.io/)), Aarhus,
-  Denmark, July 2025\_
+  [Theory and Applications of Algorithms with Predictions](https://taap25.github.io/)), _Aarhus,
+  Denmark, July 2025_
 - **Dagstuhl 2025**
   [Seminar 25181: Learned Predictions for Data Structures and Running Time](https://www.dagstuhl.de/de/seminars/seminar-calendar/seminar-details/25181),
   _Schloss Dagstuhl, Germany, May 2025_
