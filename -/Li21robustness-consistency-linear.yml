@@ -1,0 +1,18 @@
+title: Robustness and Consistency in Linear Quadratic Control with Predictions
+authors: Tongxin Li, Ruixiao Yang, Guannan Qu, Guanya Shi, Chenkai Yu, A. Wierman,
+  S. Low
+publications:
+- name: arXiv
+  year: 2021
+  dblp_key: journals/corr/abs-2106-09659
+  bibtex: "@article{DBLP:journals/corr/abs-2106-09659,\n  author       = {Tongxin\
+    \ Li and\n                  Ruixiao Yang and\n                  Guannan Qu and\n\
+    \                  Guanya Shi and\n                  Chenkai Yu and\n        \
+    \          Adam Wierman and\n                  Steven H. Low},\n  title      \
+    \  = {Robustness and Consistency in Linear Quadratic Control with Predictions},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/2106.09659},\n  year        \
+    \ = {2021},\n  url          = {https://arxiv.org/abs/2106.09659},\n  eprinttype\
+    \    = {arXiv},\n  eprint       = {2106.09659},\n  timestamp    = {Tue, 29 Jun\
+    \ 2021 16:55:04 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2106-09659.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+s2_id: 5842e9be51951f0109676ab704bb8bf8d9c1e523

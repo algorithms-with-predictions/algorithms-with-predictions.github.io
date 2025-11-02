@@ -1,0 +1,21 @@
+title: Data-driven Competitive Algorithms for Online Knapsack and Set Cover
+authors: Zeynali, Sun, Hajiesmaili, Wierman
+labels:
+- covering
+- learning
+- online
+- packing
+publications:
+- name: AAAI
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/17294
+  year: 2021
+  dblp_key: conf/aaai/Zeynali0HW21
+  bibtex: "@inproceedings{DBLP:conf/aaai/Zeynali0HW21,\n  author       = {Ali Zeynali and\n  Bo Sun and\n  Mohammad Hassan\
+    \ Hajiesmaili and\n  Adam Wierman},\n  title        = {Data-driven Competitive Algorithms for Online Knapsack and Set\
+    \ Cover},\n  booktitle    = {{AAAI}},\n  pages        = {10833--10841},\n  publisher    = {{AAAI} Press},\n  year    \
+    \     = {2021}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2012.05361
+  year: 2020
+  month: 12
+  day: 9

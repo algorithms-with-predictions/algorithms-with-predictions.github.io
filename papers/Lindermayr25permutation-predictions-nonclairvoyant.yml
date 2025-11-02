@@ -1,0 +1,45 @@
+title: Permutation Predictions for Non-Clairvoyant Scheduling
+authors: Alexander Lindermayr, Nicole Megow
+labels:
+- online
+- parsimonious / succinct
+- scheduling
+publications:
+- name: ACM Trans. Parallel Comput.
+  url: https://doi.org/10.1145/3711872
+  year: 2025
+  dblp_key: journals/topc/LindermayrM25
+  bibtex: |
+    @article{DBLP:journals/topc/LindermayrM25,
+      author       = {Alexander Lindermayr and
+      Nicole Megow},
+      title        = {Permutation Predictions for Non-Clairvoyant Scheduling},
+      journal      = {{ACM} Trans. Parallel Comput.},
+      volume       = {12},
+      number       = {2},
+      pages        = {4:1--4:26},
+      year         = {2025}
+    }
+    
+- name: SPAA
+  url: https://doi.org/10.1145/3490148.3538579
+  year: 2022
+  dblp_key: conf/spaa/LindermayrM22
+  bibtex: |
+    @inproceedings{DBLP:conf/spaa/LindermayrM22,
+      author       = {Alexander Lindermayr and
+      Nicole Megow},
+      title        = {Permutation Predictions for Non-Clairvoyant Scheduling},
+      booktitle    = {{SPAA}},
+      pages        = {357--368},
+      publisher    = {{ACM}},
+      year         = {2022}
+    }
+    
+- name: arXiv
+  url: https://arxiv.org/abs/2202.10199
+  year: 2022
+  month: 2
+  day: 21
+arxiv: 2202.10199
+s2_id: 63ed23a06e8e1dfbe132a12515a1dcf742b4aa9e

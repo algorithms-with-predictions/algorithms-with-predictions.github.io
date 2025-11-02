@@ -1,0 +1,29 @@
+title: Improved Frequency Estimation Algorithms with and without Predictions
+authors: Anders Aamand, Justin Y. Chen, Huy Le Nguyen, Sandeep Silwal, A. Vakilian
+labels:
+- parsimonious / succinct
+- streaming
+publications:
+- name: NeurIPS
+  url: https://arxiv.org/abs/2312.07535
+  year: 2023
+  dblp_key: conf/nips/AamandCNSV23
+  bibtex: |
+    @inproceedings{DBLP:conf/nips/AamandCNSV23,
+      author       = {Anders Aamand and
+      Justin Y. Chen and
+      Huy L{\^{e}} Nguyen and
+      Sandeep Silwal and
+      Ali Vakilian},
+      title        = {Improved Frequency Estimation Algorithms with and without Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2023}
+    }
+    
+- name: arXiv
+  url: https://arxiv.org/abs/2312.07535
+  year: 2023
+  month: 12
+  day: 12
+arxiv: 2312.07535
+s2_id: 9c3539908ead498b1ea31c6654f5ccc7c681a860

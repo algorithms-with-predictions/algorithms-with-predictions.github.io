@@ -1,0 +1,28 @@
+title: "'Online State Exploration: Competitive Worst Case and Learning-Augmented Algorithms'"
+authors: Sungjin Im, Ben Moseley, Chenyang Xu, Ruilong Zhang
+labels:
+- exploration
+- online
+- search
+publications:
+- name: ECML/PKDD
+  url: https://doi.org/10.1007/978-3-031-43421-1_20
+  year: 2023
+  dblp_key: conf/pkdd/ImMXZ23
+  bibtex: |
+    @inproceedings{DBLP:conf/pkdd/ImMXZ23,
+      author       = {Sungjin Im and
+      Benjamin Moseley and
+      Chenyang Xu and
+      Ruilong Zhang},
+      title        = {Online State Exploration: Competitive Worst Case and Learning-Augmented
+      Algorithms},
+      booktitle    = {{ECML/PKDD} {(4)}},
+      series       = {Lecture Notes in Computer Science},
+      volume       = {14172},
+      pages        = {333--348},
+      publisher    = {Springer},
+      year         = {2023}
+    }
+    
+s2_id: f74f5be68798a720a551eca73db1f9b2f159b8a1

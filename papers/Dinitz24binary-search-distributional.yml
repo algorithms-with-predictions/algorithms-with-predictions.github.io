@@ -1,0 +1,20 @@
+title: Binary Search with Distributional Predictions
+authors: Dinitz, Im, Lavastida, Moseley, Niaparast, Vassilvitskii
+labels:
+- dynamic / data structure
+- search
+publications:
+- name: NeurIPS
+  url: https://neurips.cc/virtual/2024/poster/95727
+  year: 2024
+  month: 9
+  day: 25
+  dblp_key: conf/nips/DinitzILMNV24
+  bibtex: "@inproceedings{DBLP:conf/nips/DinitzILMNV24,\n  author       = {Michael Dinitz and\n  Sungjin Im and\n  Thomas\
+    \ Lavastida and\n  Benjamin Moseley and\n  Aidin Niaparast and\n  Sergei Vassilvitskii},\n  title        = {Binary Search\
+    \ with Distributional Predictions},\n  booktitle    = {NeurIPS},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2411.16030
+  year: 2024
+  month: 11
+  day: 25

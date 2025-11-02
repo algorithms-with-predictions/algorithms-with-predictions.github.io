@@ -1,0 +1,20 @@
+title: Customizing ML Predictions For Online Algorithms
+authors: Anand, Ge, Panigrahi
+labels:
+- learning
+- online
+- rent-or-buy
+publications:
+- name: ICML
+  url: http://proceedings.mlr.press/v119/anand20a/anand20a.pdf
+  year: 2020
+  dblp_key: conf/icml/AnandGP20
+  bibtex: "@inproceedings{DBLP:conf/icml/AnandGP20,\n  author       = {Keerti Anand and\n  Rong Ge and\n  Debmalya Panigrahi},\n\
+    \  title        = {Customizing {ML} Predictions for Online Algorithms},\n  booktitle    = {{ICML}},\n  series       =\
+    \ {Proceedings of Machine Learning Research},\n  volume       = {119},\n  pages        = {303--313},\n  publisher    =\
+    \ {{PMLR}},\n  year         = {2020}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2205.08715
+  year: 2022
+  month: 5
+  day: 18

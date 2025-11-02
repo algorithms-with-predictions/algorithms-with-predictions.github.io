@@ -1,0 +1,18 @@
+title: Sorting with Predictions
+authors: Bai, Coester
+labels:
+- running time
+- sorting
+- two-oracle
+publications:
+- name: NeurIPS
+  url: https://openreview.net/forum?id=Qv7rWR9JWa
+  year: 2023
+  dblp_key: conf/nips/BaiC23
+  bibtex: "@inproceedings{DBLP:conf/nips/BaiC23,\n  author       = {Xingjian Bai and\n  Christian Coester},\n  title     \
+    \   = {Sorting with Predictions},\n  booktitle    = {NeurIPS},\n  year         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2311.00749
+  year: 2023
+  month: 11
+  day: 1

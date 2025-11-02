@@ -1,0 +1,27 @@
+title: Queues with Small Advice
+authors: M. Mitzenmacher
+labels:
+- online
+- queueing
+publications:
+- name: ACDA
+  url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976830.1
+  year: 2021
+  dblp_key: conf/acda/Mitzenmacher21
+  bibtex: |
+    @inproceedings{DBLP:conf/acda/Mitzenmacher21,
+      author       = {Michael Mitzenmacher},
+      title        = {Queues with Small Advice},
+      booktitle    = {{ACDA}},
+      pages        = {1--12},
+      publisher    = {{SIAM}},
+      year         = {2021}
+    }
+    
+- name: arXiv
+  url: https://arxiv.org/abs/2006.15463
+  year: 2020
+  month: 6
+  day: 27
+arxiv: 2006.15463
+s2_id: 5a4266ce2cea7b9ed14ee2a703d754f83c30d9f0

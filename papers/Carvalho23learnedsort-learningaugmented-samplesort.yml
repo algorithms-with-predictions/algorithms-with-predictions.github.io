@@ -1,0 +1,18 @@
+title: "'LearnedSort as a learning-augmented SampleSort: Analysis and Parallelization'"
+authors: Carvalho, Lawrence
+labels:
+- running time
+- sorting
+publications:
+- name: SSDBM
+  url: https://doi.org/10.1145/3603719.3603731
+  year: 2023
+  dblp_key: conf/ssdbm/CarvalhoL23
+  bibtex: "@inproceedings{DBLP:conf/ssdbm/CarvalhoL23,\n  author       = {Ivan Carvalho and\n  Ramon Lawrence},\n  title \
+    \       = {LearnedSort as a learning-augmented SampleSort: Analysis and Parallelization},\n  booktitle    = {{SSDBM}},\n\
+    \  pages        = {2:1--2:9},\n  publisher    = {{ACM}},\n  year         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2307.08637
+  year: 2023
+  month: 7
+  day: 17

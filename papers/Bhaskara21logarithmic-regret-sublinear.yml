@@ -1,0 +1,18 @@
+title: Logarithmic Regret from Sublinear Hints
+authors: Bhaskara, Cutkosky, Kumar, Purohit
+labels:
+- learning
+- online
+publications:
+- name: NeurIPS
+  url: https://proceedings.neurips.cc/paper/2021/file/edb947f2bbceb132245fdde9c59d3f59-Paper.pdf
+  year: 2021
+  dblp_key: conf/nips/BhaskaraCKP21
+  bibtex: "@inproceedings{DBLP:conf/nips/BhaskaraCKP21,\n  author       = {Aditya Bhaskara and\n  Ashok Cutkosky and\n  Ravi\
+    \ Kumar and\n  Manish Purohit},\n  title        = {Logarithmic Regret from Sublinear Hints},\n  booktitle    = {NeurIPS},\n\
+    \  pages        = {28222--28232},\n  year         = {2021}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2111.05257
+  year: 2021
+  month: 11
+  day: 9

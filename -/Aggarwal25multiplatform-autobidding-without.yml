@@ -1,0 +1,38 @@
+title: Multi-Platform Autobidding with and without Predictions
+authors: Gagan Aggarwal, Anupam Gupta, Xizhi Tan, Mingfei Zhao
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2502.19317
+  year: 2025
+  month: 2
+  day: 26
+- name: WWW
+  url: https://doi.org/10.1145/3696410.3714936
+  year: 2025
+  dblp_key: conf/www/Aggarwal0TZ25
+  bibtex: |
+    @inproceedings{DBLP:conf/www/Aggarwal0TZ25,
+      author       = {Gagan Aggarwal and
+                      Anupam Gupta and
+                      Xizhi Tan and
+                      Mingfei Zhao},
+      editor       = {Guodong Long and
+                      Michale Blumestein and
+                      Yi Chang and
+                      Liane Lewin{-}Eytan and
+                      Zi Helen Huang and
+                      Elad Yom{-}Tov},
+      title        = {Multi-Platform Autobidding with and without Predictions},
+      booktitle    = {Proceedings of the {ACM} on Web Conference 2025, {WWW} 2025, Sydney,
+                      NSW, Australia, 28 April 2025- 2 May 2025},
+      pages        = {2850--2859},
+      publisher    = {{ACM}},
+      year         = {2025},
+      url          = {https://doi.org/10.1145/3696410.3714936},
+      doi          = {10.1145/3696410.3714936},
+      timestamp    = {Fri, 09 May 2025 20:28:10 +0200},
+      biburl       = {https://dblp.org/rec/conf/www/Aggarwal0TZ25.bib},
+      bibsource    = {dblp computer science bibliography, https://dblp.org}
+    }
+arxiv: 2502.19317
+s2_id: 51592426016fd307d610ae03c7dedf1ad513c77c

@@ -1,0 +1,30 @@
+title: Online Search With Best-Price and Query-Based Predictions
+authors: Spyros Angelopoulos, Shahin Kamali, Dehou Zhang
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2112.01592
+  year: 2021
+  month: 12
+  day: 2
+- name: AAAI
+  url: https://doi.org/10.1609/aaai.v36i9.21199
+  year: 2021
+  dblp_key: journals/corr/abs-2112-01592
+  bibtex: |
+    @article{DBLP:journals/corr/abs-2112-01592,
+      author       = {Spyros Angelopoulos and
+                      Shahin Kamali and
+                      Dehou Zhang},
+      title        = {Online Search With Best-Price and Query-Based Predictions},
+      journal      = {CoRR},
+      volume       = {abs/2112.01592},
+      year         = {2021},
+      url          = {https://arxiv.org/abs/2112.01592},
+      eprinttype    = {arXiv},
+      eprint       = {2112.01592},
+      timestamp    = {Mon, 03 Mar 2025 21:31:45 +0100},
+      biburl       = {https://dblp.org/rec/journals/corr/abs-2112-01592.bib},
+      bibsource    = {dblp computer science bibliography, https://dblp.org}
+    }
+arxiv: 2112.01592
+s2_id: fe4fbe8a56c7b5c5c2663ee37419c90380ddffd8

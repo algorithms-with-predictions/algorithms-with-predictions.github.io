@@ -1,0 +1,30 @@
+title: "SkipPredict: When to Invest in Predictions for Scheduling"
+authors: Rana Shahout, Michael Mitzenmacher
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2402.03564
+  year: 2024
+  month: 2
+  day: 5
+- name: NeurIPS
+  url: https://doi.org/10.48550/arXiv.2402.03564
+  year: 2024
+  dblp_key: journals/corr/abs-2402-03564
+  bibtex: |
+    @article{DBLP:journals/corr/abs-2402-03564,
+      author       = {Rana Shahout and
+                      Michael Mitzenmacher},
+      title        = {SkipPredict: When to Invest in Predictions for Scheduling},
+      journal      = {CoRR},
+      volume       = {abs/2402.03564},
+      year         = {2024},
+      url          = {https://doi.org/10.48550/arXiv.2402.03564},
+      doi          = {10.48550/ARXIV.2402.03564},
+      eprinttype    = {arXiv},
+      eprint       = {2402.03564},
+      timestamp    = {Mon, 12 Feb 2024 13:36:38 +0100},
+      biburl       = {https://dblp.org/rec/journals/corr/abs-2402-03564.bib},
+      bibsource    = {dblp computer science bibliography, https://dblp.org}
+    }
+arxiv: 2402.03564
+s2_id: 2ec9a4c262c2adb3b8a25b29b0c144b95f51e1ea

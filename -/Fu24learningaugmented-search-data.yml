@@ -1,0 +1,30 @@
+title: Learning-Augmented Search Data Structures
+authors: Chunkai Fu, Brandon G. Nguyen, Jung Hoon Seo, Ryan Zesch, Samson Zhou
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2402.10457
+  year: 2024
+  month: 2
+  day: 16
+- name: ICLR
+  year: 2024
+  dblp_key: conf/iclr/FuNSZZ25
+  bibtex: |
+    @inproceedings{DBLP:conf/iclr/FuNSZZ25,
+      author       = {Chunkai Fu and
+                      Brandon G. Nguyen and
+                      Jung Hoon Seo and
+                      Ryan S. Zesch and
+                      Samson Zhou},
+      title        = {Learning-Augmented Search Data Structures},
+      booktitle    = {The Thirteenth International Conference on Learning Representations,
+                      {ICLR} 2025, Singapore, April 24-28, 2025},
+      publisher    = {OpenReview.net},
+      year         = {2025},
+      url          = {https://openreview.net/forum?id=N4rYbQowE3},
+      timestamp    = {Thu, 15 May 2025 17:19:05 +0200},
+      biburl       = {https://dblp.org/rec/conf/iclr/FuNSZZ25.bib},
+      bibsource    = {dblp computer science bibliography, https://dblp.org}
+    }
+arxiv: 2402.10457
+s2_id: 5be825b686180e5e8dc434dc34df0fe6d75041e9

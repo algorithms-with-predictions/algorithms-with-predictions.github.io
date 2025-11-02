@@ -1,0 +1,20 @@
+title: Learning-Augmented Priority Queues
+authors: Benomar, Coester
+labels:
+- dynamic / data structure
+- shortest path
+- sorting
+- two-oracle
+publications:
+- name: NeurIPS
+  url: https://openreview.net/forum?id=1ATLLgvURu
+  year: 2024
+  dblp_key: conf/nips/BenomarC24
+  bibtex: "@inproceedings{\n  benomar2024learningaugmented,\n  title={Learning-Augmented Priority Queues},\n  author={Ziyad\
+    \ Benomar and Christian Coester},\n  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},\n\
+    \  year={2024},\n  url={https://openreview.net/forum?id=1ATLLgvURu}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2406.04793
+  year: 2024
+  month: 6
+  day: 7

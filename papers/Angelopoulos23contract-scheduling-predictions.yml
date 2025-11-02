@@ -1,0 +1,21 @@
+title: Contract scheduling with predictions
+authors: Angelopoulos, Kamali
+labels:
+- online
+- scheduling
+publications:
+- name: J. Artif. Intell. Res.
+  url: https://doi.org/10.1613/jair.1.14117
+  year: 2023
+  dblp_key: journals/jair/AngelopoulosK23
+  bibtex: "@article{DBLP:journals/jair/AngelopoulosK23,\n  author       = {Spyros Angelopoulos and\n  Shahin Kamali},\n  title\
+    \        = {Contract Scheduling with Predictions},\n  journal      = {J. Artif. Intell. Res.},\n  volume       = {77},\n\
+    \  pages        = {395--426},\n  year         = {2023}\n}\n"
+- name: AAAI
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/17394
+  year: 2021
+- name: arXiv
+  url: https://arxiv.org/abs/2011.12439
+  year: 2020
+  month: 11
+  day: 24

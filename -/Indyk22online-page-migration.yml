@@ -1,0 +1,32 @@
+title: Online Page Migration with ML Advice
+authors: P. Indyk, Frederik Mallmann-Trenn, Slobodan Mitrovi'c, R. Rubinfeld
+labels:
+- caching / paging
+- online
+publications:
+- name: AISTATS
+  url: https://proceedings.mlr.press/v151/indyk22a.html
+  year: 2022
+  dblp_key: conf/aistats/IndykMMR22
+  bibtex: |
+    @inproceedings{DBLP:conf/aistats/IndykMMR22,
+      author       = {Piotr Indyk and
+      Frederik Mallmann{-}Trenn and
+      Slobodan Mitrovic and
+      Ronitt Rubinfeld},
+      title        = {Online Page Migration with {ML} Advice},
+      booktitle    = {{AISTATS}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {151},
+      pages        = {1655--1670},
+      publisher    = {{PMLR}},
+      year         = {2022}
+    }
+    
+- name: arXiv
+  url: https://arxiv.org/abs/2006.05028
+  year: 2020
+  month: 6
+  day: 9
+arxiv: 2006.05028
+s2_id: 2d70288c89a05c59f5306b6edf4342cda2e8cc15

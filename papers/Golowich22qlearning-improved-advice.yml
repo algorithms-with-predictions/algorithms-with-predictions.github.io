@@ -1,0 +1,18 @@
+title: Can Q-Learning be Improved with Advice?
+authors: Golowich, Moitra
+labels:
+- learning
+publications:
+- name: COLT
+  url: https://proceedings.mlr.press/v178/golowich22a.html
+  year: 2022
+  dblp_key: conf/colt/GolowichM22
+  bibtex: "@inproceedings{DBLP:conf/colt/GolowichM22,\n  author       = {Noah Golowich and\n  Ankur Moitra},\n  title    \
+    \    = {Can Q-learning be Improved with Advice?},\n  booktitle    = {{COLT}},\n  series       = {Proceedings of Machine\
+    \ Learning Research},\n  volume       = {178},\n  pages        = {4548--4619},\n  publisher    = {{PMLR}},\n  year   \
+    \      = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2110.13052
+  year: 2021
+  month: 9
+  day: 25

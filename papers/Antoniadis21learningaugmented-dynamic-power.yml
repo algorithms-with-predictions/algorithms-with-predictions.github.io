@@ -1,0 +1,19 @@
+title: Learning-Augmented Dynamic Power Management with Multiple States via New Ski-Rental Bounds
+authors: Antoniadis, Coester, Elias, Polak, Simon
+labels:
+- online
+- rent-or-buy
+publications:
+- name: NeurIPS
+  url: https://proceedings.neurips.cc/paper/2021/file/8b8388180314a337c9aa3c5aa8e2f37a-Paper.pdf
+  year: 2021
+  dblp_key: conf/nips/AntoniadisCEPS21
+  bibtex: "@inproceedings{DBLP:conf/nips/AntoniadisCEPS21,\n  author       = {Antonios Antoniadis and\n  Christian Coester\
+    \ and\n  Marek Eli{\\'{a}}s and\n  Adam Polak and\n  Bertrand Simon},\n  title        = {Learning-Augmented Dynamic Power\
+    \ Management with Multiple States via\n  New Ski Rental Bounds},\n  booktitle    = {NeurIPS},\n  pages        = {16714--16726},\n\
+    \  year         = {2021}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2110.13116
+  year: 2021
+  month: 10
+  day: 25

@@ -1,0 +1,17 @@
+title: Improved Price of Anarchy via Predictions
+authors: Gkatzelis, Kollias, Sgouritsa, Tan
+labels:
+- game theory / mechanism design
+publications:
+- name: EC
+  url: https://doi.org/10.1145/3490486.3538296
+  year: 2022
+  dblp_key: conf/sigecom/GkatzelisKST22
+  bibtex: "@inproceedings{DBLP:conf/sigecom/GkatzelisKST22,\n  author       = {Vasilis Gkatzelis and\n  Kostas Kollias and\n\
+    \  Alkmini Sgouritsa and\n  Xizhi Tan},\n  title        = {Improved Price of Anarchy via Predictions},\n  booktitle  \
+    \  = {{EC}},\n  pages        = {529--557},\n  publisher    = {{ACM}},\n  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2205.04252
+  year: 2022
+  month: 5
+  day: 9

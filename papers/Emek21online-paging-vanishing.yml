@@ -1,0 +1,19 @@
+title: Online Paging with a Vanishing Regret
+authors: Emek, Kutten, Shi
+labels:
+- caching / paging
+- online
+publications:
+- name: ITCS
+  url: https://drops.dagstuhl.de/opus/volltexte/2021/13606/
+  year: 2021
+  dblp_key: conf/innovations/EmekKS21
+  bibtex: "@inproceedings{DBLP:conf/innovations/EmekKS21,\n  author       = {Yuval Emek and\n  Shay Kutten and\n  Yangguang\
+    \ Shi},\n  title        = {Online Paging with a Vanishing Regret},\n  booktitle    = {{ITCS}},\n  series       = {LIPIcs},\n\
+    \  volume       = {185},\n  pages        = {67:1--67:20},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r\
+    \ Informatik},\n  year         = {2021}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2011.09439
+  year: 2020
+  month: 11
+  day: 18

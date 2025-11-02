@@ -1,0 +1,20 @@
+title: Learning-Augmented Streaming Algorithms for Approximating MAX-CUT
+authors: Dong, Peng, Vakilian
+labels:
+- approximation
+- graph problems
+- streaming
+publications:
+- name: ITCS
+  url: https://doi.org/10.4230/LIPIcs.ITCS.2025.44
+  year: 2025
+  dblp_key: conf/innovations/Dong0V25
+  bibtex: "@inproceedings{DBLP:conf/innovations/Dong0V25,\n  author       = {Yinhao Dong and\n  Pan Peng and\n  Ali Vakilian},\n\
+    \  title        = {Learning-Augmented Streaming Algorithms for Approximating {MAX-CUT}},\n  booktitle    = {{ITCS}},\n\
+    \  series       = {LIPIcs},\n  volume       = {325},\n  pages        = {44:1--44:24},\n  publisher    = {Schloss Dagstuhl\
+    \ - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2025}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2412.09773
+  year: 2024
+  month: 12
+  day: 13

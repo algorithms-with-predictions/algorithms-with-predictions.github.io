@@ -1,0 +1,32 @@
+title: Contract Scheduling with Distributional and Multiple Advice
+authors: Spyros Angelopoulos, Marcin Bieńkowski, Christoph Durr, Bertrand Simon
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2404.12485
+  year: 2024
+  month: 4
+  day: 18
+- name: IJCAI
+  url: https://doi.org/10.48550/arXiv.2404.12485
+  year: 2024
+  dblp_key: conf/ijcai/0001BD024
+  bibtex: |
+    @inproceedings{DBLP:conf/ijcai/0001BD024,
+      author       = {Spyros Angelopoulos and
+                      Marcin Bienkowski and
+                      Christoph D{\"{u}}rr and
+                      Bertrand Simon},
+      title        = {Contract Scheduling with Distributional and Multiple Advice},
+      booktitle    = {Proceedings of the Thirty-Third International Joint Conference on
+                      Artificial Intelligence, {IJCAI} 2024, Jeju, South Korea, August 3-9,
+                      2024},
+      pages        = {3652--3660},
+      publisher    = {ijcai.org},
+      year         = {2024},
+      url          = {https://www.ijcai.org/proceedings/2024/404},
+      timestamp    = {Fri, 18 Oct 2024 20:53:43 +0200},
+      biburl       = {https://dblp.org/rec/conf/ijcai/0001BD024.bib},
+      bibsource    = {dblp computer science bibliography, https://dblp.org}
+    }
+arxiv: 2404.12485
+s2_id: af8d042f84a0f3338e4bce3cfd62b850e33e5913

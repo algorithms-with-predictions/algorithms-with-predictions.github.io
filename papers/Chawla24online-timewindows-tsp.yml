@@ -1,0 +1,19 @@
+title: Online Time-Windows TSP with Predictions
+authors: Chawla, Christou
+labels:
+- online
+- routing / TSP
+publications:
+- name: APPROX/RANDOM
+  url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2024.2
+  year: 2024
+  dblp_key: conf/approx/0001C24
+  bibtex: "@inproceedings{DBLP:conf/approx/0001C24,\n  author       = {Shuchi Chawla and\n  Dimitris Christou},\n  title \
+    \       = {Online Time-Windows {TSP} with Predictions},\n  booktitle    = {{APPROX/RANDOM}},\n  series       = {LIPIcs},\n\
+    \  volume       = {317},\n  pages        = {2:1--2:21},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r\
+    \ Informatik},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2304.01958
+  year: 2023
+  month: 4
+  day: 4

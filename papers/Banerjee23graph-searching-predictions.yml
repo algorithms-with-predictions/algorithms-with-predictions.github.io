@@ -1,0 +1,20 @@
+title: Graph Searching with Predictions
+authors: Banerjee, Cohen-Addad, Gupta, Li
+labels:
+- exploration
+- online
+- search
+publications:
+- name: ITCS
+  url: https://doi.org/10.4230/LIPIcs.ITCS.2023.12
+  year: 2023
+  dblp_key: conf/innovations/BanerjeeC0L23
+  bibtex: "@inproceedings{DBLP:conf/innovations/BanerjeeC0L23,\n  author       = {Siddhartha Banerjee and\n  Vincent Cohen{-}Addad\
+    \ and\n  Anupam Gupta and\n  Zhouzi Li},\n  title        = {Graph Searching with Predictions},\n  booktitle    = {{ITCS}},\n\
+    \  series       = {LIPIcs},\n  volume       = {251},\n  pages        = {12:1--12:24},\n  publisher    = {Schloss Dagstuhl\
+    \ - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2212.14220
+  year: 2022
+  month: 12
+  day: 29

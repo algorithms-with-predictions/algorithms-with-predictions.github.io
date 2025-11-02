@@ -1,0 +1,19 @@
+title: Strategyproof Learning with Advice
+authors: Balkanski, Zhu
+labels:
+- game theory / mechanism design
+- learning
+publications:
+- name: ALT
+  url: http://algorithmiclearningtheory.org/alt2025/accepted-papers/
+  year: 2025
+  dblp_key: conf/alt/BalkanskiZ25
+  bibtex: "@inproceedings{DBLP:conf/alt/BalkanskiZ25,\n  author       = {Eric Balkanski and\n  Cherlin Zhu},\n  title    \
+    \    = {Strategyproof Learning with Advice},\n  booktitle    = {{ALT}},\n  series       = {Proceedings of Machine Learning\
+    \ Research},\n  volume       = {272},\n  pages        = {163--166},\n  publisher    = {{PMLR}},\n  year         = {2025}\n\
+    }\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2411.07354
+  year: 2024
+  month: 11
+  day: 11

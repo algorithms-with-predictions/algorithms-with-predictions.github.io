@@ -1,0 +1,29 @@
+title: "'Beyond Black-Box Advice: Learning-Augmented Algorithms for MDPs with Q-Value Predictions'"
+authors: Tongxin Li, Yiheng Lin, Shaolei Ren, A. Wierman
+labels:
+- MDP
+- online
+publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2023/hash/8e806d3c56ed5f1dab85d601e13cbe38-Abstract-Conference.html
+  year: 2023
+  dblp_key: conf/nips/LiLRW23
+  bibtex: |
+    @inproceedings{DBLP:conf/nips/LiLRW23,
+      author       = {Tongxin Li and
+      Yiheng Lin and
+      Shaolei Ren and
+      Adam Wierman},
+      title        = {Beyond Black-Box Advice: Learning-Augmented Algorithms for MDPs with
+      Q-Value Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2023}
+    }
+    
+- name: arXiv
+  url: https://arxiv.org/abs/2307.10524
+  year: 2023
+  month: 7
+  day: 20
+arxiv: 2307.10524
+s2_id: 3e54661d0bbb13f3840bae07c2e288225fa537f7

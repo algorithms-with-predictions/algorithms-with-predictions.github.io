@@ -1,0 +1,18 @@
+title: Learning-Augmented Algorithms for the Bahncard Problem
+authors: Zhao, Tang, Chen, Deng
+labels:
+- online
+- rent-or-buy
+publications:
+- name: NeurIPS
+  url: https://arxiv.org/abs/2410.15257
+  year: 2024
+  dblp_key: conf/nips/ZhaoTCD24
+  bibtex: "@inproceedings{DBLP:conf/nips/ZhaoTCD24,\n  author       = {Hailiang Zhao and\n  Xueyan Tang and\n  Peng Chen and\n\
+    \  Shuiguang Deng},\n  title        = {Learning-Augmented Algorithms for the Bahncard Problem},\n  booktitle    = {NeurIPS},\n\
+    \  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2410.15257
+  year: 2024
+  month: 10
+  day: 20

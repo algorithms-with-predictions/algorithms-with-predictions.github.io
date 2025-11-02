@@ -1,0 +1,30 @@
+title: Applied Online Algorithms with Heterogeneous Predictors
+authors: Maghakian, Lee, Hajiesmaili, Li, Sitaraman, Liu
+labels:
+- online
+- multiple predictions
+- rent-or-buy
+publications:
+- name: ICML
+  url: https://openreview.net/pdf?id=wHmP0NGVd9
+  year: 2023
+  month: null
+  day: null
+  dblp_key: conf/icml/MaghakianLH0S023
+  bibtex: |+
+    @inproceedings{DBLP:conf/icml/MaghakianLH0S023,
+      author       = {Jessica Maghakian and
+                      Russell Lee and
+                      Mohammad Hajiesmaili and
+                      Jian Li and
+                      Ramesh K. Sitaraman and
+                      Zhenhua Liu},
+      title        = {Applied Online Algorithms with Heterogeneous Predictors},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {202},
+      pages        = {23484--23497},
+      publisher    = {{PMLR}},
+      year         = {2023}
+    }
+

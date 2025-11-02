@@ -1,0 +1,23 @@
+title: Trade-off Analysis in Learning-augmented Algorithms with Societal Design Criteria
+authors: Mohammad H. Hajiesmaili
+labels:
+- online
+- packing
+publications:
+- name: SIGMETRICS Perform. Evaluation Rev.
+  url: https://doi.org/10.1145/3626570.3626590
+  year: 2023
+  dblp_key: journals/sigmetrics/Hajiesmaili23
+  bibtex: |
+    @article{DBLP:journals/sigmetrics/Hajiesmaili23,
+      author       = {Mohammad H. Hajiesmaili},
+      title        = {Trade-off Analysis in Learning-augmented Algorithms with Societal
+      Design Criteria},
+      journal      = {{SIGMETRICS} Perform. Evaluation Rev.},
+      volume       = {51},
+      number       = {2},
+      pages        = {53--58},
+      year         = {2023}
+    }
+    
+s2_id: 99b71fd3f44de88d2ac24e7dac3192b6455f9548

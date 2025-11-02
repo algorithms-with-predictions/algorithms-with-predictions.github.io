@@ -1,0 +1,31 @@
+title: "'Online Search with Predictions: Pareto-optimal Algorithm and its Applications in Energy Markets'"
+authors: Russell Lee, Bo Sun, John C.S. Lui, M. Hajiesmaili
+labels:
+- online
+- search
+publications:
+- name: e-Energy
+  url: https://doi.org/10.1145/3632775.3639590
+  year: 2024
+  dblp_key: conf/eenergy/Lee0HL24
+  bibtex: |
+    @inproceedings{DBLP:conf/eenergy/Lee0HL24,
+      author       = {Russell Lee and
+      Bo Sun and
+      Mohammad Hajiesmaili and
+      John C. S. Lui},
+      title        = {Online Search with Predictions: Pareto-optimal Algorithm and its Applications
+      in Energy Markets},
+      booktitle    = {e-Energy},
+      pages        = {50--71},
+      publisher    = {{ACM}},
+      year         = {2024}
+    }
+    
+- name: arXiv
+  url: https://arxiv.org/abs/2211.06567
+  year: 2022
+  month: 11
+  day: 12
+arxiv: 2211.06567
+s2_id: d1cb1d5ae07fa8e4599b7cc0c9c650e3794b3c5e

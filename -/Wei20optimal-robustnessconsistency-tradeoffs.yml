@@ -1,0 +1,28 @@
+title: Optimal Robustness-Consistency Trade-offs for Learning-Augmented Online Algorithms
+authors: Alexander Wei, Fred Zhang
+labels:
+- online
+- rent-or-buy
+- scheduling
+publications:
+- name: NeurIPS
+  url: https://proceedings.neurips.cc/paper/2020/file/5bd844f11fa520d54fa5edec06ea2507-Paper.pdf
+  year: 2020
+  dblp_key: conf/nips/WeiZ20
+  bibtex: |
+    @inproceedings{DBLP:conf/nips/WeiZ20,
+      author       = {Alexander Wei and
+      Fred Zhang},
+      title        = {Optimal Robustness-Consistency Trade-offs for Learning-Augmented Online
+      Algorithms},
+      booktitle    = {NeurIPS},
+      year         = {2020}
+    }
+    
+- name: arXiv
+  url: https://arxiv.org/abs/2010.11443
+  year: 2020
+  month: 10
+  day: 22
+arxiv: 2010.11443
+s2_id: 9b9ca3d7f99a19f5123306044aeb2dabbdde63fe

@@ -1,0 +1,23 @@
+title: Online Computation with Untrusted Advice
+authors: Angelopoulos, Dürr, Jin, Kamali, Renault
+labels:
+- online
+- packing
+- rent-or-buy
+publications:
+- name: J. Comput. Syst. Sci.
+  url: https://doi.org/10.1016/j.jcss.2024.103545
+  year: 2024
+  dblp_key: journals/jcss/AngelopoulosDJKR24
+  bibtex: "@article{DBLP:journals/jcss/AngelopoulosDJKR24,\n  author       = {Spyros Angelopoulos and\n  Christoph D{\"{u}}rr\
+    \ and\n  Shendan Jin and\n  Shahin Kamali and\n  Marc P. Renault},\n  title        = {Online computation with untrusted\
+    \ advice},\n  journal      = {J. Comput. Syst. Sci.},\n  volume       = {144},\n  pages        = {103545},\n  year   \
+    \      = {2024}\n}\n"
+- name: ITCS
+  url: https://drops.dagstuhl.de/opus/volltexte/2020/11737/pdf/LIPIcs-ITCS-2020-52.pdf
+  year: 2020
+- name: arXiv
+  url: https://arxiv.org/abs/1905.05655
+  year: 2019
+  month: 5
+  day: 14

@@ -1,0 +1,36 @@
+title: Improved Bounds for Online Facility Location with Predictions
+authors: Dimitris Fotakis, Evangelia Gergatsouli, Themis Gouleakis, Nikolas Patris
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2107.08277
+  year: 2021
+  month: 7
+  day: 17
+- name: AAAI
+  url: https://doi.org/10.1609/aaai.v39i25.34903
+  year: 2021
+  dblp_key: conf/aaai/0001GGPT25
+  bibtex: |
+    @inproceedings{DBLP:conf/aaai/0001GGPT25,
+      author       = {Dimitris Fotakis and
+                      Evangelia Gergatsouli and
+                      Themistoklis Gouleakis and
+                      Nikolas Patris and
+                      Thanos Tolias},
+      editor       = {Toby Walsh and
+                      Julie Shah and
+                      Zico Kolter},
+      title        = {Improved Bounds for Online Facility Location with Predictions},
+      booktitle    = {AAAI-25, Sponsored by the Association for the Advancement of Artificial
+                      Intelligence, February 25 - March 4, 2025, Philadelphia, PA, {USA}},
+      pages        = {26973--26981},
+      publisher    = {{AAAI} Press},
+      year         = {2025},
+      url          = {https://doi.org/10.1609/aaai.v39i25.34903},
+      doi          = {10.1609/AAAI.V39I25.34903},
+      timestamp    = {Thu, 17 Apr 2025 17:08:58 +0200},
+      biburl       = {https://dblp.org/rec/conf/aaai/0001GGPT25.bib},
+      bibsource    = {dblp computer science bibliography, https://dblp.org}
+    }
+arxiv: 2107.08277
+s2_id: 2e270b1c86e039fdd60fc5773a907316554317ed

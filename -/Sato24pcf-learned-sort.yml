@@ -1,0 +1,11 @@
+title: "'PCF Learned Sort: a Learning Augmented Sort Algorithm with O(n log log n) Expected Complexity'"
+authors: Sato, Matsui
+labels:
+- running time
+- sorting
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2405.07122
+  year: 2024
+  month: 4
+  day: 12

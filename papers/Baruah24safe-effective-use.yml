@@ -1,0 +1,14 @@
+title: The Safe and Effective Use of Optimistic Period Predictions
+authors: Baruah, Ekberg, Lindermayr, Marchetti-Spaccamela, Megow, Stougie
+labels:
+- real-time
+- scheduling
+publications:
+- name: RTNS
+  url: https://dl.acm.org/doi/10.1145/3696355.3696356
+  year: 2024
+  dblp_key: conf/rtns/BaruahELMMS24
+  bibtex: "@inproceedings{DBLP:conf/rtns/BaruahELMMS24,\n  author       = {Sanjoy K. Baruah and\n  Pontus Ekberg and\n  Alexander\
+    \ Lindermayr and\n  Alberto Marchetti{-}Spaccamela and\n  Nicole Megow and\n  Leen Stougie},\n  title        = {The Safe\
+    \ and Effective Use of Optimistic Period Predictions},\n  booktitle    = {{RTNS}},\n  pages        = {197--206},\n  publisher\
+    \    = {{ACM}},\n  year         = {2024}\n}\n"

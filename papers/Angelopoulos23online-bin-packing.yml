@@ -1,0 +1,21 @@
+title: Online Bin Packing with Predictions
+authors: Angelopoulos, Kamali, Shadkami
+labels:
+- online
+- packing
+publications:
+- name: J. Artif. Intell. Res.
+  url: https://doi.org/10.1613/jair.1.14820
+  year: 2023
+  dblp_key: journals/jair/AngelopoulosKS23
+  bibtex: "@article{DBLP:journals/jair/AngelopoulosKS23,\n  author       = {Spyros Angelopoulos and\n  Shahin Kamali and\n\
+    \  Kimia Shadkami},\n  title        = {Online Bin Packing with Predictions},\n  journal      = {J. Artif. Intell. Res.},\n\
+    \  volume       = {78},\n  pages        = {1111--1141},\n  year         = {2023}\n}\n"
+- name: IJCAI
+  url: https://doi.org/10.24963/ijcai.2022/635
+  year: 2022
+- name: arXiv
+  url: https://arxiv.org/abs/2102.03311
+  year: 2021
+  month: 2
+  day: 5

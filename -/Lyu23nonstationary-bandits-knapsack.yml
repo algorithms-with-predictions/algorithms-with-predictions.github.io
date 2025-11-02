@@ -1,0 +1,16 @@
+title: Non-Stationary Bandits with Knapsack Problems with Advice
+authors: Lixing Lyu, Wang Chi Cheung
+publications:
+- name: arXiv
+  url: https://doi.org/10.48550/arXiv.2302.04182
+  year: 2023
+  dblp_key: journals/corr/abs-2302-04182
+  bibtex: "@article{DBLP:journals/corr/abs-2302-04182,\n  author       = {Lixing Lyu\
+    \ and\n                  Wang Chi Cheung},\n  title        = {Non-Stationary Bandits\
+    \ with Knapsack Problems with Advice},\n  journal      = {CoRR},\n  volume   \
+    \    = {abs/2302.04182},\n  year         = {2023},\n  url          = {https://doi.org/10.48550/arXiv.2302.04182},\n\
+    \  doi          = {10.48550/ARXIV.2302.04182},\n  eprinttype    = {arXiv},\n \
+    \ eprint       = {2302.04182},\n  timestamp    = {Fri, 10 Feb 2023 12:26:39 +0100},\n\
+    \  biburl       = {https://dblp.org/rec/journals/corr/abs-2302-04182.bib},\n \
+    \ bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+s2_id: 4f9dca8949bf11223b3eb06292cdfbfa0b27902e

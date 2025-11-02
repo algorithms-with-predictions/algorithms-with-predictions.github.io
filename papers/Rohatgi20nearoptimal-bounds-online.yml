@@ -1,0 +1,18 @@
+title: Near-optimal bounds for online caching with machine learned advice
+authors: Rohatgi
+labels:
+- caching / paging
+- online
+publications:
+- name: SODA
+  url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611975994.112
+  year: 2020
+  dblp_key: conf/soda/Rohatgi20
+  bibtex: "@inproceedings{DBLP:conf/soda/Rohatgi20,\n  author       = {Dhruv Rohatgi},\n  title        = {Near-Optimal Bounds\
+    \ for Online Caching with Machine Learned Advice},\n  booktitle    = {{SODA}},\n  pages        = {1834--1845},\n  publisher\
+    \    = {{SIAM}},\n  year         = {2020}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/1910.12172
+  year: 2019
+  month: 10
+  day: 27

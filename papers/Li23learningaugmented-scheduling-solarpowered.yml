@@ -1,0 +1,16 @@
+title: Learning-Augmented Scheduling for Solar-Powered Electric Vehicle Charging
+authors: Tongxin Li
+publications:
+- name: arXiv
+  url: https://doi.org/10.48550/arXiv.2311.05941
+  year: 2023
+  dblp_key: journals/corr/abs-2311-05941
+  bibtex: "@article{DBLP:journals/corr/abs-2311-05941,\n  author       = {Tongxin\
+    \ Li},\n  title        = {Learning-Augmented Scheduling for Solar-Powered Electric\
+    \ Vehicle Charging},\n  journal      = {CoRR},\n  volume       = {abs/2311.05941},\n\
+    \  year         = {2023},\n  url          = {https://doi.org/10.48550/arXiv.2311.05941},\n\
+    \  doi          = {10.48550/ARXIV.2311.05941},\n  eprinttype    = {arXiv},\n \
+    \ eprint       = {2311.05941},\n  timestamp    = {Wed, 15 Nov 2023 16:23:10 +0100},\n\
+    \  biburl       = {https://dblp.org/rec/journals/corr/abs-2311-05941.bib},\n \
+    \ bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+s2_id: d2c32116c4ead500ee15d873cd0fedfa5394cddf
