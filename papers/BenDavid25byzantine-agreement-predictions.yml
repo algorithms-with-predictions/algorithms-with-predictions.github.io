@@ -1,35 +1,35 @@
 title: Byzantine Agreement with Predictions
 authors: Naama Ben-David, M. A. Dzulfikar, Faith Ellen, S. Gilbert
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2505.01793
-  year: 2025
-  month: 5
-  day: 3
-- name: ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing
-  url: https://doi.org/10.1145/3732772.3733518
-  year: 2025
-  dblp_key: conf/podc/Ben-DavidDEG25
-  bibtex: |
-    @inproceedings{DBLP:conf/podc/Ben-DavidDEG25,
-      author       = {Naama Ben{-}David and
-                      Muhammad Ayaz Dzulfikar and
-                      Faith Ellen and
-                      Seth Gilbert},
-      editor       = {Alkida Balliu and
-                      Fabian Kuhn},
-      title        = {Byzantine Agreement with Predictions},
-      booktitle    = {Proceedings of the {ACM} Symposium on Principles of Distributed Computing,
-                      {PODC} 2025, Hotel Las Brisas Huatulco, Huatulco, Mexico, June 16-20,
-                      2025},
-      pages        = {3--14},
-      publisher    = {{ACM}},
-      year         = {2025},
-      url          = {https://doi.org/10.1145/3732772.3733518},
-      doi          = {10.1145/3732772.3733518},
-      timestamp    = {Sun, 06 Jul 2025 13:23:41 +0200},
-      biburl       = {https://dblp.org/rec/conf/podc/Ben-DavidDEG25.bib},
-      bibsource    = {dblp computer science bibliography, https://dblp.org}
-    }
+  - name: arXiv
+    url: https://arxiv.org/abs/2505.01793
+    year: 2025
+    month: 5
+    day: 3
+  - name: PODC
+    url: https://doi.org/10.1145/3732772.3733518
+    year: 2025
+    dblp_key: conf/podc/Ben-DavidDEG25
+    bibtex: |
+      @inproceedings{DBLP:conf/podc/Ben-DavidDEG25,
+        author       = {Naama Ben{-}David and
+                        Muhammad Ayaz Dzulfikar and
+                        Faith Ellen and
+                        Seth Gilbert},
+        editor       = {Alkida Balliu and
+                        Fabian Kuhn},
+        title        = {Byzantine Agreement with Predictions},
+        booktitle    = {Proceedings of the {ACM} Symposium on Principles of Distributed Computing,
+                        {PODC} 2025, Hotel Las Brisas Huatulco, Huatulco, Mexico, June 16-20,
+                        2025},
+        pages        = {3--14},
+        publisher    = {{ACM}},
+        year         = {2025},
+        url          = {https://doi.org/10.1145/3732772.3733518},
+        doi          = {10.1145/3732772.3733518},
+        timestamp    = {Sun, 06 Jul 2025 13:23:41 +0200},
+        biburl       = {https://dblp.org/rec/conf/podc/Ben-DavidDEG25.bib},
+        bibsource    = {dblp computer science bibliography, https://dblp.org}
+      }
 arxiv: 2505.01793
 s2_id: 8041a0da45c5413fca6e1bd9d79424a2ebca8186

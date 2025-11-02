@@ -1,7 +1,7 @@
 title: Online TSP and Online Dial-a-Ride with Predictions
 authors: Hsiao-Yu Hu, Hao-Ting Wei, Meng-Hsi Li, Kai-Min Chung, Chung-Shou Liao
 publications:
-- name: INFORMS journal on computing
-  url: https://doi.org/10.1287/ijoc.2023.0478
-  year: 2025
+  - name: IJOC
+    url: https://doi.org/10.1287/ijoc.2023.0478
+    year: 2025
 s2_id: 900e35a769fa6a336939fd3439060c9c530c89ef

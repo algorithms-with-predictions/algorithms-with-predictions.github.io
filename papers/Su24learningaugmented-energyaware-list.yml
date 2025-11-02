@@ -1,28 +1,28 @@
 title: Learning-Augmented Energy-Aware List Scheduling for Precedence-Constrained Tasks
 authors: Yu Su, Vivek Anand, Jannie Yu, Jian Tan, A. Wierman
 publications:
-- name: ACM Transactions on Modeling and Performance Evaluation of Computing Systems
-  url: https://doi.org/10.1145/3680278
-  year: 2024
-  dblp_key: journals/tompecs/SuAYTW24
-  bibtex: |
-    @article{DBLP:journals/tompecs/SuAYTW24,
-      author       = {Yu Su and
-                      Vivek Anand and
-                      Jannie Yu and
-                      Jian Tan and
-                      Adam Wierman},
-      title        = {Learning-Augmented Energy-Aware List Scheduling for Precedence-Constrained
-                      Tasks},
-      journal      = {{ACM} Trans. Model. Perform. Evaluation Comput. Syst.},
-      volume       = {9},
-      number       = {4},
-      pages        = {13:1--13:24},
-      year         = {2024},
-      url          = {https://doi.org/10.1145/3680278},
-      doi          = {10.1145/3680278},
-      timestamp    = {Wed, 19 Mar 2025 21:16:39 +0100},
-      biburl       = {https://dblp.org/rec/journals/tompecs/SuAYTW24.bib},
-      bibsource    = {dblp computer science bibliography, https://dblp.org}
-    }
+  - name: ACM Trans. Model. Perform. Eval. Comput. Syst.
+    url: https://doi.org/10.1145/3680278
+    year: 2024
+    dblp_key: journals/tompecs/SuAYTW24
+    bibtex: |
+      @article{DBLP:journals/tompecs/SuAYTW24,
+        author       = {Yu Su and
+                        Vivek Anand and
+                        Jannie Yu and
+                        Jian Tan and
+                        Adam Wierman},
+        title        = {Learning-Augmented Energy-Aware List Scheduling for Precedence-Constrained
+                        Tasks},
+        journal      = {{ACM} Trans. Model. Perform. Evaluation Comput. Syst.},
+        volume       = {9},
+        number       = {4},
+        pages        = {13:1--13:24},
+        year         = {2024},
+        url          = {https://doi.org/10.1145/3680278},
+        doi          = {10.1145/3680278},
+        timestamp    = {Wed, 19 Mar 2025 21:16:39 +0100},
+        biburl       = {https://dblp.org/rec/journals/tompecs/SuAYTW24.bib},
+        bibsource    = {dblp computer science bibliography, https://dblp.org}
+      }
 s2_id: f48a4ade5a2caabbc765951059384bf6b9b8c483
