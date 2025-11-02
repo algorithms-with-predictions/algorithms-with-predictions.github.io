@@ -1,5 +1,5 @@
 title: "Online Bipartite Matching with Advice: Tight Robustness-Consistency Tradeoffs for the Two-Stage Model"
-authors: Jin, Ma
+authors: Billy Jin, Will Ma
 labels:
 - allocation / matching
 - online
@@ -8,9 +8,16 @@ publications:
   url: http://papers.nips.cc/paper_files/paper/2022/hash/5d68a3f05ee2aae6a0fb2d94959082a0-Abstract-Conference.html
   year: 2022
   dblp_key: conf/nips/JinM22
-  bibtex: "@inproceedings{DBLP:conf/nips/JinM22,\n  author       = {Billy Jin and\n  Will Ma},\n  title        = {Online Bipartite\
-    \ Matching with Advice: Tight Robustness-Consistency\n  Tradeoffs for the Two-Stage Model},\n  booktitle    = {NeurIPS},\n\
-    \  year         = {2022}\n}\n"
+  bibtex: |
+    @inproceedings{DBLP:conf/nips/JinM22,
+      author       = {Billy Jin and
+      Will Ma},
+      title        = {Online Bipartite Matching with Advice: Tight Robustness-Consistency
+      Tradeoffs for the Two-Stage Model},
+      booktitle    = {NeurIPS},
+      year         = {2022}
+    }
+    
 - name: arXiv
   url: https://arxiv.org/abs/2206.11397
   year: 2022

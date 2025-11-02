@@ -1,5 +1,5 @@
 title: Learning-based support estimation in sublinear time
-authors: Eden, Indyk, Narayanan, Rubinfeld, Silwal, Wagner
+authors: T. Eden, P. Indyk, Shyam Narayanan, R. Rubinfeld, Sandeep Silwal, Tal Wagner
 labels:
 - running time
 - sample complexity
@@ -8,9 +8,20 @@ publications:
   url: https://openreview.net/pdf?id=tilovEHA3YS
   year: 2021
   dblp_key: conf/iclr/EdenINRSW21
-  bibtex: "@inproceedings{DBLP:conf/iclr/EdenINRSW21,\n  author       = {Talya Eden and\n  Piotr Indyk and\n  Shyam Narayanan\
-    \ and\n  Ronitt Rubinfeld and\n  Sandeep Silwal and\n  Tal Wagner},\n  title        = {Learning-based Support Estimation\
-    \ in Sublinear Time},\n  booktitle    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year         = {2021}\n}\n"
+  bibtex: |
+    @inproceedings{DBLP:conf/iclr/EdenINRSW21,
+      author       = {Talya Eden and
+      Piotr Indyk and
+      Shyam Narayanan and
+      Ronitt Rubinfeld and
+      Sandeep Silwal and
+      Tal Wagner},
+      title        = {Learning-based Support Estimation in Sublinear Time},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2021}
+    }
+    
 - name: arXiv
   url: https://arxiv.org/abs/2106.08396
   year: 2021

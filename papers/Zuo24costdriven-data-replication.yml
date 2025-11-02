@@ -1,5 +1,5 @@
 title: Cost-Driven Data Replication with Predictions
-authors: Zuo, Tang, Lee
+authors: Tianyu Zuo, Xueyan Tang, B. Lee
 labels:
 - online
 publications:
@@ -7,9 +7,18 @@ publications:
   url: https://doi.org/10.1145/3626183.3659964
   year: 2024
   dblp_key: conf/spaa/ZuoTL24
-  bibtex: "@inproceedings{DBLP:conf/spaa/ZuoTL24,\n  author       = {Tianyu Zuo and\n  Xueyan Tang and\n  Bu{-}Sung Lee},\n\
-    \  title        = {Cost-Driven Data Replication with Predictions},\n  booktitle    = {{SPAA}},\n  pages        = {309--320},\n\
-    \  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+  bibtex: |
+    @inproceedings{DBLP:conf/spaa/ZuoTL24,
+      author       = {Tianyu Zuo and
+      Xueyan Tang and
+      Bu{-}Sung Lee},
+      title        = {Cost-Driven Data Replication with Predictions},
+      booktitle    = {{SPAA}},
+      pages        = {309--320},
+      publisher    = {{ACM}},
+      year         = {2024}
+    }
+    
 - name: arXiv
   url: https://arxiv.org/abs/2404.16489
   year: 2024

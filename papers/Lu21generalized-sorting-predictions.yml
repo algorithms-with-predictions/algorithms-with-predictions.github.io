@@ -1,5 +1,5 @@
 title: Generalized Sorting with Predictions
-authors: Lu, Ren, Sun, Zhang
+authors: P. Lu, Xuandi Ren, Enze Sun, Yubo Zhang
 labels:
 - running time
 - sorting
@@ -8,9 +8,19 @@ publications:
   url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976496.13
   year: 2021
   dblp_key: conf/sosa/LuRSZ21
-  bibtex: "@inproceedings{DBLP:conf/sosa/LuRSZ21,\n  author       = {Pinyan Lu and\n  Xuandi Ren and\n  Enze Sun and\n  Yubo\
-    \ Zhang},\n  title        = {Generalized Sorting with Predictions},\n  booktitle    = {{SOSA}},\n  pages        = {111--117},\n\
-    \  publisher    = {{SIAM}},\n  year         = {2021}\n}\n"
+  bibtex: |
+    @inproceedings{DBLP:conf/sosa/LuRSZ21,
+      author       = {Pinyan Lu and
+      Xuandi Ren and
+      Enze Sun and
+      Yubo Zhang},
+      title        = {Generalized Sorting with Predictions},
+      booktitle    = {{SOSA}},
+      pages        = {111--117},
+      publisher    = {{SIAM}},
+      year         = {2021}
+    }
+    
 - name: arXiv
   url: https://arxiv.org/abs/2011.00172
   year: 2020

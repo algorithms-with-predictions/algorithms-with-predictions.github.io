@@ -1,5 +1,5 @@
 title: The Case for Learned Index Structures
-authors: Kraska, Beutel, Chi, Dean, Polyzotis
+authors: Tim Kraska, Alex Beutel, Ed H. Chi, J. Dean, N. Polyzotis
 labels:
 - dynamic / data structure
 publications:
@@ -7,9 +7,20 @@ publications:
   url: https://doi.org/10.1145/3183713.3196909
   year: 2018
   dblp_key: conf/sigmod/KraskaBCDP18
-  bibtex: "@inproceedings{DBLP:conf/sigmod/KraskaBCDP18,\n  author       = {Tim Kraska and\n  Alex Beutel and\n  Ed H. Chi\
-    \ and\n  Jeffrey Dean and\n  Neoklis Polyzotis},\n  title        = {The Case for Learned Index Structures},\n  booktitle\
-    \    = {{SIGMOD} Conference},\n  pages        = {489--504},\n  publisher    = {{ACM}},\n  year         = {2018}\n}\n"
+  bibtex: |
+    @inproceedings{DBLP:conf/sigmod/KraskaBCDP18,
+      author       = {Tim Kraska and
+      Alex Beutel and
+      Ed H. Chi and
+      Jeffrey Dean and
+      Neoklis Polyzotis},
+      title        = {The Case for Learned Index Structures},
+      booktitle    = {{SIGMOD} Conference},
+      pages        = {489--504},
+      publisher    = {{ACM}},
+      year         = {2018}
+    }
+    
 - name: arXiv
   url: https://arxiv.org/abs/1712.01208
   year: 2017

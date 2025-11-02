@@ -1,5 +1,5 @@
 title: Channel Balance Interpolation in the Lightning Network via Machine Learning
-authors: Vincent, Emanuele Rossi, Vikash Singh
+authors: Vincent Davis, Vikash Singh, Emanuele Rossi
 labels:
 - experimental evaluation
 - routing
@@ -10,9 +10,19 @@ publications:
   url: https://doi.org/10.1109/ICBC64466.2025.11185091
   year: 2025
   dblp_key: conf/icbc2/DavisSR25
-  bibtex: "@inproceedings{DBLP:conf/icbc2/DavisSR25,\n  author       = {Vincent Davis and\n  Vikash Singh and\n  Emanuele\
-    \ Rossi},\n  title        = {Channel Balance Interpolation in the Lightning Network via Machine\n  Learning},\n  booktitle\
-    \    = {{ICBC}},\n  pages        = {1--7},\n  publisher    = {{IEEE}},\n  year         = {2025}\n}\n"
+  bibtex: |
+    @inproceedings{DBLP:conf/icbc2/DavisSR25,
+      author       = {Vincent Davis and
+      Vikash Singh and
+      Emanuele Rossi},
+      title        = {Channel Balance Interpolation in the Lightning Network via Machine
+      Learning},
+      booktitle    = {{ICBC}},
+      pages        = {1--7},
+      publisher    = {{IEEE}},
+      year         = {2025}
+    }
+    
 - name: arXiv
   url: https://arxiv.org/abs/2405.12087
   year: 2024

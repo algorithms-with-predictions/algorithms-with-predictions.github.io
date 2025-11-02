@@ -1,5 +1,5 @@
 title: "Plant-and-Steal: Truthful Fair Allocations via Predictions"
-authors: Cohen, Eden, Eden, Vasilyan
+authors: Ilan Reuven Cohen, Alon Eden, T. Eden, A. Vasilyan
 labels:
 - allocation / matching
 - game theory / mechanism design
@@ -7,9 +7,17 @@ publications:
 - name: NeurIPS
   year: 2024
   dblp_key: conf/nips/CohenEEV24
-  bibtex: "@inproceedings{DBLP:conf/nips/CohenEEV24,\n  author       = {Ilan Reuven Cohen and\n  Alon Eden and\n  Talya Eden\
-    \ and\n  Arsen Vasilyan},\n  title        = {Plant-and-Steal: Truthful Fair Allocations via Predictions},\n  booktitle\
-    \    = {NeurIPS},\n  year         = {2024}\n}\n"
+  bibtex: |
+    @inproceedings{DBLP:conf/nips/CohenEEV24,
+      author       = {Ilan Reuven Cohen and
+      Alon Eden and
+      Talya Eden and
+      Arsen Vasilyan},
+      title        = {Plant-and-Steal: Truthful Fair Allocations via Predictions},
+      booktitle    = {NeurIPS},
+      year         = {2024}
+    }
+    
 - name: arXiv
   url: https://arxiv.org/abs/2406.07024
   year: 2024

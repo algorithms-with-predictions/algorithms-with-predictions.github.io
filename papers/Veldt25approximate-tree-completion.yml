@@ -1,7 +1,5 @@
-title: Approximate Tree Completion and Learning-Augmented Algorithms for Metric Minimum
-  Spanning Trees
-authors: Nate Veldt, Thomas Stanley, Benjamin W. Priest, Trevor Steil, Keita Iwabuchi,
-  T. S. Jayram, Geoffrey Sanders
+title: Approximate Tree Completion and Learning-Augmented Algorithms for Metric Minimum Spanning Trees
+authors: Nate Veldt, Thomas Stanley, Benjamin W. Priest, T. Steil, Keita Iwabuchi, T. S. Jayram, Geoffrey Sanders
 labels:
 - online
 publications:

@@ -1,5 +1,5 @@
 title: Utilitarian Distortion with Predictions
-authors: Filos-Ratsikas, Kalantzis, Voudouris
+authors: Aris Filos-Ratsikas, G. Kalantzis, Alexandros A. Voudouris
 labels:
 - game theory / mechanism design
 publications:
@@ -9,9 +9,18 @@ publications:
   month: 7
   day: 2
   dblp_key: conf/sigecom/Filos-Ratsikas025
-  bibtex: "@inproceedings{DBLP:conf/sigecom/Filos-Ratsikas025,\n  author       = {Aris Filos{-}Ratsikas and\n  Georgios Kalantzis\
-    \ and\n  Alexandros A. Voudouris},\n  title        = {Utilitarian Distortion with Predictions},\n  booktitle    = {{EC}},\n\
-    \  pages        = {254--271},\n  publisher    = {{ACM}},\n  year         = {2025}\n}\n"
+  bibtex: |
+    @inproceedings{DBLP:conf/sigecom/Filos-Ratsikas025,
+      author       = {Aris Filos{-}Ratsikas and
+      Georgios Kalantzis and
+      Alexandros A. Voudouris},
+      title        = {Utilitarian Distortion with Predictions},
+      booktitle    = {{EC}},
+      pages        = {254--271},
+      publisher    = {{ACM}},
+      year         = {2025}
+    }
+    
 - name: arXiv
   url: https://arxiv.org/abs/2502.06489
   year: 2025
