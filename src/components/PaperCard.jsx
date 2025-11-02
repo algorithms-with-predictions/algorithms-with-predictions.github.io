@@ -275,10 +275,10 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
                   {paper.publications?.map((pub, index) => (
                     <Tooltip
                       key={`pub-${index}`}
-                      title={`${pub.name} ${pub.year}${pub.url ? ' - Click to view' : ''}`}
+                      title={`${pub.name}${pub.year ? ' ' + pub.year : ''}${pub.url ? ' - Click to view' : ''}`}
                     >
                       <Chip
-                        label={`${pub.name} '${pub.year.toString().slice(-2)}`}
+                        label={`${pub.name}${pub.year ? " '" + pub.year.toString().slice(-2) : ''}`}
                         size="small"
                         variant={pub.name === 'arXiv' ? 'outlined' : 'filled'}
                         color={pub.name === 'arXiv' ? 'default' : 'primary'}
@@ -324,10 +324,10 @@ const PaperCard = ({ paper, selectedLabels = [], onLabelClick }) => {
               {paper.publications?.map((pub, index) => (
                 <Tooltip
                   key={`pub-${index}`}
-                  title={`${pub.name} ${pub.year}${pub.url ? ' - Click to view' : ''}`}
+                  title={`${pub.name}${pub.year ? ' ' + pub.year : ''}${pub.url ? ' - Click to view' : ''}`}
                 >
                   <Chip
-                    label={`${pub.name} '${pub.year.toString().slice(-2)}`}
+                    label={`${pub.name}${pub.year ? " '" + pub.year.toString().slice(-2) : ''}`}
                     size="small"
                     variant={pub.name === 'arXiv' ? 'outlined' : 'filled'}
                     color={pub.name === 'arXiv' ? 'default' : 'primary'}
