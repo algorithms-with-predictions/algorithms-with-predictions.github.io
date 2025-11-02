@@ -7,11 +7,13 @@ import {
   IconButton,
   Tooltip,
   Chip,
+  useMediaQuery,
 } from '@mui/material';
 import { Download } from '@mui/icons-material';
 import * as React from 'react';
 import { useState, useMemo } from 'react';
 import PropTypes from 'prop-types';
+import { useTheme } from '@mui/material/styles';
 
 // Import our new components
 import SearchAndFilter from './SearchAndFilter.jsx';
@@ -36,6 +38,9 @@ const PRIOR_LABEL = 'prior / related work';
 let SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL];
 
 const PaperList = ({ data }) => {
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
+
   // Get all years from publications
   const allYears = data.flatMap(paper =>
     paper.publications.flatMap(pub => pub.year)
@@ -137,168 +142,177 @@ const PaperList = ({ data }) => {
   };
 
   return (
-    <Container maxWidth="xl" sx={{ py: 2 }}>
-      {/* Stats Dashboard */}
-      <Fade in timeout={600}>
-        <Box>
-          <StatsDashboard data={data} />
-        </Box>
-      </Fade>
+    <Container maxWidth="xl" sx={{ py: { xs: 1, md: 1.5 } }}>
+      <Stack spacing={{ xs: 1, md: 1.5 }}>
+        {/* Stats Dashboard */}
+        <Fade in timeout={600}>
+          <Box>
+            <StatsDashboard data={data} />
+          </Box>
+        </Fade>
 
-      {/* Search and Filters */}
-      <Fade in timeout={800}>
-        <Box>
-          <SearchAndFilter
-            searchQuery={searchQuery}
-            onSearchChange={setSearchQuery}
-            selectedLabels={selLabels}
-            onLabelsChange={setSelLabels}
-            availableLabels={distinctLabels}
-            specialLabels={SPECIAL_LABELS}
-          />
-        </Box>
-      </Fade>
+        {/* Search and Filters */}
+        <Fade in timeout={800}>
+          <Box>
+            <SearchAndFilter
+              searchQuery={searchQuery}
+              onSearchChange={setSearchQuery}
+              selectedLabels={selLabels}
+              onLabelsChange={setSelLabels}
+              availableLabels={distinctLabels}
+              specialLabels={SPECIAL_LABELS}
+            />
+          </Box>
+        </Fade>
 
-      {/* Compact Results Summary */}
-      <Fade in timeout={1000}>
-        <Box sx={{ mb: 2 }}>
-          <Stack
-            direction={{ xs: 'column', sm: 'row' }}
-            justifyContent="space-between"
-            alignItems={{ xs: 'flex-start', sm: 'center' }}
-            spacing={1}
-            sx={{
-              py: 1,
-              px: 2,
-              bgcolor: 'action.hover',
-              borderRadius: 2,
-            }}
-          >
-            <Typography variant="body2" color="text.secondary">
-              Showing{' '}
-              <strong>
-                {sortedData.length} of {data.length}
-              </strong>{' '}
-              papers
-              {(searchQuery || selLabels.length > 0) && (
-                <>
-                  {' '}
-                  matching{' '}
-                  {searchQuery && (
-                    <>
-                      &quot;{searchQuery}&quot;
-                      {selLabels.length > 0 && ' and '}
-                    </>
-                  )}
-                  {selLabels.length > 0 && (
-                    <>
-                      {selLabels.length === 1 ? 'label' : 'labels'}{' '}
-                      {selLabels.join(', ')}
-                    </>
-                  )}
-                </>
-              )}
-            </Typography>
-
-            {/* Export BibTeX button */}
-            {papersWithBibtex > 0 && (
-              <Tooltip
-                title={`Export BibTeX for ${papersWithBibtex} papers with bibliography`}
-              >
-                <IconButton
-                  size="small"
-                  onClick={handleExportBibtex}
-                  sx={{
-                    color: 'primary.main',
-                    '&:hover': {
-                      bgcolor: 'primary.light',
-                      color: 'primary.contrastText',
-                    },
-                  }}
-                >
-                  <Download fontSize="small" />
-                </IconButton>
-              </Tooltip>
-            )}
-          </Stack>
-
-          {/* Active filters display */}
-          {(searchQuery || selLabels.length > 0) && (
+        {/* Compact Results Summary */}
+        <Fade in timeout={1000}>
+          <Box>
             <Stack
               direction="row"
-              spacing={0.5}
-              flexWrap="wrap"
-              sx={{ gap: 0.5, mb: 1 }}
-            >
-              {searchQuery && (
-                <Chip
-                  label={`"${searchQuery}"`}
-                  onDelete={() => setSearchQuery('')}
-                  size="small"
-                  color="primary"
-                  variant="outlined"
-                  sx={{ height: 24, borderRadius: 2 }}
-                />
-              )}
-
-              {selLabels.map(label => (
-                <Chip
-                  key={label}
-                  label={label}
-                  onDelete={() =>
-                    setSelLabels(prev => prev.filter(l => l !== label))
-                  }
-                  size="small"
-                  color={labelColor(label)}
-                  variant="outlined"
-                  sx={{ height: 24, borderRadius: 2 }}
-                />
-              ))}
-            </Stack>
-          )}
-        </Box>
-      </Fade>
-
-      {/* Papers List */}
-      <Fade in timeout={1200}>
-        <Box>
-          {sortedData.length === 0 ? (
-            <Box
+              justifyContent="space-between"
+              alignItems="center"
+              spacing={1}
               sx={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minHeight: 400,
-                textAlign: 'center',
-                color: 'text.secondary',
+                py: 1,
+                px: 2,
+                bgcolor: 'action.hover',
+                borderRadius: 2,
               }}
             >
-              <Stack spacing={2} alignItems="center">
-                <Typography variant="h6" color="text.secondary">
-                  {searchQuery || selLabels.length > 0
-                    ? 'No papers match your search criteria.'
-                    : 'No papers available.'}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Try adjusting your search terms or filters.
-                </Typography>
-              </Stack>
-            </Box>
-          ) : (
-            <Stack spacing={1}>
-              {sortedData.map((paper, index) => (
-                <Box key={`${paper.id}-${index}`}>
-                  <PaperCard
-                    paper={paper}
-                    selectedLabels={selLabels}
-                    onLabelClick={label => setSelLabels([label, ...selLabels])}
-                  />
-                </Box>
-              ))}
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ flex: 1, minWidth: 0 }}
+              >
+                Showing{' '}
+                <strong>
+                  {sortedData.length} of {data.length}
+                </strong>{' '}
+                papers
+                {(searchQuery || selLabels.length > 0) && (
+                  <>
+                    {' '}
+                    matching{' '}
+                    {searchQuery && (
+                      <>
+                        &quot;{searchQuery}&quot;
+                        {selLabels.length > 0 && ' and '}
+                      </>
+                    )}
+                    {selLabels.length > 0 && (
+                      <>
+                        {selLabels.length === 1 ? 'label' : 'labels'}{' '}
+                        {selLabels.join(', ')}
+                      </>
+                    )}
+                  </>
+                )}
+              </Typography>
+
+              {/* Export BibTeX button - Now always visible but compact */}
+              {papersWithBibtex > 0 && isDesktop && (
+                <Tooltip
+                  title={`Export BibTeX for ${papersWithBibtex} papers with bibliography`}
+                >
+                  <IconButton
+                    size="small"
+                    onClick={handleExportBibtex}
+                    sx={{
+                      flexShrink: 0,
+                      color: 'primary.main',
+                      '&:hover': {
+                        bgcolor: 'primary.light',
+                        color: 'primary.contrastText',
+                      },
+                    }}
+                  >
+                    <Download fontSize="small" />
+                  </IconButton>
+                </Tooltip>
+              )}
             </Stack>
-          )}
-        </Box>
-      </Fade>
+
+            {/* Active filters display */}
+            {(searchQuery || selLabels.length > 0) && (
+              <Stack
+                direction="row"
+                spacing={0.5}
+                flexWrap="wrap"
+                sx={{ gap: 0.5, mb: 1 }}
+              >
+                {searchQuery && (
+                  <Chip
+                    label={`"${searchQuery}"`}
+                    onDelete={() => setSearchQuery('')}
+                    size="small"
+                    color="primary"
+                    variant="outlined"
+                    sx={{ height: 24, borderRadius: 2 }}
+                  />
+                )}
+
+                {selLabels.map(label => (
+                  <Chip
+                    key={label}
+                    label={label}
+                    onDelete={() =>
+                      setSelLabels(prev => prev.filter(l => l !== label))
+                    }
+                    size="small"
+                    color={labelColor(label)}
+                    variant="outlined"
+                    sx={{ height: 24, borderRadius: 2 }}
+                  />
+                ))}
+              </Stack>
+            )}
+          </Box>
+        </Fade>
+
+        {/* Papers List */}
+        <Fade in timeout={1200}>
+          <Box>
+            {sortedData.length === 0 ? (
+              <Box
+                sx={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minHeight: 400,
+                  textAlign: 'center',
+                  color: 'text.secondary',
+                }}
+              >
+                <Stack spacing={2} alignItems="center">
+                  <Typography variant="h6" color="text.secondary">
+                    {searchQuery || selLabels.length > 0
+                      ? 'No papers match your search criteria.'
+                      : 'No papers available.'}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Try adjusting your search terms or filters.
+                  </Typography>
+                </Stack>
+              </Box>
+            ) : (
+              <Stack spacing={1}>
+                {sortedData.map((paper, index) => (
+                  <Box key={`${paper.id}-${index}`}>
+                    <PaperCard
+                      paper={paper}
+                      selectedLabels={selLabels}
+                      onLabelClick={label =>
+                        setSelLabels([label, ...selLabels])
+                      }
+                    />
+                  </Box>
+                ))}
+              </Stack>
+            )}
+          </Box>
+        </Fade>
+      </Stack>
     </Container>
   );
 };

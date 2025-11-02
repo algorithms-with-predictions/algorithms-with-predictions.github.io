@@ -7,8 +7,11 @@ import {
   Box,
   Chip,
   Stack,
+  Collapse,
+  Typography,
+  Tooltip,
 } from '@mui/material';
-import { Search, Clear } from '@mui/icons-material';
+import { Search, Clear, FilterList } from '@mui/icons-material';
 import { trackSearch, trackFilter } from '../utils/analytics.js';
 
 const SearchAndFilter = ({
@@ -20,6 +23,7 @@ const SearchAndFilter = ({
   specialLabels = [],
 }) => {
   const [localSearchQuery, setLocalSearchQuery] = useState(searchQuery);
+  const [isKeywordSelectOpen, setIsKeywordSelectOpen] = useState(false);
 
   // Update local state when external searchQuery changes
   useEffect(() => {
@@ -50,7 +54,7 @@ const SearchAndFilter = ({
     onSearchChange('');
   };
   return (
-    <Box sx={{ mb: 2 }}>
+    <Box>
       <Stack spacing={1.5}>
         {/* Compact Search Bar */}
         <TextField
@@ -68,11 +72,43 @@ const SearchAndFilter = ({
             ),
             endAdornment: (
               <InputAdornment position="end">
-                {localSearchQuery && (
-                  <IconButton edge="end" onClick={handleClear} size="small">
-                    <Clear sx={{ fontSize: 18 }} />
-                  </IconButton>
-                )}
+                <Stack direction="row" spacing={0.5} alignItems="center">
+                  {/* Quick Keyword Select Toggle - Now visible on all devices */}
+                  {(availableLabels.length > 0 || specialLabels.length > 0) && (
+                    <Tooltip
+                      title={
+                        isKeywordSelectOpen
+                          ? 'Hide keyword filters'
+                          : 'Show keyword filters'
+                      }
+                    >
+                      <IconButton
+                        edge="end"
+                        onClick={() =>
+                          setIsKeywordSelectOpen(!isKeywordSelectOpen)
+                        }
+                        size="small"
+                        sx={{
+                          color: isKeywordSelectOpen
+                            ? 'primary.main'
+                            : 'action.active',
+                          '&:hover': {
+                            color: 'primary.main',
+                            bgcolor: 'action.hover',
+                          },
+                        }}
+                      >
+                        <FilterList sx={{ fontSize: 20 }} />
+                      </IconButton>
+                    </Tooltip>
+                  )}
+
+                  {localSearchQuery && (
+                    <IconButton edge="end" onClick={handleClear} size="small">
+                      <Clear sx={{ fontSize: 18 }} />
+                    </IconButton>
+                  )}
+                </Stack>
               </InputAdornment>
             ),
           }}
@@ -90,95 +126,156 @@ const SearchAndFilter = ({
           }}
         />
 
-        {/* Topic Filter Labels */}
+        {/* Topic Filter Labels - Now visible on all devices when toggled */}
         {(availableLabels.length > 0 || specialLabels.length > 0) && (
-          <Box
-            sx={{
-              p: 1.5,
-              bgcolor: 'background.paper',
-              borderRadius: 2,
-              border: theme => `1px solid ${theme.palette.divider}`,
-              boxShadow: 1,
-            }}
-          >
-            <Stack
-              direction="row"
-              spacing={0.5}
-              flexWrap="wrap"
-              sx={{ gap: 0.5 }}
-            >
-              {/* Special Labels First */}
-              {specialLabels.map(label => {
-                const isSelected = selectedLabels.includes(label);
-                const labelColor =
-                  label === 'prior / related work' ? 'default' : 'typeLabels';
-                return (
-                  <Chip
-                    key={label}
-                    label={label}
-                    size="small"
-                    clickable
-                    color={labelColor}
-                    variant={isSelected ? 'filled' : 'outlined'}
-                    onClick={() => {
-                      if (isSelected) {
-                        onLabelsChange(selectedLabels.filter(l => l !== label));
-                        trackFilter('special_label', `remove_${label}`);
-                      } else {
-                        onLabelsChange([...selectedLabels, label]);
-                        trackFilter('special_label', `add_${label}`);
-                      }
-                    }}
-                    sx={{
-                      height: 26,
-                      fontSize: '0.7rem',
-                      borderRadius: 2,
-                      '& .MuiChip-label': { px: 1.5 },
-                      transition: 'all 0.2s ease',
-                      '&:hover': {
-                        transform: 'translateY(-1px)',
-                        boxShadow: 2,
-                      },
-                    }}
-                  />
-                );
-              })}
+          <Box>
+            <Collapse in={isKeywordSelectOpen}>
+              <Box
+                sx={{
+                  p: 2,
+                  bgcolor: 'background.paper',
+                  borderRadius: 2,
+                  border: theme => `1px solid ${theme.palette.divider}`,
+                  boxShadow: 1,
+                }}
+              >
+                <Stack spacing={1.5}>
+                  {/* Special Labels Section */}
+                  {specialLabels.length > 0 && (
+                    <Box>
+                      <Typography
+                        variant="caption"
+                        sx={{
+                          display: 'block',
+                          mb: 0.75,
+                          color: 'text.secondary',
+                          fontWeight: 600,
+                          textTransform: 'uppercase',
+                          fontSize: '0.65rem',
+                          letterSpacing: '0.5px',
+                        }}
+                      >
+                        Paper Types
+                      </Typography>
+                      <Stack
+                        direction="row"
+                        spacing={0.5}
+                        flexWrap="wrap"
+                        sx={{ gap: 0.5 }}
+                      >
+                        {specialLabels.map(label => {
+                          const isSelected = selectedLabels.includes(label);
+                          const labelColor =
+                            label === 'prior / related work'
+                              ? 'default'
+                              : 'typeLabels';
+                          return (
+                            <Chip
+                              key={label}
+                              label={label}
+                              size="small"
+                              clickable
+                              color={labelColor}
+                              variant={isSelected ? 'filled' : 'outlined'}
+                              onClick={() => {
+                                if (isSelected) {
+                                  onLabelsChange(
+                                    selectedLabels.filter(l => l !== label)
+                                  );
+                                  trackFilter(
+                                    'special_label',
+                                    `remove_${label}`
+                                  );
+                                } else {
+                                  onLabelsChange([...selectedLabels, label]);
+                                  trackFilter('special_label', `add_${label}`);
+                                }
+                              }}
+                              sx={{
+                                height: 28,
+                                fontSize: '0.75rem',
+                                borderRadius: 2,
+                                '& .MuiChip-label': { px: 1.5 },
+                                transition: 'all 0.2s ease',
+                                '&:hover': {
+                                  transform: 'translateY(-1px)',
+                                  boxShadow: 2,
+                                },
+                              }}
+                            />
+                          );
+                        })}
+                      </Stack>
+                    </Box>
+                  )}
 
-              {/* Regular Labels - Show All */}
-              {availableLabels.map(label => {
-                const isSelected = selectedLabels.includes(label);
-                return (
-                  <Chip
-                    key={label}
-                    label={label}
-                    size="small"
-                    clickable
-                    color="labels"
-                    variant={isSelected ? 'filled' : 'outlined'}
-                    onClick={() => {
-                      if (isSelected) {
-                        onLabelsChange(selectedLabels.filter(l => l !== label));
-                        trackFilter('regular_label', `remove_${label}`);
-                      } else {
-                        onLabelsChange([...selectedLabels, label]);
-                        trackFilter('regular_label', `add_${label}`);
-                      }
-                    }}
-                    sx={{
-                      height: 26,
-                      fontSize: '0.7rem',
-                      borderRadius: 2,
-                      '& .MuiChip-label': { px: 1.5 },
-                      transition: 'all 0.2s ease',
-                      '&:hover': {
-                        transform: 'translateY(-1px)',
-                        boxShadow: 2,
-                      },
-                    }}
-                  />
-                );
-              })}
-            </Stack>
+                  {/* Regular Labels Section */}
+                  {availableLabels.length > 0 && (
+                    <Box>
+                      <Typography
+                        variant="caption"
+                        sx={{
+                          display: 'block',
+                          mb: 0.75,
+                          color: 'text.secondary',
+                          fontWeight: 600,
+                          textTransform: 'uppercase',
+                          fontSize: '0.65rem',
+                          letterSpacing: '0.5px',
+                        }}
+                      >
+                        Topics & Keywords
+                      </Typography>
+                      <Stack
+                        direction="row"
+                        spacing={0.5}
+                        flexWrap="wrap"
+                        sx={{ gap: 0.5 }}
+                      >
+                        {availableLabels.map(label => {
+                          const isSelected = selectedLabels.includes(label);
+                          return (
+                            <Chip
+                              key={label}
+                              label={label}
+                              size="small"
+                              clickable
+                              color="labels"
+                              variant={isSelected ? 'filled' : 'outlined'}
+                              onClick={() => {
+                                if (isSelected) {
+                                  onLabelsChange(
+                                    selectedLabels.filter(l => l !== label)
+                                  );
+                                  trackFilter(
+                                    'regular_label',
+                                    `remove_${label}`
+                                  );
+                                } else {
+                                  onLabelsChange([...selectedLabels, label]);
+                                  trackFilter('regular_label', `add_${label}`);
+                                }
+                              }}
+                              sx={{
+                                height: 28,
+                                fontSize: '0.75rem',
+                                borderRadius: 2,
+                                '& .MuiChip-label': { px: 1.5 },
+                                transition: 'all 0.2s ease',
+                                '&:hover': {
+                                  transform: 'translateY(-1px)',
+                                  boxShadow: 2,
+                                },
+                              }}
+                            />
+                          );
+                        })}
+                      </Stack>
+                    </Box>
+                  )}
+                </Stack>
+              </Box>
+            </Collapse>
           </Box>
         )}
       </Stack>
