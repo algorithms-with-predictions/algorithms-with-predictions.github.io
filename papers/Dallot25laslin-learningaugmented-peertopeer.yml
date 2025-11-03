@@ -1,6 +1,10 @@
 title: 'LASLiN: A Learning-Augmented Peer-to-Peer Network'
 authors: Julien Dallot, Caio Caldeira, Arash Pourdamghani, Olga Goussevskaia, Stefan
   Schmid
+labels:
+- network design
+- networks
+- P2P networks
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2509.11904
