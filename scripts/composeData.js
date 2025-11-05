@@ -29,7 +29,7 @@ const paper_objs = papers.map(paper => {
   return paperData;
 });
 
-const jsonContent = JSON.stringify(paper_objs, null, 2);
+const jsonContent = JSON.stringify(paper_objs);
 
 // Write to root (for development/legacy compatibility)
 fs.writeFileSync(outputJSON, jsonContent);
