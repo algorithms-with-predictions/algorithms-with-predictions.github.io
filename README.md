@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io/actions)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Falgorithms-with-predictions.github.io)](https://algorithms-with-predictions.github.io)
-[![License](https://img.shields.io/github/license/algorithms-with-predictions/algorithms-with-predictions.github.io)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive, community-driven resource for research on **Algorithms with Predictions** -
 maintaining an overview of the current state of research and collecting links to relevant materials
