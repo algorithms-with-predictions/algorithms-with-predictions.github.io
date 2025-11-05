@@ -1,5 +1,18 @@
 title: Improved Frequency Estimation Algorithms with and without Predictions
 authors: Anders Aamand, Justin Y. Chen, Huy Le Nguyen, Sandeep Silwal, A. Vakilian
+abstract: Estimating frequencies of elements appearing in a data stream is a key task
+  in large-scale data analysis. Popular sketching approaches to this problem (e.g.,
+  CountMin and CountSketch) come with worst-case guarantees that probabilistically
+  bound the error of the estimated frequencies for any possible input. The work of
+  Hsu et al. (2019) introduced the idea of using machine learning to tailor sketching
+  algorithms to the specific data distribution they are being run on. In particular,
+  their learning-augmented frequency estimation algorithm uses a learned heavy-hitter
+  oracle which predicts which elements will appear many times in the stream. We give
+  a novel algorithm, which in some parameter regimes, already theoretically outperforms
+  the learning based algorithm of Hsu et al. without the use of any predictions. Augmenting
+  our algorithm with heavy-hitter predictions further reduces the error and improves
+  upon the state of the art. Empirically, our algorithms achieve superior performance
+  in all experiments compared to prior approaches.
 labels:
 - parsimonious / succinct
 - streaming
@@ -8,18 +21,11 @@ publications:
   url: https://arxiv.org/abs/2312.07535
   year: 2023
   dblp_key: conf/nips/AamandCNSV23
-  bibtex: |
-    @inproceedings{DBLP:conf/nips/AamandCNSV23,
-      author       = {Anders Aamand and
-      Justin Y. Chen and
-      Huy L{\^{e}} Nguyen and
-      Sandeep Silwal and
-      Ali Vakilian},
-      title        = {Improved Frequency Estimation Algorithms with and without Predictions},
-      booktitle    = {NeurIPS},
-      year         = {2023}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/nips/AamandCNSV23,\n  author       = {Anders Aamand\
+    \ and\n  Justin Y. Chen and\n  Huy L{\\^{e}} Nguyen and\n  Sandeep Silwal and\n\
+    \  Ali Vakilian},\n  title        = {Improved Frequency Estimation Algorithms\
+    \ with and without Predictions},\n  booktitle    = {NeurIPS},\n  year        \
+    \ = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2312.07535
   year: 2023

@@ -1,5 +1,20 @@
 title: Flow Time Scheduling with Uncertain Processing Time
 authors: Azar, Leonardi, Touitou
+abstract: We consider the problem of online scheduling on a single machine in order
+  to minimize weighted flow time. The existing algorithms for this problem (STOC ’01,
+  SODA ’03, FOCS ’18) all require exact knowledge of the processing time of each job.
+  This assumption is crucial, as even a slight perturbation of the processing time
+  would lead to polynomial competitive ratio. However, this assumption very rarely
+  holds in real-life scenarios. In this paper, we present the first algorithm for
+  weighted flow time which do not require exact knowledge of the processing times
+  of jobs. Specifically, we introduce the Scheduling with Predicted Processing Time
+  (SPPT) problem, where the algorithm is given a prediction for the processing time
+  of each job, instead of its real processing time. For the case of a constant factor
+  distortion between the predictions and the real processing time, our algorithms
+  match all the best known competitiveness bounds for weighted flow time – namely
+  O(logP), O(logD) and O(logW), where P,D,W are the maximum ratios of processing times,
+  densities, and weights, respectively. For larger errors, the competitiveness of
+  our algorithms degrades gracefully.
 labels:
 - online
 - scheduling
@@ -8,9 +23,10 @@ publications:
   url: https://dl.acm.org/doi/10.1145/3406325.3451023
   year: 2021
   dblp_key: conf/stoc/AzarLT21
-  bibtex: "@inproceedings{DBLP:conf/stoc/AzarLT21,\n  author       = {Yossi Azar and\n  Stefano Leonardi and\n  Noam Touitou},\n\
-    \  title        = {Flow time scheduling with uncertain processing time},\n  booktitle    = {{STOC}},\n  pages        =\
-    \ {1070--1080},\n  publisher    = {{ACM}},\n  year         = {2021}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/stoc/AzarLT21,\n  author       = {Yossi Azar and\n\
+    \  Stefano Leonardi and\n  Noam Touitou},\n  title        = {Flow time scheduling\
+    \ with uncertain processing time},\n  booktitle    = {{STOC}},\n  pages      \
+    \  = {1070--1080},\n  publisher    = {{ACM}},\n  year         = {2021}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2103.05604
   year: 2021

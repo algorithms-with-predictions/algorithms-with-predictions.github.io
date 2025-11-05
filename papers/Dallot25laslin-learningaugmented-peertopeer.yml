@@ -1,6 +1,29 @@
 title: 'LASLiN: A Learning-Augmented Peer-to-Peer Network'
 authors: Julien Dallot, Caio Caldeira, Arash Pourdamghani, Olga Goussevskaia, Stefan
   Schmid
+abstract: 'We introduce a learning-augmented peer-to-peer (P2P) network design that
+  leverages the predictions of traffic patterns to optimize the network''s topology.
+  While keeping formal guarantees on the standard P2P metrics (routing path length,
+  maximum degree), we optimize the network in a demand-aware manner and minimize the
+  path lengths weighted by the peer-to-peer communication demands. Our protocol is
+  learning-augmented, meaning that each node receives an individual, possibly inaccurate
+  prediction about the future traffic patterns, with the goal of improving the network''s
+  performances. We strike a trade-off between significantly improved performances
+  when the predictions are correct (consistency) and polylogarithmic performances
+  when the predictions are arbitrary (robustness). We have two main contributions.
+  First, we consider the centralized setting and show that the problem of constructing
+  an optimum static skip list network (SLN) is solvable in polynomial time and can
+  be computed via dynamic programming. This problem is the natural demand-aware extension
+  of the optimal skip list problem. Second, we introduce the Uniform P2P protocol
+  which generalizes skip list networks (SLN) by relaxing the node''s heights from
+  discrete to continuous. We show that Uniform achieves state-of-the-art performances:
+  logarithmic routing and maximum degree, both with high probability. We then use
+  Uniform to build a learning-augmented P2P protocol in order to incorporate demand-awareness,
+  leading to our main contribution, LASLiN. We prove that the performances of LASLiN
+  are consistent with those of an optimum static SLN with correct predictions (given
+  via our dynamic programming approach), and are at most a logarithmic factor off
+  the state-of-the-art P2P protocols if the predictions are arbitrary wrong. For the
+  special case of highly sparse demands, we show that LASLiN achieves improved performances.'
 labels:
 - network design
 - networks

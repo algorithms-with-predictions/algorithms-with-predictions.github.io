@@ -1,6 +1,26 @@
 title: Strategyproof Mechanisms for Facility Location with Prediction Under the Maximum
   Cost Objective
 authors: Hau Chan, Jianan Lin, Chenhao Wang
+abstract: 'We study the mechanism design problem of facility location on a metric
+  space in the learning-augmented framework, where mechanisms have access to an imperfect
+  prediction of optimal facility locations. Our goal is to design strategyproof (SP)
+  mechanisms to elicit agent preferences on the facility locations truthfully and,
+  leveraging the given imperfect prediction, determine the facility location that
+  approximately minimizes the maximum cost among all agents. In particular, we seek
+  SP mechanisms whose approximation guarantees depend on the prediction errors --
+  achieve improved guarantees when the prediction is accurate (known as the \emph{consistency}),
+  while still ensuring robust worst-case performance when the prediction is arbitrarily
+  inaccurate (known as the \emph{robustness}). When the metric space is the real line,
+  we characterize all deterministic SP mechanisms with consistency strictly less than
+  2 and bounded robustness: such mechanisms must be the MinMaxP mechanism, which returns
+  the prediction location if it lies between the two extreme agent locations and,
+  otherwise, returns the closest agent location to the prediction. We further show
+  that, for any prediction error $\eta\ge 0$, while MinMaxP is $(1+\min(1, \eta))$-approximation,
+  no deterministic SP mechanism can achieve a better approximation. In two-dimensional
+  spaces with the $l_p$ metric, we analyze the approximation guarantees of a deterministic
+  mechanism that runs MinMaxP independently on each coordinate, as well as a randomized
+  mechanism that selects between two deterministic ones with specific probabilities.
+  Finally, we discuss the group strategyproofness of the considered mechanisms.'
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2509.00439
@@ -9,3 +29,6 @@ publications:
   day: 30
 arxiv: 2509.00439
 s2_id: b3c72058f1e632443fc55e7a02c3a4c75c13ef32
+labels:
+- game theory / mechanism design
+- facility location

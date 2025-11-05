@@ -1,5 +1,23 @@
 title: Online Fair Division with Additional Information
 authors: Tzeh Yuan Neoh, Jannik Peters, Nicholas Teh
+abstract: We study the problem of fairly allocating indivisible goods to agents in
+  an online setting, where goods arrive sequentially and must be allocated irrevocably
+  to agents. Focusing on the popular fairness notions of envy-freeness, proportionality,
+  and maximin share fairness (and their approximate variants), we ask how the availability
+  of information on future goods influences the existence and approximability of fair
+  allocations. In the absence of any such information, we establish strong impossibility
+  results, demonstrating the inherent difficulty of achieving even approximate fairness
+  guarantees. In contrast, we demonstrate that knowledge of additional information
+  -- such as aggregate of each agent's total valuations (equivalently, normalized
+  valuations) or the multiset of future goods values (frequency predictions) -- would
+  enable the design of fairer online algorithms. Given normalization information,
+  we propose an algorithm that achieves stronger fairness guarantees than previously
+  known results. Given frequency predictions, we introduce a meta-algorithm that leverages
+  frequency predictions to match the best-known offline guarantees for a broad class
+  of ''share-based'' fairness notions. Our complementary impossibility results in
+  each setting underscore both the limitations imposed by uncertainty about future
+  goods and the potential of leveraging structured information to achieve fairer outcomes
+  in online fair division.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2505.24503
@@ -8,3 +26,6 @@ publications:
   day: 30
 arxiv: 2505.24503
 s2_id: bfbac6e008b0be55b5cf05835cd5280aa5c4d0b9
+labels:
+- online
+- allocation / matching

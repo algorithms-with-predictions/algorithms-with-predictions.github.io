@@ -1,5 +1,22 @@
 title: Online Bin Covering with Frequency Predictions
 authors: Berg, Kamali
+abstract: We study the discrete bin covering problem where a multiset of items from
+  a fixed set $S \subseteq (0,1]$ must be split into disjoint subsets while maximizing
+  the number of subsets whose contents sum to at least $1$. We study the online discrete
+  variant, where $S$ is finite, and items arrive sequentially. In the purely online
+  setting, we show that the competitive ratios of best deterministic (and randomized)
+  algorithms converge to $\frac{1}{2}$ for large $S$, similar to the continuous setting.
+  Therefore, we consider the problem under the prediction setting, where algorithms
+  may access a vector of frequencies predicting the frequency of items of each size
+  in the instance. In this setting, we introduce a family of online algorithms that
+  perform near-optimally when the predictions are correct. Further, we introduce a
+  second family of more robust algorithms that presents a tradeoff between the performance
+  guarantees when the predictions are perfect and when predictions are adversarial.
+  Finally, we consider a stochastic setting where items are drawn independently from
+  any fixed but unknown distribution of $S$. Using results from the PAC-learnability
+  of probabilities in discrete distributions, we also introduce a purely online algorithm
+  whose average-case performance is near-optimal with high probability for all finite
+  sets $S$ and all distributions of $S$.
 labels:
 - covering
 - online
@@ -8,10 +25,11 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.SWAT.2024.10
   year: 2024
   dblp_key: conf/swat/BergK24
-  bibtex: "@inproceedings{DBLP:conf/swat/BergK24,\n  author       = {Magnus Berg and\n  Shahin Kamali},\n  title        =\
-    \ {Online Bin Covering with Frequency Predictions},\n  booktitle    = {{SWAT}},\n  series       = {LIPIcs},\n  volume\
-    \       = {294},\n  pages        = {10:1--10:17},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n\
-    \  year         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/swat/BergK24,\n  author       = {Magnus Berg and\n\
+    \  Shahin Kamali},\n  title        = {Online Bin Covering with Frequency Predictions},\n\
+    \  booktitle    = {{SWAT}},\n  series       = {LIPIcs},\n  volume       = {294},\n\
+    \  pages        = {10:1--10:17},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum\
+    \ f{\"{u}}r Informatik},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2401.14881
   year: 2024

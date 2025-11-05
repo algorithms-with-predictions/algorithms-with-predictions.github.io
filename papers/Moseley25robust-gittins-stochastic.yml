@@ -1,5 +1,28 @@
 title: Robust Gittins for Stochastic Scheduling
 authors: Benjamin Moseley, Heather Newman, K. Pruhs, Rudy Zhou
+abstract: 'A common theme in stochastic optimization problems is that, theoretically,
+  stochastic algorithms need to "know" relatively rich information about the underlying
+  distributions. This is at odds with most applications, where distributions are rough
+  predictions based on historical data. Thus, commonly, stochastic algorithms are
+  making decisions using imperfect predicted distributions, while trying to optimize
+  over some unknown true distributions. We consider the fundamental problem of scheduling
+  stochastic jobs preemptively on a single machine to minimize expected mean completion
+  time in the setting where the scheduler is only given imperfect predicted job size
+  distributions. If the predicted distributions are perfect, then it is known that
+  this problem can be solved optimally by the Gittins index policy. The goal of our
+  work is to design a scheduling policy that is robust in the sense that it produces
+  nearly optimal schedules even if there are modest discrepancies between the predicted
+  distributions and the underlying real distributions. Our main contributions are:
+  - We show that the standard Gittins index policy is not robust in this sense. If
+  the true distributions are perturbed by even an arbitrarily small amount, then running
+  the Gittins index policy using the perturbed distributions can lead to an unbounded
+  increase in mean completion time. - We explain how to modify the Gittins index policy
+  to make it robust, that is, to produce nearly optimal schedules, where the approximation
+  depends on a new measure of error between the true and predicted distributions that
+  we define. Looking forward, the approach we develop here can be applied more broadly
+  to many other stochastic optimization problems to better understand the impact of
+  mispredictions, and lead to the development of new algorithms that are robust against
+  such mispredictions.'
 labels:
 - approximation
 - online
@@ -9,19 +32,11 @@ publications:
   url: https://doi.org/10.1145/3726854.3727315
   year: 2025
   dblp_key: conf/sigmetrics/MoseleyNPZ25
-  bibtex: |
-    @inproceedings{DBLP:conf/sigmetrics/MoseleyNPZ25,
-      author       = {Benjamin Moseley and
-      Heather Newman and
-      Kirk Pruhs and
-      Rudy Zhou},
-      title        = {Robust Gittins for Stochastic Scheduling},
-      booktitle    = {{SIGMETRICS} (Abstracts)},
-      pages        = {166--168},
-      publisher    = {{ACM}},
-      year         = {2025}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/MoseleyNPZ25,\n  author       = {Benjamin\
+    \ Moseley and\n  Heather Newman and\n  Kirk Pruhs and\n  Rudy Zhou},\n  title\
+    \        = {Robust Gittins for Stochastic Scheduling},\n  booktitle    = {{SIGMETRICS}\
+    \ (Abstracts)},\n  pages        = {166--168},\n  publisher    = {{ACM}},\n  year\
+    \         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2504.10743
   year: 2025

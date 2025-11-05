@@ -1,5 +1,16 @@
 title: Data-driven Competitive Algorithms for Online Knapsack and Set Cover
 authors: Zeynali, Sun, Hajiesmaili, Wierman
+abstract: The design of online algorithms has tended to focus on algorithms with worst-case
+  guarantees, e.g., bounds on the competitive ratio. However, it is well-known that
+  such algorithms are often overly pessimistic, performing sub-optimally on non-worst-case
+  inputs. In this paper, we develop an approach for data-driven design of online algorithms
+  that maintain near-optimal worst-case guarantees while also performing learning
+  in order to perform well for typical inputs. Our approach is to identify policy
+  classes that admit global worst-case guarantees, and then perform learning using
+  historical data within the policy classes. We demonstrate the approach in the context
+  of two classical problems, online knapsack and online set cover, proving competitive
+  bounds for rich policy classes in each case. Additionally, we illustrate the practical
+  implications via a case study on electric vehicle charging.
 labels:
 - covering
 - learning
@@ -10,10 +21,11 @@ publications:
   url: https://ojs.aaai.org/index.php/AAAI/article/view/17294
   year: 2021
   dblp_key: conf/aaai/Zeynali0HW21
-  bibtex: "@inproceedings{DBLP:conf/aaai/Zeynali0HW21,\n  author       = {Ali Zeynali and\n  Bo Sun and\n  Mohammad Hassan\
-    \ Hajiesmaili and\n  Adam Wierman},\n  title        = {Data-driven Competitive Algorithms for Online Knapsack and Set\
-    \ Cover},\n  booktitle    = {{AAAI}},\n  pages        = {10833--10841},\n  publisher    = {{AAAI} Press},\n  year    \
-    \     = {2021}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/aaai/Zeynali0HW21,\n  author       = {Ali Zeynali\
+    \ and\n  Bo Sun and\n  Mohammad Hassan Hajiesmaili and\n  Adam Wierman},\n  title\
+    \        = {Data-driven Competitive Algorithms for Online Knapsack and Set Cover},\n\
+    \  booktitle    = {{AAAI}},\n  pages        = {10833--10841},\n  publisher   \
+    \ = {{AAAI} Press},\n  year         = {2021}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2012.05361
   year: 2020

@@ -1,5 +1,19 @@
 title: Learning-Augmented Streaming Algorithms for Correlation Clustering
 authors: Yinhao Dong, Shan Jiang, Shi Li, Pan Peng
+abstract: We study streaming algorithms for Correlation Clustering. Given a graph
+  as an arbitrary-order stream of edges, with each edge labeled as positive or negative,
+  the goal is to partition the vertices into disjoint clusters, such that the number
+  of disagreements is minimized. In this paper, we give the first learning-augmented
+  streaming algorithms for the problem on both complete and general graphs, improving
+  the best-known space-approximation tradeoffs. Based on the works of Cambus et al.
+  (SODA'24) and Ahn et al. (ICML'15), our algorithms use the predictions of pairwise
+  distances between vertices provided by a predictor. For complete graphs, our algorithm
+  achieves a better-than-$3$ approximation under good prediction quality, while using
+  $\tilde{O}(n)$ total space. For general graphs, our algorithm achieves an $O(\log
+  |E^-|)$ approximation under good prediction quality using $\tilde{O}(n)$ total space,
+  improving the best-known non-learning algorithm in terms of space efficiency. Experimental
+  results on synthetic and real-world datasets demonstrate the superiority of our
+  proposed algorithms over their non-learning counterparts.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2510.10705
@@ -8,3 +22,6 @@ publications:
   day: 12
 arxiv: 2510.10705
 s2_id: b7ce88da6d7f43dc0927aa68fccc5e1cc21c8bdf
+labels:
+- streaming
+- graph problems

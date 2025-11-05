@@ -1,5 +1,25 @@
 title: Competitive Caching with Machine Learned Advice
 authors: Lykouris, Vassilvitskii
+abstract: "Traditional online algorithms encapsulate decision making under uncertainty,\
+  \ and give ways to hedge against all possible future events, while guaranteeing\
+  \ a nearly optimal solution, as compared to an offline optimum. On the other hand,\
+  \ machine learning algorithms are in the business of extrapolating patterns found\
+  \ in the data to predict the future, and usually come with strong guarantees on\
+  \ the expected generalization error.\n In this work, we develop a framework for\
+  \ augmenting online algorithms with a machine learned predictor to achieve competitive\
+  \ ratios that provably improve upon unconditional worst-case lower bounds when the\
+  \ predictor has low error. Our approach treats the predictor as a complete black\
+  \ box and is not dependent on its inner workings or the exact distribution of its\
+  \ errors.\n \n We apply this framework to the traditional caching problem—creating\
+  \ an eviction strategy for a cache of size\n k\n . We demonstrate that naively following\
+  \ the oracle’s recommendations may lead to very poor performance, even when the\
+  \ average error is quite low. Instead, we show how to modify the Marker algorithm\
+  \ to take into account the predictions and prove that this combined approach achieves\
+  \ a competitive ratio that both (i) decreases as the predictor’s error decreases\
+  \ and (ii) is always capped by\n O\n (log\n k\n ), which can be achieved without\
+  \ any assistance from the predictor. We complement our results with an empirical\
+  \ evaluation of our algorithm on real-world datasets and show that it performs well\
+  \ empirically even when using simple off-the-shelf predictions."
 labels:
 - caching / paging
 - online
@@ -11,9 +31,10 @@ publications:
   url: https://dl.acm.org/doi/10.1145/3447579
   year: 2021
   dblp_key: journals/jacm/LykourisV21
-  bibtex: "@article{DBLP:journals/jacm/LykourisV21,\n  author       = {Thodoris Lykouris and\n  Sergei Vassilvitskii},\n \
-    \ title        = {Competitive Caching with Machine Learned Advice},\n  journal      = {J. {ACM}},\n  volume       = {68},\n\
-    \  number       = {4},\n  pages        = {24:1--24:25},\n  year         = {2021}\n}\n"
+  bibtex: "@article{DBLP:journals/jacm/LykourisV21,\n  author       = {Thodoris Lykouris\
+    \ and\n  Sergei Vassilvitskii},\n  title        = {Competitive Caching with Machine\
+    \ Learned Advice},\n  journal      = {J. {ACM}},\n  volume       = {68},\n  number\
+    \       = {4},\n  pages        = {24:1--24:25},\n  year         = {2021}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/1802.05399
   year: 2018

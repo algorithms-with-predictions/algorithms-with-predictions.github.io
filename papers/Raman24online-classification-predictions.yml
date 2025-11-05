@@ -1,5 +1,15 @@
 title: Online Classification with Predictions
 authors: Raman, Tewari
+abstract: We study online classification when the learner has access to predictions
+  about future examples. We design an online learner whose expected regret is never
+  worse than the worst-case regret, gracefully improves with the quality of the predictions,
+  and can be significantly better than the worst-case regret when the predictions
+  of future examples are accurate. As a corollary, we show that if the learner is
+  always guaranteed to observe data where future examples are easily predictable,
+  then online learning can be as easy as transductive online learning. Our results
+  complement recent work in online algorithms with predictions and smoothed online
+  classification, which go beyond a worse-case analysis by using machine-learned predictions
+  and distributional assumptions respectively.
 labels:
 - learning
 - online
@@ -8,8 +18,9 @@ publications:
   url: http://papers.nips.cc/paper_files/paper/2024/hash/657ce8a0bb63ef46a81a76bfc82d261a-Abstract-Conference.html
   year: 2024
   dblp_key: conf/nips/RamanT24
-  bibtex: "@inproceedings{DBLP:conf/nips/RamanT24,\n  author       = {Vinod Raman and\n  Ambuj Tewari},\n  title        =\
-    \ {Online Classification with Predictions},\n  booktitle    = {NeurIPS},\n  year         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/nips/RamanT24,\n  author       = {Vinod Raman\
+    \ and\n  Ambuj Tewari},\n  title        = {Online Classification with Predictions},\n\
+    \  booktitle    = {NeurIPS},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2405.14066
   year: 2024

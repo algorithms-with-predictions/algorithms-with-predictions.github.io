@@ -1,5 +1,19 @@
-title: "Online Bipartite Matching with Advice: Tight Robustness-Consistency Tradeoffs for the Two-Stage Model"
+title: 'Online Bipartite Matching with Advice: Tight Robustness-Consistency Tradeoffs
+  for the Two-Stage Model'
 authors: Billy Jin, Will Ma
+abstract: 'Two-stage bipartite matching is a fundamental problem of optimization under
+  uncertainty introduced by Feng, Niazadeh, and Saberi (2021), who study it under
+  the stochastic and adversarial paradigms of uncertainty. We propose a method to
+  interpolate between these paradigms, using the Algorithms with Predictions (ALPS)
+  framework. To elaborate, given some form of information (e.g. a distributional prediction)
+  about the uncertainty, we consider the optimal decision assuming that information
+  is correct to be some"advice", whose accuracy is unknown. In the ALPS framework,
+  we define Consistency to be an algorithm''s performance relative to the advice,
+  and Robustness to be an algorithm''s performance relative to the hindsight-optimal
+  decision. We characterize the tight tradeoff between Consistency and Robustness
+  for four settings of two-stage matching: unweighted, vertex-weighted, edge-weighted,
+  and fractional budgeted allocation. Additionally, we show our algorithm achieves
+  state-of-the-art performance in both synthetic and real-data simulations.'
 labels:
 - allocation / matching
 - online
@@ -8,16 +22,10 @@ publications:
   url: http://papers.nips.cc/paper_files/paper/2022/hash/5d68a3f05ee2aae6a0fb2d94959082a0-Abstract-Conference.html
   year: 2022
   dblp_key: conf/nips/JinM22
-  bibtex: |
-    @inproceedings{DBLP:conf/nips/JinM22,
-      author       = {Billy Jin and
-      Will Ma},
-      title        = {Online Bipartite Matching with Advice: Tight Robustness-Consistency
-      Tradeoffs for the Two-Stage Model},
-      booktitle    = {NeurIPS},
-      year         = {2022}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/nips/JinM22,\n  author       = {Billy Jin and\n\
+    \  Will Ma},\n  title        = {Online Bipartite Matching with Advice: Tight Robustness-Consistency\n\
+    \  Tradeoffs for the Two-Stage Model},\n  booktitle    = {NeurIPS},\n  year  \
+    \       = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2206.11397
   year: 2022

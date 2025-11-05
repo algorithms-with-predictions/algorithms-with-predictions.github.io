@@ -1,5 +1,23 @@
-title: Learning-Augmented Sketching Offers Improved Performance for Privacy Preserving and Secure GWAS
-authors: Junyan Xu, Kaiyuan Zhu, Jieling Cai, Can Kockan, Natnatee Dokmai, Hyunghoon Cho, David P. Woodruff, S. C. Sahinalp
+title: Learning-Augmented Sketching Offers Improved Performance for Privacy Preserving
+  and Secure GWAS
+authors: Junyan Xu, Kaiyuan Zhu, Jieling Cai, Can Kockan, Natnatee Dokmai, Hyunghoon
+  Cho, David P. Woodruff, S. C. Sahinalp
+abstract: The introduction of trusted execution environments (TEEs), such as secure
+  enclaves provided by the Intel SGX technology has enabled secure and privacy-preserving
+  computation on the cloud. The stringent resource limitations, such as memory constraints,
+  required by some TEEs necessitates the development of computational approaches with
+  reduced memory usage, such as sketching. One example is the SkSES method for GWAS
+  on a cohort of case and control samples from multiple institutions, which identifies
+  the most significant SNPs in a privacy-preserving manner without disclosing sensitive
+  genotype information to other institutions or the cloud service provider. Here we
+  show how to improve the performance of SkSES on large datasets by augmenting it
+  with a learning-augmented approach. Specifically, we show how individual institutions
+  can perform smaller scale GWAS on their own datasets and identify two sets of variants
+  according to certain criteria, which are then used to guide the sketching process
+  to more accurately identify significant variants over the collective dataset. The
+  new method achieves up to 40% accuracy gain compared to the original SkSES method
+  under the same memory constraints on datasets we tested on. The code is available
+  at https://github.com/alreadydone/sgx-genome-variants-search. Contact cenk.sahinalp@nih.gov
 publications:
 - name: bioRxiv
   url: https://doi.org/10.1101/2024.09.19.613975

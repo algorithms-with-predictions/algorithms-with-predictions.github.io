@@ -1,5 +1,24 @@
 title: Offline and Online Algorithms for SSD Management
 authors: Tomer Lange, J. Naor, Gala Yadgar
+abstract: Flash-based solid-state drives (SSDs) are a key component in most computer
+  systems, thanks to their ability to support parallel I/O at sub-millisecond latency
+  and consistently high throughput. At the same time, due to the limitations of the
+  flash media, they perform writes out-of-place, often incurring a high internal overhead
+  which is referred to as write amplification. Minimizing this overhead has been the
+  focus of numerous studies by the systems research community for more than two decades.
+  The abundance of system-level optimizations for reducing SSD write amplification,
+  which is typically based on experimental evaluation, stands in stark contrast to
+  the lack of theoretical algorithmic results in this problem domain. To bridge this
+  gap, we explore the problem of reducing write amplification from an algorithmic
+  perspective, considering it in both offline and online settings. In the offline
+  setting, we present a near-optimal algorithm. In the online setting, we first consider
+  algorithms that have no prior knowledge about the input and show that in this case,
+  the greedy algorithm is optimal. Then, we design an online algorithm that uses predictions
+  about the input. We show that when predictions are relatively accurate, our algorithm
+  significantly improves over the greedy algorithm. We complement our theoretical
+  findings with an empirical evaluation of our algorithms, comparing them with the
+  state-of-the-art scheme. The results confirm that our algorithms exhibit an improved
+  performance for a wide range of input traces.
 labels:
 - online
 - scheduling
@@ -11,16 +30,9 @@ publications:
   url: https://dl.acm.org/doi/abs/10.1145/3491045
   year: 2022
   dblp_key: conf/sigmetrics/LangeNY22
-  bibtex: |
-    @inproceedings{DBLP:conf/sigmetrics/LangeNY22,
-      author       = {Tomer Lange and
-      Joseph (Seffi) Naor and
-      Gala Yadgar},
-      title        = {Offline and Online Algorithms for {SSD} Management},
-      booktitle    = {{SIGMETRICS} (Abstracts)},
-      pages        = {89--90},
-      publisher    = {{ACM}},
-      year         = {2022}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/LangeNY22,\n  author       = {Tomer\
+    \ Lange and\n  Joseph (Seffi) Naor and\n  Gala Yadgar},\n  title        = {Offline\
+    \ and Online Algorithms for {SSD} Management},\n  booktitle    = {{SIGMETRICS}\
+    \ (Abstracts)},\n  pages        = {89--90},\n  publisher    = {{ACM}},\n  year\
+    \         = {2022}\n}\n"
 s2_id: be4da84715d87d8421ba3bf0aa2df0d222763b13

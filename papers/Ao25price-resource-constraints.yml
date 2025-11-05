@@ -1,5 +1,20 @@
-title: "Learning to Price with Resource Constraints: From Full Information to Machine-Learned Prices"
+title: 'Learning to Price with Resource Constraints: From Full Information to Machine-Learned
+  Prices'
 authors: Ruicheng Ao, Jiashuo Jiang, David Simchi-Levi
+abstract: 'We study the dynamic pricing problem with knapsack, addressing the challenge
+  of balancing exploration and exploitation under resource constraints. We introduce
+  three algorithms tailored to different informational settings: a Boundary Attracted
+  Re-solve Method for full information, an online learning algorithm for scenarios
+  with no prior information, and an estimate-then-select re-solve algorithm that leverages
+  machine-learned informed prices with known upper bound of estimation errors. The
+  Boundary Attracted Re-solve Method achieves logarithmic regret without requiring
+  the non-degeneracy condition, while the online learning algorithm attains an optimal
+  $O(\sqrt{T})$ regret. Our estimate-then-select approach bridges the gap between
+  these settings, providing improved regret bounds when reliable offline data is available.
+  Numerical experiments validate the effectiveness and robustness of our algorithms
+  across various scenarios. This work advances the understanding of online resource
+  allocation and dynamic pricing, offering practical solutions adaptable to different
+  informational structures.'
 labels:
 - dynamic pricing
 - learning

@@ -1,5 +1,17 @@
-title: "PCF Learned Sort: a Learning Augmented Sort Algorithm with O(n log log n) Expected Complexity"
+title: 'PCF Learned Sort: a Learning Augmented Sort Algorithm with O(n log log n)
+  Expected Complexity'
 authors: Sato, Matsui
+abstract: Sorting is one of the most fundamental algorithms in computer science. Recently,
+  Learned Sorts, which use machine learning to improve sorting speed, have attracted
+  attention. While existing studies show that Learned Sort is experimentally faster
+  than classical sorting algorithms, they do not provide theoretical guarantees about
+  its computational complexity. We propose PCF Learned Sort, a theoretically guaranteed
+  Learned Sort algorithm. We prove that the expected complexity of PCF Learned Sort
+  is $O(n \log \log n)$ under mild assumptions on the data distribution. We also confirm
+  experimentally that PCF Learned Sort has a computational complexity of $O(n \log
+  \log n)$ on both synthetic and real datasets. This is the first study to theoretically
+  support the experimental success of Learned Sort, and provides evidence for why
+  Learned Sort is fast.
 labels:
 - running time
 - sorting

@@ -1,5 +1,20 @@
 title: Competitive Search in the Line and the Star with Predictions
 authors: Angelopoulos
+abstract: We study the classic problem of searching for a hidden target in the line
+  and the $m$-ray star, in a setting in which the searcher has some prediction on
+  the hider's position. We first focus on the main metric for comparing search strategies
+  under predictions; namely, we give positive and negative results on the consistency-robustness
+  tradeoff, where the performance of the strategy is evaluated at extreme situations
+  in which the prediction is either error-free, or adversarially generated, respectively.
+  For the line, we show tight bounds concerning this tradeoff, under the untrusted
+  advice model, in which the prediction is in the form of a $k$-bit string which encodes
+  the responses to $k$ binary queries. For the star, we give tight, and near-tight
+  tradeoffs in the positional and the directional models, in which the prediction
+  is related to the position of the target within the star, and to the ray on which
+  the target hides, respectively. Last, for all three prediction models, we show how
+  to generalize our study to a setting in which the performance of the strategy is
+  evaluated as a function of the searcher's desired tolerance to prediction errors,
+  both in terms of positive and inapproximability results.
 labels:
 - online
 - search
@@ -8,10 +23,11 @@ publications:
   url: https://drops.dagstuhl.de/opus/volltexte/2023/18546/pdf/LIPIcs-MFCS-2023-12.pdf
   year: 2023
   dblp_key: conf/mfcs/000123
-  bibtex: "@inproceedings{DBLP:conf/mfcs/000123,\n  author       = {Spyros Angelopoulos},\n  title        = {Competitive Search\
-    \ in the Line and the Star with Predictions},\n  booktitle    = {{MFCS}},\n  series       = {LIPIcs},\n  volume      \
-    \ = {272},\n  pages        = {12:1--12:15},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n\
-    \  year         = {2023}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/mfcs/000123,\n  author       = {Spyros Angelopoulos},\n\
+    \  title        = {Competitive Search in the Line and the Star with Predictions},\n\
+    \  booktitle    = {{MFCS}},\n  series       = {LIPIcs},\n  volume       = {272},\n\
+    \  pages        = {12:1--12:15},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum\
+    \ f{\"{u}}r Informatik},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2312.17539
   year: 2023

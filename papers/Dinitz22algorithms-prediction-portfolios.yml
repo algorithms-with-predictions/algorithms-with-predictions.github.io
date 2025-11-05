@@ -1,5 +1,20 @@
 title: Algorithms with Prediction Portfolios
 authors: Dinitz, Im, Lavastida, Moseley, Vassilvitskii
+abstract: The research area of algorithms with predictions has seen recent success
+  showing how to incorporate machine learning into algorithm design to improve performance
+  when the predictions are correct, while retaining worst-case guarantees when they
+  are not. Most previous work has assumed that the algorithm has access to a single
+  predictor. However, in practice, there are many machine learning methods available,
+  often with incomparable generalization guarantees, making it hard to pick a best
+  method a priori. In this work we consider scenarios where multiple predictors are
+  available to the algorithm and the question is how to best utilize them. Ideally,
+  we would like the algorithm's performance to depend on the quality of the best predictor.
+  However, utilizing more predictions comes with a cost, since we now have to identify
+  which prediction is the best. We study the use of multiple predictors for a number
+  of fundamental problems, including matching, load balancing, and non-clairvoyant
+  scheduling, which have been well-studied in the single predictor setting. For each
+  of these problems we introduce new algorithms that take advantage of multiple predictors,
+  and prove bounds on the resulting performance.
 labels:
 - allocation / matching
 - multiple predictions
@@ -10,9 +25,10 @@ publications:
   url: http://papers.nips.cc/paper_files/paper/2022/hash/7f9220f90cc85b0da693643add6618e6-Abstract-Conference.html
   year: 2022
   dblp_key: conf/nips/DinitzILMV22
-  bibtex: "@inproceedings{DBLP:conf/nips/DinitzILMV22,\n  author       = {Michael Dinitz and\n  Sungjin Im and\n  Thomas Lavastida\
-    \ and\n  Benjamin Moseley and\n  Sergei Vassilvitskii},\n  title        = {Algorithms with Prediction Portfolios},\n \
-    \ booktitle    = {NeurIPS},\n  year         = {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/nips/DinitzILMV22,\n  author       = {Michael\
+    \ Dinitz and\n  Sungjin Im and\n  Thomas Lavastida and\n  Benjamin Moseley and\n\
+    \  Sergei Vassilvitskii},\n  title        = {Algorithms with Prediction Portfolios},\n\
+    \  booktitle    = {NeurIPS},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2210.12438
   year: 2022

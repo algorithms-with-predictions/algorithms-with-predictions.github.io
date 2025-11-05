@@ -1,5 +1,16 @@
 title: Parsimonious Learning-Augmented Caching
 authors: Im, Kumar, Petety, Purohit
+abstract: Learning-augmented algorithms -- in which, traditional algorithms are augmented
+  with machine-learned predictions -- have emerged as a framework to go beyond worst-case
+  analysis. The overarching goal is to design algorithms that perform near-optimally
+  when the predictions are accurate yet retain certain worst-case guarantees irrespective
+  of the accuracy of the predictions. This framework has been successfully applied
+  to online problems such as caching where the predictions can be used to alleviate
+  uncertainties. In this paper we introduce and study the setting in which the learning-augmented
+  algorithm can utilize the predictions parsimoniously. We consider the caching problem
+  -- which has been extensively studied in the learning-augmented setting -- and show
+  that one can achieve quantitatively similar results but only using a sublinear number
+  of predictions.
 labels:
 - caching / paging
 - online
@@ -8,10 +19,11 @@ publications:
   url: https://proceedings.mlr.press/v162/im22a.html
   year: 2022
   dblp_key: conf/icml/Im0PP22
-  bibtex: "@inproceedings{DBLP:conf/icml/Im0PP22,\n  author       = {Sungjin Im and\n  Ravi Kumar and\n  Aditya Petety and\n\
-    \  Manish Purohit},\n  title        = {Parsimonious Learning-Augmented Caching},\n  booktitle    = {{ICML}},\n  series\
-    \       = {Proceedings of Machine Learning Research},\n  volume       = {162},\n  pages        = {9588--9601},\n  publisher\
-    \    = {{PMLR}},\n  year         = {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/icml/Im0PP22,\n  author       = {Sungjin Im and\n\
+    \  Ravi Kumar and\n  Aditya Petety and\n  Manish Purohit},\n  title        = {Parsimonious\
+    \ Learning-Augmented Caching},\n  booktitle    = {{ICML}},\n  series       = {Proceedings\
+    \ of Machine Learning Research},\n  volume       = {162},\n  pages        = {9588--9601},\n\
+    \  publisher    = {{PMLR}},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2202.04262
   year: 2022

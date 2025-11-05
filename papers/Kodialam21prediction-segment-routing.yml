@@ -1,5 +1,22 @@
 title: Prediction Augmented Segment Routing
 authors: Kodialam, Lakshman
+abstract: With the increasing success of machine learning based approaches for prediction
+  problems, there has been recent effort in improving the performance of online algorithms
+  by augmenting them with machine learning predictions. Since machine learning predictions
+  typically do not offer any performance guarantees, the new approach has to take
+  into consideration the possibility that the machine learning prediction can be inaccurate.
+  The idea is to develop approaches that give good results when the prediction is
+  accurate (consistency) while ensuring that the performance is still acceptable in
+  the worst case, when the prediction is not accurate (robustness). Segment routing
+  is now being widely deployed and used for traffic engineering in IP networks. The
+  key idea in segment routing is to break up the routing path into segments to better
+  control routing paths and improve network utilization. We consider the problem of
+  designing the segments in a network to minimize congestion. This is typically done
+  for a predicted traffic matrix. We use the ideas of consistency and robustness to
+  design a parametrized algorithm that gives good performance when the actual traffic
+  matrix is exactly the predicted traffic matrix (consistency) while giving good performance
+  in the worst case if the actual traffic matrix deviates significantly from the predicted
+  traffic matrix (robustness).
 labels:
 - online
 - routing / TSP
@@ -8,6 +25,7 @@ publications:
   url: https://ieeexplore.ieee.org/abstract/document/9481858
   year: 2021
   dblp_key: conf/hpsr/KodialamL21
-  bibtex: "@inproceedings{DBLP:conf/hpsr/KodialamL21,\n  author       = {Murali S. Kodialam and\n  T. V. Lakshman},\n  title\
-    \        = {Prediction Augmented Segment Routing},\n  booktitle    = {{HPSR}},\n  pages        = {1--6},\n  publisher\
+  bibtex: "@inproceedings{DBLP:conf/hpsr/KodialamL21,\n  author       = {Murali S.\
+    \ Kodialam and\n  T. V. Lakshman},\n  title        = {Prediction Augmented Segment\
+    \ Routing},\n  booktitle    = {{HPSR}},\n  pages        = {1--6},\n  publisher\
     \    = {{IEEE}},\n  year         = {2021}\n}\n"

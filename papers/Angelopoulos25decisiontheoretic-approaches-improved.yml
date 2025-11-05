@@ -1,5 +1,15 @@
 title: Decision-Theoretic Approaches for Improved Learning-Augmented Algorithms
 authors: Spyros Angelopoulos, Christoph Durr, Georgii Melidi
+abstract: We initiate the systematic study of decision-theoretic metrics in the design
+  and analysis of algorithms with machine-learned predictions. We introduce approaches
+  based on both deterministic measures such as distance-based evaluation, that help
+  us quantify how close the algorithm is to an ideal solution, and stochastic measures
+  that balance the trade-off between the algorithm's performance and the risk associated
+  with the imperfect oracle. These approaches allow us to quantify the algorithm's
+  performance across the full spectrum of the prediction error, and thus choose the
+  best algorithm within an entire class of otherwise incomparable ones. We apply our
+  framework to three well-known problems from online decision making, namely ski-rental,
+  one-max search, and contract scheduling.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2501.17701
@@ -8,3 +18,7 @@ publications:
   day: 29
 arxiv: 2501.17701
 s2_id: 9c7a68338212e709ab1f8e05d2b986382450309f
+labels:
+- online
+- search
+- scheduling

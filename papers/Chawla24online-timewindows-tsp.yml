@@ -1,5 +1,22 @@
 title: Online Time-Windows TSP with Predictions
 authors: Chawla, Christou
+abstract: In the Time-Windows TSP (TW-TSP) we are given requests at different locations
+  on a network; each request is endowed with a reward and an interval of time; the
+  goal is to find a tour that visits as much reward as possible during the corresponding
+  time window. For the online version of this problem, where each request is revealed
+  at the start of its time window, no finite competitive ratio can be obtained. We
+  consider a version of the problem where the algorithm is presented with predictions
+  of where and when the online requests will appear, without any knowledge of the
+  quality of this side information. Vehicle routing problems such as the TW-TSP can
+  be very sensitive to errors or changes in the input due to the hard time-window
+  constraints, and it is unclear whether imperfect predictions can be used to obtain
+  a finite competitive ratio. We show that good performance can be achieved by explicitly
+  building slack into the solution. Our main result is an online algorithm that achieves
+  a competitive ratio logarithmic in the diameter of the underlying network, matching
+  the performance of the best offline algorithm to within factors that depend on the
+  quality of the provided predictions. The competitive ratio degrades smoothly as
+  a function of the quality and we show that this dependence is tight within constant
+  factors.
 labels:
 - online
 - routing / TSP
@@ -8,10 +25,12 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2024.2
   year: 2024
   dblp_key: conf/approx/0001C24
-  bibtex: "@inproceedings{DBLP:conf/approx/0001C24,\n  author       = {Shuchi Chawla and\n  Dimitris Christou},\n  title \
-    \       = {Online Time-Windows {TSP} with Predictions},\n  booktitle    = {{APPROX/RANDOM}},\n  series       = {LIPIcs},\n\
-    \  volume       = {317},\n  pages        = {2:1--2:21},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r\
-    \ Informatik},\n  year         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/approx/0001C24,\n  author       = {Shuchi Chawla\
+    \ and\n  Dimitris Christou},\n  title        = {Online Time-Windows {TSP} with\
+    \ Predictions},\n  booktitle    = {{APPROX/RANDOM}},\n  series       = {LIPIcs},\n\
+    \  volume       = {317},\n  pages        = {2:1--2:21},\n  publisher    = {Schloss\
+    \ Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2024}\n\
+    }\n"
 - name: arXiv
   url: https://arxiv.org/abs/2304.01958
   year: 2023

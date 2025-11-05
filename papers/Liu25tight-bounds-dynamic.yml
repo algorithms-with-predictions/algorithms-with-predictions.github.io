@@ -1,5 +1,10 @@
 title: Tight Bounds for Dynamic Bin Packing with Predictions
 authors: Mozhengfu Liu, Xueyan Tang
+abstract: A variant of the Dynamic Bin Packing (DBP) problem known as MinUsageTime
+  DBP seeks to minimize the accumulated length of time for which bins are used in
+  packing a sequence of items. This paper studies MinUsageTime DBP with predictions
+  about item durations and establishes tight competitiveness bounds over the entire
+  spectrum of prediction errors.
 labels:
 - online
 - scheduling
@@ -8,17 +13,10 @@ publications:
   url: https://doi.org/10.1145/3726854.3727322
   year: 2025
   dblp_key: conf/sigmetrics/LiuT25
-  bibtex: |
-    @inproceedings{DBLP:conf/sigmetrics/LiuT25,
-      author       = {Mozhengfu Liu and
-      Xueyan Tang},
-      title        = {Tight Bounds for Dynamic Bin Packing with Predictions},
-      booktitle    = {{SIGMETRICS} (Abstracts)},
-      pages        = {94--96},
-      publisher    = {{ACM}},
-      year         = {2025}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/LiuT25,\n  author       = {Mozhengfu\
+    \ Liu and\n  Xueyan Tang},\n  title        = {Tight Bounds for Dynamic Bin Packing\
+    \ with Predictions},\n  booktitle    = {{SIGMETRICS} (Abstracts)},\n  pages  \
+    \      = {94--96},\n  publisher    = {{ACM}},\n  year         = {2025}\n}\n"
 - name: POMACS
   url: https://dl.acm.org/doi/10.1145/3700437
   year: 2024

@@ -1,5 +1,16 @@
-title: "With a Little Help From My Friends: Exploiting Probability Distribution Advice in Algorithm Design"
+title: 'With a Little Help From My Friends: Exploiting Probability Distribution Advice
+  in Algorithm Design'
 authors: Cl'ement L. Canonne, Kenny Chen, Juli'an Mestre
+abstract: We study online algorithms with predictions using distributional advice,
+  a type of prediction that arises when leveraging expert knowledge or historical
+  data. To demonstrate the usefulness and versatility of this framework, we focus
+  on the fundamental problem of online metric matching, considering both the fractional
+  and integral variants. Our main positive result is, for the former, an algorithm
+  achieving the optimal cost under perfect advice, while smoothly defaulting to competitive
+  ratios comparable to advice-free algorithms as the prediction's quality degrades.
+  For the integral matching, we are able to provide an algorithm with essentially
+  the same guarantees, up to an additive sublinear term. We conclude by discussing
+  how our algorithmic framework can be extended to other online optimization problems.
 labels:
 - allocation / matching
 - online

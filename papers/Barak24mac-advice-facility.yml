@@ -1,5 +1,27 @@
 title: MAC Advice for Facility Location Mechanism Design
 authors: Barak, Gupta, Talgam-Cohen
+abstract: Algorithms with predictions have attracted much attention in the last years
+  across various domains, including variants of facility location, as a way to surpass
+  traditional worst-case analyses. We study the $k$-facility location mechanism design
+  problem, where the $n$ agents are strategic and might misreport their location.
+  Unlike previous models, where predictions are for the $k$ optimal facility locations,
+  we receive $n$ predictions for the locations of each of the agents. However, these
+  predictions are only"mostly"and"approximately"correct (or MAC for short) -- i.e.,
+  some $\delta$-fraction of the predicted locations are allowed to be arbitrarily
+  incorrect, and the remainder of the predictions are allowed to be correct up to
+  an $\varepsilon$-error. We make no assumption on the independence of the errors.
+  Can such predictions allow us to beat the current best bounds for strategyproof
+  facility location? We show that the $1$-median (geometric median) of a set of points
+  is naturally robust under corruptions, which leads to an algorithm for single-facility
+  location with MAC predictions. We extend the robustness result to a"balanced"variant
+  of the $k$ facilities case. Without balancedness, we show that robustness completely
+  breaks down, even for the setting of $k=2$ facilities on a line. For this"unbalanced"setting,
+  we devise a truthful random mechanism that outperforms the best known result of
+  Lu et al. [2010], which does not use predictions. En route, we introduce the problem
+  of"second"facility location (when the first facility's location is already fixed).
+  Our findings on the robustness of the $1$-median and more generally $k$-medians
+  may be of independent interest, as quantitative versions of classic breakdown-point
+  results in robust statistics.
 labels:
 - facility location
 - game theory / mechanism design
@@ -8,9 +30,10 @@ publications:
   url: https://neurips.cc/virtual/2024/poster/95596
   year: 2024
   dblp_key: conf/nips/Barak0T24
-  bibtex: "@inproceedings{DBLP:conf/nips/Barak0T24,\n  author       = {Zohar Barak and\n  Anupam Gupta and\n  Inbal Talgam{-}Cohen},\n\
-    \  title        = {{MAC} Advice for facility location mechanism design},\n  booktitle    = {NeurIPS},\n  year        \
-    \ = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/nips/Barak0T24,\n  author       = {Zohar Barak\
+    \ and\n  Anupam Gupta and\n  Inbal Talgam{-}Cohen},\n  title        = {{MAC} Advice\
+    \ for facility location mechanism design},\n  booktitle    = {NeurIPS},\n  year\
+    \         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2403.12181
   year: 2024

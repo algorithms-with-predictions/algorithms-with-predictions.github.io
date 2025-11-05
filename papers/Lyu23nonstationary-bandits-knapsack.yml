@@ -14,3 +14,6 @@ publications:
     \  biburl       = {https://dblp.org/rec/journals/corr/abs-2302-04182.bib},\n \
     \ bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: 4f9dca8949bf11223b3eb06292cdfbfa0b27902e
+labels:
+- packing
+- learning

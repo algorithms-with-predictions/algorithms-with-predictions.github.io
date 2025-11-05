@@ -1,5 +1,25 @@
 title: Learning-Augmented Query Policies for Minimum Spanning Tree with Uncertainty
 authors: Erlebach, de Lima, Megow, Schlöter
+abstract: We study how to utilize (possibly erroneous) predictions in a model for
+  computing under uncertainty in which an algorithm can query unknown data. Our aim
+  is to minimize the number of queries needed to solve the minimum spanning tree problem,
+  a fundamental combinatorial optimization problem that has been central also to the
+  research area of explorable uncertainty. For all integral $\gamma\ge 2$, we present
+  algorithms that are $\gamma$-robust and $(1+\frac{1}{\gamma})$-consistent, meaning
+  that they use at most $\gamma OPT$ queries if the predictions are arbitrarily wrong
+  and at most $(1+\frac{1}{\gamma})OPT$ queries if the predictions are correct, where
+  $OPT$ is the optimal number of queries for the given instance. Moreover, we show
+  that this trade-off is best possible. Furthermore, we argue that a suitably defined
+  hop distance is a useful measure for the amount of prediction error and design algorithms
+  with performance guarantees that degrade smoothly with the hop distance. We also
+  show that the predictions are PAC-learnable in our model. Our results demonstrate
+  that untrusted predictions can circumvent the known lower bound of~$2$, without
+  any degradation of the worst-case ratio. To obtain our results, we provide new structural
+  insights for the minimum spanning tree problem that might be useful in the context
+  of query-based algorithms regardless of predictions. In particular, we generalize
+  the concept of witness sets -- the key to lower-bounding the optimum -- by proposing
+  novel global witness set structures and completely new ways of adaptively using
+  those.
 labels:
 - explorable uncertainty
 - network design
@@ -9,11 +29,13 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.ESA.2022.49
   year: 2022
   dblp_key: conf/esa/ErlebachLMS22
-  bibtex: "@inproceedings{DBLP:conf/esa/ErlebachLMS22,\n  author       = {Thomas Erlebach and\n  Murilo Santos de Lima and\n\
-    \  Nicole Megow and\n  Jens Schl{\"{o}}ter},\n  title        = {Learning-Augmented Query Policies for Minimum Spanning\
-    \ Tree with Uncertainty},\n  booktitle    = {{ESA}},\n  series       = {LIPIcs},\n  volume       = {244},\n  pages   \
-    \     = {49:1--49:18},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         =\
-    \ {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/esa/ErlebachLMS22,\n  author       = {Thomas Erlebach\
+    \ and\n  Murilo Santos de Lima and\n  Nicole Megow and\n  Jens Schl{\"{o}}ter},\n\
+    \  title        = {Learning-Augmented Query Policies for Minimum Spanning Tree\
+    \ with Uncertainty},\n  booktitle    = {{ESA}},\n  series       = {LIPIcs},\n\
+    \  volume       = {244},\n  pages        = {49:1--49:18},\n  publisher    = {Schloss\
+    \ Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2022}\n\
+    }\n"
 - name: arXiv
   url: https://arxiv.org/abs/2206.15201
   year: 2022

@@ -1,5 +1,15 @@
 title: The Safe and Effective Use of Optimistic Period Predictions
 authors: Baruah, Ekberg, Lindermayr, Marchetti-Spaccamela, Megow, Stougie
+abstract: Parameters characterizing safety critical systems are generally assigned
+  very conservative values for reasons of safety assurance. Provisioning computing
+  resources on the basis of such conservatively assigned parameter values can lead
+  to system implementations that make inefficient use of platform resources during
+  run time. We address the problem of achieving more efficient implementations of
+  sporadic task systems where, in addition to a conservatively assigned value for
+  the period parameter of each task, we also have a more optimistic (i.e., larger),
+  but perhaps incorrect, prediction of this value. We devise an algorithm that executes
+  the system more efficiently during runtime if the prediction is correct, without
+  compromising safety if it turns out to be incorrect.
 labels:
 - real-time
 - scheduling
@@ -8,7 +18,8 @@ publications:
   url: https://dl.acm.org/doi/10.1145/3696355.3696356
   year: 2024
   dblp_key: conf/rtns/BaruahELMMS24
-  bibtex: "@inproceedings{DBLP:conf/rtns/BaruahELMMS24,\n  author       = {Sanjoy K. Baruah and\n  Pontus Ekberg and\n  Alexander\
-    \ Lindermayr and\n  Alberto Marchetti{-}Spaccamela and\n  Nicole Megow and\n  Leen Stougie},\n  title        = {The Safe\
-    \ and Effective Use of Optimistic Period Predictions},\n  booktitle    = {{RTNS}},\n  pages        = {197--206},\n  publisher\
-    \    = {{ACM}},\n  year         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/rtns/BaruahELMMS24,\n  author       = {Sanjoy\
+    \ K. Baruah and\n  Pontus Ekberg and\n  Alexander Lindermayr and\n  Alberto Marchetti{-}Spaccamela\
+    \ and\n  Nicole Megow and\n  Leen Stougie},\n  title        = {The Safe and Effective\
+    \ Use of Optimistic Period Predictions},\n  booktitle    = {{RTNS}},\n  pages\
+    \        = {197--206},\n  publisher    = {{ACM}},\n  year         = {2024}\n}\n"

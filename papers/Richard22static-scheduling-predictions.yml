@@ -16,3 +16,6 @@ publications:
     \  biburl       = {https://dblp.org/rec/journals/corr/abs-2205-15695.bib},\n \
     \ bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: d23be7dc5555b5ce27ce1706f08ad4d22a093c29
+labels:
+- scheduling
+- online

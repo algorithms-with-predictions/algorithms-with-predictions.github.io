@@ -1,5 +1,19 @@
 title: Bayesian Binary Search
-authors: Vikash Singh, Matthew Khanzadeh, Vincent Davis, Harrison Rush, Emanuele Rossi, Jesse Shrader, Pietro Lio’
+authors: Vikash Singh, Matthew Khanzadeh, Vincent Davis, Harrison Rush, Emanuele Rossi,
+  Jesse Shrader, Pietro Lio’
+abstract: We present Bayesian Binary Search (BBS), a novel framework that bridges
+  statistical learning theory/probabilistic machine learning and binary search. BBS
+  utilizes probabilistic methods to learn the underlying probability density of the
+  search space. This learned distribution then informs a modified bisection strategy,
+  where the split point is determined by probability density rather than the conventional
+  midpoint. This learning process for search space density estimation can be achieved
+  through various supervised probabilistic machine learning techniques (e.g., Gaussian
+  Process Regression, Bayesian Neural Networks, and Quantile Regression) or unsupervised
+  statistical learning algorithms (e.g., Gaussian Mixture Models, Kernel Density Estimation
+  (KDE), and Maximum Likelihood Estimation (MLE)). Our results demonstrate substantial
+  efficiency improvements using BBS on both synthetic data with diverse distributions
+  and in a real-world scenario involving Bitcoin Lightning Network channel balance
+  probing (3–6% efficiency gain), where BBS is currently in production.
 labels:
 - experimental evaluation
 - running time
@@ -9,23 +23,12 @@ publications:
   url: https://doi.org/10.3390/a18080452
   year: 2025
   dblp_key: journals/algorithms/SinghKDRRSL25
-  bibtex: |
-    @article{DBLP:journals/algorithms/SinghKDRRSL25,
-      author       = {Vikash Singh and
-      Matthew Khanzadeh and
-      Vincent Davis and
-      Harrison Rush and
-      Emanuele Rossi and
-      Jesse Shrader and
-      Pietro Lio'},
-      title        = {Bayesian Binary Search},
-      journal      = {Algorithms},
-      volume       = {18},
-      number       = {8},
-      pages        = {452},
-      year         = {2025}
-    }
-    
+  bibtex: "@article{DBLP:journals/algorithms/SinghKDRRSL25,\n  author       = {Vikash\
+    \ Singh and\n  Matthew Khanzadeh and\n  Vincent Davis and\n  Harrison Rush and\n\
+    \  Emanuele Rossi and\n  Jesse Shrader and\n  Pietro Lio'},\n  title        =\
+    \ {Bayesian Binary Search},\n  journal      = {Algorithms},\n  volume       =\
+    \ {18},\n  number       = {8},\n  pages        = {452},\n  year         = {2025}\n\
+    }\n"
 - name: arXiv
   url: https://arxiv.org/abs/2410.01771
   year: 2024

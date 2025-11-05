@@ -1,5 +1,28 @@
-title: "Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location"
-authors: Priyank Agrawal, Eric Balkanski, Vasilis Gkatzelis, Ting-Chieh Ou, Xizhi Tan
+title: 'Learning-Augmented Mechanism Design: Leveraging Predictions for Facility Location'
+authors: Priyank Agrawal, Eric Balkanski, Vasilis Gkatzelis, Ting-Chieh Ou, Xizhi
+  Tan
+abstract: In this work we introduce an alternative model for the design and analysis
+  of strategyproof mechanisms that is motivated by the recent surge of work in "learning-augmented
+  algorithms". Aiming to complement the traditional approach in computer science,
+  which analyzes the performance of algorithms based on worst-case instances, this
+  line of work has focused on the design and analysis of algorithms that are enhanced
+  with machine-learned predictions regarding the optimal solution. The algorithms
+  can use the predictions as a guide to inform their decisions, and the goal is to
+  achieve much stronger performance guarantees when these predictions are accurate
+  (consistency), while also maintaining near-optimal worst-case guarantees, even if
+  these predictions are very inaccurate (robustness). So far, these results have been
+  limited to algorithms, but in this work we argue that another fertile ground for
+  this framework is in mechanism design. We initiate the design and analysis of strategyproof
+  mechanisms that are augmented with predictions regarding the private information
+  of the participating agents. To exhibit the important benefits of this approach,
+  we revisit the canonical problem of facility location with strategic agents in the
+  two-dimensional Euclidean space. We study both the egalitarian and utilitarian social
+  cost functions, and we propose new strategyproof mechanisms that leverage predictions
+  to guarantee an optimal trade-off between consistency and robustness guarantees.
+  This provides the designer with a menu of mechanism options to choose from, depending
+  on her confidence regarding the prediction accuracy. Furthermore, we also prove
+  parameterized approximation results as a function of the prediction error, showing
+  that our mechanisms perform well even when the predictions are not fully accurate.
 labels:
 - facility location
 - game theory / mechanism design
@@ -8,45 +31,25 @@ publications:
   url: https://doi.org/10.1287/moor.2022.0225
   year: 2024
   dblp_key: journals/mor/AgrawalBGOT24
-  bibtex: |
-    @article{DBLP:journals/mor/AgrawalBGOT24,
-      author       = {Priyank Agrawal and
-      Eric Balkanski and
-      Vasilis Gkatzelis and
-      Tingting Ou and
-      Xizhi Tan},
-      title        = {Learning-Augmented Mechanism Design: Leveraging Predictions for Facility
-      Location},
-      journal      = {Math. Oper. Res.},
-      volume       = {49},
-      number       = {4},
-      pages        = {2626--2651},
-      year         = {2024}
-    }
-    
+  bibtex: "@article{DBLP:journals/mor/AgrawalBGOT24,\n  author       = {Priyank Agrawal\
+    \ and\n  Eric Balkanski and\n  Vasilis Gkatzelis and\n  Tingting Ou and\n  Xizhi\
+    \ Tan},\n  title        = {Learning-Augmented Mechanism Design: Leveraging Predictions\
+    \ for Facility\n  Location},\n  journal      = {Math. Oper. Res.},\n  volume \
+    \      = {49},\n  number       = {4},\n  pages        = {2626--2651},\n  year\
+    \         = {2024}\n}\n"
 - name: EC
   url: https://doi.org/10.1145/3490486.3538306
   year: 2022
   dblp_key: conf/sigecom/AgrawalBGOT22
-  bibtex: |
-    @inproceedings{DBLP:conf/sigecom/AgrawalBGOT22,
-      author       = {Priyank Agrawal and
-      Eric Balkanski and
-      Vasilis Gkatzelis and
-      Tingting Ou and
-      Xizhi Tan},
-      title        = {Learning-Augmented Mechanism Design: Leveraging Predictions for Facility
-      Location},
-      booktitle    = {{EC}},
-      pages        = {497--528},
-      publisher    = {{ACM}},
-      year         = {2022}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/sigecom/AgrawalBGOT22,\n  author       = {Priyank\
+    \ Agrawal and\n  Eric Balkanski and\n  Vasilis Gkatzelis and\n  Tingting Ou and\n\
+    \  Xizhi Tan},\n  title        = {Learning-Augmented Mechanism Design: Leveraging\
+    \ Predictions for Facility\n  Location},\n  booktitle    = {{EC}},\n  pages  \
+    \      = {497--528},\n  publisher    = {{ACM}},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2204.01120
   year: 2022
   month: 4
   day: 3
-arxiv: 2204.01120
+arxiv: 2204.0112
 s2_id: 5a0bd9220380e61f06e69d028f7dcdee5e86db38

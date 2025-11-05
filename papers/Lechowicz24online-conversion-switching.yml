@@ -1,5 +1,22 @@
-title: "Online Conversion with Switching Costs: Robust and Learning-Augmented Algorithms"
-authors: Adam Lechowicz, Nicolas Christianson, Bo Sun, Noman Bashir, M. Hajiesmaili, Adam Wierman, Prashant Shenoy
+title: 'Online Conversion with Switching Costs: Robust and Learning-Augmented Algorithms'
+authors: Adam Lechowicz, Nicolas Christianson, Bo Sun, Noman Bashir, M. Hajiesmaili,
+  Adam Wierman, Prashant Shenoy
+abstract: We introduce and study online conversion with switching costs, a family
+  of online problems that capture emerging problems at the intersection of energy
+  and sustainability. In this problem, an online player attempts to purchase (alternatively,
+  sell) fractional shares of an asset during a fixed time horizon with length T. At
+  each time step, a cost function (alternatively, price function) is revealed, and
+  the player must irrevocably decide an amount of asset to convert. The player also
+  incurs a switching cost whenever their decision changes in consecutive time steps,
+  i.e., when they increase or decrease their purchasing amount. We introduce competitive
+  (robust) threshold-based algorithms for both the minimization and maximization variants
+  of this problem, and show they are optimal among deterministic online algorithms.
+  We then propose learning-augmented algorithms that take advantage of untrusted black-box
+  advice (such as predictions from a machine learning model) to achieve significantly
+  better average-case performance without sacrificing worst-case competitive guarantees.
+  Finally, we empirically evaluate our proposed algorithms using a carbon-aware EV
+  charging case study, showing that our algorithms substantially improve on baseline
+  methods for this problem.
 labels:
 - online
 - search
@@ -8,23 +25,12 @@ publications:
   url: https://doi.org/10.1145/3652963.3655074
   year: 2024
   dblp_key: conf/sigmetrics/LechowiczC0BHWS24
-  bibtex: |
-    @inproceedings{DBLP:conf/sigmetrics/LechowiczC0BHWS24,
-      author       = {Adam Lechowicz and
-      Nicolas Christianson and
-      Bo Sun and
-      Noman Bashir and
-      Mohammad Hajiesmaili and
-      Adam Wierman and
-      Prashant J. Shenoy},
-      title        = {Online Conversion with Switching Costs: Robust and Learning-Augmented
-      Algorithms},
-      booktitle    = {SIGMETRICS/Performance (Abstracts)},
-      pages        = {45--46},
-      publisher    = {{ACM}},
-      year         = {2024}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/LechowiczC0BHWS24,\n  author      \
+    \ = {Adam Lechowicz and\n  Nicolas Christianson and\n  Bo Sun and\n  Noman Bashir\
+    \ and\n  Mohammad Hajiesmaili and\n  Adam Wierman and\n  Prashant J. Shenoy},\n\
+    \  title        = {Online Conversion with Switching Costs: Robust and Learning-Augmented\n\
+    \  Algorithms},\n  booktitle    = {SIGMETRICS/Performance (Abstracts)},\n  pages\
+    \        = {45--46},\n  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2310.20598
   year: 2023

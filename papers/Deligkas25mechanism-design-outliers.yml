@@ -1,5 +1,27 @@
 title: Mechanism Design with Outliers and Predictions
 authors: Argyrios Deligkas, E. Eiben, Sophie Klumper, Guido Schafer, Artem Tsikiridis
+abstract: 'We initiate the study of mechanism design with outliers, where the designer
+  can discard $z$ agents from the social cost objective. This setting is particularly
+  relevant when some agents exhibit extreme or atypical preferences. As a natural
+  case study, we consider facility location on the line: $n$ strategic agents report
+  their preferred locations, and a mechanism places a facility to minimize a social
+  cost function. In our setting, the $z$ agents farthest from the chosen facility
+  are excluded from the social cost. While it may seem intuitive that discarding outliers
+  improves efficiency, our results reveal that the opposite can hold. We derive tight
+  bounds for deterministic strategyproof mechanisms under the two most-studied objectives:
+  utilitarian and egalitarian social cost. Our results offer a comprehensive view
+  of the impact of outliers. We first show that when $z \ge n/2$, no strategyproof
+  mechanism can achieve a bounded approximation for either objective. For egalitarian
+  cost, selecting the $(z + 1)$-th order statistic is strategyproof and 2-approximate.
+  In fact, we show that this is best possible by providing a matching lower bound.
+  Notably, this lower bound of 2 persists even when the mechanism has access to a
+  prediction of the optimal location, in stark contrast to the setting without outliers.
+  For utilitarian cost, we show that strategyproof mechanisms cannot effectively exploit
+  outliers, leading to the counterintuitive outcome that approximation guarantees
+  worsen as the number of outliers increases. However, in this case, access to a prediction
+  allows us to design a strategyproof mechanism achieving the best possible trade-off
+  between consistency and robustness. Finally, we also establish lower bounds for
+  randomized mechanisms that are truthful in expectation.'
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2509.09561
@@ -8,3 +30,6 @@ publications:
   day: 11
 arxiv: 2509.09561
 s2_id: 8ccc9c5b861516dc495011466f8eeafceb80ec9a
+labels:
+- game theory / mechanism design
+- facility location

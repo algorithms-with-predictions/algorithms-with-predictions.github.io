@@ -1,5 +1,14 @@
 title: Learning-Augmented Algorithms for the Bahncard Problem
 authors: Hailiang Zhao, Xueyan Tang, Peng Chen, Shuiguang Deng
+abstract: In this paper, we study learning-augmented algorithms for the Bahncard problem.
+  The Bahncard problem is a generalization of the ski-rental problem, where a traveler
+  needs to irrevocably and repeatedly decide between a cheap short-term solution and
+  an expensive long-term one with an unknown future. Even though the problem is canonical,
+  only a primal-dual-based learning-augmented algorithm was explicitly designed for
+  it. We develop a new learning-augmented algorithm, named PFSUM, that incorporates
+  both history and short-term future to improve online decision making. We derive
+  the competitive ratio of PFSUM as a function of the prediction error and conduct
+  extensive experiments to show that PFSUM outperforms the primal-dual-based algorithm.
 labels:
 - online
 - rent-or-buy
@@ -8,17 +17,10 @@ publications:
   url: https://arxiv.org/abs/2410.15257
   year: 2024
   dblp_key: conf/nips/ZhaoTCD24
-  bibtex: |
-    @inproceedings{DBLP:conf/nips/ZhaoTCD24,
-      author       = {Hailiang Zhao and
-      Xueyan Tang and
-      Peng Chen and
-      Shuiguang Deng},
-      title        = {Learning-Augmented Algorithms for the Bahncard Problem},
-      booktitle    = {NeurIPS},
-      year         = {2024}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/nips/ZhaoTCD24,\n  author       = {Hailiang Zhao\
+    \ and\n  Xueyan Tang and\n  Peng Chen and\n  Shuiguang Deng},\n  title       \
+    \ = {Learning-Augmented Algorithms for the Bahncard Problem},\n  booktitle   \
+    \ = {NeurIPS},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2410.15257
   year: 2024

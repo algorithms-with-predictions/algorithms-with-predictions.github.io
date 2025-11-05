@@ -1,5 +1,20 @@
-title: "Online Uniform Sampling: Randomized Learning-Augmented Approximation Algorithms with Application to Digital Health"
+title: 'Online Uniform Sampling: Randomized Learning-Augmented Approximation Algorithms
+  with Application to Digital Health'
 authors: Xueqing Liu, Kyra Gan, Esmaeil Keyvanshokooh, Susan Murphy
+abstract: Motivated by applications in digital health, this work studies the novel
+  problem of online uniform sampling (OUS), where the goal is to distribute a sampling
+  budget uniformly across unknown decision times. In the OUS problem, the algorithm
+  is given a budget $b$ and a time horizon $T$, and an adversary then chooses a value
+  $\tau^* \in [b,T]$, which is revealed to the algorithm online. At each decision
+  time $i \in [\tau^*]$, the algorithm must determine a sampling probability that
+  maximizes the budget spent throughout the horizon, respecting budget constraint
+  $b$, while achieving as uniform a distribution as possible over $\tau^*$. We present
+  the first randomized algorithm designed for this problem and subsequently extend
+  it to incorporate learning augmentation. We provide worst-case approximation guarantees
+  for both algorithms, and illustrate the utility of the algorithms through both synthetic
+  experiments and a real-world case study involving the HeartSteps mobile application.
+  Our numerical results show strong empirical average performance of our proposed
+  randomized algorithms against previously proposed heuristic solutions.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2402.01995

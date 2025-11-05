@@ -1,25 +1,38 @@
 title: Optimal SSD Management with Predictions
 authors: Tomer Lange, J. Naor, Gala Yadgar
+abstract: Recently, flash-based solid state drives (SSDs) have become a primary storage
+  solution due to their advantages over hard-disk drives. Nonetheless, SSD management
+  presents unique challenges. First, SSDs update data by writing a new copy to a clean
+  slot, rather than overwriting old data. Second, SSDs support cleaning of entire
+  blocks, while slots cannot be cleaned individually. Third, when cleaning a block,
+  any valid data it stores must first be rewritten to another location, which adversely
+  affects the SSD endurance and throughput. In this work, we address the SSD management
+  problem, where the objective is to minimize the number of rewrites in SSDs. We approach
+  the problem from a theoretical perspective, analyzing algorithms in a worst-case
+  fashion. Motivated by recent advances in machine learning, we consider a learning-augmented
+  setting where the algorithm has access to a predictive oracle, with performance
+  guarantees expressed as a function of the error in the oracle's output. Our main
+  contribution is Gladiator, a novel online algorithm that optimally leverages predictions
+  to enhance the performance of SSDs. Compared to prior work, Gladiator requires no
+  additional non-volatile memory and is less sensitive to prediction errors. We further
+  demonstrate the effectiveness of Gladiator under reasonable assumptions on the input
+  distribution, and extend it to an extremely efficient offline algorithm. Empirical
+  results confirm its superiority over state-of-the-art practical solutions across
+  diverse SSD workloads.
 publications:
 - name: SIGMETRICS
   url: https://doi.org/10.1145/3727122
   year: 2025
   dblp_key: journals/pomacs/LangeNY25
-  bibtex: |
-    @article{DBLP:journals/pomacs/LangeNY25,
-      author       = {Tomer Lange and
-                      Joseph (Seffi) Naor and
-                      Gala Yadgar},
-      title        = {Optimal {SSD} Management with Predictions},
-      journal      = {Proc. {ACM} Meas. Anal. Comput. Syst.},
-      volume       = {9},
-      number       = {2},
-      pages        = {1--28},
-      year         = {2025},
-      url          = {https://doi.org/10.1145/3727122},
-      doi          = {10.1145/3727122},
-      timestamp    = {Thu, 11 Sep 2025 20:25:13 +0200},
-      biburl       = {https://dblp.org/rec/journals/pomacs/LangeNY25.bib},
-      bibsource    = {dblp computer science bibliography, https://dblp.org}
-    }
+  bibtex: "@article{DBLP:journals/pomacs/LangeNY25,\n  author       = {Tomer Lange\
+    \ and\n                  Joseph (Seffi) Naor and\n                  Gala Yadgar},\n\
+    \  title        = {Optimal {SSD} Management with Predictions},\n  journal    \
+    \  = {Proc. {ACM} Meas. Anal. Comput. Syst.},\n  volume       = {9},\n  number\
+    \       = {2},\n  pages        = {1--28},\n  year         = {2025},\n  url   \
+    \       = {https://doi.org/10.1145/3727122},\n  doi          = {10.1145/3727122},\n\
+    \  timestamp    = {Thu, 11 Sep 2025 20:25:13 +0200},\n  biburl       = {https://dblp.org/rec/journals/pomacs/LangeNY25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: 00f3482e1134067a0583391bf5ff3b0ec4aeeab8
+labels:
+- online
+- scheduling

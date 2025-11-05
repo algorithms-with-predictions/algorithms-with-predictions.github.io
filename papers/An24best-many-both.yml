@@ -1,5 +1,28 @@
-title: "Best of Many in Both Worlds: Online Resource Allocation with Predictions under Unknown Arrival Model"
+title: 'Best of Many in Both Worlds: Online Resource Allocation with Predictions under
+  Unknown Arrival Model'
 authors: An, Li, Moseley, Visotsky
+abstract: Online decision-makers often obtain predictions on future variables, such
+  as arrivals, demands, inventories, and so on. These predictions can be generated
+  from simple forecasting algorithms for univariate time-series, all the way to state-of-the-art
+  machine learning models that leverage multiple time-series and additional feature
+  information. However, the prediction accuracy is unknown to decision-makers a priori,
+  hence blindly following the predictions can be harmful. In this paper, we address
+  this problem by developing algorithms that utilize predictions in a manner that
+  is robust to the unknown prediction accuracy. We consider the Online Resource Allocation
+  Problem, a generic model for online decision-making, in which a limited amount of
+  resources may be used to satisfy a sequence of arriving requests. Prior work has
+  characterized the best achievable performances when the arrivals are either generated
+  stochastically (i.i.d.) or completely adversarially, and shown that algorithms exist
+  which match these bounds under both arrival models, without ``knowing'' the underlying
+  model. To this backdrop, we introduce predictions in the form of shadow prices on
+  each type of resource. Prediction accuracy is naturally defined to be the distance
+  between the predictions and the actual shadow prices. We tightly characterize, via
+  a formal lower bound, the extent to which any algorithm can optimally leverage predictions
+  (that is, to ``follow'' the predictions when accurate, and ``ignore'' them when
+  inaccurate) without knowing the prediction accuracy or the underlying arrival model.
+  Our main contribution is then an algorithm which achieves this lower bound. Finally,
+  we empirically validate our algorithm with a large-scale experiment on real data
+  from the retailer H&M.
 labels:
 - allocation / matching
 - online

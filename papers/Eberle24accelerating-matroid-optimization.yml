@@ -1,5 +1,20 @@
 title: Accelerating Matroid Optimization through Fast Imprecise Oracles
-authors: Franziska Eberle, Felix Hommelsheim, Alexander Lindermayr, Zhenwei Liu, Nicole Megow, Jens Schlöter
+authors: Franziska Eberle, Felix Hommelsheim, Alexander Lindermayr, Zhenwei Liu, Nicole
+  Megow, Jens Schlöter
+abstract: Querying complex models for precise information (e.g. traffic models, database
+  systems, large ML models) often entails intense computations and results in long
+  response times. Thus, weaker models which give imprecise results quickly can be
+  advantageous, provided inaccuracies can be resolved using few queries to a stronger
+  model. In the fundamental problem of computing a maximum-weight basis of a matroid,
+  a well-known generalization of many combinatorial optimization problems, algorithms
+  have access to a clean oracle to query matroid information. We additionally equip
+  algorithms with a fast but dirty oracle modelling an unknown, potentially different
+  matroid. We design and analyze practical algorithms which only use few clean queries
+  w.r.t. the quality of the dirty oracle, while maintaining robustness against arbitrarily
+  poor dirty matroids, approaching the performance of classic algorithms for the given
+  problem. Notably, we prove that our algorithms are, in many respects, best-possible.
+  Further, we outline extensions to other matroid oracle types, non-free dirty oracles
+  and other matroid problems.
 labels:
 - matroid
 - running time
@@ -9,19 +24,11 @@ publications:
   url: http://papers.nips.cc/paper_files/paper/2024/hash/aa76039e10ccb71d2922e87a87240f72-Abstract-Conference.html
   year: 2024
   dblp_key: conf/nips/EberleHLLMS24
-  bibtex: |
-    @inproceedings{DBLP:conf/nips/EberleHLLMS24,
-      author       = {Franziska Eberle and
-      Felix Hommelsheim and
-      Alexander Lindermayr and
-      Zhenwei Liu and
-      Nicole Megow and
-      Jens Schl{"{o}}ter},
-      title        = {Accelerating Matroid Optimization through Fast Imprecise Oracles},
-      booktitle    = {NeurIPS},
-      year         = {2024}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/nips/EberleHLLMS24,\n  author       = {Franziska\
+    \ Eberle and\n  Felix Hommelsheim and\n  Alexander Lindermayr and\n  Zhenwei Liu\
+    \ and\n  Nicole Megow and\n  Jens Schl{\"{o}}ter},\n  title        = {Accelerating\
+    \ Matroid Optimization through Fast Imprecise Oracles},\n  booktitle    = {NeurIPS},\n\
+    \  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2402.02774
   year: 2024

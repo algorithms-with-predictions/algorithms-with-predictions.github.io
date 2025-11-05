@@ -1,5 +1,18 @@
 title: Online Minimum Spanning Trees with Weight Predictions
 authors: Berg, Boyar, Favrholdt, Larsen
+abstract: We consider the minimum spanning tree problem with predictions, using the
+  weight-arrival model, i.e., the graph is given, together with predictions for the
+  weights of all edges. Then the actual weights arrive one at a time and an irrevocable
+  decision must be made regarding whether or not the edge should be included into
+  the spanning tree. In order to assess the quality of our algorithms, we define an
+  appropriate error measure and analyze the performance of the algorithms as a function
+  of the error. We prove that, according to competitive analysis, the simplest algorithm,
+  Follow-the-Predictions, is optimal. However, intuitively, one should be able to
+  do better, and we present a greedy variant of Follow-the-Predictions. In analyzing
+  that algorithm, we believe we present the first random order analysis of a non-trivial
+  online algorithm with predictions, by which we obtain an algorithmic separation.
+  This may be useful for distinguishing between algorithms for other problems when
+  Follow-the-Predictions is optimal according to competitive analysis.
 labels:
 - network design
 - online
@@ -8,10 +21,12 @@ publications:
   url: https://doi.org/10.1007/978-3-031-38906-1_10
   year: 2023
   dblp_key: conf/wads/BergBFL23
-  bibtex: "@inproceedings{DBLP:conf/wads/BergBFL23,\n  author       = {Magnus Berg and\n  Joan Boyar and\n  Lene M. Favrholdt\
-    \ and\n  Kim S. Larsen},\n  title        = {Online Minimum Spanning Trees with Weight Predictions},\n  booktitle    =\
-    \ {{WADS}},\n  series       = {Lecture Notes in Computer Science},\n  volume       = {14079},\n  pages        = {136--148},\n\
-    \  publisher    = {Springer},\n  year         = {2023}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/wads/BergBFL23,\n  author       = {Magnus Berg\
+    \ and\n  Joan Boyar and\n  Lene M. Favrholdt and\n  Kim S. Larsen},\n  title \
+    \       = {Online Minimum Spanning Trees with Weight Predictions},\n  booktitle\
+    \    = {{WADS}},\n  series       = {Lecture Notes in Computer Science},\n  volume\
+    \       = {14079},\n  pages        = {136--148},\n  publisher    = {Springer},\n\
+    \  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2302.12029
   year: 2023

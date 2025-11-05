@@ -1,5 +1,18 @@
 title: Scheduling with Untrusted Predictions
 authors: Bampis, Dogeas, Kononov, Lucarelli, Pascual
+abstract: Using machine-learned predictions to create algorithms with better approximation
+  guarantees is a very fresh and active field. In this work, we study classic scheduling
+  problems under the learning augmented setting. More specifically, we consider the
+  problem of scheduling jobs with arbitrary release dates on a single machine and
+  the problem of scheduling jobs with a common release date on multiple machines.
+  Our objective is to minimize the sum of completion times. For both problems, we
+  propose algorithms which use predictions for taking their decisions. Our algorithms
+  are consistent -- i.e. when the predictions are accurate, the performances of our
+  algorithms are close to those of an optimal offline algorithm--, and robust -- i.e.
+  when the predictions are wrong, the performance of our algorithms are close to those
+  of an online algorithm without predictions. In addition, we confirm the above theoretical
+  bounds by conducting experimental evaluation comparing the proposed algorithms to
+  the offline optimal ones for both the single and multiple machines settings.
 labels:
 - online
 - scheduling
@@ -8,7 +21,8 @@ publications:
   url: https://doi.org/10.24963/ijcai.2022/636
   year: 2022
   dblp_key: conf/ijcai/BampisDKLP22
-  bibtex: "@inproceedings{DBLP:conf/ijcai/BampisDKLP22,\n  author       = {Evripidis Bampis and\n  Konstantinos Dogeas and\n\
-    \  Alexander V. Kononov and\n  Giorgio Lucarelli and\n  Fanny Pascual},\n  title        = {Scheduling with Untrusted Predictions},\n\
-    \  booktitle    = {{IJCAI}},\n  pages        = {4581--4587},\n  publisher    = {ijcai.org},\n  year         = {2022}\n\
-    }\n"
+  bibtex: "@inproceedings{DBLP:conf/ijcai/BampisDKLP22,\n  author       = {Evripidis\
+    \ Bampis and\n  Konstantinos Dogeas and\n  Alexander V. Kononov and\n  Giorgio\
+    \ Lucarelli and\n  Fanny Pascual},\n  title        = {Scheduling with Untrusted\
+    \ Predictions},\n  booktitle    = {{IJCAI}},\n  pages        = {4581--4587},\n\
+    \  publisher    = {ijcai.org},\n  year         = {2022}\n}\n"

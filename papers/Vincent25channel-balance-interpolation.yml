@@ -1,5 +1,16 @@
 title: Channel Balance Interpolation in the Lightning Network via Machine Learning
 authors: Vincent Davis, Vikash Singh, Emanuele Rossi
+abstract: The Bitcoin Lightning Network is a Layer 2 payment protocol that addresses
+  Bitcoin’s scalability by facilitating quick and cost-effective transactions through
+  payment channels. This research explores the use of machine learning models to interpolate
+  channel balances within the network, which can be used for optimizing the network’s
+  pathfinding algorithms. While there has been much exploration in balance probing
+  and multipath payment protocols, predicting channel balances using solely node and
+  channel features remains an uncharted area. This paper evaluates the performance
+  of several machine learning models against two heuristic baselines and investigates
+  the predictive capabilities of various features. Our model performs favorably in
+  experimental evaluation, reducing the relative error by 27% compared to an equal
+  split baseline where both edges are assigned half of the channel capacity.
 labels:
 - experimental evaluation
 - routing
@@ -10,19 +21,11 @@ publications:
   url: https://doi.org/10.1109/ICBC64466.2025.11185091
   year: 2025
   dblp_key: conf/icbc2/DavisSR25
-  bibtex: |
-    @inproceedings{DBLP:conf/icbc2/DavisSR25,
-      author       = {Vincent Davis and
-      Vikash Singh and
-      Emanuele Rossi},
-      title        = {Channel Balance Interpolation in the Lightning Network via Machine
-      Learning},
-      booktitle    = {{ICBC}},
-      pages        = {1--7},
-      publisher    = {{IEEE}},
-      year         = {2025}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/icbc2/DavisSR25,\n  author       = {Vincent Davis\
+    \ and\n  Vikash Singh and\n  Emanuele Rossi},\n  title        = {Channel Balance\
+    \ Interpolation in the Lightning Network via Machine\n  Learning},\n  booktitle\
+    \    = {{ICBC}},\n  pages        = {1--7},\n  publisher    = {{IEEE}},\n  year\
+    \         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2405.12087
   year: 2024

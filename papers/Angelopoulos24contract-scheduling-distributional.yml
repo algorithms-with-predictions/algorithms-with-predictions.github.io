@@ -1,5 +1,18 @@
 title: Contract Scheduling with Distributional and Multiple Advice
 authors: Spyros Angelopoulos, Marcin Bieńkowski, Christoph Durr, Bertrand Simon
+abstract: Contract scheduling is a widely studied framework for designing real-time
+  systems with interruptible capabilities. Previous work has showed that a prediction
+  on the interruption time can help improve the performance of contract-based systems,
+  however it has relied on a single prediction that is provided by a deterministic
+  oracle. In this work, we introduce and study more general and realistic learning-augmented
+  settings in which the prediction is in the form of a probability distribution, or
+  it is given as a set of multiple possible interruption times. For both prediction
+  settings, we design and analyze schedules which perform optimally if the prediction
+  is accurate, while simultaneously guaranteeing the best worst-case performance if
+  the prediction is adversarial. We also provide evidence that the resulting system
+  is robust to prediction errors in the distributional setting. Last, we present an
+  experimental evaluation that confirms the theoretical findings, and illustrates
+  the performance improvements that can be attained in practice.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2404.12485
@@ -10,23 +23,18 @@ publications:
   url: https://doi.org/10.48550/arXiv.2404.12485
   year: 2024
   dblp_key: conf/ijcai/0001BD024
-  bibtex: |
-    @inproceedings{DBLP:conf/ijcai/0001BD024,
-      author       = {Spyros Angelopoulos and
-                      Marcin Bienkowski and
-                      Christoph D{\"{u}}rr and
-                      Bertrand Simon},
-      title        = {Contract Scheduling with Distributional and Multiple Advice},
-      booktitle    = {Proceedings of the Thirty-Third International Joint Conference on
-                      Artificial Intelligence, {IJCAI} 2024, Jeju, South Korea, August 3-9,
-                      2024},
-      pages        = {3652--3660},
-      publisher    = {ijcai.org},
-      year         = {2024},
-      url          = {https://www.ijcai.org/proceedings/2024/404},
-      timestamp    = {Fri, 18 Oct 2024 20:53:43 +0200},
-      biburl       = {https://dblp.org/rec/conf/ijcai/0001BD024.bib},
-      bibsource    = {dblp computer science bibliography, https://dblp.org}
-    }
+  bibtex: "@inproceedings{DBLP:conf/ijcai/0001BD024,\n  author       = {Spyros Angelopoulos\
+    \ and\n                  Marcin Bienkowski and\n                  Christoph D{\\\
+    \"{u}}rr and\n                  Bertrand Simon},\n  title        = {Contract Scheduling\
+    \ with Distributional and Multiple Advice},\n  booktitle    = {Proceedings of\
+    \ the Thirty-Third International Joint Conference on\n                  Artificial\
+    \ Intelligence, {IJCAI} 2024, Jeju, South Korea, August 3-9,\n               \
+    \   2024},\n  pages        = {3652--3660},\n  publisher    = {ijcai.org},\n  year\
+    \         = {2024},\n  url          = {https://www.ijcai.org/proceedings/2024/404},\n\
+    \  timestamp    = {Fri, 18 Oct 2024 20:53:43 +0200},\n  biburl       = {https://dblp.org/rec/conf/ijcai/0001BD024.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 arxiv: 2404.12485
 s2_id: af8d042f84a0f3338e4bce3cfd62b850e33e5913
+labels:
+- online
+- scheduling

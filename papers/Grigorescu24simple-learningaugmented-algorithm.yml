@@ -1,5 +1,28 @@
 title: A Simple Learning-Augmented Algorithm for Online Packing with Concave Objectives
 authors: Grigorescu, Lin, Song
+abstract: Learning-augmented algorithms has been extensively studied recently in the
+  computer-science community, due to the potential of using machine learning predictions
+  in order to improve the performance of algorithms. Predictions are especially useful
+  for online algorithms making irrevocable decisions without knowledge of the future.
+  Such learning-augmented algorithms aim to overcome the limitations of classical
+  online algorithms when the predictions are accurate, and still perform comparably
+  when the predictions are inaccurate. A common approach is to adapt existing online
+  algorithms to the particular advice notion employed, which often involves understanding
+  previous sophisticated algorithms and their analyses. However, ideally, one would
+  simply use previous online solutions in a black-box fashion, without much loss in
+  the approximation guarantees. Such clean solutions that avoid opening up black-boxes
+  are often rare, and may be even missed the first time around. For example, Grigorescu
+  et al. (NeurIPS 22) proposed a learning-augmented algorithms for online covering
+  linear programs, but it later turned out that their results can be subsumed by a
+  natural approach that switches between the advice and an online algorithm given
+  as a black-box, as noted in their paper. In this work, we introduce and analyze
+  a simple learning-augmented algorithm for online packing problems with linear constraints
+  and concave objectives. We exhibit several direct applications of our framework
+  including online packing linear programming, knapsack, resource management benefit,
+  throughput maximization, and network utility maximization. We further raise the
+  problem of understanding necessary and sufficient conditions for when such simple
+  black-box solutions may be optimal. We believe this is an important direction of
+  research that would unify many ad-hoc approaches from the literature.
 labels:
 - online
 - packing

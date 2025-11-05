@@ -1,5 +1,25 @@
 title: Impartial Selection with Predictions
 authors: Javier Cembrano, Felix A. Fischer, Max Klimm
+abstract: We study the selection of agents based on mutual nominations, a theoretical
+  problem with many applications from committee selection to AI alignment. As agents
+  both select and are selected, they may be incentivized to misrepresent their true
+  opinion about the eligibility of others to influence their own chances of selection.
+  Impartial mechanisms circumvent this issue by guaranteeing that the selection of
+  an agent is independent of the nominations cast by that agent. Previous research
+  has established strong bounds on the performance of impartial mechanisms, measured
+  by their ability to approximate the number of nominations for the most highly nominated
+  agents. We study to what extent the performance of impartial mechanisms can be improved
+  if they are given a prediction of a set of agents receiving a maximum number of
+  nominations. Specifically, we provide bounds on the consistency and robustness of
+  such mechanisms, where consistency measures the performance of the mechanisms when
+  the prediction is accurate and robustness its performance when the prediction is
+  inaccurate. For the general setting where up to $k$ agents are to be selected and
+  agents nominate any number of other agents, we give a mechanism with consistency
+  $1-O\big(\frac{1}{k}\big)$ and robustness $1-\frac{1}{e}-O\big(\frac{1}{k}\big)$.
+  For the special case of selecting a single agent based on a single nomination per
+  agent, we prove that $1$-consistency can be achieved while guaranteeing $\frac{1}{2}$-robustness.
+  A close comparison with previous results shows that (asymptotically) optimal consistency
+  can be achieved with little to no sacrifice in terms of robustness.
 labels:
 - game theory / mechanism design
 - voting

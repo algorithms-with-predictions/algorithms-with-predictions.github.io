@@ -1,5 +1,17 @@
 title: On Preemption and Learning in Stochastic Scheduling
-authors: Nadav Merlis, Hugo Richard, Flore Sentenac, Corentin Odic, Mathieu Molina, Vianney Perchet
+authors: Nadav Merlis, Hugo Richard, Flore Sentenac, Corentin Odic, Mathieu Molina,
+  Vianney Perchet
+abstract: 'We study single-machine scheduling of jobs, each belonging to a job type
+  that determines its duration distribution. We start by analyzing the scenario where
+  the type characteristics are known and then move to two learning scenarios where
+  the types are unknown: non-preemptive problems, where each started job must be completed
+  before moving to another job; and preemptive problems, where job execution can be
+  paused in the favor of moving to a different job. In both cases, we design algorithms
+  that achieve sublinear excess cost, compared to the performance with known types,
+  and prove lower bounds for the non-preemptive case. Notably, we demonstrate, both
+  theoretically and through simulations, how preemptive algorithms can greatly outperform
+  non-preemptive ones when the durations of different job types are far from one another,
+  a phenomenon that does not occur when the type durations are known.'
 labels:
 - learning
 - scheduling
@@ -8,23 +20,12 @@ publications:
   url: https://proceedings.mlr.press/v202/merlis23a/merlis23a.pdf
   year: 2023
   dblp_key: conf/icml/MerlisRSOMP23
-  bibtex: |
-    @inproceedings{DBLP:conf/icml/MerlisRSOMP23,
-      author       = {Nadav Merlis and
-      Hugo Richard and
-      Flore Sentenac and
-      Corentin Odic and
-      Mathieu Molina and
-      Vianney Perchet},
-      title        = {On Preemption and Learning in Stochastic Scheduling},
-      booktitle    = {{ICML}},
-      series       = {Proceedings of Machine Learning Research},
-      volume       = {202},
-      pages        = {24478--24516},
-      publisher    = {{PMLR}},
-      year         = {2023}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/icml/MerlisRSOMP23,\n  author       = {Nadav Merlis\
+    \ and\n  Hugo Richard and\n  Flore Sentenac and\n  Corentin Odic and\n  Mathieu\
+    \ Molina and\n  Vianney Perchet},\n  title        = {On Preemption and Learning\
+    \ in Stochastic Scheduling},\n  booktitle    = {{ICML}},\n  series       = {Proceedings\
+    \ of Machine Learning Research},\n  volume       = {202},\n  pages        = {24478--24516},\n\
+    \  publisher    = {{PMLR}},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2205.15695
   year: 2022

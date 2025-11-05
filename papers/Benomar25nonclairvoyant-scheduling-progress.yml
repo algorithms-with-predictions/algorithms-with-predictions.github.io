@@ -1,5 +1,18 @@
 title: Non-Clairvoyant Scheduling with Progress Bars
 authors: Benomar, Cosson, Lindermayr, Schlöter
+abstract: 'In non-clairvoyant scheduling, the goal is to minimize the total job completion
+  time without prior knowledge of individual job processing times. This classical
+  online optimization problem has recently gained attention through the framework
+  of learning-augmented algorithms. We introduce a natural setting in which the scheduler
+  receives continuous feedback in the form of progress bars: estimates of the fraction
+  of each job completed over time. We design new algorithms for both adversarial and
+  stochastic progress bars and prove strong competitive bounds. Our results in the
+  adversarial case surprisingly induce improved guarantees for learning-augmented
+  scheduling with job size predictions. We also introduce a general method for combining
+  scheduling algorithms, yielding further insights in scheduling with predictions.
+  Finally, we propose a stochastic model of progress bars as a more optimistic alternative
+  to conventional worst-case models, and present an asymptotically optimal scheduling
+  algorithm in this setting.'
 labels:
 - online
 - scheduling

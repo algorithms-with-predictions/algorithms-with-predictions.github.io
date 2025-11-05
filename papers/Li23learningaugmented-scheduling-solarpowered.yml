@@ -14,3 +14,5 @@ publications:
     \  biburl       = {https://dblp.org/rec/journals/corr/abs-2311-05941.bib},\n \
     \ bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: d2c32116c4ead500ee15d873cd0fedfa5394cddf
+labels:
+- scheduling

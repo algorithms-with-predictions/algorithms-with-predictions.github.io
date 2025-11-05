@@ -1,5 +1,20 @@
 title: Optimal Stopping Methodology for the Secretary Problem with Random Queries
 authors: Moustakides, Liu, Milenkovic
+abstract: Abstract Candidates arrive sequentially for an interview process which results
+  in them being ranked relative to their predecessors. Based on the ranks available
+  at each time, a decision mechanism must be developed that selects or dismisses the
+  current candidate in an effort to maximize the chance of selecting the best. This
+  classical version of the ‘secretary problem’ has been studied in depth, mostly using
+  combinatorial approaches, along with numerous other variants. We consider a particular
+  new version where, during reviewing, it is possible to query an external expert
+  to improve the probability of making the correct decision. Unlike existing formulations,
+  we consider experts that are not necessarily infallible and may provide suggestions
+  that can be faulty. For the solution of our problem we adopt a probabilistic methodology
+  and view the querying times as consecutive stopping times which we optimize with
+  the help of optimal stopping theory. For each querying time we must also design
+  a mechanism to decide whether or not we should terminate the search at the querying
+  time. This decision is straightforward under the usual assumption of infallible
+  experts, but when experts are faulty it has a far more intricate structure.
 labels:
 - exploration
 - online
@@ -9,10 +24,11 @@ publications:
   url: https://doi.org/10.1017/jpr.2023.61
   year: 2024
   dblp_key: journals/jap/MoustakidesLM24
-  bibtex: "@article{DBLP:journals/jap/MoustakidesLM24,\n  author       = {George V. Moustakides and\n  Xujun Liu and\n  Olgica\
-    \ Milenkovic},\n  title        = {Optimal stopping methodology for the secretary problem with random\n  queries},\n  journal\
-    \      = {J. Appl. Probab.},\n  volume       = {61},\n  number       = {2},\n  pages        = {578--602},\n  year    \
-    \     = {2024}\n}\n"
+  bibtex: "@article{DBLP:journals/jap/MoustakidesLM24,\n  author       = {George V.\
+    \ Moustakides and\n  Xujun Liu and\n  Olgica Milenkovic},\n  title        = {Optimal\
+    \ stopping methodology for the secretary problem with random\n  queries},\n  journal\
+    \      = {J. Appl. Probab.},\n  volume       = {61},\n  number       = {2},\n\
+    \  pages        = {578--602},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2107.07513
   year: 2021

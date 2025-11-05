@@ -1,5 +1,15 @@
-title: Parsimonious Learning-Augmented Approximations for Dense Instances of NP-hard Problems
+title: Parsimonious Learning-Augmented Approximations for Dense Instances of NP-hard
+  Problems
 authors: Bampis, Escoffier, Xefteris
+abstract: The classical work of (Arora et al., 1999) provides a scheme that gives,
+  for any $\epsilon>0$, a polynomial time $1-\epsilon$ approximation algorithm for
+  dense instances of a family of $\mathcal{NP}$-hard problems, such as Max-CUT and
+  Max-$k$-SAT. In this paper we extend and speed up this scheme using a logarithmic
+  number of one-bit predictions. We propose a learning augmented framework which aims
+  at finding fast algorithms which guarantees approximation consistency, smoothness
+  and robustness with respect to the prediction error. We provide such algorithms,
+  which moreover use predictions parsimoniously, for dense instances of various optimization
+  problems.
 labels:
 - approximation
 - graph problems
@@ -9,9 +19,11 @@ publications:
   url: https://openreview.net/forum?id=AD5QC1BTJL
   year: 2024
   dblp_key: conf/icml/BampisEX24
-  bibtex: "@inproceedings{DBLP:conf/icml/BampisEX24,\n  author       = {Evripidis Bampis and\n  Bruno Escoffier and\n  Michalis\
-    \ Xefteris},\n  title        = {Parsimonious Learning-Augmented Approximations for Dense Instances\n  of NP-hard Problems},\n\
-    \  booktitle    = {{ICML}},\n  publisher    = {OpenReview.net},\n  year         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/icml/BampisEX24,\n  author       = {Evripidis\
+    \ Bampis and\n  Bruno Escoffier and\n  Michalis Xefteris},\n  title        = {Parsimonious\
+    \ Learning-Augmented Approximations for Dense Instances\n  of NP-hard Problems},\n\
+    \  booktitle    = {{ICML}},\n  publisher    = {OpenReview.net},\n  year      \
+    \   = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2402.02062
   year: 2024

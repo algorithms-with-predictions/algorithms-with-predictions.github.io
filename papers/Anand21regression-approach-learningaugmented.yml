@@ -1,5 +1,17 @@
 title: A Regression Approach to Learning-Augmented Online Algorithms
 authors: Anand, Ge, Kumar, Panigrahi
+abstract: The emerging ﬁeld of learning-augmented online algorithms uses ML techniques
+  to predict future input parameters and thereby improve the performance of online
+  algorithms. Since these parameters are, in general, real-valued functions, a natural
+  approach is to use regression techniques to make these predictions. We introduce
+  this approach in this paper, and explore it in the context of a general online search
+  framework that captures classic problems like (generalized) ski rental, bin packing,
+  minimum makespan scheduling, etc. We show nearly tight bounds on the sample complexity
+  of this regression problem, and extend our results to the agnostic setting. From
+  a technical standpoint, we show that the key is to incorporate online optimization
+  benchmarks in the design of the loss function for the regression problem, thereby
+  diverging from the use of off-the-shelf regression tools with standard bounds on
+  statistical error.
 labels:
 - learning
 - online
@@ -8,9 +20,11 @@ publications:
   url: https://proceedings.neurips.cc/paper/2021/file/ffeed84c7cb1ae7bf4ec4bd78275bb98-Paper.pdf
   year: 2021
   dblp_key: conf/nips/AnandGKP21
-  bibtex: "@inproceedings{DBLP:conf/nips/AnandGKP21,\n  author       = {Keerti Anand and\n  Rong Ge and\n  Amit Kumar and\n\
-    \  Debmalya Panigrahi},\n  title        = {A Regression Approach to Learning-Augmented Online Algorithms},\n  booktitle\
-    \    = {NeurIPS},\n  pages        = {30504--30517},\n  year         = {2021}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/nips/AnandGKP21,\n  author       = {Keerti Anand\
+    \ and\n  Rong Ge and\n  Amit Kumar and\n  Debmalya Panigrahi},\n  title      \
+    \  = {A Regression Approach to Learning-Augmented Online Algorithms},\n  booktitle\
+    \    = {NeurIPS},\n  pages        = {30504--30517},\n  year         = {2021}\n\
+    }\n"
 - name: arXiv
   url: https://arxiv.org/abs/2205.08717
   year: 2022

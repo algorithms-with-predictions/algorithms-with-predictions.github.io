@@ -1,5 +1,19 @@
 title: Learning-Augmented Online Bipartite Fractional Matching
 authors: Choo, Jin, Shin
+abstract: Online bipartite matching is a fundamental problem in online optimization,
+  extensively studied both in its integral and fractional forms due to its theoretical
+  significance and practical applications, such as online advertising and resource
+  allocation. Motivated by recent progress in learning-augmented algorithms, we study
+  online bipartite fractional matching when the algorithm is given advice in the form
+  of a suggested matching in each iteration. We develop algorithms for both the vertex-weighted
+  and unweighted variants that provably dominate the naive"coin flip"strategy of randomly
+  choosing between the advice-following and advice-free algorithms. Moreover, our
+  algorithm for the vertex-weighted setting extends to the AdWords problem under the
+  small bids assumption, yielding a significant improvement over the seminal work
+  of Mahdian, Nazerzadeh, and Saberi (EC 2007, TALG 2012). Complementing our positive
+  results, we establish a hardness bound on the robustness-consistency tradeoff that
+  is attainable by any algorithm. We empirically validate our algorithms through experiments
+  on synthetic and real-world data.
 labels:
 - matching / allocation
 - online

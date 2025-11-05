@@ -1,5 +1,22 @@
 title: Learning to Hash Robustly, Guaranteed
 authors: Andoni, Beaglehole
+abstract: The indexing algorithms for the high-dimensional nearest neighbor search
+  (NNS) with the best worst-case guarantees are based on the randomized Locality Sensitive
+  Hashing (LSH), and its derivatives. In practice, many heuristic approaches exist
+  to "learn" the best indexing method in order to speed-up NNS, crucially adapting
+  to the structure of the given dataset. Oftentimes, these heuristics outperform the
+  LSH-based algorithms on real datasets, but, almost always, come at the cost of losing
+  the guarantees of either correctness or robust performance on adversarial queries,
+  or apply to datasets with an assumed extra structure/model. In this paper, we design
+  an NNS algorithm for the Hamming space that has worst-case guarantees essentially
+  matching that of theoretical algorithms, while optimizing the hashing to the structure
+  of the dataset (think instance-optimal algorithms) for performance on the minimum-performing
+  query. We evaluate the algorithm’s ability to optimize for a given dataset both
+  theoretically and practically. On the theoretical side, we exhibit a natural setting
+  (dataset model) where our algorithm is much better than the standard theoretical
+  one. On the practical side, we run experiments that show that our algorithm has
+  a 1.8x and 2.1x better recall on the worst-performing queries to the MNIST and ImageNet
+  datasets.
 labels:
 - hashing
 - running time
@@ -8,10 +25,11 @@ publications:
   url: https://proceedings.mlr.press/v162/andoni22a.html
   year: 2022
   dblp_key: conf/icml/AndoniB22
-  bibtex: "@inproceedings{DBLP:conf/icml/AndoniB22,\n  author       = {Alexandr Andoni and\n  Daniel Beaglehole},\n  title\
-    \        = {Learning to Hash Robustly, Guaranteed},\n  booktitle    = {{ICML}},\n  series       = {Proceedings of Machine\
-    \ Learning Research},\n  volume       = {162},\n  pages        = {599--618},\n  publisher    = {{PMLR}},\n  year     \
-    \    = {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/icml/AndoniB22,\n  author       = {Alexandr Andoni\
+    \ and\n  Daniel Beaglehole},\n  title        = {Learning to Hash Robustly, Guaranteed},\n\
+    \  booktitle    = {{ICML}},\n  series       = {Proceedings of Machine Learning\
+    \ Research},\n  volume       = {162},\n  pages        = {599--618},\n  publisher\
+    \    = {{PMLR}},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2108.05433
   year: 2021

@@ -1,5 +1,19 @@
 title: Approximation algorithms for combinatorial optimization with predictions
 authors: Antonios Antoniadis, Marek Eliás, Adam Polak, Moritz Venzin
+abstract: We initiate a systematic study of utilizing predictions to improve over
+  approximation guarantees of classic algorithms, without increasing the running time.
+  We propose a systematic method for a wide class of optimization problems that ask
+  to select a feasible subset of input items of minimal (or maximal) total weight.
+  This gives simple (near-)linear time algorithms for, e.g., Vertex Cover, Steiner
+  Tree, Min-Weight Perfect Matching, Knapsack, and Clique. Our algorithms produce
+  optimal solutions when provided with perfect predictions and their approximation
+  ratios smoothly degrade with increasing prediction error. With small enough prediction
+  error we achieve approximation guarantees that are beyond reach without predictions
+  in the given time bounds, as exemplified by the NP-hardness and APX-hardness of
+  many of the above problems. Although we show our approach to be optimal for this
+  class of problems as a whole, there is a potential for exploiting specific structural
+  properties of individual problems to obtain improved bounds; we demonstrate this
+  on the Steiner Tree problem. We conclude with an empirical evaluation of our approach.
 labels:
 - approximation
 - online
@@ -8,9 +22,11 @@ publications:
   url: https://dblp.org/rec/conf/iclr/000100V25
   year: 2025
   dblp_key: conf/iclr/000100V25
-  bibtex: "@inproceedings{DBLP:conf/iclr/000100V25,\n  author       = {Antonios Antoniadis and\n  Marek Eli{\\'{a}}s and\n\
-    \  Adam Polak and\n  Moritz Venzin},\n  title        = {Approximation algorithms for combinatorial optimization with predictions},\n\
-    \  booktitle    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year         = {2025}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/iclr/000100V25,\n  author       = {Antonios Antoniadis\
+    \ and\n  Marek Eli{\\'{a}}s and\n  Adam Polak and\n  Moritz Venzin},\n  title\
+    \        = {Approximation algorithms for combinatorial optimization with predictions},\n\
+    \  booktitle    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year      \
+    \   = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2411.16600
   year: 2024

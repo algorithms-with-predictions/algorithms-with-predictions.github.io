@@ -1,5 +1,24 @@
 title: Uniform Bounds for Scheduling with Job Size Estimates
 authors: Scully, Grosof, Mitzenmacher
+abstract: 'We consider the problem of scheduling to minimize mean response time in
+  M/G/1 queues where only estimated job sizes (processing times) are known to the
+  scheduler, where a job of true size $s$ has estimated size in the interval $[\beta
+  s, \alpha s]$ for some $\alpha \geq \beta>0$. We evaluate each scheduling policy
+  by its approximation ratio, which we define to be the ratio between its mean response
+  time and that of Shortest Remaining Processing Time (SRPT), the optimal policy when
+  true sizes are known. Our question: is there a scheduling policy that (a) has approximation
+  ratio near 1 when $\alpha$ and $\beta$ are near 1, (b) has approximation ratio bounded
+  by some function of $\alpha$ and $\beta$ even when they are far from 1, and (c)
+  can be implemented without knowledge of $\alpha$ and $\beta$? We first show that
+  naively running SRPT using estimated sizes in place of true sizes is not such a
+  policy: its approximation ratio can be arbitrarily large for any fixed $\beta<1$.
+  We then provide a simple variant of SRPT for estimated sizes that satisfies criteria
+  (a), (b), and (c). In particular, we prove its approximation ratio approaches 1
+  uniformly as $\alpha$ and $\beta$ approach 1. This is the first result showing this
+  type of convergence for M/G/1 scheduling. We also study the Preemptive Shortest
+  Job First (PSJF) policy, a cousin of SRPT. We show that, unlike SRPT, naively running
+  PSJF using estimated sizes in place of true sizes satisfies criteria (b) and (c),
+  as well as a weaker version of (a).'
 labels:
 - online
 - queueing
@@ -8,10 +27,12 @@ publications:
   url: https://drops.dagstuhl.de/opus/volltexte/2022/15710/pdf/LIPIcs-ITCS-2022-114.pdf
   year: 2022
   dblp_key: conf/innovations/ScullyGM22
-  bibtex: "@inproceedings{DBLP:conf/innovations/ScullyGM22,\n  author       = {Ziv Scully and\n  Isaac Grosof and\n  Michael\
-    \ Mitzenmacher},\n  title        = {Uniform Bounds for Scheduling with Job Size Estimates},\n  booktitle    = {{ITCS}},\n\
-    \  series       = {LIPIcs},\n  volume       = {215},\n  pages        = {114:1--114:30},\n  publisher    = {Schloss Dagstuhl\
-    \ - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/innovations/ScullyGM22,\n  author       = {Ziv\
+    \ Scully and\n  Isaac Grosof and\n  Michael Mitzenmacher},\n  title        = {Uniform\
+    \ Bounds for Scheduling with Job Size Estimates},\n  booktitle    = {{ITCS}},\n\
+    \  series       = {LIPIcs},\n  volume       = {215},\n  pages        = {114:1--114:30},\n\
+    \  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n\
+    \  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2110.00633
   year: 2021

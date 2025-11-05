@@ -1,5 +1,16 @@
 title: Learning-Augmented Frequency Estimation in Sliding Windows
 authors: Shahout, Sabek, Mitzenmacher
+abstract: We show how to utilize machine learning approaches to improve sliding window
+  algorithms for approximate frequency estimation problems, under the “algorithms
+  with predictions” framework. In this dynamic environment, previous learning-augmented
+  algorithms are less effective, since properties in sliding window resolution can
+  differ significantly from the properties of the entire stream. Our focus is on the
+  benefits of predicting and filtering out items with large next arrival times – that
+  is, there is a large gap until their next appearance – from the stream, which we
+  show improves the memory-accuracy tradeoffs significantly. We provide theorems that
+  provide insight into how and by how much our technique can improve the sliding window
+  algorithm, as well as experimental results using real-world data sets. Our work
+  demonstrates that predictors can be useful in the challenging sliding window setting.
 labels:
 - streaming
 publications:
@@ -7,9 +18,10 @@ publications:
   url: https://doi.org/10.1109/ICNP61940.2024.10858536
   year: 2024
   dblp_key: conf/icnp/ShahoutSM24
-  bibtex: "@inproceedings{DBLP:conf/icnp/ShahoutSM24,\n  author       = {Rana Shahout and\n  Ibrahim Sabek and\n  Michael\
-    \ Mitzenmacher},\n  title        = {Learning-Augmented Frequency Estimation in Sliding Windows},\n  booktitle    = {{ICNP}},\n\
-    \  pages        = {1--6},\n  publisher    = {{IEEE}},\n  year         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/icnp/ShahoutSM24,\n  author       = {Rana Shahout\
+    \ and\n  Ibrahim Sabek and\n  Michael Mitzenmacher},\n  title        = {Learning-Augmented\
+    \ Frequency Estimation in Sliding Windows},\n  booktitle    = {{ICNP}},\n  pages\
+    \        = {1--6},\n  publisher    = {{IEEE}},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2409.11516
   year: 2024

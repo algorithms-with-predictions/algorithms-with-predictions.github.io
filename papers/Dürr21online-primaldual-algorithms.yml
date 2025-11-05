@@ -1,5 +1,15 @@
 title: Online Primal-Dual Algorithms with Predictions for Packing Problems
 authors: Dürr, Thang
+abstract: The domain of online algorithms with predictions has been extensively studied
+  for different applications such as scheduling, caching (paging), clustering, ski
+  rental, etc. Recently, Bamas et al., aiming for an unified method, have provided
+  a primal-dual framework for linear covering problems. They extended the online primal-dual
+  method by incorporating predictions in order to achieve a performance beyond the
+  worst-case case analysis. In this paper, we consider this research line and present
+  a framework to design algorithms with predictions for non-linear packing problems.
+  We illustrate the applicability of our framework in submodular maximization and
+  in particular ad-auction maximization in which the optimal bound is given and supporting
+  experiments are provided.
 labels:
 - online
 - packing

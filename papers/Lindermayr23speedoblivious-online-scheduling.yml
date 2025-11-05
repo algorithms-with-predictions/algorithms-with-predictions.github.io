@@ -1,5 +1,16 @@
-title: "Speed-Oblivious Online Scheduling: Knowing (Precise) Speeds is not Necessary"
+title: 'Speed-Oblivious Online Scheduling: Knowing (Precise) Speeds is not Necessary'
 authors: Alexander Lindermayr, Nicole Megow, Martin Rapp
+abstract: 'We consider online scheduling on unrelated (heterogeneous) machines in
+  a speed-oblivious setting, where an algorithm is unaware of the exact job-dependent
+  processing speeds. We show strong impossibility results for clairvoyant and non-clairvoyant
+  algorithms and overcome them in models inspired by practical settings: (i) we provide
+  competitive learning-augmented algorithms, assuming that (possibly erroneous) predictions
+  on the speeds are given, and (ii) we provide competitive algorithms for the speed-ordered
+  model, where a single global order of machines according to their unknown job-dependent
+  speeds is known. We prove strong theoretical guarantees and evaluate our findings
+  on a representative heterogeneous multi-core processor. These seem to be the first
+  empirical results for scheduling algorithms with predictions that are evaluated
+  in a non-synthetic hardware environment.'
 labels:
 - online
 - scheduling
@@ -8,21 +19,12 @@ publications:
   url: https://proceedings.mlr.press/v202/lindermayr23a.html
   year: 2023
   dblp_key: conf/icml/LindermayrMR23
-  bibtex: |
-    @inproceedings{DBLP:conf/icml/LindermayrMR23,
-      author       = {Alexander Lindermayr and
-      Nicole Megow and
-      Martin Rapp},
-      title        = {Speed-Oblivious Online Scheduling: Knowing (Precise) Speeds is not
-      Necessary},
-      booktitle    = {{ICML}},
-      series       = {Proceedings of Machine Learning Research},
-      volume       = {202},
-      pages        = {21312--21334},
-      publisher    = {{PMLR}},
-      year         = {2023}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/icml/LindermayrMR23,\n  author       = {Alexander\
+    \ Lindermayr and\n  Nicole Megow and\n  Martin Rapp},\n  title        = {Speed-Oblivious\
+    \ Online Scheduling: Knowing (Precise) Speeds is not\n  Necessary},\n  booktitle\
+    \    = {{ICML}},\n  series       = {Proceedings of Machine Learning Research},\n\
+    \  volume       = {202},\n  pages        = {21312--21334},\n  publisher    = {{PMLR}},\n\
+    \  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2302.00985
   year: 2023

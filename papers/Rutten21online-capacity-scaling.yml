@@ -1,10 +1,26 @@
 title: Online Capacity Scaling Augmented With Unreliable Machine Learning Predictions
 authors: Daan Rutten, Debankur Mukherjee
+abstract: Modern data centers suffer from immense power consumption. As a result,
+  data center operators have heavily invested in capacity scaling solutions, which
+  dynamically deactivate servers if the demand is low and activate them again when
+  the workload increases. We analyze a continuous-time model for capacity scaling,
+  where the goal is to minimize the weighted sum of flow-time, switching cost, and
+  power consumption in an online fashion. We propose a novel algorithm, called Adaptive
+  Balanced Capacity Scaling (ABCS), that has access to black-box machine learning
+  predictions. ABCS aims to adapt to the predictions and is also robust against unpredictable
+  surges in the workload. In particular, we prove that ABCS is $(1+\varepsilon)$-competitive
+  if the predictions are accurate, and yet, it has a uniformly bounded competitive
+  ratio even if the predictions are completely inaccurate. Finally, we investigate
+  the performance of this algorithm on a real-world dataset and carry out extensive
+  numerical experiments, which positively support the theoretical results.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2101.12160
   year: 2021
   month: 1
   day: 28
-arxiv: 2101.12160
+arxiv: 2101.1216
 s2_id: 024b866827b47c673e47b6664bece8bd72a73a1f
+labels:
+- online
+- scheduling

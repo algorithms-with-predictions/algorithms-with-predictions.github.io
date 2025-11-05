@@ -1,35 +1,45 @@
-title: Learning-augmented Online Minimization of Age of Information and Transmission Costs
+title: Learning-augmented Online Minimization of Age of Information and Transmission
+  Costs
 authors: Zhongdong Liu, Keyuan Zhang, Bin Li, Yin Sun, Y. T. Hou, Bo Ji
+abstract: 'We consider a discrete-time system where a resource-constrained source
+  (e.g., a small sensor) transmits its time-sensitive data to a destination over a
+  time-varying wireless channel. Each transmission incurs a fixed transmission cost
+  (e.g., energy cost), and no transmission results in a staleness cost represented
+  by the Age-of-Information. The source must balance the tradeoff between transmission
+  and staleness costs. To address this challenge, we develop a robust online algorithm
+  to minimize the sum of transmission and staleness costs, ensuring a worst-case performance
+  guarantee. While online algorithms are robust, they are usually overly conservative
+  and may have a poor average performance in typical scenarios. In contrast, by leveraging
+  historical data and prediction models, machine learning (ML) algorithms perform
+  well in average cases. However, they typically lack worst-case performance guarantees.
+  To achieve the best of both worlds, we design a learning-augmented online algorithm
+  that exhibits two desired properties: (i) consistency: closely approximating the
+  optimal offline algorithm when the ML prediction is accurate and trusted; (ii) robustness:
+  ensuring worst-case performance guarantee even ML predictions are inaccurate. Finally,
+  we perform extensive simulations to show that our online algorithm performs well
+  empirically and that our learning-auamented algorithm achieves both consistency
+  and robustness.'
 publications:
-  - name: arXiv
-    url: https://arxiv.org/abs/2403.02573
-    year: 2024
-    month: 3
-    day: 5
-  - name: INFOCOM
-    url: https://doi.org/10.1109/INFOCOMWKSHPS61880.2024.10620883
-    year: 2024
-    dblp_key: conf/infocom/LiuZLS0024
-    bibtex: |
-      @inproceedings{DBLP:conf/infocom/LiuZLS0024,
-        author       = {Zhongdong Liu and
-                        Keyuan Zhang and
-                        Bin Li and
-                        Yin Sun and
-                        Y. Thomas Hou and
-                        Bo Ji},
-        title        = {Learning-augmented Online Minimization of Age of Information and Transmission
-                        Costs},
-        booktitle    = {{IEEE} {INFOCOM} 2024 - {IEEE} Conference on Computer Communications
-                        Workshops, Vancouver, BC, Canada, May 20, 2024},
-        pages        = {1--8},
-        publisher    = {{IEEE}},
-        year         = {2024},
-        url          = {https://doi.org/10.1109/INFOCOMWKSHPS61880.2024.10620883},
-        doi          = {10.1109/INFOCOMWKSHPS61880.2024.10620883},
-        timestamp    = {Mon, 03 Mar 2025 21:13:42 +0100},
-        biburl       = {https://dblp.org/rec/conf/infocom/LiuZLS0024.bib},
-        bibsource    = {dblp computer science bibliography, https://dblp.org}
-      }
+- name: arXiv
+  url: https://arxiv.org/abs/2403.02573
+  year: 2024
+  month: 3
+  day: 5
+- name: INFOCOM
+  url: https://doi.org/10.1109/INFOCOMWKSHPS61880.2024.10620883
+  year: 2024
+  dblp_key: conf/infocom/LiuZLS0024
+  bibtex: "@inproceedings{DBLP:conf/infocom/LiuZLS0024,\n  author       = {Zhongdong\
+    \ Liu and\n                  Keyuan Zhang and\n                  Bin Li and\n\
+    \                  Yin Sun and\n                  Y. Thomas Hou and\n        \
+    \          Bo Ji},\n  title        = {Learning-augmented Online Minimization of\
+    \ Age of Information and Transmission\n                  Costs},\n  booktitle\
+    \    = {{IEEE} {INFOCOM} 2024 - {IEEE} Conference on Computer Communications\n\
+    \                  Workshops, Vancouver, BC, Canada, May 20, 2024},\n  pages \
+    \       = {1--8},\n  publisher    = {{IEEE}},\n  year         = {2024},\n  url\
+    \          = {https://doi.org/10.1109/INFOCOMWKSHPS61880.2024.10620883},\n  doi\
+    \          = {10.1109/INFOCOMWKSHPS61880.2024.10620883},\n  timestamp    = {Mon,\
+    \ 03 Mar 2025 21:13:42 +0100},\n  biburl       = {https://dblp.org/rec/conf/infocom/LiuZLS0024.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 arxiv: 2403.02573
 s2_id: 1eb081653d063f8708178c46c7170b677419ad15

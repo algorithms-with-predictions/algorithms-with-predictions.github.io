@@ -1,5 +1,28 @@
-title: "Towards Learning-Augmented Peer-to-Peer Networks: Self-Stabilizing Graph Linearization with Untrusted Advice"
+title: 'Towards Learning-Augmented Peer-to-Peer Networks: Self-Stabilizing Graph Linearization
+  with Untrusted Advice'
 authors: Vijeth Aradhya, Christian Scheideler
+abstract: Distributed peer-to-peer systems are widely popular due to their decentralized
+  nature, which ensures that no peer is critical for the functionality of the system.
+  However, fully decentralized solutions are usually much harder to design, and tend
+  to have a much higher overhead compared to centralized approaches, where the peers
+  are connected to a powerful server. On the other hand, centralized approaches have
+  a single point of failure. Thus, is there some way to combine their advantages without
+  inheriting their disadvantages? To that end, we consider a supervised peer-to-peer
+  approach where the peers can ask a potentially unreliable supervisor for advice.
+  This is in line with the increasingly popular algorithmic paradigm called algorithms
+  with predictions or learning-augmented algorithms, but we are the first to consider
+  it in the context of peer-to-peer networks. Specifically, we design self-stabilizing
+  algorithms for the fundamental problem of distributed graph linearization, where
+  peers are supposed to recover the"sorted line"network from any initial network after
+  a transient fault. With the help of the supervisor, peers can recover the sorted
+  line network in $O(\log n)$ time, if the advice is correct; otherwise, the algorithm
+  retains its original recovery time (i.e., without any supervisor). A crucial challenge
+  that we overcome is to correctly compose multiple self-stabilizing algorithms, that
+  is, one that processes and exploits the advice, and another that does not rely on
+  the advice at all. Our key technical contributions combine ideas from the fields
+  of overlay networks and proof-labeling schemes. Finally, we give a matching lower
+  bound of $\Omega(\log n)$ for the recovery time of any algorithm if the advice can
+  be corrupted, where $n$ is the network size.
 labels:
 - distributed algorithms
 - graph algorithms

@@ -1,5 +1,19 @@
 title: Transductive and Learning-Augmented Online Regression
 authors: Raman, Xie, Zhou
+abstract: Motivated by the predictable nature of real-life in data streams, we study
+  online regression when the learner has access to predictions about future examples.
+  In the extreme case, called transductive online learning, the sequence of examples
+  is revealed to the learner before the game begins. For this setting, we fully characterize
+  the minimax expected regret in terms of the fat-shattering dimension, establishing
+  a separation between transductive online regression and (adversarial) online regression.
+  Then, we generalize this setting by allowing for noisy or \emph{imperfect} predictions
+  about future examples. Using our results for the transductive online setting, we
+  develop an online learner whose minimax expected regret matches the worst-case regret,
+  improves smoothly with prediction quality, and significantly outperforms the worst-case
+  regret when future example predictions are precise, achieving performance similar
+  to the transductive online learner. This enables learnability for previously unlearnable
+  classes under predictable examples, aligning with the broader learning-augmented
+  model paradigm.
 labels:
 - learning
 - online

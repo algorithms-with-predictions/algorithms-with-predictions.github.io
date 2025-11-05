@@ -1,5 +1,21 @@
 title: Time Fairness in Online Knapsack Problems
 authors: Adam Lechowicz, Rik Sengupta, Bo Sun, Shahin Kamali, M. Hajiesmaili
+abstract: The online knapsack problem is a classic problem in the field of online
+  algorithms. Its canonical version asks how to pack items of different values and
+  weights arriving online into a capacity-limited knapsack so as to maximize the total
+  value of the admitted items. Although optimal competitive algorithms are known for
+  this problem, they may be fundamentally unfair, i.e., individual items may be treated
+  inequitably in different ways. We formalize a practically-relevant notion of time
+  fairness which effectively models a trade off between static and dynamic pricing
+  in a motivating application such as cloud resource allocation, and show that existing
+  algorithms perform poorly under this metric. We propose a parameterized deterministic
+  algorithm where the parameter precisely captures the Pareto-optimal trade-off between
+  fairness (static pricing) and competitiveness (dynamic pricing). We show that randomization
+  is theoretically powerful enough to be simultaneously competitive and fair; however,
+  it does not work well in experiments. To further improve the trade-off between fairness
+  and competitiveness, we develop a nearly-optimal learning-augmented algorithm which
+  is fair, consistent, and robust (competitive), showing substantial performance improvements
+  in numerical experiments.
 labels:
 - allocation / matching
 - online
@@ -9,19 +25,11 @@ publications:
   url: https://openreview.net/forum?id=9kG7TwgLYu
   year: 2024
   dblp_key: conf/iclr/LechowiczS0KH24
-  bibtex: |
-    @inproceedings{DBLP:conf/iclr/LechowiczS0KH24,
-      author       = {Adam Lechowicz and
-      Rik Sengupta and
-      Bo Sun and
-      Shahin Kamali and
-      Mohammad Hajiesmaili},
-      title        = {Time Fairness in Online Knapsack Problems},
-      booktitle    = {{ICLR}},
-      publisher    = {OpenReview.net},
-      year         = {2024}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/iclr/LechowiczS0KH24,\n  author       = {Adam\
+    \ Lechowicz and\n  Rik Sengupta and\n  Bo Sun and\n  Shahin Kamali and\n  Mohammad\
+    \ Hajiesmaili},\n  title        = {Time Fairness in Online Knapsack Problems},\n\
+    \  booktitle    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year      \
+    \   = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2305.13293
   year: 2023

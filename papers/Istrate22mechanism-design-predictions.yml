@@ -1,5 +1,11 @@
 title: Mechanism Design With Predictions for Obnoxious Facility Location
 authors: Gabriel Istrate, C. Bonchis
+abstract: We study mechanism design with predictions for the obnoxious facility location
+  problem. We present deterministic strategyproof mechanisms that display tradeoffs
+  between robustness and consistency on segments, squares, circles and trees. All
+  these mechanisms are actually group strategyproof, with the exception of the case
+  of squares, where manipulations from coalitions of two agents exist. We prove that
+  these tradeoffs are optimal in the 1-dimensional case.
 labels:
 - facility location
 - game theory / mechanism design

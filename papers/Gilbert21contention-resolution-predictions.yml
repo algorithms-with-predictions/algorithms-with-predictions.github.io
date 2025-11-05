@@ -1,31 +1,43 @@
 title: Contention Resolution with Predictions
 authors: Seth Gilbert, Calvin C. Newport, N. Vaidya, A. Weaver
+abstract: In this paper, we consider contention resolution algorithms that are augmented
+  with predictions about the network. We begin by studying the natural setup in which
+  the algorithm is provided a distribution defined over the possible network sizes
+  that predicts the likelihood of each size occurring. The goal is to leverage the
+  predictive power of this distribution to improve on worst-case time complexity bounds.
+  Using a novel connection between contention resolution and information theory, we
+  prove lower bounds on the expected time complexity with respect to the Shannon entropy
+  of the corresponding network size random variable, for both the collision detection
+  and no collision detection assumptions. We then analyze upper bounds for these settings,
+  assuming now that the distribution provided as input might differ from the actual
+  distribution generating network sizes. We express their performance with respect
+  to both entropy and the statistical divergence between the two distributions---allowing
+  us to quantify the cost of poor predictions. Finally, we turn our attention to the
+  related perfect advice setting, parameterized with a length b ≥ 0, in which all
+  active processes in a given execution are provided the best possible b bits of information
+  about their network. We provide tight bounds on the speed-up possible with respect
+  to b for deterministic and randomized algorithms, with and without collision detection.
+  These bounds provide a fundamental limit on the maximum power that can be provided
+  by any predictive model with a bounded output size.
 publications:
-  - name: arXiv
-    url: https://arxiv.org/abs/2105.12706
-    year: 2021
-    month: 5
-    day: 26
-  - name: PODC
-    url: https://doi.org/10.1145/3465084.3467911
-    year: 2021
-    dblp_key: journals/corr/abs-2105-12706
-    bibtex: |
-      @article{DBLP:journals/corr/abs-2105-12706,
-        author       = {Seth Gilbert and
-                        Calvin Newport and
-                        Nitin H. Vaidya and
-                        Alex Weaver},
-        title        = {Contention Resolution with Predictions},
-        journal      = {CoRR},
-        volume       = {abs/2105.12706},
-        year         = {2021},
-        url          = {https://arxiv.org/abs/2105.12706},
-        eprinttype    = {arXiv},
-        eprint       = {2105.12706},
-        timestamp    = {Wed, 01 Sep 2021 12:22:23 +0200},
-        biburl       = {https://dblp.org/rec/journals/corr/abs-2105-12706.bib},
-        bibsource    = {dblp computer science bibliography, https://dblp.org}
-      }
+- name: arXiv
+  url: https://arxiv.org/abs/2105.12706
+  year: 2021
+  month: 5
+  day: 26
+- name: PODC
+  url: https://doi.org/10.1145/3465084.3467911
+  year: 2021
+  dblp_key: journals/corr/abs-2105-12706
+  bibtex: "@article{DBLP:journals/corr/abs-2105-12706,\n  author       = {Seth Gilbert\
+    \ and\n                  Calvin Newport and\n                  Nitin H. Vaidya\
+    \ and\n                  Alex Weaver},\n  title        = {Contention Resolution\
+    \ with Predictions},\n  journal      = {CoRR},\n  volume       = {abs/2105.12706},\n\
+    \  year         = {2021},\n  url          = {https://arxiv.org/abs/2105.12706},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2105.12706},\n  timestamp    =\
+    \ {Wed, 01 Sep 2021 12:22:23 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2105-12706.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 arxiv: 2105.12706
 s2_id: 1ad0cc40892ee379109b4536620c6470acdbba8b
+labels:
+- running time

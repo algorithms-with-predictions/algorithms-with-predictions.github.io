@@ -1,5 +1,15 @@
 title: Auction Design using Value Prediction with Hallucinations
 authors: Ilan Lobel, Humberto Moreira, Omar Mouchtaki
+abstract: We investigate a Bayesian mechanism design problem where a seller seeks
+  to maximize revenue by selling an indivisible good to one of n buyers, incorporating
+  potentially unreliable predictions (signals) of buyers'private values derived from
+  a machine learning model. We propose a framework where these signals are sometimes
+  reflective of buyers'true valuations but other times are hallucinations, which are
+  uncorrelated with the buyers'true valuations. Our main contribution is a characterization
+  of the optimal auction under this framework. Our characterization establishes a
+  near-decomposition of how to treat types above and below the signal. For the one
+  buyer case, the seller's optimal strategy is to post one of three fairly intuitive
+  prices depending on the signal, which we call the"ignore","follow"and"cap"actions.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2502.08792
@@ -8,3 +18,6 @@ publications:
   day: 12
 arxiv: 2502.08792
 s2_id: 9427361d6d4b7efc1b2ab49a3409e38f1ff2a8ea
+labels:
+- game theory / mechanism design
+- auctions

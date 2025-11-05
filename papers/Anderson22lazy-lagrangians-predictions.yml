@@ -1,5 +1,16 @@
 title: Lazy Lagrangians with Predictions for Online Learning
 authors: Anderson, Iosifidis, Leith
+abstract: We consider the general problem of online convex optimization with time-varying
+  additive constraints in the presence of predictions for the next cost and constraint
+  functions. A novel primal-dual algorithm is designed by combining a Follow-The-Regularized-Leader
+  iteration with prediction-adaptive dynamic steps. The algorithm achieves $\mathcal
+  O(T^{\frac{3-\beta}{4}})$ regret and $\mathcal O(T^{\frac{1+\beta}{2}})$ constraint
+  violation bounds that are tunable via parameter $\beta\!\in\![1/2,1)$ and have constant
+  factors that shrink with the predictions quality, achieving eventually $\mathcal
+  O(1)$ regret for perfect predictions. Our work extends the FTRL framework for this
+  constrained OCO setting and outperforms the respective state-of-the-art greedy-based
+  solutions, without imposing conditions on the quality of predictions, the cost functions
+  or the geometry of constraints, beyond convexity.
 labels:
 - learning
 - online

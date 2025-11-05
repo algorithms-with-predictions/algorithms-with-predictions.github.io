@@ -1,5 +1,13 @@
 title: The Primal-Dual method for Learning Augmented Algorithms
 authors: Bamas, Maggiori, Svensson
+abstract: The extension of classical online algorithms when provided with predictions
+  is a new and active research area. In this paper, we extend the primal-dual method
+  for online algorithms in order to incorporate predictions that advise the online
+  algorithm about the next action to take. We use this framework to obtain novel algorithms
+  for a variety of online covering problems. We compare our algorithms to the cost
+  of the true and predicted offline optimal solutions and show that these algorithms
+  outperform any online algorithm when the prediction is accurate while maintaining
+  good guarantees when the prediction is misleading.
 labels:
 - covering
 - online
@@ -9,9 +17,10 @@ publications:
   url: https://proceedings.neurips.cc//paper/2020/file/e834cb114d33f729dbc9c7fb0c6bb607-Paper.pdf
   year: 2020
   dblp_key: conf/nips/BamasMS20
-  bibtex: "@inproceedings{DBLP:conf/nips/BamasMS20,\n  author       = {{\\'{E}}tienne Bamas and\n  Andreas Maggiori and\n\
-    \  Ola Svensson},\n  title        = {The Primal-Dual method for Learning Augmented Algorithms},\n  booktitle    = {NeurIPS},\n\
-    \  year         = {2020}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/nips/BamasMS20,\n  author       = {{\\'{E}}tienne\
+    \ Bamas and\n  Andreas Maggiori and\n  Ola Svensson},\n  title        = {The Primal-Dual\
+    \ method for Learning Augmented Algorithms},\n  booktitle    = {NeurIPS},\n  year\
+    \         = {2020}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2010.11632
   year: 2020

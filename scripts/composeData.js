@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import yaml from 'js-yaml';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
@@ -10,14 +11,22 @@ const paper_dir = join(__dirname, '..', 'papers');
 const outputJSON = join(__dirname, '..', 'papers.json');
 const publicJSON = join(__dirname, '..', 'public', 'papers.json');
 
-console.log('📚 Processing papers from:', paper_dir);
+console.info('📚 Processing papers from:', paper_dir);
 
 const papers = fs.readdirSync(paper_dir);
-console.log(`📄 Found ${papers.length} paper files`);
+console.info(`📄 Found ${papers.length} paper files`);
 
 const paper_objs = papers.map(paper => {
   const filePath = join(paper_dir, paper);
-  return yaml.load(fs.readFileSync(filePath, { encoding: 'utf-8' }));
+  const paperData = yaml.load(fs.readFileSync(filePath, { encoding: 'utf-8' }));
+
+  if (paperData && typeof paperData === 'object' && !Array.isArray(paperData)) {
+    const paperWithoutAbstract = { ...paperData };
+    delete paperWithoutAbstract.abstract;
+    return paperWithoutAbstract;
+  }
+
+  return paperData;
 });
 
 const jsonContent = JSON.stringify(paper_objs, null, 2);
@@ -27,6 +36,6 @@ fs.writeFileSync(outputJSON, jsonContent);
 // Write to public folder (for production build)
 fs.writeFileSync(publicJSON, jsonContent);
 
-console.log(
+console.info(
   '✅ Generated papers.json successfully in both root and public folders!'
 );

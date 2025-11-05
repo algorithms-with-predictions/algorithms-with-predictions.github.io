@@ -1,13 +1,22 @@
 title: A model for learned bloom filters and optimizing by sandwiching
 authors: Mitzenmacher
+abstract: 'Recent work has suggested enhancing Bloom filters by using a pre-filter,
+  based on applying machine learning to determine a function that models the data
+  set the Bloom filter is meant to represent. Here we model such learned Bloom filters,
+  with the following outcomes: (1) we clarify what guarantees can and cannot be associated
+  with such a structure; (2) we show how to estimate what size the learning function
+  must obtain in order to obtain improved performance; (3) we provide a simple method,
+  sandwiching, for optimizing learned Bloom filters; and (4) we propose a design and
+  analysis approach for a learned Bloomier filter, based on our modeling approach.'
 labels: []
 publications:
 - name: NeurIPS
   url: https://dl.acm.org/doi/pdf/10.5555/3326943.3326986
   year: 2018
   dblp_key: conf/nips/Mitzenmacher18
-  bibtex: "@inproceedings{DBLP:conf/nips/Mitzenmacher18,\n  author       = {Michael Mitzenmacher},\n  title        = {A Model\
-    \ for Learned Bloom Filters and Optimizing by Sandwiching},\n  booktitle    = {NeurIPS},\n  pages        = {462--471},\n\
+  bibtex: "@inproceedings{DBLP:conf/nips/Mitzenmacher18,\n  author       = {Michael\
+    \ Mitzenmacher},\n  title        = {A Model for Learned Bloom Filters and Optimizing\
+    \ by Sandwiching},\n  booktitle    = {NeurIPS},\n  pages        = {462--471},\n\
     \  year         = {2018}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/1901.00902

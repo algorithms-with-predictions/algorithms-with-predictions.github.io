@@ -1,5 +1,26 @@
 title: Strategic Facility Location via Predictions
 authors: Chen, Gravin, Im
+abstract: The facility location with strategic agents is a canonical problem in the
+  literature on mechanism design without money. Recently, Agrawal et. al. considered
+  this problem in the context of machine learning augmented algorithms, where the
+  mechanism designer is also given a prediction of the optimal facility location.
+  An ideal mechanism in this framework produces an outcome that is close to the social
+  optimum when the prediction is accurate (consistency) and gracefully degrades as
+  the prediction deviates from the truth, while retaining some of the worst-case approximation
+  guarantees (robustness). The previous work only addressed this problem in the two-dimensional
+  Euclidean space providing optimal trade-offs between robustness and consistency
+  guarantees for deterministic mechanisms. We consider the problem for \emph{general}
+  metric spaces. Our only assumption is that the metric is continuous, meaning that
+  any pair of points must be connected by a continuous shortest path. We introduce
+  a novel mechanism that in addition to agents' reported locations takes a predicted
+  optimal facility location $\hat{o}$. We call this mechanism $\texttt{Harmonic}$,
+  as it selects one of the reported locations $\tilde{\ell}_i$ with probability inversely
+  proportional to $d(\hat{o},\tilde{\ell}_i)+ \Delta$ for a constant parameter $\Delta$.
+  While \harm \ mechanism is not truthful, we can \emph{characterize the set of undominated
+  strategies} for each agent $i$ as solely consisting of the points on a shortest
+  path from their true location $\ell_i$ to the predicted location $\hat{o}$. We further
+  derive \emph{consistency and robustness guarantees on the Price of Anarchy (PoA)}
+  for the game induced by the mechanism.
 labels:
 - facility location
 - game theory / mechanism design

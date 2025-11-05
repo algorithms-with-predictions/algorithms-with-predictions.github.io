@@ -1,5 +1,16 @@
-title: "Brief Announcement: Towards a More Robust Algorithm for Flow Time Scheduling with Predictions"
+title: 'Brief Announcement: Towards a More Robust Algorithm for Flow Time Scheduling
+  with Predictions'
 authors: Tianming Zhao, Chunhao Li, Wei Li, Albert Y. Zomaya
+abstract: We consider the problem of non-clairvoyant scheduling on single machine
+  to minimize the total flow time with job size predictions. The existing algorithm
+  achieves 2-consistency to predictions, but no algorithm can simultaneously attain
+  bounded robustness. This work finds a sufficient condition for any algorithm to
+  achieve optimal O(P)-robustness, where P is the maximum ratio of any two job sizes.
+  We give the first algorithm that achieves optimal robustness up to a constant multiplicative
+  factor and optimal consistency using this condition. Finally, for addressing small
+  prediction errors, we present an algorithm that we conjecture to achieve the optimal
+  O(η^2) competitive ratio, where η is the prediction error. Proving the claimed bound
+  is our ongoing work.
 labels:
 - online
 - scheduling
@@ -8,18 +19,9 @@ publications:
   url: https://doi.org/10.1145/3490148.3538557
   year: 2022
   dblp_key: conf/spaa/ZhaoL0Z22
-  bibtex: |
-    @inproceedings{DBLP:conf/spaa/ZhaoL0Z22,
-      author       = {Tianming Zhao and
-      Chunhao Li and
-      Wei Li and
-      Albert Y. Zomaya},
-      title        = {Brief Announcement: Towards a More Robust Algorithm for Flow Time
-      Scheduling with Predictions},
-      booktitle    = {{SPAA}},
-      pages        = {385--388},
-      publisher    = {{ACM}},
-      year         = {2022}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/spaa/ZhaoL0Z22,\n  author       = {Tianming Zhao\
+    \ and\n  Chunhao Li and\n  Wei Li and\n  Albert Y. Zomaya},\n  title        =\
+    \ {Brief Announcement: Towards a More Robust Algorithm for Flow Time\n  Scheduling\
+    \ with Predictions},\n  booktitle    = {{SPAA}},\n  pages        = {385--388},\n\
+    \  publisher    = {{ACM}},\n  year         = {2022}\n}\n"
 s2_id: f84fff370d4980540f8829cc26c5a9f29feafef9

@@ -1,5 +1,20 @@
 title: Online Facility Location with Predictions
 authors: S. Jiang, Erzhi Liu, You Lyu, Z. Tang, Yubo Zhang
+abstract: We provide nearly optimal algorithms for online facility location (OFL)
+  with predictions. In OFL, $n$ demand points arrive in order and the algorithm must
+  irrevocably assign each demand point to an open facility upon its arrival. The objective
+  is to minimize the total connection costs from demand points to assigned facilities
+  plus the facility opening cost. We further assume the algorithm is additionally
+  given for each demand point $x_i$ a natural prediction $f_{x_i}^{\mathrm{pred}}$
+  which is supposed to be the facility $f_{x_i}^{\mathrm{opt}}$ that serves $x_i$
+  in the offline optimal solution. Our main result is an $O(\min\{\log {\frac{n\eta_\infty}{\mathrm{OPT}}},
+  \log{n} \})$-competitive algorithm where $\eta_\infty$ is the maximum prediction
+  error (i.e., the distance between $f_{x_i}^{\mathrm{pred}}$ and $f_{x_i}^{\mathrm{opt}}$).
+  Our algorithm overcomes the fundamental $\Omega(\frac{\log n}{\log \log n})$ lower
+  bound of OFL (without predictions) when $\eta_\infty$ is small, and it still maintains
+  $O(\log n)$ ratio even when $\eta_\infty$ is unbounded. Furthermore, our theoretical
+  analysis is supported by empirical evaluations for the tradeoffs between $\eta_\infty$
+  and the competitive ratio on various real datasets of different types.
 labels:
 - network design
 - online
@@ -8,23 +23,15 @@ publications:
   url: https://openreview.net/forum?id=DSQHjibtgKR
   year: 2022
   dblp_key: conf/iclr/JiangLLTZ22
-  bibtex: |
-    @inproceedings{DBLP:conf/iclr/JiangLLTZ22,
-      author       = {Shaofeng H.{-}C. Jiang and
-      Erzhi Liu and
-      You Lyu and
-      Zhihao Gavin Tang and
-      Yubo Zhang},
-      title        = {Online Facility Location with Predictions},
-      booktitle    = {{ICLR}},
-      publisher    = {OpenReview.net},
-      year         = {2022}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/iclr/JiangLLTZ22,\n  author       = {Shaofeng\
+    \ H.{-}C. Jiang and\n  Erzhi Liu and\n  You Lyu and\n  Zhihao Gavin Tang and\n\
+    \  Yubo Zhang},\n  title        = {Online Facility Location with Predictions},\n\
+    \  booktitle    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year      \
+    \   = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2110.08840
   year: 2021
   month: 10
   day: 17
-arxiv: 2110.08840
+arxiv: 2110.0884
 s2_id: a54d78ea8852836225d52e6bfb8156e772bcc32a

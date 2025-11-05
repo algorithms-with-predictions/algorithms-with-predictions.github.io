@@ -1,5 +1,24 @@
 title: Online Unit Profit Knapsack with Untrusted Predictions
 authors: Boyar, Favrholdt, Larsen
+abstract: 'A variant of the online knapsack problem is considered in the settings
+  of trusted and untrusted predictions. In Unit Profit Knapsack, the items have unit
+  profit, and it is easy to find an optimal solution offline: Pack as many of the
+  smallest items as possible into the knapsack. For Online Unit Profit Knapsack, the
+  competitive ratio is unbounded. In contrast, previous work on online algorithms
+  with untrusted predictions generally studied problems where an online algorithm
+  with a constant competitive ratio is known. The prediction, possibly obtained from
+  a machine learning source, that our algorithm uses is the average size of those
+  smallest items that fit in the knapsack. For the prediction error in this hard online
+  problem, we use the ratio $r=\frac{a}{\hat{a}}$ where $a$ is the actual value for
+  this average size and $\hat{a}$ is the prediction. The algorithm presented achieves
+  a competitive ratio of $\frac{1}{2r}$ for $r\geq 1$ and $\frac{r}{2}$ for $r\leq
+  1$. Using an adversary technique, we show that this is optimal in some sense, giving
+  a trade-off in the competitive ratio attainable for different values of $r$. Note
+  that the result for accurate advice, $r=1$, is only $\frac{1}{2}$, but we show that
+  no algorithm knowing the value $a$ can achieve a competitive ratio better than $\frac{e-1}{e}\approx
+  0.6321$ and present an algorithm with a matching upper bound. We also show that
+  this latter algorithm attains a competitive ratio of $r\frac{e-1}{e}$ for $r \leq
+  1$ and $\frac{e-r}{e}$ for $1 \leq r'
 labels:
 - online
 - packing
@@ -8,10 +27,12 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.SWAT.2022.20
   year: 2022
   dblp_key: conf/swat/BoyarFL22
-  bibtex: "@inproceedings{DBLP:conf/swat/BoyarFL22,\n  author       = {Joan Boyar and\n  Lene M. Favrholdt and\n  Kim S. Larsen},\n\
-    \  title        = {Online Unit Profit Knapsack with Untrusted Predictions},\n  booktitle    = {{SWAT}},\n  series    \
-    \   = {LIPIcs},\n  volume       = {227},\n  pages        = {20:1--20:17},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum\
-    \ f{\"{u}}r Informatik},\n  year         = {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/swat/BoyarFL22,\n  author       = {Joan Boyar\
+    \ and\n  Lene M. Favrholdt and\n  Kim S. Larsen},\n  title        = {Online Unit\
+    \ Profit Knapsack with Untrusted Predictions},\n  booktitle    = {{SWAT}},\n \
+    \ series       = {LIPIcs},\n  volume       = {227},\n  pages        = {20:1--20:17},\n\
+    \  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n\
+    \  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2203.00285
   year: 2022

@@ -1,5 +1,20 @@
 title: Efficient Approximate Temporal Triangle Counting in Streaming with Predictions
 authors: Giorgio Venturin, Ilie Sarpe, Fabio Vandin
+abstract: Triangle counting is a fundamental and widely studied problem on static
+  graphs, and recently on temporal graphs, where edges carry information on the timings
+  of the associated events. Streaming processing and resource efficiency are crucial
+  requirements for counting triangles in modern massive temporal graphs, with millions
+  of nodes and up to billions of temporal edges. However, current exact and approximate
+  algorithms are unable to handle large-scale temporal graphs. To fill such a gap,
+  we introduce STEP, a scalable and efficient algorithm to approximate temporal triangle
+  counts from a stream of temporal edges. STEP combines predictions to the number
+  of triangles a temporal edge is involved in, with a simple sampling strategy, leading
+  to scalability, efficiency, and accurate approximation of all eight temporal triangle
+  types simultaneously. We analytically prove that, by using a sublinear amount of
+  memory, STEP obtains unbiased and very accurate estimates. In fact, even noisy predictions
+  can significantly reduce the variance of STEP's estimates. Our extensive experiments
+  on massive temporal graphs with up to billions of edges demonstrate that STEP outputs
+  high-quality estimates and is more efficient than state-of-the-art methods.
 labels:
 - streaming
 publications:
@@ -7,21 +22,12 @@ publications:
   url: https://doi.org/10.1007/978-3-032-06066-2_15
   year: 2025
   dblp_key: conf/pkdd/VenturinSV25
-  bibtex: |
-    @inproceedings{DBLP:conf/pkdd/VenturinSV25,
-      author       = {Giorgio Venturin and
-      Ilie Sarpe and
-      Fabio Vandin},
-      title        = {Efficient Approximate Temporal Triangle Counting in Streaming with
-      Predictions},
-      booktitle    = {{ECML/PKDD} {(3)}},
-      series       = {Lecture Notes in Computer Science},
-      volume       = {16015},
-      pages        = {244--262},
-      publisher    = {Springer},
-      year         = {2025}
-    }
-    
+  bibtex: "@inproceedings{DBLP:conf/pkdd/VenturinSV25,\n  author       = {Giorgio\
+    \ Venturin and\n  Ilie Sarpe and\n  Fabio Vandin},\n  title        = {Efficient\
+    \ Approximate Temporal Triangle Counting in Streaming with\n  Predictions},\n\
+    \  booktitle    = {{ECML/PKDD} {(3)}},\n  series       = {Lecture Notes in Computer\
+    \ Science},\n  volume       = {16015},\n  pages        = {244--262},\n  publisher\
+    \    = {Springer},\n  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2506.13173
   year: 2025

@@ -1,5 +1,15 @@
 title: Online Algorithms for Weighted Paging with Predictions
 authors: Jiang, Panigrahi, Su
+abstract: In this article, we initiate the study of the weighted paging problem with
+  predictions. This continues the recent line of work in online algorithms with predictions,
+  particularly that of Lykouris and Vassilvitski (ICML 2018) and Rohatgi (SODA 2020)
+  on unweighted paging with predictions. We show that unlike unweighted paging, neither
+  a fixed lookahead nor a knowledge of the next request for every page is sufficient
+  information for an algorithm to overcome the existing lower bounds in weighted paging.
+  However, a combination of the two, which we call strong per request prediction (SPRP),
+  suffices to give a 2-competitive algorithm. We also explore the question of gracefully
+  degrading algorithms with increasing prediction error, and give both upper and lower
+  bounds for a set of natural measures of prediction error.
 labels:
 - caching / paging
 - online
@@ -11,9 +21,11 @@ publications:
   url: https://doi.org/10.1145/3548774
   year: 2022
   dblp_key: journals/talg/JiangPS22
-  bibtex: "@article{DBLP:journals/talg/JiangPS22,\n  author       = {Zhihao Jiang and\n  Debmalya Panigrahi and\n  Kevin Sun},\n\
-    \  title        = {Online Algorithms for Weighted Paging with Predictions},\n  journal      = {{ACM} Trans. Algorithms},\n\
-    \  volume       = {18},\n  number       = {4},\n  pages        = {39:1--39:27},\n  year         = {2022}\n}\n"
+  bibtex: "@article{DBLP:journals/talg/JiangPS22,\n  author       = {Zhihao Jiang\
+    \ and\n  Debmalya Panigrahi and\n  Kevin Sun},\n  title        = {Online Algorithms\
+    \ for Weighted Paging with Predictions},\n  journal      = {{ACM} Trans. Algorithms},\n\
+    \  volume       = {18},\n  number       = {4},\n  pages        = {39:1--39:27},\n\
+    \  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2006.09509
   year: 2020
