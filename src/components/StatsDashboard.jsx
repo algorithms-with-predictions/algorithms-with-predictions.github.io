@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Grid,
   Card,
@@ -7,7 +8,6 @@ import {
   Box,
   Chip,
   Stack,
-  LinearProgress,
 } from '@mui/material';
 import { School, People, Business } from '@mui/icons-material';
 
@@ -188,54 +188,143 @@ const StatCard = ({
   </Card>
 );
 
-const TopVenuesCard = ({ venues }) => (
-  <Card sx={{ height: '100%', borderRadius: 2 }}>
-    <CardContent sx={{ py: { xs: 1.5, sm: 2 }, px: { xs: 1.5, sm: 2 } }}>
-      <Typography
-        variant="h6"
-        gutterBottom
-        fontWeight="bold"
+StatCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
+  subtitle: PropTypes.string,
+  icon: PropTypes.elementType.isRequired,
+  trend: PropTypes.string,
+  color: PropTypes.string,
+  secondaryValue: PropTypes.number,
+  secondaryTitle: PropTypes.string,
+  secondaryIcon: PropTypes.elementType,
+  tertiaryValue: PropTypes.number,
+  tertiaryTitle: PropTypes.string,
+  tertiaryIcon: PropTypes.elementType,
+};
+
+const TopVenuesCard = ({ venues }) => {
+  const maxCount = venues.length > 0 ? venues[0].count : 1;
+
+  return (
+    <Card sx={{ height: '100%', borderRadius: 2 }}>
+      <CardContent
         sx={{
-          fontSize: { xs: '0.9rem', sm: '1.25rem' },
-          mb: { xs: 1, sm: 1.5 },
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          py: { xs: 1.5, sm: 2 },
+          px: { xs: 1.5, sm: 2 },
         }}
       >
-        Top Venues
-      </Typography>
-      <Stack spacing={{ xs: 1, sm: 1.5 }}>
-        {venues?.map((venue, index) => (
-          <Box key={venue.name}>
-            <Stack
-              direction="row"
-              justifyContent="space-between"
-              alignItems="center"
+        <Typography
+          variant="h6"
+          gutterBottom
+          fontWeight="bold"
+          sx={{
+            fontSize: { xs: '0.9rem', sm: '1.25rem' },
+            mb: { xs: 0.75, sm: 1.5 },
+            flexShrink: 0,
+          }}
+        >
+          Top Venues
+        </Typography>
+        <Box
+          sx={{
+            flex: 1,
+            display: 'flex',
+            alignItems: 'flex-end',
+            justifyContent: 'space-around',
+            position: 'relative',
+            minHeight: { xs: '80px', sm: '110px' },
+            px: { xs: 0.5, sm: 1 },
+            pb: { xs: 1.5, sm: 2 },
+            pt: { xs: 1.5, sm: 2 },
+          }}
+        >
+          {venues?.map(venue => (
+            <Box
+              key={venue.name}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                flex: 1,
+                mx: { xs: 0.2, sm: 0.4 },
+                height: '100%',
+                position: 'relative',
+                justifyContent: 'flex-end',
+              }}
             >
+              {/* Count label positioned at top */}
+              <Typography
+                variant="caption"
+                sx={{
+                  position: 'absolute',
+                  top: { xs: -16, sm: -20 },
+                  color: 'text.secondary',
+                  fontSize: { xs: '0.55rem', sm: '0.65rem' },
+                  fontWeight: 'medium',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                {venue.count}
+              </Typography>
+
+              {/* Bar - proportional height based on data */}
+              <Box
+                sx={{
+                  width: '100%',
+                  maxWidth: { xs: '28px', sm: '44px' },
+                  height: {
+                    xs: `${Math.max((venue.count / maxCount) * 45, 4)}px`,
+                    sm: `${Math.max((venue.count / maxCount) * 65, 6)}px`,
+                  },
+                  backgroundColor: theme => theme.palette.secondary.main,
+                  borderRadius: '4px 4px 0 0',
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    backgroundColor: theme => theme.palette.secondary.dark,
+                    transform: 'scaleY(1.05)',
+                    transformOrigin: 'bottom',
+                  },
+                }}
+              />
+
+              {/* Venue label positioned at bottom */}
               <Typography
                 variant="body2"
-                fontWeight="medium"
-                sx={{ fontSize: { xs: '0.75rem', sm: '0.875rem' } }}
+                sx={{
+                  position: 'absolute',
+                  bottom: { xs: -16, sm: -20 },
+                  fontSize: { xs: '0.55rem', sm: '0.65rem' },
+                  fontWeight: 'medium',
+                  color: 'text.secondary',
+                  textAlign: 'center',
+                  whiteSpace: 'nowrap',
+                  maxWidth: { xs: '35px', sm: '50px' },
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
               >
                 {venue.name}
               </Typography>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}
-              >
-                {venue.count} papers
-              </Typography>
-            </Stack>
-            <LinearProgress
-              variant="determinate"
-              value={(venue.count / venues[0].count) * 100}
-              sx={{ height: { xs: 3, sm: 4 }, borderRadius: 2, mt: 0.5 }}
-            />
-          </Box>
-        ))}
-      </Stack>
-    </CardContent>
-  </Card>
-);
+            </Box>
+          ))}
+        </Box>
+      </CardContent>
+    </Card>
+  );
+};
+
+TopVenuesCard.propTypes = {
+  venues: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      count: PropTypes.number.isRequired,
+    })
+  ),
+};
 
 const YearDistributionChart = ({ yearData }) => {
   const maxCount = Math.max(...Object.values(yearData));
@@ -350,6 +439,10 @@ const YearDistributionChart = ({ yearData }) => {
   );
 };
 
+YearDistributionChart.propTypes = {
+  yearData: PropTypes.objectOf(PropTypes.number).isRequired,
+};
+
 const StatsDashboard = ({ data }) => {
   // Calculate statistics
   const totalPapers = data.length;
@@ -411,7 +504,7 @@ const StatsDashboard = ({ data }) => {
   )
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count)
-    .slice(0, 3);
+    .slice(0, 7);
   return (
     <Box sx={{ mb: { xs: 0.5, sm: 0.75 } }}>
       <Grid container spacing={{ xs: 1.5, sm: 2 }}>
@@ -443,6 +536,10 @@ const StatsDashboard = ({ data }) => {
       </Grid>
     </Box>
   );
+};
+
+StatsDashboard.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default StatsDashboard;
