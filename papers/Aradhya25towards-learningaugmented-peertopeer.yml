@@ -1,7 +1,9 @@
-title: 'Towards Learning-Augmented Peer-to-Peer Networks: Self-Stabilizing Graph Linearization
-  with Untrusted Advice'
+title:
+  "Towards Learning-Augmented Peer-to-Peer Networks: Self-Stabilizing Graph Linearization
+  with Untrusted Advice"
 authors: Vijeth Aradhya, Christian Scheideler
-abstract: Distributed peer-to-peer systems are widely popular due to their decentralized
+abstract:
+  Distributed peer-to-peer systems are widely popular due to their decentralized
   nature, which ensures that no peer is critical for the functionality of the system.
   However, fully decentralized solutions are usually much harder to design, and tend
   to have a much higher overhead compared to centralized approaches, where the peers
@@ -24,12 +26,11 @@ abstract: Distributed peer-to-peer systems are widely popular due to their decen
   bound of $\Omega(\log n)$ for the recovery time of any algorithm if the advice can
   be corrupted, where $n$ is the network size.
 labels:
-- distributed algorithms
-- graph algorithms
-- untrusted advice
+  - distributed algorithms
+  - graph problems
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2504.02448
-  year: 2025
-  month: 4
-  day: 3
+  - name: arXiv
+    url: https://arxiv.org/abs/2504.02448
+    year: 2025
+    month: 4
+    day: 3
