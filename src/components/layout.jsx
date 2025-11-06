@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
       >
         <Header />
         <main>
-          <Container maxWidth="None" sx={{ py: 3 }}>
+          <Container maxWidth="None" disableGutters sx={{ py: 3 }}>
             {children}
           </Container>
         </main>

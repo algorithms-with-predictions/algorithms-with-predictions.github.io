@@ -136,7 +136,11 @@ const PaperList = ({ data }) => {
   };
 
   return (
-    <Container maxWidth="xl" sx={{ py: { xs: 1, md: 1.5 } }}>
+    <Container
+      maxWidth="xl"
+      disableGutters
+      sx={{ py: { xs: 1, md: 1.5 }, px: { xs: 0, sm: 2, md: 3 } }}
+    >
       <Stack spacing={{ xs: 1, md: 1.5 }}>
         {/* Stats Dashboard */}
         <Fade in timeout={600}>
