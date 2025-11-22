@@ -1,0 +1,36 @@
+title: Online peak-aware energy scheduling with untrusted advice
+authors: Lee, Maghakian, Hajiesmaili, Sitaraman, Liu
+abstract: 'This paper studies the online energy scheduling problem in a hybrid model
+  where the cost of energy is proportional to both the volume and peak usage, and
+  where energy can be either locally generated or drawn from the grid. Inspired by
+  recent advances in online algorithms with Machine Learned (ML) advice, we develop
+  parameterized deterministic and randomized algorithms for this problem such that
+  the level of reliance on the advice can be adjusted by a trust parameter. We then
+  analyze the performance of the proposed algorithms using two performance metrics:
+  robustness that measures the competitive ratio as a function of the trust parameter
+  when the advice is inaccurate, and consistency for competitive ratio when the advice
+  is accurate. Since the competitive ratio is analyzed in two different regimes, we
+  further investigate the Pareto optimality of the proposed algorithms. Our results
+  show that the proposed deterministic algorithm is Pareto-optimal, in the sense that
+  no other online deterministic algorithms can dominate the robustness and consistency
+  of our algorithm. Furthermore, we show that the proposed randomized algorithm dominates
+  the Pareto-optimal deterministic algorithm. Our large-scale empirical evaluations
+  using real traces of energy demand, energy prices, and renewable energy generations
+  highlight that the proposed algorithms outperform worst-case optimized algorithms
+  and fully data-driven algorithms.'
+labels:
+- online
+- scheduling
+publications:
+- name: SIGENERGY
+  url: https://dl.acm.org/doi/abs/10.1145/3508467.3508473
+  year: 2022
+- name: e-Energy
+  url: https://doi.org/10.1145/3447555.3464860
+  year: 2021
+  dblp_key: conf/eenergy/LeeMHLSL21
+  bibtex: "@inproceedings{DBLP:conf/eenergy/LeeMHLSL21,\n  author       = {Russell\
+    \ Lee and\n  Jessica Maghakian and\n  Mohammad H. Hajiesmaili and\n  Jian Li and\n\
+    \  Ramesh K. Sitaraman and\n  Zhenhua Liu},\n  title        = {Online Peak-Aware\
+    \ Energy Scheduling with Untrusted Advice},\n  booktitle    = {e-Energy},\n  pages\
+    \        = {107--123},\n  publisher    = {{ACM}},\n  year         = {2021}\n}\n"

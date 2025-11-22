@@ -1,0 +1,34 @@
+title: Learning-Augmented Energy-Aware List Scheduling for Precedence-Constrained
+  Tasks
+authors: Yu Su, Vivek Anand, Jannie Yu, Jian Tan, A. Wierman
+abstract: We study the problem of scheduling precedence-constrained tasks to balance
+  between performance and energy consumption. We consider a system with multiple servers
+  capable of speed scaling and seek to schedule precedence-constrained tasks to minimize
+  a linear combination of performance and energy consumption. Inspired by the single-server
+  setting, we propose the concept of pseudo-size for individual tasks, which is a
+  measure of the externalities of a task in the precedence graph and is learned from
+  historical workload data. We then propose a two-stage scheduling framework that
+  uses a learned pseudo-size approximation and achieves a provable approximation bound
+  on the linear combination of performance and energy consumption for both makespan
+  and total weighted completion time, where the quality of the bound depends on the
+  approximation quality of pseudo-sizes. We show experimentally that learning-based
+  approaches consistently perform near optimally.
+publications:
+- name: ACM Trans. Model. Perform. Eval. Comput. Syst.
+  url: https://doi.org/10.1145/3680278
+  year: 2024
+  dblp_key: journals/tompecs/SuAYTW24
+  bibtex: "@article{DBLP:journals/tompecs/SuAYTW24,\n  author       = {Yu Su and\n\
+    \                  Vivek Anand and\n                  Jannie Yu and\n        \
+    \          Jian Tan and\n                  Adam Wierman},\n  title        = {Learning-Augmented\
+    \ Energy-Aware List Scheduling for Precedence-Constrained\n                  Tasks},\n\
+    \  journal      = {{ACM} Trans. Model. Perform. Evaluation Comput. Syst.},\n \
+    \ volume       = {9},\n  number       = {4},\n  pages        = {13:1--13:24},\n\
+    \  year         = {2024},\n  url          = {https://doi.org/10.1145/3680278},\n\
+    \  doi          = {10.1145/3680278},\n  timestamp    = {Wed, 19 Mar 2025 21:16:39\
+    \ +0100},\n  biburl       = {https://dblp.org/rec/journals/tompecs/SuAYTW24.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+s2_id: f48a4ade5a2caabbc765951059384bf6b9b8c483
+labels:
+- online
+- scheduling

@@ -1,0 +1,14 @@
+title: Online Simple Knapsack with Bounded Predictions
+authors: Gehnen, Lotze, Rossmanith
+labels:
+- online
+- packing
+publications:
+- name: STACS
+  url: https://doi.org/10.4230/LIPIcs.STACS.2024.37
+  year: 2024
+  dblp_key: conf/stacs/GehnenLR24
+  bibtex: "@inproceedings{DBLP:conf/stacs/GehnenLR24,\n  author       = {Matthias Gehnen and\n  Henri Lotze and\n  Peter Rossmanith},\n\
+    \  title        = {Online Simple Knapsack with Bounded Predictions},\n  booktitle    = {{STACS}},\n  series       = {LIPIcs},\n\
+    \  volume       = {289},\n  pages        = {37:1--37:20},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r\
+    \ Informatik},\n  year         = {2024}\n}\n"

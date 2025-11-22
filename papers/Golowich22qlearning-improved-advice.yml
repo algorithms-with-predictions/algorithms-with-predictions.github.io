@@ -1,0 +1,35 @@
+title: Can Q-Learning be Improved with Advice?
+authors: Golowich, Moitra
+abstract: Despite rapid progress in theoretical reinforcement learning (RL) over the
+  last few years, most of the known guarantees are worst-case in nature, failing to
+  take advantage of structure that may be known a priori about a given RL problem
+  at hand. In this paper we address the question of whether worst-case lower bounds
+  for regret in online learning of Markov decision processes (MDPs) can be circumvented
+  when information about the MDP, in the form of predictions about its optimal Q-value
+  function, is given to the algorithm. We show that when the predictions about the
+  optimal Q-value function satisfy a reasonably weak condition we call distillation,
+  then we can improve regret bounds by replacing the set of state-action pairs with
+  the set of state-action pairs on which the predictions are grossly inaccurate. This
+  improvement holds for both uniform regret bounds and gap-based ones. Further, we
+  are able to achieve this property with an algorithm that achieves sublinear regret
+  when given arbitrary predictions (i.e., even those which are not a distillation).
+  Our work extends a recent line of work on algorithms with predictions, which has
+  typically focused on simple online problems such as caching and scheduling, to the
+  more complex and general problem of reinforcement learning.
+labels:
+- learning
+publications:
+- name: COLT
+  url: https://proceedings.mlr.press/v178/golowich22a.html
+  year: 2022
+  dblp_key: conf/colt/GolowichM22
+  bibtex: "@inproceedings{DBLP:conf/colt/GolowichM22,\n  author       = {Noah Golowich\
+    \ and\n  Ankur Moitra},\n  title        = {Can Q-learning be Improved with Advice?},\n\
+    \  booktitle    = {{COLT}},\n  series       = {Proceedings of Machine Learning\
+    \ Research},\n  volume       = {178},\n  pages        = {4548--4619},\n  publisher\
+    \    = {{PMLR}},\n  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2110.13052
+  year: 2021
+  month: 9
+  day: 25

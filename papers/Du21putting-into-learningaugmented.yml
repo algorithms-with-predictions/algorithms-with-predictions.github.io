@@ -1,0 +1,26 @@
+title: Putting the "Learning" into Learning-Augmented Algorithms for Frequency Estimation
+authors: Elbert Du, Franklyn Wang, M. Mitzenmacher
+labels:
+- learning
+- streaming
+publications:
+- name: ICML
+  url: http://proceedings.mlr.press/v139/du21d.html
+  year: 2021
+  dblp_key: conf/icml/DuWM21
+  bibtex: |
+    @inproceedings{DBLP:conf/icml/DuWM21,
+      author       = {Elbert Du and
+      Franklyn Wang and
+      Michael Mitzenmacher},
+      title        = {Putting the "Learning" into Learning-Augmented Algorithms for Frequency
+      Estimation},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {139},
+      pages        = {2860--2869},
+      publisher    = {{PMLR}},
+      year         = {2021}
+    }
+    
+s2_id: 86252c27f0fa9683d5f48753dc64ef6b92c6308e

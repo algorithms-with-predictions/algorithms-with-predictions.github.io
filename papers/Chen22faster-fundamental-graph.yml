@@ -1,0 +1,28 @@
+title: Faster Fundamental Graph Algorithms via Learned Predictions
+authors: Chen, Silwal, Vakilian, Zhang
+abstract: 'We consider the question of speeding up classic graph algorithms with machine-learned
+  predictions. In this model, algorithms are furnished with extra advice learned from
+  past or similar instances. Given the additional information, we aim to improve upon
+  the traditional worst-case run-time guarantees. Our contributions are the following:
+  Finally, we give a set of general learnability theorems, showing that the predictions
+  required by our algorithms can be efficiently learned in a PAC fashion.'
+labels:
+- allocation / matching
+- running time
+- shortest path
+publications:
+- name: ICML
+  url: https://proceedings.mlr.press/v162/chen22v.html
+  year: 2022
+  dblp_key: conf/icml/ChenSVZ22
+  bibtex: "@inproceedings{DBLP:conf/icml/ChenSVZ22,\n  author       = {Justin Y. Chen\
+    \ and\n  Sandeep Silwal and\n  Ali Vakilian and\n  Fred Zhang},\n  title     \
+    \   = {Faster Fundamental Graph Algorithms via Learned Predictions},\n  booktitle\
+    \    = {{ICML}},\n  series       = {Proceedings of Machine Learning Research},\n\
+    \  volume       = {162},\n  pages        = {3583--3602},\n  publisher    = {{PMLR}},\n\
+    \  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2204.12055
+  year: 2022
+  month: 4
+  day: 26

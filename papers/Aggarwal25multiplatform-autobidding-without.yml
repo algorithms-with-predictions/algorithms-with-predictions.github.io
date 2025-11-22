@@ -1,0 +1,47 @@
+title: Multi-Platform Autobidding with and without Predictions
+authors: Gagan Aggarwal, Anupam Gupta, Xizhi Tan, Mingfei Zhao
+abstract: 'We study the problem of finding the optimal bidding strategy for an advertiser
+  in a multi-platform auction setting. The competition on a platform is captured by
+  a value and a cost function, mapping bidding strategies to value and cost respectively.
+  We assume a diminishing returns property, whereby the marginal cost is increasing
+  in value. The advertiser uses an autobidder that selects a bidding strategy for
+  each platform, aiming to maximize total value subject to budget and return-on-spend
+  constraint. The advertiser has no prior information and learns about the value and
+  cost functions by querying a platform with a specific bidding strategy. Our goal
+  is to design algorithms that find the optimal bidding strategy with a small number
+  of queries. We first present an algorithm that requires (O(m log (mn) log n)) queries,
+  where m is the number of platforms and n is the number of possible bidding strategies
+  in each platform. Moreover, we adopt the learning-augmented framework and propose
+  an algorithm that utilizes a (possibly erroneous) prediction of the optimal bidding
+  strategy. We provide a O(m log (mη) log η) query-complexity bound on our algorithm
+  as a function of the prediction error η. This guarantee gracefully degrades to (O(m
+  log (mn) log n)). This achieves a "best-of-both-worlds" scenario: (O(m)) queries
+  when given a correct prediction, and (O(m log (mn) log n)) even for an arbitrary
+  incorrect prediction.'
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2502.19317
+  year: 2025
+  month: 2
+  day: 26
+- name: WWW
+  url: https://doi.org/10.1145/3696410.3714936
+  year: 2025
+  dblp_key: conf/www/Aggarwal0TZ25
+  bibtex: "@inproceedings{DBLP:conf/www/Aggarwal0TZ25,\n  author       = {Gagan Aggarwal\
+    \ and\n                  Anupam Gupta and\n                  Xizhi Tan and\n \
+    \                 Mingfei Zhao},\n  editor       = {Guodong Long and\n       \
+    \           Michale Blumestein and\n                  Yi Chang and\n         \
+    \         Liane Lewin{-}Eytan and\n                  Zi Helen Huang and\n    \
+    \              Elad Yom{-}Tov},\n  title        = {Multi-Platform Autobidding\
+    \ with and without Predictions},\n  booktitle    = {Proceedings of the {ACM} on\
+    \ Web Conference 2025, {WWW} 2025, Sydney,\n                  NSW, Australia,\
+    \ 28 April 2025- 2 May 2025},\n  pages        = {2850--2859},\n  publisher   \
+    \ = {{ACM}},\n  year         = {2025},\n  url          = {https://doi.org/10.1145/3696410.3714936},\n\
+    \  doi          = {10.1145/3696410.3714936},\n  timestamp    = {Fri, 09 May 2025\
+    \ 20:28:10 +0200},\n  biburl       = {https://dblp.org/rec/conf/www/Aggarwal0TZ25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+arxiv: 2502.19317
+s2_id: 51592426016fd307d610ae03c7dedf1ad513c77c
+labels:
+- online

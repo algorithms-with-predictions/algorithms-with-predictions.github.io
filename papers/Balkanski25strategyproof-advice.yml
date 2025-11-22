@@ -1,0 +1,40 @@
+title: Strategyproof Learning with Advice
+authors: Balkanski, Zhu
+abstract: An important challenge in robust machine learning is when training data
+  is provided by strategic sources who may intentionally report erroneous data for
+  their own benefit. A line of work at the intersection of machine learning and mechanism
+  design aims to deter strategic agents from reporting erroneous training data by
+  designing learning algorithms that are strategyproof. Strategyproofness is a strong
+  and desirable property, but it comes at a cost in the approximation ratio of even
+  simple risk minimization problems. In this paper, we study strategyproof regression
+  and classification problems in a model with advice. This model is part of a recent
+  line on mechanism design with advice where the goal is to achieve both an improved
+  approximation ratio when the advice is correct (consistency) and a bounded approximation
+  ratio when the advice is incorrect (robustness). We provide the first non-trivial
+  consistency-robustness tradeoffs for strategyproof regression and classification,
+  which hold for simple yet interesting classes of functions. For classes of constant
+  functions, we give a deterministic and strategyproof mechanism that is, for any
+  $\gamma \in (0, 2]$, $1+\gamma$ consistent and $1 + 4/\gamma$ robust and provide
+  a lower bound that shows that this tradeoff is optimal. We extend this mechanism
+  and its guarantees to homogeneous linear regression over $\mathbb{R}$. In the binary
+  classification problem of selecting from three or more labelings, we present strong
+  impossibility results for both deterministic and randomized mechanism. Finally,
+  we provide deterministic and randomized mechanisms for selecting from two labelings.
+labels:
+- game theory / mechanism design
+- learning
+publications:
+- name: ALT
+  url: http://algorithmiclearningtheory.org/alt2025/accepted-papers/
+  year: 2025
+  dblp_key: conf/alt/BalkanskiZ25
+  bibtex: "@inproceedings{DBLP:conf/alt/BalkanskiZ25,\n  author       = {Eric Balkanski\
+    \ and\n  Cherlin Zhu},\n  title        = {Strategyproof Learning with Advice},\n\
+    \  booktitle    = {{ALT}},\n  series       = {Proceedings of Machine Learning\
+    \ Research},\n  volume       = {272},\n  pages        = {163--166},\n  publisher\
+    \    = {{PMLR}},\n  year         = {2025}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2411.07354
+  year: 2024
+  month: 11
+  day: 11

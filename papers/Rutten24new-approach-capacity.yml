@@ -1,0 +1,37 @@
+title: A New Approach to Capacity Scaling Augmented With Unreliable Machine Learning
+  Predictions
+authors: Daan Rutten, Debankur Mukherjee
+abstract: 'Modern data centers suffer from immense power consumption. As a result,
+  data center operators have heavily invested in capacity-scaling solutions, which
+  dynamically deactivate servers if the demand is low and activate them again when
+  the workload increases. We analyze a continuous-time model for capacity scaling,
+  where the goal is to minimize the weighted sum of flow time, switching cost, and
+  power consumption in an online fashion. We propose a novel algorithm, called adaptive
+  balanced capacity scaling (ABCS), that has access to black-box machine learning
+  predictions. ABCS aims to adapt to the predictions and is also robust against unpredictable
+  surges in the workload. In particular, we prove that ABCS is [Formula: see text]
+  competitive if the predictions are accurate, and yet, it has a uniformly bounded
+  competitive ratio even if the predictions are completely inaccurate. Finally, we
+  investigate the performance of this algorithm on a real-world data set and carry
+  out extensive numerical experiments, which positively support the theoretical results.
+  Funding: This work was partially supported by the Division of Computing and Communication
+  Foundations [Grant 2113027]. The authors also acknowledge financial support for
+  this project from the Algorithm and Randomness Center–Transdisciplinary Research
+  Institute for Advancing Data Science Fellowship at Georgia Tech.'
+labels:
+- online
+- scheduling
+publications:
+- name: Math. Oper. Res.
+  url: https://doi.org/10.1287/moor.2023.1364
+  year: 2024
+  dblp_key: journals/mor/RuttenM24
+  bibtex: "@article{DBLP:journals/mor/RuttenM24,\n  author       = {Daan Rutten and\n\
+    \  Debankur Mukherjee},\n  title        = {A New Approach to Capacity Scaling\
+    \ Augmented with Unreliable Machine\n  Learning Predictions},\n  journal     \
+    \ = {Math. Oper. Res.},\n  volume       = {49},\n  number       = {1},\n  pages\
+    \        = {476--508},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/pdf/2101.12160.pdf
+  year: 2021
+s2_id: 8df5bb5704c4458dca0a51bba49ec9a04d4e3611

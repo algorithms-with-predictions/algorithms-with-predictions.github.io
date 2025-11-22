@@ -1,0 +1,38 @@
+title: Augment Online Linear Optimization with Arbitrarily Bad Machine-Learned Predictions
+authors: Dacheng Wen, Yupeng Li, Francis C. M. Lau
+abstract: The online linear optimization paradigm is important to many real-world
+  network applications as well as theoretical algorithmic studies. Recent studies
+  have made attempts to augment online linear optimization with machine-learned predictions
+  of the cost function that are meant to improve the performance of the algorithms.
+  However, they fail to address the critical case in practical systems where the predictions
+  can be arbitrarily bad. In this work, we take the first step to study the problem
+  of online linear optimization with a dynamic number of arbitrarily bad machine-learned
+  predictions per round and propose an algorithm termed OLOAP. Our theoretical analysis
+  shows that, when the qualities of the predictions are satisfactory, OLOAP achieves
+  a regret bound of O(logT), which circumvents the tight lower bound of Ω($\sqrt T
+  $) for the vanilla problem of online linear optimization (i.e., the one without
+  any predictions). Meanwhile, the regret of our algorithm is never worse than O($\sqrt
+  T $) irrespective of the qualities of predictions. In addition, we further derive
+  a lower bound for the regret of the studied problem, which demonstrates that OLOAP
+  is near-optimal. We consider two important network applications and conduct extensive
+  evaluations. Our results validate the superiority of our algorithm over state-of-the-art
+  approaches.
+publications:
+- name: INFOCOM
+  url: https://doi.org/10.1109/INFOCOM52122.2024.10621317
+  year: 2024
+  dblp_key: conf/infocom/WenL024
+  bibtex: "@inproceedings{DBLP:conf/infocom/WenL024,\n  author       = {Dacheng Wen\
+    \ and\n                  Yupeng Li and\n                  Francis C. M. Lau},\n\
+    \  title        = {Augment Online Linear Optimization with Arbitrarily Bad Machine-Learned\n\
+    \                  Predictions},\n  booktitle    = {{IEEE} {INFOCOM} 2024 - {IEEE}\
+    \ Conference on Computer Communications,\n                  Vancouver, BC, Canada,\
+    \ May 20-23, 2024},\n  pages        = {2159--2168},\n  publisher    = {{IEEE}},\n\
+    \  year         = {2024},\n  url          = {https://doi.org/10.1109/INFOCOM52122.2024.10621317},\n\
+    \  doi          = {10.1109/INFOCOM52122.2024.10621317},\n  timestamp    = {Tue,\
+    \ 11 Feb 2025 16:38:19 +0100},\n  biburl       = {https://dblp.org/rec/conf/infocom/WenL024.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+s2_id: 0c4799328451b1c8ebce9d758c997c741ad05a27
+labels:
+- online
+- learning

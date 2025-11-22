@@ -1,0 +1,31 @@
+title: 'Online Metric Matching: Beyond the Worst Case'
+authors: Yang, Yu
+abstract: We study the online metric matching problem. There are $m$ servers and $n$
+  requests located in a metric space, where all servers are available upfront and
+  requests arrive one at a time. Upon the arrival of a new request, it needs to be
+  immediately and irrevocably matched to an available server, resulting in a cost
+  of their distance. The objective is to minimize the total matching cost. When servers
+  are adversarial and requests are independently drawn from a known distribution,
+  we reduce the problem to a more tractable setting where servers and requests are
+  all independently drawn from the same distribution. Applying our reduction, for
+  $[0, 1]^d$ with various choices of distributions, we achieve improved competitive
+  ratios and nearly optimal regret in both balanced and unbalanced markets. In particular,
+  we give $O(1)$-competitive algorithms for $d \geq 3$ in both balanced and unbalanced
+  markets with smooth distributions. Our algorithms improve on the $O((\log \log \log
+  n)^2)$ competitive ratio of Gupta et al. (ICALP'19) for balanced markets in various
+  regimes, and provide the first positive results for unbalanced markets. Moreover,
+  when servers and requests are all adversarial, and a prediction of request locations
+  is provided, we present a general framework for transforming an arbitrary algorithm
+  that does not use predictions into an algorithm that leverages predictions. The
+  transformation applies the given algorithm in a black-box manner, and the performance
+  of the resulting algorithm degrades smoothly as the prediction accuracy deteriorates
+  while preserving the worst-case guarantee.
+labels:
+- allocation / matching
+- online
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2407.14785
+  year: 2024
+  month: 7
+  day: 20

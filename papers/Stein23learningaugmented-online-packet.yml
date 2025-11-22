@@ -1,0 +1,21 @@
+title: Learning-Augmented Online Packet Scheduling with Deadlines
+authors: Stein, Wei
+abstract: The modern network aims to prioritize critical traffic over non-critical
+  traffic and effectively manage traffic flow. This necessitates proper buffer management
+  to prevent the loss of crucial traffic while minimizing the impact on non-critical
+  traffic. Therefore, the algorithm's objective is to control which packets to transmit
+  and which to discard at each step. In this study, we initiate the learning-augmented
+  online packet scheduling with deadlines and provide a novel algorithmic framework
+  to cope with the prediction. We show that when the prediction error is small, our
+  algorithm improves the competitive ratio while still maintaining a bounded competitive
+  ratio, regardless of the prediction error.
+labels:
+- online
+- routing / TSP
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2305.07164
+  year: 2023
+  month: 5
+  day: 11

@@ -1,0 +1,30 @@
+title: Distortion-Oblivious Algorithms for Minimizing Flow Time
+authors: Azar, Leonardi, Touitou
+abstract: 'We consider the classic online problem of scheduling on a single machine
+  to minimize total flow time. In STOC 2021, the concept of robustness to distortion
+  in processing times was introduced: for every distortion factor $\mu$, an $O(\mu^2)$-competitive
+  algorithm $\operatorname{ALG}_{\mu}$ which handles distortions up to $\mu$ was presented.
+  However, using that result requires one to know the distortion of the input in advance,
+  which is impractical. We present the first \emph{distortion-oblivious} algorithms:
+  algorithms which are competitive for \emph{every} input of \emph{every} distortion,
+  and thus do not require knowledge of the distortion in advance. Moreover, the competitive
+  ratios of our algorithms are $\tilde{O}(\mu)$, which is a quadratic improvement
+  over the algorithm from STOC 2021, and is nearly optimal (we show a randomized lower
+  bound of $\Omega(\mu)$ on competitiveness).'
+labels:
+- online
+- scheduling
+publications:
+- name: SODA
+  url: https://epubs.siam.org/doi/10.1137/1.9781611977073.3
+  year: 2022
+  dblp_key: conf/soda/AzarLT22
+  bibtex: "@inproceedings{DBLP:conf/soda/AzarLT22,\n  author       = {Yossi Azar and\n\
+    \  Stefano Leonardi and\n  Noam Touitou},\n  title        = {Distortion-Oblivious\
+    \ Algorithms for Minimizing Flow Time},\n  booktitle    = {{SODA}},\n  pages \
+    \       = {252--274},\n  publisher    = {{SIAM}},\n  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2109.08424
+  year: 2021
+  month: 9
+  day: 17

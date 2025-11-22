@@ -1,0 +1,31 @@
+title: Online Prediction in Sub-linear Space
+authors: Peng, Zhang
+abstract: We provide the first sub-linear space and sub-linear regret algorithm for
+  online learning with expert advice (against an oblivious adversary), addressing
+  an open question raised recently by Srinivas, Woodruff, Xu and Zhou (STOC 2022).
+  We also demonstrate a separation between oblivious and (strong) adaptive adversaries
+  by proving a linear memory lower bound of any sub-linear regret algorithm against
+  an adaptive adversary. Our algorithm is based on a novel pool selection procedure
+  that bypasses the traditional wisdom of leader selection for online learning, and
+  a generic reduction that transforms any weakly sub-linear regret $o(T)$ algorithm
+  to $T^{1-\alpha}$ regret algorithm, which may be of independent interest. Our lower
+  bound utilizes the connection of no-regret learning and equilibrium computation
+  in zero-sum games, leading to a proof of a strong lower bound against an adaptive
+  adversary.
+labels:
+- learning
+- online
+publications:
+- name: SODA
+  url: https://doi.org/10.1137/1.9781611977554.ch60
+  year: 2023
+  dblp_key: conf/soda/PengZ23
+  bibtex: "@inproceedings{DBLP:conf/soda/PengZ23,\n  author       = {Binghui Peng\
+    \ and\n  Fred Zhang},\n  title        = {Online Prediction in Sub-linear Space},\n\
+    \  booktitle    = {{SODA}},\n  pages        = {1611--1634},\n  publisher    =\
+    \ {{SIAM}},\n  year         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2207.07974
+  year: 2022
+  month: 7
+  day: 16

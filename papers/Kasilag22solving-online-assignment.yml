@@ -1,0 +1,37 @@
+title: Solving the Online Assignment Problem with Machine Learned Advice
+authors: Clarence Gabriel R. Kasilag, P. Rey, Jhoirene B. Clemente
+abstract: The online assignment problem deals with assigning n elements of one set
+  to another set which arrives sequentially on a one-to-one basis. This problem is
+  also known as the online weighted bipartite matching which produces the smallest
+  weight perfect matching possible. It plays an important role in the fields of operational
+  research and computer science which is why immense attention has been given to improve
+  its solution quality. Due to the incomplete information about the input, it is difficult
+  for online algorithms to produce the optimal solution. The quality of the solution
+  of an online algorithm is measured using a competitive ratio. It has been proven
+  that for this problem, no online deterministic algorithm can achieve a competitive
+  ratio better than (2n-1). It has been shown that advice in online computation improves
+  the lower bound of the competitive ratio of online problems. Advice in online computation
+  can be interpreted as additional information for the online algorithm to compensate
+  for the lack of information about the whole input sequence. In this study, we investigate
+  how introducing machine-learned advice could improve the competitive ratio for this
+  problem. We provide an online algorithm for the online assignment problem by simulating
+  a machine learning algorithm that predicts the whole input in advance. We utilize
+  an optimal offline algorithm to provide a matching solution from the predicted input.
+  Furthermore, we investigate how the prediction error of machine learning affects
+  the competitive ratio of the online algorithm. We utilize a benchmark data set to
+  perform our empirical analysis. We show that as the Machine Learning prediction
+  error increases, the solution quality decreases. Moreover, the magnitude of error
+  is directly proportional to the size of the input. This result is analo-gous to
+  the competitive ratio of the best deterministic algorithm for the online assignment
+  problem which is dependent also on the parameter n.
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2208.04016
+  year: 2022
+  month: 8
+  day: 8
+arxiv: 2208.04016
+s2_id: 2ec8df30387d47a755e62d92b695c6e547b34ffa
+labels:
+- online
+- allocation / matching

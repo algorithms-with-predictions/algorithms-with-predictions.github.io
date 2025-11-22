@@ -1,0 +1,22 @@
+title: The Cost of Accurate Predictions in Learning-Augmented Scheduling
+authors: Zhiyun Jiang, Tianming Zhao, Chunqiu Xia, Wei Li, Albert Y. Zomaya
+publications:
+- name: RTCSA
+  url: https://doi.org/10.1109/RTCSA66114.2025.00031
+  year: 2025
+  dblp_key: conf/rtcsa/JiangZXLZ25
+  bibtex: "@inproceedings{DBLP:conf/rtcsa/JiangZXLZ25,\n  author       = {Zhiyun Jiang\
+    \ and\n                  Tianming Zhao and\n                  Chunqiu Xia and\n\
+    \                  Wei Li and\n                  Albert Y. Zomaya},\n  title \
+    \       = {The Cost of Accurate Predictions in Learning-Augmented Scheduling},\n\
+    \  booktitle    = {31st {IEEE} International Conference on Embedded and Real-Time\
+    \ Computing\n                  Systems and Applications, {RTCSA} 2025, Singapore,\
+    \ August 20-22, 2025},\n  pages        = {221--232},\n  publisher    = {{IEEE}},\n\
+    \  year         = {2025},\n  url          = {https://doi.org/10.1109/RTCSA66114.2025.00031},\n\
+    \  doi          = {10.1109/RTCSA66114.2025.00031},\n  timestamp    = {Fri, 26\
+    \ Sep 2025 08:04:31 +0200},\n  biburl       = {https://dblp.org/rec/conf/rtcsa/JiangZXLZ25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+s2_id: 46b4b87960f726dccdc7ef8be0b35b824167ab78
+labels:
+- online
+- scheduling

@@ -1,0 +1,31 @@
+title: Scheduling with Predictions and the Price of Misprediction
+authors: Mitzenmacher
+abstract: In many traditional job scheduling settings, it is assumed that one knows
+  the time it will take for a job to complete service. In such cases, strategies such
+  as shortest job first can be used to improve performance in terms of measures such
+  as the average time a job waits in the system. We consider the setting where the
+  service time is not known, but is predicted by for example a machine learning algorithm.
+  Our main result is the derivation, under natural assumptions, of formulae for the
+  performance of several strategies for queueing systems that use predictions for
+  service times in order to schedule jobs. As part of our analysis, we suggest the
+  framework of the "price of misprediction," which offers a measure of the cost of
+  using predicted information.
+labels:
+- online
+- queueing
+publications:
+- name: ITCS
+  url: https://drops.dagstuhl.de/opus/volltexte/2020/11699/pdf/LIPIcs-ITCS-2020-14.pdf
+  year: 2020
+  dblp_key: conf/innovations/Mitzenmacher20
+  bibtex: "@inproceedings{DBLP:conf/innovations/Mitzenmacher20,\n  author       =\
+    \ {Michael Mitzenmacher},\n  title        = {Scheduling with Predictions and the\
+    \ Price of Misprediction},\n  booktitle    = {{ITCS}},\n  series       = {LIPIcs},\n\
+    \  volume       = {151},\n  pages        = {14:1--14:18},\n  publisher    = {Schloss\
+    \ Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2020}\n\
+    }\n"
+- name: arXiv
+  url: https://arxiv.org/abs/1902.00732
+  year: 2019
+  month: 2
+  day: 2

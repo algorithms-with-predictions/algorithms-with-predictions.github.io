@@ -1,0 +1,30 @@
+title: Learning-Augmented Algorithms for Boolean Satisfiability
+authors: Idan Attias, Xing Gao, Lev Reyzin
+abstract: Learning-augmented algorithms are a prominent recent development in beyond
+  worst-case analysis. In this framework, a problem instance is provided with a prediction
+  (``advice'') from a machine-learning oracle, which provides partial information
+  about an optimal solution, and the goal is to design algorithms that leverage this
+  advice to improve worst-case performance. We study the classic Boolean satisfiability
+  (SAT) decision and optimization problems within this framework using two forms of
+  advice. ``Subset advice"provides a random $\epsilon$ fraction of the variables from
+  an optimal assignment, whereas ``label advice"provides noisy predictions for all
+  variables in an optimal assignment. For the decision problem $k$-SAT, by using the
+  subset advice we accelerate the exponential running time of the PPSZ family of algorithms
+  due to Paturi, Pudlak, Saks and Zane, which currently represent the state of the
+  art in the worst case. We accelerate the running time by a multiplicative factor
+  of $2^{-c}$ in the base of the exponent, where $c$ is a function of $\epsilon$ and
+  $k$. For the optimization problem, we show how to incorporate subset advice in a
+  black-box fashion with any $\alpha$-approximation algorithm, improving the approximation
+  ratio to $\alpha + (1 - \alpha)\epsilon$. Specifically, we achieve approximations
+  of $0.94 + \Omega(\epsilon)$ for MAX-$2$-SAT, $7/8 + \Omega(\epsilon)$ for MAX-$3$-SAT,
+  and $0.79 + \Omega(\epsilon)$ for MAX-SAT. Moreover, for label advice, we obtain
+  near-optimal approximation for instances with large average degree, thereby generalizing
+  recent results on MAX-CUT and MAX-$2$-LIN.
+labels:
+- online
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2505.06146
+  year: 2025
+  month: 5
+  day: 9

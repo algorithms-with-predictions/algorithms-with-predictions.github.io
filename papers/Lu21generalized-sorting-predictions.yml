@@ -1,0 +1,25 @@
+title: Generalized Sorting with Predictions
+authors: P. Lu, Xuandi Ren, Enze Sun, Yubo Zhang
+abstract: Generalized sorting problem, also known as sorting with forbidden comparisons,
+  was first introduced by Huang et al. together with a randomized algorithm which
+  requires $\tilde O(n^{3/2})$ probes. We study this problem with additional predictions
+  for all pairs of allowed comparisons as input. We propose a randomized algorithm
+  which uses $O(n \log n+w)$ probes with high probability and a deterministic algorithm
+  which uses $O(nw)$ probes, where $w$ is the number of mistakes made by prediction.
+labels:
+- running time
+- sorting
+publications:
+- name: SOSA
+  url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976496.13
+  year: 2021
+  dblp_key: conf/sosa/LuRSZ21
+  bibtex: "@inproceedings{DBLP:conf/sosa/LuRSZ21,\n  author       = {Pinyan Lu and\n\
+    \  Xuandi Ren and\n  Enze Sun and\n  Yubo Zhang},\n  title        = {Generalized\
+    \ Sorting with Predictions},\n  booktitle    = {{SOSA}},\n  pages        = {111--117},\n\
+    \  publisher    = {{SIAM}},\n  year         = {2021}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2011.00172
+  year: 2020
+  month: 10
+  day: 31

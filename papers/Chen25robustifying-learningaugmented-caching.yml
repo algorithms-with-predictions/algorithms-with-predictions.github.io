@@ -1,0 +1,24 @@
+title: Robustifying Learning-Augmented Caching Efficiently without Compromising 1-Consistency
+authors: Chen, Zhao, Zhang, Tang, Wang, Deng
+abstract: The online caching problem aims to minimize cache misses when serving a
+  sequence of requests under a limited cache size. While naive learning-augmented
+  caching algorithms achieve ideal $1$-consistency, they lack robustness guarantees.
+  Existing robustification methods either sacrifice $1$-consistency or introduce excessive
+  computational overhead. In this paper, we introduce Guard, a lightweight robustification
+  framework that enhances the robustness of a broad class of learning-augmented caching
+  algorithms to $2H_k + 2$, while preserving their $1$-consistency. Guard achieves
+  the current best-known trade-off between consistency and robustness, with only $O(1)$
+  additional per-request overhead, thereby maintaining the original time complexity
+  of the base algorithm. Extensive experiments across multiple real-world datasets
+  and prediction models validate the effectiveness of Guard in practice.
+labels:
+- online
+- caching / paging
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2507.16242
+  year: 2025
+  month: 7
+  day: 22
+  dblp_key: null
+  bibtex: null

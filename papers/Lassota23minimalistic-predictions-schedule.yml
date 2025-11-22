@@ -1,0 +1,35 @@
+title: Minimalistic Predictions to Schedule Jobs with Online Precedence Constraints
+authors: Alexandra Lassota, Alexander Lindermayr, Nicole Megow, Jens Schloter
+abstract: 'We consider non-clairvoyant scheduling with online precedence constraints,
+  where an algorithm is oblivious to any job dependencies and learns about a job only
+  if all of its predecessors have been completed. Given strong impossibility results
+  in classical competitive analysis, we investigate the problem in a learning-augmented
+  setting, where an algorithm has access to predictions without any quality guarantee.
+  We discuss different prediction models: novel problem-specific models as well as
+  general ones, which have been proposed in previous works. We present lower bounds
+  and algorithmic upper bounds for different precedence topologies, and thereby give
+  a structured overview on which and how additional (possibly erroneous) information
+  helps for designing better algorithms. Along the way, we also improve bounds on
+  traditional competitive ratios for existing algorithms.'
+labels:
+- online
+- parsimonious / succinct
+- scheduling
+publications:
+- name: ICML
+  url: https://proceedings.mlr.press/v202/lassota23a.html
+  year: 2023
+  dblp_key: conf/icml/LassotaLMS23
+  bibtex: "@inproceedings{DBLP:conf/icml/LassotaLMS23,\n  author       = {Alexandra\
+    \ Anna Lassota and\n  Alexander Lindermayr and\n  Nicole Megow and\n  Jens Schl{\"\
+    {o}}ter},\n  title        = {Minimalistic Predictions to Schedule Jobs with Online\
+    \ Precedence Constraints},\n  booktitle    = {{ICML}},\n  series       = {Proceedings\
+    \ of Machine Learning Research},\n  volume       = {202},\n  pages        = {18563--18583},\n\
+    \  publisher    = {{PMLR}},\n  year         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2301.12863
+  year: 2023
+  month: 1
+  day: 30
+arxiv: 2301.12863
+s2_id: 650defd092be645dba8ac1bfdddf67d6caffdaa0

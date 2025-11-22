@@ -1,0 +1,43 @@
+title: 'Constrained Online Two-stage Stochastic Optimization: Algorithm with (and
+  without) Predictions'
+authors: Piao Hu, Jiashuo Jiang, Guodong Lyu, Hao Su
+abstract: We consider an online two-stage stochastic optimization with long-term constraints
+  over a finite horizon of $T$ periods. At each period, we take the first-stage action,
+  observe a model parameter realization and then take the second-stage action from
+  a feasible set that depends both on the first-stage decision and the model parameter.
+  We aim to minimize the cumulative objective value while guaranteeing that the long-term
+  average second-stage decision belongs to a set. We develop online algorithms for
+  the online two-stage problem from adversarial learning algorithms. Also, the regret
+  bound of our algorithm can be reduced to the regret bound of embedded adversarial
+  learning algorithms. Based on this framework, we obtain new results under various
+  settings. When the model parameters are drawn from unknown non-stationary distributions
+  and we are given machine-learned predictions of the distributions, we develop a
+  new algorithm from our framework with a regret $O(W_T+\sqrt{T})$, where $W_T$ measures
+  the total inaccuracy of the machine-learned predictions. We then develop another
+  algorithm that works when no machine-learned predictions are given and show the
+  performances.
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2401.01077
+  year: 2024
+  month: 1
+  day: 2
+- name: Social Science Research Network
+  url: https://doi.org/10.48550/arXiv.2401.01077
+  year: 2024
+  dblp_key: journals/corr/abs-2401-01077
+  bibtex: "@article{DBLP:journals/corr/abs-2401-01077,\n  author       = {Piao Hu\
+    \ and\n                  Jiashuo Jiang and\n                  Guodong Lyu and\n\
+    \                  Hao Su},\n  title        = {Constrained Online Two-stage Stochastic\
+    \ Optimization: Algorithm with\n                  (and without) Predictions},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/2401.01077},\n  year        \
+    \ = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2401.01077},\n \
+    \ doi          = {10.48550/ARXIV.2401.01077},\n  eprinttype    = {arXiv},\n  eprint\
+    \       = {2401.01077},\n  timestamp    = {Mon, 15 Jan 2024 16:37:16 +0100},\n\
+    \  biburl       = {https://dblp.org/rec/journals/corr/abs-2401-01077.bib},\n \
+    \ bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+arxiv: 2401.01077
+s2_id: 310ef68639af9e55f335f85197581d635be3138a
+labels:
+- online
+- learning

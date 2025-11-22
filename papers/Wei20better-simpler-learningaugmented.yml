@@ -1,0 +1,34 @@
+title: Better and simpler learning-augmented online caching
+authors: Alexander Wei
+abstract: 'Lykouris and Vassilvitskii (ICML 2018) introduce a model of online caching
+  with machine-learned advice, where each page request additionally comes with a prediction
+  of when that page will next be requested. In this model, a natural goal is to design
+  algorithms that (1) perform well when the advice is accurate and (2) remain robust
+  in the worst case a la traditional competitive analysis. Lykouris and Vassilvitskii
+  give such an algorithm by adapting the Marker algorithm to the learning-augmented
+  setting. In a recent work, Rohatgi (SODA 2020) improves on their result with an
+  approach also inspired by randomized marking. We continue the study of this problem,
+  but with a somewhat different approach: We consider combining the BlindOracle algorithm,
+  which just naively follows the predictions, with an optimal competitive algorithm
+  for online caching in a black-box manner. The resulting algorithm outperforms all
+  existing approaches while being significantly simpler. Moreover, we show that combining
+  BlindOracle with LRU is in fact optimal among deterministic algorithms for this
+  problem.'
+labels:
+- caching / paging
+- online
+publications:
+- name: APPROX-RANDOM
+  url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2020.60
+  year: 2020
+  dblp_key: conf/approx/Wei20
+  bibtex: "@inproceedings{DBLP:conf/approx/Wei20,\n  author       = {Alexander Wei},\n\
+    \  title        = {Better and Simpler Learning-Augmented Online Caching},\n  booktitle\
+    \    = {{APPROX-RANDOM}},\n  series       = {LIPIcs},\n  volume       = {176},\n\
+    \  pages        = {60:1--60:17},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum\
+    \ f{\"{u}}r Informatik},\n  year         = {2020}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2005.13716
+  year: 2020
+  month: 5
+  day: 28

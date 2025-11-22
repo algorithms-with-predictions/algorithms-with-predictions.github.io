@@ -1,0 +1,25 @@
+title: Online TSP with Predictions
+authors: Hu, Wei, Li, Chung, Liao
+abstract: We initiate the study of online routing problems with predictions, inspired
+  by recent exciting results in the area of learning-augmented algorithms. A learning-augmented
+  online algorithm which incorporates predictions in a black-box manner to outperform
+  existing algorithms if the predictions are accurate while otherwise maintaining
+  theoretical guarantees even when the predictions are extremely erroneous is a popular
+  framework for overcoming pessimistic worst-case competitive analysis. In this study,
+  we particularly begin investigating the classical online traveling salesman problem
+  (OLTSP), where future requests are augmented with predictions. Unlike the prediction
+  models in other previous studies, each actual request in the OLTSP, associated with
+  its arrival time and position, may not coincide with the predicted ones, which,
+  as imagined, leads to a troublesome situation. Our main result is to study different
+  prediction models and design algorithms to improve the best-known results in the
+  different settings. Moreover, we generalize the proposed results to the online dial-a-ride
+  problem.
+labels:
+- online
+- routing / TSP
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2206.15364
+  year: 2022
+  month: 6
+  day: 30

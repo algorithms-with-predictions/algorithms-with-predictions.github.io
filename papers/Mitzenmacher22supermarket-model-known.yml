@@ -1,0 +1,38 @@
+title: The Supermarket Model with Known and Predicted Service Times
+authors: Mitzenmacher, Dell Amico
+abstract: The supermarket model refers to a system with a large number of queues,
+  where arriving customers choose d queues at random and join the queue with the fewest
+  customers. The supermarket model demonstrates the power of even small amounts of
+  choice, as compared to simply joining a queue chosen uniformly at random, for load
+  balancing systems. In this work we perform simulation-based studies to consider
+  variations where service times for a customer are predicted, as might be done in
+  modern settings using machine learning techniques or related mechanisms. Our primary
+  takeaway is that using even seemingly weak predictions of service times can yield
+  significant benefits over blind First In First Out queueing in this context. However,
+  some care must be taken when using predicted service time information to both choose
+  a queue and order elements for service within a queue; while in many cases using
+  the information for both choosing and ordering is beneficial, in many of our simulation
+  settings we find that simply using the number of jobs to choose a queue is better
+  when using predicted service times to order jobs in a queue. In our simulations,
+  we evaluate both synthetic and real-world workloads--in the latter, service times
+  are predicted by machine learning. Our results provide practical guidance for the
+  design of real-world systems; moreover, we leave many natural theoretical open questions
+  for future work, validating their relevance to real-world situations.
+labels:
+- online
+- scheduling
+publications:
+- name: IEEE Trans. Parallel Distributed Syst.
+  url: https://doi.org/10.1109/TPDS.2022.3146195
+  year: 2022
+  dblp_key: journals/tpds/MitzenmacherD22
+  bibtex: "@article{DBLP:journals/tpds/MitzenmacherD22,\n  author       = {Michael\
+    \ Mitzenmacher and\n  Matteo Dell'Amico},\n  title        = {The Supermarket Model\
+    \ With Known and Predicted Service Times},\n  journal      = {{IEEE} Trans. Parallel\
+    \ Distributed Syst.},\n  volume       = {33},\n  number       = {11},\n  pages\
+    \        = {2740--2751},\n  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/1905.12155
+  year: 2019
+  month: 5
+  day: 23

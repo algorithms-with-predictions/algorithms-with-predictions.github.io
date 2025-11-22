@@ -1,0 +1,30 @@
+title: Non-Clairvoyant Scheduling with Predictions
+authors: Im, Kumar, Quaem, Purohit
+abstract: In the single-machine non-clairvoyant scheduling problem, the goal is to
+  minimize the total completion time of jobs whose processing times are unknown a
+  priori. We revisit this well-studied problem and consider the question of how to
+  effectively use (possibly erroneous) predictions of the processing times. We study
+  this question from ground zero by first asking what constitutes a good prediction;
+  we then propose a new measure to gauge prediction quality and design scheduling
+  algorithms with strong guarantees under this measure. Our approach to derive a prediction
+  error measure based on natural desiderata could find applications for other online
+  problems.
+labels:
+- online
+- scheduling
+publications:
+- name: ACM Trans. Parallel Comput.
+  url: https://doi.org/10.1145/3593969
+  year: 2023
+  dblp_key: journals/topc/ImKQP23
+  bibtex: "@article{DBLP:journals/topc/ImKQP23,\n  author       = {Sungjin Im and\n\
+    \  Ravi Kumar and\n  Mahshid Montazer Qaem and\n  Manish Purohit},\n  title  \
+    \      = {Non-clairvoyant Scheduling with Predictions},\n  journal      = {{ACM}\
+    \ Trans. Parallel Comput.},\n  volume       = {10},\n  number       = {4},\n \
+    \ pages        = {19:1--19:26},\n  year         = {2023}\n}\n"
+- name: ISAIM
+  url: https://isaim2022.cs.ou.edu/papers/ISAIM2022_Sequencing_Im.pdf
+  year: 2022
+- name: SPAA
+  url: https://dl.acm.org/doi/10.1145/3409964.3461790
+  year: 2021

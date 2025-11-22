@@ -1,0 +1,26 @@
+title: Scheduling with Speed Predictions
+authors: Balkanski, Ou, Stein, Wei
+labels:
+- online
+- scheduling
+publications:
+- name: Theory Comput. Syst.
+  url: https://doi.org/10.1007/s00224-024-10200-z
+  year: 2025
+  dblp_key: journals/mst/BalkanskiOSW25
+  bibtex: "@article{DBLP:journals/mst/BalkanskiOSW25,\n  author       = {Eric Balkanski and\n  Tingting Ou and\n  Clifford\
+    \ Stein and\n  Hao{-}Ting Wei},\n  title        = {Scheduling with Speed Predictions},\n  journal      = {Theory Comput.\
+    \ Syst.},\n  volume       = {69},\n  number       = {1},\n  pages        = {16},\n  year         = {2025}\n}\n"
+- name: WAOA
+  url: https://doi.org/10.1007/978-3-031-49815-2_6
+  year: 2023
+  dblp_key: conf/waoa/BalkanskiOSW23
+  bibtex: "@inproceedings{DBLP:conf/waoa/BalkanskiOSW23,\n  author       = {Eric Balkanski and\n  Tingting Ou and\n  Clifford\
+    \ Stein and\n  Hao{-}Ting Wei},\n  title        = {Scheduling with Speed Predictions},\n  booktitle    = {{WAOA}},\n \
+    \ series       = {Lecture Notes in Computer Science},\n  volume       = {14297},\n  pages        = {74--89},\n  publisher\
+    \    = {Springer},\n  year         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2205.01247
+  year: 2022
+  month: 5
+  day: 2

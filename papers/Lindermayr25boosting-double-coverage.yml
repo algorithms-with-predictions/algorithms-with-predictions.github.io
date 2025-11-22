@@ -1,0 +1,19 @@
+title: Boosting Double Coverage for k-Server via Imperfect Predictions
+authors: Alexander Lindermayr, Nicole Megow, Bertrand Simon
+publications:
+- name: Algorithmica
+  url: https://doi.org/10.1007/s00453-025-01333-9
+  year: 2025
+  dblp_key: journals/algorithmica/LindermayrMS25
+  bibtex: "@article{DBLP:journals/algorithmica/LindermayrMS25,\n  author       = {Alexander\
+    \ Lindermayr and\n                  Nicole Megow and\n                  Bertrand\
+    \ Simon},\n  title        = {Boosting Double Coverage for k-Server via Imperfect\
+    \ Predictions},\n  journal      = {Algorithmica},\n  volume       = {87},\n  number\
+    \       = {11},\n  pages        = {1477--1517},\n  year         = {2025},\n  url\
+    \          = {https://doi.org/10.1007/s00453-025-01333-9},\n  doi          = {10.1007/S00453-025-01333-9},\n\
+    \  timestamp    = {Sat, 04 Oct 2025 20:35:01 +0200},\n  biburl       = {https://dblp.org/rec/journals/algorithmica/LindermayrMS25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+s2_id: 4f252e37cd47a9d70779d09c9c3caaff46d4a785
+labels:
+- online
+- k-server / MTS

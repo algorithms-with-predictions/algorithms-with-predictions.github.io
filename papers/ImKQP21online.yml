@@ -1,9 +1,0 @@
-authors: Im, Kumar, Quaem, Purohit
-title: Online Knapsack with Frequency Predictions
-publications:
-  - name: NeurIPS
-    url: https://proceedings.neurips.cc/paper/2021/file/161c5c5ad51fcc884157890511b3c8b0-Paper.pdf
-    year: 2021
-labels:
-  - online
-  - packing

@@ -1,0 +1,11 @@
+title: Improved Learning-Augmented Algorithms and (Tight) Lower Bounds for Multi-Option
+  Ski Rental Problem
+authors: Yongho Shin, Changyeol Lee, Gukryeol Lee, Hyung-Chan An
+publications:
+- name: ACM Trans. Algorithms
+  year: 2025
+  url: https://doi.org/10.1145/3763239
+s2_id: 01485b8dc6bbd4ab257f2b1afe62e1bc6041eb16
+labels:
+- rent-or-buy
+- online

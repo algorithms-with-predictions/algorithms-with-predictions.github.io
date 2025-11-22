@@ -1,0 +1,48 @@
+title: On the Complexity of Algorithms with Predictions for Dynamic Graph Problems
+authors: Monika Henzinger, Andrea Lincoln, B. Saha, Martin P. Seybold, Christopher
+  Ye
+abstract: '{\em Algorithms with predictions} incorporate machine learning predictions
+  into algorithm design. A plethora of recent works incorporated predictions to improve
+  on worst-case optimal bounds for online problems. In this paper, we initiate the
+  study of complexity of dynamic data structures with predictions, including dynamic
+  graph algorithms. Unlike in online algorithms, the main goal in dynamic data structures
+  is to maintain the solution {\em efficiently} with every update. Motivated by work
+  in online algorithms, we investigate three natural models of predictions: (1) $\varepsilon$-accurate
+  predictions where each predicted request matches the true request with probability
+  at least $\varepsilon$, (2) list-accurate predictions where a true request comes
+  from a list of possible requests, and (3) bounded delay predictions where the true
+  requests are some (unknown) permutations of the predicted requests. For $\varepsilon$-accurate
+  predictions, we show that lower bounds from the non-prediction setting of a problem
+  carry over, up to a $1-\varepsilon$ factor. Then we give general reductions among
+  the prediction models for a problem, showing that lower bounds for bounded delay
+  imply lower bounds for list-accurate predictions, which imply lower bounds for $\varepsilon$-accurate
+  predictions. Further, we identify two broad problem classes based on lower bounds
+  due to the Online Matrix Vector (OMv) conjecture. Specifically, we show that dynamic
+  problems that are {\em locally correctable} have strong conditional lower bounds
+  for list-accurate predictions that are equivalent to the non-prediction setting,
+  unless list-accurate predictions are perfect. Moreover, dynamic problems that are
+  {\em locally reducible} have a smooth transition in the running time. We categorize
+  problems accordingly and give upper bounds that show that our lower bounds are almost
+  tight, including problems in dynamic graphs.'
+labels:
+- dynamic / data structure
+- running time
+publications:
+- name: ITCS
+  url: https://doi.org/10.4230/LIPIcs.ITCS.2024.62
+  year: 2024
+  dblp_key: conf/innovations/HenzingerSSY24
+  bibtex: "@inproceedings{DBLP:conf/innovations/HenzingerSSY24,\n  author       =\
+    \ {Monika Henzinger and\n  Barna Saha and\n  Martin P. Seybold and\n  Christopher\
+    \ Ye},\n  title        = {On the Complexity of Algorithms with Predictions for\
+    \ Dynamic Graph\n  Problems},\n  booktitle    = {{ITCS}},\n  series       = {LIPIcs},\n\
+    \  volume       = {287},\n  pages        = {62:1--62:25},\n  publisher    = {Schloss\
+    \ Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2024}\n\
+    }\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2307.16771
+  year: 2023
+  month: 7
+  day: 31
+arxiv: 2307.16771
+s2_id: e4b208967f720797d1e8c2e74da09cfdb5285b2d

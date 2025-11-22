@@ -1,0 +1,42 @@
+title: Learning-Augmented Search Data Structures
+authors: Chunkai Fu, Brandon G. Nguyen, Jung Hoon Seo, Ryan Zesch, Samson Zhou
+abstract: We study the integration of machine learning advice to improve upon traditional
+  data structure designed for efficient search queries. Although there has been recent
+  effort in improving the performance of binary search trees using machine learning
+  advice, e.g., Lin et. al. (ICML 2022), the resulting constructions nevertheless
+  suffer from inherent weaknesses of binary search trees, such as complexity of maintaining
+  balance across multiple updates and the inability to handle partially-ordered or
+  high-dimensional datasets. For these reasons, we focus on skip lists and KD trees
+  in this work. Given access to a possibly erroneous oracle that outputs estimated
+  fractional frequencies for search queries on a set of items, we construct skip lists
+  and KD trees that provably provides the optimal expected search time, within nearly
+  a factor of two. In fact, our learning-augmented skip lists and KD trees are still
+  optimal up to a constant factor, even if the oracle is only accurate within a constant
+  factor. We also demonstrate robustness by showing that our data structures achieves
+  an expected search time that is within a constant factor of an oblivious skip list/KD
+  tree construction even when the predictions are arbitrarily incorrect. Finally,
+  we empirically show that our learning-augmented search data structures outperforms
+  their corresponding traditional analogs on both synthetic and real-world datasets.
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2402.10457
+  year: 2024
+  month: 2
+  day: 16
+- name: ICLR
+  year: 2024
+  dblp_key: conf/iclr/FuNSZZ25
+  bibtex: "@inproceedings{DBLP:conf/iclr/FuNSZZ25,\n  author       = {Chunkai Fu and\n\
+    \                  Brandon G. Nguyen and\n                  Jung Hoon Seo and\n\
+    \                  Ryan S. Zesch and\n                  Samson Zhou},\n  title\
+    \        = {Learning-Augmented Search Data Structures},\n  booktitle    = {The\
+    \ Thirteenth International Conference on Learning Representations,\n         \
+    \         {ICLR} 2025, Singapore, April 24-28, 2025},\n  publisher    = {OpenReview.net},\n\
+    \  year         = {2025},\n  url          = {https://openreview.net/forum?id=N4rYbQowE3},\n\
+    \  timestamp    = {Thu, 15 May 2025 17:19:05 +0200},\n  biburl       = {https://dblp.org/rec/conf/iclr/FuNSZZ25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+arxiv: 2402.10457
+s2_id: 5be825b686180e5e8dc434dc34df0fe6d75041e9
+labels:
+- search
+- dynamic / data structure

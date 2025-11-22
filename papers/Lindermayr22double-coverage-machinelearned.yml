@@ -1,0 +1,40 @@
+title: Double Coverage with Machine-Learned Advice
+authors: Alexander Lindermayr, Nicole Megow, B. Simon
+abstract: We study the fundamental online k-server problem in a learning-augmented
+  setting. While in the traditional online model, an algorithm has no information
+  about the request sequence, we assume that there is given some advice (e.g. machine-learned
+  predictions) on an algorithm's decision. There is, however, no guarantee on the
+  quality of the prediction and it might be far from being correct. Our main result
+  is a learning-augmented variation of the well-known Double Coverage algorithm for
+  k-server on the line (Chrobak et al., SIDMA 1991) in which we integrate predictions
+  as well as our trust into their quality. We give an error-dependent competitive
+  ratio, which is a function of a user-defined confidence parameter, and which interpolates
+  smoothly between an optimal consistency, the performance in case that all predictions
+  are correct, and the best-possible robustness regardless of the prediction quality.
+  When given good predictions, we improve upon known lower bounds for online algorithms
+  without advice. We further show that our algorithm achieves for any k an almost
+  optimal consistency-robustness tradeoff, within a class of deterministic algorithms
+  respecting local and memoryless properties. Our algorithm outperforms a previously
+  proposed (more general) learning-augmented algorithm. It is remarkable that the
+  previous algorithm crucially exploits memory, whereas our algorithm is memoryless.
+  Finally, we demonstrate in experiments the practicability and the superior performance
+  of our algorithm on real-world data.
+labels:
+- k-server / MTS
+- online
+publications:
+- name: ITCS
+  url: https://drops.dagstuhl.de/opus/volltexte/2022/15695/pdf/LIPIcs-ITCS-2022-99.pdf
+  year: 2022
+  dblp_key: conf/innovations/LindermayrMS22
+  bibtex: "@inproceedings{DBLP:conf/innovations/LindermayrMS22,\n  author       =\
+    \ {Alexander Lindermayr and\n  Nicole Megow and\n  Bertrand Simon},\n  title \
+    \       = {Double Coverage with Machine-Learned Advice},\n  booktitle    = {{ITCS}},\n\
+    \  series       = {LIPIcs},\n  volume       = {215},\n  pages        = {99:1--99:18},\n\
+    \  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n\
+    \  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2103.01640
+  year: 2021
+  month: 3
+  day: 2

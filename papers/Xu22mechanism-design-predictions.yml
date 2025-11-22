@@ -1,0 +1,20 @@
+title: Mechanism Design with Predictions
+authors: Xu, Lu
+labels:
+- auctions
+- facility location
+- game theory / mechanism design
+- scheduling
+publications:
+- name: IJCAI
+  url: https://doi.org/10.24963/ijcai.2022/81
+  year: 2022
+  dblp_key: conf/ijcai/XuL22
+  bibtex: "@inproceedings{DBLP:conf/ijcai/XuL22,\n  author       = {Chenyang Xu and\n  Pinyan Lu},\n  title        = {Mechanism\
+    \ Design with Predictions},\n  booktitle    = {{IJCAI}},\n  pages        = {571--577},\n  publisher    = {ijcai.org},\n\
+    \  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2205.11313
+  year: 2022
+  month: 5
+  day: 23

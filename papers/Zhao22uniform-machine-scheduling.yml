@@ -1,0 +1,28 @@
+title: Uniform Machine Scheduling with Predictions
+authors: Tianming Zhao, Wei Li, Albert Y. Zomaya
+abstract: The revival in learning theory has provided us with improved capabilities
+  for accurate predictions. This work contributes to an emerging research agenda of
+  online scheduling with predictions by studying the makespan minimization in uniformly
+  related machine non-clairvoyant scheduling with job size predictions. Our task is
+  to design online algorithms that effectively use predictions and have performance
+  guarantees with varying prediction quality. We first propose a simple algorithm-independent
+  prediction error measurement to quantify prediction quality. To effectively use
+  the predicted job sizes, we design an offline improved 2-relaxed decision procedure
+  approximating the optimal schedule. With this decision procedure, we propose an
+  online O(min{log eta, log m})-competitive algorithm that assumes a known prediction
+  error. Finally, we extend this algorithm to construct a robust O(min{log eta, log
+  m})-competitive algorithm that does not assume a known error. Both algorithms require
+  only moderate predictions to improve the well-known Omega(log m) lower bound, showing
+  the potential of using predictions in managing uncertainty.
+labels:
+- online
+- scheduling
+publications:
+- name: ICAPS
+  url: https://ojs.aaai.org/index.php/ICAPS/article/view/19827
+  year: 2022
+  dblp_key: conf/aips/Zhao0Z22
+  bibtex: "@inproceedings{DBLP:conf/aips/Zhao0Z22,\n  author       = {Tianming Zhao\
+    \ and\n  Wei Li and\n  Albert Y. Zomaya},\n  title        = {Uniform Machine Scheduling\
+    \ with Predictions},\n  booktitle    = {{ICAPS}},\n  pages        = {413--422},\n\
+    \  publisher    = {{AAAI} Press},\n  year         = {2022}\n}\n"

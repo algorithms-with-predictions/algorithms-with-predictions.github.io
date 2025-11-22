@@ -1,0 +1,19 @@
+title: A short note about the learning-augmented secretary problem
+authors: Choo, Ling
+abstract: We consider the secretary problem through the lens of learning-augmented
+  algorithms. As it is known that the best possible expected competitive ratio is
+  $1/e$ in the classic setting without predictions, a natural goal is to design algorithms
+  that are 1-consistent and $1/e$-robust. Unfortunately, [FY24] provided hardness
+  constructions showing that such a goal is not attainable when the candidates' true
+  values are allowed to scale with $n$. Here, we provide a simple and explicit alternative
+  hardness construction showing that such a goal is not achievable even when the candidates'
+  true values are constants that do not scale with $n$.
+labels:
+- online
+- secretary
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2410.06583
+  year: 2024
+  month: 10
+  day: 9

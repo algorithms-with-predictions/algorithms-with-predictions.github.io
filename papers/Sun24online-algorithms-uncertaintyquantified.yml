@@ -1,0 +1,35 @@
+title: Online Algorithms with Uncertainty-Quantified Predictions
+authors: Sun, Huang, Christianson, Hajiesmaili, Wierman
+abstract: The burgeoning field of algorithms with predictions studies the problem
+  of using possibly imperfect machine learning predictions to improve online algorithm
+  performance. While nearly all existing algorithms in this framework make no assumptions
+  on prediction quality, a number of methods providing uncertainty quantification
+  (UQ) on machine learning models have been developed in recent years, which could
+  enable additional information about prediction quality at decision time. In this
+  work, we investigate the problem of optimally utilizing uncertainty-quantified predictions
+  in the design of online algorithms. In particular, we study two classic online problems,
+  ski rental and online search, where the decision-maker is provided predictions augmented
+  with UQ describing the likelihood of the ground truth falling within a particular
+  range of values. We demonstrate that non-trivial modifications to algorithm design
+  are needed to fully leverage the UQ predictions. Moreover, we consider how to utilize
+  more general forms of UQ, proposing an online learning framework that learns to
+  exploit UQ to make decisions in multi-instance settings.
+labels:
+- online
+- rent-or-buy
+- search
+publications:
+- name: ICML
+  url: https://openreview.net/forum?id=xF656w37Mj
+  year: 2024
+  dblp_key: conf/icml/0004HCHWB24
+  bibtex: "@inproceedings{DBLP:conf/icml/0004HCHWB24,\n  author       = {Bo Sun and\n\
+    \  Jerry Huang and\n  Nicolas Christianson and\n  Mohammad Hajiesmaili and\n \
+    \ Adam Wierman and\n  Raouf Boutaba},\n  title        = {Online Algorithms with\
+    \ Uncertainty-Quantified Predictions},\n  booktitle    = {{ICML}},\n  publisher\
+    \    = {OpenReview.net},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2310.11558
+  year: 2023
+  month: 10
+  day: 17

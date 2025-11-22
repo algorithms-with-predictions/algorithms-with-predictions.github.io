@@ -1,0 +1,38 @@
+title: Distributed Graph Algorithms with Predictions
+authors: Boyar, Ellen, Larsen
+abstract: We initiate the study of deterministic distributed graph algorithms with
+  predictions in synchronous message passing systems. The process at each node in
+  the graph is given a prediction, which is some extra information about the problem
+  instance that may be incorrect. The processes may use the predictions to help them
+  solve the problem. The overall goal is to develop algorithms that both work faster
+  when predictions are good and do not work much worse than algorithms without predictions
+  when predictions are bad. Concepts from the more general area of algorithms with
+  predictions, such as error measures, consistency, robustness, and smoothness, are
+  adapted to distributed graph algorithms with predictions. We consider algorithms
+  with predictions for four distributed graph problems, Maximal Independent Set, Maximal
+  Matching, $(\Delta+1)$-Vertex Coloring, and $(2\Delta-1)$-Edge Coloring, where $\Delta$
+  denotes the degree of the graph. For each, we define an appropriate error measure.
+  We present generic templates that can be used to design deterministic distributed
+  graph algorithms with predictions from existing algorithms without predictions.
+  Using these templates, we develop algorithms with predictions for Maximal Independent
+  Set. Alternative error measures for the Maximal Independent Set problem are also
+  considered. We obtain algorithms with predictions for general graphs and for rooted
+  trees and analyze them using two of these error measures.
+labels:
+- distributed algorithms
+- graph problems
+publications:
+- name: PODC
+  url: https://doi.org/10.1145/3732772.3733530
+  year: 2025
+  dblp_key: conf/podc/BoyarEL25
+  bibtex: "@inproceedings{DBLP:conf/podc/BoyarEL25,\n  author       = {Joan Boyar\
+    \ and\n  Faith Ellen and\n  Kim S. Larsen},\n  title        = {Brief Announcement:\
+    \ Distributed Graph Algorithms with Predictions},\n  booktitle    = {{PODC}},\n\
+    \  pages        = {322--325},\n  publisher    = {{ACM}},\n  year         = {2025}\n\
+    }\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2501.05267
+  year: 2025
+  month: 1
+  day: 9

@@ -1,0 +1,28 @@
+title: Learning Augmented Energy Minimization via Speed Scaling
+authors: Bamas, Maggiori, Rohwedder, Svensson
+abstract: As power management has become a primary concern in modern data centers,
+  computing resources are being scaled dynamically to minimize energy consumption.
+  We initiate the study of a variant of the classic online speed scaling problem,
+  in which machine learning predictions about the future can be integrated naturally.
+  Inspired by recent work on learning-augmented online algorithms, we propose an algorithm
+  which incorporates predictions in a black-box manner and outperforms any online
+  algorithm if the accuracy is high, yet maintains provable guarantees if the prediction
+  is very inaccurate. We provide both theoretical and experimental evidence to support
+  our claims.
+labels:
+- online
+- scheduling
+publications:
+- name: NeurIPS
+  url: https://papers.nips.cc/paper/2020/file/af94ed0d6f5acc95f97170e3685f16c0-Paper.pdf
+  year: 2020
+  dblp_key: conf/nips/BamasMRS20
+  bibtex: "@inproceedings{DBLP:conf/nips/BamasMRS20,\n  author       = {{\\'{E}}tienne\
+    \ Bamas and\n  Andreas Maggiori and\n  Lars Rohwedder and\n  Ola Svensson},\n\
+    \  title        = {Learning Augmented Energy Minimization via Speed Scaling},\n\
+    \  booktitle    = {NeurIPS},\n  year         = {2020}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2010.11629
+  year: 2020
+  month: 10
+  day: 22

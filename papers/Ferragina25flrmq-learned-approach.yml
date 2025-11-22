@@ -1,0 +1,15 @@
+title: "FL-RMQ: A Learned Approach to Range Minimum Queries"
+authors: Ferragina, Lari
+labels:
+- dynamic / data structure
+publications:
+- name: CPM
+  url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CPM.2025.7
+  year: 2025
+  month: 6
+  day: 10
+  dblp_key: conf/cpm/FerraginaL25
+  bibtex: "@inproceedings{DBLP:conf/cpm/FerraginaL25,\n  author       = {Paolo Ferragina and\n  Filippo Lari},\n  title  \
+    \      = {{FL-RMQ:} {A} Learned Approach to Range Minimum Queries},\n  booktitle    = {{CPM}},\n  series       = {LIPIcs},\n\
+    \  volume       = {331},\n  pages        = {7:1--7:23},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r\
+    \ Informatik},\n  year         = {2025}\n}\n"

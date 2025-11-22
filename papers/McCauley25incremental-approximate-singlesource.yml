@@ -1,0 +1,47 @@
+title: Incremental Approximate Single-Source Shortest Paths with Predictions
+authors: Samuel McCauley, Benjamin Moseley, Aidin Niaparast, Helia Niaparast, Shikha
+  Singh
+abstract: The algorithms-with-predictions framework has been used extensively to develop
+  online algorithms with improved beyond-worst-case competitive ratios. Recently,
+  there is growing interest in leveraging predictions for designing data structures
+  with improved beyond-worst-case running times. In this paper, we study the fundamental
+  data structure problem of maintaining approximate shortest paths in incremental
+  graphs in the algorithms-with-predictions model. Given a sequence $\sigma$ of edges
+  that are inserted one at a time, the goal is to maintain approximate shortest paths
+  from the source to each vertex in the graph at each time step. Before any edges
+  arrive, the data structure is given a prediction of the online edge sequence $\hat{\sigma}$
+  which is used to ``warm start'' its state. As our main result, we design a learned
+  algorithm that maintains $(1+\epsilon)$-approximate single-source shortest paths,
+  which runs in $\tilde{O}(m \eta \log W/\epsilon)$ time, where $W$ is the weight
+  of the heaviest edge and $\eta$ is the prediction error. We show these techniques
+  immediately extend to the all-pairs shortest-path setting as well. Our algorithms
+  are consistent (performing nearly as fast as the offline algorithm) when predictions
+  are nearly perfect, have a smooth degradation in performance with respect to the
+  prediction error and, in the worst case, match the best offline algorithm up to
+  logarithmic factors. As a building block, we study the offline incremental approximate
+  single-source shortest-paths problem. In this problem, the edge sequence $\sigma$
+  is known a priori and the goal is to efficiently return the length of the shortest
+  paths in the intermediate graph $G_t$ consisting of the first $t$ edges, for all
+  $t$. Note that the offline incremental problem is defined in the worst-case setting
+  (without predictions) and is of independent interest.
+labels:
+- dynamic / data structure
+- graph problems
+- shortest path
+publications:
+- name: ICALP
+  url: https://doi.org/10.4230/LIPIcs.ICALP.2025.117
+  year: 2025
+  dblp_key: conf/icalp/McCauleyMNN025
+  bibtex: "@inproceedings{DBLP:conf/icalp/McCauleyMNN025,\n  author       = {Samuel\
+    \ McCauley and\n  Benjamin Moseley and\n  Aidin Niaparast and\n  Helia Niaparast\
+    \ and\n  Shikha Singh},\n  title        = {Incremental Approximate Single-Source\
+    \ Shortest Paths with Predictions},\n  booktitle    = {{ICALP}},\n  series   \
+    \    = {LIPIcs},\n  volume       = {334},\n  pages        = {117:1--117:20},\n\
+    \  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n\
+    \  year         = {2025}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2502.08125
+  year: 2025
+  month: 2
+  day: 12

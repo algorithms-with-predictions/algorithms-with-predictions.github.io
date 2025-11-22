@@ -1,0 +1,21 @@
+title: Learning-Augmented Robust Algorithmic Recourse
+authors: Kshitij Kayastha, Vasilis Gkatzelis, Shahin Jabbari
+abstract: Algorithmic recourse provides individuals who receive undesirable outcomes
+  from machine learning systems with minimum-cost improvements to achieve a desirable
+  outcome. However, machine learning models often get updated, so the recourse may
+  not lead to the desired outcome. The robust recourse framework chooses recourses
+  that are less sensitive to adversarial model changes, but this comes at a higher
+  cost. To address this, we initiate the study of learning-augmented algorithmic recourse
+  and evaluate the extent to which a designer equipped with a prediction of the future
+  model can reduce the cost of recourse when the prediction is accurate (consistency)
+  while also limiting the cost even when the prediction is inaccurate (robustness).
+  We propose a novel algorithm, study the robustness-consistency trade-off, and analyze
+  how prediction accuracy affects performance.
+labels:
+- robustness
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2410.01580
+  year: 2024
+  month: 10
+  day: 2

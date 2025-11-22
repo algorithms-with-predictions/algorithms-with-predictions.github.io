@@ -1,0 +1,26 @@
+title: Improving the Price of Anarchy via Predictions in Parallel-Link Networks
+authors: George Christodoulou, Vasilis Christoforidis, Alkmini Sgouritsa, Ioannis
+  Vlachos
+abstract: 'We study non-atomic congestion games on parallel-link networks with affine
+  cost functions. We investigate the power of machine-learned predictions in the design
+  of coordination mechanisms aimed at minimizing the impact of selfishness. Our main
+  results demonstrate that enhancing coordination mechanisms with a simple advice
+  on the input rate can optimize the social cost whenever the advice is accurate (consistency),
+  while only incurring minimal losses even when the predictions are arbitrarily inaccurate
+  (bounded robustness). Moreover, we provide a full characterization of the consistent
+  mechanisms that holds for all monotone cost functions, and show that our suggested
+  mechanism is optimal with respect to the robustness. We further explore the notion
+  of smoothness within this context: we extend our mechanism to achieve error-tolerance,
+  i.e. we provide an approximation guarantee that degrades smoothly as a function
+  of the prediction error, up to a predetermined threshold, while achieving a bounded
+  robustness.'
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2507.07915
+  year: 2025
+  month: 7
+  day: 10
+arxiv: 2507.07915
+s2_id: daf650290c6558bdd053c702fc4196bdb8a0e6b9
+labels:
+- game theory / mechanism design

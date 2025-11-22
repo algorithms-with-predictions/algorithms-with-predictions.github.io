@@ -1,0 +1,31 @@
+title: Approximate Proportionality in Online Fair Division
+authors: Davin Choo, Winston Fu, Derek Khu, Tzeh Yuan Neoh, Tze-Yang Poon, Nicholas
+  Teh
+abstract: We study the online fair division problem, where indivisible goods arrive
+  sequentially and must be allocated immediately and irrevocably to agents. Prior
+  work has established strong impossibility results for approximating classic fairness
+  notions, such as envy-freeness and maximin share fairness, in this setting. In contrast,
+  we focus on proportionality up to one good (PROP1), a natural relaxation of proportionality
+  whose approximability remains unresolved. We begin by showing that three natural
+  greedy algorithms fail to guarantee any positive approximation to PROP1 in general,
+  against an adaptive adversary. This is surprising because greedy algorithms are
+  commonly used in fair division and a natural greedy algorithm is known to be able
+  to achieve PROP1 under additional information assumptions. This hardness result
+  motivates the study of non-adaptive adversaries and the use of side-information,
+  in the spirit of learning-augmented algorithms. For non-adaptive adversaries, we
+  show that the simple uniformly random allocation can achieve a meaningful PROP1
+  approximation with high probability. Meanwhile, we present an algorithm that obtain
+  robust approximation ratios against PROP1 when given predictions of the maximum
+  item value (MIV). Interestingly, we also show that stronger fairness notions such
+  as EF1, MMS, and PROPX remain inapproximable even with perfect MIV predictions.
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2508.03253
+  year: 2025
+  month: 8
+  day: 5
+arxiv: 2508.03253
+s2_id: b2fa087a302940c92073b007c24c3b1a8e434a15
+labels:
+- online
+- allocation / matching

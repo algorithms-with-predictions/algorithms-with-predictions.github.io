@@ -1,9 +1,0 @@
-authors: Aamand, Chen, Indyk
-title: Online Bipartite Matching with Predicted Degrees
-publications:
-  - name: arXiv
-    url: https://arxiv.org/abs/2110.11439
-    year: 2021
-labels:
-  - online
-  - matching

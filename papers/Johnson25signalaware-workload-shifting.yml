@@ -1,0 +1,32 @@
+title: Signal-Aware Workload Shifting Algorithms with Uncertainty-Quantified Predictors
+authors: Johnson, Lechowicz, Hajiesmaili
+abstract: 'A wide range of sustainability and grid-integration strategies depend on
+  workload shifting, which aligns the timing of energy consumption with external signals
+  such as grid curtailment events, carbon intensity, or time-of-use electricity prices.
+  The main challenge lies in the online nature of the problem: operators must make
+  real-time decisions (e.g., whether to consume energy now) without knowledge of the
+  future. While forecasts of signal values are typically available, prior work on
+  learning-augmented online algorithms has relied almost exclusively on simple point
+  forecasts. In parallel, the forecasting research has made significant progress in
+  uncertainty quantification (UQ), which provides richer and more fine-grained predictive
+  information. In this paper, we study how online workload shifting can leverage UQ
+  predictors to improve decision-making. We introduce $\texttt{UQ-Advice}$, a learning-augmented
+  algorithm that systematically integrates UQ forecasts through a $\textit{decision
+  uncertainty score}$ that measures how forecast uncertainty affects optimal future
+  decisions. By introducing $\textit{UQ-robustness}$, a new metric that characterizes
+  how performance degrades with forecast uncertainty, we establish theoretical performance
+  guarantees for $\texttt{UQ-Advice}$. Finally, using trace-driven experiments on
+  carbon intensity and electricity price data, we demonstrate that $\texttt{UQ-Advice}$
+  consistently outperforms robust baselines and existing learning-augmented methods
+  that ignore uncertainty.'
+labels:
+- online
+- allocation / matching
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2509.26511
+  year: 2025
+  month: 10
+  day: 21
+  dblp_key: null
+  bibtex: null

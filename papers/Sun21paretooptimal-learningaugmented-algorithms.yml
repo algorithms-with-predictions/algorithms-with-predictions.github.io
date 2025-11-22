@@ -1,0 +1,30 @@
+title: Pareto-optimal learning-augmented algorithms for online conversion problems
+authors: Sun, Lee, Hajiesmaili, Wierman, Tsang
+abstract: This paper leverages machine-learned predictions to design competitive algorithms
+  for online conversion problems with the goal of improving the competitive ratio
+  when predictions are accurate (i.e., consistency), while also guaranteeing a worst-case
+  competitive ratio regardless of the prediction quality (i.e., robustness). We unify
+  the algorithmic design of both integral and fractional conversion problems, which
+  are also known as the 1-max-search and one-way trading problems, into a class of
+  online threshold-based algorithms (OTA). By incorporating predictions into design
+  of OTA, we achieve the Pareto-optimal trade-off of consistency and robustness, i.e.,
+  no online algorithm can achieve a better consistency guarantee given for a robustness
+  guarantee. We demonstrate the performance of OTA using numerical experiments on
+  Bitcoin conversion.
+labels:
+- online
+publications:
+- name: NeurIPS
+  url: https://proceedings.neurips.cc/paper/2021/file/55a988dfb00a914717b3000a3374694c-Paper.pdf
+  year: 2021
+  dblp_key: conf/nips/SunLHWT21
+  bibtex: "@inproceedings{DBLP:conf/nips/SunLHWT21,\n  author       = {Bo Sun and\n\
+    \  Russell Lee and\n  Mohammad H. Hajiesmaili and\n  Adam Wierman and\n  Danny\
+    \ H. K. Tsang},\n  title        = {Pareto-Optimal Learning-Augmented Algorithms\
+    \ for Online Conversion\n  Problems},\n  booktitle    = {NeurIPS},\n  pages  \
+    \      = {10339--10350},\n  year         = {2021}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2109.01556
+  year: 2021
+  month: 9
+  day: 3

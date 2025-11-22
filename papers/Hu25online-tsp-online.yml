@@ -1,0 +1,25 @@
+title: Online TSP and Online Dial-a-Ride with Predictions
+authors: Hsiao-Yu Hu, Hao-Ting Wei, Meng-Hsi Li, Kai-Min Chung, Chung-Shou Liao
+abstract: 'We study online routing problems with predictions, inspired by recent exciting
+  results emerged from the area of learning-augmented algorithms. A learning-augmented
+  online algorithm, which incorporates predictions into a black-box manner to outperform
+  existing algorithms if the predictions are accurate while otherwise maintaining
+  theoretical guarantees, is a popular framework for overcoming pessimistic worst-case
+  competitive analysis. In this paper, we particularly investigate the classical online
+  traveling salesman problem (OLTSP) and online dial-a-ride problem (OLDARP), where
+  future requests are augmented with predictions. Unlike the prediction models in
+  other previous studies, each actual request in the OLTSP and OLDARP is associated
+  with its arrival time and position, which, as imagined, leads to a more complicated
+  situation. Our main result is to study different prediction models and design algorithms
+  to improve the best-known results in the different settings. History: Accepted by
+  Erwin Pesch, Area Editor for Heuristic Search & Approximation Algorithms. Funding:
+  This work was supported by National Science Council [Grants NSTC110-2221-E-007-106-MY3,
+  NSTC111-2221-E-007-052-MY3].'
+publications:
+- name: IJOC
+  url: https://doi.org/10.1287/ijoc.2023.0478
+  year: 2025
+s2_id: 900e35a769fa6a336939fd3439060c9c530c89ef
+labels:
+- routing / TSP
+- online

@@ -1,0 +1,37 @@
+title: Improved Learning-Augmented Algorithms for the Multi-Option Ski Rental Problem
+  via Best-Possible Competitive Analysis
+authors: Shin, Lee, Lee, An
+abstract: In this paper, we present improved learning-augmented algorithms for the
+  multi-option ski rental problem. Learning-augmented algorithms take ML predictions
+  as an added part of the input and incorporates these predictions in solving the
+  given problem. Due to their unique strength that combines the power of ML predictions
+  with rigorous performance guarantees, they have been extensively studied in the
+  context of online optimization problems. Even though ski rental problems are one
+  of the canonical problems in the field of online optimization, only deterministic
+  algorithms were previously known for multi-option ski rental, with or without learning
+  augmentation. We present the first randomized learning-augmented algorithm for this
+  problem, surpassing previous performance guarantees given by deterministic algorithms.
+  Our learning-augmented algorithm is based on a new, provably best-possible randomized
+  competitive algorithm for the problem. Our results are further complemented by lower
+  bounds for deterministic and randomized algorithms, and computational experiments
+  evaluating our algorithms' performance improvements.
+labels:
+- online
+- rent-or-buy
+publications:
+- name: ICML
+  url: https://proceedings.mlr.press/v202/shin23c.html
+  year: 2023
+  dblp_key: conf/icml/ShinLLA23
+  bibtex: "@inproceedings{DBLP:conf/icml/ShinLLA23,\n  author       = {Yongho Shin\
+    \ and\n  Changyeol Lee and\n  Gukryeol Lee and\n  Hyung{-}Chan An},\n  title \
+    \       = {Improved Learning-Augmented Algorithms for the Multi-Option Ski Rental\n\
+    \  Problem via Best-Possible Competitive Analysis},\n  booktitle    = {{ICML}},\n\
+    \  series       = {Proceedings of Machine Learning Research},\n  volume      \
+    \ = {202},\n  pages        = {31539--31561},\n  publisher    = {{PMLR}},\n  year\
+    \         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2302.06832
+  year: 2023
+  month: 2
+  day: 14

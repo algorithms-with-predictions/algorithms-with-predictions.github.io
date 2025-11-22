@@ -1,0 +1,49 @@
+title: Competitive Auctions with Imperfect Predictions
+authors: Pinyan Lu, Zongqi Wan, Jialin Zhang
+abstract: 'The competitive auction was first proposed by Goldberg, Hartline, and Wright.
+  In their paper [Goldberg et al, 2001], they introduce the competitive analysis framework
+  of online algorithm design into the traditional revenue-maximizing auction design
+  problem. While the competitive analysis framework only cares about the worst-case
+  bound, a growing body of work in the online algorithm community studies the learning-augmented
+  framework. In this framework, designers are allowed to leverage imperfect machine-learned
+  predictions of unknown information and pursue better theoretical guarantees when
+  the prediction is accurate(consistency). Meanwhile, designers also need to maintain
+  a nearly-optimal worst-case ratio(robustness). In this work, we revisit the competitive
+  auctions in the learning-augmented setting. We leverage the imperfect predictions
+  of the private value of the bidders and design the learning-augmented mechanisms
+  for several competitive auctions with different constraints, including: digital
+  good auctions, limited-supply auctions, and general downward-closed permutation
+  environments. We also design the learning-augmented mechanism for online auctions.
+  For all these auction environments, our mechanisms enjoy 1-consistency against the
+  strongest benchmark OPT. In contrast, it is impossible to achieve O(1)-competitiveness
+  against OPT without predictions. At the same time, our mechanisms also maintain
+  the O(1)-robustness against all benchmarks considered in the traditional competitive
+  analysis, including ℱ(2), maxV, and EFO(2). Considering the possible inaccuracy
+  of the predictions, we provide a reduction that transforms our learning-augmented
+  mechanisms into an error-tolerant version, which enables the learning-augmented
+  mechanism to ensure satisfactory revenue in scenarios where the prediction error
+  is moderate. We also prove a 3 robustness ratio lower bound for mechanisms with
+  perfect consistency. The lower bound is strictly greater than the optimal 2.42 competitive
+  ratio of digital good auctions, showing the impossibility of maintaining the optimal
+  worst-case bound with perfect consistency.'
+labels:
+- auctions
+- game theory / mechanism design
+publications:
+- name: EC
+  url: https://dl.acm.org/doi/10.1145/3670865.3673586
+  year: 2024
+  month: 12
+  day: 17
+  dblp_key: conf/sigecom/LuW024
+  bibtex: "@inproceedings{DBLP:conf/sigecom/LuW024,\n  author       = {Pinyan Lu and\n\
+    \  Zongqi Wan and\n  Jialin Zhang},\n  title        = {Competitive Auctions with\
+    \ Imperfect Predictions},\n  booktitle    = {{EC}},\n  pages        = {1155--1183},\n\
+    \  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2309.15414
+  year: 2023
+  month: 9
+  day: 27
+arxiv: 2309.15414
+s2_id: ac3621ca4f1760a72bcb423b35d4087f75b3cb0e

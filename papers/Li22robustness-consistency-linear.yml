@@ -1,0 +1,28 @@
+title: Robustness and Consistency in Linear Quadratic Control with Untrusted Predictions
+authors: Li, Yang, Qu, Shi, Yu, Wierman, Low
+abstract: We study the problem of learning-augmented predictive linear quadratic control.
+  Our goal is to design a controller that balances consistency, which measures the
+  competitive ratio when predictions are accurate, and robustness, which bounds the
+  competitive ratio when predictions are inaccurate.
+labels:
+- linear quadratic control
+- online
+publications:
+- name: Proc. ACM Meas. Anal. Comput. Syst.
+  url: https://doi.org/10.1145/3508038
+  year: 2022
+- name: SIGMETRICS
+  url: https://doi.org/10.1145/3489048.3522658
+  year: 2022
+  dblp_key: conf/sigmetrics/LiYQSYWL22
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/LiYQSYWL22,\n  author       = {Tongxin\
+    \ Li and\n  Ruixiao Yang and\n  Guannan Qu and\n  Guanya Shi and\n  Chenkai Yu\
+    \ and\n  Adam Wierman and\n  Steven H. Low},\n  title        = {Robustness and\
+    \ Consistency in Linear Quadratic Control with Untrusted\n  Predictions},\n  booktitle\
+    \    = {{SIGMETRICS} (Abstracts)},\n  pages        = {107--108},\n  publisher\
+    \    = {{ACM}},\n  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2106.09659
+  year: 2021
+  month: 6
+  day: 17

@@ -1,0 +1,31 @@
+title: Cost-Driven Data Replication with Predictions
+authors: Tianyu Zuo, Xueyan Tang, B. Lee
+abstract: This paper studies an online replication problem for distributed data access.
+  The goal is to dynamically create and delete data copies in a multi-server system
+  as time passes to minimize the total storage and network cost of serving access
+  requests. We study the problem in the emergent learning-augmented setting, assuming
+  simple binary predictions about inter-request times at individual servers. We develop
+  an online algorithm and prove that it is (5+α/3)-consistent (competitiveness under
+  perfect predictions) and (1+1/α)-robust (competitiveness under terrible predictions),
+  where α◰(0, 1] is a hyper-parameter representing the level of distrust in the predictions.
+  We also study the impact of mispredictions on the competitive ratio of the proposed
+  algorithm and adapt it to achieve a bounded robustness while retaining its consistency.
+  We further establish a lower bound of 3/2 on the consistency of any deterministic
+  learning-augmented algorithm. Experimental evaluations are carried out to evaluate
+  our algorithms using real data access traces.
+labels:
+- online
+publications:
+- name: SPAA
+  url: https://doi.org/10.1145/3626183.3659964
+  year: 2024
+  dblp_key: conf/spaa/ZuoTL24
+  bibtex: "@inproceedings{DBLP:conf/spaa/ZuoTL24,\n  author       = {Tianyu Zuo and\n\
+    \  Xueyan Tang and\n  Bu{-}Sung Lee},\n  title        = {Cost-Driven Data Replication\
+    \ with Predictions},\n  booktitle    = {{SPAA}},\n  pages        = {309--320},\n\
+    \  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2404.16489
+  year: 2024
+  month: 4
+  day: 25

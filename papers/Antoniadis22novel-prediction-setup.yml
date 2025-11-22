@@ -1,0 +1,35 @@
+title: A Novel Prediction Setup for Online Speed-Scaling
+authors: Antoniadis, Ganje, Shahkarami
+abstract: 'Given the rapid rise in energy demand by data centers and computing systems
+  in general, it is fundamental to incorporate energy considerations when designing
+  (scheduling) algorithms. Machine learning can be a useful approach in practice by
+  predicting the future load of the system based on, for example, historical data.
+  However, the effectiveness of such an approach highly depends on the quality of
+  the predictions and can be quite far from optimal when predictions are sub-par.
+  On the other hand, while providing a worst-case guarantee, classical online algorithms
+  can be pessimistic for large classes of inputs arising in practice. This paper,
+  in the spirit of the new area of machine learning augmented algorithms, attempts
+  to obtain the best of both worlds for the classical, deadline based, online speed-scaling
+  problem: Based on the introduction of a novel prediction setup, we develop algorithms
+  that (i) obtain provably low energy-consumption in the presence of adequate predictions,
+  and (ii) are robust against inadequate predictions, and (iii) are smooth, i.e.,
+  their performance gradually degrades as the prediction error increases.'
+labels:
+- online
+- scheduling
+publications:
+- name: SWAT
+  url: https://doi.org/10.4230/LIPIcs.SWAT.2022.9
+  year: 2022
+  dblp_key: conf/swat/AntoniadisGS22
+  bibtex: "@inproceedings{DBLP:conf/swat/AntoniadisGS22,\n  author       = {Antonios\
+    \ Antoniadis and\n  Peyman Jabbarzade and\n  Golnoosh Shahkarami},\n  title  \
+    \      = {A Novel Prediction Setup for Online Speed-Scaling},\n  booktitle   \
+    \ = {{SWAT}},\n  series       = {LIPIcs},\n  volume       = {227},\n  pages  \
+    \      = {9:1--9:20},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"\
+    {u}}r Informatik},\n  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2112.03082
+  year: 2021
+  month: 12
+  day: 6

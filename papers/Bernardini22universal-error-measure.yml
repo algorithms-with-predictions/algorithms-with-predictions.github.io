@@ -1,0 +1,34 @@
+title: A Universal Error Measure for Input Predictions Applied to Online Graph Problems
+authors: Bernardini, Lindermayr, Marchetti-Spaccamela, Megow, Stougie, Sweering
+abstract: We introduce a novel measure for quantifying the error in input predictions.
+  The error is based on a minimum-cost hyperedge cover in a suitably defined hypergraph
+  and provides a general template which we apply to online graph problems. The measure
+  captures errors due to absent predicted requests as well as unpredicted actual requests;
+  hence, predicted and actual inputs can be of arbitrary size. We achieve refined
+  performance guarantees for previously studied network design problems in the online-list
+  model, such as Steiner tree and facility location. Further, we initiate the study
+  of learning-augmented algorithms for online routing problems, such as the online
+  traveling salesperson problem and the online dial-a-ride problem, where (transportation)
+  requests arrive over time (online-time model). We provide a general algorithmic
+  framework and we give error-dependent performance bounds that improve upon known
+  worst-case barriers, when given accurate predictions, at the cost of slightly increased
+  worst-case bounds when given predictions of arbitrary quality.
+labels:
+- network design
+- online
+- routing / TSP
+publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2022/hash/15212bd2265c4a3ab0dbc1b1982c1b69-Abstract-Conference.html
+  year: 2022
+  dblp_key: conf/nips/0001LMMSS22
+  bibtex: "@inproceedings{DBLP:conf/nips/0001LMMSS22,\n  author       = {Giulia Bernardini\
+    \ and\n  Alexander Lindermayr and\n  Alberto Marchetti{-}Spaccamela and\n  Nicole\
+    \ Megow and\n  Leen Stougie and\n  Michelle Sweering},\n  title        = {A Universal\
+    \ Error Measure for Input Predictions Applied to Online\n  Graph Problems},\n\
+    \  booktitle    = {NeurIPS},\n  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2205.12850
+  year: 2022
+  month: 5
+  day: 25

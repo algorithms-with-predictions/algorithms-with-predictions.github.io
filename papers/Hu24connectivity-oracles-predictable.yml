@@ -1,0 +1,43 @@
+title: Connectivity Oracles for Predictable Vertex Failures
+authors: Bingbing Hu, Evangelos Kosinas, Adam Polak
+abstract: 'The problem of designing connectivity oracles supporting vertex failures
+  is one of the basic data structures problems for undirected graphs. It is already
+  well understood: previous works [Duan--Pettie STOC''10; Long--Saranurak FOCS''22]
+  achieve query time linear in the number of failed vertices, and it is conditionally
+  optimal as long as we require preprocessing time polynomial in the size of the graph
+  and update time polynomial in the number of failed vertices. We revisit this problem
+  in the paradigm of algorithms with predictions: we ask if the query time can be
+  improved if the set of failed vertices can be predicted beforehand up to a small
+  number of errors. More specifically, we design a data structure that, given a graph
+  $G=(V,E)$ and a set of vertices predicted to fail $\widehat{D} \subseteq V$ of size
+  $d=|\widehat{D}|$, preprocesses it in time $\tilde{O}(d|E|)$ and then can receive
+  an update given as the symmetric difference between the predicted and the actual
+  set of failed vertices $\widehat{D} \triangle D = (\widehat{D} \setminus D) \cup
+  (D \setminus \widehat{D})$ of size $\eta = |\widehat{D} \triangle D|$, process it
+  in time $\tilde{O}(\eta^4)$, and after that answer connectivity queries in $G \setminus
+  D$ in time $O(\eta)$. Viewed from another perspective, our data structure provides
+  an improvement over the state of the art for the \emph{fully dynamic subgraph connectivity
+  problem} in the \emph{sensitivity setting} [Henzinger--Neumann ESA''16]. We argue
+  that the preprocessing time and query time of our data structure are conditionally
+  optimal under standard fine-grained complexity assumptions.'
+labels:
+- dynamic / data structure
+- network design
+publications:
+- name: ESA
+  url: https://doi.org/10.4230/LIPIcs.ESA.2024.72
+  year: 2024
+  dblp_key: conf/esa/HuK024
+  bibtex: "@inproceedings{DBLP:conf/esa/HuK024,\n  author       = {Bingbing Hu and\n\
+    \  Evangelos Kosinas and\n  Adam Polak},\n  title        = {Connectivity Oracles\
+    \ for Predictable Vertex Failures},\n  booktitle    = {{ESA}},\n  series     \
+    \  = {LIPIcs},\n  volume       = {308},\n  pages        = {72:1--72:16},\n  publisher\
+    \    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year    \
+    \     = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2312.08489
+  year: 2023
+  month: 12
+  day: 13
+arxiv: 2312.08489
+s2_id: b7a000737da8a395e98e5086f1bbaceb9ee7e68b

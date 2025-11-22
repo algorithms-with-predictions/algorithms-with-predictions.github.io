@@ -1,9 +1,0 @@
-authors: Kodialam, Lakshman
-title: Prediction Augmented Segment Routing
-publications:
-  - name: HPSR
-    url: https://ieeexplore.ieee.org/abstract/document/9481858
-    year: 2021
-labels:
-  - online
-  - routing

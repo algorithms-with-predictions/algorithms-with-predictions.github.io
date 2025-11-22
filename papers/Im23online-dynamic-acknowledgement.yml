@@ -1,0 +1,35 @@
+title: Online Dynamic Acknowledgement with Learned Predictions
+authors: Im, Moseley, Xu, Zhang
+abstract: We revisit the online dynamic acknowledgment problem. In the problem, a
+  sequence of requests arrive over time to be acknowledged, and all outstanding requests
+  can be satisfied simultaneously by one acknowledgement. The goal of the problem
+  is to minimize the total request delay plus acknowledgement cost. This elegant model
+  studies the tradeoff between acknowledgement cost and waiting experienced by requests.
+  The problem has been well studied and the tight competitive ratios have been determined.
+  For this well-studied problem, we focus on how to effectively use machine-learned
+  predictions to have better performance.We develop algorithms that perform arbitrarily
+  close to the optimum with accurate predictions while concurrently having the guarantees
+  arbitrarily close to what the best online algorithms can offer without access to
+  predictions, thereby achieving simultaneous optimum consistency and robustness.
+  This new result is enabled by our novel prediction error measure. No error measure
+  was defined for the problem prior to our work, and natural measures failed due to
+  the challenge that requests with different arrival times have different effects
+  on the objective. We hope our ideas can be used for other online problems with temporal
+  aspects that have been resisting proper error measures.
+labels:
+- online
+publications:
+- name: INFOCOM
+  url: https://doi.org/10.1109/INFOCOM53939.2023.10228882
+  year: 2023
+  dblp_key: conf/infocom/ImMXZ23
+  bibtex: "@inproceedings{DBLP:conf/infocom/ImMXZ23,\n  author       = {Sungjin Im\
+    \ and\n  Benjamin Moseley and\n  Chenyang Xu and\n  Ruilong Zhang},\n  title \
+    \       = {Online Dynamic Acknowledgement with Learned Predictions},\n  booktitle\
+    \    = {{INFOCOM}},\n  pages        = {1--10},\n  publisher    = {{IEEE}},\n \
+    \ year         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2305.18227
+  year: 2023
+  month: 5
+  day: 25

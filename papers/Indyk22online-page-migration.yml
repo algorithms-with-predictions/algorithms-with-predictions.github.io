@@ -1,0 +1,34 @@
+title: Online Page Migration with ML Advice
+authors: P. Indyk, Frederik Mallmann-Trenn, Slobodan Mitrovi'c, R. Rubinfeld
+abstract: We consider online algorithms for the {\em page migration problem} that
+  use predictions, potentially imperfect, to improve their performance. The best known
+  online algorithms for this problem, due to Westbrook'94 and Bienkowski et al'17,
+  have competitive ratios strictly bounded away from 1. In contrast, we show that
+  if the algorithm is given a prediction of the input sequence, then it can achieve
+  a competitive ratio that tends to $1$ as the prediction error rate tends to $0$.
+  Specifically, the competitive ratio is equal to $1+O(q)$, where $q$ is the prediction
+  error rate. We also design a ``fallback option'' that ensures that the competitive
+  ratio of the algorithm for {\em any} input sequence is at most $O(1/q)$. Our result
+  adds to the recent body of work that uses machine learning to improve the performance
+  of ``classic'' algorithms.
+labels:
+- caching / paging
+- online
+publications:
+- name: AISTATS
+  url: https://proceedings.mlr.press/v151/indyk22a.html
+  year: 2022
+  dblp_key: conf/aistats/IndykMMR22
+  bibtex: "@inproceedings{DBLP:conf/aistats/IndykMMR22,\n  author       = {Piotr Indyk\
+    \ and\n  Frederik Mallmann{-}Trenn and\n  Slobodan Mitrovic and\n  Ronitt Rubinfeld},\n\
+    \  title        = {Online Page Migration with {ML} Advice},\n  booktitle    =\
+    \ {{AISTATS}},\n  series       = {Proceedings of Machine Learning Research},\n\
+    \  volume       = {151},\n  pages        = {1655--1670},\n  publisher    = {{PMLR}},\n\
+    \  year         = {2022}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2006.05028
+  year: 2020
+  month: 6
+  day: 9
+arxiv: 2006.05028
+s2_id: 2d70288c89a05c59f5306b6edf4342cda2e8cc15

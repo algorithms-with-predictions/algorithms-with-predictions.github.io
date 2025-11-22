@@ -1,0 +1,37 @@
+title: Incremental Topological Ordering and Cycle Detection with Predictions
+authors: McCauley, Moseley, Niaparast, Singh
+abstract: 'This paper leverages the framework of algorithms-with-predictions to design
+  data structures for two fundamental dynamic graph problems: incremental topological
+  ordering and cycle detection. In these problems, the input is a directed graph on
+  $n$ nodes, and the $m$ edges arrive one by one. The data structure must maintain
+  a topological ordering of the vertices at all times and detect if the newly inserted
+  edge creates a cycle. The theoretically best worst-case algorithms for these problems
+  have high update cost (polynomial in $n$ and $m$). In practice, greedy heuristics
+  (that recompute the solution from scratch each time) perform well but can have high
+  update cost in the worst case. In this paper, we bridge this gap by leveraging predictions
+  to design a learned new data structure for the problems. Our data structure guarantees
+  consistency, robustness, and smoothness with respect to predictions -- that is,
+  it has the best possible running time under perfect predictions, never performs
+  worse than the best-known worst-case methods, and its running time degrades smoothly
+  with the prediction error. Moreover, we demonstrate empirically that predictions,
+  learned from a very small training dataset, are sufficient to provide significant
+  speed-ups on real datasets.'
+labels:
+- dynamic / data structure
+- graph problems
+- running time
+publications:
+- name: ICML
+  url: https://openreview.net/forum?id=wea7nsJdMc
+  year: 2024
+  dblp_key: conf/icml/McCauleyMN024
+  bibtex: "@inproceedings{DBLP:conf/icml/McCauleyMN024,\n  author       = {Samuel\
+    \ McCauley and\n  Benjamin Moseley and\n  Aidin Niaparast and\n  Shikha Singh},\n\
+    \  title        = {Incremental Topological Ordering and Cycle Detection with Predictions},\n\
+    \  booktitle    = {{ICML}},\n  publisher    = {OpenReview.net},\n  year      \
+    \   = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2402.11028
+  year: 2024
+  month: 2
+  day: 16

@@ -1,0 +1,20 @@
+title: 'Learning-Augmented Online Caching: New Upper Bounds'
+authors: Daniel Skachkov, Denis Ponomaryov, Yuri Dorn, Alexander Demin
+abstract: We address the problem of learning-augmented online caching in the scenario
+  when each request is accompanied by a prediction of the next occurrence of the requested
+  page. We improve currently known bounds on the competitive ratio of the BlindOracle
+  algorithm, which evicts a page predicted to be requested last. We also prove a lower
+  bound on the competitive ratio of any randomized algorithm and show that a combination
+  of the BlindOracle with the Marker algorithm achieves a competitive ratio that is
+  optimal up to some constant.
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2410.01760
+  year: 2024
+  month: 10
+  day: 2
+arxiv: 2410.0176
+s2_id: 14762792a17f916a80e1a4f49c4c8bd73a542b7a
+labels:
+- caching / paging
+- online

@@ -1,0 +1,25 @@
+title: Max-Cut with ε-Accurate Predictions
+authors: Cohen-Addad, d'Orsi, Gupta, Lee, Panigrahi
+abstract: 'We study the approximability of the MaxCut problem in the presence of predictions.
+  Specifically, we consider two models: in the noisy predictions model, for each vertex
+  we are given its correct label in $\{-1,+1\}$ with some unknown probability $1/2
+  + \epsilon$, and the other (incorrect) label otherwise. In the more-informative
+  partial predictions model, for each vertex we are given its correct label with probability
+  $\epsilon$ and no label otherwise. We assume only pairwise independence between
+  vertices in both models. We show how these predictions can be used to improve on
+  the worst-case approximation ratios for this problem. Specifically, we give an algorithm
+  that achieves an $\alpha + \widetilde{\Omega}(\epsilon^4)$-approximation for the
+  noisy predictions model, where $\alpha \approx 0.878$ is the MaxCut threshold. While
+  this result also holds for the partial predictions model, we can also give a $\beta
+  + \Omega(\epsilon)$-approximation, where $\beta \approx 0.858$ is the approximation
+  ratio for MaxBisection given by Raghavendra and Tan. This answers a question posed
+  by Ola Svensson in his plenary session talk at SODA''23.'
+labels:
+- approximation
+- graph problems
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2402.18263
+  year: 2024
+  month: 1
+  day: 27

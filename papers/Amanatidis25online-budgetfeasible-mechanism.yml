@@ -1,0 +1,41 @@
+title: Online Budget-Feasible Mechanism Design with Predictions
+authors: Amanatidis, Markakis, Santorinaios, Schäfer, Tsamopoulos, Tsikiridis
+abstract: Augmenting the input of algorithms with predictions is an algorithm design
+  paradigm that suggests leveraging a (possibly erroneous) prediction to improve worst-case
+  performance guarantees when the prediction is perfect (consistency), while also
+  providing a performance guarantee when the prediction fails (robustness). Recently,
+  Xu and Lu [2022] and Agrawal et al. [2024] proposed to consider settings with strategic
+  agents under this framework. In this paper, we initiate the study of budget-feasible
+  mechanism design with predictions. These mechanisms model a procurement auction
+  scenario in which an auctioneer (buyer) with a strict budget constraint seeks to
+  purchase goods or services from a set of strategic agents, so as to maximize her
+  own valuation function. We focus on the online version of the problem where the
+  arrival order of agents is random. We design mechanisms that are truthful, budget-feasible,
+  and achieve a significantly improved competitive ratio for both monotone and non-monotone
+  submodular valuation functions compared to their state-of-the-art counterparts without
+  predictions. Our results assume access to a prediction for the value of the optimal
+  solution to the offline problem. We complement our positive results by showing that
+  for the offline version of the problem, access to predictions is mostly ineffective
+  in improving approximation guarantees.
+labels:
+- auctions
+- game theory / mechanism design
+- secretary
+publications:
+- name: SAGT
+  url: https://link.springer.com/chapter/10.1007/978-3-032-03639-1_22
+  year: 2025
+  month: 9
+  day: 1
+  dblp_key: conf/sagt/AmanatidisMSSTT25.html
+  bibtex: "@inproceedings{DBLP:conf/sagt/AmanatidisMSSTT25,\n  author       = {Georgios\
+    \ Amanatidis and\n  Evangelos Markakis and\n  Christodoulos Santorinaios and\n\
+    \  Guido Sch{\"{a}}fer and\n  Panagiotis Tsamopoulos and\n  Artem Tsikiridis},\n\
+    \  title        = {Online Budget-Feasible Mechanism Design with Predictions},\n\
+    \  booktitle    = {{SAGT}},\n  publisher    = {Springer},\n  year         = {2025},\n\
+    }\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2505.24624
+  year: 2025
+  month: 5
+  day: 30

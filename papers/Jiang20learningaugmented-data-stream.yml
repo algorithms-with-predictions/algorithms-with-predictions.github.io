@@ -1,0 +1,22 @@
+title: Learning-augmented data stream algorithms
+authors: Tanqiu Jiang, Yi Li, Honghao Lin, Yisong Ruan, David P. Woodruff
+labels:
+- streaming
+publications:
+- name: ICLR
+  url: https://openreview.net/forum?id=HyxJ1xBYDH
+  year: 2020
+  dblp_key: conf/iclr/JiangLLRW20
+  bibtex: |
+    @inproceedings{DBLP:conf/iclr/JiangLLRW20,
+      author       = {Tanqiu Jiang and
+      Yi Li and
+      Honghao Lin and
+      Yisong Ruan and
+      David P. Woodruff},
+      title        = {Learning-Augmented Data Stream Algorithms},
+      booktitle    = {{ICLR}},
+      publisher    = {OpenReview.net},
+      year         = {2020}
+    }
+    

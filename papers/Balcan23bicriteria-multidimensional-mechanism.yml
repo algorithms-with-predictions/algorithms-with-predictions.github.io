@@ -1,0 +1,32 @@
+title: Bicriteria Multidimensional Mechanism Design with Side Information
+authors: Balcan, Prasad, Sandholm
+abstract: We develop a versatile methodology for multidimensional mechanism design
+  that incorporates side information about agents to generate high welfare and high
+  revenue simultaneously. Side information sources include advice from domain experts,
+  predictions from machine learning models, and even the mechanism designer's gut
+  instinct. We design a tunable mechanism that integrates side information with an
+  improved VCG-like mechanism based on weakest types, which are agent types that generate
+  the least welfare. We show that our mechanism, when carefully tuned, generates welfare
+  and revenue competitive with the prior-free total social surplus, and its performance
+  decays gracefully as the side information quality decreases. We consider a number
+  of side information formats including distribution-free predictions, predictions
+  that express uncertainty, agent types constrained to low-dimensional subspaces of
+  the ambient type space, and the traditional setting with known priors over agent
+  types. In each setting we design mechanisms based on weakest types and prove performance
+  guarantees.
+labels:
+- game theory / mechanism design
+publications:
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2023/hash/8039ca1e9860daab3a79e45d010d5398-Abstract-Conference.html
+  year: 2023
+  dblp_key: conf/nips/PrasadBS23
+  bibtex: "@inproceedings{DBLP:conf/nips/PrasadBS23,\n  author       = {Siddharth\
+    \ Prasad and\n  Maria{-}Florina Balcan and\n  Tuomas Sandholm},\n  title     \
+    \   = {Bicriteria Multidimensional Mechanism Design with Side Information},\n\
+    \  booktitle    = {NeurIPS},\n  year         = {2023}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2302.14234
+  year: 2023
+  month: 2
+  day: 28

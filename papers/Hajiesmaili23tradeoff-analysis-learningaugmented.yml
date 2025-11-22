@@ -1,0 +1,39 @@
+title: Trade-off Analysis in Learning-augmented Algorithms with Societal Design Criteria
+authors: Mohammad H. Hajiesmaili
+abstract: Traditionally, computer systems are designed to optimize classic notions
+  of performance such as flow completion time, cost, etc. The system performance is
+  then typically evaluated by characterizing theoretical bounds in worst-case settings
+  over a single performance metric. In the next generation of computer systems, societal
+  design criteria, such as carbon awareness and fairness, becomes a first-class design
+  goal. However, the classic performance metrics may conflict with societal criteria.
+  Foundational understanding and performance evaluations of systems with these inherent
+  trade-offs lead to novel research questions that could be considered new educational
+  components for performance analysis courses. The classic techniques, e.g., worst-case
+  analysis, for systems with conflicting objectives may lead to the impossibility
+  of results. However, a foundational understanding of the impossibility of results
+  calls for new techniques and tools. In traditional performance evaluation, to understand
+  the foundational limits, typically, it is sufficient to derive lower-bound arguments
+  in worst-case settings. In the new era of system design, lower bounds are inherently
+  about trade-offs between different objectives. Characterizing these trade-offs in
+  settings with multiple design criteria is closer to the notion of Pareto-optimality,
+  which is drastically different from classic lower bounds. With the impossibility
+  of results using classic paradigms, one possible direction is to (re)design systems
+  following the emerging direction of learning-augmented algorithms. With this approach,
+  it might be possible to remove/mitigate the foundational conflict between classic
+  vs. societal metrics using the right predictions. However, the performance evaluation
+  of learning-augmented algorithms calls for a new set of technical questions, which
+  we highlight in this paper.
+labels:
+- online
+- packing
+publications:
+- name: SIGMETRICS Perform. Evaluation Rev.
+  url: https://doi.org/10.1145/3626570.3626590
+  year: 2023
+  dblp_key: journals/sigmetrics/Hajiesmaili23
+  bibtex: "@article{DBLP:journals/sigmetrics/Hajiesmaili23,\n  author       = {Mohammad\
+    \ H. Hajiesmaili},\n  title        = {Trade-off Analysis in Learning-augmented\
+    \ Algorithms with Societal\n  Design Criteria},\n  journal      = {{SIGMETRICS}\
+    \ Perform. Evaluation Rev.},\n  volume       = {51},\n  number       = {2},\n\
+    \  pages        = {53--58},\n  year         = {2023}\n}\n"
+s2_id: 99b71fd3f44de88d2ac24e7dac3192b6455f9548

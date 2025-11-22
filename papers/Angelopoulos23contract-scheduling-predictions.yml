@@ -1,0 +1,33 @@
+title: Contract scheduling with predictions
+authors: Angelopoulos, Kamali
+abstract: Contract scheduling is a general technique that allows to design a system
+  with interruptible capabilities, given an algorithm that is not necessarily interruptible.
+  Previous work on this topic has largely assumed that the interruption is a worst-case
+  deadline that is unknown to the scheduler. In this work, we study the setting in
+  which there is a potentially erroneous prediction concerning the interruption. Specifically,
+  we consider the setting in which the prediction describes the time that the interruption
+  occurs, as well as the setting in which the prediction is obtained as a response
+  to a single or multiple binary queries. For both settings, we investigate tradeoffs
+  between the robustness (i.e., the worst-case performance assuming adversarial prediction)
+  and the consistency (i.e, the performance assuming that the prediction is error-free),
+  both from the side of positive and negative results.
+labels:
+- online
+- scheduling
+publications:
+- name: J. Artif. Intell. Res.
+  url: https://doi.org/10.1613/jair.1.14117
+  year: 2023
+  dblp_key: journals/jair/AngelopoulosK23
+  bibtex: "@article{DBLP:journals/jair/AngelopoulosK23,\n  author       = {Spyros\
+    \ Angelopoulos and\n  Shahin Kamali},\n  title        = {Contract Scheduling with\
+    \ Predictions},\n  journal      = {J. Artif. Intell. Res.},\n  volume       =\
+    \ {77},\n  pages        = {395--426},\n  year         = {2023}\n}\n"
+- name: AAAI
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/17394
+  year: 2021
+- name: arXiv
+  url: https://arxiv.org/abs/2011.12439
+  year: 2020
+  month: 11
+  day: 24

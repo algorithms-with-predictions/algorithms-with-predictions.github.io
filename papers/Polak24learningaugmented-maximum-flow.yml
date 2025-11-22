@@ -1,0 +1,35 @@
+title: Learning-Augmented Maximum Flow
+authors: Polak, Zub
+abstract: We propose a framework for speeding up maximum flow computation by using
+  predictions. A prediction is a flow, i.e., an assignment of non-negative flow values
+  to edges, which satisfies the flow conservation property, but does not necessarily
+  respect the edge capacities of the actual instance (since these were unknown at
+  the time of learning). We present an algorithm that, given an $m$-edge flow network
+  and a predicted flow, computes a maximum flow in $O(m\eta)$ time, where $\eta$ is
+  the $\ell_1$ error of the prediction, i.e., the sum over the edges of the absolute
+  difference between the predicted and optimal flow values. Moreover, we prove that,
+  given an oracle access to a distribution over flow networks, it is possible to efficiently
+  PAC-learn a prediction minimizing the expected $\ell_1$ error over that distribution.
+  Our results fit into the recent line of research on learning-augmented algorithms,
+  which aims to improve over worst-case bounds of classical algorithms by using predictions,
+  e.g., machine-learned from previous similar instances. So far, the main focus in
+  this area was on improving competitive ratios for online problems. Following Dinitz
+  et al. (NeurIPS 2021), our results are one of the firsts to improve the running
+  time of an offline problem.
+labels:
+- graph problems
+- running time
+publications:
+- name: Inf. Process. Lett.
+  url: https://doi.org/10.1016/j.ipl.2024.106487
+  year: 2024
+  dblp_key: journals/ipl/PolakZ24
+  bibtex: "@article{DBLP:journals/ipl/PolakZ24,\n  author       = {Adam Polak and\n\
+    \  Maksym Zub},\n  title        = {Learning-augmented maximum flow},\n  journal\
+    \      = {Inf. Process. Lett.},\n  volume       = {186},\n  pages        = {106487},\n\
+    \  year         = {2024}\n}\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2207.12911
+  year: 2022
+  month: 7
+  day: 26

@@ -1,0 +1,23 @@
+title: Online algorithms for rent-or-buy with expert advice
+authors: Sreenivas Gollapudi, Debmalya Panigrahi
+labels:
+- online
+- rent-or-buy
+publications:
+- name: ICML
+  url: http://proceedings.mlr.press/v97/gollapudi19a/gollapudi19a.pdf
+  year: 2019
+  dblp_key: conf/icml/GollapudiP19
+  bibtex: |
+    @inproceedings{DBLP:conf/icml/GollapudiP19,
+      author       = {Sreenivas Gollapudi and
+      Debmalya Panigrahi},
+      title        = {Online Algorithms for Rent-Or-Buy with Expert Advice},
+      booktitle    = {{ICML}},
+      series       = {Proceedings of Machine Learning Research},
+      volume       = {97},
+      pages        = {2319--2327},
+      publisher    = {{PMLR}},
+      year         = {2019}
+    }
+    

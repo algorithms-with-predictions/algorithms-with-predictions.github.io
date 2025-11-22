@@ -1,0 +1,32 @@
+title: Online Graph Coloring with Predictions
+authors: Antoniadis, Broersma, Meng
+abstract: We introduce learning augmented algorithms to the online graph coloring
+  problem. Although the simple greedy algorithm FirstFit is known to perform poorly
+  in the worst case, we are able to establish a relationship between the structure
+  of any input graph $G$ that is revealed online and the number of colors that FirstFit
+  uses for $G$. Based on this relationship, we propose an online coloring algorithm
+  FirstFitPredictions that extends FirstFit while making use of machine learned predictions.
+  We show that FirstFitPredictions is both \emph{consistent} and \emph{smooth}. Moreover,
+  we develop a novel framework for combining online algorithms at runtime specifically
+  for the online graph coloring problem. Finally, we show how this framework can be
+  used to robustify by combining it with any classical online coloring algorithm (that
+  disregards the predictions).
+labels:
+- graph problems
+- online
+publications:
+- name: ISCO
+  url: https://doi.org/10.1007/978-3-031-60924-4_22
+  year: 2024
+  dblp_key: conf/iscopt/AntoniadisBM24
+  bibtex: "@inproceedings{DBLP:conf/iscopt/AntoniadisBM24,\n  author       = {Antonios\
+    \ Antoniadis and\n  Hajo Broersma and\n  Yang Meng},\n  title        = {Online\
+    \ Graph Coloring with Predictions},\n  booktitle    = {{ISCO}},\n  series    \
+    \   = {Lecture Notes in Computer Science},\n  volume       = {14594},\n  pages\
+    \        = {289--302},\n  publisher    = {Springer},\n  year         = {2024}\n\
+    }\n"
+- name: arXiv
+  url: https://arxiv.org/abs/2312.00601
+  year: 2023
+  month: 12
+  day: 1

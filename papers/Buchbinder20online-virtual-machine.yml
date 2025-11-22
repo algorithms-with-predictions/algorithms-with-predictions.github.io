@@ -1,0 +1,32 @@
+title: Online Virtual Machine Allocation with Predictions
+authors: Niv Buchbinder, Yaron Fairstein, Konstantina Mellou, Ishai Menache, J. Naor
+abstract: "The cloud computing industry has grown rapidly over the last decade, and\
+  \ with this growth there is a significant increase in demand for compute resources.\
+  \ Demand is manifested in the form of Virtual Machine (VM) requests, which need\
+  \ to be assigned to physical machines in a way that minimizes resource fragmentation\
+  \ and efficiently utilizes the available machines. This problem can be modeled as\
+  \ a dynamic version of the bin packing problem with the objective of minimizing\
+  \ the total usage time of the bins (physical machines). Earlier works on dynamic\
+  \ bin packing assumed that no knowledge is available to the scheduler and later\
+  \ works studied models in which lifetime/duration of each \"item\" (VM in our context)\
+  \ is available to the scheduler. This extra information was shown to improve exponentially\
+  \ the achievable competitive ratio. \nMotivated by advances in Machine Learning\
+  \ that provide good estimates of workload characteristics, this paper studies the\
+  \ effect of having extra information regarding future (total) demand. In the cloud\
+  \ context, since demand is an aggregate over many VM requests, it can be predicted\
+  \ with high accuracy (e.g., using historical data). We show that the competitive\
+  \ factor can be dramatically improved by using this additional information; in some\
+  \ cases, we achieve constant competitiveness, or even a competitive factor that\
+  \ approaches 1. Along the way, we design new offline algorithms with improved approximation\
+  \ ratios for the dynamic bin-packing problem."
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2011.06250
+  year: 2020
+  month: 11
+  day: 12
+arxiv: 2011.0625
+s2_id: dd6df52ee77aa9b01ed2cf130df5075f5c0b7daa
+labels:
+- online
+- allocation / matching

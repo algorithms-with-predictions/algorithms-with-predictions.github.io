@@ -1,0 +1,18 @@
+title: Fairness in the Autobidding World with Machine-learned Advice
+authors: Yuan Deng, Negin Golrezaei, P. Jaillet, Jason Cheuk Nam Liang, V. Mirrokni
+publications:
+- name: arXiv
+  url: https://doi.org/10.48550/arXiv.2209.04748
+  year: 2022
+  dblp_key: journals/corr/abs-2209-04748
+  bibtex: "@article{DBLP:journals/corr/abs-2209-04748,\n  author       = {Yuan Deng\
+    \ and\n                  Negin Golrezaei and\n                  Patrick Jaillet\
+    \ and\n                  Jason Cheuk Nam Liang and\n                  Vahab Mirrokni},\n\
+    \  title        = {Fairness in the Autobidding World with Machine-learned Advice},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/2209.04748},\n  year        \
+    \ = {2022},\n  url          = {https://doi.org/10.48550/arXiv.2209.04748},\n \
+    \ doi          = {10.48550/ARXIV.2209.04748},\n  eprinttype    = {arXiv},\n  eprint\
+    \       = {2209.04748},\n  timestamp    = {Tue, 27 Sep 2022 16:29:43 +0200},\n\
+    \  biburl       = {https://dblp.org/rec/journals/corr/abs-2209-04748.bib},\n \
+    \ bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+s2_id: 53346f861135c82c8a7605e7ac7eef7b4c20a38c

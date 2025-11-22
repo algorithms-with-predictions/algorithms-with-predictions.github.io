@@ -1,0 +1,37 @@
+title: A learned approach to design compressed rank/select data structures
+authors: Boffa, Ferragina, Vinciguerra
+abstract: 'We address the problem of designing, implementing, and experimenting with
+  compressed data structures that support rank and select queries over a dictionary
+  of integers. We shine a new light on this classical problem by showing a connection
+  between the input integers and the geometry of a set of points in a Cartesian plane
+  suitably derived from them. We then build upon some results in computational geometry
+  to introduce the first compressed rank/select dictionary based on the idea of “learning”
+  the distribution of such points via proper linear approximations (LA). We therefore
+  call this novel data structure the la_vector. We prove time and space complexities
+  of the la_vector in several scenarios: in the worst case, in the case of input distributions
+  with finite mean and variance, and taking into account the kth order entropy of
+  some of its building blocks. We also discuss improved hybrid data structures, namely,
+  ones that suitably orchestrate known compressed rank/select dictionaries with the
+  la_vector. We corroborate our theoretical results with a large set of experiments
+  over datasets originating from a variety of applications (Web search, DNA sequencing,
+  information retrieval, and natural language processing) and show that our approach
+  provides new interesting space-time tradeoffs with respect to many well-established
+  compressed rank/select dictionary implementations. In particular, we show that our
+  select is the fastest, and our rank is on the space-time Pareto frontier.'
+labels:
+- dynamic / data structure
+publications:
+- name: ACM Trans. Algorithms
+  url: https://doi.org/10.1145/3524060
+  year: 2022
+  dblp_key: journals/talg/BoffaFV22
+  bibtex: "@article{DBLP:journals/talg/BoffaFV22,\n  author       = {Antonio Boffa\
+    \ and\n  Paolo Ferragina and\n  Giorgio Vinciguerra},\n  title        = {A Learned\
+    \ Approach to Design Compressed Rank/Select Data Structures},\n  journal     \
+    \ = {{ACM} Trans. Algorithms},\n  volume       = {18},\n  number       = {3},\n\
+    \  pages        = {24:1--24:28},\n  year         = {2022}\n}\n"
+- name: TALG
+  year: 2022
+- name: ALENEX
+  url: https://epubs.siam.org/doi/10.1137/1.9781611976472.4
+  year: 2021
