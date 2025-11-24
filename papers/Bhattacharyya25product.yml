@@ -1,0 +1,12 @@
+title: Product distribution learning with imperfect advice
+authors: Bhattacharyya, Choo, George John, Gouleakis
+publications:
+- name: NeurIPS
+  url: https://openreview.net/forum?id=idjZKbf78s
+  year: 2025
+- name: arXiv
+  url: https://arxiv.org/abs/2511.10366
+  year: 2025
+labels:
+- distribution learning
+
