@@ -5,7 +5,7 @@ function stringCmp(a, b) {
   return a.toLowerCase().localeCompare(b.toLowerCase());
 }
 
-export const usePaperFilter = (data) => {
+export const usePaperFilter = data => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selLabels, setSelLabels] = useState([]);
 

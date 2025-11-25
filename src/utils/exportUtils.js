@@ -1,4 +1,4 @@
-export const exportBibtex = (papers) => {
+export const exportBibtex = papers => {
   if (typeof window === 'undefined') return;
 
   const bibtexEntries = papers
