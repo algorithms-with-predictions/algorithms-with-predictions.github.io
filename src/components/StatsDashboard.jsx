@@ -10,20 +10,65 @@ import {
   Stack,
 } from '@mui/material';
 import { School, People, Business } from '@mui/icons-material';
+import { calculateStats } from '../utils/statsUtils';
+
+const MetricItem = ({ icon: Icon, value, title, color = 'primary' }) => (
+  <Stack direction="row" alignItems="center" spacing={1.5} sx={{ flex: 1 }}>
+    <Box
+      sx={{
+        p: { xs: 0.6, sm: 1 },
+        borderRadius: 1.5,
+        bgcolor: `${color}.light`,
+        color: `${color}.contrastText`,
+        display: 'flex',
+        alignItems: 'center',
+      }}
+    >
+      <Icon sx={{ fontSize: { xs: 14, sm: 18 } }} />
+    </Box>
+    <Box sx={{ flex: 1 }}>
+      <Typography
+        variant="h4"
+        fontWeight="bold"
+        color="text.primary"
+        sx={{
+          fontSize: { xs: '1rem', sm: '1.75rem' },
+          lineHeight: 1.2,
+        }}
+      >
+        {value}
+      </Typography>
+      <Typography
+        variant="body2"
+        color="text.secondary"
+        sx={{ fontSize: { xs: '0.7rem', sm: '0.8rem' } }}
+      >
+        {title}
+      </Typography>
+    </Box>
+  </Stack>
+);
+
+MetricItem.propTypes = {
+  icon: PropTypes.elementType.isRequired,
+  value: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  color: PropTypes.string,
+};
 
 const StatCard = ({
   title,
   value,
   subtitle,
-  icon: Icon,
+  icon,
   trend,
   color = 'primary',
   secondaryValue,
   secondaryTitle,
-  secondaryIcon: SecondaryIcon,
+  secondaryIcon,
   tertiaryValue,
   tertiaryTitle,
-  tertiaryIcon: TertiaryIcon,
+  tertiaryIcon,
 }) => (
   <Card sx={{ height: '100%', borderRadius: 2 }}>
     <CardContent sx={{ py: { xs: 1.5, sm: 2 }, px: { xs: 1.5, sm: 2 } }}>
@@ -37,127 +82,25 @@ const StatCard = ({
             alignItems: { xs: 'center', sm: 'stretch' },
           }}
         >
-          {/* Primary Metric */}
-          <Stack
-            direction="row"
-            alignItems="center"
-            spacing={1.5}
-            sx={{ flex: { xs: 1, sm: 'none' } }}
-          >
-            <Box
-              sx={{
-                p: { xs: 0.6, sm: 1 },
-                borderRadius: 1.5,
-                bgcolor: `${color}.light`,
-                color: `${color}.contrastText`,
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              <Icon sx={{ fontSize: { xs: 14, sm: 18 } }} />
-            </Box>
-            <Box sx={{ flex: 1 }}>
-              <Typography
-                variant="h4"
-                fontWeight="bold"
-                color="text.primary"
-                sx={{
-                  fontSize: { xs: '1rem', sm: '1.75rem' },
-                  lineHeight: 1.2,
-                }}
-              >
-                {value}
-              </Typography>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                sx={{ fontSize: { xs: '0.7rem', sm: '0.8rem' } }}
-              >
-                {title}
-              </Typography>
-            </Box>
-          </Stack>
+          <MetricItem icon={icon} value={value} title={title} color={color} />
 
-          {/* Secondary Metric */}
-          {secondaryValue && SecondaryIcon && (
-            <Stack
-              direction="row"
-              alignItems="center"
-              spacing={1.5}
-              sx={{ flex: { xs: 1, sm: 'none' } }}
-            >
-              <Box
-                sx={{
-                  p: { xs: 0.6, sm: 1 },
-                  borderRadius: 1.5,
-                  bgcolor: `${color}.light`,
-                  color: `${color}.contrastText`,
-                  display: 'flex',
-                  alignItems: 'center',
-                }}
-              >
-                <SecondaryIcon sx={{ fontSize: { xs: 14, sm: 18 } }} />
-              </Box>
-              <Box sx={{ flex: 1 }}>
-                <Typography
-                  variant="h4"
-                  fontWeight="bold"
-                  color="text.primary"
-                  sx={{
-                    fontSize: { xs: '1rem', sm: '1.75rem' },
-                    lineHeight: 1.2,
-                  }}
-                >
-                  {secondaryValue}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ fontSize: { xs: '0.7rem', sm: '0.8rem' } }}
-                >
-                  {secondaryTitle}
-                </Typography>
-              </Box>
-            </Stack>
+          {secondaryValue && secondaryIcon && (
+            <MetricItem
+              icon={secondaryIcon}
+              value={secondaryValue}
+              title={secondaryTitle}
+              color={color}
+            />
           )}
         </Stack>
 
-        {/* Tertiary Metric - Now visible on mobile with responsive sizing */}
-        {tertiaryValue && TertiaryIcon && (
-          <Stack direction="row" alignItems="center" spacing={1.5}>
-            <Box
-              sx={{
-                p: { xs: 0.6, sm: 1 },
-                borderRadius: 1.5,
-                bgcolor: `${color}.light`,
-                color: `${color}.contrastText`,
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              <TertiaryIcon sx={{ fontSize: { xs: 14, sm: 18 } }} />
-            </Box>
-            <Box sx={{ flex: 1 }}>
-              <Typography
-                variant="h4"
-                fontWeight="bold"
-                color="text.primary"
-                sx={{
-                  fontSize: { xs: '1rem', sm: '1.75rem' },
-                  lineHeight: 1.2,
-                }}
-              >
-                {tertiaryValue}
-              </Typography>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                sx={{ fontSize: { xs: '0.7rem', sm: '0.8rem' } }}
-              >
-                {tertiaryTitle}
-              </Typography>
-            </Box>
-          </Stack>
+        {tertiaryValue && tertiaryIcon && (
+          <MetricItem
+            icon={tertiaryIcon}
+            value={tertiaryValue}
+            title={tertiaryTitle}
+            color={color}
+          />
         )}
 
         {/* Subtitle */}
@@ -444,67 +387,14 @@ YearDistributionChart.propTypes = {
 };
 
 const StatsDashboard = ({ data }) => {
-  // Calculate statistics
-  const totalPapers = data.length;
+  const {
+    totalPapers,
+    totalAuthors,
+    totalVenues,
+    yearDistribution,
+    venueStats,
+  } = calculateStats(data);
 
-  // Calculate unique authors
-  const allAuthors = new Set();
-  data.forEach(paper => {
-    if (paper.authors) {
-      // Handle both string and array formats
-      const authorList =
-        typeof paper.authors === 'string'
-          ? paper.authors.split(', ').map(a => a.trim())
-          : paper.authors;
-      authorList.forEach(author => allAuthors.add(author));
-    }
-  });
-  const totalAuthors = allAuthors.size;
-
-  // Calculate unique venues
-  const uniqueVenues = new Set();
-  data.forEach(paper => {
-    paper.publications.forEach(pub => {
-      if (pub.name && pub.name !== 'arXiv') {
-        uniqueVenues.add(pub.name);
-      }
-    });
-  });
-  const totalVenues = uniqueVenues.size;
-
-  // Calculate year distribution
-  const yearDistribution = data.reduce((acc, paper) => {
-    // Get the earliest publication year for each paper
-    if (paper.publications && paper.publications.length > 0) {
-      const years = paper.publications
-        .map(pub => pub.year)
-        .filter(
-          year =>
-            year !== null &&
-            year !== undefined &&
-            !isNaN(year) &&
-            isFinite(year)
-        );
-      if (years.length > 0) {
-        const earliestYear = Math.min(...years);
-        acc[earliestYear] = (acc[earliestYear] || 0) + 1;
-      }
-    }
-    return acc;
-  }, {});
-
-  const allVenues = data.flatMap(p =>
-    p.publications.map(pub => pub.name).filter(name => name !== 'arXiv')
-  );
-  const venueStats = Object.entries(
-    allVenues.reduce((acc, venue) => {
-      acc[venue] = (acc[venue] || 0) + 1;
-      return acc;
-    }, {})
-  )
-    .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => b.count - a.count)
-    .slice(0, 7);
   return (
     <Box sx={{ mb: { xs: 0.5, sm: 0.75 } }}>
       <Grid container spacing={{ xs: 1.5, sm: 2 }}>

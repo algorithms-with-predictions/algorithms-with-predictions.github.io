@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { Download, Clear } from '@mui/icons-material';
 import * as React from 'react';
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 
@@ -18,85 +18,23 @@ import { useTheme } from '@mui/material/styles';
 import SearchAndFilter from './SearchAndFilter.jsx';
 import PaperCard from './PaperCard.jsx';
 import StatsDashboard from './StatsDashboard.jsx';
-
-function stringCmp(a, b) {
-  return a.toLowerCase().localeCompare(b.toLowerCase());
-}
-
-const TYPE_LABELS = [
-  'dynamic / data structure',
-  'online',
-  'running time',
-  'approximation',
-  'streaming',
-  'game theory / mechanism design',
-  'differential privacy',
-  'survey',
-];
-const PRIOR_LABEL = 'prior / related work';
-let SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL];
+import { usePaperFilter } from '../hooks/usePaperFilter';
+import { exportBibtex } from '../utils/exportUtils';
 
 const PaperList = ({ data }) => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
 
-  // Get all years from publications
-  const allYears = data.flatMap(paper =>
-    paper.publications.flatMap(pub => pub.year)
-  );
-  const distinctYears = [...new Set(allYears)];
-  distinctYears.sort();
-
-  // Get all labels from papers
-  const allLabels = data.flatMap(paper => (paper.labels ? paper.labels : []));
-  let distinctLabels = [...new Set(allLabels)];
-  distinctLabels.sort(stringCmp);
-  distinctLabels = distinctLabels.filter(el => !SPECIAL_LABELS.includes(el));
-
-  // Component state
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selLabels, setSelLabels] = React.useState([]);
-
-  // Filter and sort papers
-  const sortedData = useMemo(() => {
-    let filtered = data;
-
-    // Apply search filter
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(
-        paper =>
-          paper.title?.toLowerCase().includes(query) ||
-          (typeof paper.authors === 'string'
-            ? paper.authors.toLowerCase().includes(query)
-            : paper.authors?.some(author =>
-                author.toLowerCase().includes(query)
-              )) ||
-          paper.labels?.some(label => label.toLowerCase().includes(query)) ||
-          paper.publications?.some(
-            pub =>
-              pub.name?.toLowerCase().includes(query) ||
-              pub.year?.toString().includes(query)
-          )
-      );
-    }
-
-    // Apply label filter
-    if (selLabels.length > 0) {
-      filtered = filtered.filter(paper =>
-        selLabels.every(selectedLabel => paper.labels?.includes(selectedLabel))
-      );
-    }
-
-    // Sort by year (newest first)
-    return filtered.sort((a, b) => {
-      const getLatestYear = paper => {
-        if (!paper.publications || paper.publications.length === 0) return 0;
-        return Math.max(...paper.publications.map(pub => pub.year || 0));
-      };
-      return getLatestYear(b) - getLatestYear(a);
-    });
-  }, [data, searchQuery, selLabels]);
+  const {
+    searchQuery,
+    setSearchQuery,
+    selLabels,
+    setSelLabels,
+    sortedData,
+    distinctLabels,
+    handleClearFilters,
+    SPECIAL_LABELS,
+  } = usePaperFilter(data);
 
   // Count papers with BibTeX
   const papersWithBibtex = useMemo(() => {
@@ -104,36 +42,6 @@ const PaperList = ({ data }) => {
       paper.publications?.some(pub => pub.bibtex)
     ).length;
   }, [sortedData]);
-
-  // Generate BibTeX for filtered papers
-  const handleExportBibtex = () => {
-    if (typeof window === 'undefined') return;
-
-    const bibtexEntries = sortedData
-      .filter(paper => paper.publications?.some(pub => pub.bibtex))
-      .map(paper => {
-        const pubsWithBibtex = paper.publications.filter(pub => pub.bibtex);
-        return pubsWithBibtex.map(pub => pub.bibtex).join('\n\n');
-      })
-      .join('\n\n');
-
-    if (bibtexEntries) {
-      const blob = new Blob([bibtexEntries], { type: 'text/plain' });
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `alps-papers-${new Date().toISOString().split('T')[0]}.bib`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    }
-  };
-
-  const handleClearFilters = () => {
-    setSearchQuery('');
-    setSelLabels([]);
-  };
 
   return (
     <Container
@@ -231,7 +139,7 @@ const PaperList = ({ data }) => {
                   >
                     <IconButton
                       size="small"
-                      onClick={handleExportBibtex}
+                      onClick={() => exportBibtex(sortedData)}
                       sx={{
                         color: 'primary.main',
                         '&:hover': {

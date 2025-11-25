@@ -14,6 +14,7 @@ import {
 import { ContentCopy } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 import { trackPaperView, trackEvent } from '../utils/analytics.js';
+import { TYPE_LABELS, PRIOR_LABEL } from '../constants';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   borderRadius: 2,
@@ -42,19 +43,6 @@ const openInNewTab = url => {
     if (newWindow) newWindow.opener = null;
   }
 };
-
-// Type labels that get special green color
-const TYPE_LABELS = [
-  'dynamic / data structure',
-  'online',
-  'running time',
-  'approximation',
-  'streaming',
-  'game theory / mechanism design',
-  'differential privacy',
-  'survey',
-];
-const PRIOR_LABEL = 'prior / related work';
 
 // Color matching the quick filter system
 const getLabelColor = label => {

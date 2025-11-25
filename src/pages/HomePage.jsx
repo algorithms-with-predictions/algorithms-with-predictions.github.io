@@ -1,28 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Box, CircularProgress } from '@mui/material';
+import React from 'react';
+import { Box, CircularProgress, Typography } from '@mui/material';
 import PaperList from '../components/paperlist.jsx';
+import { usePapersData } from '../hooks/usePapersData';
 
 const HomePage = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const response = await fetch('/papers.json');
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        // Log error to console for debugging
-        // eslint-disable-next-line no-console
-        console.error('Failed to load papers data:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadData();
-  }, []);
+  const { data, loading, error } = usePapersData();
 
   if (loading) {
     return (
@@ -33,6 +15,21 @@ const HomePage = () => {
         minHeight="60vh"
       >
         <CircularProgress />
+      </Box>
+    );
+  }
+
+  if (error) {
+    return (
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="60vh"
+      >
+        <Typography color="error">
+          Failed to load papers. Please try again later.
+        </Typography>
       </Box>
     );
   }
