@@ -104,9 +104,13 @@ const Header = () => {
       <Collapse in={mobileMenuOpen && isMobile}>
         <Box
           sx={{
-            bgcolor: 'primary.dark',
+            bgcolor:
+              theme.palette.mode === 'dark'
+                ? 'background.paper'
+                : 'primary.dark',
             borderTop: 1,
-            borderColor: 'primary.light',
+            borderColor:
+              theme.palette.mode === 'dark' ? 'divider' : 'primary.light',
           }}
         >
           <Stack spacing={0}>
@@ -122,14 +126,26 @@ const Header = () => {
                   px: 3,
                   py: 1.5,
                   borderRadius: 0,
-                  color: 'white !important',
+                  color:
+                    theme.palette.mode === 'dark'
+                      ? 'text.primary'
+                      : 'white !important',
                   textDecoration: 'none !important',
                   '&:hover': {
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    color: 'white !important',
+                    backgroundColor:
+                      theme.palette.mode === 'dark'
+                        ? 'action.hover'
+                        : 'rgba(255, 255, 255, 0.1)',
+                    color:
+                      theme.palette.mode === 'dark'
+                        ? 'text.primary'
+                        : 'white !important',
                   },
                   '&:visited': {
-                    color: 'white !important',
+                    color:
+                      theme.palette.mode === 'dark'
+                        ? 'text.primary'
+                        : 'white !important',
                   },
                   fontSize: '1rem',
                   fontWeight: 500,
