@@ -1,0 +1,15 @@
+title: Robust Dynamic Staffing with Predictions
+authors: Feng, Manshadi, Niazadeh, Neyshabouri
+publications:
+  - name: EC
+    year: 2025
+    url: https://dl.acm.org/doi/10.1145/3736252.3742496
+  - name: arXiv
+    year: 2025
+    url: https://arxiv.org/abs/2510.16663
+labels:
+  - Online algorithms
+  - Dynamic staffing
+  - Sequential forecast
+  - News-vendor model
+  - Predictions
