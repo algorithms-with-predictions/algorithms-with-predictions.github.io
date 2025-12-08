@@ -33,7 +33,10 @@
     "clean:all": "rm -rf dist node_modules package-lock.json",
     "deploy": "npm run build && gh-pages -d dist -b deploy",
     "update-data": "node scripts/updateData.mjs",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -52,9 +55,13 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.1.0",
+    "@vitest/coverage-v8": "^4.0.15",
     "axios": "^1.13.1",
     "eslint": "^9.39.0",
     "eslint-config-prettier": "^10.1.8",
@@ -67,8 +74,10 @@
     "globals": "^16.5.0",
     "husky": "^9.1.6",
     "js-yaml": "^4.1.0",
+    "jsdom": "^27.2.0",
     "lint-staged": "^15.2.10",
     "prettier": "^3.6.2",
-    "vite": "^6.4.1"
+    "vite": "^6.4.1",
+    "vitest": "^4.0.15"
   }
 }

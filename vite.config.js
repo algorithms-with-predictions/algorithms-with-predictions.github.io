@@ -5,6 +5,15 @@ import { resolve } from 'path';
 export default defineConfig({
   plugins: [react()],
   base: '/',
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.js',
+    coverage: {
+      reporter: ['text', 'html'],
+      exclude: ['node_modules/', 'src/test/'],
+    },
+  },
   build: {
     outDir: 'dist',
     sourcemap: true,

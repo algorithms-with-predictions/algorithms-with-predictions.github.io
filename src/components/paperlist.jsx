@@ -16,7 +16,7 @@ import { useTheme } from '@mui/material/styles';
 
 // Import our new components
 import SearchAndFilter from './SearchAndFilter.jsx';
-import PaperCard from './PaperCard.jsx';
+import { PaperCard } from './paper';
 import StatsDashboard from './StatsDashboard.jsx';
 import { usePaperFilter } from '../hooks/usePaperFilter';
 import { exportBibtex } from '../utils/exportUtils';
