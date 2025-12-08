@@ -109,9 +109,7 @@ describe('getBibtexEntries', () => {
   });
 
   it('returns single bibtex entry trimmed', () => {
-    const publications = [
-      { name: 'ICML', bibtex: '  @article{test}  ' },
-    ];
+    const publications = [{ name: 'ICML', bibtex: '  @article{test}  ' }];
     expect(getBibtexEntries(publications)).toBe('@article{test}');
   });
 

@@ -22,10 +22,7 @@ describe('calculateStats', () => {
   });
 
   it('counts unique authors from string format', () => {
-    const data = [
-      { authors: 'Alice, Bob' },
-      { authors: 'Bob, Charlie' },
-    ];
+    const data = [{ authors: 'Alice, Bob' }, { authors: 'Bob, Charlie' }];
     const result = calculateStats(data);
     expect(result.totalAuthors).toBe(3); // Alice, Bob, Charlie
   });
@@ -40,10 +37,7 @@ describe('calculateStats', () => {
   });
 
   it('handles mixed author formats', () => {
-    const data = [
-      { authors: 'Alice, Bob' },
-      { authors: ['Charlie', 'David'] },
-    ];
+    const data = [{ authors: 'Alice, Bob' }, { authors: ['Charlie', 'David'] }];
     const result = calculateStats(data);
     expect(result.totalAuthors).toBe(4);
   });
@@ -57,9 +51,7 @@ describe('calculateStats', () => {
         ],
       },
       {
-        publications: [
-          { name: 'NeurIPS', year: 2023 },
-        ],
+        publications: [{ name: 'NeurIPS', year: 2023 }],
       },
     ];
     const result = calculateStats(data);
