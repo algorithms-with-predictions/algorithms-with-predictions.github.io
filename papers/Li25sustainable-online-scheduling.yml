@@ -1,6 +1,7 @@
 title: Learning for Sustainable Online Scheduling with Competitive Fairness Guarantees
 authors: Pengfei Li, Nicolas Christianson, Jianyi Yang, Adam Wierman, Shaolei Ren
-abstract: In this paper, we investigate an online scheduling problem with covering
+abstract:
+  In this paper, we investigate an online scheduling problem with covering
   constraints, in which a decision-maker must make sequential scheduling decisions
   with incomplete future information while satisfying long-term constraints. The decision-maker
   seeks to optimize both efficiency and fairness, yet the lack of perfect future information
@@ -15,23 +16,24 @@ abstract: In this paper, we investigate an online scheduling problem with coveri
   scheduling of distributed large language model (LLM) training, showcasing its ability
   to optimize operational costs while adhering to strict covering and fairness constraints.
 publications:
-- name: Energy-Efficient Computing and Networking
-  url: https://doi.org/10.1145/3679240.3734615
-  year: 2025
-  dblp_key: conf/eenergy/0008C0WR25
-  bibtex: "@inproceedings{DBLP:conf/eenergy/0008C0WR25,\n  author       = {Pengfei\
-    \ Li and\n                  Nicolas Christianson and\n                  Jianyi\
-    \ Yang and\n                  Adam Wierman and\n                  Shaolei Ren},\n\
-    \  title        = {Learning for Sustainable Online Scheduling with Competitive\
-    \ Fairness\n                  Guarantees},\n  booktitle    = {Proceedings of the\
-    \ 16th {ACM} International Conference on Future and\n                  Sustainable\
-    \ Energy Systems, E-Energy 2025, Rotterdam, The Netherlands,\n               \
-    \   June 17-20, 2025},\n  pages        = {63--79},\n  publisher    = {{ACM}},\n\
-    \  year         = {2025},\n  url          = {https://doi.org/10.1145/3679240.3734615},\n\
-    \  doi          = {10.1145/3679240.3734615},\n  timestamp    = {Sun, 06 Jul 2025\
-    \ 13:23:45 +0200},\n  biburl       = {https://dblp.org/rec/conf/eenergy/0008C0WR25.bib},\n\
-    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+  - name: e-Energy
+    url: https://doi.org/10.1145/3679240.3734615
+    year: 2025
+    dblp_key: conf/eenergy/0008C0WR25
+    bibtex:
+      "@inproceedings{DBLP:conf/eenergy/0008C0WR25,\n  author       = {Pengfei\
+      \ Li and\n                  Nicolas Christianson and\n                  Jianyi\
+      \ Yang and\n                  Adam Wierman and\n                  Shaolei Ren},\n\
+      \  title        = {Learning for Sustainable Online Scheduling with Competitive\
+      \ Fairness\n                  Guarantees},\n  booktitle    = {Proceedings of the\
+      \ 16th {ACM} International Conference on Future and\n                  Sustainable\
+      \ Energy Systems, E-Energy 2025, Rotterdam, The Netherlands,\n               \
+      \   June 17-20, 2025},\n  pages        = {63--79},\n  publisher    = {{ACM}},\n\
+      \  year         = {2025},\n  url          = {https://doi.org/10.1145/3679240.3734615},\n\
+      \  doi          = {10.1145/3679240.3734615},\n  timestamp    = {Sun, 06 Jul 2025\
+      \ 13:23:45 +0200},\n  biburl       = {https://dblp.org/rec/conf/eenergy/0008C0WR25.bib},\n\
+      \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: 7b5d43e38ca3bd41df835b84fa676cc7d46fa363
 labels:
-- online
-- scheduling
+  - online
+  - scheduling

@@ -1,6 +1,7 @@
 title: Online Algorithms for Multi-shop Ski Rental with Machine Learned Predictions
 authors: Shu-Fan Wang, Jian Li, Shiqiang Wang
-abstract: We study the problem of augmenting online algorithms with machine learned
+abstract:
+  We study the problem of augmenting online algorithms with machine learned
   (ML) predictions. In particular, we consider the \emph{multi-shop ski rental} (MSSR)
   problem, which is a generalization of the classical ski rental problem. In MSSR,
   each shop has different prices for buying and renting a pair of skis, and a skier
@@ -12,29 +13,30 @@ abstract: We study the problem of augmenting online algorithms with machine lear
   the predictors, but improve with better predictions. We numerically evaluate the
   performance of our proposed online algorithms in practice.
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2002.05808
-  year: 2020
-  month: 2
-  day: 13
-- name: Adaptive Agents and Multi-Agent Systems
-  year: 2020
-  dblp_key: conf/atal/WangL20
-  bibtex: "@inproceedings{DBLP:conf/atal/WangL20,\n  author       = {Shufan Wang and\n\
-    \                  Jian Li},\n  editor       = {Amal El Fallah Seghrouchni and\n\
-    \                  Gita Sukthankar and\n                  Bo An and\n        \
-    \          Neil Yorke{-}Smith},\n  title        = {Online Algorithms for Multi-shop\
-    \ Ski Rental with Machine Learned Predictions},\n  booktitle    = {Proceedings\
-    \ of the 19th International Conference on Autonomous Agents\n                \
-    \  and Multiagent Systems, {AAMAS} '20, Auckland, New Zealand, May 9-13,\n   \
-    \               2020},\n  pages        = {2035--2037},\n  publisher    = {International\
-    \ Foundation for Autonomous Agents and Multiagent Systems},\n  year         =\
-    \ {2020},\n  url          = {https://dl.acm.org/doi/10.5555/3398761.3399066},\n\
-    \  doi          = {10.5555/3398761.3399066},\n  timestamp    = {Tue, 26 Jul 2022\
-    \ 17:09:52 +0200},\n  biburl       = {https://dblp.org/rec/conf/atal/WangL20.bib},\n\
-    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+  - name: arXiv
+    url: https://arxiv.org/abs/2002.05808
+    year: 2020
+    month: 2
+    day: 13
+  - name: AAMAS
+    year: 2020
+    dblp_key: conf/atal/WangL20
+    bibtex:
+      "@inproceedings{DBLP:conf/atal/WangL20,\n  author       = {Shufan Wang and\n\
+      \                  Jian Li},\n  editor       = {Amal El Fallah Seghrouchni and\n\
+      \                  Gita Sukthankar and\n                  Bo An and\n        \
+      \          Neil Yorke{-}Smith},\n  title        = {Online Algorithms for Multi-shop\
+      \ Ski Rental with Machine Learned Predictions},\n  booktitle    = {Proceedings\
+      \ of the 19th International Conference on Autonomous Agents\n                \
+      \  and Multiagent Systems, {AAMAS} '20, Auckland, New Zealand, May 9-13,\n   \
+      \               2020},\n  pages        = {2035--2037},\n  publisher    = {International\
+      \ Foundation for Autonomous Agents and Multiagent Systems},\n  year         =\
+      \ {2020},\n  url          = {https://dl.acm.org/doi/10.5555/3398761.3399066},\n\
+      \  doi          = {10.5555/3398761.3399066},\n  timestamp    = {Tue, 26 Jul 2022\
+      \ 17:09:52 +0200},\n  biburl       = {https://dblp.org/rec/conf/atal/WangL20.bib},\n\
+      \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 arxiv: 2002.05808
 s2_id: 5caeb7318c23a9620f431b08719208e0aad028fe
 labels:
-- rent-or-buy
-- online
+  - rent-or-buy
+  - online

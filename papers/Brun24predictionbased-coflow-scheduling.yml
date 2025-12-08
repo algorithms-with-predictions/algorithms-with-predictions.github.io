@@ -1,20 +1,20 @@
 title: Prediction-based Coflow Scheduling
 authors: O. Brun, B. Prabhu, Oumayma Haddaji
 publications:
-- name: International Symposium on Modeling and Optimization in Mobile, Ad-Hoc and
-    Wireless Networks
-  year: 2024
-  dblp_key: conf/wiopt/BrunPH24
-  bibtex: "@inproceedings{DBLP:conf/wiopt/BrunPH24,\n  author       = {Olivier Brun\
-    \ and\n                  Balakrishna J. Prabhu and\n                  Oumayma\
-    \ Haddaji},\n  title        = {Prediction-based Coflow Scheduling},\n  booktitle\
-    \    = {22nd International Symposium on Modeling and Optimization in Mobile,\n\
-    \                  Ad Hoc, and Wireless Networks, WiOpt 2024, Seoul, Republic\
-    \ of Korea,\n                  October 21-24, 2024},\n  pages        = {185--192},\n\
-    \  publisher    = {{IEEE}},\n  year         = {2024},\n  url          = {https://ieeexplore.ieee.org/document/10778346},\n\
-    \  timestamp    = {Tue, 07 Jan 2025 11:21:20 +0100},\n  biburl       = {https://dblp.org/rec/conf/wiopt/BrunPH24.bib},\n\
-    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+  - name: WiOpt
+    year: 2024
+    dblp_key: conf/wiopt/BrunPH24
+    bibtex:
+      "@inproceedings{DBLP:conf/wiopt/BrunPH24,\n  author       = {Olivier Brun\
+      \ and\n                  Balakrishna J. Prabhu and\n                  Oumayma\
+      \ Haddaji},\n  title        = {Prediction-based Coflow Scheduling},\n  booktitle\
+      \    = {22nd International Symposium on Modeling and Optimization in Mobile,\n\
+      \                  Ad Hoc, and Wireless Networks, WiOpt 2024, Seoul, Republic\
+      \ of Korea,\n                  October 21-24, 2024},\n  pages        = {185--192},\n\
+      \  publisher    = {{IEEE}},\n  year         = {2024},\n  url          = {https://ieeexplore.ieee.org/document/10778346},\n\
+      \  timestamp    = {Tue, 07 Jan 2025 11:21:20 +0100},\n  biburl       = {https://dblp.org/rec/conf/wiopt/BrunPH24.bib},\n\
+      \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: 396682038d33662131246368a7e8650907b3e7c2
 labels:
-- scheduling
-- online
+  - scheduling
+  - online
