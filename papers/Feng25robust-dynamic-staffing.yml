@@ -8,8 +8,4 @@ publications:
     year: 2025
     url: https://arxiv.org/abs/2510.16663
 labels:
-  - Online algorithms
-  - Dynamic staffing
-  - Sequential forecast
-  - News-vendor model
-  - Predictions
+  - online

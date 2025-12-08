@@ -1,7 +1,9 @@
-title: 'Learning to Price with Resource Constraints: From Full Information to Machine-Learned
-  Prices'
+title:
+  "Learning to Price with Resource Constraints: From Full Information to Machine-Learned
+  Prices"
 authors: Ruicheng Ao, Jiashuo Jiang, David Simchi-Levi
-abstract: 'We study the dynamic pricing problem with knapsack, addressing the challenge
+abstract:
+  'We study the dynamic pricing problem with knapsack, addressing the challenge
   of balancing exploration and exploitation under resource constraints. We introduce
   three algorithms tailored to different informational settings: a Boundary Attracted
   Re-solve Method for full information, an online learning algorithm for scenarios
@@ -16,12 +18,11 @@ abstract: 'We study the dynamic pricing problem with knapsack, addressing the ch
   allocation and dynamic pricing, offering practical solutions adaptable to different
   informational structures.'
 labels:
-- dynamic pricing
-- learning
-- online
+  - learning
+  - online
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2501.14155
-  year: 2025
-  month: 1
-  day: 24
+  - name: arXiv
+    url: https://arxiv.org/abs/2501.14155
+    year: 2025
+    month: 1
+    day: 24

@@ -1,20 +1,23 @@
 title: Verbalized Algorithms
-authors: Supriya Lall, Christian Farrell, Hari Pathanjaly, Marko Pavic, Sarvesh Chezhian,
+authors:
+  Supriya Lall, Christian Farrell, Hari Pathanjaly, Marko Pavic, Sarvesh Chezhian,
   Masataro Asai
 labels:
-- sorting, clustering
+  - sorting
+  - clustering
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2509.08150
-  year: 2025
-  month: 9
-  day: 9
-- name: The First Workshop on Efficient Reasoning, Neurips 2025
-  url: https://openreview.net/forum?id=FNyMv6k2S9
-  year: 2025
-  month: 10
-  day: 16
-abstract: Instead of querying LLMs in a one-shot manner and hoping to get the right
+  - name: arXiv
+    url: https://arxiv.org/abs/2509.08150
+    year: 2025
+    month: 9
+    day: 9
+  - name: The First Workshop on Efficient Reasoning, Neurips 2025
+    url: https://openreview.net/forum?id=FNyMv6k2S9
+    year: 2025
+    month: 10
+    day: 16
+abstract:
+  Instead of querying LLMs in a one-shot manner and hoping to get the right
   answer for a reasoning task, we propose a paradigm we call \emph{verbalized algorithms}
   (VAs), which leverage classical algorithms with established theoretical understanding.
   VAs decompose a task into simple elementary operations on natural language strings
@@ -23,4 +26,3 @@ abstract: Instead of querying LLMs in a one-shot manner and hoping to get the ri
   \emph{verbalized sorting} uses an LLM as a binary comparison oracle in a known and
   well-analyzed sorting algorithm (e.g., bitonic sorting network). We demonstrate
   the effectiveness of this approach on sorting and clustering tasks.
-

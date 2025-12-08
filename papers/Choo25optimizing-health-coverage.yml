@@ -1,19 +1,17 @@
-title: 'Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and
-  Persistent Proportionality Under an Online Budget'
+title:
+  "Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and
+  Persistent Proportionality Under an Online Budget"
 authors: Choo, Trabelsi, Getnet, Lamma, Nigatu, Sime, Matay, Tambe, Verguet
 year: 2025
 s2_id: f9ed40c0f2a1119a690f056cdc81cd3a4ddebcf6
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2509.00135
-  year: 2025
-- name: arXiv.org
-  year: 2025
-  url: https://doi.org/10.48550/arXiv.2509.00135
-  dblp_key: journals/corr/abs-2509-00135
-arxiv: '2509.00135'
-abstract: 'As part of nationwide efforts aligned with the United Nations''Sustainable
-  Development Goal 3 on Universal Health Coverage, Ethiopia''s Ministry of Health
+  - name: arXiv
+    url: https://arxiv.org/abs/2509.00135
+    year: 2025
+arxiv: "2509.00135"
+abstract:
+  "As part of nationwide efforts aligned with the United Nations'Sustainable
+  Development Goal 3 on Universal Health Coverage, Ethiopia's Ministry of Health
   is strengthening health posts to expand access to essential healthcare services.
   However, only a fraction of this health system strengthening effort can be implemented
   each year due to limited budgets and other competing priorities, thus the need for
@@ -26,7 +24,6 @@ abstract: 'As part of nationwide efforts aligned with the United Nations''Sustai
   at any single-step; and (ii) a greedy algorithm for multi-step planning, both with
   strong worst-case approximation estimation. In collaboration with the Ethiopian
   Public Health Institute and Ministry of Health, we demonstrated the empirical efficacy
-  of our method on three regions across various planning scenarios.'
+  of our method on three regions across various planning scenarios."
 labels:
-- online
-
+  - online

@@ -3,15 +3,12 @@ authors: Melissourgos, Protopapas
 year: 2025
 s2_id: e474aa3fb1c653253f47ef1d6a3c2e5fedff8d24
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2508.04779
-  year: 2025
-- name: arXiv.org
-  year: 2025
-  url: https://doi.org/10.48550/arXiv.2508.04779
-  dblp_key: journals/corr/abs-2508-04779
-arxiv: '2508.04779'
-abstract: We study an online fair division problem where a fixed number of goods arrive
+  - name: arXiv
+    url: https://arxiv.org/abs/2508.04779
+    year: 2025
+arxiv: "2508.04779"
+abstract:
+  We study an online fair division problem where a fixed number of goods arrive
   sequentially and must be allocated to a given set of agents. Once a good arrives,
   its true value for each agent is revealed, and it has to be immediately and irrevocably
   allocated to some agent. The ultimate goal is to ensure envy-freeness up to any
@@ -34,7 +31,6 @@ abstract: We study an online fair division problem where a fixed number of goods
   predictions and the true values. The algorithm approximates EFX, with its guarantees
   improving as the accuracy of the predictions increases.
 labels:
-- online
-- allocation / matching
-- game theory / mechanism design
-
+  - online
+  - allocation / matching
+  - game theory / mechanism design

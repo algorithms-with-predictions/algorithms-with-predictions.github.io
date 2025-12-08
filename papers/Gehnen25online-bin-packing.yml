@@ -3,15 +3,10 @@ authors: Gehnen, Usdenski
 year: 2025
 s2_id: a278459abac8ffc7950ce1891d71a9134ad8ea09
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2505.09321
-  year: 2025
-- name: arXiv.org
-  year: 2025
-  url: https://doi.org/10.48550/arXiv.2505.09321
-  dblp_key: journals/corr/abs-2505-09321
-arxiv: '2505.09321'
+  - name: arXiv
+    url: https://arxiv.org/abs/2505.09321
+    year: 2025
+arxiv: "2505.09321"
 labels:
-- packing
-- online
-
+  - packing
+  - online

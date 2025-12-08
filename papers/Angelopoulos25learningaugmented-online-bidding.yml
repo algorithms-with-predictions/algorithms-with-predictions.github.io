@@ -3,15 +3,12 @@ authors: Angelopoulos, Simon
 year: 2025
 s2_id: 7654004263678271b4fd0acec4249444be6a07df
 publications:
-- name: arXiv
-  url: https://arxiv.org/abs/2510.25582
-  year: 2025
-- name: arXiv.org
-  year: 2025
-  url: https://doi.org/10.48550/arXiv.2510.25582
-  dblp_key: journals/corr/abs-2510-25582
-arxiv: '2510.25582'
-abstract: Online bidding is a classic optimization problem, with several applications
+  - name: arXiv
+    url: https://arxiv.org/abs/2510.25582
+    year: 2025
+arxiv: "2510.25582"
+abstract:
+  Online bidding is a classic optimization problem, with several applications
   in online decision-making, the design of interruptible systems, and the analysis
   of approximation algorithms. In this work, we study online bidding under learning-augmented
   settings that incorporate stochasticity, in either the prediction oracle or the
@@ -23,6 +20,5 @@ abstract: Online bidding is a classic optimization problem, with several applica
   predominantly on oracles that do not leverage stochastic information on the quality
   of the prediction, and deterministic algorithms.
 labels:
-- online
-- rent-or-buy
-
+  - online
+  - rent-or-buy
