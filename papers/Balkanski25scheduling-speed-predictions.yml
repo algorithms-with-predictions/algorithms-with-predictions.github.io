@@ -8,19 +8,55 @@ publications:
   url: https://doi.org/10.1007/s00224-024-10200-z
   year: 2025
   dblp_key: journals/mst/BalkanskiOSW25
-  bibtex: "@article{DBLP:journals/mst/BalkanskiOSW25,\n  author       = {Eric Balkanski and\n  Tingting Ou and\n  Clifford\
-    \ Stein and\n  Hao{-}Ting Wei},\n  title        = {Scheduling with Speed Predictions},\n  journal      = {Theory Comput.\
-    \ Syst.},\n  volume       = {69},\n  number       = {1},\n  pages        = {16},\n  year         = {2025}\n}\n"
+  bibtex: "@article{DBLP:journals/mst/BalkanskiOSW25,\n  author       = {Eric Balkanski\
+    \ and\n  Tingting Ou and\n  Clifford Stein and\n  Hao{-}Ting Wei},\n  title  \
+    \      = {Scheduling with Speed Predictions},\n  journal      = {Theory Comput.\
+    \ Syst.},\n  volume       = {69},\n  number       = {1},\n  pages        = {16},\n\
+    \  year         = {2025}\n}\n"
 - name: WAOA
   url: https://doi.org/10.1007/978-3-031-49815-2_6
   year: 2023
   dblp_key: conf/waoa/BalkanskiOSW23
-  bibtex: "@inproceedings{DBLP:conf/waoa/BalkanskiOSW23,\n  author       = {Eric Balkanski and\n  Tingting Ou and\n  Clifford\
-    \ Stein and\n  Hao{-}Ting Wei},\n  title        = {Scheduling with Speed Predictions},\n  booktitle    = {{WAOA}},\n \
-    \ series       = {Lecture Notes in Computer Science},\n  volume       = {14297},\n  pages        = {74--89},\n  publisher\
-    \    = {Springer},\n  year         = {2023}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/waoa/BalkanskiOSW23,\n  author       = {Eric Balkanski\
+    \ and\n  Tingting Ou and\n  Clifford Stein and\n  Hao{-}Ting Wei},\n  title  \
+    \      = {Scheduling with Speed Predictions},\n  booktitle    = {{WAOA}},\n  series\
+    \       = {Lecture Notes in Computer Science},\n  volume       = {14297},\n  pages\
+    \        = {74--89},\n  publisher    = {Springer},\n  year         = {2023}\n\
+    }\n"
 - name: arXiv
   url: https://arxiv.org/abs/2205.01247
   year: 2022
   month: 5
   day: 2
+abstract: 'Algorithms with predictions is a recent framework that has been used to
+  overcome pessimistic worst-case bounds in incomplete information settings. In the
+  context of scheduling, very recent work has leveraged machine-learned predictions
+  to design algorithms that achieve improved approximation ratios in settings where
+  the processing times of the jobs are initially unknown. In this paper, we study
+  the speed-robust scheduling problem where the speeds of the machines, instead of
+  the processing times of the jobs, are unknown and augment this problem with predictions.
+  Our main result is an algorithm that achieves a min{η2(1+α),(2+2/α)}\documentclass[12pt]{minimal}
+  \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+  \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt}
+  \begin{document}$$\min \{\eta ^2(1+\alpha ), (2 + 2/\alpha )\}$$\end{document}-approximation,
+  for any α∈(0,1)\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym}
+  \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+  \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\alpha
+  \in (0,1)$$\end{document}, where η≥1\documentclass[12pt]{minimal} \usepackage{amsmath}
+  \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+  \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\eta
+  \ge 1$$\end{document} is the prediction error. When the predictions are accurate,
+  this approximation outperforms the best known approximation for speed-robust scheduling
+  without predictions of 2-1/m\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym}
+  \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+  \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$2-1/m$$\end{document},
+  where m is the number of machines, while simultaneously maintaining a worst-case
+  approximation of 2+2/α\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym}
+  \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+  \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$2 + 2/\alpha
+  $$\end{document} even when the predictions are arbitrarily wrong. In addition, we
+  obtain improved approximations for three special cases: equal job sizes, infinitesimal
+  job sizes, and binary machine speeds. We also complement our algorithmic results
+  with lower bounds. Finally, we empirically evaluate our algorithm against existing
+  algorithms for speed-robust scheduling.'
+

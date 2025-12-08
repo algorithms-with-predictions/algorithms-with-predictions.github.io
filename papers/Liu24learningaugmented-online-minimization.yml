@@ -43,3 +43,6 @@ publications:
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 arxiv: 2403.02573
 s2_id: 1eb081653d063f8708178c46c7170b677419ad15
+labels:
+- online
+

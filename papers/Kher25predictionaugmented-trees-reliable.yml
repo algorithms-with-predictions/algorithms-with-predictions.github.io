@@ -1,0 +1,40 @@
+title: Prediction-Augmented Trees for Reliable Statistical Inference
+authors: Kher, Oikonomou, Zampetakis
+year: 2025
+s2_id: 00c8d6fd092d03a428231862afa28d5c842a0088
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2510.16937
+  year: 2025
+- name: arXiv.org
+  year: 2025
+  url: https://doi.org/10.48550/arXiv.2510.16937
+  dblp_key: journals/corr/abs-2510-16937
+arxiv: '2510.16937'
+abstract: 'The remarkable success of machine learning (ML) in predictive tasks has
+  led scientists to incorporate ML predictions as a core component of the scientific
+  discovery pipeline. This was exemplified by the landmark achievement of AlphaFold
+  (Jumper et al. (2021)). In this paper, we study how ML predictions can be safely
+  used in statistical analysis of data towards scientific discovery. In particular,
+  we follow the framework introduced by Angelopoulos et al. (2023). In this framework,
+  we assume access to a small set of $n$ gold-standard labeled samples, a much larger
+  set of $N$ unlabeled samples, and a ML model that can be used to impute the labels
+  of the unlabeled data points. We introduce two new learning-augmented estimators:
+  (1) Prediction-Augmented Residual Tree (PART), and (2) Prediction-Augmented Quadrature
+  (PAQ). Both estimators have significant advantages over existing estimators like
+  PPI and PPI++ introduced by Angelopoulos et al. (2023) and Angelopoulos et al. (2024),
+  respectively. PART is a decision-tree based estimator built using a greedy criterion.
+  We first characterize PART''s asymptotic distribution and demonstrate how to construct
+  valid confidence intervals. Then we show that PART outperforms existing methods
+  in real-world datasets from ecology, astronomy, and census reports, among other
+  domains. This leads to estimators with higher confidence, which is the result of
+  using both the gold-standard samples and the machine learning predictions. Finally,
+  we provide a formal proof of the advantage of PART by exploring PAQ, an estimation
+  that arises when considering the limit of PART when the depth its tree grows to
+  infinity. Under appropriate assumptions in the input data we show that the variance
+  of PAQ shrinks at rate of $O(N^{-1} + n^{-4})$, improving significantly on the $O(N^{-1}+n^{-1})$
+  rate of existing methods.'
+labels:
+- search
+- running time
+

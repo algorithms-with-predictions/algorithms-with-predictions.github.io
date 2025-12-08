@@ -1,5 +1,5 @@
 title: Improving Online Rent-or-Buy Algorithms with Sequential Decision Making and ML Predictions
-authors: Banerjee
+authors: S. Banerjee
 labels:
 - online
 - rent-or-buy
@@ -11,3 +11,5 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/nips/Banerjee20,\n  author       = {Soumya Banerjee},\n  title        = {Improving Online\
     \ Rent-or-Buy Algorithms with Sequential Decision Making\n  and {ML} Predictions},\n  booktitle    = {NeurIPS},\n  year\
     \         = {2020}\n}\n"
+s2_id: a3279379729d11629dbbabed4ea105a6c94cc2d9
+year: 2020

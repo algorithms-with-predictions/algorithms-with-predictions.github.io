@@ -9,12 +9,32 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.ITCS.2025.44
   year: 2025
   dblp_key: conf/innovations/Dong0V25
-  bibtex: "@inproceedings{DBLP:conf/innovations/Dong0V25,\n  author       = {Yinhao Dong and\n  Pan Peng and\n  Ali Vakilian},\n\
-    \  title        = {Learning-Augmented Streaming Algorithms for Approximating {MAX-CUT}},\n  booktitle    = {{ITCS}},\n\
-    \  series       = {LIPIcs},\n  volume       = {325},\n  pages        = {44:1--44:24},\n  publisher    = {Schloss Dagstuhl\
-    \ - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2025}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/innovations/Dong0V25,\n  author       = {Yinhao\
+    \ Dong and\n  Pan Peng and\n  Ali Vakilian},\n  title        = {Learning-Augmented\
+    \ Streaming Algorithms for Approximating {MAX-CUT}},\n  booktitle    = {{ITCS}},\n\
+    \  series       = {LIPIcs},\n  volume       = {325},\n  pages        = {44:1--44:24},\n\
+    \  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n\
+    \  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2412.09773
   year: 2024
   month: 12
   day: 13
+abstract: 'We study learning-augmented streaming algorithms for estimating the value
+  of MAX-CUT in a graph. In the classical streaming model, while a $1/2$-approximation
+  for estimating the value of MAX-CUT can be trivially achieved with $O(1)$ words
+  of space, Kapralov and Krachun [STOC''19] showed that this is essentially the best
+  possible: for any $\epsilon>0$, any (randomized) single-pass streaming algorithm
+  that achieves an approximation ratio of at least $1/2 + \epsilon$ requires $\Omega(n
+  / 2^{\text{poly}(1/\epsilon)})$ space. We show that it is possible to surpass the
+  $1/2$-approximation barrier using just $O(1)$ words of space by leveraging a (machine
+  learned) oracle. Specifically, we consider streaming algorithms that are equipped
+  with an $\epsilon$-accurate oracle that for each vertex in the graph, returns its
+  correct label in $\{-1, +1\}$, corresponding to an optimal MAX-CUT solution in the
+  graph, with some probability $1/2 + \epsilon$, and the incorrect label otherwise.
+  Within this framework, we present a single-pass algorithm that approximates the
+  value of MAX-CUT to within a factor of $1/2 + \Omega(\epsilon^2)$ with probability
+  at least $2/3$ for insertion-only streams, using only $\text{poly}(1/\epsilon)$
+  words of space. We also extend our algorithm to fully dynamic streams while maintaining
+  a space complexity of $\text{poly}(1/\epsilon,\log n)$ words.'
+

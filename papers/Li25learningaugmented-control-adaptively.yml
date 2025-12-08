@@ -1,18 +1,13 @@
-title: '''Learning-Augmented Control: Adaptively Confidence Learning for Competitive
-  MPC'''
+title: '''Learning-Augmented Control: Adaptively Confidence Learning for Competitive MPC'''
 authors: Tongxin Li
-abstract: We introduce Learning-Augmented Control (LAC), an approach that integrates
-  untrusted machine learning predictions into the control of constrained, nonlinear
-  dynamical systems. LAC is designed to achieve the"best-of-both-worlds"guarantees,
-  i.e, near-optimal performance when predictions are accurate, and robust, safe performance
-  when they are not. The core of our approach is a delayed confidence learning procedure
-  that optimizes a confidence parameter online, adaptively balancing between ML and
-  nominal predictions. We establish formal competitive ratio bounds for general nonlinear
-  systems under standard MPC regularity assumptions. For the linear quadratic case,
-  we derive a competitive ratio bound that is provably tight, thereby characterizing
-  the fundamental limits of this learning-augmented approach. The effectiveness of
-  LAC is demonstrated in numerical studies, where it maintains stability and outperforms
-  standard methods under adversarial prediction errors.
+abstract: We introduce Learning-Augmented Control (LAC), an approach that integrates untrusted machine learning predictions
+  into the control of constrained, nonlinear dynamical systems. LAC is designed to achieve the"best-of-both-worlds"guarantees,
+  i.e, near-optimal performance when predictions are accurate, and robust, safe performance when they are not. The core of
+  our approach is a delayed confidence learning procedure that optimizes a confidence parameter online, adaptively balancing
+  between ML and nominal predictions. We establish formal competitive ratio bounds for general nonlinear systems under standard
+  MPC regularity assumptions. For the linear quadratic case, we derive a competitive ratio bound that is provably tight, thereby
+  characterizing the fundamental limits of this learning-augmented approach. The effectiveness of LAC is demonstrated in numerical
+  studies, where it maintains stability and outperforms standard methods under adversarial prediction errors.
 labels:
 - control theory
 - online
@@ -21,3 +16,6 @@ publications:
   url: https://dblp.org/rec/journals/corr/abs-2507-14595
   year: 2025
   dblp_key: journals/corr/abs-2507-14595
+s2_id: 5aff53917338b2e8d3466ec3316a58cdd9d56e4f
+arxiv: '2507.14595'
+year: 2025

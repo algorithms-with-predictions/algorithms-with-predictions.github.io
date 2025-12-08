@@ -16,3 +16,6 @@ publications:
     \ 2021 16:55:04 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2106-09659.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: 5842e9be51951f0109676ab704bb8bf8d9c1e523
+labels:
+- linear quadratic control
+

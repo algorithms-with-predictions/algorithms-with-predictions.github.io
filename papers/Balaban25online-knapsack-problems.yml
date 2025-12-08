@@ -1,0 +1,38 @@
+title: Online Knapsack Problems with Estimates
+authors: Balab'an, Gehnen, Lotze, Seesemann, Stocker
+year: 2025
+s2_id: d28d549d53996490760f1c2855ae8e45ceb96673
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2504.21750
+  year: 2025
+- name: International Symposium on Mathematical Foundations of Computer Science
+  year: 2025
+  url: https://doi.org/10.48550/arXiv.2504.21750
+  dblp_key: conf/mfcs/BalabanGLSS25
+arxiv: '2504.21750'
+abstract: 'Imagine you are a computer scientist who enjoys attending conferences or
+  workshops within the year. Sadly, your travel budget is limited, so you must select
+  a subset of events you can travel to. When you are aware of all possible events
+  and their costs at the beginning of the year, you can select the subset of the possible
+  events that maximizes your happiness and is within your budget. On the other hand,
+  if you are blind about the options, you will likely have a hard time when trying
+  to decide if you want to register somewhere or not, and will likely regret decisions
+  you made in the future. These scenarios can be modeled by knapsack variants, either
+  by an offline or an online problem. However, both scenarios are somewhat unrealistic:
+  Usually, you will not know the exact costs of each workshop at the beginning of
+  the year. The online version, however, is too pessimistic, as you might already
+  know which options there are and how much they cost roughly. At some point, you
+  have to decide whether to register for some workshop, but then you are aware of
+  the conference fee and the flight and hotel prices. We model this problem within
+  the setting of online knapsack problems with estimates: in the beginning, you receive
+  a list of potential items with their estimated size as well as the accuracy of the
+  estimates. Then, the items are revealed one by one in an online fashion with their
+  actual size, and you need to decide whether to take one or not. In this article,
+  we show a best-possible algorithm for each estimate accuracy $\delta$ (i.e., when
+  each actual item size can deviate by $\pm \delta$ from the announced size) for both
+  the simple knapsack and the simple knapsack with removability.'
+labels:
+- packing
+- online
+

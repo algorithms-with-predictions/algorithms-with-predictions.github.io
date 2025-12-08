@@ -1,0 +1,30 @@
+title: Learning-Augmented Online Algorithms for Nonclairvoyant Joint Replenishment
+  Problem with Deadlines
+authors: Dinitz, Fineman, Umboh
+labels:
+- online
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2511.16094
+  year: 2025
+  month: 11
+  day: 20
+abstract: 'This paper considers using predictions in the context of the online Joint
+  Replenishment Problem with Deadlines (JRP-D). Prior work includes asymptotically
+  optimal competitive ratios of $O(1)$ for the clairvoyant setting and $O(\sqrt{n})$
+  of the nonclairvoyant setting, where $n$ is the number of items. The goal of this
+  paper is to significantly reduce the competitive ratio for the nonclairvoyant case
+  by leveraging predictions: when a request arrives, the true deadline of the request
+  is not revealed, but the algorithm is given a predicted deadline. The main result
+  is an algorithm whose competitive ratio is $O(\min(\eta^{1/3}\log^{2/3}(n), \sqrt{\eta},
+  \sqrt{n}))$, where $n$ is the number of item types and $\eta\leq n^2$ quantifies
+  how flawed the predictions are in terms of the number of ``instantaneous item inversions.''''Thus,
+  the algorithm is robust, i.e., it is never worse than the nonclairvoyant solution,
+  and it is consistent, i.e., if the predictions exhibit no inversions, then the algorithm
+  behaves similarly to the clairvoyant algorithm. Moreover, if the error is not too
+  large, specifically $\eta<o(n^{3/2}/\log^2(n))$, then the algorithm obtains an asymptotically
+  better competitive ratio than the nonclairvoyant algorithm. We also show that all
+  deterministic algorithms falling in a certain reasonable class of algorithms have
+  a competitive ratio of $\Omega(\eta^{1/3})$, so this algorithm is nearly the best
+  possible with respect to this error metric.'
+

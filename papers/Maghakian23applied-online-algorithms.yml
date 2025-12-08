@@ -1,0 +1,11 @@
+title: Applied Online Algorithms with Heterogeneous Predictors
+authors: Maghakian, Lee, Hajiesmaili, Li, Sitaraman, Liu
+year: 2023
+s2_id: 4353791880e95ae9cfd06f12e96d10bf40d1e477
+publications:
+- name: ICML
+  year: 2023
+  dblp_key: conf/icml/MaghakianLH0S023
+labels:
+- online
+
