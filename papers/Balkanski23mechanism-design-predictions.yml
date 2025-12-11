@@ -1,10 +1,9 @@
 title: 'Mechanism Design with Predictions: An Annotated Reading List'
-authors: Balkanski, Gkatzelis, Tan
-abstract: A surge of recent work has focused on analyzing the performance of algorithms
-  guided by predictions, aiming to enhance their worst-case performance guarantees
-  with improved guarantees when the predictions are accurate. This "learning-augmented"
-  framework was recently also extended to mechanism design settings involving strategic
-  agents and we provide an overview of these results.
+authors: Eric Balkanski, Vasilis Gkatzelis, Xizhi Tan
+abstract: A surge of recent work has focused on analyzing the performance of algorithms guided by predictions, aiming to enhance
+  their worst-case performance guarantees with improved guarantees when the predictions are accurate. This "learning-augmented"
+  framework was recently also extended to mechanism design settings involving strategic agents and we provide an overview
+  of these results.
 labels:
 - game theory / mechanism design
 - survey
@@ -13,8 +12,7 @@ publications:
   url: https://doi.org/10.1145/3699814.3699821
   year: 2023
   dblp_key: journals/sigecom/BalkanskiGT23
-  bibtex: "@article{DBLP:journals/sigecom/BalkanskiGT23,\n  author       = {Eric Balkanski\
-    \ and\n  Vasilis Gkatzelis and\n  Xizhi Tan},\n  title        = {Mechanism Design\
-    \ with Predictions: An Annotated Reading List},\n  journal      = {SIGecom Exch.},\n\
-    \  volume       = {21},\n  number       = {1},\n  pages        = {54--57},\n \
-    \ year         = {2023}\n}\n"
+  bibtex: "@article{DBLP:journals/sigecom/BalkanskiGT23,\n  author       = {Eric Balkanski and\n  Vasilis Gkatzelis and\n\
+    \  Xizhi Tan},\n  title        = {Mechanism Design with Predictions: An Annotated Reading List},\n  journal      = {SIGecom\
+    \ Exch.},\n  volume       = {21},\n  number       = {1},\n  pages        = {54--57},\n  year         = {2023}\n}\n"
+year: 2023

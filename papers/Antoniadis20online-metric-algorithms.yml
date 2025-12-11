@@ -1,16 +1,13 @@
 title: Online metric algorithms with untrusted predictions
-authors: Antoniadis, Coester, Elias, Polak, Simon
-abstract: Machine-learned predictors, although achieving very good results for inputs
-  resembling training data, cannot possibly provide perfect predictions in all situations.
-  Still, decision-making systems that are based on such predictors need not only benefit
-  from good predictions, but should also achieve a decent performance when the predictions
-  are inadequate. In this article, we propose a prediction setup for arbitrary metrical
-  task systems (MTS) (e.g., caching, k-server, and convex body chasing) and online
-  matching on the line. We utilize results from the theory of online algorithms to
-  show how to make the setup robust. Specifically, for caching, we present an algorithm
-  whose performance, as a function of the prediction error, is exponentially better
-  than what is achievable for general MTS. Finally, we present an empirical evaluation
-  of our methods on real-world datasets, which suggests practicality.
+authors: A. Antoniadis, Christian Coester, Marek Eliáš, Adam Polak, B. Simon
+abstract: Machine-learned predictors, although achieving very good results for inputs resembling training data, cannot possibly
+  provide perfect predictions in all situations. Still, decision-making systems that are based on such predictors need not
+  only benefit from good predictions, but should also achieve a decent performance when the predictions are inadequate. In
+  this article, we propose a prediction setup for arbitrary metrical task systems (MTS) (e.g., caching, k-server, and convex
+  body chasing) and online matching on the line. We utilize results from the theory of online algorithms to show how to make
+  the setup robust. Specifically, for caching, we present an algorithm whose performance, as a function of the prediction
+  error, is exponentially better than what is achievable for general MTS. Finally, we present an empirical evaluation of our
+  methods on real-world datasets, which suggests practicality.
 labels:
 - allocation / matching
 - caching / paging
@@ -24,14 +21,13 @@ publications:
   url: https://doi.org/10.1145/3582689
   year: 2023
   dblp_key: journals/talg/AntoniadisCEPS23
-  bibtex: "@article{DBLP:journals/talg/AntoniadisCEPS23,\n  author       = {Antonios\
-    \ Antoniadis and\n  Christian Coester and\n  Marek Eli{\\'{a}}s and\n  Adam Polak\
-    \ and\n  Bertrand Simon},\n  title        = {Online Metric Algorithms with Untrusted\
-    \ Predictions},\n  journal      = {{ACM} Trans. Algorithms},\n  volume       =\
-    \ {19},\n  number       = {2},\n  pages        = {19:1--19:34},\n  year      \
-    \   = {2023}\n}\n"
+  bibtex: "@article{DBLP:journals/talg/AntoniadisCEPS23,\n  author       = {Antonios Antoniadis and\n  Christian Coester and\n\
+    \  Marek Eli{\\'{a}}s and\n  Adam Polak and\n  Bertrand Simon},\n  title        = {Online Metric Algorithms with Untrusted\
+    \ Predictions},\n  journal      = {{ACM} Trans. Algorithms},\n  volume       = {19},\n  number       = {2},\n  pages \
+    \       = {19:1--19:34},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2003.02144
   year: 2020
   month: 3
   day: 4
+year: 2020

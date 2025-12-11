@@ -1,5 +1,5 @@
-title:  Bandits with knapsacks with predictions
-authors: Drago, Celli, Eliáš
+title: Bandits with knapsacks with predictions
+authors: Davide Drago, Andrea Celli, Marek Eliás
 labels:
 - learning
 - online
@@ -7,3 +7,4 @@ publications:
 - name: UAI
   url: https://openreview.net/forum?id=pGnoioQ9z1
   year: 2024
+year: 2024

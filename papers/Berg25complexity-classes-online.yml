@@ -1,24 +1,18 @@
 title: Complexity Classes for Online Problems with and without Predictions
-authors: Berg, Boyar, Favrholdt, Larsen
-abstract: With the developments in machine learning, there has been a surge in interest
-  and results focused on algorithms utilizing predictions, not least in online algorithms
-  where most new results incorporate the prediction aspect for concrete online problems.
-  While the structural computational hardness of problems with regards to time and
-  space is quite well developed, not much is known about online problems where time
-  and space resources are typically not in focus. Some information-theoretical insights
-  were gained when researchers considered online algorithms with oracle advice, but
-  predictions of uncertain quality is a very different matter. We initiate the development
-  of a complexity theory for online problems with predictions, focusing on binary
-  predictions for minimization problems. Based on the most generic hard online problem
-  type, string guessing, we define a family of hierarchies of complexity classes (indexed
-  by pairs of error measures) and develop notions of reductions, class membership,
-  hardness, and completeness. Our framework contains all the tools one expects to
-  find when working with complexity, and we illustrate our tools by analyzing problems
-  with different characteristics. In addition, we show that known lower bounds for
-  paging with predictions apply directly to all hard problems for each class in the
-  hierarchy based on the canonical pair of error measures. Our work also implies corresponding
-  complexity classes for classic online problems without predictions, with the corresponding
-  complete problems.
+authors: Magnus Berg, J. Boyar, Lene M. Favrholdt, Kim S. Larsen
+abstract: With the developments in machine learning, there has been a surge in interest and results focused on algorithms
+  utilizing predictions, not least in online algorithms where most new results incorporate the prediction aspect for concrete
+  online problems. While the structural computational hardness of problems with regards to time and space is quite well developed,
+  not much is known about online problems where time and space resources are typically not in focus. Some information-theoretical
+  insights were gained when researchers considered online algorithms with oracle advice, but predictions of uncertain quality
+  is a very different matter. We initiate the development of a complexity theory for online problems with predictions, focusing
+  on binary predictions for minimization problems. Based on the most generic hard online problem type, string guessing, we
+  define a family of hierarchies of complexity classes (indexed by pairs of error measures) and develop notions of reductions,
+  class membership, hardness, and completeness. Our framework contains all the tools one expects to find when working with
+  complexity, and we illustrate our tools by analyzing problems with different characteristics. In addition, we show that
+  known lower bounds for paging with predictions apply directly to all hard problems for each class in the hierarchy based
+  on the canonical pair of error measures. Our work also implies corresponding complexity classes for classic online problems
+  without predictions, with the corresponding complete problems.
 labels:
 - online
 publications:
@@ -26,14 +20,13 @@ publications:
   url: https://doi.org/10.1007/978-981-96-8312-3_4
   year: 2025
   dblp_key: conf/faw/BergBFL25
-  bibtex: "@inproceedings{DBLP:conf/faw/BergBFL25,\n  author       = {Magnus Berg\
-    \ and\n  Joan Boyar and\n  Lene M. Favrholdt and\n  Kim S. Larsen},\n  title \
-    \       = {Complexity Classes for Online Problems with and Without Predictions},\n\
-    \  booktitle    = {{IJTCS-FAW}},\n  series       = {Lecture Notes in Computer\
-    \ Science},\n  volume       = {15828},\n  pages        = {49--63},\n  publisher\
-    \    = {Springer},\n  year         = {2025}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/faw/BergBFL25,\n  author       = {Magnus Berg and\n  Joan Boyar and\n  Lene M. Favrholdt\
+    \ and\n  Kim S. Larsen},\n  title        = {Complexity Classes for Online Problems with and Without Predictions},\n  booktitle\
+    \    = {{IJTCS-FAW}},\n  series       = {Lecture Notes in Computer Science},\n  volume       = {15828},\n  pages     \
+    \   = {49--63},\n  publisher    = {Springer},\n  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2406.18265
   year: 2024
   month: 6
   day: 26
+year: 2025

@@ -1,28 +1,21 @@
 title: Strategyproof Scheduling with Predictions
-authors: Balkanski, Gkatzelis, Tan
-abstract: 'In their seminal paper that initiated the field of algorithmic mechanism
-  design, \citet{NR99} studied the problem of designing strategyproof mechanisms for
-  scheduling jobs on unrelated machines aiming to minimize the makespan. They provided
-  a strategyproof mechanism that achieves an $n$-approximation and they made the bold
-  conjecture that this is the best approximation achievable by any deterministic strategyproof
-  scheduling mechanism. After more than two decades and several efforts, $n$ remains
-  the best known approximation and very recent work by \citet{CKK21} has been able
-  to prove an $\Omega(\sqrt{n})$ approximation lower bound for all deterministic strategyproof
-  mechanisms. This strong negative result, however, heavily depends on the fact that
-  the performance of these mechanisms is evaluated using worst-case analysis. To overcome
-  such overly pessimistic, and often uninformative, worst-case bounds, a surge of
-  recent work has focused on the ``learning-augmented framework'''', whose goal is
-  to leverage machine-learned predictions to obtain improved approximations when these
-  predictions are accurate (consistency), while also achieving near-optimal worst-case
-  approximations even when the predictions are arbitrarily wrong (robustness). In
-  this work, we study the classic strategic scheduling problem of~\citet{NR99} using
-  the learning-augmented framework and give a deterministic polynomial-time strategyproof
-  mechanism that is $6$-consistent and $2n$-robust. We thus achieve the ``best of
-  both worlds'''': an $O(1)$ consistency and an $O(n)$ robustness that asymptotically
-  matches the best-known approximation. We then extend this result to provide more
-  general worst-case approximation guarantees as a function of the prediction error.
-  Finally, we complement our positive results by showing that any $1$-consistent deterministic
-  strategyproof mechanism has unbounded robustness.'
+authors: Eric Balkanski, Vasilis Gkatzelis, Xizhi Tan
+abstract: 'In their seminal paper that initiated the field of algorithmic mechanism design, \citet{NR99} studied the problem
+  of designing strategyproof mechanisms for scheduling jobs on unrelated machines aiming to minimize the makespan. They provided
+  a strategyproof mechanism that achieves an $n$-approximation and they made the bold conjecture that this is the best approximation
+  achievable by any deterministic strategyproof scheduling mechanism. After more than two decades and several efforts, $n$
+  remains the best known approximation and very recent work by \citet{CKK21} has been able to prove an $\Omega(\sqrt{n})$
+  approximation lower bound for all deterministic strategyproof mechanisms. This strong negative result, however, heavily
+  depends on the fact that the performance of these mechanisms is evaluated using worst-case analysis. To overcome such overly
+  pessimistic, and often uninformative, worst-case bounds, a surge of recent work has focused on the ``learning-augmented
+  framework'''', whose goal is to leverage machine-learned predictions to obtain improved approximations when these predictions
+  are accurate (consistency), while also achieving near-optimal worst-case approximations even when the predictions are arbitrarily
+  wrong (robustness). In this work, we study the classic strategic scheduling problem of~\citet{NR99} using the learning-augmented
+  framework and give a deterministic polynomial-time strategyproof mechanism that is $6$-consistent and $2n$-robust. We thus
+  achieve the ``best of both worlds'''': an $O(1)$ consistency and an $O(n)$ robustness that asymptotically matches the best-known
+  approximation. We then extend this result to provide more general worst-case approximation guarantees as a function of the
+  prediction error. Finally, we complement our positive results by showing that any $1$-consistent deterministic strategyproof
+  mechanism has unbounded robustness.'
 labels:
 - game theory / mechanism design
 - scheduling
@@ -31,14 +24,13 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.ITCS.2023.11
   year: 2023
   dblp_key: conf/innovations/BalkanskiGT23
-  bibtex: "@inproceedings{DBLP:conf/innovations/BalkanskiGT23,\n  author       = {Eric\
-    \ Balkanski and\n  Vasilis Gkatzelis and\n  Xizhi Tan},\n  title        = {Strategyproof\
-    \ Scheduling with Predictions},\n  booktitle    = {{ITCS}},\n  series       =\
-    \ {LIPIcs},\n  volume       = {251},\n  pages        = {11:1--11:22},\n  publisher\
-    \    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year    \
-    \     = {2023}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/innovations/BalkanskiGT23,\n  author       = {Eric Balkanski and\n  Vasilis Gkatzelis\
+    \ and\n  Xizhi Tan},\n  title        = {Strategyproof Scheduling with Predictions},\n  booktitle    = {{ITCS}},\n  series\
+    \       = {LIPIcs},\n  volume       = {251},\n  pages        = {11:1--11:22},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum\
+    \ f{\"{u}}r Informatik},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2209.04058
   year: 2022
   month: 9
   day: 8
+year: 2023

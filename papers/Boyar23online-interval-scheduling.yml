@@ -1,17 +1,13 @@
 title: Online Interval Scheduling with Predictions
-authors: Boyar, Favrholdt, Kamali, Larsen
-abstract: In online interval scheduling, the input is an online sequence of intervals,
-  and the goal is to accept a maximum number of non-overlapping intervals. In the
-  more general disjoint path allocation problem, the input is a sequence of requests,
-  each consisting of pairs of vertices of a known graph, and the goal is to accept
-  a maximum number of requests forming edge-disjoint paths between accepted pairs.
-  We study a setting with a potentially erroneous prediction specifying the set of
-  requests forming the input sequence and provide tight upper and lower bounds on
-  the competitive ratios of online algorithms as a function of the prediction error.
-  We also present asymptotically tight trade-offs between consistency (competitive
-  ratio with error-free predictions) and robustness (competitive ratio with adversarial
-  predictions) of interval scheduling algorithms. Finally, we provide experimental
-  results on real-world scheduling workloads that confirm our theoretical analysis.
+authors: J. Boyar, Lene M. Favrholdt, Shahin Kamali, Kim S. Larsen
+abstract: In online interval scheduling, the input is an online sequence of intervals, and the goal is to accept a maximum
+  number of non-overlapping intervals. In the more general disjoint path allocation problem, the input is a sequence of requests,
+  each consisting of pairs of vertices of a known graph, and the goal is to accept a maximum number of requests forming edge-disjoint
+  paths between accepted pairs. We study a setting with a potentially erroneous prediction specifying the set of requests
+  forming the input sequence and provide tight upper and lower bounds on the competitive ratios of online algorithms as a
+  function of the prediction error. We also present asymptotically tight trade-offs between consistency (competitive ratio
+  with error-free predictions) and robustness (competitive ratio with adversarial predictions) of interval scheduling algorithms.
+  Finally, we provide experimental results on real-world scheduling workloads that confirm our theoretical analysis.
 labels:
 - allocation / matching
 - online
@@ -21,14 +17,13 @@ publications:
   url: https://doi.org/10.1007/978-3-031-38906-1_14
   year: 2023
   dblp_key: conf/wads/BoyarFKL23
-  bibtex: "@inproceedings{DBLP:conf/wads/BoyarFKL23,\n  author       = {Joan Boyar\
-    \ and\n  Lene M. Favrholdt and\n  Shahin Kamali and\n  Kim S. Larsen},\n  title\
-    \        = {Online Interval Scheduling with Predictions},\n  booktitle    = {{WADS}},\n\
-    \  series       = {Lecture Notes in Computer Science},\n  volume       = {14079},\n\
-    \  pages        = {193--207},\n  publisher    = {Springer},\n  year         =\
-    \ {2023}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/wads/BoyarFKL23,\n  author       = {Joan Boyar and\n  Lene M. Favrholdt and\n  Shahin\
+    \ Kamali and\n  Kim S. Larsen},\n  title        = {Online Interval Scheduling with Predictions},\n  booktitle    = {{WADS}},\n\
+    \  series       = {Lecture Notes in Computer Science},\n  volume       = {14079},\n  pages        = {193--207},\n  publisher\
+    \    = {Springer},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2302.13701
   year: 2023
   month: 2
   day: 27
+year: 2023

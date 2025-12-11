@@ -1,23 +1,17 @@
-title: Comparing the Hardness of Online Minimization and Maximization Problems with
-  Predictions
-authors: Berg
-abstract: We build on the work of Berg, Boyar, Favrholdt, and Larsen, who developed
-  a complexity theory for online problems with and without predictions (arXiv:2406.18265),
-  focussing on minimization problems with binary predictions, where they define a
-  hierarchy of complexity classes that classifies online problems based on the competitiveness
-  of best possible deterministic online algorithms for each problem. We continue their
-  work, focussing on online maximization problems. First, we compare the competitiveness
-  of the base online minimization problem from Berg, Boyar, Favrholdt, and Larsen,
-  Asymmetric String Guessing, to the competitiveness of Online Bounded Degree Independent
-  Set. Formally, we show that there exist algorithms of any given competitiveness
-  for Asymmetric String Guessing if and only if there exist algorithms of the same
-  competitiveness for Online Bounded Degree Independent Set, while respecting that
-  the competitiveness of algorithms is measured differently for minimization and maximization
-  problems. Moreover, we give several hardness preserving reductions between different
-  online maximization problems, which imply new membership, hardness, and completeness
-  results for the complexity classes. Finally, we show new positive and negative algorithmic
-  results for (among others) Online Bounded Degree Independent Set, Online Interval
-  Scheduling, Online Set Packing, and Online Bounded Minimum Degree Clique.
+title: Comparing the Hardness of Online Minimization and Maximization Problems with Predictions
+authors: Magnus Berg
+abstract: We build on the work of Berg, Boyar, Favrholdt, and Larsen, who developed a complexity theory for online problems
+  with and without predictions (arXiv:2406.18265), focussing on minimization problems with binary predictions, where they
+  define a hierarchy of complexity classes that classifies online problems based on the competitiveness of best possible deterministic
+  online algorithms for each problem. We continue their work, focussing on online maximization problems. First, we compare
+  the competitiveness of the base online minimization problem from Berg, Boyar, Favrholdt, and Larsen, Asymmetric String Guessing,
+  to the competitiveness of Online Bounded Degree Independent Set. Formally, we show that there exist algorithms of any given
+  competitiveness for Asymmetric String Guessing if and only if there exist algorithms of the same competitiveness for Online
+  Bounded Degree Independent Set, while respecting that the competitiveness of algorithms is measured differently for minimization
+  and maximization problems. Moreover, we give several hardness preserving reductions between different online maximization
+  problems, which imply new membership, hardness, and completeness results for the complexity classes. Finally, we show new
+  positive and negative algorithmic results for (among others) Online Bounded Degree Independent Set, Online Interval Scheduling,
+  Online Set Packing, and Online Bounded Minimum Degree Clique.
 labels:
 - online
 publications:
@@ -25,14 +19,13 @@ publications:
   url: https://doi.org/10.1007/978-981-96-8312-3_3
   year: 2025
   dblp_key: conf/faw/Berg25
-  bibtex: "@inproceedings{DBLP:conf/faw/Berg25,\n  author       = {Magnus Berg},\n\
-    \  title        = {Comparing the Hardness of Online Minimization and Maximization\
-    \ Problems\n  with Predictions},\n  booktitle    = {{IJTCS-FAW}},\n  series  \
-    \     = {Lecture Notes in Computer Science},\n  volume       = {15828},\n  pages\
-    \        = {33--48},\n  publisher    = {Springer},\n  year         = {2025}\n\
-    }\n"
+  bibtex: "@inproceedings{DBLP:conf/faw/Berg25,\n  author       = {Magnus Berg},\n  title        = {Comparing the Hardness\
+    \ of Online Minimization and Maximization Problems\n  with Predictions},\n  booktitle    = {{IJTCS-FAW}},\n  series  \
+    \     = {Lecture Notes in Computer Science},\n  volume       = {15828},\n  pages        = {33--48},\n  publisher    =\
+    \ {Springer},\n  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2409.12694
   year: 2024
   month: 9
   day: 19
+year: 2025

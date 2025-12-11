@@ -1,5 +1,5 @@
 title: Using Machine Learning Predictions to Speed-up Dijkstra's Shortest Path Algorithm
-authors: Feijen, Schäfer
+authors: W. Feijen, G. Schäfer
 labels:
 - running time
 - shortest path
@@ -9,3 +9,4 @@ publications:
   year: 2021
   month: 11
   day: 22
+year: 2021

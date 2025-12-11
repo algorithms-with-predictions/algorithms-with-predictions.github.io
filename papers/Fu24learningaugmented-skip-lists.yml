@@ -1,5 +1,5 @@
 title: Learning-Augmented Skip Lists
-authors: Fu, Seo, Zhou
+authors: Chunkai Fu, Brandon G. Nguyen, Jung Hoon Seo, Ryan Zesch, Samson Zhou
 labels:
 - dynamic / data structure
 - search
@@ -9,3 +9,4 @@ publications:
   year: 2024
   month: 2
   day: 16
+year: 2024

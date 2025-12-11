@@ -1,5 +1,5 @@
 title: Private Algorithms with Private Predictions
-authors: Amin, Dick, Khodak, Vassilvitskii
+authors: Kareem Amin, Travis Dick, M. Khodak, Sergei Vassilvitskii
 labels:
 - differential privacy
 publications:
@@ -8,3 +8,4 @@ publications:
   year: 2022
   month: 9
   day: 20
+year: 2022

@@ -1,5 +1,5 @@
-title: "The adwords problem: online keyword matching with budgeted bidders under random permutations"
-authors: Devanur, Hayes
+title: 'The adwords problem: online keyword matching with budgeted bidders under random permutations'
+authors: Nikhil R. Devanur, Thomas P. Hayes
 labels:
 - prior / related work
 publications:
@@ -10,3 +10,4 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/sigecom/DevenurH09,\n  author       = {Nikhil R. Devanur and\n  Thomas P. Hayes},\n  title\
     \        = {The adwords problem: online keyword matching with budgeted bidders\n  under random permutations},\n  booktitle\
     \    = {{EC}},\n  pages        = {71--78},\n  publisher    = {{ACM}},\n  year         = {2009}\n}\n"
+year: 2009

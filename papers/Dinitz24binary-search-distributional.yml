@@ -1,5 +1,5 @@
 title: Binary Search with Distributional Predictions
-authors: Dinitz, Im, Lavastida, Moseley, Niaparast, Vassilvitskii
+authors: M. Dinitz, Sungjin Im, Thomas Lavastida, Benjamin Moseley, Aidin Niaparast, Sergei Vassilvitskii
 labels:
 - dynamic / data structure
 - search
@@ -18,3 +18,4 @@ publications:
   year: 2024
   month: 11
   day: 25
+year: 2024

@@ -1,5 +1,5 @@
 title: Untrusted Predictions Improve Trustable Query Policies
-authors: Erlebach, Hoffmann, de Lima, Megow, Schlöter
+authors: T. Erlebach, Michael Hoffmann, M. S. D. Lima, Nicole Megow, Jens Schloter
 labels:
 - explorable uncertainty
 - online
@@ -7,3 +7,4 @@ publications:
 - name: arXiv
   url: https://arxiv.org/pdf/2011.07385.pdf
   year: 2020
+year: 2020

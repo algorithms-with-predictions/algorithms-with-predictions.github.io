@@ -1,5 +1,5 @@
 title: Advice Querying under Budget Constraint for Online Algorithms
-authors: Benomar, Perchet
+authors: Ziyad Benomar, Vianney Perchet
 labels:
 - online
 - parsimonious / succinct
@@ -14,3 +14,4 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/nips/BenomarP23,\n  author       = {Ziyad Benomar and\n  Vianney Perchet},\n  title  \
     \      = {Advice Querying under Budget Constraint for Online Algorithms},\n  booktitle    = {NeurIPS},\n  year       \
     \  = {2023}\n}\n"
+year: 2023

@@ -1,27 +1,20 @@
 title: (Learned) Frequency Estimation Algorithms under Zipfian Distribution
-authors: Aamand, Indyk, Vakilian
-abstract: "The frequencies of the elements in a data stream are an important statistical\
-  \ measure and the task of estimating them arises in many applications within data\
-  \ analysis and machine learning. Two of the most popular algorithms for this problem,\
-  \ Count-Min and Count-Sketch, are widely used in practice. \nIn a recent work [Hsu\
-  \ et al., ICLR'19], it was shown empirically that augmenting Count-Min and Count-Sketch\
-  \ with a machine learning algorithm leads to a significant reduction of the estimation\
-  \ error. The experiments were complemented with an analysis of the expected error\
-  \ incurred by Count-Min (both the standard and the augmented version) when the input\
-  \ frequencies follow a Zipfian distribution. Although the authors established that\
-  \ the learned version of Count-Min has lower estimation error than its standard\
-  \ counterpart, their analysis of the standard Count-Min algorithm was not tight.\
-  \ Moreover, they provided no similar analysis for Count-Sketch. \nIn this paper\
-  \ we resolve these problems. First, we provide a simple tight analysis of the expected\
-  \ error incurred by Count-Min. Second, we provide the first error bounds for both\
-  \ the standard and the augmented version of Count-Sketch. These bounds are nearly\
-  \ tight and again demonstrate an improved performance of the learned version of\
-  \ Count-Sketch. \nIn addition to demonstrating tight gaps between the aforementioned\
-  \ algorithms, we believe that our bounds for the standard versions of Count-Min\
-  \ and Count-Sketch are of independent interest. In particular, it is a typical practice\
-  \ to set the number of hash functions in those algorithms to $\\Theta (\\log n)$.\
-  \ In contrast, our results show that to minimise the \\emph{expected} error, the\
-  \ number of hash functions should be a constant, strictly greater than $1$."
+authors: Anders Aamand, P. Indyk, A. Vakilian
+abstract: "The frequencies of the elements in a data stream are an important statistical measure and the task of estimating\
+  \ them arises in many applications within data analysis and machine learning. Two of the most popular algorithms for this\
+  \ problem, Count-Min and Count-Sketch, are widely used in practice. \nIn a recent work [Hsu et al., ICLR'19], it was shown\
+  \ empirically that augmenting Count-Min and Count-Sketch with a machine learning algorithm leads to a significant reduction\
+  \ of the estimation error. The experiments were complemented with an analysis of the expected error incurred by Count-Min\
+  \ (both the standard and the augmented version) when the input frequencies follow a Zipfian distribution. Although the authors\
+  \ established that the learned version of Count-Min has lower estimation error than its standard counterpart, their analysis\
+  \ of the standard Count-Min algorithm was not tight. Moreover, they provided no similar analysis for Count-Sketch. \nIn\
+  \ this paper we resolve these problems. First, we provide a simple tight analysis of the expected error incurred by Count-Min.\
+  \ Second, we provide the first error bounds for both the standard and the augmented version of Count-Sketch. These bounds\
+  \ are nearly tight and again demonstrate an improved performance of the learned version of Count-Sketch. \nIn addition to\
+  \ demonstrating tight gaps between the aforementioned algorithms, we believe that our bounds for the standard versions of\
+  \ Count-Min and Count-Sketch are of independent interest. In particular, it is a typical practice to set the number of hash\
+  \ functions in those algorithms to $\\Theta (\\log n)$. In contrast, our results show that to minimise the \\emph{expected}\
+  \ error, the number of hash functions should be a constant, strictly greater than $1$."
 labels:
 - streaming
 publications:
@@ -30,3 +23,4 @@ publications:
   year: 2019
   month: 8
   day: 14
+year: 2019

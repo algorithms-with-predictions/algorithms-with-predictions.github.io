@@ -1,5 +1,5 @@
 title: Optimal robustness-consistency tradeoffs for learning-augmented metrical task systems
-authors: Christianson, Shen, Wierman
+authors: Nicolas Christianson, Junxuan Shen, A. Wierman
 labels:
 - k-server / MTS
 - online
@@ -12,3 +12,4 @@ publications:
     \ and\n  Adam Wierman},\n  title        = {Optimal robustness-consistency tradeoffs for learning-augmented metrical\n\
     \  task systems},\n  booktitle    = {{AISTATS}},\n  series       = {Proceedings of Machine Learning Research},\n  volume\
     \       = {206},\n  pages        = {9377--9399},\n  publisher    = {{PMLR}},\n  year         = {2023}\n}\n"
+year: 2023

@@ -1,33 +1,23 @@
-title: 'To Trust or Not to Trust: Assignment Mechanisms with Predictions in the Private
-  Graph Model'
-authors: Colini-Baldeschi, Klumper, Schäfer, Tsikiridis
-abstract: 'The realm of algorithms with predictions has led to the development of
-  several new algorithms that leverage predictions to enhance their performance guarantees.
-  The challenge is to devise algorithms that achieve optimal approximation guarantees
-  as the prediction quality varies from perfect (consistency) to imperfect (robustness).
-  This framework is particularly appealing in mechanism design contexts, where predictions
-  might convey private information about the agents. In this paper, we design strategyproof
-  mechanisms that leverage predictions to achieve improved approximation guarantees
-  for several variants of the Generalized Assignment Problem (GAP) in the private
-  graph model. In this model, first introduced by Dughmi & Ghosh (2010), the set of
-  resources that an agent is compatible with is private information. For the Bipartite
-  Matching Problem (BMP), we give a deterministic group-strategyproof (GSP) mechanism
-  that is (1 + 1/γ)-consistent and (1 + γ)-robust, where γ ≥ 1 is some confidence
-  parameter. We also prove that this is best possible. Remarkably, our mechanism draws
-  inspiration from the renowned Gale-Shapley algorithm, incorporating predictions
-  as a crucial element. Additionally, we give a randomized mechanism that is universally
-  GSP and improves on the guarantees in expectation. The other GAP variants that we
-  consider all make use of a unified greedy mechanism that adds edges to the assignment
-  according to a specific order. For a special case of Restricted Multiple Knapsack,
-  this results in a deterministic strategyproof mechanism that is (1 + 1/γ)-consistent
-  and (2 + γ)-robust. We then focus on two variants: Agent Size GAP (where each agent
-  has one size) and Value Consensus GAP (where all agents have the same preference
-  order over resources). For both variants, our universally GSP mechanisms randomize
-  over the greedy mechanism, our mechanism for BMP and the predicted assignment, leading
-  to (1 + 3/γ)-consistency and (3 + γ)-robustness in expectation. All our mechanisms
-  also provide more fine-grained approximation guarantees that interpolate between
-  the consistency and robustness guarantees, depending on some natural error measure
-  of the prediction.'
+title: 'To Trust or Not to Trust: Assignment Mechanisms with Predictions in the Private Graph Model'
+authors: Riccardo Colini-Baldeschi, Sophie Klumper, Guido Schäfer, Artem Tsikiridis
+abstract: 'The realm of algorithms with predictions has led to the development of several new algorithms that leverage predictions
+  to enhance their performance guarantees. The challenge is to devise algorithms that achieve optimal approximation guarantees
+  as the prediction quality varies from perfect (consistency) to imperfect (robustness). This framework is particularly appealing
+  in mechanism design contexts, where predictions might convey private information about the agents. In this paper, we design
+  strategyproof mechanisms that leverage predictions to achieve improved approximation guarantees for several variants of
+  the Generalized Assignment Problem (GAP) in the private graph model. In this model, first introduced by Dughmi & Ghosh (2010),
+  the set of resources that an agent is compatible with is private information. For the Bipartite Matching Problem (BMP),
+  we give a deterministic group-strategyproof (GSP) mechanism that is (1 + 1/γ)-consistent and (1 + γ)-robust, where γ ≥ 1
+  is some confidence parameter. We also prove that this is best possible. Remarkably, our mechanism draws inspiration from
+  the renowned Gale-Shapley algorithm, incorporating predictions as a crucial element. Additionally, we give a randomized
+  mechanism that is universally GSP and improves on the guarantees in expectation. The other GAP variants that we consider
+  all make use of a unified greedy mechanism that adds edges to the assignment according to a specific order. For a special
+  case of Restricted Multiple Knapsack, this results in a deterministic strategyproof mechanism that is (1 + 1/γ)-consistent
+  and (2 + γ)-robust. We then focus on two variants: Agent Size GAP (where each agent has one size) and Value Consensus GAP
+  (where all agents have the same preference order over resources). For both variants, our universally GSP mechanisms randomize
+  over the greedy mechanism, our mechanism for BMP and the predicted assignment, leading to (1 + 3/γ)-consistency and (3 +
+  γ)-robustness in expectation. All our mechanisms also provide more fine-grained approximation guarantees that interpolate
+  between the consistency and robustness guarantees, depending on some natural error measure of the prediction.'
 labels:
 - allocation / matching
 - game theory / mechanism design
@@ -39,14 +29,13 @@ publications:
   month: 12
   day: 17
   dblp_key: conf/sigecom/Colini-Baldeschi24
-  bibtex: "@inproceedings{DBLP:conf/sigecom/Colini-Baldeschi24,\n  author       =\
-    \ {Riccardo Colini{-}Baldeschi and\n  Sophie Klumper and\n  Guido Sch{\"{a}}fer\
-    \ and\n  Artem Tsikiridis},\n  title        = {To Trust or Not to Trust: Assignment\
-    \ Mechanisms with Predictions in\n  the Private Graph Model},\n  booktitle   \
-    \ = {{EC}},\n  pages        = {1134--1154},\n  publisher    = {{ACM}},\n  year\
-    \         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/sigecom/Colini-Baldeschi24,\n  author       = {Riccardo Colini{-}Baldeschi and\n  Sophie\
+    \ Klumper and\n  Guido Sch{\"{a}}fer and\n  Artem Tsikiridis},\n  title        = {To Trust or Not to Trust: Assignment\
+    \ Mechanisms with Predictions in\n  the Private Graph Model},\n  booktitle    = {{EC}},\n  pages        = {1134--1154},\n\
+    \  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2403.03725
   year: 2024
   month: 3
   day: 6
+year: 2024

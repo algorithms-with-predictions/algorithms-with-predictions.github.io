@@ -1,5 +1,5 @@
 title: Learning multivariate Gaussians with imperfect advice
-authors: Bhattacharyya, Choo, George John, Gouleakis
+authors: Arnab Bhattacharyya, Davin Choo, Philips George John, Themis Gouleakis
 publications:
 - name: ICML
   url: https://openreview.net/forum?id=0OVCcpLNGI
@@ -9,4 +9,4 @@ publications:
   year: 2025
 labels:
 - distribution learning
-
+year: 2025

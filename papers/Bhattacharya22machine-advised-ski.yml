@@ -1,5 +1,5 @@
 title: Machine Learning Advised Ski Rental Problem with a Discount
-authors: Bhattacharya, Das
+authors: A. Bhattacharya, Rathish Das
 labels:
 - online
 - rent-or-buy
@@ -19,3 +19,4 @@ publications:
     \  title        = {Machine Learning Advised Ski Rental Problem with a Discount},\n  booktitle    = {{WALCOM}},\n  series\
     \       = {Lecture Notes in Computer Science},\n  volume       = {13174},\n  pages        = {213--224},\n  publisher \
     \   = {Springer},\n  year         = {2022}\n}\n"
+year: 2022

@@ -1,17 +1,13 @@
 title: Fast and Simple Densest Subgraph with Predictions
-authors: Bui, Vu
-abstract: We study the densest subgraph problem and its variants through the lens
-  of learning-augmented algorithms. For this problem, the greedy algorithm by Charikar
-  (APPROX 2000) provides a linear-time $ 1/2 $-approximation, while computing the
-  exact solution typically requires solving a linear program or performing maximum
-  flow computations.We show that given a partial solution, i.e., one produced by a
-  machine learning classifier that captures at least a $ (1 - \epsilon) $-fraction
-  of nodes in the optimal subgraph, it is possible to design an extremely simple linear-time
-  algorithm that achieves a provable $ (1 - \epsilon) $-approximation. Our approach
-  also naturally extends to the directed densest subgraph problem and several NP-hard
-  variants.An experiment on the Twitch Ego Nets dataset shows that our learning-augmented
-  algorithm outperforms Charikar's greedy algorithm and a baseline that directly returns
-  the predicted densest subgraph without additional algorithmic processing.
+authors: Thai Bui, H. Vu
+abstract: We study the densest subgraph problem and its variants through the lens of learning-augmented algorithms. For this
+  problem, the greedy algorithm by Charikar (APPROX 2000) provides a linear-time $ 1/2 $-approximation, while computing the
+  exact solution typically requires solving a linear program or performing maximum flow computations.We show that given a
+  partial solution, i.e., one produced by a machine learning classifier that captures at least a $ (1 - \epsilon) $-fraction
+  of nodes in the optimal subgraph, it is possible to design an extremely simple linear-time algorithm that achieves a provable
+  $ (1 - \epsilon) $-approximation. Our approach also naturally extends to the directed densest subgraph problem and several
+  NP-hard variants.An experiment on the Twitch Ego Nets dataset shows that our learning-augmented algorithm outperforms Charikar's
+  greedy algorithm and a baseline that directly returns the predicted densest subgraph without additional algorithmic processing.
 labels:
 - graph problems
 - running time
@@ -21,3 +17,4 @@ publications:
   year: 2025
   month: 5
   day: 19
+year: 2025

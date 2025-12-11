@@ -1,36 +1,26 @@
 title: The Nonstationary Newsvendor with (and without) Predictions
-authors: An, Li, Moseley, Ravi
-abstract: 'Problem definition: The classic newsvendor model yields an optimal decision
-  for a “newsvendor” selecting a quantity of inventory under the assumption that the
-  demand is drawn from a known distribution. Motivated by applications such as cloud
-  provisioning and staffing, we consider a setting in which newsvendor-type decisions
-  must be made sequentially in the face of demand drawn from a stochastic process
-  that is both unknown and nonstationary. All prior work on this problem either (a)
-  assumes that the level of nonstationarity is known or (b) imposes additional statistical
-  assumptions that enable accurate predictions of the unknown demand. Our research
-  tackles the Nonstationary Newsvendor without these assumptions both with and without
-  predictions. Methodology/results: In the setting without predictions, we first design
-  a policy that we prove (via matching upper and lower bounds) achieves order-optimal
-  regret; ours is the first policy to accomplish this without being given the level
-  of nonstationarity of the underlying demand. We then, for the first time, introduce
-  a model for generic (i.e., with no statistical assumptions) predictions with arbitrary
-  accuracy and propose a policy that incorporates these predictions without being
-  given their accuracy. We upper bound the regret of this policy and show that it
-  matches the best achievable regret had the accuracy of the predictions been known.
-  Managerial implications: Our findings provide valuable insights on inventory management.
-  Managers can make more informed and effective decisions in dynamic environments,
-  reducing costs and enhancing service levels despite uncertain demand patterns. This
-  study advances understanding of sequential decision-making under uncertainty, offering
-  robust methodologies for practical applications with nonstationary demand. We empirically
-  validate our new policy with experiments based on three real-world data sets containing
-  thousands of time-series, showing that it succeeds in closing approximately 74%
-  of the gap between the best approaches based on nonstationarity and predictions
-  alone. History: This paper was selected for Fast Track in the M&SOM Journal from
-  the 2024 MSOM Service Operations SIG Conference. Funding: L. An and B. Moseley were
-  supported in part by a Google Research Award, an Infor Research Award, a Carnegie
-  Bosch Junior Faculty Chair, NSF [Grants CCF-2121744 and CCF-1845146] and ONR [Grant
-  N000142212702]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/msom.2024.1168
-  .'
+authors: Lin An, Andrew A. Li, Benjamin Moseley, R. Ravi
+abstract: 'Problem definition: The classic newsvendor model yields an optimal decision for a “newsvendor” selecting a quantity
+  of inventory under the assumption that the demand is drawn from a known distribution. Motivated by applications such as
+  cloud provisioning and staffing, we consider a setting in which newsvendor-type decisions must be made sequentially in the
+  face of demand drawn from a stochastic process that is both unknown and nonstationary. All prior work on this problem either
+  (a) assumes that the level of nonstationarity is known or (b) imposes additional statistical assumptions that enable accurate
+  predictions of the unknown demand. Our research tackles the Nonstationary Newsvendor without these assumptions both with
+  and without predictions. Methodology/results: In the setting without predictions, we first design a policy that we prove
+  (via matching upper and lower bounds) achieves order-optimal regret; ours is the first policy to accomplish this without
+  being given the level of nonstationarity of the underlying demand. We then, for the first time, introduce a model for generic
+  (i.e., with no statistical assumptions) predictions with arbitrary accuracy and propose a policy that incorporates these
+  predictions without being given their accuracy. We upper bound the regret of this policy and show that it matches the best
+  achievable regret had the accuracy of the predictions been known. Managerial implications: Our findings provide valuable
+  insights on inventory management. Managers can make more informed and effective decisions in dynamic environments, reducing
+  costs and enhancing service levels despite uncertain demand patterns. This study advances understanding of sequential decision-making
+  under uncertainty, offering robust methodologies for practical applications with nonstationary demand. We empirically validate
+  our new policy with experiments based on three real-world data sets containing thousands of time-series, showing that it
+  succeeds in closing approximately 74% of the gap between the best approaches based on nonstationarity and predictions alone.
+  History: This paper was selected for Fast Track in the M&SOM Journal from the 2024 MSOM Service Operations SIG Conference.
+  Funding: L. An and B. Moseley were supported in part by a Google Research Award, an Infor Research Award, a Carnegie Bosch
+  Junior Faculty Chair, NSF [Grants CCF-2121744 and CCF-1845146] and ONR [Grant N000142212702]. Supplemental Material: The
+  online appendix is available at https://doi.org/10.1287/msom.2024.1168 .'
 labels:
 - online
 publications:
@@ -38,13 +28,13 @@ publications:
   url: https://doi.org/10.1287/msom.2024.1168
   year: 2025
   dblp_key: journals/msom/AnLMR25
-  bibtex: "@article{DBLP:journals/msom/AnLMR25,\n  author       = {Lin An and\n  Andrew\
-    \ A. Li and\n  Benjamin Moseley and\n  R. Ravi},\n  title        = {The Nonstationary\
-    \ Newsvendor with (and Without) Predictions},\n  journal      = {Manuf. Serv.\
-    \ Oper. Manag.},\n  volume       = {27},\n  number       = {3},\n  pages     \
-    \   = {881--896},\n  year         = {2025}\n}\n"
+  bibtex: "@article{DBLP:journals/msom/AnLMR25,\n  author       = {Lin An and\n  Andrew A. Li and\n  Benjamin Moseley and\n\
+    \  R. Ravi},\n  title        = {The Nonstationary Newsvendor with (and Without) Predictions},\n  journal      = {Manuf.\
+    \ Serv. Oper. Manag.},\n  volume       = {27},\n  number       = {3},\n  pages        = {881--896},\n  year         =\
+    \ {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2305.07993
   year: 2023
   month: 5
   day: 13
+year: 2025

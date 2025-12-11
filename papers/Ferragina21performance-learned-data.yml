@@ -1,5 +1,5 @@
 title: On the performance of learned data structures
-authors: Ferragina, Lillo, Vinciguerra
+authors: P. Ferragina, F. Lillo, Giorgio Vinciguerra
 labels:
 - dynamic / data structure
 publications:
@@ -10,3 +10,4 @@ publications:
   bibtex: "@article{DBLP:journals/tcs/FerraginaLV21,\n  author       = {Paolo Ferragina and\n  Fabrizio Lillo and\n  Giorgio\
     \ Vinciguerra},\n  title        = {On the performance of learned data structures},\n  journal      = {Theor. Comput. Sci.},\n\
     \  volume       = {871},\n  pages        = {107--120},\n  year         = {2021}\n}\n"
+year: 2021

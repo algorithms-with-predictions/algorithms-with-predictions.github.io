@@ -1,21 +1,16 @@
 title: Online Search With a Hint
-authors: Angelopoulos
-abstract: "The linear search problem, informally known as the cow path problem, is\
-  \ one of the fundamental problems in search theory. In this problem, an immobile\
-  \ target is hidden at some unknown position on an unbounded line, and a mobile searcher,\
-  \ initially positioned at some specific point of the line called the root, must\
-  \ traverse the line so as to locate the target. The objective is to minimize the\
-  \ worst-case ratio of the distance traversed by the searcher to the distance of\
-  \ the target from the root, which is known as the competitive ratio of the search.\
-  \ \nIn this work we study this problem in a setting in which the searcher has a\
-  \ hint concerning the target. We consider three settings in regards to the nature\
-  \ of the hint: i) the hint suggests the exact position of the target on the line;\
-  \ ii) the hint suggests the direction of the optimal search (i.e., to the left or\
-  \ the right of the root); and iii) the hint is a general k-bit string that encodes\
-  \ some information concerning the target. Our objective is to study the Pareto-efficiency\
-  \ of strategies in this model. Namely, we seek optimal, or near-optimal tradeoffs\
-  \ between the searcher's performance if the hint is correct (i.e., provided by a\
-  \ trusted source) and if the hint is incorrect (i.e., provided by an adversary)."
+authors: Spyros Angelopoulos
+abstract: "The linear search problem, informally known as the cow path problem, is one of the fundamental problems in search\
+  \ theory. In this problem, an immobile target is hidden at some unknown position on an unbounded line, and a mobile searcher,\
+  \ initially positioned at some specific point of the line called the root, must traverse the line so as to locate the target.\
+  \ The objective is to minimize the worst-case ratio of the distance traversed by the searcher to the distance of the target\
+  \ from the root, which is known as the competitive ratio of the search. \nIn this work we study this problem in a setting\
+  \ in which the searcher has a hint concerning the target. We consider three settings in regards to the nature of the hint:\
+  \ i) the hint suggests the exact position of the target on the line; ii) the hint suggests the direction of the optimal\
+  \ search (i.e., to the left or the right of the root); and iii) the hint is a general k-bit string that encodes some information\
+  \ concerning the target. Our objective is to study the Pareto-efficiency of strategies in this model. Namely, we seek optimal,\
+  \ or near-optimal tradeoffs between the searcher's performance if the hint is correct (i.e., provided by a trusted source)\
+  \ and if the hint is incorrect (i.e., provided by an adversary)."
 labels:
 - online
 - search
@@ -24,10 +19,9 @@ publications:
   url: https://doi.org/10.1016/j.ic.2023.105091
   year: 2023
   dblp_key: journals/iandc/Angelopoulos23
-  bibtex: "@article{DBLP:journals/iandc/Angelopoulos23,\n  author       = {Spyros\
-    \ Angelopoulos},\n  title        = {Online search with a hint},\n  journal   \
-    \   = {Inf. Comput.},\n  volume       = {295},\n  number       = {Part {B}},\n\
-    \  pages        = {105091},\n  year         = {2023}\n}\n"
+  bibtex: "@article{DBLP:journals/iandc/Angelopoulos23,\n  author       = {Spyros Angelopoulos},\n  title        = {Online\
+    \ search with a hint},\n  journal      = {Inf. Comput.},\n  volume       = {295},\n  number       = {Part {B}},\n  pages\
+    \        = {105091},\n  year         = {2023}\n}\n"
 - name: ITCS
   url: https://drops.dagstuhl.de/opus/volltexte/2021/13590/pdf/LIPIcs-ITCS-2021-51.pdf
   year: 2021
@@ -36,3 +30,4 @@ publications:
   year: 2020
   month: 8
   day: 31
+year: 2023

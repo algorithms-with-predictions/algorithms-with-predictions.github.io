@@ -1,9 +1,10 @@
 title: Tree coloring with predictions
-authors: Fabian Frei, Matthias Gehnen, D. Komm, Rastislav Kralovic, Richard Královic, Peter Rossmanith, Moritz Stocker
+authors: Fabian Frei, Matthias Gehnen, D. Komm, Rastislav Královič, Richard Královic, Peter Rossmanith, Moritz Stocker
 labels:
 - graph problems
 - online
-publications: 
-  - name: Discrete Applied Mathematics
-    year: 2025
-    url: https://doi.org/10.1016/j.dam.2025.10.024
+publications:
+- name: Discrete Applied Mathematics
+  year: 2025
+  url: https://doi.org/10.1016/j.dam.2025.10.024
+year: 2025

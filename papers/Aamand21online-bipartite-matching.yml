@@ -1,5 +1,5 @@
 title: Online Bipartite Matching with Predicted Degrees
-authors: Aamand, Chen, Indyk
+authors: Justin Y. Chen, P. Indyk
 labels:
 - allocation / matching
 - online
@@ -7,3 +7,4 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2110.11439
   year: 2021
+year: 2021

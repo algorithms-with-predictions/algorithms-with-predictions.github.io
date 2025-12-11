@@ -1,5 +1,5 @@
 title: Distortion-Oblivious Algorithms for Scheduling on Multiple Machines
-authors: Azar, Peretz, Touitou
+authors: Y. Azar, E. Peretz, Noam Touitou
 labels:
 - online
 - scheduling
@@ -12,3 +12,4 @@ publications:
     \  title        = {Distortion-Oblivious Algorithms for Scheduling on Multiple Machines},\n  booktitle    = {{ISAAC}},\n\
     \  series       = {LIPIcs},\n  volume       = {248},\n  pages        = {16:1--16:18},\n  publisher    = {Schloss Dagstuhl\
     \ - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2022}\n}\n"
+year: 2022

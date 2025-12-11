@@ -1,19 +1,15 @@
 title: Active causal structure learning with advice
-authors: Choo, Gouleakis, Bhattacharyya
-abstract: We introduce the problem of active causal structure learning with advice.
-  In the typical well-studied setting, the learning algorithm is given the essential
-  graph for the observational distribution and is asked to recover the underlying
-  causal directed acyclic graph (DAG) $G^*$ while minimizing the number of interventions
-  made. In our setting, we are additionally given side information about $G^*$ as
-  advice, e.g. a DAG $G$ purported to be $G^*$. We ask whether the learning algorithm
-  can benefit from the advice when it is close to being correct, while still having
-  worst-case guarantees even when the advice is arbitrarily bad. Our work is in the
-  same space as the growing body of research on algorithms with predictions. When
-  the advice is a DAG $G$, we design an adaptive search algorithm to recover $G^*$
-  whose intervention cost is at most $O(\max\{1, \log \psi\})$ times the cost for
-  verifying $G^*$; here, $\psi$ is a distance measure between $G$ and $G^*$ that is
-  upper bounded by the number of variables $n$, and is exactly 0 when $G=G^*$. Our
-  approximation factor matches the state-of-the-art for the advice-less setting.
+authors: Davin Choo, Themis Gouleakis, Arnab Bhattacharyya
+abstract: We introduce the problem of active causal structure learning with advice. In the typical well-studied setting, the
+  learning algorithm is given the essential graph for the observational distribution and is asked to recover the underlying
+  causal directed acyclic graph (DAG) $G^*$ while minimizing the number of interventions made. In our setting, we are additionally
+  given side information about $G^*$ as advice, e.g. a DAG $G$ purported to be $G^*$. We ask whether the learning algorithm
+  can benefit from the advice when it is close to being correct, while still having worst-case guarantees even when the advice
+  is arbitrarily bad. Our work is in the same space as the growing body of research on algorithms with predictions. When the
+  advice is a DAG $G$, we design an adaptive search algorithm to recover $G^*$ whose intervention cost is at most $O(\max\{1,
+  \log \psi\})$ times the cost for verifying $G^*$; here, $\psi$ is a distance measure between $G$ and $G^*$ that is upper
+  bounded by the number of variables $n$, and is exactly 0 when $G=G^*$. Our approximation factor matches the state-of-the-art
+  for the advice-less setting.
 labels:
 - learning
 publications:
@@ -21,14 +17,13 @@ publications:
   url: https://proceedings.mlr.press/v202/choo23a.html
   year: 2023
   dblp_key: conf/icml/ChooG023
-  bibtex: "@inproceedings{DBLP:conf/icml/ChooG023,\n  author       = {Davin Choo and\n\
-    \  Themistoklis Gouleakis and\n  Arnab Bhattacharyya},\n  title        = {Active\
-    \ causal structure learning with advice},\n  booktitle    = {{ICML}},\n  series\
-    \       = {Proceedings of Machine Learning Research},\n  volume       = {202},\n\
-    \  pages        = {5838--5867},\n  publisher    = {{PMLR}},\n  year         =\
-    \ {2023}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/icml/ChooG023,\n  author       = {Davin Choo and\n  Themistoklis Gouleakis and\n  Arnab\
+    \ Bhattacharyya},\n  title        = {Active causal structure learning with advice},\n  booktitle    = {{ICML}},\n  series\
+    \       = {Proceedings of Machine Learning Research},\n  volume       = {202},\n  pages        = {5838--5867},\n  publisher\
+    \    = {{PMLR}},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2305.19588
   year: 2023
   month: 5
   day: 31
+year: 2023

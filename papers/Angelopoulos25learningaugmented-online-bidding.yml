@@ -1,24 +1,20 @@
 title: Learning-Augmented Online Bidding in Stochastic Settings
-authors: Angelopoulos, Simon
+authors: Spyros Angelopoulos, Bertrand Simon
 year: 2025
 s2_id: 7654004263678271b4fd0acec4249444be6a07df
 publications:
-  - name: arXiv
-    url: https://arxiv.org/abs/2510.25582
-    year: 2025
-arxiv: "2510.25582"
-abstract:
-  Online bidding is a classic optimization problem, with several applications
-  in online decision-making, the design of interruptible systems, and the analysis
-  of approximation algorithms. In this work, we study online bidding under learning-augmented
-  settings that incorporate stochasticity, in either the prediction oracle or the
-  algorithm itself. In the first part, we study bidding under distributional predictions,
-  and find Pareto-optimal algorithms that offer the best-possible tradeoff between
-  the consistency and the robustness of the algorithm. In the second part, we study
-  the power and limitations of randomized bidding algorithms, by presenting upper
-  and lower bounds on the consistency/robustness tradeoffs. Previous works focused
-  predominantly on oracles that do not leverage stochastic information on the quality
-  of the prediction, and deterministic algorithms.
+- name: arXiv
+  url: https://arxiv.org/abs/2510.25582
+  year: 2025
+arxiv: '2510.25582'
+abstract: Online bidding is a classic optimization problem, with several applications in online decision-making, the design
+  of interruptible systems, and the analysis of approximation algorithms. In this work, we study online bidding under learning-augmented
+  settings that incorporate stochasticity, in either the prediction oracle or the algorithm itself. In the first part, we
+  study bidding under distributional predictions, and find Pareto-optimal algorithms that offer the best-possible tradeoff
+  between the consistency and the robustness of the algorithm. In the second part, we study the power and limitations of randomized
+  bidding algorithms, by presenting upper and lower bounds on the consistency/robustness tradeoffs. Previous works focused
+  predominantly on oracles that do not leverage stochastic information on the quality of the prediction, and deterministic
+  algorithms.
 labels:
-  - online
-  - rent-or-buy
+- online
+- rent-or-buy

@@ -1,5 +1,5 @@
-title: "FL-RMQ: A Learned Approach to Range Minimum Queries"
-authors: Ferragina, Lari
+title: 'FL-RMQ: A Learned Approach to Range Minimum Queries'
+authors: P. Ferragina, Filippo Lari
 labels:
 - dynamic / data structure
 publications:
@@ -13,3 +13,4 @@ publications:
     \      = {{FL-RMQ:} {A} Learned Approach to Range Minimum Queries},\n  booktitle    = {{CPM}},\n  series       = {LIPIcs},\n\
     \  volume       = {331},\n  pages        = {7:1--7:23},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r\
     \ Informatik},\n  year         = {2025}\n}\n"
+year: 2025

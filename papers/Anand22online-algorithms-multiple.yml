@@ -1,17 +1,13 @@
 title: Online Algorithms with Multiple Predictions
-authors: Anand, Ge, Kumar, Panigrahi
-abstract: This paper studies online algorithms augmented with multiple machine-learned
-  predictions. While online algorithms augmented with a single prediction have been
-  extensively studied in recent years, the literature for the multiple predictions
-  setting is sparse. In this paper, we give a generic algorithmic framework for online
-  covering problems with multiple predictions that obtains an online solution that
-  is competitive against the performance of the best predictor. Our algorithm incorporates
-  the use of predictions in the classic potential-based analysis of online algorithms.
-  We apply our algorithmic framework to solve classical problems such as online set
-  cover, (weighted) caching, and online facility location in the multiple predictions
-  setting. Our algorithm can also be robustified, i.e., the algorithm can be simultaneously
-  made competitive against the best prediction and the performance of the best online
-  algorithm (without prediction).
+authors: Keerti Anand, Rong Ge, Ajay Kumar, Debmalya Panigrahi
+abstract: This paper studies online algorithms augmented with multiple machine-learned predictions. While online algorithms
+  augmented with a single prediction have been extensively studied in recent years, the literature for the multiple predictions
+  setting is sparse. In this paper, we give a generic algorithmic framework for online covering problems with multiple predictions
+  that obtains an online solution that is competitive against the performance of the best predictor. Our algorithm incorporates
+  the use of predictions in the classic potential-based analysis of online algorithms. We apply our algorithmic framework
+  to solve classical problems such as online set cover, (weighted) caching, and online facility location in the multiple predictions
+  setting. Our algorithm can also be robustified, i.e., the algorithm can be simultaneously made competitive against the best
+  prediction and the performance of the best online algorithm (without prediction).
 labels:
 - covering
 - multiple predictions
@@ -21,14 +17,13 @@ publications:
   url: https://proceedings.mlr.press/v162/anand22a.html
   year: 2022
   dblp_key: conf/icml/Anand0KP22
-  bibtex: "@inproceedings{DBLP:conf/icml/Anand0KP22,\n  author       = {Keerti Anand\
-    \ and\n  Rong Ge and\n  Amit Kumar and\n  Debmalya Panigrahi},\n  title      \
-    \  = {Online Algorithms with Multiple Predictions},\n  booktitle    = {{ICML}},\n\
-    \  series       = {Proceedings of Machine Learning Research},\n  volume      \
-    \ = {162},\n  pages        = {582--598},\n  publisher    = {{PMLR}},\n  year \
-    \        = {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/icml/Anand0KP22,\n  author       = {Keerti Anand and\n  Rong Ge and\n  Amit Kumar and\n\
+    \  Debmalya Panigrahi},\n  title        = {Online Algorithms with Multiple Predictions},\n  booktitle    = {{ICML}},\n\
+    \  series       = {Proceedings of Machine Learning Research},\n  volume       = {162},\n  pages        = {582--598},\n\
+    \  publisher    = {{PMLR}},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2205.03921
   year: 2022
   month: 5
   day: 8
+year: 2022

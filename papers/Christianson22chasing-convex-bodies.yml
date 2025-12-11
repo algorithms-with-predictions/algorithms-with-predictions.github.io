@@ -1,21 +1,16 @@
 title: Chasing Convex Bodies and Functions with Black-Box Advice
-authors: Christianson, Handina, Wierman
-abstract: We consider the problem of convex function chasing with black-box advice,
-  where an online decision-maker aims to minimize the total cost of making and switching
-  between decisions in a normed vector space, aided by black-box advice such as the
-  decisions of a machine-learned algorithm. The decision-maker seeks cost comparable
-  to the advice when it performs well, known as $\textit{consistency}$, while also
-  ensuring worst-case $\textit{robustness}$ even when the advice is adversarial. We
-  first consider the common paradigm of algorithms that switch between the decisions
-  of the advice and a competitive algorithm, showing that no algorithm in this class
-  can improve upon 3-consistency while staying robust. We then propose two novel algorithms
-  that bypass this limitation by exploiting the problem's convexity. The first, INTERP,
-  achieves $(\sqrt{2}+\epsilon)$-consistency and $\mathcal{O}(\frac{C}{\epsilon^2})$-robustness
-  for any $\epsilon>0$, where $C$ is the competitive ratio of an algorithm for convex
-  function chasing or a subclass thereof. The second, BDINTERP, achieves $(1+\epsilon)$-consistency
-  and $\mathcal{O}(\frac{CD}{\epsilon})$-robustness when the problem has bounded diameter
-  $D$. Further, we show that BDINTERP achieves near-optimal consistency-robustness
-  trade-off for the special case where cost functions are $\alpha$-polyhedral.
+authors: Nicolas Christianson, Tinashe Handina, A. Wierman
+abstract: We consider the problem of convex function chasing with black-box advice, where an online decision-maker aims to
+  minimize the total cost of making and switching between decisions in a normed vector space, aided by black-box advice such
+  as the decisions of a machine-learned algorithm. The decision-maker seeks cost comparable to the advice when it performs
+  well, known as $\textit{consistency}$, while also ensuring worst-case $\textit{robustness}$ even when the advice is adversarial.
+  We first consider the common paradigm of algorithms that switch between the decisions of the advice and a competitive algorithm,
+  showing that no algorithm in this class can improve upon 3-consistency while staying robust. We then propose two novel algorithms
+  that bypass this limitation by exploiting the problem's convexity. The first, INTERP, achieves $(\sqrt{2}+\epsilon)$-consistency
+  and $\mathcal{O}(\frac{C}{\epsilon^2})$-robustness for any $\epsilon>0$, where $C$ is the competitive ratio of an algorithm
+  for convex function chasing or a subclass thereof. The second, BDINTERP, achieves $(1+\epsilon)$-consistency and $\mathcal{O}(\frac{CD}{\epsilon})$-robustness
+  when the problem has bounded diameter $D$. Further, we show that BDINTERP achieves near-optimal consistency-robustness trade-off
+  for the special case where cost functions are $\alpha$-polyhedral.
 labels:
 - convex body chasing
 - online
@@ -24,14 +19,13 @@ publications:
   url: https://proceedings.mlr.press/v178/christianson22a.html
   year: 2022
   dblp_key: conf/colt/ChristiansonHW22
-  bibtex: "@inproceedings{DBLP:conf/colt/ChristiansonHW22,\n  author       = {Nicolas\
-    \ Christianson and\n  Tinashe Handina and\n  Adam Wierman},\n  title        =\
-    \ {Chasing Convex Bodies and Functions with Black-Box Advice},\n  booktitle  \
-    \  = {{COLT}},\n  series       = {Proceedings of Machine Learning Research},\n\
-    \  volume       = {178},\n  pages        = {867--908},\n  publisher    = {{PMLR}},\n\
-    \  year         = {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/colt/ChristiansonHW22,\n  author       = {Nicolas Christianson and\n  Tinashe Handina\
+    \ and\n  Adam Wierman},\n  title        = {Chasing Convex Bodies and Functions with Black-Box Advice},\n  booktitle  \
+    \  = {{COLT}},\n  series       = {Proceedings of Machine Learning Research},\n  volume       = {178},\n  pages       \
+    \ = {867--908},\n  publisher    = {{PMLR}},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2206.11780
   year: 2022
   month: 6
   day: 23
+year: 2022

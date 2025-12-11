@@ -1,22 +1,17 @@
 title: Learning-Augmented Algorithms with Explicit Predictors
-authors: Elias, Kaplan, Mansour, Moran
-abstract: Recent advances in algorithmic design show how to utilize predictions obtained
-  by machine learning models from past and present data. These approaches have demonstrated
-  an enhancement in performance when the predictions are accurate, while also ensuring
-  robustness by providing worst-case guarantees when predictions fail. In this paper
-  we focus on online problems; prior research in this context was focused on a paradigm
-  where the predictor is pre-trained on past data and then used as a black box (to
-  get the predictions it was trained for). In contrast, in this work, we unpack the
-  predictor and integrate the learning problem it gives rise for within the algorithmic
-  challenge. In particular we allow the predictor to learn as it receives larger parts
-  of the input, with the ultimate goal of designing online learning algorithms specifically
-  tailored for the algorithmic task at hand. Adopting this perspective, we focus on
-  a number of fundamental problems, including caching and scheduling, which have been
-  well-studied in the black-box setting. For each of the problems we consider, we
-  introduce new algorithms that take advantage of explicit learning algorithms which
-  we carefully design towards optimizing the overall performance. We demonstrate the
-  potential of our approach by deriving performance bounds which improve over those
-  established in previous work.
+authors: Marek Elias, Haim Kaplan, Yishay Mansour, Shay Moran
+abstract: Recent advances in algorithmic design show how to utilize predictions obtained by machine learning models from past
+  and present data. These approaches have demonstrated an enhancement in performance when the predictions are accurate, while
+  also ensuring robustness by providing worst-case guarantees when predictions fail. In this paper we focus on online problems;
+  prior research in this context was focused on a paradigm where the predictor is pre-trained on past data and then used as
+  a black box (to get the predictions it was trained for). In contrast, in this work, we unpack the predictor and integrate
+  the learning problem it gives rise for within the algorithmic challenge. In particular we allow the predictor to learn as
+  it receives larger parts of the input, with the ultimate goal of designing online learning algorithms specifically tailored
+  for the algorithmic task at hand. Adopting this perspective, we focus on a number of fundamental problems, including caching
+  and scheduling, which have been well-studied in the black-box setting. For each of the problems we consider, we introduce
+  new algorithms that take advantage of explicit learning algorithms which we carefully design towards optimizing the overall
+  performance. We demonstrate the potential of our approach by deriving performance bounds which improve over those established
+  in previous work.
 labels:
 - allocation / matching
 - caching / paging
@@ -27,12 +22,12 @@ publications:
   url: http://papers.nips.cc/paper_files/paper/2024/hash/b1a72c79ac7512df8d7b573f38143ac4-Abstract-Conference.html
   year: 2024
   dblp_key: conf/nips/0001KMM24
-  bibtex: "@inproceedings{DBLP:conf/nips/0001KMM24,\n  author       = {Marek Eli{\\\
-    '{a}}s and\n  Haim Kaplan and\n  Yishay Mansour and\n  Shay Moran},\n  title \
-    \       = {Learning-Augmented Algorithms with Explicit Predictors},\n  booktitle\
+  bibtex: "@inproceedings{DBLP:conf/nips/0001KMM24,\n  author       = {Marek Eli{\\'{a}}s and\n  Haim Kaplan and\n  Yishay\
+    \ Mansour and\n  Shay Moran},\n  title        = {Learning-Augmented Algorithms with Explicit Predictors},\n  booktitle\
     \    = {NeurIPS},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2403.07413
   year: 2024
   month: 3
   day: 12
+year: 2024

@@ -1,27 +1,20 @@
-title: Learning-Augmented Online TSP on Rings, Trees, Flowers and (almost) Everywhere
-  Else
-authors: Bampis, Escoffier, Gouleakis, Hahn, Lakis, Shahkarami, Xefteris
-abstract: 'We study the Online Traveling Salesperson Problem (OLTSP) with predictions.
-  In OLTSP, a sequence of initially unknown requests arrive over time at points (locations)
-  of a metric space. The goal is, starting from a particular point of the metric space
-  (the origin), to serve all these requests while minimizing the total time spent.
-  The server moves with unit speed or is"waiting"(zero speed) at some location. We
-  consider two variants: in the open variant, the goal is achieved when the last request
-  is served. In the closed one, the server additionally has to return to the origin.
-  We adopt a prediction model, introduced for OLTSP on the line, in which the predictions
-  correspond to the locations of the requests and extend it to more general metric
-  spaces. We first propose an oracle-based algorithmic framework, inspired by previous
-  work. This framework allows us to design online algorithms for general metric spaces
-  that provide competitive ratio guarantees which, given perfect predictions, beat
-  the best possible classical guarantee (consistency). Moreover, they degrade gracefully
-  along with the increase in error (smoothness), but always within a constant factor
-  of the best known competitive ratio in the classical case (robustness). Having reduced
-  the problem to designing suitable efficient oracles, we describe how to achieve
-  this for general metric spaces as well as specific metric spaces (rings, trees and
-  flowers), the resulting algorithms being tractable in the latter case. The consistency
-  guarantees of our algorithms are tight in almost all cases, and their smoothness
-  guarantees only suffer a linear dependency on the error, which we show is necessary.
-  Finally, we provide robustness guarantees improving previous results.'
+title: Learning-Augmented Online TSP on Rings, Trees, Flowers and (almost) Everywhere Else
+authors: E. Bampis, B. Escoffier, Themis Gouleakis, Niklas Hahn, Kostas Lakis, Golnoosh Shahkarami, Michalis Xefteris
+abstract: 'We study the Online Traveling Salesperson Problem (OLTSP) with predictions. In OLTSP, a sequence of initially unknown
+  requests arrive over time at points (locations) of a metric space. The goal is, starting from a particular point of the
+  metric space (the origin), to serve all these requests while minimizing the total time spent. The server moves with unit
+  speed or is"waiting"(zero speed) at some location. We consider two variants: in the open variant, the goal is achieved when
+  the last request is served. In the closed one, the server additionally has to return to the origin. We adopt a prediction
+  model, introduced for OLTSP on the line, in which the predictions correspond to the locations of the requests and extend
+  it to more general metric spaces. We first propose an oracle-based algorithmic framework, inspired by previous work. This
+  framework allows us to design online algorithms for general metric spaces that provide competitive ratio guarantees which,
+  given perfect predictions, beat the best possible classical guarantee (consistency). Moreover, they degrade gracefully along
+  with the increase in error (smoothness), but always within a constant factor of the best known competitive ratio in the
+  classical case (robustness). Having reduced the problem to designing suitable efficient oracles, we describe how to achieve
+  this for general metric spaces as well as specific metric spaces (rings, trees and flowers), the resulting algorithms being
+  tractable in the latter case. The consistency guarantees of our algorithms are tight in almost all cases, and their smoothness
+  guarantees only suffer a linear dependency on the error, which we show is necessary. Finally, we provide robustness guarantees
+  improving previous results.'
 labels:
 - online
 - routing / TSP
@@ -30,16 +23,14 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.ESA.2023.12
   year: 2023
   dblp_key: conf/esa/BampisEGHLSX23
-  bibtex: "@inproceedings{DBLP:conf/esa/BampisEGHLSX23,\n  author       = {Evripidis\
-    \ Bampis and\n  Bruno Escoffier and\n  Themis Gouleakis and\n  Niklas Hahn and\n\
-    \  Kostas Lakis and\n  Golnoosh Shahkarami and\n  Michalis Xefteris},\n  title\
-    \        = {Learning-Augmented Online {TSP} on Rings, Trees, Flowers and (Almost)\n\
-    \  Everywhere Else},\n  booktitle    = {{ESA}},\n  series       = {LIPIcs},\n\
-    \  volume       = {274},\n  pages        = {12:1--12:17},\n  publisher    = {Schloss\
-    \ Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2023}\n\
-    }\n"
+  bibtex: "@inproceedings{DBLP:conf/esa/BampisEGHLSX23,\n  author       = {Evripidis Bampis and\n  Bruno Escoffier and\n \
+    \ Themis Gouleakis and\n  Niklas Hahn and\n  Kostas Lakis and\n  Golnoosh Shahkarami and\n  Michalis Xefteris},\n  title\
+    \        = {Learning-Augmented Online {TSP} on Rings, Trees, Flowers and (Almost)\n  Everywhere Else},\n  booktitle  \
+    \  = {{ESA}},\n  series       = {LIPIcs},\n  volume       = {274},\n  pages        = {12:1--12:17},\n  publisher    =\
+    \ {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2305.02169
   year: 2023
   month: 5
   day: 3
+year: 2023

@@ -1,18 +1,15 @@
 title: Learning-augmented Maximum Independent Set
-authors: Braverman, Dharangutte, Shah, Wang
-abstract: We study the Maximum Independent Set (MIS) problem on general graphs within
-  the framework of learning-augmented algorithms. The MIS problem is known to be NP-hard
-  and is also NP-hard to approximate to within a factor of $n^{1-\delta}$ for any
-  $\delta>0$. We show that we can break this barrier in the presence of an oracle
-  obtained through predictions from a machine learning model that answers vertex membership
-  queries for a fixed MIS with probability $1/2+\varepsilon$. In the first setting
-  we consider, the oracle can be queried once per vertex to know if a vertex belongs
-  to a fixed MIS, and the oracle returns the correct answer with probability $1/2
-  + \varepsilon$. Under this setting, we show an algorithm that obtains an $\tilde{O}(\sqrt{\Delta}/\varepsilon)$-approximation
-  in $O(m)$ time where $\Delta$ is the maximum degree of the graph. In the second
-  setting, we allow multiple queries to the oracle for a vertex, each of which is
-  correct with probability $1/2 + \varepsilon$. For this setting, we show an $O(1)$-approximation
-  algorithm using $O(n/\varepsilon^2)$ total queries and $\tilde{O}(m)$ runtime.
+authors: Vladimir Braverman, Prathamesh Dharangutte, Vihan Shah, Chen Wang
+abstract: We study the Maximum Independent Set (MIS) problem on general graphs within the framework of learning-augmented
+  algorithms. The MIS problem is known to be NP-hard and is also NP-hard to approximate to within a factor of $n^{1-\delta}$
+  for any $\delta>0$. We show that we can break this barrier in the presence of an oracle obtained through predictions from
+  a machine learning model that answers vertex membership queries for a fixed MIS with probability $1/2+\varepsilon$. In the
+  first setting we consider, the oracle can be queried once per vertex to know if a vertex belongs to a fixed MIS, and the
+  oracle returns the correct answer with probability $1/2 + \varepsilon$. Under this setting, we show an algorithm that obtains
+  an $\tilde{O}(\sqrt{\Delta}/\varepsilon)$-approximation in $O(m)$ time where $\Delta$ is the maximum degree of the graph.
+  In the second setting, we allow multiple queries to the oracle for a vertex, each of which is correct with probability $1/2
+  + \varepsilon$. For this setting, we show an $O(1)$-approximation algorithm using $O(n/\varepsilon^2)$ total queries and
+  $\tilde{O}(m)$ runtime.
 labels:
 - approximation
 - graph problems
@@ -21,14 +18,13 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2024.24
   year: 2024
   dblp_key: conf/approx/BravermanDSW24
-  bibtex: "@inproceedings{DBLP:conf/approx/BravermanDSW24,\n  author       = {Vladimir\
-    \ Braverman and\n  Prathamesh Dharangutte and\n  Vihan Shah and\n  Chen Wang},\n\
-    \  title        = {Learning-Augmented Maximum Independent Set},\n  booktitle \
-    \   = {{APPROX/RANDOM}},\n  series       = {LIPIcs},\n  volume       = {317},\n\
-    \  pages        = {24:1--24:18},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum\
-    \ f{\"{u}}r Informatik},\n  year         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/approx/BravermanDSW24,\n  author       = {Vladimir Braverman and\n  Prathamesh Dharangutte\
+    \ and\n  Vihan Shah and\n  Chen Wang},\n  title        = {Learning-Augmented Maximum Independent Set},\n  booktitle  \
+    \  = {{APPROX/RANDOM}},\n  series       = {LIPIcs},\n  volume       = {317},\n  pages        = {24:1--24:18},\n  publisher\
+    \    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2407.11364
   year: 2024
   month: 7
   day: 16
+year: 2024

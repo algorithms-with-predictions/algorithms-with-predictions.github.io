@@ -1,23 +1,17 @@
 title: Selling an Item Among a Strategic Bidder and a Profiled Agent
-authors: Caragiannis, Kalantzis
-abstract: We consider the fundamental scenario where a single item is to be sold to
-  one of two agents. Both agents draw their valuation for the item from the same probability
-  distribution. However, only one of them submits a bid to the mechanism. The other
-  agent is profiled, i.e., the mechanism receives a prediction for her valuation,
-  which can be true or false. Our goal is to design mechanisms for selling the item
-  that make as much revenue as possible in cases of a correct or incorrect prediction.
-  As a benchmark for proving our revenue-approximation guarantees, we use the maximum
-  expected revenue that can be obtained by a strategic and an honest bidder. We study
-  two mechanisms. The first one yields optimal revenue when the prediction is guaranteed
-  to be correct and a constant revenue approximation when the prediction is incorrect,
-  assuming that the agent valuations are drawn from a monotone hazard rate (MHR) distribution.
-  The second mechanism ignores the prediction for the second agent and simulates the
-  revenue-optimal mechanism when no bid information for the bidders is available.
-  We prove, again assuming that valuations are drawn from MHR distributions, that
-  this mechanism achieves a constant revenue approximation guarantee compared to our
-  revenue benchmark. The MHR assumption is necessary; we show that there are non-MHR
-  but regular probability distributions for which no constant approximation of our
-  revenue benchmark is possible.
+authors: Ioannis Caragiannis, Georgios Kalantzis
+abstract: We consider the fundamental scenario where a single item is to be sold to one of two agents. Both agents draw their
+  valuation for the item from the same probability distribution. However, only one of them submits a bid to the mechanism.
+  The other agent is profiled, i.e., the mechanism receives a prediction for her valuation, which can be true or false. Our
+  goal is to design mechanisms for selling the item that make as much revenue as possible in cases of a correct or incorrect
+  prediction. As a benchmark for proving our revenue-approximation guarantees, we use the maximum expected revenue that can
+  be obtained by a strategic and an honest bidder. We study two mechanisms. The first one yields optimal revenue when the
+  prediction is guaranteed to be correct and a constant revenue approximation when the prediction is incorrect, assuming that
+  the agent valuations are drawn from a monotone hazard rate (MHR) distribution. The second mechanism ignores the prediction
+  for the second agent and simulates the revenue-optimal mechanism when no bid information for the bidders is available. We
+  prove, again assuming that valuations are drawn from MHR distributions, that this mechanism achieves a constant revenue
+  approximation guarantee compared to our revenue benchmark. The MHR assumption is necessary; we show that there are non-MHR
+  but regular probability distributions for which no constant approximation of our revenue benchmark is possible.
 labels:
 - auctions
 - game theory / mechanism design
@@ -27,3 +21,4 @@ publications:
   year: 2025
   month: 2
   day: 17
+year: 2025

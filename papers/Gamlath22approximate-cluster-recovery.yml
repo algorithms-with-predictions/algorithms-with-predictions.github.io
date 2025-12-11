@@ -1,5 +1,5 @@
 title: Approximate Cluster Recovery from Noisy Labels
-authors: Gamlath, Lattanzi, Norouzi-Fard, Svensson
+authors: Buddhima Gamlath, Silvio Lattanzi, A. Norouzi-Fard, O. Svensson
 labels:
 - approximation
 - clustering
@@ -12,3 +12,4 @@ publications:
     \ Norouzi{-}Fard and\n  Ola Svensson},\n  title        = {Approximate Cluster Recovery from Noisy Labels},\n  booktitle\
     \    = {{COLT}},\n  series       = {Proceedings of Machine Learning Research},\n  volume       = {178},\n  pages     \
     \   = {1463--1509},\n  publisher    = {{PMLR}},\n  year         = {2022}\n}\n"
+year: 2022

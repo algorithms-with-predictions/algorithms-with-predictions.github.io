@@ -1,27 +1,20 @@
 title: Online Computation with Untrusted Advice
-authors: Angelopoulos, Dürr, Jin, Kamali, Renault
-abstract: 'The advice model of online computation captures a setting in which the
-  algorithm is given some partial information concerning the request sequence. This
-  paradigm allows to establish tradeoffs between the amount of this additional information
-  and the performance of the online algorithm. However, if the advice is corrupt or,
-  worse, if it comes from a malicious source, the algorithm may perform poorly. In
-  this work, we study online computation in a setting in which the advice is provided
-  by an untrusted source. Our objective is to quantify the impact of untrusted advice
-  so as to design and analyze online algorithms that are robust and perform well even
-  when the advice is generated in a malicious, adversarial manner. To this end, we
-  focus on well-studied online problems such as ski rental, online bidding, bin packing,
-  and list update. For ski-rental and online bidding, we show how to obtain algorithms
-  that are Pareto-optimal with respect to the competitive ratios achieved; this improves
-  upon the framework of Purohit et al. [NeurIPS 2018] in which Pareto-optimality is
-  not necessarily guaranteed. For bin packing and list update, we give online algorithms
-  with worst-case tradeoffs in their competitiveness, depending on whether the advice
-  is trusted or not; this is motivated by work of Lykouris and Vassilvitskii [ICML
-  2018] on the paging problem, but in which the competitiveness depends on the reliability
-  of the advice. Furthermore, we demonstrate how to prove lower bounds, within this
-  model, on the tradeoff between the number of advice bits and the competitiveness
-  of any online algorithm. Last, we study the effect of randomization: here we show
-  that for ski-rental there is a randomized algorithm that Pareto-dominates any deterministic
-  algorithm with advice of any size. We also show that a single random bit is not
+authors: Spyros Angelopoulos, C. Dürr, Shendan Jin, Shahin Kamali, Marc P. Renault
+abstract: 'The advice model of online computation captures a setting in which the algorithm is given some partial information
+  concerning the request sequence. This paradigm allows to establish tradeoffs between the amount of this additional information
+  and the performance of the online algorithm. However, if the advice is corrupt or, worse, if it comes from a malicious source,
+  the algorithm may perform poorly. In this work, we study online computation in a setting in which the advice is provided
+  by an untrusted source. Our objective is to quantify the impact of untrusted advice so as to design and analyze online algorithms
+  that are robust and perform well even when the advice is generated in a malicious, adversarial manner. To this end, we focus
+  on well-studied online problems such as ski rental, online bidding, bin packing, and list update. For ski-rental and online
+  bidding, we show how to obtain algorithms that are Pareto-optimal with respect to the competitive ratios achieved; this
+  improves upon the framework of Purohit et al. [NeurIPS 2018] in which Pareto-optimality is not necessarily guaranteed. For
+  bin packing and list update, we give online algorithms with worst-case tradeoffs in their competitiveness, depending on
+  whether the advice is trusted or not; this is motivated by work of Lykouris and Vassilvitskii [ICML 2018] on the paging
+  problem, but in which the competitiveness depends on the reliability of the advice. Furthermore, we demonstrate how to prove
+  lower bounds, within this model, on the tradeoff between the number of advice bits and the competitiveness of any online
+  algorithm. Last, we study the effect of randomization: here we show that for ski-rental there is a randomized algorithm
+  that Pareto-dominates any deterministic algorithm with advice of any size. We also show that a single random bit is not
   always inferior to a single advice bit, as it happens in the standard model.'
 labels:
 - online
@@ -32,11 +25,10 @@ publications:
   url: https://doi.org/10.1016/j.jcss.2024.103545
   year: 2024
   dblp_key: journals/jcss/AngelopoulosDJKR24
-  bibtex: "@article{DBLP:journals/jcss/AngelopoulosDJKR24,\n  author       = {Spyros\
-    \ Angelopoulos and\n  Christoph D{\"{u}}rr and\n  Shendan Jin and\n  Shahin Kamali\
-    \ and\n  Marc P. Renault},\n  title        = {Online computation with untrusted\
-    \ advice},\n  journal      = {J. Comput. Syst. Sci.},\n  volume       = {144},\n\
-    \  pages        = {103545},\n  year         = {2024}\n}\n"
+  bibtex: "@article{DBLP:journals/jcss/AngelopoulosDJKR24,\n  author       = {Spyros Angelopoulos and\n  Christoph D{\"{u}}rr\
+    \ and\n  Shendan Jin and\n  Shahin Kamali and\n  Marc P. Renault},\n  title        = {Online computation with untrusted\
+    \ advice},\n  journal      = {J. Comput. Syst. Sci.},\n  volume       = {144},\n  pages        = {103545},\n  year   \
+    \      = {2024}\n}\n"
 - name: ITCS
   url: https://drops.dagstuhl.de/opus/volltexte/2020/11737/pdf/LIPIcs-ITCS-2020-52.pdf
   year: 2020
@@ -45,3 +37,4 @@ publications:
   year: 2019
   month: 5
   day: 14
+year: 2024

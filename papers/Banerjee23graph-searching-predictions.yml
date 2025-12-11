@@ -1,26 +1,19 @@
 title: Graph Searching with Predictions
-authors: Banerjee, Cohen-Addad, Gupta, Li
-abstract: 'Consider an agent exploring an unknown graph in search of some goal state.
-  As it walks around the graph, it learns the nodes and their neighbors. The agent
-  only knows where the goal state is when it reaches it. How do we reach this goal
-  while moving only a small distance? This problem seems hopeless, even on trees of
-  bounded degree, unless we give the agent some help. This setting with ''''help''''
-  often arises in exploring large search spaces (e.g., huge game trees) where we assume
-  access to some score/quality function for each node, which we use to guide us towards
-  the goal. In our case, we assume the help comes in the form of distance predictions:
-  each node $v$ provides a prediction $f(v)$ of its distance to the goal vertex. Naturally
-  if these predictions are correct, we can reach the goal along a shortest path. What
-  if the predictions are unreliable and some of them are erroneous? Can we get an
-  algorithm whose performance relates to the error of the predictions? In this work,
-  we consider the problem on trees and give deterministic algorithms whose total movement
-  cost is only $O(OPT + \Delta \cdot ERR)$, where $OPT$ is the distance from the start
-  to the goal vertex, $\Delta$ the maximum degree, and the $ERR$ is the total number
-  of vertices whose predictions are erroneous. We show this guarantee is optimal.
-  We then consider a ''''planning'''' version of the problem where the graph and predictions
-  are known at the beginning, so the agent can use this global information to devise
-  a search strategy of low cost. For this planning version, we go beyond trees and
-  give an algorithms which gets good performance on (weighted) graphs with bounded
-  doubling dimension.'
+authors: Sid Banerjee, Vincent Cohen-Addad, Anupam Gupta, Zhou Li
+abstract: 'Consider an agent exploring an unknown graph in search of some goal state. As it walks around the graph, it learns
+  the nodes and their neighbors. The agent only knows where the goal state is when it reaches it. How do we reach this goal
+  while moving only a small distance? This problem seems hopeless, even on trees of bounded degree, unless we give the agent
+  some help. This setting with ''''help'''' often arises in exploring large search spaces (e.g., huge game trees) where we
+  assume access to some score/quality function for each node, which we use to guide us towards the goal. In our case, we assume
+  the help comes in the form of distance predictions: each node $v$ provides a prediction $f(v)$ of its distance to the goal
+  vertex. Naturally if these predictions are correct, we can reach the goal along a shortest path. What if the predictions
+  are unreliable and some of them are erroneous? Can we get an algorithm whose performance relates to the error of the predictions?
+  In this work, we consider the problem on trees and give deterministic algorithms whose total movement cost is only $O(OPT
+  + \Delta \cdot ERR)$, where $OPT$ is the distance from the start to the goal vertex, $\Delta$ the maximum degree, and the
+  $ERR$ is the total number of vertices whose predictions are erroneous. We show this guarantee is optimal. We then consider
+  a ''''planning'''' version of the problem where the graph and predictions are known at the beginning, so the agent can use
+  this global information to devise a search strategy of low cost. For this planning version, we go beyond trees and give
+  an algorithms which gets good performance on (weighted) graphs with bounded doubling dimension.'
 labels:
 - exploration
 - online
@@ -30,14 +23,13 @@ publications:
   url: https://doi.org/10.4230/LIPIcs.ITCS.2023.12
   year: 2023
   dblp_key: conf/innovations/BanerjeeC0L23
-  bibtex: "@inproceedings{DBLP:conf/innovations/BanerjeeC0L23,\n  author       = {Siddhartha\
-    \ Banerjee and\n  Vincent Cohen{-}Addad and\n  Anupam Gupta and\n  Zhouzi Li},\n\
-    \  title        = {Graph Searching with Predictions},\n  booktitle    = {{ITCS}},\n\
-    \  series       = {LIPIcs},\n  volume       = {251},\n  pages        = {12:1--12:24},\n\
-    \  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n\
-    \  year         = {2023}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/innovations/BanerjeeC0L23,\n  author       = {Siddhartha Banerjee and\n  Vincent Cohen{-}Addad\
+    \ and\n  Anupam Gupta and\n  Zhouzi Li},\n  title        = {Graph Searching with Predictions},\n  booktitle    = {{ITCS}},\n\
+    \  series       = {LIPIcs},\n  volume       = {251},\n  pages        = {12:1--12:24},\n  publisher    = {Schloss Dagstuhl\
+    \ - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2212.14220
   year: 2022
   month: 12
   day: 29
+year: 2023

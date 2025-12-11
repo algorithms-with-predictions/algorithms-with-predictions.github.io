@@ -1,5 +1,5 @@
 title: Online delay management on a single train line with predictions
-authors: Eichhorn, Krumke
+authors: Daniel Eichhorn, S. O. Krumke
 labels:
 - online
 - rent-or-buy
@@ -14,3 +14,4 @@ publications:
 - name: IPL
   url: https://doi.org/10.1016/j.ipl.2025.106569
   year: 2025
+year: 2025

@@ -1,5 +1,6 @@
 title: Triangle and Four Cycle Counting with Predictions in Graph Streams
-authors: Chen, Eden, Indyk, Lin, Narayanan, Rubinfeld, Silwal, Wagner, Woodruff, Zhang
+authors: Justin Y. Chen, T. Eden, P. Indyk, Honghao Lin, Shyam Narayanan, R. Rubinfeld, Sandeep Silwal, Tal Wagner, David
+  P. Woodruff, Michael Zhang
 labels:
 - streaming
 publications:
@@ -16,3 +17,4 @@ publications:
   year: 2022
   month: 3
   day: 17
+year: 2022
