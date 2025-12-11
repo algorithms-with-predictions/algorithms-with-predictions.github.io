@@ -50,13 +50,57 @@ export const usePaperFilter = data => {
       );
     }
 
-    // Sort by year (newest first)
+    // Sort by year (newest first), then month/day (newest first), then title (alphabetically)
     return filtered.sort((a, b) => {
-      const getLatestYear = paper => {
-        if (!paper.publications || paper.publications.length === 0) return 0;
-        return Math.max(...paper.publications.map(pub => pub.year || 0));
+      const getLatestPublication = paper => {
+        if (!paper.publications || paper.publications.length === 0) {
+          return { year: 0, month: 0, day: 0 };
+        }
+        // Find the most recent publication
+        return paper.publications.reduce((latest, pub) => {
+          const pubYear = pub.year || 0;
+          const pubMonth = pub.month || 0;
+          const pubDay = pub.day || 0;
+          const latestYear = latest.year || 0;
+          const latestMonth = latest.month || 0;
+          const latestDay = latest.day || 0;
+
+          if (pubYear > latestYear) return pub;
+          if (pubYear < latestYear) return latest;
+          // Same year, compare month
+          if (pubMonth > latestMonth) return pub;
+          if (pubMonth < latestMonth) return latest;
+          // Same month, compare day
+          if (pubDay > latestDay) return pub;
+          return latest;
+        }, paper.publications[0]);
       };
-      return getLatestYear(b) - getLatestYear(a);
+
+      const pubA = getLatestPublication(a);
+      const pubB = getLatestPublication(b);
+
+      // Compare year (descending)
+      const yearDiff = (pubB.year || 0) - (pubA.year || 0);
+      if (yearDiff !== 0) return yearDiff;
+
+      // Same year - papers with month/day come first (descending)
+      const hasDateA = (pubA.month || 0) > 0 || (pubA.day || 0) > 0;
+      const hasDateB = (pubB.month || 0) > 0 || (pubB.day || 0) > 0;
+
+      if (hasDateA && !hasDateB) return -1; // A has date, comes first
+      if (!hasDateA && hasDateB) return 1; // B has date, comes first
+
+      if (hasDateA && hasDateB) {
+        // Both have dates, compare month then day (descending)
+        const monthDiff = (pubB.month || 0) - (pubA.month || 0);
+        if (monthDiff !== 0) return monthDiff;
+
+        const dayDiff = (pubB.day || 0) - (pubA.day || 0);
+        if (dayDiff !== 0) return dayDiff;
+      }
+
+      // Same date or both missing date - sort alphabetically by title
+      return stringCmp(a.title || '', b.title || '');
     });
   }, [data, searchQuery, selLabels]);
 
