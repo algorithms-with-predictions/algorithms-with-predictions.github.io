@@ -1,24 +1,19 @@
-title:
-  Mechanism Design with Predictions for Facility Location Games with Candidate
-  Locations
-authors: Jiazhu Fang, Qizhi Fang, Wenjing Liu, Q. Nong, Alexandros A. Voudouris
+title: Mechanism Design with Predictions for Facility Location Games with Candidate Locations
+authors: Jiazhu Fang, Qizhi Fang, Wenjing Liu, Qingqin Nong, Alexandros A. Voudouris
 publications:
-  - name: J. Comb. Optim.
-    url: https://doi.org/10.1007/s10878-025-01310-6
-    year: 2025
-    dblp_key: journals/jco/FangFLNV25
-    bibtex:
-      "@article{DBLP:journals/jco/FangFLNV25,\n  author       = {Jiazhu Fang and\n\
-      \                  Qizhi Fang and\n                  Wenjing Liu and\n       \
-      \           Qingqin Nong and\n                  Alexandros A. Voudouris},\n  title\
-      \        = {Mechanism Design with Predictions for Facility Location Games with\n\
-      \                  Candidate Locations},\n  journal      = {J. Comb. Optim.},\n\
-      \  volume       = {49},\n  number       = {5},\n  pages        = {74},\n  year\
-      \         = {2025},\n  url          = {https://doi.org/10.1007/s10878-025-01310-6},\n\
-      \  doi          = {10.1007/S10878-025-01310-6},\n  timestamp    = {Fri, 04 Jul\
-      \ 2025 22:13:51 +0200},\n  biburl       = {https://dblp.org/rec/journals/jco/FangFLNV25.bib},\n\
-      \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+- name: J. Comb. Optim.
+  url: https://doi.org/10.1007/s10878-025-01310-6
+  year: 2025
+  dblp_key: journals/jco/FangFLNV25
+  bibtex: "@article{DBLP:journals/jco/FangFLNV25,\n  author       = {Jiazhu Fang and\n                  Qizhi Fang and\n \
+    \                 Wenjing Liu and\n                  Qingqin Nong and\n                  Alexandros A. Voudouris},\n \
+    \ title        = {Mechanism Design with Predictions for Facility Location Games with\n                  Candidate Locations},\n\
+    \  journal      = {J. Comb. Optim.},\n  volume       = {49},\n  number       = {5},\n  pages        = {74},\n  year  \
+    \       = {2025},\n  url          = {https://doi.org/10.1007/s10878-025-01310-6},\n  doi          = {10.1007/S10878-025-01310-6},\n\
+    \  timestamp    = {Fri, 04 Jul 2025 22:13:51 +0200},\n  biburl       = {https://dblp.org/rec/journals/jco/FangFLNV25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: dcb2075626618cf1e65ad487a296abb217e43fb6
 labels:
-  - facility location
-  - game theory / mechanism design
+- facility location
+- game theory / mechanism design
+year: 2025

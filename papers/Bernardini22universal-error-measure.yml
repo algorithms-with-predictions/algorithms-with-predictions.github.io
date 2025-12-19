@@ -1,5 +1,5 @@
 title: A Universal Error Measure for Input Predictions Applied to Online Graph Problems
-authors: G. Bernardini, Alexander Lindermayr, A. Marchetti-Spaccamela, Nicole Megow, L. Stougie, Michelle Sweering
+authors: Giulia Bernardini, Alexander Lindermayr, Alberto Marchetti-Spaccamela, Nicole Megow, Leen Stougie, Michelle Sweering
 abstract: We introduce a novel measure for quantifying the error in input predictions. The error is based on a minimum-cost
   hyperedge cover in a suitably defined hypergraph and provides a general template which we apply to online graph problems.
   The measure captures errors due to absent predicted requests as well as unpredicted actual requests; hence, predicted and

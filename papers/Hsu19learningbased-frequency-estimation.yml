@@ -1,5 +1,5 @@
 title: Learning-Based Frequency Estimation Algorithms
-authors: Hsu, Indyk, Katabi, Vakilian
+authors: Chen-Yu Hsu, Piotr Indyk, Dina Katabi, Ali Vakilian
 labels:
 - streaming
 publications:
@@ -10,3 +10,4 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/iclr/HsuIKV19,\n  author       = {Chen{-}Yu Hsu and\n  Piotr Indyk and\n  Dina Katabi\
     \ and\n  Ali Vakilian},\n  title        = {Learning-Based Frequency Estimation Algorithms},\n  booktitle    = {{ICLR}\
     \ (Poster)},\n  publisher    = {OpenReview.net},\n  year         = {2019}\n}\n"
+year: 2019

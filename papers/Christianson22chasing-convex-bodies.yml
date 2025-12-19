@@ -1,5 +1,5 @@
 title: Chasing Convex Bodies and Functions with Black-Box Advice
-authors: Nicolas Christianson, Tinashe Handina, A. Wierman
+authors: Nicolas Christianson, Tinashe Handina, Adam Wierman
 abstract: We consider the problem of convex function chasing with black-box advice, where an online decision-maker aims to
   minimize the total cost of making and switching between decisions in a normed vector space, aided by black-box advice such
   as the decisions of a machine-learned algorithm. The decision-maker seeks cost comparable to the advice when it performs

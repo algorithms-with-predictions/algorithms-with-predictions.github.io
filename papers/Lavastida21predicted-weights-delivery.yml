@@ -1,18 +1,14 @@
 title: Using Predicted Weights for Ad Delivery
-authors: Lavastida, Moseley, Ravi, Xu
-abstract: We study the performance of a proportional weights algorithm for online
-  capacitated bipartite matching modeling the delivery of impression ads. The algorithm
-  uses predictions on the advertiser nodes to match arriving impression nodes fractionally
-  in proportion to the weights of its neighbors. This paper gives a thorough empirical
-  study of the performance of the algorithm on a data-set of ad impressions from Yahoo!
-  and shows its superior performance compared to natural baselines such as a greedy
-  water-filling algorithm and the ranking algorithm. The proportional weights algorithm
-  has recently received interest in the theoretical literature where it was shown
-  to have strong guarantees beyond the worst-case model of algorithms augmented with
-  predictions. We extend these results to the case where the advertisers' capacities
-  are no longer stationary over time. Additionally, we show the algorithm has near
-  optimal performance in the random-order arrival model when the number of impressions
-  and the optimal matching are sufficiently large.
+authors: Thomas Lavastida, Benjamin Moseley, R. Ravi, Chenyang Xu
+abstract: We study the performance of a proportional weights algorithm for online capacitated bipartite matching modeling
+  the delivery of impression ads. The algorithm uses predictions on the advertiser nodes to match arriving impression nodes
+  fractionally in proportion to the weights of its neighbors. This paper gives a thorough empirical study of the performance
+  of the algorithm on a data-set of ad impressions from Yahoo! and shows its superior performance compared to natural baselines
+  such as a greedy water-filling algorithm and the ranking algorithm. The proportional weights algorithm has recently received
+  interest in the theoretical literature where it was shown to have strong guarantees beyond the worst-case model of algorithms
+  augmented with predictions. We extend these results to the case where the advertisers' capacities are no longer stationary
+  over time. Additionally, we show the algorithm has near optimal performance in the random-order arrival model when the number
+  of impressions and the optimal matching are sufficiently large.
 labels:
 - allocation / matching
 - online
@@ -21,13 +17,12 @@ publications:
   url: https://epubs.siam.org/doi/10.1137/1.9781611976830.3
   year: 2021
   dblp_key: conf/acda/LavastidaM0X21
-  bibtex: "@inproceedings{DBLP:conf/acda/LavastidaM0X21,\n  author       = {Thomas\
-    \ Lavastida and\n  Benjamin Moseley and\n  R. Ravi and\n  Chenyang Xu},\n  title\
-    \        = {Using Predicted Weights for Ad Delivery},\n  booktitle    = {{ACDA}},\n\
-    \  pages        = {21--31},\n  publisher    = {{SIAM}},\n  year         = {2021}\n\
-    }\n"
+  bibtex: "@inproceedings{DBLP:conf/acda/LavastidaM0X21,\n  author       = {Thomas Lavastida and\n  Benjamin Moseley and\n\
+    \  R. Ravi and\n  Chenyang Xu},\n  title        = {Using Predicted Weights for Ad Delivery},\n  booktitle    = {{ACDA}},\n\
+    \  pages        = {21--31},\n  publisher    = {{SIAM}},\n  year         = {2021}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2106.01079
   year: 2021
   month: 6
   day: 2
+year: 2021

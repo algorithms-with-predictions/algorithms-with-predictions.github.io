@@ -1,22 +1,17 @@
-title: 'Rethinking Warm-Starts with Predictions: Learning Predictions Close to Sets
-  of Optimal Solutions for Faster L-/L-Convex Function Minimization'
-authors: Sakaue, Oki
-abstract: An emerging line of work has shown that machine-learned predictions are
-  useful to warm-start algorithms for discrete optimization problems, such as bipartite
-  matching. Previous studies have shown time complexity bounds proportional to some
-  distance between a prediction and an optimal solution, which we can approximately
-  minimize by learning predictions from past optimal solutions. However, such guarantees
-  may not be meaningful when multiple optimal solutions exist. Indeed, the dual problem
-  of bipartite matching and, more generally, $\text{L}$-/$\text{L}^\natural$-convex
-  function minimization have arbitrarily many optimal solutions, making such prediction-dependent
-  bounds arbitrarily large. To resolve this theoretically critical issue, we present
-  a new warm-start-with-prediction framework for $\text{L}$-/$\text{L}^\natural$-convex
-  function minimization. Our framework offers time complexity bounds proportional
-  to the distance between a prediction and the set of all optimal solutions. The main
-  technical difficulty lies in learning predictions that are provably close to sets
-  of all optimal solutions, for which we present an online-gradient-descent-based
-  method. We thus give the first polynomial-time learnability of predictions that
-  can provably warm-start algorithms regardless of multiple optimal solutions.
+title: 'Rethinking Warm-Starts with Predictions: Learning Predictions Close to Sets of Optimal Solutions for Faster L-/L-Convex
+  Function Minimization'
+authors: Shinsaku Sakaue, Taihei Oki
+abstract: An emerging line of work has shown that machine-learned predictions are useful to warm-start algorithms for discrete
+  optimization problems, such as bipartite matching. Previous studies have shown time complexity bounds proportional to some
+  distance between a prediction and an optimal solution, which we can approximately minimize by learning predictions from
+  past optimal solutions. However, such guarantees may not be meaningful when multiple optimal solutions exist. Indeed, the
+  dual problem of bipartite matching and, more generally, $\text{L}$-/$\text{L}^\natural$-convex function minimization have
+  arbitrarily many optimal solutions, making such prediction-dependent bounds arbitrarily large. To resolve this theoretically
+  critical issue, we present a new warm-start-with-prediction framework for $\text{L}$-/$\text{L}^\natural$-convex function
+  minimization. Our framework offers time complexity bounds proportional to the distance between a prediction and the set
+  of all optimal solutions. The main technical difficulty lies in learning predictions that are provably close to sets of
+  all optimal solutions, for which we present an online-gradient-descent-based method. We thus give the first polynomial-time
+  learnability of predictions that can provably warm-start algorithms regardless of multiple optimal solutions.
 labels:
 - running time
 publications:
@@ -24,15 +19,14 @@ publications:
   url: https://proceedings.mlr.press/v202/sakaue23a.html
   year: 2023
   dblp_key: conf/icml/SakaueO23
-  bibtex: "@inproceedings{DBLP:conf/icml/SakaueO23,\n  author       = {Shinsaku Sakaue\
-    \ and\n  Taihei Oki},\n  title        = {Rethinking Warm-Starts with Predictions:\
-    \ Learning Predictions Close\n  to Sets of Optimal Solutions for Faster L-/L\\\
-    ({}^{\\mbox{{\\unicode{9838}}}}\\)-Convex\n  Function Minimization},\n  booktitle\
-    \    = {{ICML}},\n  series       = {Proceedings of Machine Learning Research},\n\
-    \  volume       = {202},\n  pages        = {29760--29776},\n  publisher    = {{PMLR}},\n\
+  bibtex: "@inproceedings{DBLP:conf/icml/SakaueO23,\n  author       = {Shinsaku Sakaue and\n  Taihei Oki},\n  title      \
+    \  = {Rethinking Warm-Starts with Predictions: Learning Predictions Close\n  to Sets of Optimal Solutions for Faster L-/L\\\
+    ({}^{\\mbox{{\\unicode{9838}}}}\\)-Convex\n  Function Minimization},\n  booktitle    = {{ICML}},\n  series       = {Proceedings\
+    \ of Machine Learning Research},\n  volume       = {202},\n  pages        = {29760--29776},\n  publisher    = {{PMLR}},\n\
     \  year         = {2023}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2302.00928
   year: 2023
   month: 1
   day: 2
+year: 2023

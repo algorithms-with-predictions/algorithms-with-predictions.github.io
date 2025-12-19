@@ -1,5 +1,5 @@
 title: Faster Matchings via Learned Duals
-authors: M. Dinitz, Sungjin Im, Thomas Lavastida, Benjamin Moseley, Sergei Vassilvitskii
+authors: Michael Dinitz, Sungjin Im, Thomas Lavastida, Benjamin Moseley, Sergei Vassilvitskii
 abstract: 'A recent line of research investigates how algorithms can be augmented with machine-learned predictions to overcome
   worst case lower bounds. This area has revealed interesting algorithmic insights into problems, with particular success
   in the design of competitive online algorithms. However, the question of improving algorithm running times with predictions

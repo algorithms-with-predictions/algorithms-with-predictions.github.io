@@ -1,5 +1,5 @@
 title: Online Graph Algorithms with Predictions
-authors: Y. Azar, Debmalya Panigrahi, Noam Touitou
+authors: Yossi Azar, Debmalya Panigrahi, Noam Touitou
 abstract: 'Online algorithms with predictions is a popular and elegant framework for bypassing pessimistic lower bounds in
   competitive analysis. In this model, online algorithms are supplied with future predictions, and the goal is for the competitive
   ratio to smoothly interpolate between the best offline and online bounds as a function of the prediction error. In this

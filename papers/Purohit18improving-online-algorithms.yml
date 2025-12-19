@@ -1,11 +1,9 @@
 title: Improving online algorithms via ML predictions
-authors: Purohit, Svitkina, Kumar
-abstract: In this work we study the problem of using machine-learned predictions to
-  improve performance of online algorithms. We consider two classical problems, ski
-  rental and non-clairvoyant job scheduling, and obtain new online algorithms that
-  use predictions to make their decisions. These algorithms are oblivious to the performance
-  of the predictor, improve with better predictions, but do not degrade much if the
-  predictions are poor.
+authors: Ravi Kumar, Manish Purohit, Zoya Svitkina
+abstract: In this work we study the problem of using machine-learned predictions to improve performance of online algorithms.
+  We consider two classical problems, ski rental and non-clairvoyant job scheduling, and obtain new online algorithms that
+  use predictions to make their decisions. These algorithms are oblivious to the performance of the predictor, improve with
+  better predictions, but do not degrade much if the predictions are poor.
 labels:
 - online
 - rent-or-buy
@@ -15,12 +13,12 @@ publications:
   url: https://dl.acm.org/doi/pdf/10.5555/3327546.3327635
   year: 2018
   dblp_key: conf/nips/PurohitSK18
-  bibtex: "@inproceedings{DBLP:conf/nips/PurohitSK18,\n  author       = {Manish Purohit\
-    \ and\n  Zoya Svitkina and\n  Ravi Kumar},\n  title        = {Improving Online\
-    \ Algorithms via {ML} Predictions},\n  booktitle    = {NeurIPS},\n  pages    \
-    \    = {9684--9693},\n  year         = {2018}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/nips/PurohitSK18,\n  author       = {Manish Purohit and\n  Zoya Svitkina and\n  Ravi Kumar},\n\
+    \  title        = {Improving Online Algorithms via {ML} Predictions},\n  booktitle    = {NeurIPS},\n  pages        = {9684--9693},\n\
+    \  year         = {2018}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2407.17712
   year: 2024
   month: 7
   day: 25
+year: 2018

@@ -1,5 +1,5 @@
 title: Distortion-Oblivious Algorithms for Minimizing Flow Time
-authors: Y. Azar, S. Leonardi, Noam Touitou
+authors: Yossi Azar, Stefano Leonardi, Noam Touitou
 abstract: 'We consider the classic online problem of scheduling on a single machine to minimize total flow time. In STOC 2021,
   the concept of robustness to distortion in processing times was introduced: for every distortion factor $\mu$, an $O(\mu^2)$-competitive
   algorithm $\operatorname{ALG}_{\mu}$ which handles distortions up to $\mu$ was presented. However, using that result requires

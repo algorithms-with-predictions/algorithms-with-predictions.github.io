@@ -1,5 +1,5 @@
 title: Learnable and Instance-Robust Predictions for Online Matching, Flows and Load Balancing
-authors: Lavastida, Moseley, Ravi, Xu
+authors: Thomas Lavastida, Benjamin Moseley, R. Ravi, Chenyang Xu
 labels:
 - allocation / matching
 - online
@@ -19,3 +19,4 @@ publications:
   year: 2020
   month: 11
   day: 23
+year: 2021

@@ -1,25 +1,19 @@
 title: Online scheduling via learned weights
-authors: Moseley, Vassilvitskii, Lattanzi, Lavastida
-abstract: Online algorithms are a hallmark of worst case optimization under uncertainty.
-  On the other hand, in practice, the input is often far from worst case, and has
-  some predictable characteristics. A recent line of work has shown how to use machine
-  learned predictions to circumvent strong lower bounds on competitive ratios in classic
-  online problems such as ski rental and caching. We study how predictive techniques
-  can be used to break through worst case barriers in online scheduling. The makespan
-  minimization problem with restricted assignments is a classic problem in online
-  scheduling theory. Worst case analysis of this problem gives Ω(log m ) lower bounds
-  on the competitive ratio in the online setting. We identify a robust quantity that
-  can be predicted and then used to guide online algorithms to achieve better performance.
-  Our predictions are compact in size, having dimension linear in the number of machines,
-  and can be learned using standard oﬀ the shelf methods. The performance guarantees
-  of our algorithms depend on the accuracy of the predictions, given predictions with
-  error η , we show how to construct O (log η ) competitive fractional assignments.
-  We then give an online algorithm that rounds any fractional assignment into an integral
-  schedule. Our algorithm is O ((log log m ) 3 )-competitive and we give a nearly
-  matching ˜Ω(log log m ) lower bound for online rounding algorithms. 1 Altogether,
-  we give algorithms that, equipped with predictions with error η , achieve O (log
-  η (log log m ) 3 ) competitive ratios, breaking the Ω(log m ) lower bound even for
-  moderately accurate predictions.
+authors: Silvio Lattanzi, Thomas Lavastida, Benjamin Moseley, Sergei Vassilvitskii
+abstract: Online algorithms are a hallmark of worst case optimization under uncertainty. On the other hand, in practice, the
+  input is often far from worst case, and has some predictable characteristics. A recent line of work has shown how to use
+  machine learned predictions to circumvent strong lower bounds on competitive ratios in classic online problems such as ski
+  rental and caching. We study how predictive techniques can be used to break through worst case barriers in online scheduling.
+  The makespan minimization problem with restricted assignments is a classic problem in online scheduling theory. Worst case
+  analysis of this problem gives Ω(log m ) lower bounds on the competitive ratio in the online setting. We identify a robust
+  quantity that can be predicted and then used to guide online algorithms to achieve better performance. Our predictions are
+  compact in size, having dimension linear in the number of machines, and can be learned using standard oﬀ the shelf methods.
+  The performance guarantees of our algorithms depend on the accuracy of the predictions, given predictions with error η ,
+  we show how to construct O (log η ) competitive fractional assignments. We then give an online algorithm that rounds any
+  fractional assignment into an integral schedule. Our algorithm is O ((log log m ) 3 )-competitive and we give a nearly matching
+  ˜Ω(log log m ) lower bound for online rounding algorithms. 1 Altogether, we give algorithms that, equipped with predictions
+  with error η , achieve O (log η (log log m ) 3 ) competitive ratios, breaking the Ω(log m ) lower bound even for moderately
+  accurate predictions.
 labels:
 - online
 - scheduling
@@ -28,8 +22,7 @@ publications:
   url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611975994.114
   year: 2020
   dblp_key: conf/soda/LattanziLMV20
-  bibtex: "@inproceedings{DBLP:conf/soda/LattanziLMV20,\n  author       = {Silvio\
-    \ Lattanzi and\n  Thomas Lavastida and\n  Benjamin Moseley and\n  Sergei Vassilvitskii},\n\
-    \  title        = {Online Scheduling via Learned Weights},\n  booktitle    = {{SODA}},\n\
-    \  pages        = {1859--1877},\n  publisher    = {{SIAM}},\n  year         =\
-    \ {2020}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/soda/LattanziLMV20,\n  author       = {Silvio Lattanzi and\n  Thomas Lavastida and\n \
+    \ Benjamin Moseley and\n  Sergei Vassilvitskii},\n  title        = {Online Scheduling via Learned Weights},\n  booktitle\
+    \    = {{SODA}},\n  pages        = {1859--1877},\n  publisher    = {{SIAM}},\n  year         = {2020}\n}\n"
+year: 2020

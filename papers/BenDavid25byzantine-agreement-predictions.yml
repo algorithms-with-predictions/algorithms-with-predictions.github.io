@@ -1,21 +1,16 @@
 title: Byzantine Agreement with Predictions
-authors: Naama Ben-David, M. A. Dzulfikar, Faith Ellen, S. Gilbert
-abstract: We study the problem of Byzantine Agreement with predictions in synchronous
-  message passing systems. Along with a proposal, each process is also given a prediction,
-  i.e., extra information that is not guaranteed to be true. For example, one might
-  imagine that the prediction is produced by a network security monitoring service
-  that looks for patterns of malicious behavior. Our goal is to design an algorithm
-  that is more efficient when the predictions are accurate, smoothly degrades in performance
-  as predictions decrease in accuracy, and in the worst case performs (almost) as
-  well as any algorithm without predictions even when the predictions are completely
-  inaccurate. On the negative side, we show that Byzantine Agreement with predictions
-  still requires Ω(n + t2) messages, even in executions where the predictions are
-  completely accurate. On the positive side, we show that classification predictions,
-  which provide information about which processes might be faulty, can help improve
-  the round complexity of synchronous Byzantine Agreement. We present new algorithms
-  that leverage classification predictions to yield better round complexity, and we
-  show that the round complexity achieved is (almost) optimal as a function of the
-  prediction quality.
+authors: Naama Ben-David, Muhammad Ayaz Dzulfikar, Faith Ellen, Seth Gilbert
+abstract: We study the problem of Byzantine Agreement with predictions in synchronous message passing systems. Along with
+  a proposal, each process is also given a prediction, i.e., extra information that is not guaranteed to be true. For example,
+  one might imagine that the prediction is produced by a network security monitoring service that looks for patterns of malicious
+  behavior. Our goal is to design an algorithm that is more efficient when the predictions are accurate, smoothly degrades
+  in performance as predictions decrease in accuracy, and in the worst case performs (almost) as well as any algorithm without
+  predictions even when the predictions are completely inaccurate. On the negative side, we show that Byzantine Agreement
+  with predictions still requires Ω(n + t2) messages, even in executions where the predictions are completely accurate. On
+  the positive side, we show that classification predictions, which provide information about which processes might be faulty,
+  can help improve the round complexity of synchronous Byzantine Agreement. We present new algorithms that leverage classification
+  predictions to yield better round complexity, and we show that the round complexity achieved is (almost) optimal as a function
+  of the prediction quality.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2505.01793
@@ -26,19 +21,16 @@ publications:
   url: https://doi.org/10.1145/3732772.3733518
   year: 2025
   dblp_key: conf/podc/Ben-DavidDEG25
-  bibtex: "@inproceedings{DBLP:conf/podc/Ben-DavidDEG25,\n  author       = {Naama\
-    \ Ben{-}David and\n                  Muhammad Ayaz Dzulfikar and\n           \
-    \       Faith Ellen and\n                  Seth Gilbert},\n  editor       = {Alkida\
-    \ Balliu and\n                  Fabian Kuhn},\n  title        = {Byzantine Agreement\
-    \ with Predictions},\n  booktitle    = {Proceedings of the {ACM} Symposium on\
-    \ Principles of Distributed Computing,\n                  {PODC} 2025, Hotel Las\
-    \ Brisas Huatulco, Huatulco, Mexico, June 16-20,\n                  2025},\n \
-    \ pages        = {3--14},\n  publisher    = {{ACM}},\n  year         = {2025},\n\
-    \  url          = {https://doi.org/10.1145/3732772.3733518},\n  doi          =\
-    \ {10.1145/3732772.3733518},\n  timestamp    = {Sun, 06 Jul 2025 13:23:41 +0200},\n\
-    \  biburl       = {https://dblp.org/rec/conf/podc/Ben-DavidDEG25.bib},\n  bibsource\
-    \    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/podc/Ben-DavidDEG25,\n  author       = {Naama Ben{-}David and\n                  Muhammad\
+    \ Ayaz Dzulfikar and\n                  Faith Ellen and\n                  Seth Gilbert},\n  editor       = {Alkida Balliu\
+    \ and\n                  Fabian Kuhn},\n  title        = {Byzantine Agreement with Predictions},\n  booktitle    = {Proceedings\
+    \ of the {ACM} Symposium on Principles of Distributed Computing,\n                  {PODC} 2025, Hotel Las Brisas Huatulco,\
+    \ Huatulco, Mexico, June 16-20,\n                  2025},\n  pages        = {3--14},\n  publisher    = {{ACM}},\n  year\
+    \         = {2025},\n  url          = {https://doi.org/10.1145/3732772.3733518},\n  doi          = {10.1145/3732772.3733518},\n\
+    \  timestamp    = {Sun, 06 Jul 2025 13:23:41 +0200},\n  biburl       = {https://dblp.org/rec/conf/podc/Ben-DavidDEG25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 arxiv: 2505.01793
 s2_id: 8041a0da45c5413fca6e1bd9d79424a2ebca8186
 labels:
 - distributed algorithms
+year: 2025

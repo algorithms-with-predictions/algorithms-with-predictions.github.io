@@ -1,18 +1,14 @@
 title: Proximal Algorithms for Smoothed Online Convex Optimization With Predictions.
-authors: Spandan Senapati, Ashwin Shenai, K. Rajawat
-abstract: We consider a smoothed online convex optimization (SOCO) problem with predictions,
-  where the learner has access to a finite lookahead window of time-varying stage
-  costs, but suffers a switching cost for changing its actions at each stage. Based
-  on the Alternating Proximal Gradient Descent (APGD) framework, we develop Receding
-  Horizon Alternating Proximal Descent (RHAPD) for proximable, non-smooth and strongly
-  convex stage costs, and RHAPD-Smooth (RHAPD-S) for non-proximable, smooth and strongly
-  convex stage costs. In addition to outperforming gradient descent-based algorithms,
-  while maintaining a comparable runtime complexity, our proposed algorithms also
-  allow us to solve a wider range of problems. We provide theoretical upper bounds
-  on the dynamic regret achieved by the proposed algorithms, which decay exponentially
-  with the length of the lookahead window. The performance of the presented algorithms
-  is empirically demonstrated via numerical experiments on non-smooth regression,
-  dynamic trajectory tracking, and economic power dispatch problems.
+authors: Spandan Senapati, Ashwin Shenai, Ketan Rajawat
+abstract: We consider a smoothed online convex optimization (SOCO) problem with predictions, where the learner has access
+  to a finite lookahead window of time-varying stage costs, but suffers a switching cost for changing its actions at each
+  stage. Based on the Alternating Proximal Gradient Descent (APGD) framework, we develop Receding Horizon Alternating Proximal
+  Descent (RHAPD) for proximable, non-smooth and strongly convex stage costs, and RHAPD-Smooth (RHAPD-S) for non-proximable,
+  smooth and strongly convex stage costs. In addition to outperforming gradient descent-based algorithms, while maintaining
+  a comparable runtime complexity, our proposed algorithms also allow us to solve a wider range of problems. We provide theoretical
+  upper bounds on the dynamic regret achieved by the proposed algorithms, which decay exponentially with the length of the
+  lookahead window. The performance of the presented algorithms is empirically demonstrated via numerical experiments on non-smooth
+  regression, dynamic trajectory tracking, and economic power dispatch problems.
 labels:
 - convex optimization
 - online
@@ -21,13 +17,13 @@ publications:
   url: https://dblp.org/rec/journals/tsp/SenapatiSR23
   year: 2023
   dblp_key: journals/tsp/SenapatiSR23
-  bibtex: "@article{DBLP:journals/tsp/SenapatiSR23,\n  author       = {Spandan Senapati\
-    \ and\n  Ashwin Shenai and\n  Ketan Rajawat},\n  title        = {Proximal Algorithms\
-    \ for Smoothed Online Convex Optimization With Predictions},\n  journal      =\
-    \ {{IEEE} Trans. Signal Process.},\n  volume       = {71},\n  pages        = {3442--3457},\n\
-    \  year         = {2023}\n}\n"
+  bibtex: "@article{DBLP:journals/tsp/SenapatiSR23,\n  author       = {Spandan Senapati and\n  Ashwin Shenai and\n  Ketan\
+    \ Rajawat},\n  title        = {Proximal Algorithms for Smoothed Online Convex Optimization With Predictions},\n  journal\
+    \      = {{IEEE} Trans. Signal Process.},\n  volume       = {71},\n  pages        = {3442--3457},\n  year         = {2023}\n\
+    }\n"
 - name: arXiv
   url: https://arxiv.org/abs/2212.04459
   year: 2022
   month: 12
   day: 8
+year: 2023

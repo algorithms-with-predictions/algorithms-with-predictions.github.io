@@ -1,22 +1,16 @@
-title: '''Smoothed Online Optimization for Target Tracking: Robust and Learning-Augmented
-  Algorithms'''
-authors: Ali Zeynali, Mahsa Sahebdel, Qingsong Liu, M. Hajiesmaili, Ramesh K. Sitaraman
-abstract: 'We introduce the Smoothed Online Optimization for Target Tracking (SOOTT)
-  problem, a new framework that integrates three key objectives in online decision-making
-  under uncertainty: (1) tracking cost for following a dynamically moving target,
-  (2) adversarial perturbation cost for withstanding unpredictable disturbances, and
-  (3) switching cost for penalizing abrupt changes in decisions. This formulation
-  captures real-world scenarios such as elastic and inelastic workload scheduling
-  in AI clusters, where operators must balance long-term service-level agreements
-  (e.g., LLM training) against sudden demand spikes (e.g., real-time inference). We
-  first present BEST, a robust algorithm with provable competitive guarantees for
-  SOOTT. To enhance practical performance, we introduce CoRT, a learning-augmented
-  variant that incorporates untrusted black-box predictions (e.g., from ML models)
-  into its decision process. Our theoretical analysis shows that CoRT strictly improves
-  over BEST when predictions are accurate, while maintaining robustness under arbitrary
-  prediction errors. We validate our approach through a case study on workload scheduling,
-  demonstrating that both algorithms effectively balance trajectory tracking, decision
-  smoothness, and resilience to external disturbances.'
+title: 'Smoothed Online Optimization for Target Tracking: Robust and Learning-Augmented Algorithms'
+authors: Ali Zeynali, Mahsa Sahebdel, Qingsong Liu, Mohammad Hajiesmaili, Ramesh K. Sitaraman
+abstract: 'We introduce the Smoothed Online Optimization for Target Tracking (SOOTT) problem, a new framework that integrates
+  three key objectives in online decision-making under uncertainty: (1) tracking cost for following a dynamically moving target,
+  (2) adversarial perturbation cost for withstanding unpredictable disturbances, and (3) switching cost for penalizing abrupt
+  changes in decisions. This formulation captures real-world scenarios such as elastic and inelastic workload scheduling in
+  AI clusters, where operators must balance long-term service-level agreements (e.g., LLM training) against sudden demand
+  spikes (e.g., real-time inference). We first present BEST, a robust algorithm with provable competitive guarantees for SOOTT.
+  To enhance practical performance, we introduce CoRT, a learning-augmented variant that incorporates untrusted black-box
+  predictions (e.g., from ML models) into its decision process. Our theoretical analysis shows that CoRT strictly improves
+  over BEST when predictions are accurate, while maintaining robustness under arbitrary prediction errors. We validate our
+  approach through a case study on workload scheduling, demonstrating that both algorithms effectively balance trajectory
+  tracking, decision smoothness, and resilience to external disturbances.'
 labels:
 - online
 publications:
@@ -25,3 +19,4 @@ publications:
   year: 2025
   month: 9
   day: 7
+year: 2025

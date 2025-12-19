@@ -1,5 +1,5 @@
 title: Online metric algorithms with untrusted predictions
-authors: A. Antoniadis, Christian Coester, Marek Eliáš, Adam Polak, B. Simon
+authors: Antonios Antoniadis, Christian Coester, Marek Eliás, Adam Polak, Bertrand Simon
 abstract: Machine-learned predictors, although achieving very good results for inputs resembling training data, cannot possibly
   provide perfect predictions in all situations. Still, decision-making systems that are based on such predictors need not
   only benefit from good predictions, but should also achieve a decent performance when the predictions are inadequate. In

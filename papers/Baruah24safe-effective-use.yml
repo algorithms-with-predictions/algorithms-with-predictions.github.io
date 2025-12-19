@@ -1,5 +1,5 @@
 title: The Safe and Effective Use of Optimistic Period Predictions
-authors: Sanjoy K. Baruah, Pontus Ekberg, Alexander Lindermayr, A. Marchetti-Spaccamela, Nicole Megow, L. Stougie
+authors: Sanjoy K. Baruah, Pontus Ekberg, Alexander Lindermayr, Alberto Marchetti-Spaccamela, Nicole Megow, Leen Stougie
 abstract: Parameters characterizing safety critical systems are generally assigned very conservative values for reasons of
   safety assurance. Provisioning computing resources on the basis of such conservatively assigned parameter values can lead
   to system implementations that make inefficient use of platform resources during run time. We address the problem of achieving

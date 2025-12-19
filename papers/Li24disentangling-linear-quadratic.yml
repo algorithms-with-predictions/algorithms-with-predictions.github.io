@@ -1,5 +1,5 @@
 title: Disentangling Linear Quadratic Control with Untrusted ML Predictions
-authors: Li, Liu, Yue
+authors: Tongxin Li, Hao Liu, Yisong Yue
 labels:
 - linear quadratic control
 - online
@@ -11,3 +11,4 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/nips/LiLY24,\n  author       = {Tongxin Li and\n  Hao Liu and\n  Yisong Yue},\n  title\
     \        = {Disentangling Linear Quadratic Control with Untrusted {ML} Predictions},\n  booktitle    = {NeurIPS},\n  year\
     \         = {2024}\n}\n"
+year: 2024

@@ -1,5 +1,5 @@
 title: A Novel Prediction Setup for Online Speed-Scaling
-authors: A. Antoniadis, Peyman Jabbarzade Ganje, Golnoosh Shahkarami
+authors: Antonios Antoniadis, Peyman Jabbarzade, Golnoosh Shahkarami
 abstract: 'Given the rapid rise in energy demand by data centers and computing systems in general, it is fundamental to incorporate
   energy considerations when designing (scheduling) algorithms. Machine learning can be a useful approach in practice by predicting
   the future load of the system based on, for example, historical data. However, the effectiveness of such an approach highly

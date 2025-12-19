@@ -1,5 +1,5 @@
 title: Learning-Augmented Metric Distortion via (p,q)-Veto Core
-authors: Ben Berger, M. Feldman, Vasilis Gkatzelis, Xizhi Tan
+authors: Ben Berger, Michal Feldman, Vasilis Gkatzelis, Xizhi Tan
 abstract: In the metric distortion problem there is a set of candidates C and voters V within the same metric space. The goal
   is to select a candidate minimizing the social cost, defined as the sum of distances of the selected candidate from all
   the voters, and the challenge arises from the algorithm receiving only ordinal input --- each voter's list of candidates

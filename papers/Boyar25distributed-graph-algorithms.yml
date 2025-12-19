@@ -1,5 +1,5 @@
 title: Distributed Graph Algorithms with Predictions
-authors: J. Boyar, Faith Ellen, Kim S. Larsen
+authors: Joan Boyar, Faith Ellen, Kim S. Larsen
 abstract: We initiate the study of deterministic distributed graph algorithms with predictions in synchronous message passing
   systems. The process at each node in the graph is given a prediction, which is some extra information about the problem
   instance that may be incorrect. The processes may use the predictions to help them solve the problem. The overall goal is

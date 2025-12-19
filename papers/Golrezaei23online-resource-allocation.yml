@@ -1,28 +1,21 @@
 title: Online Resource Allocation with Convex-set Machine-Learned Advice
-authors: Negin Golrezaei, P. Jaillet, Zijie Zhou
-abstract: Decision-makers often have access to a machine-learned prediction about
-  demand, referred to as advice, which can potentially be utilized in online decision-making
-  processes for resource allocation. However, exploiting such advice poses challenges
-  due to its potential inaccuracy. To address this issue, we propose a framework that
-  enhances online resource allocation decisions with potentially unreliable machine-learned
-  (ML) advice. We assume here that this advice is represented by a general convex
-  uncertainty set for the demand vector. We introduce a parameterized class of Pareto
-  optimal online resource allocation algorithms that strike a balance between consistent
-  and robust ratios. The consistent ratio measures the algorithm's performance (compared
-  to the optimal hindsight solution) when the ML advice is accurate, while the robust
-  ratio captures performance under an adversarial demand process when the advice is
-  inaccurate. Specifically, in a C-Pareto optimal setting, we maximize the robust
-  ratio while ensuring that the consistent ratio is at least C. Our proposed C-Pareto
-  optimal algorithm is an adaptive protection level algorithm, which extends the classical
-  fixed protection level algorithm introduced in Littlewood (2005) and Ball and Queyranne
-  (2009). Solving a complex non-convex continuous optimization problem characterizes
-  the adaptive protection level algorithm. To complement our algorithms, we present
-  a simple method for computing the maximum achievable consistent ratio, which serves
-  as an estimate for the maximum value of the ML advice. Additionally, we present
-  numerical studies to evaluate the performance of our algorithm in comparison to
-  benchmark algorithms. The results demonstrate that by adjusting the parameter C,
-  our algorithms effectively strike a balance between worst-case and average performance,
-  outperforming the benchmark algorithms.
+authors: Negin Golrezaei, Patrick Jaillet, Zijie Zhou
+abstract: Decision-makers often have access to a machine-learned prediction about demand, referred to as advice, which can
+  potentially be utilized in online decision-making processes for resource allocation. However, exploiting such advice poses
+  challenges due to its potential inaccuracy. To address this issue, we propose a framework that enhances online resource
+  allocation decisions with potentially unreliable machine-learned (ML) advice. We assume here that this advice is represented
+  by a general convex uncertainty set for the demand vector. We introduce a parameterized class of Pareto optimal online resource
+  allocation algorithms that strike a balance between consistent and robust ratios. The consistent ratio measures the algorithm's
+  performance (compared to the optimal hindsight solution) when the ML advice is accurate, while the robust ratio captures
+  performance under an adversarial demand process when the advice is inaccurate. Specifically, in a C-Pareto optimal setting,
+  we maximize the robust ratio while ensuring that the consistent ratio is at least C. Our proposed C-Pareto optimal algorithm
+  is an adaptive protection level algorithm, which extends the classical fixed protection level algorithm introduced in Littlewood
+  (2005) and Ball and Queyranne (2009). Solving a complex non-convex continuous optimization problem characterizes the adaptive
+  protection level algorithm. To complement our algorithms, we present a simple method for computing the maximum achievable
+  consistent ratio, which serves as an estimate for the maximum value of the ML advice. Additionally, we present numerical
+  studies to evaluate the performance of our algorithm in comparison to benchmark algorithms. The results demonstrate that
+  by adjusting the parameter C, our algorithms effectively strike a balance between worst-case and average performance, outperforming
+  the benchmark algorithms.
 labels:
 - allocation / matching
 - online
@@ -32,3 +25,4 @@ publications:
   year: 2023
   month: 6
   day: 21
+year: 2023

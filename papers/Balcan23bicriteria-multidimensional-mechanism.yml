@@ -1,5 +1,5 @@
 title: Bicriteria Multidimensional Mechanism Design with Side Information
-authors: Maria-Florina Balcan, Siddharth Prasad, T. Sandholm
+authors: Siddharth Prasad, Maria-Florina Balcan, Tuomas Sandholm
 abstract: We develop a versatile methodology for multidimensional mechanism design that incorporates side information about
   agents to generate high welfare and high revenue simultaneously. Side information sources include advice from domain experts,
   predictions from machine learning models, and even the mechanism designer's gut instinct. We design a tunable mechanism

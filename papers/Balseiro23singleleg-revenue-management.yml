@@ -1,5 +1,5 @@
 title: Single-Leg Revenue Management with Advice
-authors: S. Balseiro, Christian Kroer, Rachitesh Kumar
+authors: Santiago R. Balseiro, Christian Kroer, Rachitesh Kumar
 abstract: 'Single-leg revenue management is a foundational problem of revenue management that has been particularly impactful
   in the airline and hotel industry: Given n units of a resource, e.g. flight seats, and a stream of sequentially-arriving
   customers segmented by fares, what is the optimal online policy for allocating the resource. Previous work focused on designing

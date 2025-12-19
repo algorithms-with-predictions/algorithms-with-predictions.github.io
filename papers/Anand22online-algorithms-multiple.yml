@@ -1,5 +1,5 @@
 title: Online Algorithms with Multiple Predictions
-authors: Keerti Anand, Rong Ge, Ajay Kumar, Debmalya Panigrahi
+authors: Keerti Anand, Rong Ge, Amit Kumar, Debmalya Panigrahi
 abstract: This paper studies online algorithms augmented with multiple machine-learned predictions. While online algorithms
   augmented with a single prediction have been extensively studied in recent years, the literature for the multiple predictions
   setting is sparse. In this paper, we give a generic algorithmic framework for online covering problems with multiple predictions

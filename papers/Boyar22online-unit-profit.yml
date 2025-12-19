@@ -1,5 +1,5 @@
 title: Online Unit Profit Knapsack with Untrusted Predictions
-authors: J. Boyar, Lene M. Favrholdt, Kim S. Larsen
+authors: Joan Boyar, Lene M. Favrholdt, Kim S. Larsen
 abstract: 'A variant of the online knapsack problem is considered in the settings of trusted and untrusted predictions. In
   Unit Profit Knapsack, the items have unit profit, and it is easy to find an optimal solution offline: Pack as many of the
   smallest items as possible into the knapsack. For Online Unit Profit Knapsack, the competitive ratio is unbounded. In contrast,

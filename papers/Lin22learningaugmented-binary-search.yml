@@ -1,20 +1,15 @@
 title: Learning-Augmented Binary Search Trees
-authors: Lin, Luo, Woodruff
-abstract: A treap is a classic randomized binary search tree data structure that is
-  easy to implement and supports O (log n ) expected time access. However, classic
-  treaps do not take advantage of the input distribution or patterns in the input.
-  Given recent advances in algorithms with predictions, we propose pairing treaps
-  with machine advice to form a learning-augmented treap. We are the first to propose
-  a learning-augmented data structure that supports binary search tree operations
-  such as range-query and successor functionalities. With the assumption that we have
-  access to advice from a frequency estimation oracle, we assign learned priorities
-  to the nodes to better improve the treap’s structure. We theoretically analyze the
-  learning-augmented treap’s performance under various input distributions and show
-  that under those circumstances, our learning-augmented treap has stronger guarantees
-  than classic treaps and other classic tree-based data structures. Fur-ther, we experimentally
-  evaluate our learned treap on synthetic datasets and demonstrate a performance advantage
-  over other search tree data structures. We also present experiments on real world
-  datasets with known frequency estimation oracles and show improvements as well.
+authors: Honghao Lin, Tian Luo, David P. Woodruff
+abstract: A treap is a classic randomized binary search tree data structure that is easy to implement and supports O (log
+  n ) expected time access. However, classic treaps do not take advantage of the input distribution or patterns in the input.
+  Given recent advances in algorithms with predictions, we propose pairing treaps with machine advice to form a learning-augmented
+  treap. We are the first to propose a learning-augmented data structure that supports binary search tree operations such
+  as range-query and successor functionalities. With the assumption that we have access to advice from a frequency estimation
+  oracle, we assign learned priorities to the nodes to better improve the treap’s structure. We theoretically analyze the
+  learning-augmented treap’s performance under various input distributions and show that under those circumstances, our learning-augmented
+  treap has stronger guarantees than classic treaps and other classic tree-based data structures. Fur-ther, we experimentally
+  evaluate our learned treap on synthetic datasets and demonstrate a performance advantage over other search tree data structures.
+  We also present experiments on real world datasets with known frequency estimation oracles and show improvements as well.
 labels:
 - dynamic / data structure
 - search
@@ -23,13 +18,13 @@ publications:
   url: https://proceedings.mlr.press/v162/lin22f.html
   year: 2022
   dblp_key: conf/icml/LinLW22
-  bibtex: "@inproceedings{DBLP:conf/icml/LinLW22,\n  author       = {Honghao Lin and\n\
-    \  Tian Luo and\n  David P. Woodruff},\n  title        = {Learning Augmented Binary\
-    \ Search Trees},\n  booktitle    = {{ICML}},\n  series       = {Proceedings of\
-    \ Machine Learning Research},\n  volume       = {162},\n  pages        = {13431--13440},\n\
-    \  publisher    = {{PMLR}},\n  year         = {2022}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/icml/LinLW22,\n  author       = {Honghao Lin and\n  Tian Luo and\n  David P. Woodruff},\n\
+    \  title        = {Learning Augmented Binary Search Trees},\n  booktitle    = {{ICML}},\n  series       = {Proceedings\
+    \ of Machine Learning Research},\n  volume       = {162},\n  pages        = {13431--13440},\n  publisher    = {{PMLR}},\n\
+    \  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2206.12110
   year: 2022
   month: 6
   day: 24
+year: 2022

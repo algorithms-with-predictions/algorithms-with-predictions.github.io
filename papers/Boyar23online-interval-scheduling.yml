@@ -1,5 +1,5 @@
 title: Online Interval Scheduling with Predictions
-authors: J. Boyar, Lene M. Favrholdt, Shahin Kamali, Kim S. Larsen
+authors: Joan Boyar, Lene M. Favrholdt, Shahin Kamali, Kim S. Larsen
 abstract: In online interval scheduling, the input is an online sequence of intervals, and the goal is to accept a maximum
   number of non-overlapping intervals. In the more general disjoint path allocation problem, the input is a sequence of requests,
   each consisting of pairs of vertices of a known graph, and the goal is to accept a maximum number of requests forming edge-disjoint

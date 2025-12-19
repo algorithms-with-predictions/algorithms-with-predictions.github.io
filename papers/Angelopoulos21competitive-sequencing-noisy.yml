@@ -1,5 +1,5 @@
 title: Competitive Sequencing with Noisy Advice
-authors: Spyros Angelopoulos, Diogo Ars'enio, Shahin Kamali
+authors: Spyros Angelopoulos, Diogo Arsénio, Shahin Kamali
 abstract: 'Several well-studied online resource allocation problems can be formulated in terms of infinite, increasing sequences
   of positive values, in which each element is associated with a corresponding allocation value. Examples include problems
   such as online bidding, searching for a hidden target on an unbounded line, and designing interruptible algorithms based

@@ -1,17 +1,13 @@
 title: Online Covering with Multiple Experts
-authors: Kevi, Nguyen
-abstract: Designing online algorithms with machine learning predictions is a recent
-  technique beyond the worst-case paradigm for various practically relevant online
-  problems (scheduling, caching, clustering, ski rental, etc.). While most previous
-  learning-augmented algorithm approaches focus on integrating the predictions of
-  a single oracle, we study the design of online algorithms with \emph{multiple} experts.
-  To go beyond the popular benchmark of a static best expert in hindsight, we propose
-  a new \emph{dynamic} benchmark (linear combinations of predictions that change over
-  time). We present a competitive algorithm in the new dynamic benchmark with a performance
-  guarantee of $O(\log K)$, where $K$ is the number of experts, for $0-1$ online optimization
-  problems. Furthermore, our multiple-expert approach provides a new perspective on
-  how to combine in an online manner several online algorithms - a long-standing central
-  subject in the online algorithm research community.
+authors: Eniko Kevi, Kim Thang Nguyen
+abstract: Designing online algorithms with machine learning predictions is a recent technique beyond the worst-case paradigm
+  for various practically relevant online problems (scheduling, caching, clustering, ski rental, etc.). While most previous
+  learning-augmented algorithm approaches focus on integrating the predictions of a single oracle, we study the design of
+  online algorithms with \emph{multiple} experts. To go beyond the popular benchmark of a static best expert in hindsight,
+  we propose a new \emph{dynamic} benchmark (linear combinations of predictions that change over time). We present a competitive
+  algorithm in the new dynamic benchmark with a performance guarantee of $O(\log K)$, where $K$ is the number of experts,
+  for $0-1$ online optimization problems. Furthermore, our multiple-expert approach provides a new perspective on how to combine
+  in an online manner several online algorithms - a long-standing central subject in the online algorithm research community.
 labels:
 - covering
 - multiple predictions
@@ -22,3 +18,4 @@ publications:
   year: 2023
   month: 12
   day: 22
+year: 2023

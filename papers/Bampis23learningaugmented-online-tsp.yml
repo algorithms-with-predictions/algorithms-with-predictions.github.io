@@ -1,5 +1,5 @@
 title: Learning-Augmented Online TSP on Rings, Trees, Flowers and (almost) Everywhere Else
-authors: E. Bampis, B. Escoffier, Themis Gouleakis, Niklas Hahn, Kostas Lakis, Golnoosh Shahkarami, Michalis Xefteris
+authors: Evripidis Bampis, Bruno Escoffier, Themis Gouleakis, Niklas Hahn, Kostas Lakis, Golnoosh Shahkarami, Michalis Xefteris
 abstract: 'We study the Online Traveling Salesperson Problem (OLTSP) with predictions. In OLTSP, a sequence of initially unknown
   requests arrive over time at points (locations) of a metric space. The goal is, starting from a particular point of the
   metric space (the origin), to serve all these requests while minimizing the total time spent. The server moves with unit

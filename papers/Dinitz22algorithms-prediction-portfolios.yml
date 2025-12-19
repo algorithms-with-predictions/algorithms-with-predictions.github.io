@@ -1,5 +1,5 @@
 title: Algorithms with Prediction Portfolios
-authors: M. Dinitz, Sungjin Im, Thomas Lavastida, Benjamin Moseley, Sergei Vassilvitskii
+authors: Michael Dinitz, Sungjin Im, Thomas Lavastida, Benjamin Moseley, Sergei Vassilvitskii
 abstract: The research area of algorithms with predictions has seen recent success showing how to incorporate machine learning
   into algorithm design to improve performance when the predictions are correct, while retaining worst-case guarantees when
   they are not. Most previous work has assumed that the algorithm has access to a single predictor. However, in practice,

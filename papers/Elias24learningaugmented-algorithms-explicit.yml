@@ -1,5 +1,5 @@
 title: Learning-Augmented Algorithms with Explicit Predictors
-authors: Marek Elias, Haim Kaplan, Yishay Mansour, Shay Moran
+authors: Marek Eliás, Haim Kaplan, Yishay Mansour, Shay Moran
 abstract: Recent advances in algorithmic design show how to utilize predictions obtained by machine learning models from past
   and present data. These approaches have demonstrated an enhancement in performance when the predictions are accurate, while
   also ensuring robustness by providing worst-case guarantees when predictions fail. In this paper we focus on online problems;

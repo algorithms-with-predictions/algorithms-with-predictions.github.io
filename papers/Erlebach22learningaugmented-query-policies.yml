@@ -1,5 +1,5 @@
 title: Learning-Augmented Query Policies for Minimum Spanning Tree with Uncertainty
-authors: T. Erlebach, M. S. D. Lima, Nicole Megow, Jens Schloter
+authors: Thomas Erlebach, Murilo Santos de Lima, Nicole Megow, Jens Schlöter
 abstract: We study how to utilize (possibly erroneous) predictions in a model for computing under uncertainty in which an
   algorithm can query unknown data. Our aim is to minimize the number of queries needed to solve the minimum spanning tree
   problem, a fundamental combinatorial optimization problem that has been central also to the research area of explorable

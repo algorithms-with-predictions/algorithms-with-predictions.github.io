@@ -1,5 +1,5 @@
 title: (Learned) Frequency Estimation Algorithms under Zipfian Distribution
-authors: Anders Aamand, P. Indyk, A. Vakilian
+authors: Anders Aamand, Piotr Indyk, Ali Vakilian
 abstract: "The frequencies of the elements in a data stream are an important statistical measure and the task of estimating\
   \ them arises in many applications within data analysis and machine learning. Two of the most popular algorithms for this\
   \ problem, Count-Min and Count-Sketch, are widely used in practice. \nIn a recent work [Hsu et al., ICLR'19], it was shown\

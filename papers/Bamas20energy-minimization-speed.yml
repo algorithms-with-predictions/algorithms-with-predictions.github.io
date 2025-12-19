@@ -1,5 +1,5 @@
 title: Learning Augmented Energy Minimization via Speed Scaling
-authors: Étienne Bamas, Andreas Maggiori, Lars Rohwedder, O. Svensson
+authors: Étienne Bamas, Andreas Maggiori, Lars Rohwedder, Ola Svensson
 abstract: As power management has become a primary concern in modern data centers, computing resources are being scaled dynamically
   to minimize energy consumption. We initiate the study of a variant of the classic online speed scaling problem, in which
   machine learning predictions about the future can be integrated naturally. Inspired by recent work on learning-augmented

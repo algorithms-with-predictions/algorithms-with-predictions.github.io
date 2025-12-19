@@ -1,5 +1,5 @@
 title: Online Computation with Untrusted Advice
-authors: Spyros Angelopoulos, C. Dürr, Shendan Jin, Shahin Kamali, Marc P. Renault
+authors: Spyros Angelopoulos, Christoph Dürr, Shendan Jin, Shahin Kamali, Marc P. Renault
 abstract: 'The advice model of online computation captures a setting in which the algorithm is given some partial information
   concerning the request sequence. This paradigm allows to establish tradeoffs between the amount of this additional information
   and the performance of the online algorithm. However, if the advice is corrupt or, worse, if it comes from a malicious source,

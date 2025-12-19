@@ -1,5 +1,5 @@
 title: Allocating online advertisement space with unreliable estimates
-authors: Mahdian, Nazerzadeh, Saberi
+authors: Mohammad Mahdian, Hamid Nazerzadeh, Amin Saberi
 labels:
 - matching / allocation
 - online
@@ -11,3 +11,4 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/sigecom/MahdianNS07,\n  author       = {Mohammad Mahdian and\n  Hamid Nazerzadeh and\n\
     \  Amin Saberi},\n  title        = {Allocating online advertisement space with unreliable estimates},\n  booktitle   \
     \ = {{EC}},\n  pages        = {288--294},\n  publisher    = {{ACM}},\n  year         = {2007}\n}\n"
+year: 2007

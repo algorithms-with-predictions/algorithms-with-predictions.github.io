@@ -1,19 +1,14 @@
-title: Approximate Tree Completion and Learning-Augmented Algorithms for Metric Minimum
-  Spanning Trees
-authors: Nate Veldt, Thomas Stanley, Benjamin W. Priest, T. Steil, Keita Iwabuchi,
-  T. S. Jayram, Geoffrey Sanders
-abstract: Finding a minimum spanning tree (MST) for $n$ points in an arbitrary metric
-  space is a fundamental primitive for hierarchical clustering and many other ML tasks,
-  but this takes $\Omega(n^2)$ time to even approximate. We introduce a framework
-  for metric MSTs that first (1) finds a forest of disconnected components using practical
-  heuristics, and then (2) finds a small weight set of edges to connect disjoint components
-  of the forest into a spanning tree. We prove that optimally solving the second step
-  still takes $\Omega(n^2)$ time, but we provide a subquadratic 2.62-approximation
-  algorithm. In the spirit of learning-augmented algorithms, we then show that if
-  the forest found in step (1) overlaps with an optimal MST, we can approximate the
-  original MST problem in subquadratic time, where the approximation factor depends
-  on a measure of overlap. In practice, we find nearly optimal spanning trees for
-  a wide range of metrics, while being orders of magnitude faster than exact algorithms.
+title: Approximate Tree Completion and Learning-Augmented Algorithms for Metric Minimum Spanning Trees
+authors: Nate Veldt, Thomas Stanley, Benjamin W. Priest, Trevor Steil, Keita Iwabuchi, T. S. Jayram, Geoffrey Sanders
+abstract: Finding a minimum spanning tree (MST) for $n$ points in an arbitrary metric space is a fundamental primitive for
+  hierarchical clustering and many other ML tasks, but this takes $\Omega(n^2)$ time to even approximate. We introduce a framework
+  for metric MSTs that first (1) finds a forest of disconnected components using practical heuristics, and then (2) finds
+  a small weight set of edges to connect disjoint components of the forest into a spanning tree. We prove that optimally solving
+  the second step still takes $\Omega(n^2)$ time, but we provide a subquadratic 2.62-approximation algorithm. In the spirit
+  of learning-augmented algorithms, we then show that if the forest found in step (1) overlaps with an optimal MST, we can
+  approximate the original MST problem in subquadratic time, where the approximation factor depends on a measure of overlap.
+  In practice, we find nearly optimal spanning trees for a wide range of metrics, while being orders of magnitude faster than
+  exact algorithms.
 labels:
 - online
 publications:
@@ -22,3 +17,4 @@ publications:
   year: 2025
   month: 2
   day: 18
+year: 2025

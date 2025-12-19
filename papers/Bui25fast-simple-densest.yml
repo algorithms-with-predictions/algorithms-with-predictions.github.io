@@ -1,5 +1,5 @@
 title: Fast and Simple Densest Subgraph with Predictions
-authors: Thai Bui, H. Vu
+authors: Thai Bui, Hoa T. Vu
 abstract: We study the densest subgraph problem and its variants through the lens of learning-augmented algorithms. For this
   problem, the greedy algorithm by Charikar (APPROX 2000) provides a linear-time $ 1/2 $-approximation, while computing the
   exact solution typically requires solving a linear program or performing maximum flow computations.We show that given a

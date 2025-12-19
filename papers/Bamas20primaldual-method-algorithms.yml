@@ -1,5 +1,5 @@
 title: The Primal-Dual method for Learning Augmented Algorithms
-authors: Étienne Bamas, Andreas Maggiori, O. Svensson
+authors: Étienne Bamas, Andreas Maggiori, Ola Svensson
 abstract: The extension of classical online algorithms when provided with predictions is a new and active research area. In
   this paper, we extend the primal-dual method for online algorithms in order to incorporate predictions that advise the online
   algorithm about the next action to take. We use this framework to obtain novel algorithms for a variety of online covering

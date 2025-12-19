@@ -1,5 +1,5 @@
 title: A learned approach to design compressed rank/select data structures
-authors: Antonio Boffa, P. Ferragina, Giorgio Vinciguerra
+authors: Antonio Boffa, Paolo Ferragina, Giorgio Vinciguerra
 abstract: 'We address the problem of designing, implementing, and experimenting with compressed data structures that support
   rank and select queries over a dictionary of integers. We shine a new light on this classical problem by showing a connection
   between the input integers and the geometry of a set of points in a Cartesian plane suitably derived from them. We then

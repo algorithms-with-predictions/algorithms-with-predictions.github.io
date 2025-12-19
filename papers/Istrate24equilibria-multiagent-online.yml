@@ -1,5 +1,5 @@
 title: Equilibria in multiagent online problems with predictions
-authors: Gabriel Istrate, C. Bonchis, Victor Bogdan
+authors: Gabriel Istrate, Cosmin Bonchis, Victor Bogdan
 labels:
 - game theory / mechanism design
 - online
@@ -10,12 +10,9 @@ publications:
   year: 2024
   month: 5
   day: 20
-abstract: We study the power of (competitive) algorithms with predictions in a multiagent
-  setting. To this goal, we introduce a multiagent version of the ski-rental problem.
-  In this problem agents can collaborate by pooling resources to get a group license
-  for some asset. If the license price is not met then agents have to rent the asset
-  individually for the day at a unit price. Otherwise the license becomes available
-  forever to everyone at no extra cost. We investigate the effect of using predictors
-  for self and others'behavior in such a setting, as well as the new equilibria formed
-  in this way.
-
+abstract: We study the power of (competitive) algorithms with predictions in a multiagent setting. To this goal, we introduce
+  a multiagent version of the ski-rental problem. In this problem agents can collaborate by pooling resources to get a group
+  license for some asset. If the license price is not met then agents have to rent the asset individually for the day at a
+  unit price. Otherwise the license becomes available forever to everyone at no extra cost. We investigate the effect of using
+  predictors for self and others'behavior in such a setting, as well as the new equilibria formed in this way.
+year: 2024

@@ -1,5 +1,5 @@
 title: Mixing predictions for online metric algorithms
-authors: A. Antoniadis, Christian Coester, Marek Eliáš, Adam Polak, B. Simon
+authors: Antonios Antoniadis, Christian Coester, Marek Eliás, Adam Polak, Bertrand Simon
 abstract: A major technique in learning-augmented online algorithms is combining multiple algorithms or predictors. Since
   the performance of each predictor may vary over time, it is desirable to use not the single best predictor as a benchmark,
   but rather a dynamic combination which follows different predictors at different times. We design algorithms that combine

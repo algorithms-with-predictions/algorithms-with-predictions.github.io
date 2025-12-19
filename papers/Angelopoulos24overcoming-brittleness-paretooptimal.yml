@@ -1,5 +1,5 @@
 title: Overcoming Brittleness in Pareto-Optimal Learning-Augmented Algorithms
-authors: Spyros Angelopoulos, Christoph Durr, Alex Elenter, Yanni Lefki
+authors: Alex Elenter, Spyros Angelopoulos, Christoph Dürr, Yanni Lefki
 abstract: The study of online algorithms with machine-learned predictions has gained considerable prominence in recent years.
   One of the common objectives in the design and analysis of such algorithms is to attain (Pareto) optimal tradeoffs between
   the consistency of the algorithm, i.e., its performance assuming perfect predictions, and its robustness, i.e., the performance

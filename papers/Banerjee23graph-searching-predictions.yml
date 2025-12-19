@@ -1,5 +1,5 @@
 title: Graph Searching with Predictions
-authors: Sid Banerjee, Vincent Cohen-Addad, Anupam Gupta, Zhou Li
+authors: Siddhartha Banerjee, Vincent Cohen-Addad, Anupam Gupta, Zhouzi Li
 abstract: 'Consider an agent exploring an unknown graph in search of some goal state. As it walks around the graph, it learns
   the nodes and their neighbors. The agent only knows where the goal state is when it reaches it. How do we reach this goal
   while moving only a small distance? This problem seems hopeless, even on trees of bounded degree, unless we give the agent

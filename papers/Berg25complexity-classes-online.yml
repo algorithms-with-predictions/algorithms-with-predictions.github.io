@@ -1,5 +1,5 @@
 title: Complexity Classes for Online Problems with and without Predictions
-authors: Magnus Berg, J. Boyar, Lene M. Favrholdt, Kim S. Larsen
+authors: Magnus Berg, Joan Boyar, Lene M. Favrholdt, Kim S. Larsen
 abstract: With the developments in machine learning, there has been a surge in interest and results focused on algorithms
   utilizing predictions, not least in online algorithms where most new results incorporate the prediction aspect for concrete
   online problems. While the structural computational hardness of problems with regards to time and space is quite well developed,

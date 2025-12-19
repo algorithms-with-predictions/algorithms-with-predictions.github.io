@@ -1,17 +1,13 @@
 title: Learning-Augmented Algorithms for Online Steiner Tree
-authors: Xu, Moseley
-abstract: "This paper considers the recently popular beyond-worst-case algorithm analysis\
-  \ model which integrates machine-learned predictions with online algorithm design.\
-  \ We consider the online Steiner tree problem in this model for both directed and\
-  \ undirected graphs. Steiner tree is known to have strong lower bounds in the online\
-  \ setting and any algorithm’s worst-case guarantee is far from desirable.\n \n This\
-  \ paper considers algorithms that predict which terminal arrives online. The predictions\
-  \ may be incorrect and the algorithms’ performance is parameterized by the number\
-  \ of incorrectly predicted terminals. These guarantees ensure that algorithms break\
-  \ through the online lower bounds with good predictions and the competitive ratio\
-  \ gracefully degrades as the prediction error grows. We then observe that the theory\
-  \ is predictive of what will occur empirically. We show on graphs where terminals\
-  \ are drawn from a distribution, the new online algorithms have strong performance\
+authors: Chenyang Xu, Benjamin Moseley
+abstract: "This paper considers the recently popular beyond-worst-case algorithm analysis model which integrates machine-learned\
+  \ predictions with online algorithm design. We consider the online Steiner tree problem in this model for both directed\
+  \ and undirected graphs. Steiner tree is known to have strong lower bounds in the online setting and any algorithm’s worst-case\
+  \ guarantee is far from desirable.\n \n This paper considers algorithms that predict which terminal arrives online. The\
+  \ predictions may be incorrect and the algorithms’ performance is parameterized by the number of incorrectly predicted terminals.\
+  \ These guarantees ensure that algorithms break through the online lower bounds with good predictions and the competitive\
+  \ ratio gracefully degrades as the prediction error grows. We then observe that the theory is predictive of what will occur\
+  \ empirically. We show on graphs where terminals are drawn from a distribution, the new online algorithms have strong performance\
   \ even with modestly correct predictions."
 labels:
 - network design
@@ -20,12 +16,12 @@ publications:
 - name: AAAI
   year: 2022
   dblp_key: conf/aaai/0002M22
-  bibtex: "@inproceedings{DBLP:conf/aaai/0002M22,\n  author       = {Chenyang Xu and\n\
-    \  Benjamin Moseley},\n  title        = {Learning-Augmented Algorithms for Online\
-    \ Steiner Tree},\n  booktitle    = {{AAAI}},\n  pages        = {8744--8752},\n\
+  bibtex: "@inproceedings{DBLP:conf/aaai/0002M22,\n  author       = {Chenyang Xu and\n  Benjamin Moseley},\n  title      \
+    \  = {Learning-Augmented Algorithms for Online Steiner Tree},\n  booktitle    = {{AAAI}},\n  pages        = {8744--8752},\n\
     \  publisher    = {{AAAI} Press},\n  year         = {2022}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2112.05353
   year: 2021
   month: 12
   day: 10
+year: 2022

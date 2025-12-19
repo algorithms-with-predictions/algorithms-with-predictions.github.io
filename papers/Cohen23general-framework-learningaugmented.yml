@@ -1,5 +1,5 @@
 title: A General Framework for Learning-Augmented Online Allocation
-authors: I. Cohen, Debmalya Panigrahi
+authors: Ilan Reuven Cohen, Debmalya Panigrahi
 abstract: Online allocation is a broad class of problems where items arriving online have to be allocated to agents who have
   a fixed utility/cost for each assigned item so to maximize/minimize some objective. This framework captures a broad range
   of fundamental problems such as the Santa Claus problem (maximizing minimum utility), Nash welfare maximization (maximizing

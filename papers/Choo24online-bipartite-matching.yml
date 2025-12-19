@@ -1,5 +1,5 @@
 title: Online bipartite matching with imperfect advice
-authors: Davin Choo, Themis Gouleakis, Chun Kai Ling, Arnab Bhattacharyya
+authors: Davin Choo, Themistoklis Gouleakis, Chun Kai Ling, Arnab Bhattacharyya
 abstract: We study the problem of online unweighted bipartite matching with $n$ offline vertices and $n$ online vertices where
   one wishes to be competitive against the optimal offline algorithm. While the classic RANKING algorithm of Karp et al. [1990]
   provably attains competitive ratio of $1-1/e>1/2$, we show that no learning-augmented method can be both 1-consistent and

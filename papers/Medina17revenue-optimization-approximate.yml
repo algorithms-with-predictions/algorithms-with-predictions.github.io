@@ -1,13 +1,11 @@
 title: Revenue optimization with approximate bid predictions
-authors: Andrés Muñoz Medina, Sergei Vassilvitskii
-abstract: In the context of advertising auctions, finding good reserve prices is a
-  notoriously challenging learning problem. This is due to the heterogeneity of ad
-  opportunity types and the non-convexity of the objective function. In this work,
-  we show how to reduce reserve price optimization to the standard setting of prediction
-  under squared loss, a well understood problem in the learning community. We further
-  bound the gap between the expected bid and revenue in terms of the average loss
-  of the predictor. This is the first result that formally relates the revenue gained
-  to the quality of a standard machine learned model.
+authors: Andres Muñoz Medina, Sergei Vassilvitskii
+abstract: In the context of advertising auctions, finding good reserve prices is a notoriously challenging learning problem.
+  This is due to the heterogeneity of ad opportunity types and the non-convexity of the objective function. In this work,
+  we show how to reduce reserve price optimization to the standard setting of prediction under squared loss, a well understood
+  problem in the learning community. We further bound the gap between the expected bid and revenue in terms of the average
+  loss of the predictor. This is the first result that formally relates the revenue gained to the quality of a standard machine
+  learned model.
 labels:
 - prior / related work
 publications:
@@ -15,10 +13,9 @@ publications:
   url: https://proceedings.neurips.cc/paper/2017/hash/884d79963bd8bc0ae9b13a1aa71add73-Abstract.html
   year: 2017
   dblp_key: conf/nips/MedinaV17
-  bibtex: "@inproceedings{DBLP:conf/nips/MedinaV17,\n  author       = {Andres Mu{\\\
-    ~{n}}oz Medina and\n  Sergei Vassilvitskii},\n  title        = {Revenue Optimization\
-    \ with Approximate Bid Predictions},\n  booktitle    = {{NIPS}},\n  pages    \
-    \    = {1858--1866},\n  year         = {2017}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/nips/MedinaV17,\n  author       = {Andres Mu{\\~{n}}oz Medina and\n  Sergei Vassilvitskii},\n\
+    \  title        = {Revenue Optimization with Approximate Bid Predictions},\n  booktitle    = {{NIPS}},\n  pages      \
+    \  = {1858--1866},\n  year         = {2017}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/1706.04732
   year: 2017
@@ -26,3 +23,4 @@ publications:
   day: 15
 arxiv: 1706.04732
 s2_id: 467122be83495ccd74004f183979baa368d9ae67
+year: 2017

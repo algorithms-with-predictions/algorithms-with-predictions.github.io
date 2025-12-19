@@ -1,5 +1,5 @@
 title: Speeding Up Bellman Ford via Minimum Violation Permutations
-authors: Lattanzi, Svensson, Vassilvitskii
+authors: Silvio Lattanzi, Ola Svensson, Sergei Vassilvitskii
 labels:
 - graph problems
 - running time
@@ -13,3 +13,4 @@ publications:
     \ Vassilvitskii},\n  title        = {Speeding Up Bellman Ford via Minimum Violation Permutations},\n  booktitle    = {{ICML}},\n\
     \  series       = {Proceedings of Machine Learning Research},\n  volume       = {202},\n  pages        = {18584--18598},\n\
     \  publisher    = {{PMLR}},\n  year         = {2023}\n}\n"
+year: 2023

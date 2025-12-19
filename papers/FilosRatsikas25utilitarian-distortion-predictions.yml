@@ -1,17 +1,13 @@
 title: Utilitarian Distortion with Predictions
-authors: Aris Filos-Ratsikas, G. Kalantzis, Alexandros A. Voudouris
-abstract: 'We study the utilitarian distortion of social choice mechanisms under the
-  recently proposed learning-augmented framework where some (possibly unreliable)
-  predicted information about the preferences of the agents is given as input. In
-  particular, we consider two fundamental social choice problems: single-winner voting
-  and one-sided matching. In these settings, the ordinal preferences of the agents
-  over the alternatives (either candidates or items) is known, and some prediction
-  about their underlying cardinal values is also provided. The goal is to leverage
-  the prediction to achieve improved distortion guarantees when it is accurate, while
-  simultaneously still achieving reasonable worst-case bounds when it is not. This
-  leads to the notions of consistency and robustness, and the quest to achieve the
-  best possible tradeoffs between the two. We show tight tradeoffs between the consistency
-  and robustness of ordinal mechanisms for single-winner voting and one-sided matching,
+authors: Aris Filos-Ratsikas, Georgios Kalantzis, Alexandros A. Voudouris
+abstract: 'We study the utilitarian distortion of social choice mechanisms under the recently proposed learning-augmented
+  framework where some (possibly unreliable) predicted information about the preferences of the agents is given as input.
+  In particular, we consider two fundamental social choice problems: single-winner voting and one-sided matching. In these
+  settings, the ordinal preferences of the agents over the alternatives (either candidates or items) is known, and some prediction
+  about their underlying cardinal values is also provided. The goal is to leverage the prediction to achieve improved distortion
+  guarantees when it is accurate, while simultaneously still achieving reasonable worst-case bounds when it is not. This leads
+  to the notions of consistency and robustness, and the quest to achieve the best possible tradeoffs between the two. We show
+  tight tradeoffs between the consistency and robustness of ordinal mechanisms for single-winner voting and one-sided matching,
   for different levels of information provided as prediction.'
 labels:
 - game theory / mechanism design
@@ -22,13 +18,12 @@ publications:
   month: 7
   day: 2
   dblp_key: conf/sigecom/Filos-Ratsikas025
-  bibtex: "@inproceedings{DBLP:conf/sigecom/Filos-Ratsikas025,\n  author       = {Aris\
-    \ Filos{-}Ratsikas and\n  Georgios Kalantzis and\n  Alexandros A. Voudouris},\n\
-    \  title        = {Utilitarian Distortion with Predictions},\n  booktitle    =\
-    \ {{EC}},\n  pages        = {254--271},\n  publisher    = {{ACM}},\n  year   \
-    \      = {2025}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/sigecom/Filos-Ratsikas025,\n  author       = {Aris Filos{-}Ratsikas and\n  Georgios Kalantzis\
+    \ and\n  Alexandros A. Voudouris},\n  title        = {Utilitarian Distortion with Predictions},\n  booktitle    = {{EC}},\n\
+    \  pages        = {254--271},\n  publisher    = {{ACM}},\n  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2502.06489
   year: 2025
   month: 2
   day: 10
+year: 2025

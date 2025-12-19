@@ -1,5 +1,5 @@
 title: Sorting and Hypergraph Orientation under Uncertainty with Predictions
-authors: T. Erlebach, M. S. D. Lima, Nicole Megow, Jens Schloter
+authors: Thomas Erlebach, Murilo S. de Lima, Nicole Megow, Jens Schlöter
 abstract: Learning-augmented algorithms have been attracting increasing interest, but have only recently been considered in
   the setting of explorable uncertainty where precise values of uncertain input elements can be obtained by a query and the
   goal is to minimize the number of queries needed to solve a problem. We study learning-augmented algorithms for sorting

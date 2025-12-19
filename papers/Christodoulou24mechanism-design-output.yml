@@ -1,5 +1,5 @@
 title: Mechanism Design Augmented with Output Advice
-authors: G. Christodoulou, Alkmini Sgouritsa, Ioannis Vlachos
+authors: George Christodoulou, Alkmini Sgouritsa, Ioannis Vlachos
 abstract: Our work revisits the design of mechanisms via the learning-augmented framework. In this model, the algorithm is
   enhanced with imperfect (machine-learned) information concerning the input, usually referred to as prediction. The goal
   is to design algorithms whose performance degrades gently as a function of the prediction error and, in particular, perform

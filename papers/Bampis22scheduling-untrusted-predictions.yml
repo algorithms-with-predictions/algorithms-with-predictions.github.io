@@ -1,5 +1,5 @@
 title: Scheduling with Untrusted Predictions
-authors: E. Bampis, Konstantinos Dogeas, A. Kononov, Giorgio Lucarelli, Fanny Pascual
+authors: Evripidis Bampis, Konstantinos Dogeas, Alexander V. Kononov, Giorgio Lucarelli, Fanny Pascual
 abstract: Using machine-learned predictions to create algorithms with better approximation guarantees is a very fresh and
   active field. In this work, we study classic scheduling problems under the learning augmented setting. More specifically,
   we consider the problem of scheduling jobs with arbitrary release dates on a single machine and the problem of scheduling

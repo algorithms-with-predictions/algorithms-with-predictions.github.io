@@ -1,27 +1,20 @@
 title: Competitive strategies to use "warm start" algorithms with predictions
-authors: Vaidehi Srinivas, Avrim Blum
-abstract: We consider the problem of learning and using predictions for warm start
-  algorithms with predictions. In this setting, an algorithm is given an instance
-  of a problem, and a prediction of the solution. The runtime of the algorithm is
-  bounded by the distance from the predicted solution to the true solution of the
-  instance. Previous work has shown that when instances are drawn iid from some distribution,
-  it is possible to learn an approximately optimal fixed prediction (Dinitz et al,
-  NeurIPS 2021), and in the adversarial online case, it is possible to compete with
-  the best fixed prediction in hindsight (Khodak et al, NeurIPS 2022). In this work
-  we give competitive guarantees against stronger benchmarks that consider a set of
-  $k$ predictions $\mathbf{P}$. That is, the"optimal offline cost"to solve an instance
-  with respect to $\mathbf{P}$ is the distance from the true solution to the closest
-  member of $\mathbf{P}$. This is analogous to the $k$-medians objective function.
-  In the distributional setting, we show a simple strategy that incurs cost that is
-  at most an $O(k)$ factor worse than the optimal offline cost. We then show a way
-  to leverage learnable coarse information, in the form of partitions of the instance
-  space into groups of"similar"instances, that allows us to potentially avoid this
-  $O(k)$ factor. Finally, we consider an online version of the problem, where we compete
-  against offline strategies that are allowed to maintain a moving set of $k$ predictions
-  or"trajectories,"and are charged for how much the predictions move. We give an algorithm
-  that does at most $O(k^4 \ln^2 k)$ times as much work as any offline strategy of
-  $k$ trajectories. This algorithm is deterministic (robust to an adaptive adversary),
-  and oblivious to the setting of $k$. Thus the guarantee holds for all $k$ simultaneously.
+authors: Avrim Blum, Vaidehi Srinivas
+abstract: We consider the problem of learning and using predictions for warm start algorithms with predictions. In this setting,
+  an algorithm is given an instance of a problem, and a prediction of the solution. The runtime of the algorithm is bounded
+  by the distance from the predicted solution to the true solution of the instance. Previous work has shown that when instances
+  are drawn iid from some distribution, it is possible to learn an approximately optimal fixed prediction (Dinitz et al, NeurIPS
+  2021), and in the adversarial online case, it is possible to compete with the best fixed prediction in hindsight (Khodak
+  et al, NeurIPS 2022). In this work we give competitive guarantees against stronger benchmarks that consider a set of $k$
+  predictions $\mathbf{P}$. That is, the"optimal offline cost"to solve an instance with respect to $\mathbf{P}$ is the distance
+  from the true solution to the closest member of $\mathbf{P}$. This is analogous to the $k$-medians objective function. In
+  the distributional setting, we show a simple strategy that incurs cost that is at most an $O(k)$ factor worse than the optimal
+  offline cost. We then show a way to leverage learnable coarse information, in the form of partitions of the instance space
+  into groups of"similar"instances, that allows us to potentially avoid this $O(k)$ factor. Finally, we consider an online
+  version of the problem, where we compete against offline strategies that are allowed to maintain a moving set of $k$ predictions
+  or"trajectories,"and are charged for how much the predictions move. We give an algorithm that does at most $O(k^4 \ln^2
+  k)$ times as much work as any offline strategy of $k$ trajectories. This algorithm is deterministic (robust to an adaptive
+  adversary), and oblivious to the setting of $k$. Thus the guarantee holds for all $k$ simultaneously.
 labels:
 - multiple predictions
 - online
@@ -31,11 +24,9 @@ publications:
   url: https://doi.org/10.1137/1.9781611978322.127
   year: 2025
   dblp_key: conf/soda/BlumS25
-  bibtex: "@inproceedings{DBLP:conf/soda/BlumS25,\n  author       = {Avrim Blum and\n\
-    \  Vaidehi Srinivas},\n  title        = {Competitive strategies to use \"warm\
-    \ start\" algorithms with predictions},\n  booktitle    = {{SODA}},\n  pages \
-    \       = {3775--3801},\n  publisher    = {{SIAM}},\n  year         = {2025}\n\
-    }\n"
+  bibtex: "@inproceedings{DBLP:conf/soda/BlumS25,\n  author       = {Avrim Blum and\n  Vaidehi Srinivas},\n  title       \
+    \ = {Competitive strategies to use \"warm start\" algorithms with predictions},\n  booktitle    = {{SODA}},\n  pages \
+    \       = {3775--3801},\n  publisher    = {{SIAM}},\n  year         = {2025}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2405.03661
   year: 2024
@@ -43,3 +34,4 @@ publications:
   day: 6
 arxiv: 2405.03661
 s2_id: c206b0d48135917d1fa71b24a8012b28291bd9bb
+year: 2025

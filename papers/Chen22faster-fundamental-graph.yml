@@ -1,5 +1,5 @@
 title: Faster Fundamental Graph Algorithms via Learned Predictions
-authors: Justin Y. Chen, Sandeep Silwal, A. Vakilian, Fred Zhang
+authors: Justin Y. Chen, Sandeep Silwal, Ali Vakilian, Fred Zhang
 abstract: 'We consider the question of speeding up classic graph algorithms with machine-learned predictions. In this model,
   algorithms are furnished with extra advice learned from past or similar instances. Given the additional information, we
   aim to improve upon the traditional worst-case run-time guarantees. Our contributions are the following: Finally, we give

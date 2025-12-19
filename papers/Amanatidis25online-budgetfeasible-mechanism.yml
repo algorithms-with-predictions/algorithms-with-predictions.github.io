@@ -1,5 +1,6 @@
 title: Online Budget-Feasible Mechanism Design with Predictions
-authors: Georgios Amanatidis, E. Markakis, Christodoulos Santorinaios, Guido Schafer, Panagiotis Tsamopoulos, Artem Tsikiridis
+authors: Georgios Amanatidis, Evangelos Markakis, Christodoulos Santorinaios, Guido Schäfer, Panagiotis Tsamopoulos, Artem
+  Tsikiridis
 abstract: Augmenting the input of algorithms with predictions is an algorithm design paradigm that suggests leveraging a (possibly
   erroneous) prediction to improve worst-case performance guarantees when the prediction is perfect (consistency), while also
   providing a performance guarantee when the prediction fails (robustness). Recently, Xu and Lu [2022] and Agrawal et al.

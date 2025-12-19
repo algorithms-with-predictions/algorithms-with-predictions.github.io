@@ -1,5 +1,5 @@
-title: "The Predicted-Deletion Dynamic Model: Taking Advantage of ML Predictions, for Free"
-authors: Liu, Srinivas
+title: 'The Predicted-Deletion Dynamic Model: Taking Advantage of ML Predictions, for Free'
+authors: Quanquan C. Liu, Vaidehi Srinivas
 labels:
 - dynamic / data structure
 - running time
@@ -9,3 +9,4 @@ publications:
   year: 2023
   month: 6
   day: 18
+year: 2023

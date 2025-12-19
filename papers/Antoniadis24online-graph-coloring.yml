@@ -1,5 +1,5 @@
 title: Online Graph Coloring with Predictions
-authors: Antonios Antoniadis, H. Broersma, Yang Meng
+authors: Antonios Antoniadis, Hajo Broersma, Yang Meng
 abstract: We introduce learning augmented algorithms to the online graph coloring problem. Although the simple greedy algorithm
   FirstFit is known to perform poorly in the worst case, we are able to establish a relationship between the structure of
   any input graph $G$ that is revealed online and the number of colors that FirstFit uses for $G$. Based on this relationship,

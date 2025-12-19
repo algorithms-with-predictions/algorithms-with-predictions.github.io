@@ -1,5 +1,5 @@
 title: Learning-Augmented Weighted Paging
-authors: N. Bansal, Christian Coester, Ravi Kumar, Manish Purohit, Erik Vee
+authors: Nikhil Bansal, Christian Coester, Ravi Kumar, Manish Purohit, Erik Vee
 abstract: We consider a natural semi-online model for weighted paging, where at any time the algorithm is given predictions,
   possibly with errors, about the next arrival of each page. The model is inspired by Belady’s classic optimal offline algorithm
   for unweighted paging, and extends the recently studied model for learning-augmented paging [45, 50, 52] to the weighted

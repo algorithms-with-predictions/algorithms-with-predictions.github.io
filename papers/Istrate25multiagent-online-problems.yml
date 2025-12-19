@@ -1,19 +1,14 @@
 title: On multiagent online problems with predictions
-authors: Gabriel Istrate, C. Bonchis, Victor Bogdan
-abstract: We study the power of (competitive) algorithms with predictions in a multiagent
-  setting. We introduce a two predictor framework, that assumes that agents use one
-  predictor for their future (self) behavior, and one for the behavior of the other
-  players. The main problem we are concerned with is understanding what are the best
-  competitive ratios that can be achieved by employing such predictors, under various
-  assumptions on predictor quality. As an illustration of our framework, we introduce
-  and analyze a multiagent version of the ski-rental problem. In this problem agents
-  can collaborate by pooling resources to get a group license for some asset. If the
-  license price is not met then agents have to rent the asset individually for the
-  day at a unit price. Otherwise the license becomes available forever to everyone
-  at no extra cost. In the particular case of perfect other predictions the algorithm
-  that follows the self predictor is optimal but not robust to mispredictions of agent's
-  future behavior; we give an algorithm with better robustness properties and benchmark
-  it.
+authors: Gabriel Istrate, Cosmin Bonchis, Victor Bogdan
+abstract: We study the power of (competitive) algorithms with predictions in a multiagent setting. We introduce a two predictor
+  framework, that assumes that agents use one predictor for their future (self) behavior, and one for the behavior of the
+  other players. The main problem we are concerned with is understanding what are the best competitive ratios that can be
+  achieved by employing such predictors, under various assumptions on predictor quality. As an illustration of our framework,
+  we introduce and analyze a multiagent version of the ski-rental problem. In this problem agents can collaborate by pooling
+  resources to get a group license for some asset. If the license price is not met then agents have to rent the asset individually
+  for the day at a unit price. Otherwise the license becomes available forever to everyone at no extra cost. In the particular
+  case of perfect other predictions the algorithm that follows the self predictor is optimal but not robust to mispredictions
+  of agent's future behavior; we give an algorithm with better robustness properties and benchmark it.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2507.12486
@@ -24,3 +19,4 @@ arxiv: 2507.12486
 s2_id: 0bbdeb017e94f5f892dfe9a5dd30296cd45c5808
 labels:
 - online
+year: 2025

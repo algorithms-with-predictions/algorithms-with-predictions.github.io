@@ -1,5 +1,5 @@
 title: Online Minimum Spanning Trees with Weight Predictions
-authors: Magnus Berg, J. Boyar, Lene M. Favrholdt, Kim S. Larsen
+authors: Magnus Berg, Joan Boyar, Lene M. Favrholdt, Kim S. Larsen
 abstract: We consider the minimum spanning tree problem with predictions, using the weight-arrival model, i.e., the graph
   is given, together with predictions for the weights of all edges. Then the actual weights arrive one at a time and an irrevocable
   decision must be made regarding whether or not the edge should be included into the spanning tree. In order to assess the
