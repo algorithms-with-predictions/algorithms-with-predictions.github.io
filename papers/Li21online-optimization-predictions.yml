@@ -1,4 +1,4 @@
-title: "Online Optimization With Predictions and Switching Costs: Fast Algorithms and the Fundamental Limits"
+title: 'Online Optimization With Predictions and Switching Costs: Fast Algorithms and the Fundamental Limits'
 authors: Yingying Li, Guannan Qu, Na Li
 labels:
 - online
@@ -13,3 +13,12 @@ publications:
   year: 2018
   month: 1
   day: 23
+year: 2018
+abstract: 'This paper studies an online optimization problem with a finite prediction window of cost functions and additional
+  switching costs on decisions. We propose two gradient-based online algorithms: Receding Horizon Gradient Descent (RHGD),
+  and Receding Horizon Accelerated Gradient (RHAG). Both algorithms only require a finite number of projected gradient evaluations
+  at each stage. We provide upper bounds on the dynamic regrets of the proposed algorithms and show that the regret upper
+  bounds decay exponentially with the length of the prediction window. Moreover, we study the fundamental lower bound on the
+  dynamic regret for a broad class of deterministic online algorithms. The lower bound is close to RHAG''s regret upper bound,
+  indicating that our gradient-based RHAG is a near-optimal online algorithm. Finally, we conduct numerical experiments to
+  complement our theoretical analysis.'

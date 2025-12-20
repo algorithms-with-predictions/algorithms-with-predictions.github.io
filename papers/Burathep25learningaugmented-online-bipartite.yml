@@ -1,5 +1,5 @@
 title: Learning-Augmented Online Bipartite Matching in the Random Arrival Order Model
-authors: Burathep, Erlebach, Moses
+authors: Kunanon Burathep, Thomas Erlebach, William K. Moses
 year: 2025
 s2_id: 622606eec9313061412282b287e0045eeb1c8182
 publications:
@@ -7,22 +7,16 @@ publications:
   url: https://arxiv.org/abs/2511.23388
   year: 2025
 arxiv: '2511.23388'
-abstract: 'We study the online unweighted bipartite matching problem in the random
-  arrival order model, with $n$ offline and $n$ online vertices, in the learning-augmented
-  setting: The algorithm is provided with untrusted predictions of the types (neighborhoods)
-  of the online vertices. We build upon the work of Choo et al. (ICML 2024, pp. 8762-8781)
-  who proposed an approach that uses a prefix of the arrival sequence as a sample
-  to determine whether the predictions are close to the true arrival sequence and
-  then either follows the predictions or uses a known baseline algorithm that ignores
-  the predictions and is $\beta$-competitive. Their analysis is limited to the case
-  that the optimal matching has size $n$, i.e., every online vertex can be matched.
-  We generalize their approach and analysis by removing any assumptions on the size
-  of the optimal matching while only requiring that the size of the predicted matching
-  is at least $\alpha n$ for any constant $0<\alpha \le 1$. Our learning-augmented
-  algorithm achieves $(1-o(1))$-consistency and $(\beta-o(1))$-robustness. Additionally,
-  we show that the competitive ratio degrades smoothly between consistency and robustness
-  with increasing prediction error.'
+abstract: 'We study the online unweighted bipartite matching problem in the random arrival order model, with $n$ offline and
+  $n$ online vertices, in the learning-augmented setting: The algorithm is provided with untrusted predictions of the types
+  (neighborhoods) of the online vertices. We build upon the work of Choo et al. (ICML 2024, pp. 8762-8781) who proposed an
+  approach that uses a prefix of the arrival sequence as a sample to determine whether the predictions are close to the true
+  arrival sequence and then either follows the predictions or uses a known baseline algorithm that ignores the predictions
+  and is $\beta$-competitive. Their analysis is limited to the case that the optimal matching has size $n$, i.e., every online
+  vertex can be matched. We generalize their approach and analysis by removing any assumptions on the size of the optimal
+  matching while only requiring that the size of the predicted matching is at least $\alpha n$ for any constant $0<\alpha
+  \le 1$. Our learning-augmented algorithm achieves $(1-o(1))$-consistency and $(\beta-o(1))$-robustness. Additionally, we
+  show that the competitive ratio degrades smoothly between consistency and robustness with increasing prediction error.'
 labels:
 - online
 - allocation / matching
-
