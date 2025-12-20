@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { grey, blue, orange, deepOrange } from '@mui/material/colors';
+import { grey, blue, orange } from '@mui/material/colors';
 
 const ThemeContext = createContext();
 
@@ -25,9 +25,9 @@ const createCustomTheme = mode => {
         dark: isDark ? '#1565C0' : '#0D47A1',
       },
       secondary: {
-        main: isDark ? orange[400] : orange[600], // Orange secondary
-        light: isDark ? orange[300] : orange[400],
-        dark: isDark ? orange[600] : orange[800],
+        main: isDark ? orange[500] : orange[700], // Orange secondary
+        light: isDark ? orange[400] : orange[500],
+        dark: isDark ? orange[700] : orange[900],
       },
       background: {
         default: isDark ? '#0a0a0a' : '#f8faff', // Slightly blue-tinted background
@@ -45,15 +45,9 @@ const createCustomTheme = mode => {
         contrastText: '#ffffff',
       },
       typeLabels: {
-        light: isDark ? orange[300] : orange[400], // Orange for type labels (highlight)
-        main: isDark ? orange[400] : orange[600],
-        dark: isDark ? orange[600] : orange[800],
-        contrastText: '#ffffff',
-      },
-      pubLabels: {
-        light: isDark ? deepOrange[300] : deepOrange[400],
-        main: isDark ? deepOrange[400] : deepOrange[600],
-        dark: isDark ? deepOrange[600] : deepOrange[800],
+        light: isDark ? orange[400] : orange[500], // Orange for type labels (highlight)
+        main: isDark ? orange[500] : orange[700],
+        dark: isDark ? orange[700] : orange[900],
         contrastText: '#ffffff',
       },
       success: {
@@ -62,9 +56,9 @@ const createCustomTheme = mode => {
         dark: isDark ? '#2E7D32' : '#1B5E20',
       },
       warning: {
-        main: isDark ? orange[400] : orange[600], // Orange warnings match secondary
-        light: isDark ? orange[300] : orange[400],
-        dark: isDark ? orange[600] : orange[800],
+        main: isDark ? orange[500] : orange[700], // Orange warnings match secondary
+        light: isDark ? orange[400] : orange[500],
+        dark: isDark ? orange[700] : orange[900],
       },
       // Custom link colors for markdown content
       link: {
