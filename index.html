@@ -14,6 +14,10 @@
       content="algorithms, machine learning, predictions, research"
     />
     <meta name="author" content="Alexander Lindermayr" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com;"
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -47,14 +51,6 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=%VITE_GA_MEASUREMENT_ID%"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', '%VITE_GA_MEASUREMENT_ID%');
-    </script>
   </head>
   <body>
     <div id="root"></div>

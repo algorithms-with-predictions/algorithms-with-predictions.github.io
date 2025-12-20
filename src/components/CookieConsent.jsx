@@ -10,6 +10,7 @@ import {
   Fade,
   IconButton,
 } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 import { Close } from '@mui/icons-material';
 
 const CookieConsent = ({ onAccept, onDecline }) => {
@@ -84,7 +85,8 @@ const CookieConsent = ({ onAccept, onDecline }) => {
             We use cookies to analyze website traffic and improve your
             experience.{' '}
             <Link
-              href="/privacy"
+              component={RouterLink}
+              to="/privacy"
               color="primary"
               sx={{
                 textDecoration: 'none',
