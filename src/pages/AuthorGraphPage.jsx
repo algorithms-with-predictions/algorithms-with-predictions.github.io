@@ -16,6 +16,7 @@ import ForceGraph2D from 'react-force-graph-2d';
 import { usePapersData } from '../hooks/usePapersData';
 import { buildAuthorGraph } from '../utils/graphUtils';
 import { useThemeMode } from '../contexts/ThemeContext';
+import { GRAPH_CONFIG } from '../constants';
 
 const AuthorGraphPage = () => {
   const { data, loading, error } = usePapersData();
@@ -43,11 +44,15 @@ const AuthorGraphPage = () => {
 
     // Increase repulsion (charge) to spread nodes apart and reduce crossings
     // Default strength is usually around -30
-    fg.d3Force('charge').strength(-200);
+    fg.d3Force('charge').strength(GRAPH_CONFIG.CHARGE_STRENGTH);
 
     // Increase link distance to give edges more room
     // Default distance is usually around 30
-    fg.d3Force('link').distance(link => 50 + (link.value || 1) * 5);
+    fg.d3Force('link').distance(
+      link =>
+        GRAPH_CONFIG.LINK_DISTANCE_BASE +
+        (link.value || 1) * GRAPH_CONFIG.LINK_DISTANCE_FACTOR
+    );
 
     fg.d3ReheatSimulation();
   }, [graphData]);
@@ -70,8 +75,8 @@ const AuthorGraphPage = () => {
     link => {
       if (!graphData || graphData.maxCollaboration === 0) return 1;
       // Normalize thickness: min 1px, max 8px
-      const minWidth = 1;
-      const maxWidth = 8;
+      const minWidth = GRAPH_CONFIG.EDGE_MIN_WIDTH;
+      const maxWidth = GRAPH_CONFIG.EDGE_MAX_WIDTH;
       const normalized =
         (link.value / graphData.maxCollaboration) * (maxWidth - minWidth) +
         minWidth;

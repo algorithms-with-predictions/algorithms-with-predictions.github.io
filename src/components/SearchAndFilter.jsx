@@ -5,14 +5,13 @@ import {
   InputAdornment,
   IconButton,
   Box,
-  Chip,
   Stack,
   Collapse,
-  Typography,
   Tooltip,
 } from '@mui/material';
 import { Search, Clear, FilterList } from '@mui/icons-material';
-import { trackSearch, trackFilter } from '../utils/analytics.js';
+import { trackSearch } from '../utils/analytics.js';
+import FilterGroup from './FilterGroup.jsx';
 
 const SearchAndFilter = ({
   searchQuery,
@@ -141,138 +140,28 @@ const SearchAndFilter = ({
               >
                 <Stack spacing={1.5}>
                   {/* Special Labels Section */}
-                  {specialLabels.length > 0 && (
-                    <Box>
-                      <Typography
-                        variant="caption"
-                        sx={{
-                          display: 'block',
-                          mb: 0.75,
-                          color: 'text.secondary',
-                          fontWeight: 600,
-                          textTransform: 'uppercase',
-                          fontSize: '0.65rem',
-                          letterSpacing: '0.5px',
-                        }}
-                      >
-                        Paper Types
-                      </Typography>
-                      <Stack
-                        direction="row"
-                        spacing={0.5}
-                        flexWrap="wrap"
-                        sx={{ gap: 0.5 }}
-                      >
-                        {specialLabels.map(label => {
-                          const isSelected = selectedLabels.includes(label);
-                          const labelColor =
-                            label === 'prior / related work'
-                              ? 'default'
-                              : 'typeLabels';
-                          return (
-                            <Chip
-                              key={label}
-                              label={label}
-                              size="small"
-                              clickable
-                              color={labelColor}
-                              variant={isSelected ? 'filled' : 'outlined'}
-                              onClick={() => {
-                                if (isSelected) {
-                                  onLabelsChange(
-                                    selectedLabels.filter(l => l !== label)
-                                  );
-                                  trackFilter(
-                                    'special_label',
-                                    `remove_${label}`
-                                  );
-                                } else {
-                                  onLabelsChange([...selectedLabels, label]);
-                                  trackFilter('special_label', `add_${label}`);
-                                }
-                              }}
-                              sx={{
-                                height: 28,
-                                fontSize: '0.75rem',
-                                borderRadius: 2,
-                                '& .MuiChip-label': { px: 1.5 },
-                                transition: 'all 0.2s ease',
-                                '&:hover': {
-                                  transform: 'translateY(-1px)',
-                                  boxShadow: 2,
-                                },
-                              }}
-                            />
-                          );
-                        })}
-                      </Stack>
-                    </Box>
-                  )}
+                  <FilterGroup
+                    title="Paper Types"
+                    labels={specialLabels}
+                    selectedLabels={selectedLabels}
+                    onLabelsChange={onLabelsChange}
+                    colorType={label =>
+                      label === 'prior / related work'
+                        ? 'default'
+                        : 'typeLabels'
+                    }
+                    trackCategory="special_label"
+                  />
 
                   {/* Regular Labels Section */}
-                  {availableLabels.length > 0 && (
-                    <Box>
-                      <Typography
-                        variant="caption"
-                        sx={{
-                          display: 'block',
-                          mb: 0.75,
-                          color: 'text.secondary',
-                          fontWeight: 600,
-                          textTransform: 'uppercase',
-                          fontSize: '0.65rem',
-                          letterSpacing: '0.5px',
-                        }}
-                      >
-                        Topics & Keywords
-                      </Typography>
-                      <Stack
-                        direction="row"
-                        spacing={0.5}
-                        flexWrap="wrap"
-                        sx={{ gap: 0.5 }}
-                      >
-                        {availableLabels.map(label => {
-                          const isSelected = selectedLabels.includes(label);
-                          return (
-                            <Chip
-                              key={label}
-                              label={label}
-                              size="small"
-                              clickable
-                              color="labels"
-                              variant={isSelected ? 'filled' : 'outlined'}
-                              onClick={() => {
-                                if (isSelected) {
-                                  onLabelsChange(
-                                    selectedLabels.filter(l => l !== label)
-                                  );
-                                  trackFilter(
-                                    'regular_label',
-                                    `remove_${label}`
-                                  );
-                                } else {
-                                  onLabelsChange([...selectedLabels, label]);
-                                  trackFilter('regular_label', `add_${label}`);
-                                }
-                              }}
-                              sx={{
-                                height: 28,
-                                fontSize: '0.75rem',
-                                borderRadius: 2,
-                                '& .MuiChip-label': { px: 1.5 },
-                                transition: 'all 0.2s ease',
-                                '&:hover': {
-                                  transform: 'translateY(-1px)',
-                                  boxShadow: 2,
-                                },
-                              }}
-                            />
-                          );
-                        })}
-                      </Stack>
-                    </Box>
-                  )}
+                  <FilterGroup
+                    title="Topics & Keywords"
+                    labels={availableLabels}
+                    selectedLabels={selectedLabels}
+                    onLabelsChange={onLabelsChange}
+                    colorType="labels"
+                    trackCategory="regular_label"
+                  />
                 </Stack>
               </Box>
             </Collapse>

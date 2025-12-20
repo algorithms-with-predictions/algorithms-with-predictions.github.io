@@ -10,34 +10,17 @@ import PrivacyPage from './pages/PrivacyPage';
 import AuthorGraphPage from './pages/AuthorGraphPage';
 import NotFoundPage from './pages/NotFoundPage';
 import CookieConsent from './components/CookieConsent.jsx';
-import { initGA, trackPageView } from './utils/analytics.js';
+import { trackPageView } from './utils/analytics.js';
+import { useCookieConsent } from './hooks/useCookieConsent.js';
 
 function App() {
   const location = useLocation();
-
-  useEffect(() => {
-    // Initialize Google Analytics
-    initGA();
-  }, []);
+  const { onAccept, onDecline } = useCookieConsent();
 
   useEffect(() => {
     // Track page views on route changes
     trackPageView(location.pathname, document.title);
   }, [location]);
-
-  const handleConsentAccept = () => {
-    // Re-initialize analytics with consent
-    initGA();
-  };
-
-  const handleConsentDecline = () => {
-    // Disable any existing analytics
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('consent', 'update', {
-        analytics_storage: 'denied',
-      });
-    }
-  };
 
   return (
     <ThemeContextProvider>
@@ -51,10 +34,7 @@ function App() {
           <Route path="/authors" element={<AuthorGraphPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        <CookieConsent
-          onAccept={handleConsentAccept}
-          onDecline={handleConsentDecline}
-        />
+        <CookieConsent onAccept={onAccept} onDecline={onDecline} />
       </Layout>
     </ThemeContextProvider>
   );
