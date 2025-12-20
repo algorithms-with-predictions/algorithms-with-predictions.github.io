@@ -13,7 +13,6 @@ import {
   Paper,
 } from '@mui/material';
 import ForceGraph2D from 'react-force-graph-2d';
-import * as d3Force from 'd3-force';
 import { usePapersData } from '../hooks/usePapersData';
 import { buildAuthorGraph } from '../utils/graphUtils';
 import { useThemeMode } from '../contexts/ThemeContext';
@@ -36,43 +35,19 @@ const AuthorGraphPage = () => {
     return buildAuthorGraph(data);
   }, [data]);
 
-  // Configure d3 forces (react-force-graph-2d exposes this via ref methods, not props)
+  // Configure d3 forces to minimize edge crossings
   useEffect(() => {
     if (!graphData || !fgRef.current) return;
 
     const fg = fgRef.current;
 
-    const chargeForce = fg.d3Force('charge');
-    if (chargeForce) {
-      // Repel nodes more to reduce clustering.
-      chargeForce.strength(-420);
-    }
+    // Increase repulsion (charge) to spread nodes apart and reduce crossings
+    // Default strength is usually around -30
+    fg.d3Force('charge').strength(-200);
 
-    const linkForce = fg.d3Force('link');
-    if (linkForce) {
-      // Longer, slightly weaker links to avoid compressing hubs.
-      linkForce.distance(link => 90 + (link.value || 1) * 10).strength(0.18);
-    }
-
-    // Collision radius aligned to the node rendering size.
-    fg.d3Force(
-      'collision',
-      d3Force
-        .forceCollide()
-        .radius(node => {
-          const paperCount = node.paperCount || 1;
-
-          // Matches our node sizing: nodeRelSize * sqrt(nodeVal)
-          // nodeVal = sqrt(paperCount) * 2
-          const nodeVal = Math.sqrt(paperCount) * 2;
-          const visualRadius = 6 * Math.sqrt(nodeVal);
-
-          // Add padding to prevent overlaps for large nodes.
-          return visualRadius + 6;
-        })
-        .iterations(2)
-        .strength(1)
-    );
+    // Increase link distance to give edges more room
+    // Default distance is usually around 30
+    fg.d3Force('link').distance(link => 50 + (link.value || 1) * 5);
 
     fg.d3ReheatSimulation();
   }, [graphData]);
