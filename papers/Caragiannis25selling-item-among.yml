@@ -21,4 +21,11 @@ publications:
   year: 2025
   month: 2
   day: 17
+  dblp_key: journals/corr/abs-2502-12313
+  bibtex: "@article{DBLP:journals/corr/abs-2502-12313,\n  author       = {Ioannis Caragiannis and\n                  Georgios\
+    \ Kalantzis},\n  title        = {Mechanisms for Selling an Item Among a Strategic Bidder and a Profiled\n            \
+    \      Agent},\n  journal      = {CoRR},\n  volume       = {abs/2502.12313},\n  year         = {2025},\n  url        \
+    \  = {https://doi.org/10.48550/arXiv.2502.12313},\n  doi          = {10.48550/ARXIV.2502.12313},\n  eprinttype    = {arXiv},\n\
+    \  eprint       = {2502.12313},\n  timestamp    = {Wed, 19 Mar 2025 11:49:45 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2502-12313.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025

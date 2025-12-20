@@ -20,3 +20,14 @@ publications:
   month: 1
   day: 4
 year: 2023
+abstract: We study the nascent setting of online computation with imperfect advice, in which the online algorithm is enhanced
+  by some prediction encoded in the form of a possibly erroneous binary string. The algorithm is oblivious to the advice error,
+  but defines a desired tolerance, namely an upper bound on the number of erroneous advice bits it can tolerate. This is a
+  model that generalizes the untrusted advice model [Angelopoulos et al. ITCS 2020], in which the performance of the algorithm
+  is only evaluated at the extreme values of error (namely, if the advice has either no errors, or if it is generated adversarially).
+  In this work, we establish connections between games with a lying responder, also known as R\'enyi-Ulam games, and the design
+  and analysis of online algorithms with imperfect advice. Specifically, we demonstrate how to obtain upper and lower bounds
+  on the competitive ratio for well-studied online problems such as time-series search, online bidding, and fractional knapsack.
+  Our techniques provide the first lower bounds for online problems in this model. We also highlight and exploit connections
+  between competitive analysis with imperfect advice and fault-tolerance in multiprocessor systems. Last, we show how to waive
+  the dependence on the tolerance parameter, by means of resource augmentation and robustification.

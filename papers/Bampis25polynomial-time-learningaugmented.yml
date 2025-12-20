@@ -18,4 +18,12 @@ publications:
   year: 2025
   month: 2
   day: 2
+  dblp_key: journals/corr/abs-2502-00841
+  bibtex: "@article{DBLP:journals/corr/abs-2502-00841,\n  author       = {Evripidis Bampis and\n                  Bruno Escoffier\
+    \ and\n                  Dimitris Fotakis and\n                  Panagiotis Patsilinakos and\n                  Michalis\
+    \ Xefteris},\n  title        = {Polynomial Time Learning-Augmented Algorithms for NP-hard Permutation\n              \
+    \    Problems},\n  journal      = {CoRR},\n  volume       = {abs/2502.00841},\n  year         = {2025},\n  url       \
+    \   = {https://doi.org/10.48550/arXiv.2502.00841},\n  doi          = {10.48550/ARXIV.2502.00841},\n  eprinttype    = {arXiv},\n\
+    \  eprint       = {2502.00841},\n  timestamp    = {Sat, 31 May 2025 23:14:47 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2502-00841.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025

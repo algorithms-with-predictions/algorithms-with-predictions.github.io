@@ -1,5 +1,5 @@
 title: Overcoming Brittleness in Pareto-Optimal Learning-Augmented Algorithms
-authors: Alex Elenter, Spyros Angelopoulos, Christoph Dürr, Yanni Lefki
+authors: Spyros Angelopoulos, Christoph Dürr, Alex Elenter, Yanni Lefki
 abstract: The study of online algorithms with machine-learned predictions has gained considerable prominence in recent years.
   One of the common objectives in the design and analysis of such algorithms is to attain (Pareto) optimal tradeoffs between
   the consistency of the algorithm, i.e., its performance assuming perfect predictions, and its robustness, i.e., the performance
@@ -28,4 +28,12 @@ publications:
   year: 2024
   month: 8
   day: 7
+  dblp_key: journals/corr/abs-2408-04122
+  bibtex: "@article{DBLP:journals/corr/abs-2408-04122,\n  author       = {Spyros Angelopoulos and\n                  Christoph\
+    \ D{\\\"{u}}rr and\n                  Alex Elenter and\n                  Yanni Lefki},\n  title        = {Overcoming\
+    \ Brittleness in Pareto-Optimal Learning-Augmented Algorithms},\n  journal      = {CoRR},\n  volume       = {abs/2408.04122},\n\
+    \  year         = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2408.04122},\n  doi          = {10.48550/ARXIV.2408.04122},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2408.04122},\n  timestamp    = {Fri, 13 Sep 2024 20:46:21 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2408-04122.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 year: 2024
