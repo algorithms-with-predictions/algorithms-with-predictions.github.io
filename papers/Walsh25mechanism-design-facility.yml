@@ -1,25 +1,30 @@
 title: Mechanism Design for Facility Location using Predictions
 authors: Toby Walsh
-abstract: We study mechanisms for the facility location problem augmented with predictions
-  of the optimal facility location. We demonstrate that an egalitarian viewpoint which
-  considers both the maximum distance of any agent from the facility and the minimum
-  utility of any agent provides important new insights compared to a viewpoint that
-  just considers the maximum distance. As in previous studies, we consider performance
-  in terms of consistency (worst case when predictions are accurate) and robustness
-  (worst case irrespective of the accuracy of predictions). By considering how mechanisms
-  with predictions can perform poorly, we design new mechanisms that are more robust.
-  Indeed, by adjusting parameters, we demonstrate how to trade robustness for consistency.
-  We go beyond the single facility problem by designing novel strategy proof mechanisms
-  for locating two facilities with bounded consistency and robustness that use two
-  predictions for where to locate the two facilities.
+abstract: We study mechanisms for the facility location problem augmented with predictions of the optimal facility location.
+  We demonstrate that an egalitarian viewpoint which considers both the maximum distance of any agent from the facility and
+  the minimum utility of any agent provides important new insights compared to a viewpoint that just considers the maximum
+  distance. As in previous studies, we consider performance in terms of consistency (worst case when predictions are accurate)
+  and robustness (worst case irrespective of the accuracy of predictions). By considering how mechanisms with predictions
+  can perform poorly, we design new mechanisms that are more robust. Indeed, by adjusting parameters, we demonstrate how to
+  trade robustness for consistency. We go beyond the single facility problem by designing novel strategy proof mechanisms
+  for locating two facilities with bounded consistency and robustness that use two predictions for where to locate the two
+  facilities.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2508.03818
   year: 2025
   month: 8
   day: 5
+  dblp_key: journals/corr/abs-2508-03818
+  bibtex: "@article{DBLP:journals/corr/abs-2508-03818,\n  author       = {Toby Walsh},\n  title        = {Mechanism Design\
+    \ for Facility Location using Predictions},\n  journal      = {CoRR},\n  volume       = {abs/2508.03818},\n  year    \
+    \     = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2508.03818},\n  doi          = {10.48550/ARXIV.2508.03818},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2508.03818},\n  timestamp    = {Wed, 10 Sep 2025 20:56:40 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2508-03818.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 arxiv: 2508.03818
 s2_id: ce1e3aea76433752b46c7ca1fad5535dcc82c34d
 labels:
 - facility location
 - game theory / mechanism design
+year: 2025

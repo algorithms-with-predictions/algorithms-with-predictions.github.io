@@ -17,4 +17,11 @@ publications:
   year: 2022
   month: 1
   day: 8
+  dblp_key: journals/corr/abs-2201-02890
+  bibtex: "@article{DBLP:journals/corr/abs-2201-02890,\n  author       = {Daron Anderson and\n                  George Iosifidis\
+    \ and\n                  Douglas J. Leith},\n  title        = {Lazy Lagrangians with Predictions for Online Learning},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/2201.02890},\n  year         = {2022},\n  url          = {https://arxiv.org/abs/2201.02890},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2201.02890},\n  timestamp    = {Thu, 20 Jan 2022 14:21:35 +0100},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2201-02890.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 year: 2022

@@ -23,4 +23,14 @@ publications:
   year: 2025
   month: 6
   day: 5
+- name: ICML
+  dblp_key: conf/icml/BravermanE0Z25
+  url: https://dblp.org/rec/conf/icml/BravermanE0Z25
+  bibtex: "@inproceedings{DBLP:conf/icml/BravermanE0Z25,\n  author       = {Vladimir Braverman and\n                  Jon\
+    \ C. Ergun and\n                  Chen Wang and\n                  Samson Zhou},\n  title        = {Learning-Augmented\
+    \ Hierarchical Clustering},\n  booktitle    = {Forty-second International Conference on Machine Learning, {ICML}\n   \
+    \               2025, Vancouver, BC, Canada, July 13-19, 2025},\n  publisher    = {OpenReview.net},\n  year         =\
+    \ {2025},\n  url          = {https://openreview.net/forum?id=FU527ycGgW},\n  timestamp    = {Fri, 05 Dec 2025 16:19:11\
+    \ +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/BravermanE0Z25.bib},\n  bibsource    = {dblp computer science\
+    \ bibliography, https://dblp.org}\n}\n\n"
 year: 2025

@@ -18,4 +18,14 @@ publications:
   year: 2025
   month: 5
   day: 29
+- name: ICML
+  dblp_key: conf/icml/AamandCGSW25
+  url: https://dblp.org/rec/conf/icml/AamandCGSW25
+  bibtex: "@inproceedings{DBLP:conf/icml/AamandCGSW25,\n  author       = {Anders Aamand and\n                  Justin Y. Chen\
+    \ and\n                  Siddharth Gollapudi and\n                  Sandeep Silwal and\n                  Hao Wu},\n \
+    \ title        = {Improved Approximations for Hard Graph Problems using Predictions},\n  booktitle    = {Forty-second\
+    \ International Conference on Machine Learning, {ICML}\n                  2025, Vancouver, BC, Canada, July 13-19, 2025},\n\
+    \  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=5QMJZiHuGn},\n\
+    \  timestamp    = {Wed, 10 Dec 2025 08:08:40 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/AamandCGSW25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025

@@ -1,5 +1,5 @@
 title: Max-Cut with ε-Accurate Predictions
-authors: Vincent Cohen-Addad, Tommaso d'Orsi, Anupam Gupta, Euiwoong Lee, Debmalya Panigrahi
+authors: Vincent Cohen-Addad, Tommaso d&apos;Orsi, Anupam Gupta, Euiwoong Lee, Debmalya Panigrahi
 abstract: 'We study the approximability of the MaxCut problem in the presence of predictions. Specifically, we consider two
   models: in the noisy predictions model, for each vertex we are given its correct label in $\{-1,+1\}$ with some unknown
   probability $1/2 + \epsilon$, and the other (incorrect) label otherwise. In the more-informative partial predictions model,
@@ -19,4 +19,12 @@ publications:
   year: 2024
   month: 1
   day: 27
+  dblp_key: journals/corr/abs-2402-18263
+  bibtex: "@article{DBLP:journals/corr/abs-2402-18263,\n  author       = {Vincent Cohen{-}Addad and\n                  Tommaso\
+    \ d'Orsi and\n                  Anupam Gupta and\n                  Euiwoong Lee and\n                  Debmalya Panigrahi},\n\
+    \  title        = {Max-Cut with {\\(\\epsilon\\)}-Accurate Predictions},\n  journal      = {CoRR},\n  volume       = {abs/2402.18263},\n\
+    \  year         = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2402.18263},\n  doi          = {10.48550/ARXIV.2402.18263},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2402.18263},\n  timestamp    = {Sun, 06 Oct 2024 21:24:49 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2402-18263.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 year: 2024

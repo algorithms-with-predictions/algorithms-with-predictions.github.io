@@ -6,5 +6,15 @@ publications:
 - name: ICML
   year: 2023
   dblp_key: conf/icml/MaghakianLH0S023
+  bibtex: "@inproceedings{DBLP:conf/icml/MaghakianLH0S023,\n  author       = {Jessica Maghakian and\n                  Russell\
+    \ Lee and\n                  Mohammad Hajiesmaili and\n                  Jian Li and\n                  Ramesh K. Sitaraman\
+    \ and\n                  Zhenhua Liu},\n  editor       = {Andreas Krause and\n                  Emma Brunskill and\n \
+    \                 Kyunghyun Cho and\n                  Barbara Engelhardt and\n                  Sivan Sabato and\n  \
+    \                Jonathan Scarlett},\n  title        = {Applied Online Algorithms with Heterogeneous Predictors},\n  booktitle\
+    \    = {International Conference on Machine Learning, {ICML} 2023, 23-29 July\n                  2023, Honolulu, Hawaii,\
+    \ {USA}},\n  series       = {Proceedings of Machine Learning Research},\n  volume       = {202},\n  pages        = {23484--23497},\n\
+    \  publisher    = {{PMLR}},\n  year         = {2023},\n  url          = {https://proceedings.mlr.press/v202/maghakian23a.html},\n\
+    \  timestamp    = {Mon, 28 Aug 2023 17:23:08 +0200},\n  biburl       = {https://dblp.org/rec/conf/icml/MaghakianLH0S023.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 labels:
 - online

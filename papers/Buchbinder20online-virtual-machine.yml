@@ -1,5 +1,5 @@
 title: Online Virtual Machine Allocation with Predictions
-authors: Niv Buchbinder, Yaron Fairstein, Konstantina Mellou, Ishai Menache, Joseph (Seffi) Naor
+authors: Niv Buchbinder, Yaron Fairstein, Konstantina Mellou, Ishai Menache, Joseph Naor
 abstract: "The cloud computing industry has grown rapidly over the last decade, and with this growth there is a significant\
   \ increase in demand for compute resources. Demand is manifested in the form of Virtual Machine (VM) requests, which need\
   \ to be assigned to physical machines in a way that minimizes resource fragmentation and efficiently utilizes the available\
@@ -19,6 +19,13 @@ publications:
   year: 2020
   month: 11
   day: 12
+  dblp_key: journals/corr/abs-2011-06250
+  bibtex: "@article{DBLP:journals/corr/abs-2011-06250,\n  author       = {Niv Buchbinder and\n                  Yaron Fairstein\
+    \ and\n                  Konstantina Mellou and\n                  Ishai Menache and\n                  Joseph Naor},\n\
+    \  title        = {Online Virtual Machine Allocation with Predictions},\n  journal      = {CoRR},\n  volume       = {abs/2011.06250},\n\
+    \  year         = {2020},\n  url          = {https://arxiv.org/abs/2011.06250},\n  eprinttype    = {arXiv},\n  eprint\
+    \       = {2011.06250},\n  timestamp    = {Wed, 18 Nov 2020 16:48:35 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2011-06250.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2011.0625
 s2_id: dd6df52ee77aa9b01ed2cf130df5075f5c0b7daa
 labels:

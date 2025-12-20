@@ -26,4 +26,12 @@ publications:
   year: 2024
   month: 6
   day: 5
+  dblp_key: journals/corr/abs-2406-03574
+  bibtex: "@article{DBLP:journals/corr/abs-2406-03574,\n  author       = {Elena Grigorescu and\n                  Young{-}San\
+    \ Lin and\n                  Maoyuan Song},\n  title        = {A Simple Learning-Augmented Algorithm for Online Packing\
+    \ with Concave\n                  Objectives},\n  journal      = {CoRR},\n  volume       = {abs/2406.03574},\n  year \
+    \        = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2406.03574},\n  doi          = {10.48550/ARXIV.2406.03574},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2406.03574},\n  timestamp    = {Mon, 03 Mar 2025 21:34:33 +0100},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2406-03574.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 year: 2024

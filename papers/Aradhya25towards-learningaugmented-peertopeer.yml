@@ -1,36 +1,35 @@
-title:
-  "Towards Learning-Augmented Peer-to-Peer Networks: Self-Stabilizing Graph Linearization
-  with Untrusted Advice"
+title: 'Towards Learning-Augmented Peer-to-Peer Networks: Self-Stabilizing Graph Linearization with Untrusted Advice'
 authors: Vijeth Aradhya, Christian Scheideler
-abstract:
-  Distributed peer-to-peer systems are widely popular due to their decentralized
-  nature, which ensures that no peer is critical for the functionality of the system.
-  However, fully decentralized solutions are usually much harder to design, and tend
-  to have a much higher overhead compared to centralized approaches, where the peers
-  are connected to a powerful server. On the other hand, centralized approaches have
-  a single point of failure. Thus, is there some way to combine their advantages without
-  inheriting their disadvantages? To that end, we consider a supervised peer-to-peer
-  approach where the peers can ask a potentially unreliable supervisor for advice.
-  This is in line with the increasingly popular algorithmic paradigm called algorithms
-  with predictions or learning-augmented algorithms, but we are the first to consider
-  it in the context of peer-to-peer networks. Specifically, we design self-stabilizing
-  algorithms for the fundamental problem of distributed graph linearization, where
-  peers are supposed to recover the"sorted line"network from any initial network after
-  a transient fault. With the help of the supervisor, peers can recover the sorted
-  line network in $O(\log n)$ time, if the advice is correct; otherwise, the algorithm
-  retains its original recovery time (i.e., without any supervisor). A crucial challenge
-  that we overcome is to correctly compose multiple self-stabilizing algorithms, that
-  is, one that processes and exploits the advice, and another that does not rely on
-  the advice at all. Our key technical contributions combine ideas from the fields
-  of overlay networks and proof-labeling schemes. Finally, we give a matching lower
-  bound of $\Omega(\log n)$ for the recovery time of any algorithm if the advice can
-  be corrupted, where $n$ is the network size.
+abstract: Distributed peer-to-peer systems are widely popular due to their decentralized nature, which ensures that no peer
+  is critical for the functionality of the system. However, fully decentralized solutions are usually much harder to design,
+  and tend to have a much higher overhead compared to centralized approaches, where the peers are connected to a powerful
+  server. On the other hand, centralized approaches have a single point of failure. Thus, is there some way to combine their
+  advantages without inheriting their disadvantages? To that end, we consider a supervised peer-to-peer approach where the
+  peers can ask a potentially unreliable supervisor for advice. This is in line with the increasingly popular algorithmic
+  paradigm called algorithms with predictions or learning-augmented algorithms, but we are the first to consider it in the
+  context of peer-to-peer networks. Specifically, we design self-stabilizing algorithms for the fundamental problem of distributed
+  graph linearization, where peers are supposed to recover the"sorted line"network from any initial network after a transient
+  fault. With the help of the supervisor, peers can recover the sorted line network in $O(\log n)$ time, if the advice is
+  correct; otherwise, the algorithm retains its original recovery time (i.e., without any supervisor). A crucial challenge
+  that we overcome is to correctly compose multiple self-stabilizing algorithms, that is, one that processes and exploits
+  the advice, and another that does not rely on the advice at all. Our key technical contributions combine ideas from the
+  fields of overlay networks and proof-labeling schemes. Finally, we give a matching lower bound of $\Omega(\log n)$ for the
+  recovery time of any algorithm if the advice can be corrupted, where $n$ is the network size.
 labels:
-  - distributed algorithms
-  - graph problems
+- distributed algorithms
+- graph problems
 publications:
-  - name: arXiv
-    url: https://arxiv.org/abs/2504.02448
-    year: 2025
-    month: 4
-    day: 3
+- name: arXiv
+  url: https://arxiv.org/abs/2504.02448
+  year: 2025
+  month: 4
+  day: 3
+  dblp_key: journals/corr/abs-2504-02448
+  bibtex: "@article{DBLP:journals/corr/abs-2504-02448,\n  author       = {Vijeth Aradhya and\n                  Christian\
+    \ Scheideler},\n  title        = {Towards Learning-Augmented Peer-to-Peer Networks: Self-Stabilizing\n               \
+    \   Graph Linearization with Untrusted Advice},\n  journal      = {CoRR},\n  volume       = {abs/2504.02448},\n  year\
+    \         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2504.02448},\n  doi          = {10.48550/ARXIV.2504.02448},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2504.02448},\n  timestamp    = {Mon, 19 May 2025 13:58:38 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2504-02448.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
+year: 2025

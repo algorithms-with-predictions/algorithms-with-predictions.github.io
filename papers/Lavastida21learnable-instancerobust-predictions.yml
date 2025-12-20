@@ -20,3 +20,13 @@ publications:
   month: 11
   day: 23
 year: 2021
+abstract: 'This paper proposes a new model for augmenting algorithms with useful predictions that go beyond worst-case bounds
+  on the algorithm performance. By refining existing models, our model ensures predictions are formally learnable and instance
+  robust. Learnability guarantees that predictions can be efficiently constructed from past data. Instance robustness formally
+  ensures a prediction is robust to modest changes in the problem input. Further, the robustness model ensures two different
+  predictions can be objectively compared, addressing a shortcoming in prior models. This paper establishes the existence
+  of predictions which satisfy these properties. The paper considers online algorithms with predictions for a network flow
+  allocation problem and the restricted assignment makespan minimization problem. For both problems, three key properties
+  are established: existence of useful predictions that give near optimal solutions, robustness of these predictions to errors
+  that smoothly degrade as the underlying problem instance changes, and we prove high quality predictions can be learned from
+  a small sample of prior instances.'

@@ -28,4 +28,12 @@ publications:
   year: 2022
   month: 9
   day: 30
-year: 2023
+  dblp_key: journals/corr/abs-2209-15305
+  bibtex: "@article{DBLP:journals/corr/abs-2209-15305,\n  author       = {Siddhartha Banerjee and\n                  Vasilis\
+    \ Gkatzelis and\n                  Safwan Hossain and\n                  Billy Jin and\n                  Evi Micha and\n\
+    \                  Nisarg Shah},\n  title        = {Proportionally Fair Online Allocation of Public Goods with Predictions},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/2209.15305},\n  year         = {2022},\n  url          = {https://doi.org/10.48550/arXiv.2209.15305},\n\
+    \  doi          = {10.48550/ARXIV.2209.15305},\n  eprinttype    = {arXiv},\n  eprint       = {2209.15305},\n  timestamp\
+    \    = {Mon, 03 Mar 2025 21:32:18 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2209-15305.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2022

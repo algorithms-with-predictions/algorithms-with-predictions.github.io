@@ -23,4 +23,11 @@ publications:
   year: 2024
   month: 10
   day: 10
+  dblp_key: journals/corr/abs-2410-07497
+  bibtex: "@article{DBLP:journals/corr/abs-2410-07497,\n  author       = {Qingyun Chen and\n                  Nick Gravin\
+    \ and\n                  Sungjin Im},\n  title        = {Strategic Facility Location via Predictions},\n  journal    \
+    \  = {CoRR},\n  volume       = {abs/2410.07497},\n  year         = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2410.07497},\n\
+    \  doi          = {10.48550/ARXIV.2410.07497},\n  eprinttype    = {arXiv},\n  eprint       = {2410.07497},\n  timestamp\
+    \    = {Mon, 18 Nov 2024 14:52:15 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2410-07497.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2024

@@ -15,6 +15,13 @@ publications:
   year: 2025
   month: 7
   day: 15
+  dblp_key: journals/corr/abs-2507-12486
+  bibtex: "@article{DBLP:journals/corr/abs-2507-12486,\n  author       = {Gabriel Istrate and\n                  Cosmin Bonchis\
+    \ and\n                  Victor Bogdan},\n  title        = {On multiagent online problems with predictions},\n  journal\
+    \      = {CoRR},\n  volume       = {abs/2507.12486},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2507.12486},\n\
+    \  doi          = {10.48550/ARXIV.2507.12486},\n  eprinttype    = {arXiv},\n  eprint       = {2507.12486},\n  timestamp\
+    \    = {Sun, 17 Aug 2025 16:23:19 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2507-12486.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2507.12486
 s2_id: 0bbdeb017e94f5f892dfe9a5dd30296cd45c5808
 labels:

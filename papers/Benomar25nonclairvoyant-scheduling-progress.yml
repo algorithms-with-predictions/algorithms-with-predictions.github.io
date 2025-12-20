@@ -18,4 +18,12 @@ publications:
   year: 2025
   month: 9
   day: 24
+  dblp_key: journals/corr/abs-2509-19662
+  bibtex: "@article{DBLP:journals/corr/abs-2509-19662,\n  author       = {Ziyad Benomar and\n                  Romain Cosson\
+    \ and\n                  Alexander Lindermayr and\n                  Jens Schl{\\\"{o}}ter},\n  title        = {Non-Clairvoyant\
+    \ Scheduling with Progress Bars},\n  journal      = {CoRR},\n  volume       = {abs/2509.19662},\n  year         = {2025},\n\
+    \  url          = {https://doi.org/10.48550/arXiv.2509.19662},\n  doi          = {10.48550/ARXIV.2509.19662},\n  eprinttype\
+    \    = {arXiv},\n  eprint       = {2509.19662},\n  timestamp    = {Sat, 18 Oct 2025 21:51:44 +0200},\n  biburl       =\
+    \ {https://dblp.org/rec/journals/corr/abs-2509-19662.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+    }\n\n"
 year: 2025

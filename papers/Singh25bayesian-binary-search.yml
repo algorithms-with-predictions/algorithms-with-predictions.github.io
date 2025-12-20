@@ -1,5 +1,5 @@
 title: Bayesian Binary Search
-authors: Vikash Singh, Matthew Khanzadeh, Vincent Davis, Harrison Rush, Emanuele Rossi, Jesse Shrader, Pietro Lio
+authors: Vikash Singh, Matthew Khanzadeh, Vincent Davis, Harrison Rush, Emanuele Rossi, Jesse Shrader, Pietro Lio&apos;
 abstract: We present Bayesian Binary Search (BBS), a novel framework that bridges statistical learning theory/probabilistic
   machine learning and binary search. BBS utilizes probabilistic methods to learn the underlying probability density of the
   search space. This learned distribution then informs a modified bisection strategy, where the split point is determined

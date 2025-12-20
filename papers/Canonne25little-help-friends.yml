@@ -17,6 +17,14 @@ publications:
   year: 2025
   month: 5
   day: 8
+  dblp_key: journals/corr/abs-2505-04949
+  bibtex: "@article{DBLP:journals/corr/abs-2505-04949,\n  author       = {Cl{\\'{e}}ment L. Canonne and\n                \
+    \  Kenny Chen and\n                  Juli{\\'{a}}n Mestre},\n  title        = {With a Little Help From My Friends: Exploiting\
+    \ Probability Distribution\n                  Advice in Algorithm Design},\n  journal      = {CoRR},\n  volume       =\
+    \ {abs/2505.04949},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2505.04949},\n  doi  \
+    \        = {10.48550/ARXIV.2505.04949},\n  eprinttype    = {arXiv},\n  eprint       = {2505.04949},\n  timestamp    =\
+    \ {Fri, 20 Jun 2025 20:58:56 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2505-04949.bib},\n  bibsource\
+    \    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2505.04949
 s2_id: 9330777a7f4505ac672b2b069d371d87cca742e0
 year: 2025

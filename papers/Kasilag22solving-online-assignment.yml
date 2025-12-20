@@ -23,6 +23,14 @@ publications:
   year: 2022
   month: 8
   day: 8
+  dblp_key: journals/corr/abs-2208-04016
+  bibtex: "@article{DBLP:journals/corr/abs-2208-04016,\n  author       = {Clarence Gabriel R. Kasilag and\n              \
+    \    Pollux M. Rey and\n                  Jhoirene B. Clemente},\n  title        = {Solving the Online Assignment Problem\
+    \ with Machine Learned Advice},\n  journal      = {CoRR},\n  volume       = {abs/2208.04016},\n  year         = {2022},\n\
+    \  url          = {https://doi.org/10.48550/arXiv.2208.04016},\n  doi          = {10.48550/ARXIV.2208.04016},\n  eprinttype\
+    \    = {arXiv},\n  eprint       = {2208.04016},\n  timestamp    = {Wed, 10 Aug 2022 14:49:54 +0200},\n  biburl       =\
+    \ {https://dblp.org/rec/journals/corr/abs-2208-04016.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+    }\n\n"
 arxiv: 2208.04016
 s2_id: 2ec8df30387d47a755e62d92b695c6e547b34ffa
 labels:

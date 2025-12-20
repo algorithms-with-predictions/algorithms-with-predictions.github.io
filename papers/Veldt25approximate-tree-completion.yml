@@ -17,4 +17,13 @@ publications:
   year: 2025
   month: 2
   day: 18
+  dblp_key: journals/corr/abs-2502-12993
+  bibtex: "@article{DBLP:journals/corr/abs-2502-12993,\n  author       = {Nate Veldt and\n                  Thomas Stanley\
+    \ and\n                  Benjamin W. Priest and\n                  Trevor Steil and\n                  Keita Iwabuchi\
+    \ and\n                  T. S. Jayram and\n                  Geoffrey Sanders},\n  title        = {Approximate Tree Completion\
+    \ and Learning-Augmented Algorithms for\n                  Metric Minimum Spanning Trees},\n  journal      = {CoRR},\n\
+    \  volume       = {abs/2502.12993},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2502.12993},\n\
+    \  doi          = {10.48550/ARXIV.2502.12993},\n  eprinttype    = {arXiv},\n  eprint       = {2502.12993},\n  timestamp\
+    \    = {Wed, 19 Mar 2025 11:49:50 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2502-12993.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025

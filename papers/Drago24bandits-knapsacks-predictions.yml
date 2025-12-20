@@ -7,4 +7,13 @@ publications:
 - name: UAI
   url: https://openreview.net/forum?id=pGnoioQ9z1
   year: 2024
+  dblp_key: conf/uai/DragoC024
+  bibtex: "@inproceedings{DBLP:conf/uai/DragoC024,\n  author       = {Davide Drago and\n                  Andrea Celli and\n\
+    \                  Marek Eli{\\'{a}}s},\n  editor       = {Negar Kiyavash and\n                  Joris M. Mooij},\n  title\
+    \        = {Bandits with Knapsacks and Predictions},\n  booktitle    = {Uncertainty in Artificial Intelligence, 15-19\
+    \ July 2024, Universitat\n                  Pompeu Fabra, Barcelona, Spain},\n  series       = {Proceedings of Machine\
+    \ Learning Research},\n  volume       = {244},\n  pages        = {1189--1206},\n  publisher    = {{PMLR}},\n  year   \
+    \      = {2024},\n  url          = {https://proceedings.mlr.press/v244/drago24a.html},\n  timestamp    = {Fri, 14 Mar\
+    \ 2025 13:15:26 +0100},\n  biburl       = {https://dblp.org/rec/conf/uai/DragoC024.bib},\n  bibsource    = {dblp computer\
+    \ science bibliography, https://dblp.org}\n}\n\n"
 year: 2024

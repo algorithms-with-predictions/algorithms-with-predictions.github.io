@@ -1,19 +1,15 @@
 title: Algorithms with Calibrated Machine Learning Predictions
 authors: Judy Hanwen Shen, Ellen Vitercik, Anders Wikum
-abstract: 'The field of algorithms with predictions incorporates machine learning
-  advice in the design of online algorithms to improve real-world performance. A central
-  consideration is the extent to which predictions can be trusted -- while existing
-  approaches often require users to specify an aggregate trust level, modern machine
-  learning models can provide estimates of prediction-level uncertainty. In this paper,
-  we propose calibration as a principled and practical tool to bridge this gap, demonstrating
-  the benefits of calibrated advice through two case studies: the ski rental and online
-  job scheduling problems. For ski rental, we design an algorithm that achieves near-optimal
-  prediction-dependent performance and prove that, in high-variance settings, calibrated
-  advice offers more effective guidance than alternative methods for uncertainty quantification.
-  For job scheduling, we demonstrate that using a calibrated predictor leads to significant
-  performance improvements over existing methods. Evaluations on real-world data validate
-  our theoretical findings, highlighting the practical impact of calibration for algorithms
-  with predictions.'
+abstract: 'The field of algorithms with predictions incorporates machine learning advice in the design of online algorithms
+  to improve real-world performance. A central consideration is the extent to which predictions can be trusted -- while existing
+  approaches often require users to specify an aggregate trust level, modern machine learning models can provide estimates
+  of prediction-level uncertainty. In this paper, we propose calibration as a principled and practical tool to bridge this
+  gap, demonstrating the benefits of calibrated advice through two case studies: the ski rental and online job scheduling
+  problems. For ski rental, we design an algorithm that achieves near-optimal prediction-dependent performance and prove that,
+  in high-variance settings, calibrated advice offers more effective guidance than alternative methods for uncertainty quantification.
+  For job scheduling, we demonstrate that using a calibrated predictor leads to significant performance improvements over
+  existing methods. Evaluations on real-world data validate our theoretical findings, highlighting the practical impact of
+  calibration for algorithms with predictions.'
 labels:
 - online
 - rent-or-buy
@@ -24,5 +20,15 @@ publications:
   year: 2025
   month: 2
   day: 5
+- name: ICML
+  dblp_key: conf/icml/ShenVW25
+  url: https://dblp.org/rec/conf/icml/ShenVW25
+  bibtex: "@inproceedings{DBLP:conf/icml/ShenVW25,\n  author       = {Judy Hanwen Shen and\n                  Ellen Vitercik\
+    \ and\n                  Anders Wikum},\n  title        = {Algorithms with Calibrated Machine Learning Predictions},\n\
+    \  booktitle    = {Forty-second International Conference on Machine Learning, {ICML}\n                  2025, Vancouver,\
+    \ BC, Canada, July 13-19, 2025},\n  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=Obet2x6GNl},\n\
+    \  timestamp    = {Fri, 05 Dec 2025 16:19:10 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/ShenVW25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2502.02861
 s2_id: 25fb7c65774845abf38a86efc5fb940e457e82ea
+year: 2025

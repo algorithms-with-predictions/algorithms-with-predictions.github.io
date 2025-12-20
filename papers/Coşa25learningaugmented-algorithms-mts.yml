@@ -1,15 +1,12 @@
 title: Learning-Augmented Algorithms for MTS with Bandit Access to Multiple Predictors
-authors: Coşa, Eliáš
-abstract: 'We consider the following problem: We are given $\ell$ heuristics for Metrical
-  Task Systems (MTS), where each might be tailored to a different type of input instances.
-  While processing an input instance received online, we are allowed to query the
-  action of only one of the heuristics at each time step. Our goal is to achieve performance
-  comparable to the best of the given heuristics. The main difficulty of our setting
-  comes from the fact that the cost paid by a heuristic at time $t$ cannot be estimated
-  unless the same heuristic was also queried at time $t-1$. This is related to Bandit
-  Learning against memory bounded adversaries (Arora et al., 2012). We show how to
-  achieve regret of $O(\text{OPT}^{2/3})$ and prove a tight lower bound based on the
-  construction of Dekel et al. (2013).'
+authors: Matei Gabriel Cosa, Marek Eliás
+abstract: 'We consider the following problem: We are given $\ell$ heuristics for Metrical Task Systems (MTS), where each might
+  be tailored to a different type of input instances. While processing an input instance received online, we are allowed to
+  query the action of only one of the heuristics at each time step. Our goal is to achieve performance comparable to the best
+  of the given heuristics. The main difficulty of our setting comes from the fact that the cost paid by a heuristic at time
+  $t$ cannot be estimated unless the same heuristic was also queried at time $t-1$. This is related to Bandit Learning against
+  memory bounded adversaries (Arora et al., 2012). We show how to achieve regret of $O(\text{OPT}^{2/3})$ and prove a tight
+  lower bound based on the construction of Dekel et al. (2013).'
 labels:
 - k-server / MTS
 - online
@@ -19,3 +16,14 @@ publications:
   year: 2025
   month: 6
   day: 5
+- name: ICML
+  dblp_key: conf/icml/Cosa025
+  url: https://dblp.org/rec/conf/icml/Cosa025
+  bibtex: "@inproceedings{DBLP:conf/icml/Cosa025,\n  author       = {Matei Gabriel Cosa and\n                  Marek Eli{\\\
+    '{a}}s},\n  title        = {Learning-Augmented Algorithms for {MTS} with Bandit Access to Multiple\n                 \
+    \ Predictors},\n  booktitle    = {Forty-second International Conference on Machine Learning, {ICML}\n                \
+    \  2025, Vancouver, BC, Canada, July 13-19, 2025},\n  publisher    = {OpenReview.net},\n  year         = {2025},\n  url\
+    \          = {https://openreview.net/forum?id=auwNRkhkN4},\n  timestamp    = {Fri, 05 Dec 2025 16:19:11 +0100},\n  biburl\
+    \       = {https://dblp.org/rec/conf/icml/Cosa025.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+    }\n\n"
+year: 2025

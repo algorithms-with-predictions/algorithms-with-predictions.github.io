@@ -9,4 +9,21 @@ publications:
   year: 2025
   month: 3
   day: 6
+- name: ICML
+  dblp_key: conf/icml/NiaparastMS25
+  url: https://dblp.org/rec/conf/icml/NiaparastMS25
+  bibtex: "@inproceedings{DBLP:conf/icml/NiaparastMS25,\n  author       = {Helia Niaparast and\n                  Benjamin\
+    \ Moseley and\n                  Karan Singh},\n  title        = {Faster Global Minimum Cut with Predictions},\n  booktitle\
+    \    = {Forty-second International Conference on Machine Learning, {ICML}\n                  2025, Vancouver, BC, Canada,\
+    \ July 13-19, 2025},\n  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=FeZoO7mfG7},\n\
+    \  timestamp    = {Fri, 05 Dec 2025 16:19:11 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/NiaparastMS25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025
+abstract: Global minimum cut is a fundamental combinatorial optimization problem with wide-ranging applications. Often in
+  practice, these problems are solved repeatedly on families of similar or related instances. However, the de facto algorithmic
+  approach is to solve each instance of the problem from scratch discarding information from prior instances. In this paper,
+  we consider how predictions informed by prior instances can be used to warm-start practical minimum cut algorithms. The
+  paper considers the widely used Karger's algorithm and its counterpart, the Karger-Stein algorithm. Given good predictions,
+  we show these algorithms become near-linear time and have robust performance to erroneous predictions. Both of these algorithms
+  are randomized edge-contraction algorithms. Our natural idea is to probabilistically prioritize the contraction of edges
+  that are unlikely to be in the minimum cut.

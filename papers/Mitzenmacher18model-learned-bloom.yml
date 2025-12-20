@@ -20,4 +20,10 @@ publications:
   year: 2019
   month: 1
   day: 3
-year: 2018
+  dblp_key: journals/corr/abs-1901-00902
+  bibtex: "@article{DBLP:journals/corr/abs-1901-00902,\n  author       = {Michael Mitzenmacher},\n  title        = {A Model\
+    \ for Learned Bloom Filters, and Optimizing by Sandwiching},\n  journal      = {CoRR},\n  volume       = {abs/1901.00902},\n\
+    \  year         = {2019},\n  url          = {http://arxiv.org/abs/1901.00902},\n  eprinttype    = {arXiv},\n  eprint \
+    \      = {1901.00902},\n  timestamp    = {Thu, 31 Jan 2019 13:52:49 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-1901-00902.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2019

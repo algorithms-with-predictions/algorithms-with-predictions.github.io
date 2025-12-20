@@ -19,4 +19,12 @@ publications:
   year: 2025
   month: 9
   day: 7
+  dblp_key: journals/corr/abs-2509-05930
+  bibtex: "@article{DBLP:journals/corr/abs-2509-05930,\n  author       = {Ali Zeynali and\n                  Mahsa Sahebdel\
+    \ and\n                  Qingsong Liu and\n                  Mohammad Hajiesmaili and\n                  Ramesh K. Sitaraman},\n\
+    \  title        = {Smoothed Online Optimization for Target Tracking: Robust and Learning-Augmented\n                 \
+    \ Algorithms},\n  journal      = {CoRR},\n  volume       = {abs/2509.05930},\n  year         = {2025},\n  url        \
+    \  = {https://doi.org/10.48550/arXiv.2509.05930},\n  doi          = {10.48550/ARXIV.2509.05930},\n  eprinttype    = {arXiv},\n\
+    \  eprint       = {2509.05930},\n  timestamp    = {Mon, 13 Oct 2025 07:36:11 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2509-05930.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025

@@ -6,7 +6,29 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2505.09321
   year: 2025
+  dblp_key: journals/corr/abs-2505-09321
+  bibtex: "@article{DBLP:journals/corr/abs-2505-09321,\n  author       = {Matthias Gehnen and\n                  Andreas Usdenski},\n\
+    \  title        = {Online Bin Packing with Item Size Estimates},\n  journal      = {CoRR},\n  volume       = {abs/2505.09321},\n\
+    \  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2505.09321},\n  doi          = {10.48550/ARXIV.2505.09321},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2505.09321},\n  timestamp    = {Mon, 23 Jun 2025 11:00:42 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2505-09321.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 arxiv: '2505.09321'
 labels:
 - packing
 - online
+abstract: 'Imagine yourself moving to another place, and therefore, you need to pack all of your belongings into moving boxes
+  with some capacity. In the classical bin packing model, you would try to minimize the number of boxes, knowing the exact
+  size of each item you want to pack. In the online bin packing problem, you need to start packing the first item into a box,
+  without knowing what other stuff is upcoming. Both settings are somewhat unrealistic, as you are likely not willing to measure
+  the exact size of all your belongings before packing the first item, but you are not completely clueless about what other
+  stuff you have when you start packing. In this article, we introduce the online bin packing with estimates model, where
+  you start packing with a rough idea about the upcoming item sizes in mind. In this model, an algorithm receives a size estimate
+  for every item in the input list together with an accuracy factor $\delta$ in advance. Just as for regular online bin packing
+  the items are then presented iteratively. The actual sizes of the items are allowed to deviate from the size estimate by
+  a factor of $\delta$. Once the actual size of an item is revealed the algorithm has to make an irrevocable decision on the
+  question where to place it. This is the first time online bin packing is studied under this model. This article has three
+  main results: First, no algorithm can achieve a competitive ratio of less than $\frac{4}{3}$, even for an arbitrary small
+  factor $\delta>0$. Second, we present an algorithm that is $1.5$-competitive for all $\delta \leq \frac{1}{35}$. Finally,
+  we design a strategy that yields a competitive ratio of $\frac{4}{3}$ under the assumption that not more than two items
+  can be placed in the same bin, which is best possible in this setting.'

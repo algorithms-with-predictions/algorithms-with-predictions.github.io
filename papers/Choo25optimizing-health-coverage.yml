@@ -8,6 +8,16 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2509.00135
   year: 2025
+  dblp_key: journals/corr/abs-2509-00135
+  bibtex: "@article{DBLP:journals/corr/abs-2509-00135,\n  author       = {Davin Choo and\n                  Yohai Trabelsi\
+    \ and\n                  Fentabil Getnet and\n                  Samson Warkaye Lamma and\n                  Wondesen Nigatu\
+    \ and\n                  Kasahun Sime and\n                  Lisa Matay and\n                  Milind Tambe and\n    \
+    \              St{\\'{e}}phane Verguet},\n  title        = {Optimizing Health Coverage in Ethiopia: {A} Learning-augmented\
+    \ Approach\n                  and Persistent Proportionality Under an Online Budget},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2509.00135},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2509.00135},\n\
+    \  doi          = {10.48550/ARXIV.2509.00135},\n  eprinttype    = {arXiv},\n  eprint       = {2509.00135},\n  timestamp\
+    \    = {Wed, 08 Oct 2025 13:18:21 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2509-00135.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: '2509.00135'
 abstract: 'As part of nationwide efforts aligned with the United Nations''Sustainable Development Goal 3 on Universal Health
   Coverage, Ethiopia''s Ministry of Health is strengthening health posts to expand access to essential healthcare services.

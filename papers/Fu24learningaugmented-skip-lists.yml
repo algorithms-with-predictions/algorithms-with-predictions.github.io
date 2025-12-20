@@ -9,4 +9,11 @@ publications:
   year: 2024
   month: 2
   day: 16
+  dblp_key: journals/corr/abs-2402-10457
+  bibtex: "@article{DBLP:journals/corr/abs-2402-10457,\n  author       = {Chunkai Fu and\n                  Jung Hoon Seo\
+    \ and\n                  Samson Zhou},\n  title        = {Learning-Augmented Skip Lists},\n  journal      = {CoRR},\n\
+    \  volume       = {abs/2402.10457},\n  year         = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2402.10457},\n\
+    \  doi          = {10.48550/ARXIV.2402.10457},\n  eprinttype    = {arXiv},\n  eprint       = {2402.10457},\n  timestamp\
+    \    = {Mon, 26 Feb 2024 16:52:48 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2402-10457.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2024

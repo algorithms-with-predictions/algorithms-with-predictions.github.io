@@ -9,4 +9,18 @@ publications:
   year: 2021
   month: 6
   day: 17
+  dblp_key: journals/corr/abs-2107-08277
+  bibtex: "@article{DBLP:journals/corr/abs-2107-08277,\n  author       = {Dimitris Fotakis and\n                  Evangelia\
+    \ Gergatsouli and\n                  Themis Gouleakis and\n                  Nikolas Patris},\n  title        = {Learning\
+    \ Augmented Online Facility Location},\n  journal      = {CoRR},\n  volume       = {abs/2107.08277},\n  year         =\
+    \ {2021},\n  url          = {https://arxiv.org/abs/2107.08277},\n  eprinttype    = {arXiv},\n  eprint       = {2107.08277},\n\
+    \  timestamp    = {Thu, 24 Mar 2022 11:08:55 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2107-08277.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2021
+abstract: We give a very general and simple framework to incorporate predictions on requests for online covering problems
+  in a rigorous and black-box manner. Our framework turns any online algorithm with competitive ratio $\rho(k, \cdot)$ depending
+  on $k$, the number of arriving requests, into an algorithm with competitive ratio of $\rho(\eta, \cdot)$, where $\eta$ is
+  the prediction error. With accurate enough prediction, the resulting competitive ratio breaks through the corresponding
+  worst-case online lower bounds, and smoothly degrades as the prediction error grows. This framework directly applies to
+  a wide range of well-studied online covering problems such as facility location, Steiner problems, set cover, parking permit,
+  etc., and yields improved and novel bounds.

@@ -4,6 +4,15 @@ publications:
 - name: EC
   year: 2025
   url: https://dl.acm.org/doi/10.1145/3736252.3742496
+  dblp_key: conf/sigecom/FengMNN25
+  bibtex: "@inproceedings{DBLP:conf/sigecom/FengMNN25,\n  author       = {Yiding Feng and\n                  Vahideh H. Manshadi\
+    \ and\n                  Rad Niazadeh and\n                  Saba Neyshabouri},\n  editor       = {Itai Ashlagi and\n\
+    \                  Aaron Roth},\n  title        = {Robust Dynamic Staffing with Predictions},\n  booktitle    = {Proceedings\
+    \ of the 26th {ACM} Conference on Economics and Computation,\n                  {EC} 2025, Stanford University, Stanford,\
+    \ CA, USA, July 7-10, 2025},\n  pages        = {87},\n  publisher    = {{ACM}},\n  year         = {2025},\n  url     \
+    \     = {https://doi.org/10.1145/3736252.3742496},\n  doi          = {10.1145/3736252.3742496},\n  timestamp    = {Sat,\
+    \ 09 Aug 2025 12:13:59 +0200},\n  biburl       = {https://dblp.org/rec/conf/sigecom/FengMNN25.bib},\n  bibsource    =\
+    \ {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 - name: arXiv
   year: 2025
   url: https://arxiv.org/abs/2510.16663

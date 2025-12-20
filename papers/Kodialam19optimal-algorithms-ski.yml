@@ -1,20 +1,25 @@
 title: Optimal Algorithms for Ski Rental with Soft Machine-Learned Predictions
 authors: Rohan Kodialam
-abstract: We consider a variant of the classic Ski Rental online algorithm with applications
-  to machine learning. In our variant, we allow the skier access to a black-box machine-learning
-  algorithm that provides an estimate of the probability that there will be at most
-  a threshold number of ski-days. We derive a class of optimal randomized algorithms
-  to determine the strategy that minimizes the worst-case expected competitive ratio
-  for the skier given a prediction from the machine learning algorithm,and analyze
-  the performance and robustness of these algorithms.
+abstract: We consider a variant of the classic Ski Rental online algorithm with applications to machine learning. In our variant,
+  we allow the skier access to a black-box machine-learning algorithm that provides an estimate of the probability that there
+  will be at most a threshold number of ski-days. We derive a class of optimal randomized algorithms to determine the strategy
+  that minimizes the worst-case expected competitive ratio for the skier given a prediction from the machine learning algorithm,and
+  analyze the performance and robustness of these algorithms.
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/1903.00092
   year: 2019
   month: 2
   day: 28
+  dblp_key: journals/corr/abs-1903-00092
+  bibtex: "@article{DBLP:journals/corr/abs-1903-00092,\n  author       = {Rohan Kodialam},\n  title        = {Optimal Algorithms\
+    \ for Ski Rental with Soft Machine-Learned Predictions},\n  journal      = {CoRR},\n  volume       = {abs/1903.00092},\n\
+    \  year         = {2019},\n  url          = {http://arxiv.org/abs/1903.00092},\n  eprinttype    = {arXiv},\n  eprint \
+    \      = {1903.00092},\n  timestamp    = {Sat, 30 Mar 2019 19:27:21 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-1903-00092.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 1903.00092
 s2_id: fecd5af17d2a403fbd432bc01a250cc513b02bc7
 labels:
 - online
 - rent-or-buy
+year: 2019

@@ -6,6 +6,13 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2508.04779
   year: 2025
+  dblp_key: journals/corr/abs-2508-04779
+  bibtex: "@article{DBLP:journals/corr/abs-2508-04779,\n  author       = {Themistoklis Melissourgos and\n                \
+    \  Nicos Protopapas},\n  title        = {Online {EFX} Allocations with Predictions},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2508.04779},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2508.04779},\n\
+    \  doi          = {10.48550/ARXIV.2508.04779},\n  eprinttype    = {arXiv},\n  eprint       = {2508.04779},\n  timestamp\
+    \    = {Thu, 11 Sep 2025 20:47:03 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2508-04779.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: '2508.04779'
 abstract: We study an online fair division problem where a fixed number of goods arrive sequentially and must be allocated
   to a given set of agents. Once a good arrives, its true value for each agent is revealed, and it has to be immediately and

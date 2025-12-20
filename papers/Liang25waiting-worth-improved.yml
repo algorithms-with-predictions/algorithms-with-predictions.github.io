@@ -9,4 +9,13 @@ publications:
   year: 2025
   month: 7
   day: 17
+  dblp_key: journals/corr/abs-2507-12822
+  bibtex: "@article{DBLP:journals/corr/abs-2507-12822,\n  author       = {Ya{-}Chun Liang and\n                  Meng{-}Hsi\
+    \ Li and\n                  Chung{-}Shou Liao and\n                  Clifford Stein},\n  title        = {Waiting is worth\
+    \ it and can be improved with predictions},\n  journal      = {CoRR},\n  volume       = {abs/2507.12822},\n  year    \
+    \     = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2507.12822},\n  doi          = {10.48550/ARXIV.2507.12822},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2507.12822},\n  timestamp    = {Mon, 01 Sep 2025 15:35:53 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2507-12822.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 s2_id: 91ecaa282a127a3c1aa26fbe1743d67d20891313
+year: 2025

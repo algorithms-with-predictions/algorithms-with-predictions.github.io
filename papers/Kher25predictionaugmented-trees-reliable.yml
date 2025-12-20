@@ -6,6 +6,13 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2510.16937
   year: 2025
+  dblp_key: journals/corr/abs-2510-16937
+  bibtex: "@article{DBLP:journals/corr/abs-2510-16937,\n  author       = {Vikram Kher and\n                  Argyris Oikonomou\
+    \ and\n                  Manolis Zampetakis},\n  title        = {Prediction-Augmented Trees for Reliable Statistical Inference},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/2510.16937},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2510.16937},\n\
+    \  doi          = {10.48550/ARXIV.2510.16937},\n  eprinttype    = {arXiv},\n  eprint       = {2510.16937},\n  timestamp\
+    \    = {Mon, 17 Nov 2025 13:36:36 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2510-16937.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: '2510.16937'
 abstract: 'The remarkable success of machine learning (ML) in predictive tasks has led scientists to incorporate ML predictions
   as a core component of the scientific discovery pipeline. This was exemplified by the landmark achievement of AlphaFold

@@ -1,7 +1,6 @@
-title: "Learning-Augmented Control: Adaptively Confidence Learning for Competitive MPC"
+title: 'Learning-Augmented Control: Adaptively Confidence Learning for Competitive MPC'
 authors: Tongxin Li
-abstract:
-  We introduce Learning-Augmented Control (LAC), an approach that integrates untrusted machine learning predictions
+abstract: We introduce Learning-Augmented Control (LAC), an approach that integrates untrusted machine learning predictions
   into the control of constrained, nonlinear dynamical systems. LAC is designed to achieve the"best-of-both-worlds"guarantees,
   i.e, near-optimal performance when predictions are accurate, and robust, safe performance when they are not. The core of
   our approach is a delayed confidence learning procedure that optimizes a confidence parameter online, adaptively balancing
@@ -10,12 +9,18 @@ abstract:
   characterizing the fundamental limits of this learning-augmented approach. The effectiveness of LAC is demonstrated in numerical
   studies, where it maintains stability and outperforms standard methods under adversarial prediction errors.
 labels:
-  - learning
+- learning
 publications:
-  - name: arXiv
-    url: https://dblp.org/rec/journals/corr/abs-2507-14595
-    year: 2025
-    dblp_key: journals/corr/abs-2507-14595
+- name: arXiv
+  url: https://dblp.org/rec/journals/corr/abs-2507-14595
+  year: 2025
+  dblp_key: journals/corr/abs-2507-14595
+  bibtex: "@article{DBLP:journals/corr/abs-2507-14595,\n  author       = {Tongxin Li},\n  title        = {Learning-Augmented\
+    \ Control: Adaptively Confidence Learning for Competitive\n                  {MPC}},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2507.14595},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2507.14595},\n\
+    \  doi          = {10.48550/ARXIV.2507.14595},\n  eprinttype    = {arXiv},\n  eprint       = {2507.14595},\n  timestamp\
+    \    = {Sun, 17 Aug 2025 16:23:30 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2507-14595.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 s2_id: 5aff53917338b2e8d3466ec3316a58cdd9d56e4f
-arxiv: "2507.14595"
+arxiv: '2507.14595'
 year: 2025

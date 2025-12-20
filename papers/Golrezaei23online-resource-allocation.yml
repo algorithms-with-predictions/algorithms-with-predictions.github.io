@@ -25,4 +25,11 @@ publications:
   year: 2023
   month: 6
   day: 21
+  dblp_key: journals/corr/abs-2306-12282
+  bibtex: "@article{DBLP:journals/corr/abs-2306-12282,\n  author       = {Negin Golrezaei and\n                  Patrick Jaillet\
+    \ and\n                  Zijie Zhou},\n  title        = {Online Resource Allocation with Convex-set Machine-Learned Advice},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/2306.12282},\n  year         = {2023},\n  url          = {https://doi.org/10.48550/arXiv.2306.12282},\n\
+    \  doi          = {10.48550/ARXIV.2306.12282},\n  eprinttype    = {arXiv},\n  eprint       = {2306.12282},\n  timestamp\
+    \    = {Fri, 23 Jun 2023 15:19:11 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2306-12282.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2023

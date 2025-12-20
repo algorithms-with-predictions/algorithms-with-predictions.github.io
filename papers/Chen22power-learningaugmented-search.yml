@@ -16,9 +16,19 @@ publications:
   year: 2022
   month: 11
   day: 16
+- name: ICML
+  dblp_key: conf/icml/ChenCSC25
+  url: https://dblp.org/rec/conf/icml/ChenCSC25
+  bibtex: "@inproceedings{DBLP:conf/icml/ChenCSC25,\n  author       = {Jingbang Chen and\n                  Xinyuan Cao and\n\
+    \                  Alicia Stepin and\n                  Li Chen},\n  title        = {On the Power of Learning-Augmented\
+    \ Search Trees},\n  booktitle    = {Forty-second International Conference on Machine Learning, {ICML}\n              \
+    \    2025, Vancouver, BC, Canada, July 13-19, 2025},\n  publisher    = {OpenReview.net},\n  year         = {2025},\n \
+    \ url          = {https://openreview.net/forum?id=svFtPVdD9t},\n  timestamp    = {Fri, 05 Dec 2025 16:19:12 +0100},\n\
+    \  biburl       = {https://dblp.org/rec/conf/icml/ChenCSC25.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 arxiv: 2211.09251
 s2_id: ffbef652d06df59e7534e83feafc206024af08f3
 labels:
 - search
 - dynamic / data structure
-year: 2022
+year: 2025

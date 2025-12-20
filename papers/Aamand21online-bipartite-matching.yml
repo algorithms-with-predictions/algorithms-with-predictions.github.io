@@ -7,4 +7,10 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2110.11439
   year: 2021
+  dblp_key: journals/corr/abs-2110-11439
+  bibtex: "@article{DBLP:journals/corr/abs-2110-11439,\n  author       = {Justin Y. Chen and\n                  Piotr Indyk},\n\
+    \  title        = {Online Bipartite Matching with Predicted Degrees},\n  journal      = {CoRR},\n  volume       = {abs/2110.11439},\n\
+    \  year         = {2021},\n  url          = {https://arxiv.org/abs/2110.11439},\n  eprinttype    = {arXiv},\n  eprint\
+    \       = {2110.11439},\n  timestamp    = {Thu, 28 Oct 2021 15:25:31 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2110-11439.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2021

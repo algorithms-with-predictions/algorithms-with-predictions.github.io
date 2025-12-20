@@ -19,3 +19,22 @@ publications:
   month: 10
   day: 4
 year: 2024
+abstract: Aiming to overcome some of the limitations of worst-case analysis, the recently proposed framework of "algorithms
+  with predictions" allows algorithms to be augmented with a (possibly erroneous) machine-learned prediction that they can
+  use as a guide. In this framework, the goal is to obtain improved guarantees when the prediction is correct, which is called
+  consistency, while simultaneously guaranteeing some worst-case bounds even when the prediction is arbitrarily wrong, which
+  is called robustness. The vast majority of the work on this framework has focused on a refined analysis of online algorithms
+  augmented with predictions regarding the future input. A subsequent line of work has also successfully adapted this framework
+  to mechanism design, where the prediction is regarding the private information of strategic agents. In this paper, we initiate
+  the study of online mechanism design with predictions, which combines the challenges of online algorithms with predictions
+  and mechanism design with predictions. We consider the well-studied problem of designing a revenue-maximizing auction to
+  sell a single item to strategic bidders who arrive and depart over time, each with an unknown, private, value for the item.
+  We study the learning-augmented version of this problem where the auction designer is given a prediction regarding the maximum
+  value over all agents. Our main result is a strategyproof mechanism whose revenue guarantees are α-consistent with respect
+  to the highest value and (1 - α2)/4-robust with respect to the second-highest value, for α ∈ [0, 1]. We extend our mechanism
+  to also obtain expected revenue that is proportional to the prediction quality. We complement our positive results with
+  impossibility results. For the original setting without predictions, we prove that the best-known competitive ratio of 1/4
+  is optimal for a large family of auctions whose pricing rule can be an arbitrary function of the values observed in the
+  past, but no more than the maximum seen so far. The proof relies on an LP formulation of the revenue maximization problem
+  and duality. For the learning-augmented setting, we prove that the robustness-consistency trade-off achieved by our auction
+  is optimal within a class of learning-augmented online auctions. A full version of this paper can be found at https://arxiv.org/abs/2310.02879.

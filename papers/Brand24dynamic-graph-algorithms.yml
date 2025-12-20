@@ -1,5 +1,5 @@
 title: On Dynamic Graph Algorithms with Predictions
-authors: Jan van den Brand, S. Forster, Yasamin Nazari, Adam Polak
+authors: Jan van den Brand, Sebastian Forster, Yasamin Nazari, Adam Polak
 abstract: We study dynamic algorithms in the model of algorithms with predictions. We assume the algorithm is given imperfect
   predictions regarding future updates, and we ask how such predictions can be used to improve the running time. This can
   be seen as a model interpolating between classic online and offline dynamic algorithms. Our results give smooth tradeoffs

@@ -30,4 +30,10 @@ publications:
   year: 2019
   month: 5
   day: 23
-year: 2022
+  dblp_key: journals/corr/abs-1905-12155
+  bibtex: "@article{DBLP:journals/corr/abs-1905-12155,\n  author       = {Michael Mitzenmacher},\n  title        = {The Supermarket\
+    \ Model with Known and Predicted Service Times},\n  journal      = {CoRR},\n  volume       = {abs/1905.12155},\n  year\
+    \         = {2019},\n  url          = {http://arxiv.org/abs/1905.12155},\n  eprinttype    = {arXiv},\n  eprint       =\
+    \ {1905.12155},\n  timestamp    = {Mon, 03 Jun 2019 13:42:33 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-1905-12155.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2019

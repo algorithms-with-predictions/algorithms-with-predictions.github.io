@@ -15,4 +15,11 @@ publications:
   year: 2024
   month: 10
   day: 9
+  dblp_key: journals/corr/abs-2410-06583
+  bibtex: "@article{DBLP:journals/corr/abs-2410-06583,\n  author       = {Davin Choo and\n                  Chun Kai Ling},\n\
+    \  title        = {A short note about the learning-augmented secretary problem},\n  journal      = {CoRR},\n  volume \
+    \      = {abs/2410.06583},\n  year         = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2410.06583},\n\
+    \  doi          = {10.48550/ARXIV.2410.06583},\n  eprinttype    = {arXiv},\n  eprint       = {2410.06583},\n  timestamp\
+    \    = {Mon, 18 Nov 2024 14:52:13 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2410-06583.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2024

@@ -1,28 +1,31 @@
 title: Verbalized Algorithms
-authors:
-  Supriya Lall, Christian Farrell, Hari Pathanjaly, Marko Pavic, Sarvesh Chezhian,
-  Masataro Asai
+authors: Supriya Lall, Christian Farrell, Hari Pathanjaly, Marko Pavic, Sarvesh Chezhian, Masataro Asai
 labels:
-  - sorting
-  - clustering
+- sorting
+- clustering
 publications:
-  - name: arXiv
-    url: https://arxiv.org/abs/2509.08150
-    year: 2025
-    month: 9
-    day: 9
-  - name: The First Workshop on Efficient Reasoning, Neurips 2025
-    url: https://openreview.net/forum?id=FNyMv6k2S9
-    year: 2025
-    month: 10
-    day: 16
-abstract:
-  Instead of querying LLMs in a one-shot manner and hoping to get the right
-  answer for a reasoning task, we propose a paradigm we call \emph{verbalized algorithms}
-  (VAs), which leverage classical algorithms with established theoretical understanding.
-  VAs decompose a task into simple elementary operations on natural language strings
-  that they should be able to answer reliably, and limit the scope of LLMs to only
-  those simple tasks. For example, for sorting a series of natural language strings,
-  \emph{verbalized sorting} uses an LLM as a binary comparison oracle in a known and
-  well-analyzed sorting algorithm (e.g., bitonic sorting network). We demonstrate
-  the effectiveness of this approach on sorting and clustering tasks.
+- name: arXiv
+  url: https://arxiv.org/abs/2509.08150
+  year: 2025
+  month: 9
+  day: 9
+  dblp_key: journals/corr/abs-2509-08150
+  bibtex: "@article{DBLP:journals/corr/abs-2509-08150,\n  author       = {Supriya Lall and\n                  Christian Farrell\
+    \ and\n                  Hari Pathanjaly and\n                  Marko Pavic and\n                  Sarvesh Chezhian and\n\
+    \                  Masataro Asai},\n  title        = {Verbalized Algorithms},\n  journal      = {CoRR},\n  volume    \
+    \   = {abs/2509.08150},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2509.08150},\n  doi\
+    \          = {10.48550/ARXIV.2509.08150},\n  eprinttype    = {arXiv},\n  eprint       = {2509.08150},\n  timestamp   \
+    \ = {Sun, 12 Oct 2025 18:23:10 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2509-08150.bib},\n  bibsource\
+    \    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: The First Workshop on Efficient Reasoning, Neurips 2025
+  url: https://openreview.net/forum?id=FNyMv6k2S9
+  year: 2025
+  month: 10
+  day: 16
+abstract: Instead of querying LLMs in a one-shot manner and hoping to get the right answer for a reasoning task, we propose
+  a paradigm we call \emph{verbalized algorithms} (VAs), which leverage classical algorithms with established theoretical
+  understanding. VAs decompose a task into simple elementary operations on natural language strings that they should be able
+  to answer reliably, and limit the scope of LLMs to only those simple tasks. For example, for sorting a series of natural
+  language strings, \emph{verbalized sorting} uses an LLM as a binary comparison oracle in a known and well-analyzed sorting
+  algorithm (e.g., bitonic sorting network). We demonstrate the effectiveness of this approach on sorting and clustering tasks.
+year: 2025

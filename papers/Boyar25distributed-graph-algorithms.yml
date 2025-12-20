@@ -28,4 +28,11 @@ publications:
   year: 2025
   month: 1
   day: 9
+  dblp_key: journals/corr/abs-2501-05267
+  bibtex: "@article{DBLP:journals/corr/abs-2501-05267,\n  author       = {Joan Boyar and\n                  Faith Ellen and\n\
+    \                  Kim S. Larsen},\n  title        = {Distributed Graph Algorithms with Predictions},\n  journal     \
+    \ = {CoRR},\n  volume       = {abs/2501.05267},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2501.05267},\n\
+    \  doi          = {10.48550/ARXIV.2501.05267},\n  eprinttype    = {arXiv},\n  eprint       = {2501.05267},\n  timestamp\
+    \    = {Wed, 19 Feb 2025 21:19:08 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2501-05267.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025

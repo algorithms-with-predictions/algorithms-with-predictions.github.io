@@ -1,26 +1,19 @@
-title: On Optimal Consistency-Robustness Trade-Off for Learning-Augmented Multi-Option
-  Ski Rental
+title: On Optimal Consistency-Robustness Trade-Off for Learning-Augmented Multi-Option Ski Rental
 authors: Yongho Shin, Changyeol Lee, Hyung-Chan An
-abstract: 'The learning-augmented multi-option ski rental problem generalizes the
-  classical ski rental problem in two ways: the algorithm is provided with a prediction
-  on the number of days we can ski, and the ski rental options now come with a variety
-  of rental periods and prices to choose from, unlike the classical two-option setting.
-  Subsequent to the initial study of the multi-option ski rental problem (without
-  learning augmentation) due to Zhang, Poon, and Xu, significant progress has been
-  made for this problem recently in particular. The problem is very well understood
-  when we relinquish one of the two generalizations -- for the learning-augmented
-  classical ski rental problem, algorithms giving best-possible trade-off between
-  consistency and robustness exist; for the multi-option ski rental problem without
-  learning augmentation, deterministic/randomized algorithms giving the best-possible
-  competitiveness have been found. However, in presence of both generalizations, there
-  remained a huge gap between the algorithmic and impossibility results. In fact,
-  for randomized algorithms, we did not have any nontrivial lower bounds on the consistency-robustness
-  trade-off before. This paper bridges this gap for both deterministic and randomized
-  algorithms. For deterministic algorithms, we present a best-possible algorithm that
-  completely matches the known lower bound. For randomized algorithms, we show the
-  first nontrivial lower bound on the consistency-robustness trade-off, and also present
-  an improved randomized algorithm. Our algorithm matches our lower bound on robustness
-  within a factor of e/2 when the consistency is at most 1.086.'
+abstract: 'The learning-augmented multi-option ski rental problem generalizes the classical ski rental problem in two ways:
+  the algorithm is provided with a prediction on the number of days we can ski, and the ski rental options now come with a
+  variety of rental periods and prices to choose from, unlike the classical two-option setting. Subsequent to the initial
+  study of the multi-option ski rental problem (without learning augmentation) due to Zhang, Poon, and Xu, significant progress
+  has been made for this problem recently in particular. The problem is very well understood when we relinquish one of the
+  two generalizations -- for the learning-augmented classical ski rental problem, algorithms giving best-possible trade-off
+  between consistency and robustness exist; for the multi-option ski rental problem without learning augmentation, deterministic/randomized
+  algorithms giving the best-possible competitiveness have been found. However, in presence of both generalizations, there
+  remained a huge gap between the algorithmic and impossibility results. In fact, for randomized algorithms, we did not have
+  any nontrivial lower bounds on the consistency-robustness trade-off before. This paper bridges this gap for both deterministic
+  and randomized algorithms. For deterministic algorithms, we present a best-possible algorithm that completely matches the
+  known lower bound. For randomized algorithms, we show the first nontrivial lower bound on the consistency-robustness trade-off,
+  and also present an improved randomized algorithm. Our algorithm matches our lower bound on robustness within a factor of
+  e/2 when the consistency is at most 1.086.'
 labels:
 - online
 - rent-or-buy
@@ -30,5 +23,14 @@ publications:
   year: 2023
   month: 12
   day: 5
+  dblp_key: journals/corr/abs-2312-02547
+  bibtex: "@article{DBLP:journals/corr/abs-2312-02547,\n  author       = {Yongho Shin and\n                  Changyeol Lee\
+    \ and\n                  Hyung{-}Chan An},\n  title        = {On Optimal Consistency-Robustness Trade-Off for Learning-Augmented\n\
+    \                  Multi-Option Ski Rental},\n  journal      = {CoRR},\n  volume       = {abs/2312.02547},\n  year   \
+    \      = {2023},\n  url          = {https://doi.org/10.48550/arXiv.2312.02547},\n  doi          = {10.48550/ARXIV.2312.02547},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2312.02547},\n  timestamp    = {Wed, 13 Dec 2023 14:37:56 +0100},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2312-02547.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 arxiv: 2312.02547
 s2_id: cc8e4ffc119566b210811e5ef973f45ca0fe1bd7
+year: 2023

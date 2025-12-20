@@ -1,18 +1,14 @@
 title: Online TSP with Predictions
-authors: Hu, Wei, Li, Chung, Liao
-abstract: We initiate the study of online routing problems with predictions, inspired
-  by recent exciting results in the area of learning-augmented algorithms. A learning-augmented
-  online algorithm which incorporates predictions in a black-box manner to outperform
-  existing algorithms if the predictions are accurate while otherwise maintaining
-  theoretical guarantees even when the predictions are extremely erroneous is a popular
-  framework for overcoming pessimistic worst-case competitive analysis. In this study,
-  we particularly begin investigating the classical online traveling salesman problem
-  (OLTSP), where future requests are augmented with predictions. Unlike the prediction
-  models in other previous studies, each actual request in the OLTSP, associated with
-  its arrival time and position, may not coincide with the predicted ones, which,
-  as imagined, leads to a troublesome situation. Our main result is to study different
-  prediction models and design algorithms to improve the best-known results in the
-  different settings. Moreover, we generalize the proposed results to the online dial-a-ride
+authors: Hsiao-Yu Hu, Hao-Ting Wei, Meng-Hsi Li, Kai-Min Chung, Chung-Shou Liao
+abstract: We initiate the study of online routing problems with predictions, inspired by recent exciting results in the area
+  of learning-augmented algorithms. A learning-augmented online algorithm which incorporates predictions in a black-box manner
+  to outperform existing algorithms if the predictions are accurate while otherwise maintaining theoretical guarantees even
+  when the predictions are extremely erroneous is a popular framework for overcoming pessimistic worst-case competitive analysis.
+  In this study, we particularly begin investigating the classical online traveling salesman problem (OLTSP), where future
+  requests are augmented with predictions. Unlike the prediction models in other previous studies, each actual request in
+  the OLTSP, associated with its arrival time and position, may not coincide with the predicted ones, which, as imagined,
+  leads to a troublesome situation. Our main result is to study different prediction models and design algorithms to improve
+  the best-known results in the different settings. Moreover, we generalize the proposed results to the online dial-a-ride
   problem.
 labels:
 - online
@@ -23,3 +19,12 @@ publications:
   year: 2022
   month: 6
   day: 30
+  dblp_key: journals/corr/abs-2206-15364
+  bibtex: "@article{DBLP:journals/corr/abs-2206-15364,\n  author       = {Hsiao{-}Yu Hu and\n                  Hao{-}Ting\
+    \ Wei and\n                  Meng{-}Hsi Li and\n                  Kai{-}Min Chung and\n                  Chung{-}Shou\
+    \ Liao},\n  title        = {Online {TSP} with Predictions},\n  journal      = {CoRR},\n  volume       = {abs/2206.15364},\n\
+    \  year         = {2022},\n  url          = {https://doi.org/10.48550/arXiv.2206.15364},\n  doi          = {10.48550/ARXIV.2206.15364},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2206.15364},\n  timestamp    = {Mon, 04 Jul 2022 16:22:19 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2206-15364.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
+year: 2022

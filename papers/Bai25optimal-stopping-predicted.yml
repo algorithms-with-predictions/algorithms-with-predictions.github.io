@@ -1,6 +1,15 @@
 title: Optimal Stopping with a Predicted Prior
 authors: Tian Bai, Zhiyi Huang, Chui Shan Lee, Dongchen Li
-abstract: "There are two major models of value uncertainty in the optimal stopping literature: the secretary model, which assumes no prior knowledge, and the prophet inequality model, which assumes full information about value distributions. In practice, decision makers often rely on machine-learned priors that may be erroneous. Motivated by this gap, we formulate the model of optimal stopping with a predicted prior to design algorithms that are both consistent, exploiting the prediction when accurate, and robust, retaining worst-case guarantees when it is not. Existing secretary and prophet inequality algorithms are either pessimistic in consistency or not robust to misprediction. A randomized combination only interpolates their guarantees linearly. We show that a family of bi-criteria algorithms achieves improved consistency-robustness trade-offs, both for maximizing the expected accepted value and for maximizing the probability of accepting the maximum value. We further prove that for the latter objective, no algorithm can simultaneously match the best prophet inequality algorithm in consistency, and the best secretary algorithm in robustness."
+abstract: 'There are two major models of value uncertainty in the optimal stopping literature: the secretary model, which
+  assumes no prior knowledge, and the prophet inequality model, which assumes full information about value distributions.
+  In practice, decision makers often rely on machine-learned priors that may be erroneous. Motivated by this gap, we formulate
+  the model of optimal stopping with a predicted prior to design algorithms that are both consistent, exploiting the prediction
+  when accurate, and robust, retaining worst-case guarantees when it is not. Existing secretary and prophet inequality algorithms
+  are either pessimistic in consistency or not robust to misprediction. A randomized combination only interpolates their guarantees
+  linearly. We show that a family of bi-criteria algorithms achieves improved consistency-robustness trade-offs, both for
+  maximizing the expected accepted value and for maximizing the probability of accepting the maximum value. We further prove
+  that for the latter objective, no algorithm can simultaneously match the best prophet inequality algorithm in consistency,
+  and the best secretary algorithm in robustness.'
 labels:
 - online
 - prophet inequality
@@ -10,4 +19,12 @@ publications:
   year: 2025
   month: 11
   day: 5
+  dblp_key: journals/corr/abs-2511-03289
+  bibtex: "@article{DBLP:journals/corr/abs-2511-03289,\n  author       = {Tian Bai and\n                  Zhiyi Huang and\n\
+    \                  Chui Shan Lee and\n                  Dongchen Li},\n  title        = {Optimal Stopping with a Predicted\
+    \ Prior},\n  journal      = {CoRR},\n  volume       = {abs/2511.03289},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2511.03289},\n\
+    \  doi          = {10.48550/ARXIV.2511.03289},\n  eprinttype    = {arXiv},\n  eprint       = {2511.03289},\n  timestamp\
+    \    = {Thu, 27 Nov 2025 20:57:29 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2511-03289.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2511.03289
+year: 2025

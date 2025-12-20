@@ -10,6 +10,16 @@ publications:
   year: 2025
   url: https://doi.org/10.4230/LIPIcs.MFCS.2025.12
   dblp_key: conf/mfcs/BalabanGLSS25
+  bibtex: "@inproceedings{DBLP:conf/mfcs/BalabanGLSS25,\n  author       = {Jakub Balab{\\'{a}}n and\n                  Matthias\
+    \ Gehnen and\n                  Henri Lotze and\n                  Finn Seesemann and\n                  Moritz Stocker},\n\
+    \  editor       = {Pawel Gawrychowski and\n                  Filip Mazowiecki and\n                  Michal Skrzypczak},\n\
+    \  title        = {Online Knapsack Problems with Estimates},\n  booktitle    = {50th International Symposium on Mathematical\
+    \ Foundations of Computer\n                  Science, {MFCS} 2025, Warsaw, Poland, August 25-29, 2025},\n  series    \
+    \   = {LIPIcs},\n  volume       = {345},\n  pages        = {12:1--12:19},\n  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum\
+    \ f{\\\"{u}}r Informatik},\n  year         = {2025},\n  url          = {https://doi.org/10.4230/LIPIcs.MFCS.2025.12},\n\
+    \  doi          = {10.4230/LIPICS.MFCS.2025.12},\n  timestamp    = {Fri, 21 Nov 2025 23:44:11 +0100},\n  biburl      \
+    \ = {https://dblp.org/rec/conf/mfcs/BalabanGLSS25.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+    }\n\n"
 arxiv: '2504.21750'
 abstract: 'Imagine you are a computer scientist who enjoys attending conferences or workshops within the year. Sadly, your
   travel budget is limited, so you must select a subset of events you can travel to. When you are aware of all possible events

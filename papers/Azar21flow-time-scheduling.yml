@@ -1,5 +1,5 @@
 title: Flow Time Scheduling with Uncertain Processing Time
-authors: Y. Azar, S. Leonardi, Noam Touitou
+authors: Yossi Azar, Stefano Leonardi, Noam Touitou
 abstract: We consider the problem of online scheduling on a single machine in order to minimize weighted flow time. The existing
   algorithms for this problem (STOC ’01, SODA ’03, FOCS ’18) all require exact knowledge of the processing time of each job.
   This assumption is crucial, as even a slight perturbation of the processing time would lead to polynomial competitive ratio.

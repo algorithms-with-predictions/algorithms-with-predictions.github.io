@@ -24,4 +24,12 @@ publications:
   year: 2022
   month: 5
   day: 18
-year: 2021
+  dblp_key: journals/corr/abs-2205-08717
+  bibtex: "@article{DBLP:journals/corr/abs-2205-08717,\n  author       = {Keerti Anand and\n                  Rong Ge and\n\
+    \                  Amit Kumar and\n                  Debmalya Panigrahi},\n  title        = {A Regression Approach to\
+    \ Learning-Augmented Online Algorithms},\n  journal      = {CoRR},\n  volume       = {abs/2205.08717},\n  year       \
+    \  = {2022},\n  url          = {https://doi.org/10.48550/arXiv.2205.08717},\n  doi          = {10.48550/ARXIV.2205.08717},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2205.08717},\n  timestamp    = {Mon, 23 May 2022 14:22:18 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2205-08717.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
+year: 2022

@@ -23,4 +23,11 @@ publications:
   year: 2019
   month: 8
   day: 14
+  dblp_key: journals/corr/abs-1908-05198
+  bibtex: "@article{DBLP:journals/corr/abs-1908-05198,\n  author       = {Anders Aamand and\n                  Piotr Indyk\
+    \ and\n                  Ali Vakilian},\n  title        = {(Learned) Frequency Estimation Algorithms under Zipfian Distribution},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/1908.05198},\n  year         = {2019},\n  url          = {http://arxiv.org/abs/1908.05198},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {1908.05198},\n  timestamp    = {Mon, 19 Aug 2019 13:21:03 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-1908-05198.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 year: 2019

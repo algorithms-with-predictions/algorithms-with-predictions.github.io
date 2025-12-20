@@ -19,3 +19,11 @@ publications:
   month: 8
   day: 9
 year: 2024
+abstract: 'We study the problem of searching for a target at some unknown location in $\mathbb{R}^d$ when additional information
+  regarding the position of the target is available in the form of predictions. In our setting, predictions come as approximate
+  distances to the target: for each point $p\in \mathbb{R}^d$ that the searcher visits, we obtain a value $\lambda(p)$ such
+  that $|p\bm{t}|\le \lambda(p) \le c\cdot |p\bm{t}|$, where $c\ge 1$ is a fixed constant, $\bm{t}$ is the position of the
+  target, and $|p\bm{t}|$ is the Euclidean distance of $p$ to $\bm{t}$. The cost of the search is the length of the path followed
+  by the searcher. Our main positive result is a strategy that achieves $(10c)^{d+1}$-competitive ratio, even when the constant
+  $c$ is unknown. We also give a lower bound of roughly $(c/4)^{d-1}$ on the competitive ratio of any search strategy in $\RR^d$,
+  assuming that $c\ge 4$.'

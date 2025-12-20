@@ -9,4 +9,11 @@ publications:
   year: 2023
   month: 6
   day: 18
+  dblp_key: journals/corr/abs-2307-08890
+  bibtex: "@article{DBLP:journals/corr/abs-2307-08890,\n  author       = {Quanquan C. Liu and\n                  Vaidehi Srinivas},\n\
+    \  title        = {The Predicted-Deletion Dynamic Model: Taking Advantage of {ML} Predictions,\n                  for\
+    \ Free},\n  journal      = {CoRR},\n  volume       = {abs/2307.08890},\n  year         = {2023},\n  url          = {https://doi.org/10.48550/arXiv.2307.08890},\n\
+    \  doi          = {10.48550/ARXIV.2307.08890},\n  eprinttype    = {arXiv},\n  eprint       = {2307.08890},\n  timestamp\
+    \    = {Tue, 25 Jul 2023 16:04:08 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2307-08890.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2023

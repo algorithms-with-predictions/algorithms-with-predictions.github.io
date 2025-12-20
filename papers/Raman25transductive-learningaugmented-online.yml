@@ -18,4 +18,11 @@ publications:
   year: 2025
   month: 10
   day: 4
+  dblp_key: journals/corr/abs-2510-03917
+  bibtex: "@article{DBLP:journals/corr/abs-2510-03917,\n  author       = {Vinod Raman and\n                  Shenghao Xie\
+    \ and\n                  Samson Zhou},\n  title        = {Transductive and Learning-Augmented Online Regression},\n  journal\
+    \      = {CoRR},\n  volume       = {abs/2510.03917},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2510.03917},\n\
+    \  doi          = {10.48550/ARXIV.2510.03917},\n  eprinttype    = {arXiv},\n  eprint       = {2510.03917},\n  timestamp\
+    \    = {Sun, 09 Nov 2025 15:58:25 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2510-03917.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025

@@ -10,3 +10,22 @@ publications:
   year: 2025
   month: 2
   day: 21
+  dblp_key: journals/corr/abs-2502-15345
+  bibtex: "@article{DBLP:journals/corr/abs-2502-15345,\n  author       = {Lixing Lyu and\n                  Jiashuo Jiang\
+    \ and\n                  Wang Chi Cheung},\n  title        = {Efficiently Solving Discounted MDPs with Predictions on\
+    \ Transition\n                  Matrices},\n  journal      = {CoRR},\n  volume       = {abs/2502.15345},\n  year     \
+    \    = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2502.15345},\n  doi          = {10.48550/ARXIV.2502.15345},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2502.15345},\n  timestamp    = {Thu, 20 Mar 2025 13:28:41 +0100},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2502-15345.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
+year: 2025
+abstract: We study infinite-horizon Discounted Markov Decision Processes (DMDPs) under a generative model. Motivated by the
+  Algorithm with Advice framework Mitzenmacher and Vassilvitskii 2022, we propose a novel framework to investigate how a prediction
+  on the transition matrix can enhance the sample efficiency in solving DMDPs and improve sample complexity bounds. We focus
+  on the DMDPs with $N$ state-action pairs and discounted factor $\gamma$. Firstly, we provide an impossibility result that,
+  without prior knowledge of the prediction accuracy, no sampling policy can compute an $\epsilon$-optimal policy with a sample
+  complexity bound better than $\tilde{O}((1-\gamma)^{-3} N\epsilon^{-2})$, which matches the state-of-the-art minimax sample
+  complexity bound with no prediction. In complement, we propose an algorithm based on minimax optimization techniques that
+  leverages the prediction on the transition matrix. Our algorithm achieves a sample complexity bound depending on the prediction
+  error, and the bound is uniformly better than $\tilde{O}((1-\gamma)^{-4} N \epsilon^{-2})$, the previous best result derived
+  from convex optimization methods. These theoretical findings are further supported by our numerical experiments.

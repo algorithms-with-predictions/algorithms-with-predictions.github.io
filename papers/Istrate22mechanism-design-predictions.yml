@@ -13,4 +13,11 @@ publications:
   year: 2022
   month: 12
   day: 19
+  dblp_key: journals/corr/abs-2212-09521
+  bibtex: "@article{DBLP:journals/corr/abs-2212-09521,\n  author       = {Gabriel Istrate and\n                  Cosmin Bonchis},\n\
+    \  title        = {Mechanism Design With Predictions for Obnoxious Facility Location},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2212.09521},\n  year         = {2022},\n  url          = {https://doi.org/10.48550/arXiv.2212.09521},\n\
+    \  doi          = {10.48550/ARXIV.2212.09521},\n  eprinttype    = {arXiv},\n  eprint       = {2212.09521},\n  timestamp\
+    \    = {Tue, 03 Jan 2023 15:59:43 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2212-09521.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2022

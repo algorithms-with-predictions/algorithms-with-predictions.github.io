@@ -9,4 +9,11 @@ publications:
   year: 2021
   month: 11
   day: 22
+  dblp_key: journals/corr/abs-2112-11927
+  bibtex: "@article{DBLP:journals/corr/abs-2112-11927,\n  author       = {Willem Feijen and\n                  Guido Sch{\\\
+    \"{a}}fer},\n  title        = {Using Machine Learning Predictions to Speed-up Dijkstra's Shortest\n                  Path\
+    \ Algorithm},\n  journal      = {CoRR},\n  volume       = {abs/2112.11927},\n  year         = {2021},\n  url         \
+    \ = {https://arxiv.org/abs/2112.11927},\n  eprinttype    = {arXiv},\n  eprint       = {2112.11927},\n  timestamp    =\
+    \ {Tue, 04 Jan 2022 15:59:27 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2112-11927.bib},\n  bibsource\
+    \    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2021

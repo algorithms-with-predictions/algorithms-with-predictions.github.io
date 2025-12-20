@@ -29,4 +29,5 @@ publications:
     \  year = \t {2025},\n  editor = \t {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp,\
     \ Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},\n  volume = \t {267},\n  series = \t {Proceedings of Machine\
     \ Learning Research},\n  month = \t {13--19 Jul},\n  publisher =    {PMLR}\n}\n\n\n"
-year: 2024
+  dblp_key: conf/icml/DaneshvaramoliK25
+year: 2025

@@ -18,3 +18,13 @@ publications:
   month: 9
   day: 22
 year: 2022
+abstract: In this work, we consider the $k$-Canadian Traveller Problem ($k$-CTP) under the learning-augmented framework proposed
+  by Lykouris&Vassilvitskii. $k$-CTP is a generalization of the shortest path problem, and involves a traveller who knows
+  the entire graph in advance and wishes to find the shortest route from a source vertex $s$ to a destination vertex $t$,
+  but discovers online that some edges (up to $k$) are blocked once reaching them. A potentially imperfect predictor gives
+  us the number and the locations of the blocked edges. We present a deterministic and a randomized online algorithm for the
+  learning-augmented $k$-CTP that achieve a tradeoff between consistency (quality of the solution when the prediction is correct)
+  and robustness (quality of the solution when there are errors in the prediction). Moreover, we prove a matching lower bound
+  for the deterministic case establishing that the tradeoff between consistency and robustness is optimal, and show a lower
+  bound for the randomized algorithm. Finally, we prove several deterministic and randomized lower bounds on the competitive
+  ratio of $k$-CTP depending on the prediction error, and complement them, in most cases, with matching upper bounds.

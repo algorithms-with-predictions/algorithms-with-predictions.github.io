@@ -17,4 +17,14 @@ publications:
   year: 2025
   month: 2
   day: 8
+- name: ICML
+  dblp_key: conf/icml/BenomarCP025
+  url: https://dblp.org/rec/conf/icml/BenomarCP025
+  bibtex: "@inproceedings{DBLP:conf/icml/BenomarCP025,\n  author       = {Ziyad Benomar and\n                  Lorenzo Croissant\
+    \ and\n                  Vianney Perchet and\n                  Spyros Angelopoulos},\n  title        = {Pareto-Optimality,\
+    \ Smoothness, and Stochasticity in Learning-Augmented\n                  One-Max-Search},\n  booktitle    = {Forty-second\
+    \ International Conference on Machine Learning, {ICML}\n                  2025, Vancouver, BC, Canada, July 13-19, 2025},\n\
+    \  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=ZTOVlPC5Vf},\n\
+    \  timestamp    = {Fri, 05 Dec 2025 16:19:11 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/BenomarCP025.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2025

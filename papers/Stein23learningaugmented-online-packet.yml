@@ -16,4 +16,11 @@ publications:
   year: 2023
   month: 5
   day: 11
+  dblp_key: journals/corr/abs-2305-07164
+  bibtex: "@article{DBLP:journals/corr/abs-2305-07164,\n  author       = {Clifford Stein and\n                  Hao{-}Ting\
+    \ Wei},\n  title        = {Learning-Augmented Online Packet Scheduling with Deadlines},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2305.07164},\n  year         = {2023},\n  url          = {https://doi.org/10.48550/arXiv.2305.07164},\n\
+    \  doi          = {10.48550/ARXIV.2305.07164},\n  eprinttype    = {arXiv},\n  eprint       = {2305.07164},\n  timestamp\
+    \    = {Wed, 17 May 2023 15:47:36 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2305-07164.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2023

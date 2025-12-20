@@ -8,4 +8,12 @@ publications:
   year: 2022
   month: 9
   day: 20
+  dblp_key: journals/corr/abs-2210-11222
+  bibtex: "@article{DBLP:journals/corr/abs-2210-11222,\n  author       = {Kareem Amin and\n                  Travis Dick and\n\
+    \                  Mikhail Khodak and\n                  Sergei Vassilvitskii},\n  title        = {Private Algorithms\
+    \ with Private Predictions},\n  journal      = {CoRR},\n  volume       = {abs/2210.11222},\n  year         = {2022},\n\
+    \  url          = {https://doi.org/10.48550/arXiv.2210.11222},\n  doi          = {10.48550/ARXIV.2210.11222},\n  eprinttype\
+    \    = {arXiv},\n  eprint       = {2210.11222},\n  timestamp    = {Tue, 25 Oct 2022 14:25:08 +0200},\n  biburl       =\
+    \ {https://dblp.org/rec/journals/corr/abs-2210-11222.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+    }\n\n"
 year: 2022

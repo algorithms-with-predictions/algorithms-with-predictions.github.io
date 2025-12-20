@@ -4,9 +4,28 @@ publications:
 - name: ICML
   url: https://openreview.net/forum?id=0OVCcpLNGI
   year: 2025
+  dblp_key: conf/icml/0001CJG25
+  bibtex: "@inproceedings{DBLP:conf/icml/0001CJG25,\n  author       = {Arnab Bhattacharyya and\n                  Davin Choo\
+    \ and\n                  Philips George John and\n                  Themis Gouleakis},\n  title        = {Learning multivariate\
+    \ Gaussians with imperfect advice},\n  booktitle    = {Forty-second International Conference on Machine Learning, {ICML}\n\
+    \                  2025, Vancouver, BC, Canada, July 13-19, 2025},\n  publisher    = {OpenReview.net},\n  year       \
+    \  = {2025},\n  url          = {https://openreview.net/forum?id=0OVCcpLNGI},\n  timestamp    = {Fri, 05 Dec 2025 16:19:12\
+    \ +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/0001CJG25.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 - name: arXiv
   url: https://arxiv.org/abs/2411.12700
   year: 2025
 labels:
 - distribution learning
 year: 2025
+abstract: We revisit the problem of distribution learning within the framework of learning-augmented algorithms. In this setting,
+  we explore the scenario where a probability distribution is provided as potentially inaccurate advice on the true, unknown
+  distribution. Our objective is to develop learning algorithms whose sample complexity decreases as the quality of the advice
+  improves, thereby surpassing standard learning lower bounds when the advice is sufficiently accurate. Specifically, we demonstrate
+  that this outcome is achievable for the problem of learning a multivariate Gaussian distribution $N(\boldsymbol{\mu}, \boldsymbol{\Sigma})$
+  in the PAC learning setting. Classically, in the advice-free setting, $\tilde{\Theta}(d^2/\varepsilon^2)$ samples are sufficient
+  and worst case necessary to learn $d$-dimensional Gaussians up to TV distance $\varepsilon$ with constant probability. When
+  we are additionally given a parameter $\tilde{\boldsymbol{\Sigma}}$ as advice, we show that $\tilde{O}(d^{2-\beta}/\varepsilon^2)$
+  samples suffices whenever $\| \tilde{\boldsymbol{\Sigma}}^{-1/2} \boldsymbol{\Sigma} \tilde{\boldsymbol{\Sigma}}^{-1/2}
+  - \boldsymbol{I_d} \|_1 \leq \varepsilon d^{1-\beta}$ (where $\|\cdot\|_1$ denotes the entrywise $\ell_1$ norm) for any
+  $\beta>0$, yielding a polynomial improvement over the advice-free setting.

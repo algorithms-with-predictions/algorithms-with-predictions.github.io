@@ -21,6 +21,14 @@ publications:
   year: 2025
   month: 9
   day: 11
+  dblp_key: journals/corr/abs-2509-09561
+  bibtex: "@article{DBLP:journals/corr/abs-2509-09561,\n  author       = {Argyrios Deligkas and\n                  Eduard\
+    \ Eiben and\n                  Sophie Klumper and\n                  Guido Sch{\\\"{a}}fer and\n                  Artem\
+    \ Tsikiridis},\n  title        = {Mechanism Design with Outliers and Predictions},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2509.09561},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2509.09561},\n\
+    \  doi          = {10.48550/ARXIV.2509.09561},\n  eprinttype    = {arXiv},\n  eprint       = {2509.09561},\n  timestamp\
+    \    = {Mon, 13 Oct 2025 15:38:16 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2509-09561.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2509.09561
 s2_id: 8ccc9c5b861516dc495011466f8eeafceb80ec9a
 labels:

@@ -1,14 +1,11 @@
 title: Auction Design using Value Prediction with Hallucinations
 authors: Ilan Lobel, Humberto Moreira, Omar Mouchtaki
-abstract: We investigate a Bayesian mechanism design problem where a seller seeks
-  to maximize revenue by selling an indivisible good to one of n buyers, incorporating
-  potentially unreliable predictions (signals) of buyers'private values derived from
-  a machine learning model. We propose a framework where these signals are sometimes
-  reflective of buyers'true valuations but other times are hallucinations, which are
-  uncorrelated with the buyers'true valuations. Our main contribution is a characterization
-  of the optimal auction under this framework. Our characterization establishes a
-  near-decomposition of how to treat types above and below the signal. For the one
-  buyer case, the seller's optimal strategy is to post one of three fairly intuitive
+abstract: We investigate a Bayesian mechanism design problem where a seller seeks to maximize revenue by selling an indivisible
+  good to one of n buyers, incorporating potentially unreliable predictions (signals) of buyers'private values derived from
+  a machine learning model. We propose a framework where these signals are sometimes reflective of buyers'true valuations
+  but other times are hallucinations, which are uncorrelated with the buyers'true valuations. Our main contribution is a characterization
+  of the optimal auction under this framework. Our characterization establishes a near-decomposition of how to treat types
+  above and below the signal. For the one buyer case, the seller's optimal strategy is to post one of three fairly intuitive
   prices depending on the signal, which we call the"ignore","follow"and"cap"actions.
 publications:
 - name: arXiv
@@ -16,8 +13,16 @@ publications:
   year: 2025
   month: 2
   day: 12
+  dblp_key: journals/corr/abs-2502-08792
+  bibtex: "@article{DBLP:journals/corr/abs-2502-08792,\n  author       = {Ilan Lobel and\n                  Humberto Moreira\
+    \ and\n                  Omar Mouchtaki},\n  title        = {Auction Design using Value Prediction with Hallucinations},\n\
+    \  journal      = {CoRR},\n  volume       = {abs/2502.08792},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2502.08792},\n\
+    \  doi          = {10.48550/ARXIV.2502.08792},\n  eprinttype    = {arXiv},\n  eprint       = {2502.08792},\n  timestamp\
+    \    = {Wed, 12 Mar 2025 22:48:20 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2502-08792.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2502.08792
 s2_id: 9427361d6d4b7efc1b2ab49a3409e38f1ff2a8ea
 labels:
 - game theory / mechanism design
 - auctions
+year: 2025

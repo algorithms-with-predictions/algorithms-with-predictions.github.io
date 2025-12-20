@@ -29,4 +29,12 @@ publications:
   year: 2024
   month: 2
   day: 27
-year: 2023
+  dblp_key: journals/corr/abs-2402-17143
+  bibtex: "@article{DBLP:journals/corr/abs-2402-17143,\n  author       = {Eric Balkanski and\n                  No{\\'{e}}mie\
+    \ P{\\'{e}}rivier and\n                  Clifford Stein and\n                  Hao{-}Ting Wei},\n  title        = {Energy-Efficient\
+    \ Scheduling with Predictions},\n  journal      = {CoRR},\n  volume       = {abs/2402.17143},\n  year         = {2024},\n\
+    \  url          = {https://doi.org/10.48550/arXiv.2402.17143},\n  doi          = {10.48550/ARXIV.2402.17143},\n  eprinttype\
+    \    = {arXiv},\n  eprint       = {2402.17143},\n  timestamp    = {Mon, 25 Mar 2024 15:38:17 +0100},\n  biburl       =\
+    \ {https://dblp.org/rec/journals/corr/abs-2402-17143.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+    }\n\n"
+year: 2024

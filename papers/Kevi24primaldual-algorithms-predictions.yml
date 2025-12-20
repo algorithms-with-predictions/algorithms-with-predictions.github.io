@@ -1,20 +1,15 @@
-title: Primal-Dual Algorithms with Predictions for Online Bounded Allocation and Ad-Auctions
-  Problems
-authors: Enikő Kevi, Nguyen Kim Thang
-abstract: Matching problems have been widely studied in the research community, especially
-  Ad-Auctions with many applications ranging from network design to advertising. Following
-  the various advancements in machine learning, one natural question is whether classical
-  algorithms can benefit from machine learning and obtain better-quality solutions.
-  Even a small percentage of performance improvement in matching problems could result
-  in significant gains for the studied use cases. For example, the network throughput
-  or the revenue of Ad-Auctions can increase remarkably. This paper presents algorithms
-  with machine learning predictions for the Online Bounded Allocation and the Online
-  Ad-Auctions problems. We constructed primal-dual algorithms that achieve competitive
-  performance depending on the quality of the predictions. When the predictions are
-  accurate, the algorithms' performance surpasses previous performance bounds, while
-  when the predictions are misleading, the algorithms maintain standard worst-case
-  performance guarantees. We provide supporting experiments on generated data for
-  our theoretical findings.
+title: Primal-Dual Algorithms with Predictions for Online Bounded Allocation and Ad-Auctions Problems
+authors: Eniko Kevi, Kim Thang Nguyen
+abstract: Matching problems have been widely studied in the research community, especially Ad-Auctions with many applications
+  ranging from network design to advertising. Following the various advancements in machine learning, one natural question
+  is whether classical algorithms can benefit from machine learning and obtain better-quality solutions. Even a small percentage
+  of performance improvement in matching problems could result in significant gains for the studied use cases. For example,
+  the network throughput or the revenue of Ad-Auctions can increase remarkably. This paper presents algorithms with machine
+  learning predictions for the Online Bounded Allocation and the Online Ad-Auctions problems. We constructed primal-dual algorithms
+  that achieve competitive performance depending on the quality of the predictions. When the predictions are accurate, the
+  algorithms' performance surpasses previous performance bounds, while when the predictions are misleading, the algorithms
+  maintain standard worst-case performance guarantees. We provide supporting experiments on generated data for our theoretical
+  findings.
 labels:
 - game theory / mechanism design
 - online
@@ -24,3 +19,11 @@ publications:
   year: 2024
   month: 2
   day: 13
+  dblp_key: journals/corr/abs-2402-08701
+  bibtex: "@article{DBLP:journals/corr/abs-2402-08701,\n  author       = {Eniko Kevi and\n                  Kim Thang Nguyen},\n\
+    \  title        = {Primal-Dual Algorithms with Predictions for Online Bounded Allocation\n                  and Ad-Auctions\
+    \ Problems},\n  journal      = {CoRR},\n  volume       = {abs/2402.08701},\n  year         = {2024},\n  url          =\
+    \ {https://doi.org/10.48550/arXiv.2402.08701},\n  doi          = {10.48550/ARXIV.2402.08701},\n  eprinttype    = {arXiv},\n\
+    \  eprint       = {2402.08701},\n  timestamp    = {Mon, 19 Feb 2024 15:25:43 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2402-08701.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2024

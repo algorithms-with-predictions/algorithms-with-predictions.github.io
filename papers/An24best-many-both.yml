@@ -24,4 +24,12 @@ publications:
   year: 2024
   month: 2
   day: 21
+  dblp_key: journals/corr/abs-2402-13530
+  bibtex: "@article{DBLP:journals/corr/abs-2402-13530,\n  author       = {Lin An and\n                  Andrew A. Li and\n\
+    \                  Benjamin Moseley and\n                  Gabriel Visotsky},\n  title        = {Best of Many in Both\
+    \ Worlds: Online Resource Allocation with Predictions\n                  under Unknown Arrival Model},\n  journal    \
+    \  = {CoRR},\n  volume       = {abs/2402.13530},\n  year         = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2402.13530},\n\
+    \  doi          = {10.48550/ARXIV.2402.13530},\n  eprinttype    = {arXiv},\n  eprint       = {2402.13530},\n  timestamp\
+    \    = {Fri, 22 Mar 2024 14:48:14 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2402-13530.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 year: 2024
