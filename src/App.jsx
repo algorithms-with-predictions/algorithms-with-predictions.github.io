@@ -7,6 +7,7 @@ import MaterialPage from './pages/MaterialPage';
 import ContributePage from './pages/ContributePage';
 import AboutPage from './pages/AboutPage';
 import PrivacyPage from './pages/PrivacyPage';
+import AuthorGraphPage from './pages/AuthorGraphPage';
 import NotFoundPage from './pages/NotFoundPage';
 import CookieConsent from './components/CookieConsent.jsx';
 import { initGA, trackPageView } from './utils/analytics.js';
@@ -47,6 +48,7 @@ function App() {
           <Route path="/contribute" element={<ContributePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/authors" element={<AuthorGraphPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <CookieConsent

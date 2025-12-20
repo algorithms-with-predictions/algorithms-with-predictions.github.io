@@ -43,9 +43,12 @@
     "@fontsource/roboto": "^5.2.8",
     "@mui/icons-material": "^7.3.4",
     "@mui/material": "^7.3.4",
+    "d3-force": "^3.0.0",
     "prop-types": "^15.8.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-force-graph": "^1.48.1",
+    "react-force-graph-2d": "^1.29.0",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.9.5",
     "remark-gfm": "^4.0.1"

@@ -1,4 +1,8 @@
+import { buildAuthorCanonicalizer, parseAuthors } from './authorUtils';
+
 export const calculateStats = data => {
+  const canonicalizer = buildAuthorCanonicalizer(data);
+
   // Calculate total papers
   const totalPapers = data.length;
 
@@ -6,12 +10,11 @@ export const calculateStats = data => {
   const allAuthors = new Set();
   data.forEach(paper => {
     if (paper.authors) {
-      // Handle both string and array formats
-      const authorList =
-        typeof paper.authors === 'string'
-          ? paper.authors.split(', ').map(a => a.trim())
-          : paper.authors;
-      authorList.forEach(author => allAuthors.add(author));
+      const authorList = parseAuthors(paper.authors);
+      const canonicalKeys = Array.from(
+        new Set(authorList.map(a => canonicalizer.canonicalKey(a)))
+      );
+      canonicalKeys.forEach(key => allAuthors.add(key));
     }
   });
   const totalAuthors = allAuthors.size;
