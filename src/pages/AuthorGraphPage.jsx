@@ -165,7 +165,7 @@ const AuthorGraphPage = () => {
       <ForceGraph2D
         ref={fgRef}
         graphData={graphData}
-        nodeLabel={node => `${node.name} (${node.paperCount} papers)`}
+        nodeLabel={node => `${node.name}`}
         nodeRelSize={8}
         nodeColor={node => {
           if (selectedNode && node.id === selectedNode.id) {
@@ -195,7 +195,7 @@ const AuthorGraphPage = () => {
           }
           return nodeColor;
         }}
-        nodeVal={node => Math.sqrt(node.paperCount) * 3} // Node size proportional to paper count
+        nodeVal={node => Math.sqrt(Math.sqrt(node.paperCount)) * 3} // Node size proportional to paper count
         nodeCanvasObjectMode={() => 'after'} // Render labels after nodes
         nodeCanvasObject={(node, ctx, globalScale) => {
           // Only draw the label for the selected node.
