@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardContent, Typography, Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -32,7 +32,11 @@ const PaperTitle = styled(Typography)(() => ({
  * - Authors on second row
  * - Labels and publication badges wrapped together
  */
-const PaperCardMobile = ({ paper, selectedLabels, onLabelClick }) => {
+const PaperCardMobile = ({
+  paper,
+  selectedLabels = [],
+  onLabelClick = null,
+}) => {
   const sortedLabels = React.useMemo(
     () => sortLabels(paper.labels),
     [paper.labels]
@@ -109,9 +113,4 @@ PaperCardMobile.propTypes = {
   onLabelClick: PropTypes.func,
 };
 
-PaperCardMobile.defaultProps = {
-  selectedLabels: [],
-  onLabelClick: null,
-};
-
-export default PaperCardMobile;
+export default memo(PaperCardMobile);

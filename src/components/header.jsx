@@ -91,7 +91,9 @@ const Header = () => {
           <ThemeToggle />
           <IconButton
             color="inherit"
-            aria-label="open mobile menu"
+            aria-label={mobileMenuOpen ? 'Close mobile menu' : 'Open mobile menu'}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation-menu"
             onClick={handleMobileMenuToggle}
             sx={{ ml: 1 }}
           >
@@ -101,7 +103,12 @@ const Header = () => {
       </Toolbar>
 
       {/* Mobile Menu Collapse */}
-      <Collapse in={mobileMenuOpen && isMobile}>
+      <Collapse
+        in={mobileMenuOpen && isMobile}
+        id="mobile-navigation-menu"
+        role="navigation"
+        aria-label="Mobile navigation"
+      >
         <Box
           sx={{
             bgcolor:

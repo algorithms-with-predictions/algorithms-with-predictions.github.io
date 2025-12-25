@@ -13,8 +13,14 @@ const HomePage = () => {
         justifyContent="center"
         alignItems="center"
         minHeight="60vh"
+        role="status"
+        aria-live="polite"
+        aria-label="Loading papers"
       >
-        <CircularProgress />
+        <CircularProgress aria-label="Loading" />
+        <Typography sx={{ position: 'absolute', left: '-10000px' }}>
+          Loading papers...
+        </Typography>
       </Box>
     );
   }
@@ -26,6 +32,8 @@ const HomePage = () => {
         justifyContent="center"
         alignItems="center"
         minHeight="60vh"
+        role="alert"
+        aria-live="assertive"
       >
         <Typography color="error">
           Failed to load papers. Please try again later.

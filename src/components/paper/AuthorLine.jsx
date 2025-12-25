@@ -6,7 +6,7 @@ import { formatAuthors } from '../../utils/paperUtils';
 /**
  * Formatted author line component
  */
-const AuthorLine = ({ authors, sx = {} }) => {
+const AuthorLine = ({ authors = null, sx = {} }) => {
   return (
     <Typography
       variant="caption"
@@ -28,11 +28,6 @@ AuthorLine.propTypes = {
     PropTypes.arrayOf(PropTypes.string),
   ]),
   sx: PropTypes.object,
-};
-
-AuthorLine.defaultProps = {
-  authors: null,
-  sx: {},
 };
 
 export default AuthorLine;

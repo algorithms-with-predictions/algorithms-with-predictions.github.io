@@ -7,7 +7,7 @@ import { openInNewTab } from '../../utils/paperUtils';
 /**
  * Publication badge chip with tooltip and click handling
  */
-const PublicationBadge = ({ publication, paperTitle }) => {
+const PublicationBadge = ({ publication, paperTitle = '' }) => {
   const { name, year, url } = publication;
   const isArxiv = name === 'arXiv';
 
@@ -58,10 +58,6 @@ PublicationBadge.propTypes = {
     bibtex: PropTypes.string,
   }).isRequired,
   paperTitle: PropTypes.string,
-};
-
-PublicationBadge.defaultProps = {
-  paperTitle: '',
 };
 
 export default PublicationBadge;

@@ -63,6 +63,9 @@ const SearchAndFilter = ({
           placeholder="Search papers by title, authors, or keywords..."
           value={localSearchQuery}
           onChange={handleInputChange}
+          inputProps={{
+            'aria-label': 'Search papers by title, authors, or keywords',
+          }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">

@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { Download, Clear } from '@mui/icons-material';
 import * as React from 'react';
-import { useMemo } from 'react';
+import { useMemo, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 
@@ -42,6 +42,18 @@ const PaperList = ({ data }) => {
       paper.publications?.some(pub => pub.bibtex)
     ).length;
   }, [sortedData]);
+
+  // Stable callback for label clicks to enable PaperCard memoization
+  const handleLabelClick = useCallback(
+    label => {
+      setSelLabels(prev => {
+        // Avoid duplicates
+        if (prev.includes(label)) return prev;
+        return [label, ...prev];
+      });
+    },
+    []
+  );
 
   return (
     <Container
@@ -189,9 +201,7 @@ const PaperList = ({ data }) => {
                     <PaperCard
                       paper={paper}
                       selectedLabels={selLabels}
-                      onLabelClick={label =>
-                        setSelLabels([label, ...selLabels])
-                      }
+                      onLabelClick={handleLabelClick}
                     />
                   </Box>
                 ))}

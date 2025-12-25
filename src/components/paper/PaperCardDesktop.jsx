@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardContent, Typography, Stack, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -34,7 +34,11 @@ const PaperTitle = styled(Typography)(() => ({
  * - Publication badges and BibTeX button on the right
  * - Authors on second line
  */
-const PaperCardDesktop = ({ paper, selectedLabels, onLabelClick }) => {
+const PaperCardDesktop = ({
+  paper,
+  selectedLabels = [],
+  onLabelClick = null,
+}) => {
   const sortedLabels = React.useMemo(
     () => sortLabels(paper.labels),
     [paper.labels]
@@ -130,9 +134,4 @@ PaperCardDesktop.propTypes = {
   onLabelClick: PropTypes.func,
 };
 
-PaperCardDesktop.defaultProps = {
-  selectedLabels: [],
-  onLabelClick: null,
-};
-
-export default PaperCardDesktop;
+export default memo(PaperCardDesktop);

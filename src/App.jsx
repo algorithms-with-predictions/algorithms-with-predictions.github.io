@@ -1,17 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { Box, CircularProgress } from '@mui/material';
 import { ThemeContextProvider } from './contexts/ThemeContext.jsx';
 import Layout from './components/layout.jsx';
-import HomePage from './pages/HomePage';
-import MaterialPage from './pages/MaterialPage';
-import ContributePage from './pages/ContributePage';
-import AboutPage from './pages/AboutPage';
-import PrivacyPage from './pages/PrivacyPage';
-import AuthorGraphPage from './pages/AuthorGraphPage';
-import NotFoundPage from './pages/NotFoundPage';
+import ErrorBoundary from './components/ErrorBoundary.jsx';
 import CookieConsent from './components/CookieConsent.jsx';
 import { trackPageView } from './utils/analytics.js';
 import { useCookieConsent } from './hooks/useCookieConsent.js';
+
+// Lazy load route components
+const HomePage = lazy(() => import('./pages/HomePage'));
+const MaterialPage = lazy(() => import('./pages/MaterialPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ContributePage = lazy(() => import('./pages/ContributePage'));
+const AuthorGraphPage = lazy(() => import('./pages/AuthorGraphPage'));
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+
+// Loading fallback component
+const RouteLoader = () => (
+  <Box
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
+    minHeight="60vh"
+  >
+    <CircularProgress />
+  </Box>
+);
 
 function App() {
   const location = useLocation();
@@ -24,18 +40,22 @@ function App() {
 
   return (
     <ThemeContextProvider>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/material" element={<MaterialPage />} />
-          <Route path="/contribute" element={<ContributePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-          <Route path="/authors" element={<AuthorGraphPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-        <CookieConsent onAccept={onAccept} onDecline={onDecline} />
-      </Layout>
+      <ErrorBoundary>
+        <Layout>
+          <Suspense fallback={<RouteLoader />}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/material" element={<MaterialPage />} />
+              <Route path="/contribute" element={<ContributePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/authors" element={<AuthorGraphPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
+          <CookieConsent onAccept={onAccept} onDecline={onDecline} />
+        </Layout>
+      </ErrorBoundary>
     </ThemeContextProvider>
   );
 }

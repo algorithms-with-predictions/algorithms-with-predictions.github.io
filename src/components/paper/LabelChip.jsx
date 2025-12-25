@@ -7,7 +7,12 @@ import { trackEvent } from '../../utils/analytics';
 /**
  * Clickable label chip component with consistent styling
  */
-const LabelChip = ({ label, isSelected, onLabelClick, paperTitle }) => {
+const LabelChip = ({
+  label,
+  isSelected = false,
+  onLabelClick = null,
+  paperTitle = '',
+}) => {
   const labelColor = getLabelColor(label);
 
   const handleClick = () => {
@@ -29,6 +34,9 @@ const LabelChip = ({ label, isSelected, onLabelClick, paperTitle }) => {
       color={labelColor}
       clickable
       onClick={handleClick}
+      role="button"
+      aria-label={`${isSelected ? 'Remove' : 'Add'} filter for ${label}`}
+      aria-pressed={isSelected}
       sx={{
         borderRadius: 2,
         fontSize: '0.75rem',
@@ -49,12 +57,6 @@ LabelChip.propTypes = {
   isSelected: PropTypes.bool,
   onLabelClick: PropTypes.func,
   paperTitle: PropTypes.string,
-};
-
-LabelChip.defaultProps = {
-  isSelected: false,
-  onLabelClick: null,
-  paperTitle: '',
 };
 
 export default LabelChip;

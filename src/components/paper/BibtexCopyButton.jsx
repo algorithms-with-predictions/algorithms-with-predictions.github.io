@@ -8,7 +8,11 @@ import { getBibtexEntries, getMainPublication } from '../../utils/paperUtils';
 /**
  * BibTeX copy button with analytics tracking
  */
-const BibtexCopyButton = ({ publications, paperTitle, size = 'small' }) => {
+const BibtexCopyButton = ({
+  publications = [],
+  paperTitle = '',
+  size = 'small',
+}) => {
   const handleCopyBibtex = () => {
     if (typeof window === 'undefined' || typeof navigator === 'undefined') {
       return;
@@ -52,12 +56,6 @@ BibtexCopyButton.propTypes = {
   ),
   paperTitle: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-};
-
-BibtexCopyButton.defaultProps = {
-  publications: [],
-  paperTitle: '',
-  size: 'small',
 };
 
 export default BibtexCopyButton;
