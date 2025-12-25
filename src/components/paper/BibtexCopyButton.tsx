@@ -26,7 +26,7 @@ const BibtexCopyButton: React.FC<BibtexCopyButtonProps> = ({
     const bibtexEntries = getBibtexEntries(publications);
 
     if (bibtexEntries) {
-      navigator.clipboard?.writeText(bibtexEntries);
+      void navigator.clipboard?.writeText(bibtexEntries);
       const mainPublication = getMainPublication(publications);
       trackEvent('bibtex_copy', {
         category: 'paper_interaction',

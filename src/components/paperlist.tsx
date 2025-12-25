@@ -48,13 +48,16 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
   }, [sortedData]);
 
   // Stable callback for label clicks to enable PaperCard memoization
-  const handleLabelClick = useCallback((label: string): void => {
-    setSelLabels((prev: string[]) => {
-      // Avoid duplicates
-      if (prev.includes(label)) return prev;
-      return [label, ...prev];
-    });
-  }, []);
+  const handleLabelClick = useCallback(
+    (label: string): void => {
+      setSelLabels((prev: string[]) => {
+        // Avoid duplicates
+        if (prev.includes(label)) return prev;
+        return [label, ...prev];
+      });
+    },
+    [setSelLabels]
+  );
 
   return (
     <Container

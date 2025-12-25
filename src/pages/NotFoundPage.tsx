@@ -23,7 +23,9 @@ const NotFoundPage: React.FC = () => {
       <Button
         variant="contained"
         size="large"
-        onClick={() => navigate('/')}
+        onClick={() => {
+          void navigate('/');
+        }}
         sx={{ borderRadius: 2 }}
       >
         Go Home

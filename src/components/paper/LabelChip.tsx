@@ -1,6 +1,7 @@
-import { Chip } from '@mui/material';
+import { Chip, type ChipPropsColorOverrides } from '@mui/material';
 import { getLabelColor } from '../../utils/labelUtils';
 import { trackEvent } from '../../utils/analytics';
+import type { OverridableStringUnion } from '@mui/types';
 
 interface LabelChipProps {
   label: string;
@@ -8,6 +9,17 @@ interface LabelChipProps {
   onLabelClick?: ((label: string) => void) | null;
   paperTitle?: string | undefined;
 }
+
+type ExtendedChipColor = OverridableStringUnion<
+  | 'default'
+  | 'primary'
+  | 'secondary'
+  | 'error'
+  | 'info'
+  | 'success'
+  | 'warning',
+  ChipPropsColorOverrides
+>;
 
 /**
  * Clickable label chip component with consistent styling
@@ -36,7 +48,7 @@ const LabelChip: React.FC<LabelChipProps> = ({
       label={label}
       size="small"
       variant={isSelected ? 'filled' : 'outlined'}
-      color={labelColor as any}
+      color={labelColor as ExtendedChipColor}
       clickable
       onClick={handleClick}
       role="button"

@@ -6,6 +6,7 @@ import { buildAuthorGraph } from '../utils/graphUtils';
 import { useThemeMode } from '../contexts/ThemeContext';
 import { GRAPH_CONFIG } from '../constants';
 import type { AuthorNode, CollaborationLink } from '../utils/graphUtils';
+import type { ForceLink, ForceManyBody } from 'd3-force';
 
 /**
  * Author collaboration network visualization page
@@ -37,10 +38,16 @@ const AuthorGraphPage: React.FC = () => {
     const fg = fgRef.current;
 
     // Increase repulsion (charge) to spread nodes apart and reduce crossings
-    fg.d3Force('charge')?.strength(GRAPH_CONFIG.CHARGE_STRENGTH);
+    const chargeForce = fg.d3Force('charge') as
+      | ForceManyBody<AuthorNode>
+      | undefined;
+    chargeForce?.strength(GRAPH_CONFIG.CHARGE_STRENGTH);
 
     // Increase link distance to give edges more room
-    fg.d3Force('link')?.distance(
+    const linkForce = fg.d3Force('link') as
+      | ForceLink<AuthorNode, CollaborationLink>
+      | undefined;
+    linkForce?.distance(
       (link: CollaborationLink) =>
         GRAPH_CONFIG.LINK_DISTANCE_BASE +
         (link.value || 1) * GRAPH_CONFIG.LINK_DISTANCE_FACTOR

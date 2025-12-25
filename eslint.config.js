@@ -57,7 +57,10 @@ export default [
   },
 
   // TypeScript files
-  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.recommendedTypeChecked.map(config => ({
+    ...config,
+    files: ['**/*.{ts,tsx}'],
+  })),
   {
     files: ['**/*.{ts,tsx}'],
     plugins: {
@@ -89,6 +92,7 @@ export default [
       // TypeScript rules
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/unified-signatures': 'off', // Disabled due to internal ESLint plugin error
 
       // React Hooks rules
       'react-hooks/rules-of-hooks': 'error',

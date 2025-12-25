@@ -16,6 +16,7 @@ import {
 import { ExpandMore, ExpandLess, Toc } from '@mui/icons-material';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import type { ReactNode } from 'react';
 
 interface TableOfContentsProps {
   content: string;
@@ -40,7 +41,7 @@ const TableOfContentsComponent: React.FC<TableOfContentsProps> = ({
     let match;
 
     while ((match = headingRegex.exec(content)) !== null) {
-      const level = match[0]!.indexOf(' ');
+      const level = match[0].indexOf(' ');
       const text = match[1];
       if (!text) continue;
       const id = text
@@ -116,6 +117,18 @@ const TableOfContentsComponent: React.FC<TableOfContentsProps> = ({
       </Box>
     </Paper>
   );
+};
+
+// Helper function to safely extract text from ReactNode for ID generation
+const getTextFromChildren = (children: ReactNode): string => {
+  if (typeof children === 'string') return children;
+  if (typeof children === 'number') return children.toString();
+  if (Array.isArray(children)) {
+    return children
+      .map((child: ReactNode) => getTextFromChildren(child))
+      .join('');
+  }
+  return '';
 };
 
 const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
@@ -297,12 +310,9 @@ const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
                 {children}
               </Box>
             ),
-            h1: ({ children }) => {
-              const firstChild = Array.isArray(children)
-                ? children[0]
-                : children;
-              const id = firstChild
-                ?.toString()
+            h1: ({ children }: { children?: ReactNode }) => {
+              const text = getTextFromChildren(children);
+              const id = text
                 .toLowerCase()
                 .replace(/[^\w\s-]/g, '')
                 .replace(/\s+/g, '-');
@@ -312,12 +322,9 @@ const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
                 </Typography>
               );
             },
-            h2: ({ children }) => {
-              const firstChild = Array.isArray(children)
-                ? children[0]
-                : children;
-              const id = firstChild
-                ?.toString()
+            h2: ({ children }: { children?: ReactNode }) => {
+              const text = getTextFromChildren(children);
+              const id = text
                 .toLowerCase()
                 .replace(/[^\w\s-]/g, '')
                 .replace(/\s+/g, '-');
@@ -327,12 +334,9 @@ const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
                 </Typography>
               );
             },
-            h3: ({ children }) => {
-              const firstChild = Array.isArray(children)
-                ? children[0]
-                : children;
-              const id = firstChild
-                ?.toString()
+            h3: ({ children }: { children?: ReactNode }) => {
+              const text = getTextFromChildren(children);
+              const id = text
                 .toLowerCase()
                 .replace(/[^\w\s-]/g, '')
                 .replace(/\s+/g, '-');
@@ -342,12 +346,12 @@ const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
                 </Typography>
               );
             },
-            h4: ({ children }) => (
+            h4: ({ children }: { children?: ReactNode }) => (
               <Typography variant="h6" component="h4">
                 {children}
               </Typography>
             ),
-            p: ({ children }) => (
+            p: ({ children }: { children?: ReactNode }) => (
               <Typography variant="body1" paragraph>
                 {children}
               </Typography>
