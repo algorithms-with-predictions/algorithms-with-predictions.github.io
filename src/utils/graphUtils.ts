@@ -17,6 +17,14 @@ export interface AuthorNode {
   paperCount: number;
   /** Internal canonical key (not for display) */
   _key: string;
+  /** d3-force simulation properties */
+  x?: number;
+  y?: number;
+  vx?: number;
+  vy?: number;
+  fx?: number;
+  fy?: number;
+  index?: number;
 }
 
 /**
