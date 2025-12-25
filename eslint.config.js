@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
+import tseslint from 'typescript-eslint';
 import globals from 'globals';
 
 export default [
@@ -48,6 +49,46 @@ export default [
       // General rules
       'no-unused-vars': 'warn',
       'no-console': 'warn',
+
+      // React Hooks rules
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+    },
+  },
+
+  // TypeScript files
+  ...tseslint.configs.strictTypeChecked,
+  {
+    files: ['**/*.{ts,tsx}'],
+    plugins: {
+      react,
+      'react-hooks': reactHooks,
+    },
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+      globals: {
+        ...globals.browser,
+        ...globals.es2021,
+      },
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+    rules: {
+      // React rules
+      ...react.configs.recommended.rules,
+      ...reactHooks.configs.recommended.rules,
+      'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off', // Not needed with TypeScript
+
+      // TypeScript rules
+      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-explicit-any': 'warn',
 
       // React Hooks rules
       'react-hooks/rules-of-hooks': 'error',
