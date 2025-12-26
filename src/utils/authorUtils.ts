@@ -1,12 +1,34 @@
 /**
  * Author name normalization and canonicalization utilities
  *
- * This module handles complex author name variations including:
- * - HTML entity encoding
- * - Diacritics and Unicode characters
- * - "Last, First" vs "First Last" formats
- * - Initial-only vs full name forms
- * - Whitespace and punctuation variations
+ * This module handles complex author name variations found in real research paper datasets:
+ *
+ * ## Problems Solved:
+ *
+ * 1. **HTML Entity Encoding**: Some sources encode names with entities
+ *    - Example: "O&apos;Brien" vs "O'Brien"
+ *
+ * 2. **Diacritics and Unicode**: Same author with/without diacritics
+ *    - Example: "José García" vs "Jose Garcia" (same person)
+ *    - Example: "François Dürr" vs "Francois Durr"
+ *
+ * 3. **Format Variations**: "Last, First" vs "First Last"
+ *    - Example: "Smith, John" vs "John Smith"
+ *    - Particularly common in semicolon-separated lists: "Dürr, C.; Smith, J."
+ *
+ * 4. **Initial-only vs Full Names**: Merging abbreviated forms
+ *    - Example: "C. Dürr" + "Christoph Dürr" → same person
+ *    - Only merges when unambiguous (one full name match per initial+lastName)
+ *
+ * 5. **Whitespace and Punctuation**: Inconsistent spacing and punctuation
+ *    - Example: "John   Smith" vs "John Smith"
+ *    - Example: "O'Brien" vs "O'Brien" vs "O`Brien" (different apostrophe styles)
+ *
+ * ## Real Dataset Examples:
+ * From the ALPS papers.json (359 papers analyzed):
+ * - "Christoph Dürr" appears as: "C. Dürr", "Christoph Durr", "Dürr, C."
+ * - Various apostrophe encodings: &apos;, &#39;, ', '
+ * - Mixed formats in same file due to different publication sources
  */
 
 import type { Paper } from '@/types';
@@ -214,12 +236,56 @@ export interface AuthorCanonicalizer {
 /**
  * Build a canonicalizer for author names
  *
- * Features:
- * - Always merges exact `normalizeAuthorKey` matches
- * - Additionally merges initial-only forms (e.g. "C. Durr") into a unique full-name
- *   within the same (lastName, firstInitial) bucket (only if unambiguous)
+ * ## Algorithm Overview:
  *
- * Example: "C. Dürr", "Christoph Durr", "C. Durr" all map to "Christoph Dürr"
+ * This function creates a mapping system that merges author name variations into
+ * canonical forms, enabling accurate author statistics and graph visualization.
+ *
+ * ## Two-Phase Merging Strategy:
+ *
+ * ### Phase 1: Exact Normalization Match
+ * All names that normalize to the same key (ignoring case, diacritics, punctuation)
+ * are merged automatically.
+ *
+ * Examples:
+ * - "John Smith", "john smith", "JOHN SMITH" → all map to "john smith" key
+ * - "José García", "Jose Garcia" → both map to "jose garcia" key
+ *
+ * ### Phase 2: Initial-Only to Full Name Merging
+ * Initial-only forms (e.g., "C. Dürr") are merged with full names when:
+ * 1. They share the same last name (normalized)
+ * 2. They share the same first initial
+ * 3. There is EXACTLY ONE full name match (unambiguous)
+ *
+ * Examples (unambiguous - merges):
+ * - "C. Dürr" + "Christoph Dürr" → merged (only one "C" last name "Dürr")
+ * - "J. Smith" + "John Smith" → merged (only one "J" last name "Smith")
+ *
+ * Examples (ambiguous - NOT merged):
+ * - "C. Smith" + "Chris Smith" + "Catherine Smith" → NOT merged (2 matches)
+ * - "J. Doe" with no full name → stays as "J. Doe" (no match)
+ *
+ * ## Display Name Preference:
+ * When multiple variants exist, prefers names with:
+ * 1. Unicode/diacritics (highest priority)
+ * 2. Proper capitalization
+ * 3. Apostrophes preserved
+ * 4. Longer, more detailed forms
+ *
+ * Example preference order:
+ * "Christoph Dürr" > "Christoph Durr" > "christoph dürr" > "c durr"
+ *
+ * ## Real-World Example:
+ * Input papers with these author strings:
+ * - Paper 1: "Dürr, Christoph; Koutsoupias, E."
+ * - Paper 2: "C. Dürr"
+ * - Paper 3: "Christoph Durr"
+ * - Paper 4: "E. Koutsoupias; C. Durr"
+ *
+ * Output mappings:
+ * - All "Christoph Dürr" variants → canonical key "christoph durr"
+ *   Display: "Christoph Dürr" (has diacritics)
+ * - "E. Koutsoupias" → merges if "Elias Koutsoupias" exists elsewhere
  *
  * @param papers - Array of papers to analyze
  * @returns Canonicalizer with methods to normalize and display author names

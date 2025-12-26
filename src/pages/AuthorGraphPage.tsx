@@ -1,12 +1,24 @@
-import { useMemo, useRef, useState, useCallback, useEffect } from 'react';
+import {
+  useMemo,
+  useRef,
+  useState,
+  useCallback,
+  useEffect,
+  lazy,
+  Suspense,
+} from 'react';
 import { Box, Typography, CircularProgress, useTheme } from '@mui/material';
-import ForceGraph2D, { ForceGraphMethods } from 'react-force-graph-2d';
+import type { ForceGraphMethods } from 'react-force-graph-2d';
 import { usePapersData } from '../hooks/usePapersData';
 import { buildAuthorGraph } from '../utils/graphUtils';
 import { useThemeMode } from '../contexts/ThemeContext';
 import { GRAPH_CONFIG } from '../constants';
 import type { AuthorNode, CollaborationLink } from '../utils/graphUtils';
 import type { ForceLink, ForceManyBody } from 'd3-force';
+
+// Code-split react-force-graph-2d (only loaded when AuthorGraphPage is visited)
+// This library is large (~200KB) and only used on this page
+const ForceGraph2D = lazy(() => import('../components/ForceGraphWrapper'));
 
 /**
  * Author collaboration network visualization page
@@ -161,86 +173,103 @@ const AuthorGraphPage: React.FC = () => {
         mb: -3, // Offset layout padding
       }}
     >
-      <ForceGraph2D
-        ref={fgRef}
-        graphData={graphData}
-        nodeLabel={(node: AuthorNode) => `${node.name}`}
-        nodeRelSize={8}
-        nodeColor={(node: AuthorNode) => {
-          if (selectedNode && node.id === selectedNode.id) {
-            return selectedNodeColor;
-          }
-          if (hoveredNode && node.id === hoveredNode.id) {
-            return selectedNodeColor;
-          }
-          if (selectedNode) {
-            // Check if node is connected to selected node
-            const isConnected = graphData.links.some(link => {
+      <Suspense
+        fallback={
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            minHeight="60vh"
+          >
+            <CircularProgress aria-label="Loading graph visualization" />
+          </Box>
+        }
+      >
+        <ForceGraph2D
+          ref={fgRef}
+          graphData={graphData}
+          nodeLabel={(node: AuthorNode) => `${node.name}`}
+          nodeRelSize={8}
+          nodeColor={(node: AuthorNode) => {
+            if (selectedNode && node.id === selectedNode.id) {
+              return selectedNodeColor;
+            }
+            if (hoveredNode && node.id === hoveredNode.id) {
+              return selectedNodeColor;
+            }
+            if (selectedNode) {
+              // Check if node is connected to selected node
+              const isConnected = graphData.links.some(link => {
+                const sourceId =
+                  typeof link.source === 'object'
+                    ? link.source.id
+                    : link.source;
+                const targetId =
+                  typeof link.target === 'object'
+                    ? link.target.id
+                    : link.target;
+                return (
+                  (sourceId === selectedNode.id && targetId === node.id) ||
+                  (targetId === selectedNode.id && sourceId === node.id)
+                );
+              });
+              if (isConnected) {
+                // Highlight connected nodes
+                return isDark
+                  ? theme.palette.secondary.light
+                  : theme.palette.secondary.main;
+              }
+            }
+            return nodeColor;
+          }}
+          nodeVal={(node: AuthorNode) =>
+            Math.sqrt(Math.sqrt(node.paperCount)) * 3
+          } // Node size proportional to paper count
+          nodeCanvasObjectMode={() => 'after'} // Render labels after nodes
+          nodeCanvasObject={(node, ctx, globalScale) => {
+            // Only draw the label for the selected node
+            if (!selectedNode || node.id !== selectedNode.id) return;
+
+            const label = node.name;
+            const fontSize = 12 / globalScale;
+            ctx.font = `${fontSize}px Sans-Serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = theme.palette.text.primary;
+            const yOffset = (10 + fontSize) / globalScale;
+            ctx.fillText(label, node.x!, node.y! + yOffset);
+          }}
+          linkColor={link => {
+            if (selectedNode) {
               const sourceId =
                 typeof link.source === 'object' ? link.source.id : link.source;
               const targetId =
                 typeof link.target === 'object' ? link.target.id : link.target;
-              return (
-                (sourceId === selectedNode.id && targetId === node.id) ||
-                (targetId === selectedNode.id && sourceId === node.id)
-              );
-            });
-            if (isConnected) {
-              // Highlight connected nodes
-              return isDark
-                ? theme.palette.secondary.light
-                : theme.palette.secondary.main;
+              const isConnected =
+                sourceId === selectedNode.id || targetId === selectedNode.id;
+              return isConnected ? highlightEdgeColor : edgeColor;
             }
-          }
-          return nodeColor;
-        }}
-        nodeVal={(node: AuthorNode) =>
-          Math.sqrt(Math.sqrt(node.paperCount)) * 3
-        } // Node size proportional to paper count
-        nodeCanvasObjectMode={() => 'after'} // Render labels after nodes
-        nodeCanvasObject={(node, ctx, globalScale) => {
-          // Only draw the label for the selected node
-          if (!selectedNode || node.id !== selectedNode.id) return;
-
-          const label = node.name;
-          const fontSize = 12 / globalScale;
-          ctx.font = `${fontSize}px Sans-Serif`;
-          ctx.textAlign = 'center';
-          ctx.textBaseline = 'middle';
-          ctx.fillStyle = theme.palette.text.primary;
-          const yOffset = (10 + fontSize) / globalScale;
-          ctx.fillText(label, node.x!, node.y! + yOffset);
-        }}
-        linkColor={link => {
-          if (selectedNode) {
-            const sourceId =
-              typeof link.source === 'object' ? link.source.id : link.source;
-            const targetId =
-              typeof link.target === 'object' ? link.target.id : link.target;
-            const isConnected =
-              sourceId === selectedNode.id || targetId === selectedNode.id;
-            return isConnected ? highlightEdgeColor : edgeColor;
-          }
-          return edgeColor;
-        }}
-        linkWidth={getEdgeWidth}
-        linkDirectionalArrowLength={0}
-        onNodeHover={node => setHoveredNode(node || null)}
-        onNodeClick={handleNodeClick}
-        onBackgroundClick={handleBackgroundClick}
-        backgroundColor={backgroundColor}
-        cooldownTicks={120}
-        onEngineStop={() => {
-          if (fgRef.current) {
-            if (typeof fgRef.current.zoomToFit === 'function') {
-              fgRef.current.zoomToFit(400);
+            return edgeColor;
+          }}
+          linkWidth={getEdgeWidth}
+          linkDirectionalArrowLength={0}
+          onNodeHover={node => setHoveredNode(node || null)}
+          onNodeClick={handleNodeClick}
+          onBackgroundClick={handleBackgroundClick}
+          backgroundColor={backgroundColor}
+          cooldownTicks={120}
+          onEngineStop={() => {
+            if (fgRef.current) {
+              if (typeof fgRef.current.zoomToFit === 'function') {
+                fgRef.current.zoomToFit(400);
+              }
             }
-          }
-        }}
-        // Responsive sizing
-        width={dimensions.width}
-        height={dimensions.height}
-      />
+          }}
+          // Responsive sizing
+          width={dimensions.width}
+          height={dimensions.height}
+        />
+      </Suspense>
     </Box>
   );
 };

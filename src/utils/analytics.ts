@@ -10,10 +10,8 @@ declare global {
   }
 }
 
-// Get GA4 Measurement ID from environment variables
-const GA_MEASUREMENT_ID =
-  import.meta.env?.VITE_GA_MEASUREMENT_ID ||
-  process.env.REACT_APP_GA_MEASUREMENT_ID;
+// Get GA4 Measurement ID from Vite environment variables
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
 /**
  * Check if user has consented to cookies
