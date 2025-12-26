@@ -27,6 +27,11 @@ const FilterGroup: React.FC<FilterGroupProps> = ({
 }) => {
   if (!labels || labels.length === 0) return null;
 
+  // Count selected labels in this group
+  const selectedCount = labels.filter(label =>
+    selectedLabels.includes(label)
+  ).length;
+
   return (
     <Box>
       <Typography
@@ -42,6 +47,18 @@ const FilterGroup: React.FC<FilterGroupProps> = ({
         }}
       >
         {title}
+        {selectedCount > 0 && (
+          <Box
+            component="span"
+            sx={{
+              ml: 0.5,
+              color: 'primary.main',
+              fontWeight: 700,
+            }}
+          >
+            ({selectedCount} selected)
+          </Box>
+        )}
       </Typography>
       <Stack direction="row" spacing={0.5} flexWrap="wrap" sx={{ gap: 0.5 }}>
         {labels.map((label: string) => {
@@ -77,10 +94,13 @@ const FilterGroup: React.FC<FilterGroupProps> = ({
                 fontSize: '0.75rem',
                 borderRadius: 2,
                 '& .MuiChip-label': { px: 1.5 },
-                transition: 'all 0.2s ease',
+                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 '&:hover': {
-                  transform: 'translateY(-1px)',
-                  boxShadow: 2,
+                  transform: 'translateY(-2px) scale(1.02)',
+                  boxShadow: 3,
+                },
+                '&:active': {
+                  transform: 'translateY(0) scale(0.98)',
                 },
               }}
             />

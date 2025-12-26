@@ -7,8 +7,9 @@ import {
   IconButton,
   Tooltip,
   useMediaQuery,
+  Button,
 } from '@mui/material';
-import { Download, Clear } from '@mui/icons-material';
+import { Download, Clear, SearchOff } from '@mui/icons-material';
 import * as React from 'react';
 import { useMemo, useCallback } from 'react';
 import { useTheme } from '@mui/material/styles';
@@ -24,6 +25,118 @@ import { exportBibtex } from '../utils/exportUtils';
 interface PaperListProps {
   data: Paper[];
 }
+
+// Empty State Component
+interface EmptyStateProps {
+  searchQuery: string;
+  selLabels: string[];
+  onClearFilters: () => void;
+  onClearSearch: () => void;
+}
+
+const EmptyState: React.FC<EmptyStateProps> = ({
+  searchQuery,
+  selLabels,
+  onClearFilters,
+  onClearSearch,
+}) => {
+  const hasSearch = !!searchQuery;
+  const hasFilters = selLabels.length > 0;
+  const hasMultipleFilters = selLabels.length > 1;
+
+  let title = 'No papers found';
+  let message = '';
+  let suggestions: string[] = [];
+
+  if (hasSearch && hasMultipleFilters) {
+    title = 'No exact matches found';
+    message = `No papers match "${searchQuery}" AND have all ${selLabels.length} selected filters.`;
+    suggestions = ['Try using fewer filters', 'Adjust your search terms'];
+  } else if (hasSearch && hasFilters) {
+    title = 'No exact matches found';
+    message = `No papers match "${searchQuery}" AND have the selected filter${selLabels.length > 1 ? 's' : ''}.`;
+    suggestions = ['Try removing the filter', 'Adjust your search terms'];
+  } else if (hasMultipleFilters) {
+    title = 'No papers with all selected filters';
+    message = `No papers have ALL of: ${selLabels.join(', ')}`;
+    suggestions = ['Try selecting fewer filters', 'Filters use AND logic'];
+  } else if (hasFilters) {
+    title = 'No papers with this filter';
+    message = `No papers match the "${selLabels[0]}" filter.`;
+    suggestions = ['Try a different filter'];
+  } else if (hasSearch) {
+    title = 'No matching papers';
+    message = `No papers match "${searchQuery}"`;
+    suggestions = ['Try different keywords', 'Check spelling'];
+  } else {
+    message = 'No papers available in the database.';
+  }
+
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: 400,
+        textAlign: 'center',
+      }}
+    >
+      <Stack spacing={2} alignItems="center" sx={{ maxWidth: 500 }}>
+        <SearchOff sx={{ fontSize: 64, color: 'text.disabled', mb: 1 }} />
+        <Typography variant="h6" color="text.primary" gutterBottom>
+          {title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+          {message}
+        </Typography>
+        {suggestions.length > 0 && (
+          <Stack
+            direction="row"
+            spacing={0.5}
+            flexWrap="wrap"
+            justifyContent="center"
+            sx={{ gap: 0.5, mb: 1 }}
+          >
+            {suggestions.map((s, i) => (
+              <Box
+                key={i}
+                component="span"
+                sx={{
+                  px: 1.5,
+                  py: 0.5,
+                  bgcolor: 'action.hover',
+                  borderRadius: 1,
+                  fontSize: '0.75rem',
+                  color: 'text.secondary',
+                }}
+              >
+                {s}
+              </Box>
+            ))}
+          </Stack>
+        )}
+        <Stack
+          direction="row"
+          spacing={1}
+          justifyContent="center"
+          sx={{ mt: 2 }}
+        >
+          {hasFilters && (
+            <Button onClick={onClearFilters} variant="outlined" size="small">
+              Clear Filters
+            </Button>
+          )}
+          {hasSearch && (
+            <Button onClick={onClearSearch} variant="outlined" size="small">
+              Clear Search
+            </Button>
+          )}
+        </Stack>
+      </Stack>
+    </Box>
+  );
+};
 
 const PaperList: React.FC<PaperListProps> = ({ data }) => {
   const theme = useTheme();
@@ -131,21 +244,41 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
               <Stack direction="row" spacing={0.5}>
                 {/* Clear filters button */}
                 {(searchQuery || selLabels.length > 0) && (
-                  <Tooltip title="Clear all filters">
-                    <IconButton
-                      size="small"
-                      onClick={handleClearFilters}
-                      sx={{
-                        color: 'secondary.main',
-                        '&:hover': {
-                          bgcolor: 'secondary.light',
-                          color: 'secondary.contrastText',
-                        },
-                      }}
-                    >
-                      <Clear fontSize="small" />
-                    </IconButton>
-                  </Tooltip>
+                  <>
+                    {isDesktop ? (
+                      <Button
+                        size="medium"
+                        startIcon={<Clear />}
+                        onClick={handleClearFilters}
+                        sx={{
+                          color: 'secondary.main',
+                          fontWeight: 500,
+                          '&:hover': {
+                            bgcolor: 'secondary.light',
+                            color: 'secondary.contrastText',
+                          },
+                        }}
+                      >
+                        Clear Filters
+                      </Button>
+                    ) : (
+                      <Tooltip title="Clear all filters">
+                        <IconButton
+                          size="small"
+                          onClick={handleClearFilters}
+                          sx={{
+                            color: 'secondary.main',
+                            '&:hover': {
+                              bgcolor: 'secondary.light',
+                              color: 'secondary.contrastText',
+                            },
+                          }}
+                        >
+                          <Clear fontSize="small" />
+                        </IconButton>
+                      </Tooltip>
+                    )}
+                  </>
                 )}
 
                 {/* Export BibTeX button */}
@@ -177,27 +310,12 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
         <Fade in timeout={1200}>
           <Box>
             {sortedData.length === 0 ? (
-              <Box
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  minHeight: 400,
-                  textAlign: 'center',
-                  color: 'text.secondary',
-                }}
-              >
-                <Stack spacing={2} alignItems="center">
-                  <Typography variant="h6" color="text.secondary">
-                    {searchQuery || selLabels.length > 0
-                      ? 'No papers match your search criteria.'
-                      : 'No papers available.'}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Try adjusting your search terms or filters.
-                  </Typography>
-                </Stack>
-              </Box>
+              <EmptyState
+                searchQuery={searchQuery}
+                selLabels={selLabels}
+                onClearFilters={handleClearFilters}
+                onClearSearch={() => setSearchQuery('')}
+              />
             ) : (
               <Stack spacing={1}>
                 {sortedData.map((paper, index) => (

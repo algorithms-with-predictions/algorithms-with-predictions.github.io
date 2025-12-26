@@ -12,11 +12,11 @@ import type { PaperCardProps } from './PaperCard';
 const StyledCard = styled(Card)(({ theme }) => ({
   borderRadius: 2,
   border: `1px solid ${theme.palette.divider}`,
-  transition: 'all 0.2s ease',
+  transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
   margin: 0,
   '&:hover': {
-    transform: 'translateY(-1px)',
-    boxShadow: theme.shadows[4],
+    transform: 'translateY(-2px)',
+    boxShadow: theme.shadows[6],
     borderColor: theme.palette.primary.main,
     zIndex: 1,
   },

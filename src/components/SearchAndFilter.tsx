@@ -7,6 +7,7 @@ import {
   Stack,
   Collapse,
   Tooltip,
+  Alert,
 } from '@mui/material';
 import { Search, Clear, FilterList } from '@mui/icons-material';
 import { trackSearch } from '../utils/analytics.js';
@@ -104,6 +105,10 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
                           color: isKeywordSelectOpen
                             ? 'primary.main'
                             : 'action.active',
+                          transform: isKeywordSelectOpen
+                            ? 'rotate(180deg)'
+                            : 'rotate(0)',
+                          transition: 'all 0.3s ease',
                           '&:hover': {
                             color: 'primary.main',
                             bgcolor: 'action.hover',
@@ -176,6 +181,23 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
                     trackCategory="regular_label"
                   />
                 </Stack>
+
+                {/* Filter Logic Indicator */}
+                {selectedLabels.length > 1 && (
+                  <Alert
+                    severity="info"
+                    sx={{
+                      mt: 1.5,
+                      py: 0.5,
+                      fontSize: '0.75rem',
+                      '& .MuiAlert-message': {
+                        fontSize: '0.75rem',
+                      },
+                    }}
+                  >
+                    Showing papers with ALL selected filters (AND logic)
+                  </Alert>
+                )}
               </Box>
             </Collapse>
           </Box>

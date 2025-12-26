@@ -77,12 +77,38 @@ export const createCustomTheme = (mode: ThemeMode) => {
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
       h1: {
         fontWeight: 600,
+        letterSpacing: '-0.01em',
       },
       h2: {
         fontWeight: 600,
+        letterSpacing: '-0.01em',
       },
       h5: {
         fontWeight: 600,
+      },
+      h6: {
+        fontWeight: 600,
+        fontSize: '1.1rem',
+      },
+      subtitle1: {
+        fontWeight: 500,
+        fontSize: '1rem',
+      },
+      subtitle2: {
+        fontWeight: 500,
+        fontSize: '0.9rem',
+      },
+      body1: {
+        fontSize: '1rem',
+        lineHeight: 1.6,
+      },
+      body2: {
+        fontSize: '0.875rem',
+        lineHeight: 1.5,
+      },
+      caption: {
+        fontSize: '0.75rem',
+        lineHeight: 1.4,
       },
     },
     shape: {

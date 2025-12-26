@@ -90,7 +90,16 @@ const StatCard: React.FC<StatCardProps> = ({
   tertiaryTitle,
   tertiaryIcon,
 }) => (
-  <Card sx={{ height: '100%', borderRadius: 2 }}>
+  <Card
+    elevation={0}
+    sx={{
+      height: '100%',
+      borderRadius: 2,
+      border: 1,
+      borderColor: 'divider',
+      transition: 'all 0.3s ease',
+    }}
+  >
     <CardContent sx={{ py: { xs: 1.5, sm: 2 }, px: { xs: 1.5, sm: 2 } }}>
       <Stack spacing={{ xs: 0.5, sm: 1 }}>
         {/* Mobile: Horizontal layout, Desktop: Vertical layout */}
@@ -164,7 +173,16 @@ const TopVenuesCard: React.FC<TopVenuesCardProps> = ({ venues }) => {
   const maxCount = venues.length > 0 ? venues[0]?.count || 1 : 1;
 
   return (
-    <Card sx={{ height: '100%', borderRadius: 2 }}>
+    <Card
+      elevation={0}
+      sx={{
+        height: '100%',
+        borderRadius: 2,
+        border: 1,
+        borderColor: 'divider',
+        transition: 'all 0.3s ease',
+      }}
+    >
       <CardContent
         sx={{
           height: '100%',
@@ -287,7 +305,16 @@ const YearDistributionChart: React.FC<YearDistributionChartProps> = ({
   const years = Object.keys(yearData).sort((a, b) => parseInt(a) - parseInt(b));
 
   return (
-    <Card sx={{ height: '100%', borderRadius: 2 }}>
+    <Card
+      elevation={0}
+      sx={{
+        height: '100%',
+        borderRadius: 2,
+        border: 1,
+        borderColor: 'divider',
+        transition: 'all 0.3s ease',
+      }}
+    >
       <CardContent
         sx={{
           height: '100%',
