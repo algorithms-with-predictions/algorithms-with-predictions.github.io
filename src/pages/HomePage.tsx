@@ -1,5 +1,5 @@
 import { Box, CircularProgress, Typography } from '@mui/material';
-import PaperList from '../components/paperlist.jsx';
+import PaperList from '../components/paperlist';
 import { usePapersData } from '../hooks/usePapersData';
 
 const HomePage: React.FC = () => {

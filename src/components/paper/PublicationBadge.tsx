@@ -1,7 +1,7 @@
 import { Chip, Tooltip } from '@mui/material';
 import { trackEvent } from '../../utils/analytics';
 import { openInNewTab } from '../../utils/paperUtils';
-import type { Publication } from './PaperCard';
+import type { Publication } from '@/types/paper';
 
 interface PublicationBadgeProps {
   publication: Publication;

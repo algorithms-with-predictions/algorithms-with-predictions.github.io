@@ -2,7 +2,7 @@ import { IconButton, Tooltip } from '@mui/material';
 import { ContentCopy } from '@mui/icons-material';
 import { trackEvent } from '../../utils/analytics';
 import { getBibtexEntries, getMainPublication } from '../../utils/paperUtils';
-import type { Publication } from './PaperCard';
+import type { Publication } from '@/types/paper';
 
 interface BibtexCopyButtonProps {
   publications?: Publication[] | undefined;

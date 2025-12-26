@@ -2,9 +2,9 @@ import React, { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Box, CircularProgress } from '@mui/material';
 import { ThemeContextProvider } from './contexts/ThemeContext';
-import Layout from './components/layout.jsx';
-import ErrorBoundary from './components/ErrorBoundary.jsx';
-import CookieConsent from './components/CookieConsent.jsx';
+import Layout from './components/layout';
+import ErrorBoundary from './components/ErrorBoundary';
+import CookieConsent from './components/CookieConsent';
 import { trackPageView } from './utils/analytics';
 import { useCookieConsent } from './hooks/useCookieConsent';
 

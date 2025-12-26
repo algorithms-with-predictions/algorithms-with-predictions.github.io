@@ -1,5 +1,5 @@
 import { Container, Box, CircularProgress, Alert } from '@mui/material';
-import EnhancedMarkdownContent from '../components/EnhancedMarkdownContent.jsx';
+import EnhancedMarkdownContent from '../components/EnhancedMarkdownContent';
 import { useMarkdownContent } from '../hooks/useMarkdownContent';
 
 const MaterialPage = () => {

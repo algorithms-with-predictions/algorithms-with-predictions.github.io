@@ -1,6 +1,6 @@
-import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import LabelChip from '../LabelChip';
 
@@ -26,7 +26,7 @@ const theme = createTheme({
   },
 });
 
-const renderWithTheme = component => {
+const renderWithTheme = (component: React.ReactElement) => {
   return render(<ThemeProvider theme={theme}>{component}</ThemeProvider>);
 };
 

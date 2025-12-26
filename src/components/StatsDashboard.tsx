@@ -10,6 +10,7 @@ import {
 import { School, People, Business } from '@mui/icons-material';
 import type { SvgIconComponent } from '@mui/icons-material';
 import { calculateStats } from '../utils/statsUtils';
+import type { Paper } from '@/types/paper';
 
 interface MetricItemProps {
   icon: SvgIconComponent;
@@ -393,18 +394,6 @@ const YearDistributionChart: React.FC<YearDistributionChartProps> = ({
     </Card>
   );
 };
-
-interface Paper {
-  title?: string;
-  authors?: string | string[];
-  labels?: string[];
-  publications?: Array<{
-    name: string;
-    year?: number;
-    url?: string;
-    bibtex?: string;
-  }>;
-}
 
 interface StatsDashboardProps {
   data: Paper[];
