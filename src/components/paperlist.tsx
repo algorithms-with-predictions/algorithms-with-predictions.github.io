@@ -209,14 +209,12 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
                       ? `No papers match the selected filters. Try selecting different labels.`
                       : 'No papers available in the database.'
                 }
-                action={
-                  searchQuery || selLabels.length > 0
-                    ? {
-                        label: 'Clear Filters',
-                        onClick: handleClearFilters,
-                      }
-                    : undefined
-                }
+                {...((searchQuery || selLabels.length > 0) && {
+                  action: {
+                    label: 'Clear Filters',
+                    onClick: handleClearFilters,
+                  },
+                })}
               />
             ) : (
               <Stack spacing={1}>
