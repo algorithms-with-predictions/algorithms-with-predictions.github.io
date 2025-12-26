@@ -83,9 +83,22 @@ export const SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL] as const;
  * - Current settings maintain 30+ FPS on modern browsers
  */
 export const GRAPH_CONFIG = {
-  CHARGE_STRENGTH: -150,
-  LINK_DISTANCE_BASE: 50,
-  LINK_DISTANCE_FACTOR: 20,
+  /** Node repulsion strength - more negative = more spread */
+  CHARGE_STRENGTH: -300,
+  /** Base distance between linked nodes */
+  LINK_DISTANCE_BASE: 80,
+  /** Additional distance per collaboration */
+  LINK_DISTANCE_FACTOR: 15,
+  /** Collision radius multiplier - prevents node overlap */
+  COLLISION_RADIUS_MULTIPLIER: 2.5,
+  /** Collision force strength (0-1) */
+  COLLISION_STRENGTH: 0.8,
+  /** Simulation warmup ticks for initial layout */
+  WARMUP_TICKS: 200,
+  /** Alpha decay rate - lower = longer simulation */
+  ALPHA_DECAY: 0.01,
+  /** Velocity decay - higher = more damping */
+  VELOCITY_DECAY: 0.3,
   EDGE_MIN_WIDTH: 1,
   EDGE_MAX_WIDTH: 8,
 } as const;

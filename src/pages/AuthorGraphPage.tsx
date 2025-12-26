@@ -21,6 +21,7 @@ import { useThemeMode } from '../contexts/ThemeContext';
 import { GRAPH_CONFIG } from '../constants';
 import type { AuthorNode, CollaborationLink } from '../utils/graphUtils';
 import type { ForceLink, ForceManyBody } from 'd3-force';
+import * as d3Force from 'd3-force';
 
 // Code-split react-force-graph-2d (only loaded when AuthorGraphPage is visited)
 // This library is large (~200KB) and only used on this page
@@ -49,19 +50,19 @@ const AuthorGraphPage: React.FC = () => {
     return buildAuthorGraph(data);
   }, [data]);
 
-  // Configure d3 forces to minimize edge crossings
+  // Configure d3 forces for a well-spread, planar layout
   useEffect(() => {
     if (!graphData || !fgRef.current) return;
 
     const fg = fgRef.current;
 
-    // Increase repulsion (charge) to spread nodes apart and reduce crossings
+    // Configure charge (repulsion) - stronger to spread nodes apart
     const chargeForce = fg.d3Force('charge') as
       | ForceManyBody<AuthorNode>
       | undefined;
     chargeForce?.strength(GRAPH_CONFIG.CHARGE_STRENGTH);
 
-    // Increase link distance to give edges more room
+    // Configure link distance
     const linkForce = fg.d3Force('link') as
       | ForceLink<AuthorNode, CollaborationLink>
       | undefined;
@@ -69,6 +70,23 @@ const AuthorGraphPage: React.FC = () => {
       (link: CollaborationLink) =>
         GRAPH_CONFIG.LINK_DISTANCE_BASE +
         (link.value || 1) * GRAPH_CONFIG.LINK_DISTANCE_FACTOR
+    );
+
+    // Add collision force to prevent node overlap
+    // Radius based on node size (which is based on paper count)
+    const getNodeRadius = (node: AuthorNode) =>
+      Math.sqrt(Math.sqrt(node.paperCount)) *
+        3 *
+        GRAPH_CONFIG.COLLISION_RADIUS_MULTIPLIER +
+      5;
+
+    fg.d3Force(
+      'collision',
+      d3Force
+        .forceCollide<AuthorNode>()
+        .radius(getNodeRadius)
+        .strength(GRAPH_CONFIG.COLLISION_STRENGTH)
+        .iterations(3)
     );
 
     fg.d3ReheatSimulation();
@@ -266,7 +284,9 @@ const AuthorGraphPage: React.FC = () => {
           onNodeClick={handleNodeClick}
           onBackgroundClick={handleBackgroundClick}
           backgroundColor={backgroundColor}
-          cooldownTicks={120}
+          cooldownTicks={GRAPH_CONFIG.WARMUP_TICKS}
+          d3AlphaDecay={GRAPH_CONFIG.ALPHA_DECAY}
+          d3VelocityDecay={GRAPH_CONFIG.VELOCITY_DECAY}
           onEngineStop={() => {
             if (fgRef.current) {
               if (typeof fgRef.current.zoomToFit === 'function') {
