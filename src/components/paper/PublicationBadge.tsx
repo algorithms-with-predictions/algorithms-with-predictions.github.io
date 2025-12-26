@@ -51,6 +51,7 @@ const PublicationBadge: React.FC<PublicationBadgeProps> = ({
           transition: 'transform 0.2s',
           height: 20,
           fontSize: '0.75rem',
+          fontWeight: 600,
         }}
       />
     </Tooltip>

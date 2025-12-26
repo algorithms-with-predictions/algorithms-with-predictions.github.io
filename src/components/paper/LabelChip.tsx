@@ -59,11 +59,18 @@ const LabelChip: React.FC<LabelChipProps> = ({
         fontSize: '0.75rem',
         height: 22,
         cursor: 'pointer',
-        transition: 'all 0.2s ease',
+        transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
         '&:hover': {
           transform: 'scale(1.05)',
           boxShadow: 2,
         },
+        '&:active': {
+          transform: 'scale(0.98)',
+        },
+        ...(isSelected && {
+          fontWeight: 600,
+          boxShadow: 1,
+        }),
       }}
     />
   );

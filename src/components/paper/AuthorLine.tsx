@@ -1,6 +1,6 @@
-import { Typography } from '@mui/material';
+import { Typography, Tooltip } from '@mui/material';
 import type { SxProps, Theme } from '@mui/material';
-import { formatAuthors } from '../../utils/paperUtils';
+import { formatAuthors, getFullAuthorList } from '../../utils/paperUtils';
 
 interface AuthorLineProps {
   authors?: string | string[] | undefined;
@@ -8,10 +8,16 @@ interface AuthorLineProps {
 }
 
 /**
- * Formatted author line component
+ * Formatted author line component with truncation and tooltip
  */
 const AuthorLine: React.FC<AuthorLineProps> = ({ authors, sx = {} }) => {
-  return (
+  const formattedAuthors = formatAuthors(authors);
+  const fullAuthorList = getFullAuthorList(authors);
+
+  // Show tooltip if authors are truncated
+  const showTooltip = formattedAuthors !== fullAuthorList;
+
+  const authorText = (
     <Typography
       variant="caption"
       color="text.secondary"
@@ -21,9 +27,19 @@ const AuthorLine: React.FC<AuthorLineProps> = ({ authors, sx = {} }) => {
         ...sx,
       }}
     >
-      By {formatAuthors(authors)}
+      By {formattedAuthors}
     </Typography>
   );
+
+  if (showTooltip) {
+    return (
+      <Tooltip title={fullAuthorList} placement="top" arrow>
+        {authorText}
+      </Tooltip>
+    );
+  }
+
+  return authorText;
 };
 
 export default AuthorLine;

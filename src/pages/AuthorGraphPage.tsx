@@ -7,7 +7,13 @@ import {
   lazy,
   Suspense,
 } from 'react';
-import { Box, Typography, CircularProgress, useTheme } from '@mui/material';
+import {
+  Box,
+  Typography,
+  Skeleton,
+  useTheme,
+  CircularProgress,
+} from '@mui/material';
 import type { ForceGraphMethods } from 'react-force-graph-2d';
 import { usePapersData } from '../hooks/usePapersData';
 import { buildAuthorGraph } from '../utils/graphUtils';
@@ -110,11 +116,14 @@ const AuthorGraphPage: React.FC = () => {
     return (
       <Box
         display="flex"
+        flexDirection="column"
         justifyContent="center"
         alignItems="center"
         minHeight="60vh"
+        gap={2}
       >
-        <CircularProgress />
+        <Skeleton variant="circular" width={60} height={60} />
+        <Skeleton variant="text" width={200} height={24} />
       </Box>
     );
   }

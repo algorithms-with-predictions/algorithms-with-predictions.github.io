@@ -257,11 +257,14 @@ const TopVenuesCard: React.FC<TopVenuesCardProps> = ({ venues }) => {
                   },
                   backgroundColor: theme => theme.palette.secondary.main,
                   borderRadius: '4px 4px 0 0',
-                  transition: 'all 0.3s ease',
+                  transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+                  cursor: 'pointer',
                   '&:hover': {
                     backgroundColor: theme => theme.palette.secondary.dark,
                     transform: 'scaleY(1.05)',
                     transformOrigin: 'bottom',
+                    filter: 'brightness(1.1)',
+                    boxShadow: '0 -2px 8px rgba(0,0,0,0.15)',
                   },
                 }}
               />
@@ -390,11 +393,14 @@ const YearDistributionChart: React.FC<YearDistributionChartProps> = ({
                   },
                   backgroundColor: theme => theme.palette.primary.main,
                   borderRadius: '4px 4px 0 0',
-                  transition: 'all 0.3s ease',
+                  transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+                  cursor: 'pointer',
                   '&:hover': {
                     backgroundColor: theme => theme.palette.primary.dark,
                     transform: 'scaleY(1.05)',
                     transformOrigin: 'bottom',
+                    filter: 'brightness(1.1)',
+                    boxShadow: '0 -2px 8px rgba(0,0,0,0.15)',
                   },
                 }}
               />

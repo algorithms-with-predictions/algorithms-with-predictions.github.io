@@ -12,13 +12,10 @@ import type { PaperCardProps } from './PaperCard';
 const StyledCard = styled(Card)(({ theme }) => ({
   borderRadius: 2,
   border: `1px solid ${theme.palette.divider}`,
-  transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
   margin: 0,
   '&:hover': {
-    transform: 'translateY(-2px)',
-    boxShadow: theme.shadows[6],
     borderColor: theme.palette.primary.main,
-    zIndex: 1,
   },
 }));
 
@@ -45,21 +42,30 @@ const PaperCardDesktop: React.FC<PaperCardProps> = ({
 
   return (
     <StyledCard>
-      <CardContent sx={{ py: 0.5, px: 1, '&:last-child': { pb: 0.5 } }}>
+      <CardContent sx={{ py: 1, px: 2, '&:last-child': { pb: 1 } }}>
         <Stack
           direction="row"
           justifyContent="space-between"
           alignItems="flex-start"
+          spacing={2}
         >
-          <Box sx={{ flex: 1, pr: 1 }}>
+          <Box sx={{ flex: 1 }}>
             {/* Title and labels inline */}
             <Stack
               direction="row"
               alignItems="center"
               spacing={0.5}
-              sx={{ flexWrap: 'wrap', gap: 0.5 }}
+              sx={{ flexWrap: 'wrap', gap: 0.5, mb: 0.5 }}
             >
-              <PaperTitle variant="subtitle1" sx={{ display: 'inline', mb: 0 }}>
+              <PaperTitle
+                variant="subtitle1"
+                sx={{
+                  display: 'inline',
+                  mb: 0,
+                  fontWeight: 600,
+                  lineHeight: 1.3,
+                }}
+              >
                 {paper.title}
               </PaperTitle>
 

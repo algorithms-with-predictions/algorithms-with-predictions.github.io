@@ -76,6 +76,7 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
           onChange={handleInputChange}
           inputProps={{
             'aria-label': 'Search papers by title, authors, or keywords',
+            'data-search-bar': true,
           }}
           InputProps={{
             startAdornment: (
@@ -133,11 +134,13 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
             '& .MuiOutlinedInput-root': {
               borderRadius: 2,
               backgroundColor: 'background.paper',
+              transition: 'all 0.3s ease',
               '&:hover': {
                 boxShadow: theme => theme.shadows[1],
               },
               '&.Mui-focused': {
-                boxShadow: theme => theme.shadows[2],
+                boxShadow: theme =>
+                  `0 0 0 3px ${theme.palette.mode === 'dark' ? 'rgba(66, 165, 245, 0.1)' : 'rgba(25, 118, 210, 0.1)'}, ${theme.shadows[2]}`,
               },
             },
           }}

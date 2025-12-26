@@ -4,9 +4,36 @@ import type { Publication } from '@/types';
  * Format authors for display
  *
  * @param authors - Authors as string or array
+ * @param maxAuthors - Maximum number of authors to display before truncating (default: 3)
  * @returns Formatted author string
  */
 export const formatAuthors = (
+  authors: string | string[] | undefined,
+  maxAuthors: number = 3
+): string => {
+  if (!authors) return 'Unknown authors';
+
+  if (typeof authors === 'string') return authors;
+
+  const authorArray = authors;
+
+  if (authorArray.length <= maxAuthors) {
+    return authorArray.join(', ');
+  }
+
+  // Show first maxAuthors + count of remaining
+  const firstAuthors = authorArray.slice(0, maxAuthors).join(', ');
+  const remaining = authorArray.length - maxAuthors;
+  return `${firstAuthors} and ${remaining} more`;
+};
+
+/**
+ * Get full author list for tooltip (without truncation)
+ *
+ * @param authors - Authors as string or array
+ * @returns Full author string
+ */
+export const getFullAuthorList = (
   authors: string | string[] | undefined
 ): string => {
   if (!authors) return 'Unknown authors';
