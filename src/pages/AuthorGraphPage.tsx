@@ -50,11 +50,17 @@ const AuthorGraphPage: React.FC = () => {
     return buildAuthorGraph(data);
   }, [data]);
 
-  // Configure d3 forces for a well-spread, planar layout
-  useEffect(() => {
-    if (!graphData || !fgRef.current) return;
+  // Track if forces have been configured for this render cycle
+  const forcesConfiguredRef = useRef(false);
+  // Track if initial zoom has been done
+  const initialZoomDoneRef = useRef(false);
 
+  // Configure forces - called on first tick after mount/update
+  const configureForces = useCallback(() => {
     const fg = fgRef.current;
+    if (!fg || forcesConfiguredRef.current) return;
+
+    forcesConfiguredRef.current = true;
 
     // Configure charge (repulsion) - stronger to spread nodes apart
     const chargeForce = fg.d3Force('charge') as
@@ -89,8 +95,69 @@ const AuthorGraphPage: React.FC = () => {
         .iterations(3)
     );
 
+    // Restart simulation with properly configured forces
     fg.d3ReheatSimulation();
-  }, [graphData]);
+  }, [
+    // Include config values so callback updates on HMR
+    GRAPH_CONFIG.CHARGE_STRENGTH,
+    GRAPH_CONFIG.LINK_DISTANCE_BASE,
+    GRAPH_CONFIG.LINK_DISTANCE_FACTOR,
+    GRAPH_CONFIG.COLLISION_RADIUS_MULTIPLIER,
+    GRAPH_CONFIG.COLLISION_STRENGTH,
+  ]);
+
+  // Enforce boundaries on every tick - only prevents nodes from flying to infinity
+  const enforceBoundaries = useCallback(() => {
+    if (!graphData) return;
+
+    // Use a large boundary - just prevent infinite escape, not tight containment
+    const maxDistance = 2000;
+    const strength = GRAPH_CONFIG.BOUNDARY_STRENGTH;
+
+    for (const node of graphData.nodes) {
+      if (node.x !== undefined && node.y !== undefined) {
+        const dist = Math.sqrt(node.x * node.x + node.y * node.y);
+
+        // Only apply force when nodes go beyond maxDistance
+        if (dist > maxDistance) {
+          const factor = ((dist - maxDistance) / dist) * strength * 0.1;
+          node.vx = (node.vx || 0) - node.x * factor;
+          node.vy = (node.vy || 0) - node.y * factor;
+
+          // Hard clamp at 3000 to absolutely prevent escape
+          if (dist > 3000) {
+            const scale = 3000 / dist;
+            node.x *= scale;
+            node.y *= scale;
+          }
+        }
+      }
+    }
+  }, [graphData, GRAPH_CONFIG.BOUNDARY_STRENGTH]);
+
+  // Combined tick handler - configure forces on first tick, enforce boundaries on all ticks
+  const handleEngineTick = useCallback(() => {
+    configureForces();
+    enforceBoundaries();
+  }, [configureForces, enforceBoundaries]);
+
+  // Reset forces configured flag when constants change (for HMR support)
+  useEffect(() => {
+    forcesConfiguredRef.current = false;
+    initialZoomDoneRef.current = false;
+    if (fgRef.current) {
+      configureForces();
+    }
+  }, [
+    configureForces,
+    // Include all config values to trigger reconfiguration on HMR
+    GRAPH_CONFIG.CHARGE_STRENGTH,
+    GRAPH_CONFIG.LINK_DISTANCE_BASE,
+    GRAPH_CONFIG.LINK_DISTANCE_FACTOR,
+    GRAPH_CONFIG.COLLISION_RADIUS_MULTIPLIER,
+    GRAPH_CONFIG.COLLISION_STRENGTH,
+    GRAPH_CONFIG.BOUNDARY_STRENGTH,
+  ]);
 
   // Handle window resize
   useEffect(() => {
@@ -213,6 +280,7 @@ const AuthorGraphPage: React.FC = () => {
         }
       >
         <ForceGraph2D
+          key={graphData ? 'loaded' : 'empty'}
           ref={fgRef}
           graphData={graphData}
           nodeLabel={(node: AuthorNode) => `${node.name}`}
@@ -284,11 +352,15 @@ const AuthorGraphPage: React.FC = () => {
           onNodeClick={handleNodeClick}
           onBackgroundClick={handleBackgroundClick}
           backgroundColor={backgroundColor}
+          warmupTicks={0}
           cooldownTicks={GRAPH_CONFIG.WARMUP_TICKS}
           d3AlphaDecay={GRAPH_CONFIG.ALPHA_DECAY}
           d3VelocityDecay={GRAPH_CONFIG.VELOCITY_DECAY}
+          onEngineTick={handleEngineTick}
           onEngineStop={() => {
-            if (fgRef.current) {
+            // Only zoom to fit once on initial load
+            if (!initialZoomDoneRef.current && fgRef.current) {
+              initialZoomDoneRef.current = true;
               if (typeof fgRef.current.zoomToFit === 'function') {
                 fgRef.current.zoomToFit(400);
               }

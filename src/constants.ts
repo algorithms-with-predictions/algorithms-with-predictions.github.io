@@ -84,21 +84,23 @@ export const SPECIAL_LABELS = [...TYPE_LABELS, PRIOR_LABEL] as const;
  */
 export const GRAPH_CONFIG = {
   /** Node repulsion strength - more negative = more spread */
-  CHARGE_STRENGTH: -300,
+  CHARGE_STRENGTH: -75,
   /** Base distance between linked nodes */
-  LINK_DISTANCE_BASE: 80,
+  LINK_DISTANCE_BASE: 5,
   /** Additional distance per collaboration */
-  LINK_DISTANCE_FACTOR: 15,
+  LINK_DISTANCE_FACTOR: 2,
   /** Collision radius multiplier - prevents node overlap */
-  COLLISION_RADIUS_MULTIPLIER: 2.5,
+  COLLISION_RADIUS_MULTIPLIER: 5,
   /** Collision force strength (0-1) */
   COLLISION_STRENGTH: 0.8,
   /** Simulation warmup ticks for initial layout */
-  WARMUP_TICKS: 200,
+  WARMUP_TICKS: 500,
   /** Alpha decay rate - lower = longer simulation */
   ALPHA_DECAY: 0.01,
   /** Velocity decay - higher = more damping */
-  VELOCITY_DECAY: 0.3,
+  VELOCITY_DECAY: 0.4,
+  /** Boundary force strength - keeps nodes within viewport */
+  BOUNDARY_STRENGTH: 0.7,
   EDGE_MIN_WIDTH: 1,
   EDGE_MAX_WIDTH: 8,
 } as const;
