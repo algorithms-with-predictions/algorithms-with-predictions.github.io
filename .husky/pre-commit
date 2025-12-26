@@ -1,1 +1,4 @@
 npx lint-staged
+npm run type-check
+npm audit --audit-level=moderate
+npm run test
