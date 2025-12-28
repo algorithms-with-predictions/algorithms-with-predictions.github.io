@@ -1,14 +1,45 @@
 import { IconButton, Tooltip } from '@mui/material';
-import { Brightness4, Brightness7 } from '@mui/icons-material';
+import {
+  Brightness4,
+  Brightness7,
+  SettingsBrightness,
+} from '@mui/icons-material';
 import { useThemeMode } from '../contexts/ThemeContext';
 
+const getNextMode = (mode: 'light' | 'dark' | 'system'): string => {
+  switch (mode) {
+    case 'light':
+      return 'dark';
+    case 'dark':
+      return 'system';
+    case 'system':
+      return 'light';
+    default:
+      return 'dark';
+  }
+};
+
+const getModeIcon = (mode: 'light' | 'dark' | 'system'): React.ReactNode => {
+  switch (mode) {
+    case 'light':
+      return <Brightness7 />;
+    case 'dark':
+      return <Brightness4 />;
+    case 'system':
+      return <SettingsBrightness />;
+    default:
+      return <Brightness7 />;
+  }
+};
+
 const ThemeToggle: React.FC = () => {
-  const { mode, toggleTheme } = useThemeMode();
+  const { mode, cycleTheme } = useThemeMode();
+  const nextMode = getNextMode(mode);
 
   return (
-    <Tooltip title={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}>
+    <Tooltip title={`${mode} mode (click for ${nextMode})`}>
       <IconButton
-        onClick={toggleTheme}
+        onClick={cycleTheme}
         color="inherit"
         sx={{
           ml: 1,
@@ -17,9 +48,9 @@ const ThemeToggle: React.FC = () => {
             transform: 'rotate(180deg)',
           },
         }}
-        aria-label={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}
+        aria-label={`Current: ${mode} mode. Switch to ${nextMode} mode`}
       >
-        {mode === 'light' ? <Brightness4 /> : <Brightness7 />}
+        {getModeIcon(mode)}
       </IconButton>
     </Tooltip>
   );

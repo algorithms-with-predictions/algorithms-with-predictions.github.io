@@ -2,14 +2,19 @@ import { createTheme } from '@mui/material/styles';
 import { grey, blue, orange } from '@mui/material/colors';
 
 /**
- * Theme mode type
+ * Theme mode type (user preference)
  */
-export type ThemeMode = 'light' | 'dark';
+export type ThemeMode = 'light' | 'dark' | 'system';
+
+/**
+ * Resolved theme mode (actual theme applied)
+ */
+export type ResolvedThemeMode = 'light' | 'dark';
 
 /**
  * Creates a custom Material-UI theme with consistent blue-orange color palette
  *
- * @param mode - 'light' or 'dark' theme mode
+ * @param mode - 'light' or 'dark' resolved theme mode
  * @returns MUI Theme object with custom color palette and component overrides
  *
  * Features:
@@ -19,7 +24,7 @@ export type ThemeMode = 'light' | 'dark';
  * - Markdown link styling
  * - Dark mode optimized backgrounds
  */
-export const createCustomTheme = (mode: ThemeMode) => {
+export const createCustomTheme = (mode: ResolvedThemeMode) => {
   const isDark = mode === 'dark';
 
   return createTheme({
