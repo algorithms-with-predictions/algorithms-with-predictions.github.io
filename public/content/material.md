@@ -60,6 +60,9 @@ slug: '/material'
 
 ## PhD Schools
 
+- **PhD School at SOFSEM'26**
+  [Introduction to Algorithms with Predictions](https://sofsem.uj.edu.pl/phdschool.html),
+  _Kraków, Poland, February 2026_
 - **PhD School at CWI**
   [Machine Learning and Optimization](https://www.cwi.nl/en/events/cwi-research-semester-programmes/phd-school-machine-learning-and-optimization/),
   _CWI, Amsterdam, The Netherlands, September 2025_

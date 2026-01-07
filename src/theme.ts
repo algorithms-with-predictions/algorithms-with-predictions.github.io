@@ -161,20 +161,16 @@ export const createCustomTheme = (mode: ResolvedThemeMode) => {
         styleOverrides: {
           a: {
             color: isDark ? '#64B5F6' : '#1976D2',
-            textDecoration: 'underline',
-            textDecorationColor: 'rgba(100, 181, 246, 0.4)',
-            transition:
-              'color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out',
+            textDecoration: 'none',
+            transition: 'color 0.2s ease-in-out',
             '&:hover': {
               color: isDark ? '#90CAF9' : '#1565C0',
-              textDecoration: 'underline',
-              textDecorationColor: isDark ? '#90CAF9' : '#1565C0',
             },
             '&:visited': {
-              color: isDark ? '#BA68C8' : '#7B1FA2',
+              color: isDark ? '#64B5F6' : '#1976D2',
             },
             '&:visited:hover': {
-              color: isDark ? '#CE93D8' : '#8E24AA',
+              color: isDark ? '#90CAF9' : '#1565C0',
             },
           },
         },

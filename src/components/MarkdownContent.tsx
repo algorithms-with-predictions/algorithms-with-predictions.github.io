@@ -95,7 +95,6 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => {
               color="primary"
               sx={{
                 textDecoration: 'none',
-                '&:hover': { textDecoration: 'underline' },
               }}
             >
               {children}

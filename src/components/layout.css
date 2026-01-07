@@ -2,13 +2,6 @@
 .markdown-content a,
 div[dangerouslySetInnerHTML] a {
   font-weight: 500;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 2px;
-}
-
-.markdown-content a:hover,
-div[dangerouslySetInnerHTML] a:hover {
-  text-decoration-thickness: 2px;
 }
 
 /* External link indicator */

@@ -291,12 +291,8 @@ const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
                   color: 'primary.main',
                   textDecoration: 'none',
                   fontWeight: 500,
-                  borderBottom: theme =>
-                    `2px solid ${theme.palette.primary.light}`,
-                  paddingBottom: '1px',
                   transition: 'all 0.2s ease',
                   '&:hover': {
-                    borderBottomColor: 'primary.main',
                     color: 'primary.dark',
                   },
                   '&:after': {
