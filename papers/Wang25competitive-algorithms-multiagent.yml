@@ -1,0 +1,24 @@
+title: Competitive Algorithms for Multi-Agent Ski-Rental Problems
+authors: Wang, Sun, Beyhaghi, Lui, Hajiesmaili, Wierman
+year: 2025
+s2_id: 3eb8fcfd4985e6314e6cdef463b28ae5b5a20ddd
+abstract: 'This paper introduces a novel multi-agent ski-rental problem that generalizes
+  the classical ski-rental dilemma to a group setting where agents incur individual
+  and shared costs. In our model, each agent can either rent at a fixed daily cost,
+  or purchase a pass at an individual cost, with an additional third option of a discounted
+  group pass available to all. We consider scenarios in which agents''active days
+  differ, leading to dynamic states as agents drop out of the decision process. To
+  address this problem from different perspectives, we define three distinct competitive
+  ratios: overall, state-dependent, and individual rational. For each objective, we
+  design and analyze optimal deterministic and randomized policies. Our deterministic
+  policies employ state-aware threshold functions that adapt to the dynamic states,
+  while our randomized policies sample and resample thresholds from tailored state-aware
+  distributions. The analysis reveals that symmetric policies, in which all agents
+  use the same threshold, outperform asymmetric ones. Our results provide competitive
+  ratio upper and lower bounds and extend classical ski-rental insights to multi-agent
+  settings, highlighting both theoretical and practical implications for group decision-making
+  under uncertainty.'
+labels:
+- rent-or-buy
+- online
+

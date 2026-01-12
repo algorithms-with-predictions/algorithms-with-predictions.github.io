@@ -1,0 +1,29 @@
+title: 'Neural Tractability via Structure: Learning-Augmented Algorithms for Graph
+  Combinatorial Optimization'
+authors: Li, Chen, Guo
+year: 2025
+s2_id: b4535d10dda27c76fe403ecdd5d101aa149e117f
+abstract: Neural models have shown promise in solving NP-hard graph combinatorial
+  optimization (CO) problems. Once trained, they offer fast inference and reasonably
+  high-quality solutions for in-distribution testing instances, but they generally
+  fall short in terms of absolute solution quality compared to classical search-based
+  algorithms that are admittedly slower but offer optimality guarantee once search
+  finishes. We propose a novel framework that combines the inference efficiency and
+  exploratory power of neural models with the solution quality guarantee of search-based
+  algorithms. In particular, we use parameterized algorithms (PAs) as the search component.
+  PAs are dedicated to identifying easy instances of generally NP-hard problems, and
+  allow for practically efficient search by exploiting structural simplicity (of the
+  identified easy instances). Under our framework, we use parameterized analysis to
+  identify the structurally hard parts of a CO instance. The neural model handles
+  the hard parts by generating advisory signals based on its data-driven understanding.
+  The PA-based search component then integrates the advisory signals to systematically
+  and efficiently searches through the remaining structurally easy parts. Notably,
+  our framework is agnostic to the choice of neural model and produces strictly better
+  solutions than neural solvers alone. We examine our framework on multiple CO tasks.
+  Empirical results show that it achieves superior solution quality, competitive with
+  that of commercial solvers. Furthermore, by using the neural model only for exploratory
+  advisory signals, our framework exhibits improved out-of-distribution generalization,
+  addressing a key limitation of existing neural CO solvers.
+labels:
+- graph problems
+

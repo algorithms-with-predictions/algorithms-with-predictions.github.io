@@ -1,0 +1,30 @@
+title: 'Procurement Auctions with Predictions: Improved Frugality for Facility Location'
+authors: Balkanski, DeFilippis, Gkatzelis, Tan
+year: 2025
+s2_id: ebabf66a4c16bb7e45c982974526436da1426033
+abstract: 'We study the problem of designing procurement auctions for the strategic
+  uncapacitated facility location problem: a company needs to procure a set of facility
+  locations in order to serve its customers and each facility location is owned by
+  a strategic agent. Each owner has a private cost for providing access to their facility
+  (e.g., renting it or selling it to the company) and needs to be compensated accordingly.
+  The goal is to design truthful auctions that decide which facilities the company
+  should procure and how much to pay the corresponding owners, aiming to minimize
+  the total cost, i.e., the monetary cost paid to the owners and the connection cost
+  suffered by the customers (their distance to the nearest facility). We evaluate
+  the performance of these auctions using the \emph{frugality ratio}. We first analyze
+  the performance of the classic VCG auction in this context and prove that its frugality
+  ratio is exactly $3$. We then leverage the learning-augmented framework and design
+  auctions that are augmented with predictions regarding the owners''private costs.
+  Specifically, we propose a family of learning-augmented auctions that achieve significant
+  payment reductions when the predictions are accurate, leading to much better frugality
+  ratios. At the same time, we demonstrate that these auctions remain robust even
+  if the predictions are arbitrarily inaccurate, and maintain reasonable frugality
+  ratios even under adversarially chosen predictions. We finally provide a family
+  of ``error-tolerant''''auctions that maintain improved frugality ratios even if
+  the predictions are only approximately accurate, and we provide upper bounds on
+  their frugality ratio as a function of the prediction error.'
+labels:
+- game theory / mechanism design
+- facility location
+- auctions
+
