@@ -23,6 +23,30 @@ const hasConsent = (): boolean => {
 };
 
 /**
+ * Track whether GA has already been initialized to prevent duplicate loading
+ */
+let gaInitialized = false;
+
+/**
+ * Load the Google Analytics script dynamically
+ */
+const loadGAScript = (): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector(`script[src*="googletagmanager.com/gtag"]`)) {
+      resolve();
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error('Failed to load GA script'));
+    document.head.appendChild(script);
+  });
+};
+
+/**
  * Initialize Google Analytics with privacy-enhanced settings
  *
  * Only initializes if:
@@ -35,29 +59,38 @@ const hasConsent = (): boolean => {
  * - Google signals disabled
  * - Ad personalization disabled
  */
-export const initGA = (): void => {
+export const initGA = async (): Promise<void> => {
   if (
     typeof window !== 'undefined' &&
     GA_MEASUREMENT_ID &&
     GA_MEASUREMENT_ID !== 'GA_MEASUREMENT_ID' &&
-    hasConsent()
+    hasConsent() &&
+    !gaInitialized
   ) {
-    window.dataLayer = window.dataLayer || [];
-    window.gtag =
-      window.gtag ||
-      function (...args: unknown[]) {
-        window.dataLayer.push(args);
-      };
+    try {
+      await loadGAScript();
 
-    window.gtag('js', new Date());
-    window.gtag('config', GA_MEASUREMENT_ID, {
-      page_title: document.title,
-      page_location: window.location.href,
-      // Enhanced privacy settings
-      anonymize_ip: true,
-      allow_google_signals: false,
-      allow_ad_personalization_signals: false,
-    });
+      window.dataLayer = window.dataLayer || [];
+      window.gtag =
+        window.gtag ||
+        function (...args: unknown[]) {
+          window.dataLayer.push(args);
+        };
+
+      window.gtag('js', new Date());
+      window.gtag('config', GA_MEASUREMENT_ID, {
+        page_title: document.title,
+        page_location: window.location.href,
+        // Enhanced privacy settings
+        anonymize_ip: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false,
+      });
+
+      gaInitialized = true;
+    } catch (error) {
+      console.error('Failed to initialize Google Analytics:', error);
+    }
   }
 };
 
