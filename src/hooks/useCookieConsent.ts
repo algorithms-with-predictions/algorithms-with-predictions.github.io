@@ -24,12 +24,12 @@ export interface CookieConsentHandlers {
 export const useCookieConsent = (): CookieConsentHandlers => {
   useEffect(() => {
     // Initialize Google Analytics (only if user has previously consented)
-    initGA();
+    void initGA();
   }, []);
 
   const onAccept = (): void => {
     // Re-initialize analytics with consent
-    initGA();
+    void initGA();
   };
 
   const onDecline = (): void => {
