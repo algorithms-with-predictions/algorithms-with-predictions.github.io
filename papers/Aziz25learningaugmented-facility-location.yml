@@ -1,21 +1,20 @@
 title: Learning-Augmented Facility Location Mechanisms for the Envy Ratio Objective
-authors: Aziz, Guo, Lam, Zhou
+authors: Haris Aziz, Yuhang Guo, Alexander Lam, Houyu Zhou
 year: 2025
 s2_id: e61f580d54c8e27ccc2a471f906b0797ea93bed8
-abstract: The augmentation of algorithms with predictions of the optimal solution,
-  such as from a machine-learning algorithm, has garnered significant attention in
-  recent years, particularly in facility location problems. Moving beyond the traditional
-  focus on utilitarian and egalitarian objectives, we design learning-augmented facility
-  location mechanisms on a line for the envy ratio objective, a fairness metric defined
-  as the maximum ratio between the utilities of any two agents. For the deterministic
-  setting, we propose a mechanism which utilizes predictions to achieve $\alpha$-consistency
-  and $\frac{\alpha}{\alpha - 1}$-robustness for a selected parameter $\alpha \in
-  [1,2]$, and prove its optimality. We also resolve open questions raised by Ding
-  et al. [10], devising a randomized mechanism without predictions to improve upon
-  the best-known approximation ratio from $2$ to $1.8944$. Building upon these advancements,
-  we construct a novel randomized mechanism which incorporates predictions to achieve
-  improved performance guarantees.
+abstract: The augmentation of algorithms with predictions of the optimal solution, such as from a machine-learning algorithm,
+  has garnered significant attention in recent years, particularly in facility location problems. Moving beyond the traditional
+  focus on utilitarian and egalitarian objectives, we design learning-augmented facility location mechanisms on a line for
+  the envy ratio objective, a fairness metric defined as the maximum ratio between the utilities of any two agents. For the
+  deterministic setting, we propose a mechanism which utilizes predictions to achieve $\alpha$-consistency and $\frac{\alpha}{\alpha
+  - 1}$-robustness for a selected parameter $\alpha \in [1,2]$, and prove its optimality. We also resolve open questions raised
+  by Ding et al. [10], devising a randomized mechanism without predictions to improve upon the best-known approximation ratio
+  from $2$ to $1.8944$. Building upon these advancements, we construct a novel randomized mechanism which incorporates predictions
+  to achieve improved performance guarantees.
 labels:
 - facility location
 - game theory / mechanism design
-
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2512.11193v1
+  arxiv_id: 2512.11193v1

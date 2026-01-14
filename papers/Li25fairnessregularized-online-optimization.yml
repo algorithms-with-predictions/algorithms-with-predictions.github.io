@@ -1,7 +1,24 @@
 title: Fairness-Regularized Online Optimization with Switching Costs
-authors: Li, Han, Wierman, Ren
+authors: Pengfei Li, Yuelin Han, Adam Wierman, Shaolei Ren
 year: 2025
 s2_id: bdce62f1e92f8fdadea277f6f091ce9f582a110b
 labels:
 - online
-
+abstract: Fairness and action smoothness are two crucial considerations in many online optimization problems, but they have
+  yet to be addressed simultaneously. In this paper, we study a new and challenging setting of fairness-regularized smoothed
+  online convex optimization with switching costs. First, to highlight the fundamental challenges introduced by the long-term
+  fairness regularizer evaluated based on the entire sequence of actions, we prove that even without switching costs, no online
+  algorithms can possibly achieve a sublinear regret or finite competitive ratio compared to the offline optimal algorithm
+  as the problem episode length $T$ increases. Then, we propose FairOBD (Fairness-regularized Online Balanced Descent), which
+  reconciles the tension between minimizing the hitting cost, switching cost, and fairness cost. Concretely, FairOBD decomposes
+  the long-term fairness cost into a sequence of online costs by introducing an auxiliary variable and then leverages the
+  auxiliary variable to regularize the online actions for fair outcomes. Based on a new approach to account for switching
+  costs, we prove that FairOBD offers a worst-case asymptotic competitive ratio against a novel benchmark -- the optimal offline
+  algorithm with parameterized constraints -- by considering $T\to\infty$. Finally, we run trace-driven experiments of dynamic
+  computing resource provisioning for socially responsible AI inference to empirically evaluate FairOBD, showing that FairOBD
+  can effectively reduce the total fairness-regularized cost and better promote fair outcomes compared to existing baseline
+  solutions.
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2512.11131v1
+  arxiv_id: 2512.11131v1

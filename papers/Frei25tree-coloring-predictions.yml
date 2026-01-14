@@ -1,5 +1,5 @@
 title: Tree coloring with predictions
-authors: Fabian Frei, Matthias Gehnen, D. Komm, Rastislav Královič, Richard Královic, Peter Rossmanith, Moritz Stocker
+authors: Fabian Frei, Matthias Gehnen, Dennis Komm, Rastislav Královic, Richard Královic, Peter Rossmanith, Moritz Stocker
 labels:
 - graph problems
 - online
@@ -7,4 +7,14 @@ publications:
 - name: Discrete Applied Mathematics
   year: 2025
   url: https://doi.org/10.1016/j.dam.2025.10.024
-year: 2025
+- name: Discret. Appl. Math.
+  dblp_key: journals/dam/FreiGKKKRS26
+  url: https://dblp.org/rec/journals/dam/FreiGKKKRS26
+  bibtex: "@article{DBLP:journals/dam/FreiGKKKRS26,\n  author       = {Fabian Frei and\n                  Matthias Gehnen\
+    \ and\n                  Dennis Komm and\n                  Rastislav Kr{\\'{a}}lovic and\n                  Richard Kr{\\\
+    '{a}}lovic and\n                  Peter Rossmanith and\n                  Moritz Stocker},\n  title        = {Tree coloring\
+    \ with predictions},\n  journal      = {Discret. Appl. Math.},\n  volume       = {380},\n  pages        = {386--394},\n\
+    \  year         = {2026},\n  url          = {https://doi.org/10.1016/j.dam.2025.10.024},\n  doi          = {10.1016/J.DAM.2025.10.024},\n\
+    \  timestamp    = {Sun, 04 Jan 2026 13:44:27 +0100},\n  biburl       = {https://dblp.org/rec/journals/dam/FreiGKKKRS26.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2026

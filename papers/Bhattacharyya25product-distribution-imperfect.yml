@@ -7,18 +7,22 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2511.10366
   year: 2025
+  dblp_key: journals/corr/abs-2511-10366
+  bibtex: "@article{DBLP:journals/corr/abs-2511-10366,\n  author       = {Arnab Bhattacharyya and\n                  Davin\
+    \ Choo and\n                  Philips George John and\n                  Themis Gouleakis},\n  title        = {Product\
+    \ distribution learning with imperfect advice},\n  journal      = {CoRR},\n  volume       = {abs/2511.10366},\n  year\
+    \         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2511.10366},\n  doi          = {10.48550/ARXIV.2511.10366},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2511.10366},\n  timestamp    = {Fri, 09 Jan 2026 15:24:19 +0100},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2511-10366.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
 labels:
 - distribution learning
 year: 2025
-abstract: Given i.i.d.~samples from an unknown distribution $P$, the goal of distribution
-  learning is to recover the parameters of a distribution that is close to $P$. When
-  $P$ belongs to the class of product distributions on the Boolean hypercube $\{0,1\}^d$,
-  it is known that $\Omega(d/\varepsilon^2)$ samples are necessary to learn $P$ within
-  total variation (TV) distance $\varepsilon$. We revisit this problem when the learner
-  is also given as advice the parameters of a product distribution $Q$. We show that
-  there is an efficient algorithm to learn $P$ within TV distance $\varepsilon$ that
-  has sample complexity $\tilde{O}(d^{1-\eta}/\varepsilon^2)$, if $\|\mathbf{p} -
-  \mathbf{q}\|_1<\varepsilon d^{0.5 - \Omega(\eta)}$. Here, $\mathbf{p}$ and $\mathbf{q}$
-  are the mean vectors of $P$ and $Q$ respectively, and no bound on $\|\mathbf{p}
-  - \mathbf{q}\|_1$ is known to the algorithm a priori.
-
+abstract: Given i.i.d.~samples from an unknown distribution $P$, the goal of distribution learning is to recover the parameters
+  of a distribution that is close to $P$. When $P$ belongs to the class of product distributions on the Boolean hypercube
+  $\{0,1\}^d$, it is known that $\Omega(d/\varepsilon^2)$ samples are necessary to learn $P$ within total variation (TV) distance
+  $\varepsilon$. We revisit this problem when the learner is also given as advice the parameters of a product distribution
+  $Q$. We show that there is an efficient algorithm to learn $P$ within TV distance $\varepsilon$ that has sample complexity
+  $\tilde{O}(d^{1-\eta}/\varepsilon^2)$, if $\|\mathbf{p} - \mathbf{q}\|_1<\varepsilon d^{0.5 - \Omega(\eta)}$. Here, $\mathbf{p}$
+  and $\mathbf{q}$ are the mean vectors of $P$ and $Q$ respectively, and no bound on $\|\mathbf{p} - \mathbf{q}\|_1$ is known
+  to the algorithm a priori.
