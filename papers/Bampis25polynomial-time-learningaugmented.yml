@@ -13,6 +13,22 @@ labels:
 - routing / TSP
 - scheduling
 publications:
+- name: ICML
+  url: https://proceedings.mlr.press/v267/bampis25a.html
+  year: 2025
+  bibtex: "@InProceedings{pmlr-v267-bampis25a,\n\
+  \  title =      {Polynomial Time Learning Augmented Algorithms for {NP}-hard Permutation Problems},\n\
+  \  author =     {Bampis, Evripidis and Escoffier, Bruno and Fotakis, Dimitris and Patsilinakos, Panagiotis and Xefteris, Michalis},\n\
+  \  booktitle =  {Proceedings of the 42nd International Conference on Machine Learning},\n\
+  \  pages =      {2790--2800},\n\
+  \  year =       {2025},\n\
+  \  editor =     {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},\n\
+  \  volume =     {267},\n\
+  \  series =     {Proceedings of Machine Learning Research},\n\
+  \  month =      {13--19 Jul},\n\
+  \  publisher =  {PMLR},\n\
+  \  pdf =        {https://raw.githubusercontent.com/mlresearch/v267/main/assets/bampis25a/bampis25a.pdf},\n\
+  \  url =        {https://proceedings.mlr.press/v267/bampis25a.html}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2502.00841
   year: 2025
