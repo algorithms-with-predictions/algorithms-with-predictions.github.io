@@ -26,4 +26,10 @@ abstract: Neural models have shown promise in solving NP-hard graph combinatoria
   addressing a key limitation of existing neural CO solvers.
 labels:
 - graph problems
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2511.19573
+  year: 2025
+  month: 11
+  day: 24
 

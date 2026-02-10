@@ -21,4 +21,10 @@ abstract: 'This paper introduces a novel multi-agent ski-rental problem that gen
 labels:
 - rent-or-buy
 - online
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2507.15727
+  year: 2025
+  month: 7
+  day: 21
 

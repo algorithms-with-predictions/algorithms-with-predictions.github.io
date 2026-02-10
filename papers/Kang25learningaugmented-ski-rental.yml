@@ -5,4 +5,10 @@ s2_id: 50fef4fe335197ff59b868eadbd6513822fb1da2
 labels:
 - rent-or-buy
 - online
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2512.07313
+  year: 2025
+  month: 12
+  day: 8
 
