@@ -1,6 +1,5 @@
 title: 'Procurement Auctions with Predictions: Improved Frugality for Facility Location'
 authors: Eric Balkanski, Nicholas DeFilippis, Vasilis Gkatzelis, Xizhi Tan
-year: 2025
 s2_id: ebabf66a4c16bb7e45c982974526436da1426033
 abstract: 'We study the problem of designing procurement auctions for the strategic uncapacitated facility location problem:
   a company needs to procure a set of facility locations in order to serve its customers and each facility location is owned
@@ -24,3 +23,4 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2512.09367v1
   arxiv_id: 2512.09367v1
+  year: 2025

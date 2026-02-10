@@ -27,4 +27,4 @@ publications:
     \  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=ZTOVlPC5Vf},\n\
     \  timestamp    = {Fri, 05 Dec 2025 16:19:11 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/BenomarCP025.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
-year: 2025
+  year: 2025

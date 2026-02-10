@@ -1,6 +1,5 @@
 title: Learning-Augmented Facility Location Mechanisms for the Envy Ratio Objective
 authors: Haris Aziz, Yuhang Guo, Alexander Lam, Houyu Zhou
-year: 2025
 s2_id: e61f580d54c8e27ccc2a471f906b0797ea93bed8
 abstract: The augmentation of algorithms with predictions of the optimal solution, such as from a machine-learning algorithm,
   has garnered significant attention in recent years, particularly in facility location problems. Moving beyond the traditional
@@ -18,3 +17,4 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2512.11193v1
   arxiv_id: 2512.11193v1
+  year: 2025

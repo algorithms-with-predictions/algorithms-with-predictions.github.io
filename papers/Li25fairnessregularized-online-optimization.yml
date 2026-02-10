@@ -1,6 +1,5 @@
 title: Fairness-Regularized Online Optimization with Switching Costs
 authors: Pengfei Li, Yuelin Han, Adam Wierman, Shaolei Ren
-year: 2025
 s2_id: bdce62f1e92f8fdadea277f6f091ce9f582a110b
 labels:
 - online
@@ -22,3 +21,4 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2512.11131v1
   arxiv_id: 2512.11131v1
+  year: 2025

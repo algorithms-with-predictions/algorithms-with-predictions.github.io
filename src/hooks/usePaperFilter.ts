@@ -92,28 +92,26 @@ export const usePaperFilter = (data: Paper[] | null): PaperFilterResult => {
 
     // Sort by year (newest first), then month/day (newest first), then title (alphabetically)
     return filtered.sort((a, b) => {
+      const isArxiv = (pub: Publication) => pub.name.toLowerCase() === 'arxiv';
+
+      const comparePubDate = (a: Publication, b: Publication): number => {
+        const yearDiff = (a.year || 0) - (b.year || 0);
+        if (yearDiff !== 0) return yearDiff;
+        const monthDiff = (a.month || 0) - (b.month || 0);
+        if (monthDiff !== 0) return monthDiff;
+        return (a.day || 0) - (b.day || 0);
+      };
+
       const getLatestPublication = (paper: Paper): Publication => {
         if (!paper.publications || paper.publications.length === 0) {
           return { name: '', year: 0, month: 0, day: 0 };
         }
-        // Find the most recent publication
-        return paper.publications.reduce((latest, pub) => {
-          const pubYear = pub.year || 0;
-          const pubMonth = pub.month || 0;
-          const pubDay = pub.day || 0;
-          const latestYear = latest.year || 0;
-          const latestMonth = latest.month || 0;
-          const latestDay = latest.day || 0;
-
-          if (pubYear > latestYear) return pub;
-          if (pubYear < latestYear) return latest;
-          // Same year, compare month
-          if (pubMonth > latestMonth) return pub;
-          if (pubMonth < latestMonth) return latest;
-          // Same month, compare day
-          if (pubDay > latestDay) return pub;
-          return latest;
-        }, paper.publications[0]!);
+        const sorted = [...paper.publications].sort((a, b) =>
+          comparePubDate(b, a)
+        );
+        // Prefer the latest non-arxiv publication; fall back to arxiv if that's all there is
+        const nonArxiv = sorted.find(pub => !isArxiv(pub));
+        return nonArxiv ?? sorted[0]!;
       };
 
       const pubA = getLatestPublication(a);

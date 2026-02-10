@@ -28,4 +28,4 @@ publications:
     \  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=5QMJZiHuGn},\n\
     \  timestamp    = {Wed, 10 Dec 2025 08:08:40 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/AamandCGSW25.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
-year: 2025
+  year: 2025

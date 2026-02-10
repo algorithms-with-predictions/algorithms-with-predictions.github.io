@@ -18,7 +18,7 @@ publications:
     \ July 13-19, 2025},\n  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=FeZoO7mfG7},\n\
     \  timestamp    = {Fri, 05 Dec 2025 16:19:11 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/NiaparastMS25.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
-year: 2025
+  year: 2025
 abstract: Global minimum cut is a fundamental combinatorial optimization problem with wide-ranging applications. Often in
   practice, these problems are solved repeatedly on families of similar or related instances. However, the de facto algorithmic
   approach is to solve each instance of the problem from scratch discarding information from prior instances. In this paper,

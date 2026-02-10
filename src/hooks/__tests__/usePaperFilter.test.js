@@ -220,6 +220,51 @@ describe('usePaperFilter', () => {
         expect(years[i - 1] >= years[i]).toBeTruthy();
       }
     });
+
+    it('ignores arxiv when determining sort year if non-arxiv exists', () => {
+      const papers = [
+        {
+          title: 'Paper A',
+          authors: 'A',
+          labels: [],
+          publications: [
+            { name: 'arXiv', year: 2025 },
+            { name: 'ICML', year: 2023 },
+          ],
+        },
+        {
+          title: 'Paper B',
+          authors: 'B',
+          labels: [],
+          publications: [{ name: 'NeurIPS', year: 2024 }],
+        },
+      ];
+      const { result } = renderHook(() => usePaperFilter(papers));
+      // Paper A sorts by ICML 2023, Paper B by NeurIPS 2024 → B first
+      expect(result.current.sortedData[0].title).toBe('Paper B');
+      expect(result.current.sortedData[1].title).toBe('Paper A');
+    });
+
+    it('falls back to arxiv if no other publications exist', () => {
+      const papers = [
+        {
+          title: 'Paper C',
+          authors: 'C',
+          labels: [],
+          publications: [{ name: 'arXiv', year: 2025 }],
+        },
+        {
+          title: 'Paper D',
+          authors: 'D',
+          labels: [],
+          publications: [{ name: 'SODA', year: 2024 }],
+        },
+      ];
+      const { result } = renderHook(() => usePaperFilter(papers));
+      // Paper C only has arxiv 2025, so it uses that → C first
+      expect(result.current.sortedData[0].title).toBe('Paper C');
+      expect(result.current.sortedData[1].title).toBe('Paper D');
+    });
   });
 
   describe('handleClearFilters', () => {
