@@ -1,0 +1,12 @@
+title: An Optimal Online Algorithm for Robust Flow Time Scheduling
+authors: Anupam Gupta, Amit Kumar, Debmalya Panigrahi, Zhaozi Wang
+s2_id: 637edf77369eb0a06868b8d9e48aade081b489ca
+year: 2026
+labels:
+- online
+- scheduling
+publications:
+- name: SODA
+  url: https://epubs.siam.org/doi/epdf/10.1137/1.9781611978971.47
+  year: 2026
+
