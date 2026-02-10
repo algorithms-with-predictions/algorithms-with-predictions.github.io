@@ -15,6 +15,8 @@ publications:
     \ {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 - name: arXiv
   year: 2025
+  month: 10
+  day: 18
   url: https://arxiv.org/abs/2510.16663
 labels:
 - online

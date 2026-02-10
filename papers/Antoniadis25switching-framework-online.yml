@@ -6,6 +6,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2511.16194
   year: 2025
+  month: 11
+  day: 20
 arxiv: '2511.16194'
 abstract: We study online interval scheduling in the irrevocable setting, where each interval must be immediately accepted
   or rejected upon arrival. The objective is to maximize the total length of accepted intervals while ensuring that no two

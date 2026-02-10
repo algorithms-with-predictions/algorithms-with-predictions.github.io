@@ -7,6 +7,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2511.10366
   year: 2025
+  month: 11
+  day: 13
   dblp_key: journals/corr/abs-2511-10366
   bibtex: "@article{DBLP:journals/corr/abs-2511-10366,\n  author       = {Arnab Bhattacharyya and\n                  Davin\
     \ Choo and\n                  Philips George John and\n                  Themis Gouleakis},\n  title        = {Product\

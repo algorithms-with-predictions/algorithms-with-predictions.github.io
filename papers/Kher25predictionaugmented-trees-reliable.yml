@@ -6,6 +6,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2510.16937
   year: 2025
+  month: 10
+  day: 19
   dblp_key: journals/corr/abs-2510-16937
   bibtex: "@article{DBLP:journals/corr/abs-2510-16937,\n  author       = {Vikram Kher and\n                  Argyris Oikonomou\
     \ and\n                  Manolis Zampetakis},\n  title        = {Prediction-Augmented Trees for Reliable Statistical Inference},\n\

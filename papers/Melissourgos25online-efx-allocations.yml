@@ -6,6 +6,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2508.04779
   year: 2025
+  month: 8
+  day: 6
   dblp_key: journals/corr/abs-2508-04779
   bibtex: "@article{DBLP:journals/corr/abs-2508-04779,\n  author       = {Themistoklis Melissourgos and\n                \
     \  Nicos Protopapas},\n  title        = {Online {EFX} Allocations with Predictions},\n  journal      = {CoRR},\n  volume\

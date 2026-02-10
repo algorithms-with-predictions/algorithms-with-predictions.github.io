@@ -4,6 +4,8 @@ publications:
 - name: arXiv
   url: https://doi.org/10.48550/arXiv.2209.04748
   year: 2022
+  month: 9
+  day: 10
   dblp_key: journals/corr/abs-2209-04748
   bibtex: "@article{DBLP:journals/corr/abs-2209-04748,\n  author       = {Yuan Deng and\n                  Negin Golrezaei\
     \ and\n                  Patrick Jaillet and\n                  Jason Cheuk Nam Liang and\n                  Vahab Mirrokni},\n\

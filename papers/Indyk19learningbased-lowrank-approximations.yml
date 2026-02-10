@@ -25,6 +25,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/pdf/1910.13984.pdf
   year: 2019
+  month: 10
+  day: 30
 arxiv: 1910.13984
 s2_id: 85b0473f5147fa9ba3b05e3fa40dc2bf2c26062d
 year: 2019

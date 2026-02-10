@@ -6,6 +6,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2510.25582
   year: 2025
+  month: 10
+  day: 29
   dblp_key: journals/corr/abs-2510-25582
   bibtex: "@article{DBLP:journals/corr/abs-2510-25582,\n  author       = {Spyros Angelopoulos and\n                  Bertrand\
     \ Simon},\n  title        = {Learning-Augmented Online Bidding in Stochastic Settings},\n  journal      = {CoRR},\n  volume\

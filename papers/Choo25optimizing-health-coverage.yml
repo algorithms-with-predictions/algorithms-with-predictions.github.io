@@ -8,6 +8,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2509.00135
   year: 2025
+  month: 8
+  day: 29
   dblp_key: journals/corr/abs-2509-00135
   bibtex: "@article{DBLP:journals/corr/abs-2509-00135,\n  author       = {Davin Choo and\n                  Yohai Trabelsi\
     \ and\n                  Fentabil Getnet and\n                  Samson Warkaye Lamma and\n                  Wondesen Nigatu\

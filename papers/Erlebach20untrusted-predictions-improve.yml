@@ -7,6 +7,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/pdf/2011.07385.pdf
   year: 2020
+  month: 11
+  day: 14
   dblp_key: journals/corr/abs-2011-07385
   bibtex: "@article{DBLP:journals/corr/abs-2011-07385,\n  author       = {Thomas Erlebach and\n                  Michael Hoffmann\
     \ and\n                  Murilo S. de Lima and\n                  Nicole Megow and\n                  Jens Schl{\\\"{o}}ter},\n\

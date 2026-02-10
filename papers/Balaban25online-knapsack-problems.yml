@@ -6,6 +6,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2504.21750
   year: 2025
+  month: 4
+  day: 30
 - name: MFCS
   year: 2025
   url: https://doi.org/10.4230/LIPIcs.MFCS.2025.12

@@ -6,6 +6,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2506.12287
   year: 2025
+  month: 6
+  day: 14
 - name: ICML
   year: 2025
   url: https://doi.org/10.48550/arXiv.2506.12287

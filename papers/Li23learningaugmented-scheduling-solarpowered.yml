@@ -4,6 +4,8 @@ publications:
 - name: arXiv
   url: https://doi.org/10.48550/arXiv.2311.05941
   year: 2023
+  month: 11
+  day: 10
   dblp_key: journals/corr/abs-2311-05941
   bibtex: "@article{DBLP:journals/corr/abs-2311-05941,\n  author       = {Tongxin\
     \ Li},\n  title        = {Learning-Augmented Scheduling for Solar-Powered Electric\

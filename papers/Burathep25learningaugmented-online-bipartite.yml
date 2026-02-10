@@ -6,6 +6,8 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2511.23388
   year: 2025
+  month: 11
+  day: 28
 arxiv: '2511.23388'
 abstract: 'We study the online unweighted bipartite matching problem in the random arrival order model, with $n$ offline and
   $n$ online vertices, in the learning-augmented setting: The algorithm is provided with untrusted predictions of the types
