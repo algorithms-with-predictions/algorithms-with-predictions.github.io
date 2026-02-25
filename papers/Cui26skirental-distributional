@@ -2,6 +2,7 @@ title: Ski Rental with Distributional Predictions of Unknown Quality
 authors: Qiming Cui, Michael Dinitz
 labels:
 - online
+- rent-or-buy
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2602.21104
