@@ -53,3 +53,16 @@ Thumbs.db
 # Temporary folders
 tmp/
 temp/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+*.eggs/
+.venv/
+
+# ALPS tool cache and reports
+tools/.cache/
+tools/reports/
