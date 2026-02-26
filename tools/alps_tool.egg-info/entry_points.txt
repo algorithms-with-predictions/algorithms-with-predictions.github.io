@@ -1,0 +1,2 @@
+[console_scripts]
+alps = alps_tool.cli:cli

@@ -9,4 +9,9 @@ publications:
 - name: Information Sciences
   url: https://doi.org/10.1016/j.ins.2026.123077
   year: 2026
+- name: Inf. Sci.
+  url: https://doi.org/10.1016/j.ins.2026.123077
+  year: 2026
+  dblp_key: journals/isci/ChenLLL26
+  bibtex: "@article{DBLP:journals/isci/ChenLLL26,\n  author    = {Zhihao Chen and Junnuo Lin and Lingli Li and Yongnan Liu},\n  title     = {LACK: Adaptive k -means clustering with learning-augmented policy for approximate K nearest neighbor search},\n  journal   = {Inf. Sci.},\n  year      = {2026},\n  url       = {https://doi.org/10.1016/j.ins.2026.123077},\n}"
 

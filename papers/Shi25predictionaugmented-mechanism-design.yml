@@ -32,4 +32,9 @@ publications:
     \  doi          = {10.48550/ARXIV.2507.06509},\n  eprinttype    = {arXiv},\n  eprint       = {2507.06509},\n  timestamp\
     \    = {Sat, 15 Nov 2025 13:49:59 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2507-06509.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: TAMC
+  url: https://doi.org/10.1007/978-981-95-4839-2_20
+  year: 2025
+  dblp_key: conf/tamc/ShiX25
+  bibtex: "@inproceedings{DBLP:conf/tamc/ShiX25,\n  author    = {Yangguang Shi and Zhenyu Xue},\n  title     = {Prediction-Augmented Mechanism Design for Weighted Facility Location},\n  booktitle = {TAMC},\n  year      = {2025},\n  url       = {https://doi.org/10.1007/978-981-95-4839-2_20},\n}"
 year: 2025

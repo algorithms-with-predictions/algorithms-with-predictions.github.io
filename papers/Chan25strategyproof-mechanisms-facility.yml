@@ -28,6 +28,11 @@ publications:
     \  eprinttype    = {arXiv},\n  eprint       = {2509.00439},\n  timestamp    = {Wed, 08 Oct 2025 13:18:23 +0200},\n  biburl\
     \       = {https://dblp.org/rec/journals/corr/abs-2509-00439.bib},\n  bibsource    = {dblp computer science bibliography,\
     \ https://dblp.org}\n}\n\n"
+- name: ECAI
+  url: https://doi.org/10.3233/FAIA250948
+  year: 2025
+  dblp_key: conf/ecai/Chan0025
+  bibtex: "@inproceedings{DBLP:conf/ecai/Chan0025,\n  author    = {Hau Chan and Jianan Lin 0001 and Chenhao Wang 0001},\n  title     = {Strategyproof Mechanisms for Facility Location with Prediction Under the Maximum Cost Objective},\n  booktitle = {ECAI},\n  year      = {2025},\n  url       = {https://doi.org/10.3233/FAIA250948},\n}"
 arxiv: 2509.00439
 s2_id: b3c72058f1e632443fc55e7a02c3a4c75c13ef32
 labels:

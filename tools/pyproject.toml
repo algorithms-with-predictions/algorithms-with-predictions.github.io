@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alps-tool"
+version = "0.1.0"
+description = "Paper discovery and update tool for the ALPS catalog"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+    "rich>=13.0",
+    "rapidfuzz>=3.0",
+    "lxml>=4.9",
+]
+
+[project.scripts]
+alps = "alps_tool.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["alps_tool*"]

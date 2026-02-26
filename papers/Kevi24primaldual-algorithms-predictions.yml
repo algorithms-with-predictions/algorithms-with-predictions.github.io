@@ -26,4 +26,9 @@ publications:
     \ {https://doi.org/10.48550/arXiv.2402.08701},\n  doi          = {10.48550/ARXIV.2402.08701},\n  eprinttype    = {arXiv},\n\
     \  eprint       = {2402.08701},\n  timestamp    = {Mon, 19 Feb 2024 15:25:43 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2402-08701.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: ALT
+  url: https://proceedings.mlr.press/v201/kevi23a.html
+  year: 2023
+  dblp_key: conf/alt/KeviN23
+  bibtex: "@inproceedings{DBLP:conf/alt/KeviN23,\n  author    = {Eniko Kevi and Kim Thang Nguyen},\n  title     = {Primal-Dual Algorithms with Predictions for Online Bounded Allocation and Ad-Auctions Problems},\n  booktitle = {ALT},\n  year      = {2023},\n  url       = {https://proceedings.mlr.press/v201/kevi23a.html},\n}"
 year: 2024

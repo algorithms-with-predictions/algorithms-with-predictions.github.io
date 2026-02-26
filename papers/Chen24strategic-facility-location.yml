@@ -30,4 +30,9 @@ publications:
     \  doi          = {10.48550/ARXIV.2410.07497},\n  eprinttype    = {arXiv},\n  eprint       = {2410.07497},\n  timestamp\
     \    = {Mon, 18 Nov 2024 14:52:15 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2410-07497.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: WINE
+  url: https://doi.org/10.1007/978-3-032-08560-3_23
+  year: 2024
+  dblp_key: conf/wine/ChenGI24
+  bibtex: "@inproceedings{DBLP:conf/wine/ChenGI24,\n  author    = {Qingyun Chen and Nick Gravin and Sungjin Im},\n  title     = {Strategic Facility Location via Predictions},\n  booktitle = {WINE},\n  year      = {2024},\n  url       = {https://doi.org/10.1007/978-3-032-08560-3_23},\n}"
 year: 2024

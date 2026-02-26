@@ -24,6 +24,11 @@ publications:
     \  year         = {2025},\n  url          = {https://doi.org/10.1145/3727122},\n  doi          = {10.1145/3727122},\n\
     \  timestamp    = {Thu, 11 Sep 2025 20:25:13 +0200},\n  biburl       = {https://dblp.org/rec/journals/pomacs/LangeNY25.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+- name: SIGMETRICS (Abstracts)
+  url: https://doi.org/10.1145/3726854.3727303
+  year: 2025
+  dblp_key: conf/sigmetrics/LangeNY25
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/LangeNY25,\n  author    = {Tomer Lange and Joseph (Seffi) Naor and Gala Yadgar},\n  title     = {Optimal SSD Management with Predictions},\n  booktitle = {SIGMETRICS (Abstracts)},\n  year      = {2025},\n  url       = {https://doi.org/10.1145/3726854.3727303},\n}"
 s2_id: 00f3482e1134067a0583391bf5ff3b0ec4aeeab8
 labels:
 - online

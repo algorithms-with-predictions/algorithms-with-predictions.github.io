@@ -31,6 +31,11 @@ publications:
     \   = {10.1109/INFOCOMWKSHPS61880.2024.10620883},\n  timestamp    = {Mon, 03 Mar 2025 21:13:42 +0100},\n  biburl     \
     \  = {https://dblp.org/rec/conf/infocom/LiuZLS0024.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
     }\n"
+- name: IEEE Trans. Netw. Sci. Eng.
+  url: https://doi.org/10.1109/TNSE.2025.3561736
+  year: 2025
+  dblp_key: journals/tnse/LiuZLSHJ25
+  bibtex: "@article{DBLP:journals/tnse/LiuZLSHJ25,\n  author    = {Zhongdong Liu and Keyuan Zhang and Bin Li 0014 and Yin Sun and Y. Thomas Hou 0001 and Bo Ji 0001},\n  title     = {Learning-Augmented Online Minimization of Age of Information and Transmission Costs},\n  journal   = {IEEE Trans. Netw. Sci. Eng.},\n  year      = {2025},\n  url       = {https://doi.org/10.1109/TNSE.2025.3561736},\n}"
 arxiv: 2403.02573
 s2_id: 1eb081653d063f8708178c46c7170b677419ad15
 labels:

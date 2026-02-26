@@ -11,6 +11,16 @@ publications:
     \  url          = {https://arxiv.org/abs/2106.09659},\n  eprinttype    = {arXiv},\n  eprint       = {2106.09659},\n  timestamp\
     \    = {Tue, 29 Jun 2021 16:55:04 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2106-09659.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+- name: SIGMETRICS (Abstracts)
+  url: https://doi.org/10.1145/3489048.3522658
+  year: 2022
+  dblp_key: conf/sigmetrics/LiYQSYWL22
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/LiYQSYWL22,\n  author    = {Tongxin Li 0001 and Ruixiao Yang and Guannan Qu and Guanya Shi and Chenkai Yu and Adam Wierman and Steven H. Low},\n  title     = {Robustness and Consistency in Linear Quadratic Control with Untrusted Predictions},\n  booktitle = {SIGMETRICS (Abstracts)},\n  year      = {2022},\n  url       = {https://doi.org/10.1145/3489048.3522658},\n}"
+- name: Proc. ACM Meas. Anal. Comput. Syst.
+  url: https://doi.org/10.1145/3508038
+  year: 2022
+  dblp_key: journals/pomacs/LiYQSYWL22
+  bibtex: "@article{DBLP:journals/pomacs/LiYQSYWL22,\n  author    = {Tongxin Li 0001 and Ruixiao Yang and Guannan Qu and Guanya Shi and Chenkai Yu and Adam Wierman and Steven H. Low},\n  title     = {Robustness and Consistency in Linear Quadratic Control with Untrusted Predictions},\n  journal   = {Proc. ACM Meas. Anal. Comput. Syst.},\n  year      = {2022},\n  url       = {https://doi.org/10.1145/3508038},\n}"
 s2_id: 5842e9be51951f0109676ab704bb8bf8d9c1e523
 labels:
 - linear quadratic control

@@ -12,6 +12,11 @@ publications:
     \       = {2025},\n  url          = {https://doi.org/10.1007/s10878-025-01310-6},\n  doi          = {10.1007/S10878-025-01310-6},\n\
     \  timestamp    = {Fri, 04 Jul 2025 22:13:51 +0200},\n  biburl       = {https://dblp.org/rec/journals/jco/FangFLNV25.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+- name: TAMC
+  url: https://doi.org/10.1007/978-981-97-2340-9_4
+  year: 2024
+  dblp_key: conf/tamc/FangFLN24
+  bibtex: "@inproceedings{DBLP:conf/tamc/FangFLN24,\n  author    = {Jiazhu Fang and Qizhi Fang and Wenjing Liu and Qingqin Nong},\n  title     = {Mechanism Design with Predictions for Facility Location Games with Candidate Locations},\n  booktitle = {TAMC},\n  year      = {2024},\n  url       = {https://doi.org/10.1007/978-981-97-2340-9_4},\n}"
 s2_id: dcb2075626618cf1e65ad487a296abb217e43fb6
 labels:
 - facility location

@@ -23,4 +23,9 @@ publications:
   year: 2024
   month: 7
   day: 20
+- name: Oper. Res.
+  url: https://doi.org/10.1287/opre.2025.1646
+  year: 2026
+  dblp_key: journals/ior/YangY26
+  bibtex: "@article{DBLP:journals/ior/YangY26,\n  author    = {Mingwei Yang 0002 and Sophie H. Yu},\n  title     = {Online Metric Matching: Beyond the Worst Case},\n  journal   = {Oper. Res.},\n  year      = {2026},\n  url       = {https://doi.org/10.1287/opre.2025.1646},\n}"
 year: 2024

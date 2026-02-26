@@ -8,6 +8,11 @@ publications:
   year: 2025
   month: 11
   day: 28
+- name: SOFSEM
+  url: https://doi.org/10.1007/978-3-032-17801-5_27
+  year: 2026
+  dblp_key: conf/sofsem/BurathepEM26
+  bibtex: "@inproceedings{DBLP:conf/sofsem/BurathepEM26,\n  author    = {Kunanon Burathep and Thomas Erlebach and William K. Moses Jr.},\n  title     = {Learning-Augmented Online Bipartite Matching in the Random Arrival Order Model},\n  booktitle = {SOFSEM},\n  year      = {2026},\n  url       = {https://doi.org/10.1007/978-3-032-17801-5_27},\n}"
 arxiv: '2511.23388'
 abstract: 'We study the online unweighted bipartite matching problem in the random arrival order model, with $n$ offline and
   $n$ online vertices, in the learning-augmented setting: The algorithm is provided with untrusted predictions of the types

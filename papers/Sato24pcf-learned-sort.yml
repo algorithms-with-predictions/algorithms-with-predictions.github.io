@@ -23,4 +23,9 @@ publications:
     \  = {https://doi.org/10.48550/arXiv.2405.07122},\n  doi          = {10.48550/ARXIV.2405.07122},\n  eprinttype    = {arXiv},\n\
     \  eprint       = {2405.07122},\n  timestamp    = {Sat, 15 Jun 2024 13:04:48 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2405-07122.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: Trans. Mach. Learn. Res.
+  url: https://openreview.net/forum?id=wVkb8WHbvR
+  year: 2025
+  dblp_key: journals/tmlr/SatoM25
+  bibtex: "@article{DBLP:journals/tmlr/SatoM25,\n  author    = {Atsuki Sato and Yusuke Matsui},\n  title     = {PCF Learned Sort: a Learning Augmented Sort Algorithm with $\\mathcal{O}(n \\log\\log n)$ Expected Complexity},\n  journal   = {Trans. Mach. Learn. Res.},\n  year      = {2025},\n  url       = {https://openreview.net/forum?id=wVkb8WHbvR},\n}"
 year: 2024

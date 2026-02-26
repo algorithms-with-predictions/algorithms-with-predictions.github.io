@@ -31,6 +31,11 @@ publications:
     \       = {1},\n  pages        = {12:1--12:36},\n  year         = {2023},\n  url          = {https://doi.org/10.1145/3579442},\n\
     \  doi          = {10.1145/3579442},\n  timestamp    = {Sat, 11 Mar 2023 00:12:19 +0100},\n  biburl       = {https://dblp.org/rec/journals/pomacs/RuttenCMW23.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+- name: SIGMETRICS (Abstracts)
+  url: https://doi.org/10.1145/3578338.3593570
+  year: 2023
+  dblp_key: conf/sigmetrics/RuttenCMW23
+  bibtex: "@inproceedings{DBLP:conf/sigmetrics/RuttenCMW23,\n  author    = {Daan Rutten and Nicolas Christianson and Debankur Mukherjee and Adam Wierman},\n  title     = {Smoothed Online Optimization with Unreliable Predictions},\n  booktitle = {SIGMETRICS (Abstracts)},\n  year      = {2023},\n  url       = {https://doi.org/10.1145/3578338.3593570},\n}"
 arxiv: 2202.03519
 s2_id: dc5688e5ee13ca238b51c5768b1a3ac7964433c6
 labels:
