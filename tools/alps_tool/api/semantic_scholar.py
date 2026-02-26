@@ -100,24 +100,36 @@ class SemanticScholarClient:
         self._cache.set(cache_key, all_citations)
         return all_citations[:limit]
 
-    def _request(self, url: str, params: dict, _retries: int = 3) -> dict | None:
+    def _request(self, url: str, params: dict, _retries: int = 6) -> dict | None:
         """Make a rate-limited GET request with exponential backoff on 429."""
         for attempt in range(_retries):
             self._limiter.wait()
             try:
                 resp = self._session.get(url, params=params, timeout=30)
                 if resp.status_code == 404:
-                    self._limiter.reset_backoff()
                     return None
-                if resp.status_code == 429:
+                if resp.status_code in (429, 500, 502, 503, 504):
+                    # Respect Retry-After header if present
+                    retry_after = resp.headers.get("Retry-After")
+                    if retry_after:
+                        try:
+                            wait = float(retry_after)
+                            import time
+                            log.warning(
+                                "S2 %d, Retry-After %.0fs, attempt %d/%d",
+                                resp.status_code, wait, attempt + 1, _retries,
+                            )
+                            time.sleep(wait)
+                            continue
+                        except ValueError:
+                            pass
                     self._limiter.backoff()
                     log.warning(
-                        "S2 rate limit (429), backoff attempt %d/%d",
-                        attempt + 1, _retries,
+                        "S2 %d, backoff attempt %d/%d",
+                        resp.status_code, attempt + 1, _retries,
                     )
                     continue
                 resp.raise_for_status()
-                self._limiter.reset_backoff()
                 return resp.json()
             except requests.RequestException as e:
                 log.warning("S2 API error: %s", e)

@@ -40,11 +40,16 @@ def run_discover(
 
     s2 = SemanticScholarClient(cache=cache)
 
-    # Resolve S2 IDs for all papers (uses cache for already-resolved)
-    console.print("Resolving Semantic Scholar IDs...")
-    resolve_results = resolve_batch(papers, s2, verbose=verbose)
+    # Resolve S2 IDs using cheap lookups only (s2_id, arxiv, dblp_key).
+    # Title search is skipped to avoid hammering the rate-limited /search endpoint.
+    # Run `alps resolve --write` first to maximize s2_id coverage.
+    console.print("Resolving Semantic Scholar IDs (cheap lookups only)...")
+    resolve_results = resolve_batch(papers, s2, verbose=verbose, cheap_only=True)
     resolved_map = {r.paper.title: r.s2_id for r in resolve_results if r.s2_id}
+    failed = sum(1 for r in resolve_results if r.strategy == "failed")
     console.print(f"  {len(resolved_map)} papers with S2 IDs")
+    if failed:
+        console.print(f"  [dim]{failed} papers skipped (no s2_id/arxiv/dblp_key — run `alps resolve --write` to fix)[/dim]")
 
     # Build dedup indices
     title_index = build_title_index(papers)

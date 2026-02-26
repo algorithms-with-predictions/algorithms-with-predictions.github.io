@@ -3,8 +3,13 @@
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 # ── Paths ──────────────────────────────────────────────────────────────
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent  # alps/
+
+# Load .env from project root (does not override existing env vars)
+load_dotenv(ROOT_DIR / ".env")
 PAPERS_DIR = ROOT_DIR / "papers"
 TOOLS_DIR = ROOT_DIR / "tools"
 CACHE_DIR = TOOLS_DIR / ".cache"
@@ -13,9 +18,14 @@ REPORTS_DIR = TOOLS_DIR / "reports"
 # ── Semantic Scholar ───────────────────────────────────────────────────
 S2_API_BASE = "https://api.semanticscholar.org/graph/v1"
 S2_API_KEY = os.environ.get("S2_API_KEY", "")
-S2_RATE_LIMIT = 10.0 if S2_API_KEY else 1.0  # requests per second
-S2_FIELDS_PAPER = "title,authors,year,externalIds,publicationVenue,url"
+S2_RATE_LIMIT = 1.0  # requests per second
+S2_FIELDS_PAPER = "title,authors,year,externalIds,publicationVenue,url,abstract"
 S2_FIELDS_CITATIONS = "title,authors,year,externalIds,publicationVenue,url"
+
+# ── OpenRouter (LLM via any provider) ─────────────────────────────────
+OPENROUTER_API_BASE = "https://openrouter.ai/api/v1/chat/completions"
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+OPENROUTER_MODEL = os.environ.get("OPENROUTER_MODEL", "anthropic/claude-sonnet-4")
 
 # ── DBLP (local XML dump) ─────────────────────────────────────────────
 DBLP_XML_URL = "https://dblp.uni-trier.de/xml/dblp.xml.gz"

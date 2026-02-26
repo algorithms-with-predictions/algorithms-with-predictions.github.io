@@ -75,6 +75,33 @@ def resolve(ctx: click.Context, write: bool) -> None:
     )
 
 
+@cli.command()
+@click.option("-f", "--filter", "file_filter", help="Filename glob filter (e.g. 'Chen24*')")
+@click.option("--all", "relabel_all", is_flag=True, help="Re-label papers that already have labels")
+@click.option("--model", help="Override OpenRouter model (e.g. 'google/gemini-2.0-flash-001')")
+@click.pass_context
+def label(ctx: click.Context, file_filter: str | None, relabel_all: bool, model: str | None) -> None:
+    """Suggest labels for papers using an LLM via OpenRouter."""
+    from alps_tool.commands.label import run_label
+    run_label(
+        file_filter=file_filter,
+        relabel_all=relabel_all,
+        model=model,
+        verbose=ctx.obj["verbose"],
+        cache=ctx.obj["cache"],
+    )
+
+
+@cli.command()
+@click.option("-f", "--filter", "file_filter", help="Filename glob filter (e.g. 'Davies24*')")
+@click.pass_context
+def lint(ctx: click.Context, file_filter: str | None) -> None:
+    """Validate YAML paper files."""
+    from alps_tool.commands.lint import run_lint
+    errors = run_lint(file_filter=file_filter)
+    ctx.exit(1 if errors else 0)
+
+
 @cli.group()
 def dblp() -> None:
     """Manage local DBLP database."""

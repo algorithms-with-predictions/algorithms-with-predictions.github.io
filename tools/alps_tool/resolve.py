@@ -17,10 +17,16 @@ class ResolveResult:
     strategy: str  # "cached", "arxiv", "dblp", "title_search", "failed"
 
 
-def resolve_s2_id(paper: Paper, s2_client, *, verbose: bool = False) -> ResolveResult:
-    """Try multiple strategies to find a Semantic Scholar paper ID."""
-    # Strategy 1: already has s2_id
-    if paper.s2_id:
+def resolve_s2_id(
+    paper: Paper, s2_client, *, verbose: bool = False, cheap_only: bool = False,
+) -> ResolveResult:
+    """Try multiple strategies to find a Semantic Scholar paper ID.
+
+    If cheap_only=True, skip the title search strategy (avoids the
+    rate-limited /search endpoint).
+    """
+    # Strategy 1: already has s2_id (skip sentinel "none")
+    if paper.s2_id and paper.s2_id != "none":
         return ResolveResult(paper, paper.s2_id, "cached")
 
     # Strategy 2: resolve via arxiv ID
@@ -36,11 +42,12 @@ def resolve_s2_id(paper: Paper, s2_client, *, verbose: bool = False) -> ResolveR
             if result and result.get("paperId"):
                 return ResolveResult(paper, result["paperId"], "dblp")
 
-    # Strategy 4: title search with fuzzy match confirmation
-    results = s2_client.search(paper.title, limit=3)
-    for r in results:
-        if r.get("title") and titles_match(paper.title, r["title"]):
-            return ResolveResult(paper, r["paperId"], "title_search")
+    if not cheap_only:
+        # Strategy 4: title search with fuzzy match confirmation
+        results = s2_client.search(paper.title, limit=3)
+        for r in results:
+            if r.get("title") and titles_match(paper.title, r["title"]):
+                return ResolveResult(paper, r["paperId"], "title_search")
 
     return ResolveResult(paper, None, "failed")
 
@@ -51,8 +58,12 @@ def resolve_batch(
     *,
     verbose: bool = False,
     skip_resolved: bool = True,
+    cheap_only: bool = False,
 ) -> list[ResolveResult]:
-    """Resolve S2 IDs for a batch of papers with progress display."""
+    """Resolve S2 IDs for a batch of papers with progress display.
+
+    If cheap_only=True, only use s2_id/arxiv/dblp_key lookups (no title search).
+    """
     results: list[ResolveResult] = []
     to_resolve = papers if not skip_resolved else [p for p in papers if not p.s2_id]
     already_resolved = [p for p in papers if p.s2_id] if skip_resolved else []
@@ -72,7 +83,7 @@ def resolve_batch(
         task = progress.add_task("Resolving S2 IDs...", total=len(to_resolve))
         for paper in to_resolve:
             progress.update(task, description=f"Resolving: {paper.title[:50]}...")
-            result = resolve_s2_id(paper, s2_client, verbose=verbose)
+            result = resolve_s2_id(paper, s2_client, verbose=verbose, cheap_only=cheap_only)
             results.append(result)
             progress.advance(task)
 
