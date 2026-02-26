@@ -30,3 +30,4 @@ abstract: 'We study learning-augmented streaming algorithms for estimating the v
   with probability at least $2/3$ for insertion-only streams, using only $\text{poly}(1/\epsilon)$ words of space. We also
   extend our algorithm to fully dynamic streams while maintaining a space complexity of $\text{poly}(1/\epsilon,\log n)$ words.'
 year: 2025
+s2_id: e927668c0e1147912b28785260290927c4a63e28

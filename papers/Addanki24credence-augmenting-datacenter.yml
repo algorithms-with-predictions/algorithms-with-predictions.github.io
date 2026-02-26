@@ -16,7 +16,7 @@ abstract: Packet buffers in datacenter switches are shared across all the switch
   off-the-shelf machine learning techniques that are also practical in today's hardware. We believe this work opens several
   interesting future work opportunities both in systems and theory that we discuss at the end of this paper.
 labels:
-- networks
+- network design
 - online
 - queueing
 publications:
@@ -33,3 +33,4 @@ publications:
   month: 1
   day: 5
 year: 2024
+s2_id: none

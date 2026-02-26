@@ -2,8 +2,8 @@ title: Learning-augmented smooth integer programs with PAC-learnable oracles
 authors: Hao-Yuan He, Ming Li
 abstract: This paper investigates learning-augmented algorithms for smooth integer programs, covering canonical problems such as MAX-CUT and MAX-k-SAT. We introduce a framework that incorporates a predictive oracle to construct a linear surrogate of the objective, which is then solved via linear programming followed by a rounding procedure. Crucially, our framework ensures that the solution quality is both consistent and smooth against prediction errors. We demonstrate that this approach effectively extends tractable approximations from the classical dense regime to the near-dense regime. Furthermore, we go beyond the assumption of oracle existence by establishing its PAC-learnability. We prove that the induced algorithm class possesses a bounded pseudo-dimension, thereby ensuring that an oracle with near-optimal expected performance can be learned with polynomial samples.
 labels:
-- Smooth integer programs
-- Learnability
+- approximation
+- graph problems
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2602.02505
@@ -11,3 +11,4 @@ publications:
   month: 1
   day: 22
 
+s2_id: cfa47b102798255657e2288f6695ca61347aa41b

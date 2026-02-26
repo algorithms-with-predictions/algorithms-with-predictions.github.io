@@ -32,3 +32,4 @@ abstract: 'Algorithms with (machine-learned) predictions is a powerful framework
   distributionally-robust algorithm for the classical problem of computing an optimal binary search tree given a distribution
   over target keys. We complement this with a lower bound showing that this query complexity is essentially optimal (up to
   constants), and experiments validating the practical usefulness of our algorithm.'
+s2_id: 1bd6784783d1274c3a9268b07ec3ee0e8866587e

@@ -38,3 +38,4 @@ abstract: Aiming to overcome some of the limitations of worst-case analysis, the
   past, but no more than the maximum seen so far. The proof relies on an LP formulation of the revenue maximization problem
   and duality. For the learning-augmented setting, we prove that the robustness-consistency trade-off achieved by our auction
   is optimal within a class of learning-augmented online auctions. A full version of this paper can be found at https://arxiv.org/abs/2310.02879.
+s2_id: 7944e3e34bc960c943db2bb6397e4f08103f2f6b

@@ -11,3 +11,4 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/spaa/LiuT24,\n  author       = {Mozhengfu Liu and\n  Xueyan Tang},\n  title        = {Brief\
     \ Announcement: Scheduling Jobs for Minimum Span: Improved Bounds\n  and Learning-Augmented Algorithms},\n  booktitle\
     \    = {{SPAA}},\n  pages        = {141--143},\n  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+s2_id: none

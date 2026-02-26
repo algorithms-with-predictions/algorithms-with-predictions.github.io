@@ -31,3 +31,4 @@ abstract: Learning-augmented algorithms have been extensively studied across the
   We show that our algorithms break impossibility results when the advice is accurate, while maintaining comparable performance
   with state-of-the-art classical online algorithms even when the advice is erroneous.
 year: 2025
+s2_id: b22f2cfb59bfba964f00659edc1d0e13b32a5805

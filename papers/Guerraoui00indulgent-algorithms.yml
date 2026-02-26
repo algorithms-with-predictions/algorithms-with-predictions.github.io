@@ -10,3 +10,4 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/podc/Guerraoui00,\n  author       = {Rachid Guerraoui},\n  title        = {Indulgent algorithms\
     \ (preliminary version)},\n  booktitle    = {{PODC}},\n  pages        = {289--297},\n  publisher    = {{ACM}},\n  year\
     \         = {2000}\n}\n"
+s2_id: none

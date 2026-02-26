@@ -24,3 +24,4 @@ abstract: We give a very general and simple framework to incorporate predictions
   worst-case online lower bounds, and smoothly degrades as the prediction error grows. This framework directly applies to
   a wide range of well-studied online covering problems such as facility location, Steiner problems, set cover, parking permit,
   etc., and yields improved and novel bounds.
+s2_id: none

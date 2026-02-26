@@ -30,3 +30,4 @@ abstract: We propose data-driven one-pass streaming algorithms for estimating th
   algorithms, as previous multi-pass and random order streaming algorithms can be seen as special cases of our algorithms,
   where the first pass or random order was used to implement the heavy edge oracle. Lastly, our experiments demonstrate advantages
   of the proposed method compared to state-of-the-art streaming algorithms.
+s2_id: 2abbbc44ac51362540cdac1e34a99c03091424da

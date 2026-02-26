@@ -29,3 +29,4 @@ abstract: We study infinite-horizon Discounted Markov Decision Processes (DMDPs)
   leverages the prediction on the transition matrix. Our algorithm achieves a sample complexity bound depending on the prediction
   error, and the bound is uniformly better than $\tilde{O}((1-\gamma)^{-4} N \epsilon^{-2})$, the previous best result derived
   from convex optimization methods. These theoretical findings are further supported by our numerical experiments.
+s2_id: 5be6c164519aed84f2634d0bea7f71698c451e6f

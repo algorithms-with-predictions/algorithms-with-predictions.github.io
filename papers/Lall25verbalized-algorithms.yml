@@ -29,3 +29,4 @@ abstract: Instead of querying LLMs in a one-shot manner and hoping to get the ri
   language strings, \emph{verbalized sorting} uses an LLM as a binary comparison oracle in a known and well-analyzed sorting
   algorithm (e.g., bitonic sorting network). We demonstrate the effectiveness of this approach on sorting and clustering tasks.
 year: 2025
+s2_id: dc975650b64526b187a2ffccc7c1b2d52060e3aa

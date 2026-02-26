@@ -31,3 +31,4 @@ abstract: We revisit the problem of distribution learning within the framework o
   samples suffices whenever $\| \tilde{\boldsymbol{\Sigma}}^{-1/2} \boldsymbol{\Sigma} \tilde{\boldsymbol{\Sigma}}^{-1/2}
   - \boldsymbol{I_d} \|_1 \leq \varepsilon d^{1-\beta}$ (where $\|\cdot\|_1$ denotes the entrywise $\ell_1$ norm) for any
   $\beta>0$, yielding a polynomial improvement over the advice-free setting.
+s2_id: b7d64cad4c3efd320a4b57d2ab93348f0ac0596c

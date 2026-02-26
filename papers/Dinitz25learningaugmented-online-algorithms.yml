@@ -21,3 +21,4 @@ abstract: 'This paper considers using predictions in the context of the online J
   algorithm. We also show that all deterministic algorithms falling in a certain reasonable class of algorithms have a competitive
   ratio of $\Omega(\eta^{1/3})$, so this algorithm is nearly the best possible with respect to this error metric.'
 year: 2025
+s2_id: a694fabb7614b412410fa7762e2c76216c505d5b

@@ -32,3 +32,4 @@ publications:
   dblp_key: journals/ior/BalseiroKK26
   bibtex: "@article{DBLP:journals/ior/BalseiroKK26,\n  author    = {Santiago R. Balseiro and Christian Kroer and Rachitesh Kumar},\n  title     = {Single-Leg Revenue Management with Advice},\n  journal   = {Oper. Res.},\n  year      = {2026},\n  url       = {https://doi.org/10.1287/opre.2022.0363},\n}"
 year: 2023
+s2_id: b7917b9bc4f27b967904d96bb79c26fb1fb332fb

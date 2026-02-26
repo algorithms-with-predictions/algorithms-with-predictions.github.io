@@ -36,3 +36,4 @@ abstract: Motivated by the challenges in last-mile delivery operations, we consi
   the base model of staffing for one target demand, We show how to extend our LP-based emulator minimax optimal policy to
   various generalizations with (i) multiple target demands, (ii) costly hiring and releasing with budgets, and (iii) jointly
   minimizing the cost of hiring and over-/under-staffing. A full version of this paper can be found at http://dx.doi.org/10.2139/ssrn.4732158.
+s2_id: 1f1f8583d4271e398e01f0349bcda5d8dae13054

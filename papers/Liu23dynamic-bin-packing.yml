@@ -36,3 +36,4 @@ publications:
   year: 2021
   dblp_key: journals/pomacs/LiuT21
   bibtex: "@article{DBLP:journals/pomacs/LiuT21,\n  author    = {Mozhengfu Liu and Xueyan Tang},\n  title     = {Dynamic Bin Packing with Predictions},\n  journal   = {Proc. ACM Meas. Anal. Comput. Syst.},\n  year      = {2021},\n  url       = {https://doi.org/10.1145/3570605},\n}"
+s2_id: 9b2bdea63a66258a14e0ca915560ef3c6eed5c4a

@@ -38,3 +38,4 @@ publications:
   dblp_key: conf/tamc/ShiX25
   bibtex: "@inproceedings{DBLP:conf/tamc/ShiX25,\n  author    = {Yangguang Shi and Zhenyu Xue},\n  title     = {Prediction-Augmented Mechanism Design for Weighted Facility Location},\n  booktitle = {TAMC},\n  year      = {2025},\n  url       = {https://doi.org/10.1007/978-981-95-4839-2_20},\n}"
 year: 2025
+s2_id: ee6fc6bcec9c1e74f64863283618008ba6e59dd9

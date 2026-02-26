@@ -2,7 +2,6 @@ title: 'Online Optimization With Predictions and Switching Costs: Fast Algorithm
 authors: Yingying Li, Guannan Qu, Na Li
 labels:
 - online
-- switching costs
 publications:
 - name: IEEE Trans. Autom. Control.
   url: https://dblp.org/rec/journals/tac/LiQL21
@@ -22,3 +21,4 @@ abstract: 'This paper studies an online optimization problem with a finite predi
   dynamic regret for a broad class of deterministic online algorithms. The lower bound is close to RHAG''s regret upper bound,
   indicating that our gradient-based RHAG is a near-optimal online algorithm. Finally, we conduct numerical experiments to
   complement our theoretical analysis.'
+s2_id: bce98ab4fad1b744a44c9f01de0871d4ab00e174

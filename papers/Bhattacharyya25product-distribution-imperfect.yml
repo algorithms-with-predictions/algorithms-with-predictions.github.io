@@ -28,3 +28,4 @@ abstract: Given i.i.d.~samples from an unknown distribution $P$, the goal of dis
   $\tilde{O}(d^{1-\eta}/\varepsilon^2)$, if $\|\mathbf{p} - \mathbf{q}\|_1<\varepsilon d^{0.5 - \Omega(\eta)}$. Here, $\mathbf{p}$
   and $\mathbf{q}$ are the mean vectors of $P$ and $Q$ respectively, and no bound on $\|\mathbf{p} - \mathbf{q}\|_1$ is known
   to the algorithm a priori.
+s2_id: bcd0c04113d2392c15bef31ba46a5284cec6dd38

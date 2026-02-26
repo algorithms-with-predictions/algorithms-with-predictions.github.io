@@ -26,3 +26,4 @@ abstract: 'We explore the fundamental problem of sorting through the lens of lea
   smoothly from $O(n)$ to $O(n\log n)$. We prove that the comparison complexity is theoretically optimal with respect to the
   examined error measures. An experimental evaluation against existing adaptive and non-adaptive sorting algorithms demonstrates
   the potential of applying learning-augmented algorithms in sorting tasks.'
+s2_id: 15f8b247570b9381aa2b38c4360d02ae81834517

@@ -18,7 +18,6 @@ abstract: 'We introduce a learning-augmented peer-to-peer (P2P) network design t
   we show that LASLiN achieves improved performances.'
 labels:
 - network design
-- networking
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2509.11904

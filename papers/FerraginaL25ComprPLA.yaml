@@ -15,3 +15,4 @@ publications:
   year: 2025
   dblp_key: conf/isaac/FerraginaL25
   bibtex: "@inproceedings{DBLP:conf/isaac/FerraginaL25,\n  author    = {Paolo Ferragina and Filippo Lari},\n  title     = {Compressibility Measures and Succinct Data Structures for Piecewise Linear Approximations},\n  booktitle = {ISAAC},\n  year      = {2025},\n  url       = {https://doi.org/10.4230/LIPIcs.ISAAC.2025.31},\n}"
+s2_id: 91996caa93f4d322411470463bf6050bb2b90295

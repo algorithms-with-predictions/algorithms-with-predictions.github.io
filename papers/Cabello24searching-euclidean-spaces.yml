@@ -27,3 +27,4 @@ abstract: 'We study the problem of searching for a target at some unknown locati
   by the searcher. Our main positive result is a strategy that achieves $(10c)^{d+1}$-competitive ratio, even when the constant
   $c$ is unknown. We also give a lower bound of roughly $(c/4)^{d-1}$ on the competitive ratio of any search strategy in $\RR^d$,
   assuming that $c\ge 4$.'
+s2_id: 2e4ee02e22d982eefccb0875a35cf6b218f3cc2e

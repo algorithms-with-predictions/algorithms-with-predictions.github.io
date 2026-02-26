@@ -25,3 +25,4 @@ publications:
   year: 2024
   dblp_key: journals/pomacs/LiuT24
   bibtex: "@article{DBLP:journals/pomacs/LiuT24,\n  author    = {Mozhengfu Liu and Xueyan Tang},\n  title     = {Tight Bounds for Dynamic Bin Packing with Predictions},\n  journal   = {Proc. ACM Meas. Anal. Comput. Syst.},\n  year      = {2024},\n  url       = {https://doi.org/10.1145/3700437},\n}"
+s2_id: 780e84e6a3cb7d8f84d5b02df70183122687f0c6

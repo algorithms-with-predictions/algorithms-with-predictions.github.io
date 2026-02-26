@@ -30,3 +30,4 @@ abstract: 'This paper proposes a new model for augmenting algorithms with useful
   are established: existence of useful predictions that give near optimal solutions, robustness of these predictions to errors
   that smoothly degrade as the underlying problem instance changes, and we prove high quality predictions can be learned from
   a small sample of prior instances.'
+s2_id: 7df990973b36028c1fd697775932e5640afc3932

@@ -36,3 +36,4 @@ publications:
   dblp_key: conf/wine/ChenGI24
   bibtex: "@inproceedings{DBLP:conf/wine/ChenGI24,\n  author    = {Qingyun Chen and Nick Gravin and Sungjin Im},\n  title     = {Strategic Facility Location via Predictions},\n  booktitle = {WINE},\n  year      = {2024},\n  url       = {https://doi.org/10.1007/978-3-032-08560-3_23},\n}"
 year: 2024
+s2_id: 53ec4dbe733e8ceebfa00fb06f68d0ffaed16e3d

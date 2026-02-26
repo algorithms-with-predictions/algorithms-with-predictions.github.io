@@ -24,3 +24,4 @@ abstract: We present the first learning-augmented data structure for implementin
   and Woodruff (ICML 2022) and Cao et al. (arXiv 2023), while providing robustness guarantees that are absent in the previous
   work. Numerical experiments show that RobustSL outperforms alternative data structures using both synthetic and real datasets.
 year: 2024
+s2_id: 84badec243c43b2ed490b8e85e84b3ae7e9b109e

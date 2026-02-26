@@ -29,3 +29,4 @@ publications:
   dblp_key: journals/tmlr/SatoM25
   bibtex: "@article{DBLP:journals/tmlr/SatoM25,\n  author    = {Atsuki Sato and Yusuke Matsui},\n  title     = {PCF Learned Sort: a Learning Augmented Sort Algorithm with $\\mathcal{O}(n \\log\\log n)$ Expected Complexity},\n  journal   = {Trans. Mach. Learn. Res.},\n  year      = {2025},\n  url       = {https://openreview.net/forum?id=wVkb8WHbvR},\n}"
 year: 2024
+s2_id: a8f23aae569e45d5f5df3ee225a3231d5999e145
