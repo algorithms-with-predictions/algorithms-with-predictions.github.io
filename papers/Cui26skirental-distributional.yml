@@ -1,0 +1,15 @@
+title: Ski Rental with Distributional Predictions of Unknown Quality
+authors: Qiming Cui, Michael Dinitz
+labels:
+- online
+- rent-or-buy
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2602.21104
+  year: 2026
+  month: 2
+  day: 25
+abstract: 'We revisit the central online problem of \emph{ski rental} in the ``algorithms with predictions'' framework from the point of view of \emph{distributional} predictions.  Ski rental was one of the first problems to be studied with predictions, where a natural prediction is simply the number of ski days.  But it is both more natural and potentially more powerful to think of a prediction as a \emph{distribution} $\hat p$ over the ski days.  If the true number of ski days is drawn from some true (but unknown) distribution $p$, then we show as our main result that there is an algorithm with expected cost at most $OPT + O\left(\min \left(\max(\eta,1) \cdot  \sqrt{b},\ b \log b \right) \right)$, where $OPT$ is the expected cost of the optimal policy for the true distribution $p$, $b$ is the cost of buying, and $\eta$ is the Earth Mover''s (Wasserstein-1) distance between $p$ and $\hat p$.  Note that when $\eta < o(\sqrt{b})$ this gives additive loss less than $b$ (the trivial bound), and when $\eta$ is arbitrarily large (corresponding to an extremely inaccurate prediction) we still do not pay more than $O(b \log b)$ additive loss.  An implication of these bounds is that our algorithm has \emph{consistency} $O(\sqrt{b})$ (additive loss when the prediction error is $0$) and \emph{robustness} $O(b \log b)$ (additive loss when the prediction error is arbitrarily large).  Moreover, we do not need to assume that we know (or have any bound on) the prediction error $\eta$, in contrast with previous work in robust optimization which assumes that we know this error.
+    
+    We complement this upper bound with a variety of lower bounds showing that it is essentially tight: not only can the consistency/robustness tradeoff not be improved, but our particular loss function cannot be meaningfully improved.'
+year: 2026
