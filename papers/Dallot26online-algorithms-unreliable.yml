@@ -2,6 +2,7 @@ title: Online Algorithms with Unreliable Guidance
 authors: Julien Dallot, Y. Emek, Yuval Gil, Maciej Pacut, Stefan Schmid
 labels:
 - online
+- allocation/matching
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2602.20706
