@@ -6,6 +6,11 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2406.06805
   year: 2024
+- name: NeurIPS
+  url: http://papers.nips.cc/paper_files/paper/2024/hash/4a6824f8f137e78f18e73d9cfc1d22ed-Abstract-Conference.html
+  year: 2024
+  dblp_key: conf/nips/BenomarBP24
+  bibtex: "@inproceedings{DBLP:conf/nips/BenomarBP24,\n  author    = {Ziyad Benomar and Dorian Baudry and Vianney Perchet},\n  title     = {Lookback Prophet Inequalities},\n  booktitle = {NeurIPS},\n  year      = {2024},\n  url       = {http://papers.nips.cc/paper_files/paper/2024/hash/4a6824f8f137e78f18e73d9cfc1d22ed-Abstract-Conference.html},\n}"
 year: 2024
 arxiv: 2406.06805
 s2_id: e548fd3b4ec8443f326a48124ddbf29cce27610d

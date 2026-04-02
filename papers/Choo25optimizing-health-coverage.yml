@@ -20,6 +20,11 @@ publications:
     \  doi          = {10.48550/ARXIV.2509.00135},\n  eprinttype    = {arXiv},\n  eprint       = {2509.00135},\n  timestamp\
     \    = {Wed, 08 Oct 2025 13:18:21 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2509-00135.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: AAAI
+  url: https://doi.org/10.1609/aaai.v40i45.41171
+  year: 2026
+  dblp_key: conf/aaai/ChooTGLNSMTV26
+  bibtex: "@inproceedings{DBLP:conf/aaai/ChooTGLNSMTV26,\n  author    = {Davin Choo and Yohai Trabelsi and Fentabil Getnet and Samson Warkaye Lamma and Wondesen Nigatu and Kasahun Sime and Lisa Matay and Milind Tambe and Stéphane Verguet},\n  title     = {Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and Persistent Proportionality Under an Online Budget},\n  booktitle = {AAAI},\n  year      = {2026},\n  url       = {https://doi.org/10.1609/aaai.v40i45.41171},\n}"
 arxiv: '2509.00135'
 abstract: 'As part of nationwide efforts aligned with the United Nations''Sustainable Development Goal 3 on Universal Health
   Coverage, Ethiopia''s Ministry of Health is strengthening health posts to expand access to essential healthcare services.

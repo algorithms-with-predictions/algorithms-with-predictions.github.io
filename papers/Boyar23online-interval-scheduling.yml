@@ -26,5 +26,10 @@ publications:
   year: 2023
   month: 2
   day: 27
+- name: J. Comput. Syst. Sci.
+  url: https://doi.org/10.1016/j.jcss.2026.103795
+  year: 2026
+  dblp_key: journals/jcss/BoyarFKL26
+  bibtex: "@article{DBLP:journals/jcss/BoyarFKL26,\n  author    = {Joan Boyar and Lene M. Favrholdt and Shahin Kamali and Kim S. Larsen},\n  title     = {Online interval scheduling with predictions},\n  journal   = {J. Comput. Syst. Sci.},\n  year      = {2026},\n  url       = {https://doi.org/10.1016/j.jcss.2026.103795},\n}"
 year: 2023
 s2_id: eab4145ff3517d97b02d4c910593a2a23eed434f

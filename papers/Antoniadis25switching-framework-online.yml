@@ -8,6 +8,11 @@ publications:
   year: 2025
   month: 11
   day: 20
+- name: AAAI
+  url: https://doi.org/10.1609/aaai.v40i43.40930
+  year: 2026
+  dblp_key: conf/aaai/AntoniadisSSS26
+  bibtex: "@inproceedings{DBLP:conf/aaai/AntoniadisSSS26,\n  author    = {Antonios Antoniadis 0001 and Ali Shahheidar and Golnoosh Shahkarami and Abolfazl Soltani},\n  title     = {A Switching Framework for Online Interval Scheduling with Predictions},\n  booktitle = {AAAI},\n  year      = {2026},\n  url       = {https://doi.org/10.1609/aaai.v40i43.40930},\n}"
 arxiv: '2511.16194'
 abstract: We study online interval scheduling in the irrevocable setting, where each interval must be immediately accepted
   or rejected upon arrival. The objective is to maximize the total length of accepted intervals while ensuring that no two

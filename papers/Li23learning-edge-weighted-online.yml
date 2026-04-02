@@ -7,6 +7,11 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2306.00172
   year: 2023
+- name: ICML
+  url: https://proceedings.mlr.press/v202/li23am.html
+  year: 2023
+  dblp_key: conf/icml/LiYR23
+  bibtex: "@inproceedings{DBLP:conf/icml/LiYR23,\n  author    = {Pengfei Li 0008 and Jianyi Yang 0001 and Shaolei Ren},\n  title     = {Learning for Edge-Weighted Online Bipartite Matching with Robustness Guarantees},\n  booktitle = {ICML},\n  year      = {2023},\n  url       = {https://proceedings.mlr.press/v202/li23am.html},\n}"
 year: 2023
 arxiv: 2306.00172
 s2_id: bedd7b669f82b2aaaf0b3ae7d68f44c69f28b87d
