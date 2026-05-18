@@ -1,0 +1,12 @@
+title: Learning multivariate Gaussians with imperfect advice
+authors: Bhattacharyya, Choo, George John, Gouleakis
+publications:
+- name: ICML
+  url: https://openreview.net/forum?id=0OVCcpLNGI
+  year: 2025
+- name: arXiv
+  url: https://arxiv.org/abs/2411.12700
+  year: 2025
+labels:
+- distribution learning
+
