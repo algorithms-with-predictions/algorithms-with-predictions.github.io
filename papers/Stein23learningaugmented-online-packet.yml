@@ -1,14 +1,11 @@
 title: Learning-Augmented Online Packet Scheduling with Deadlines
-authors: Stein, Wei
-abstract: The modern network aims to prioritize critical traffic over non-critical
-  traffic and effectively manage traffic flow. This necessitates proper buffer management
-  to prevent the loss of crucial traffic while minimizing the impact on non-critical
-  traffic. Therefore, the algorithm's objective is to control which packets to transmit
-  and which to discard at each step. In this study, we initiate the learning-augmented
-  online packet scheduling with deadlines and provide a novel algorithmic framework
-  to cope with the prediction. We show that when the prediction error is small, our
-  algorithm improves the competitive ratio while still maintaining a bounded competitive
-  ratio, regardless of the prediction error.
+authors: Clifford Stein, Hao-Ting Wei
+abstract: The modern network aims to prioritize critical traffic over non-critical traffic and effectively manage traffic
+  flow. This necessitates proper buffer management to prevent the loss of crucial traffic while minimizing the impact on non-critical
+  traffic. Therefore, the algorithm's objective is to control which packets to transmit and which to discard at each step.
+  In this study, we initiate the learning-augmented online packet scheduling with deadlines and provide a novel algorithmic
+  framework to cope with the prediction. We show that when the prediction error is small, our algorithm improves the competitive
+  ratio while still maintaining a bounded competitive ratio, regardless of the prediction error.
 labels:
 - online
 - routing / TSP
@@ -19,3 +16,12 @@ publications:
   year: 2023
   month: 5
   day: 11
+  dblp_key: journals/corr/abs-2305-07164
+  bibtex: "@article{DBLP:journals/corr/abs-2305-07164,\n  author       = {Clifford Stein and\n                  Hao{-}Ting\
+    \ Wei},\n  title        = {Learning-Augmented Online Packet Scheduling with Deadlines},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2305.07164},\n  year         = {2023},\n  url          = {https://doi.org/10.48550/arXiv.2305.07164},\n\
+    \  doi          = {10.48550/ARXIV.2305.07164},\n  eprinttype    = {arXiv},\n  eprint       = {2305.07164},\n  timestamp\
+    \    = {Wed, 17 May 2023 15:47:36 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2305-07164.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2023
+s2_id: 60ae6a3626b3150bb0a80ead1062c5b314585a5d

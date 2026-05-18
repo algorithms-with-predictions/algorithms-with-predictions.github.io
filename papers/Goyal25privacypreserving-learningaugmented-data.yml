@@ -1,22 +1,17 @@
 title: Privacy-Preserving Learning-Augmented Data Structures
 authors: Prabhav Goyal, Vinesh Sridhar, Wilson Zheng
-abstract: 'Learning-augmented data structures use predicted frequency estimates to
-  retrieve frequently occurring database elements faster than standard data structures.
-  Recent work has developed data structures that optimally exploit these frequency
-  estimates while maintaining robustness to adversarial prediction errors. However,
-  the privacy and security implications of this setting remain largely unexplored.
-  In the event of a security breach, data structures should reveal minimal information
-  beyond their current contents. This is even more crucial for learning-augmented
-  data structures, whose layout adapts to the data. A data structure is history independent
-  if its memory representation reveals no information about past operations except
-  what is inferred from its current contents. In this work, we take the first step
-  towards privacy and security guarantees in this setting by proposing the first learning-augmented
-  data structure that is strongly history independent, robust, and supports dynamic
-  updates. To achieve this, we introduce two techniques: thresholding, which automatically
-  makes any learning-augmented data structure robust, and pairing, a simple technique
-  that provides strong history independence in the dynamic setting. Our experimental
-  results demonstrate a tradeoff between security and efficiency but are still competitive
-  with the state of the art.'
+abstract: 'Learning-augmented data structures use predicted frequency estimates to retrieve frequently occurring database
+  elements faster than standard data structures. Recent work has developed data structures that optimally exploit these frequency
+  estimates while maintaining robustness to adversarial prediction errors. However, the privacy and security implications
+  of this setting remain largely unexplored. In the event of a security breach, data structures should reveal minimal information
+  beyond their current contents. This is even more crucial for learning-augmented data structures, whose layout adapts to
+  the data. A data structure is history independent if its memory representation reveals no information about past operations
+  except what is inferred from its current contents. In this work, we take the first step towards privacy and security guarantees
+  in this setting by proposing the first learning-augmented data structure that is strongly history independent, robust, and
+  supports dynamic updates. To achieve this, we introduce two techniques: thresholding, which automatically makes any learning-augmented
+  data structure robust, and pairing, a simple technique that provides strong history independence in the dynamic setting.
+  Our experimental results demonstrate a tradeoff between security and efficiency but are still competitive with the state
+  of the art.'
 labels:
 - dynamic / data structure
 publications:
@@ -25,5 +20,13 @@ publications:
   year: 2025
   month: 9
   day: 30
+  dblp_key: journals/corr/abs-2510-00165
+  bibtex: "@article{DBLP:journals/corr/abs-2510-00165,\n  author       = {Prabhav Goyal and\n                  Vinesh Sridhar\
+    \ and\n                  Wilson Zheng},\n  title        = {Privacy-Preserving Learning-Augmented Data Structures},\n \
+    \ journal      = {CoRR},\n  volume       = {abs/2510.00165},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2510.00165},\n\
+    \  doi          = {10.48550/ARXIV.2510.00165},\n  eprinttype    = {arXiv},\n  eprint       = {2510.00165},\n  timestamp\
+    \    = {Sat, 08 Nov 2025 10:18:09 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2510-00165.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2510.00165
 s2_id: cb8cd65bbbf22c95ea62af29f9c1bcdcc0e67399
+year: 2025

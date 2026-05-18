@@ -1,18 +1,14 @@
 title: Improved Approximations for Hard Graph Problems using Predictions
-authors: Aamand, Chen, Gollapudi, Silwal, Wu
-abstract: We design improved approximation algorithms for NP-hard graph problems by
-  incorporating predictions (e.g., learned from past data). Our prediction model builds
-  upon and extends the $\varepsilon$-prediction framework by Cohen-Addad, d'Orsi,
-  Gupta, Lee, and Panigrahi (NeurIPS 2024). We consider an edge-based version of this
-  model, where each edge provides two bits of information, corresponding to predictions
-  about whether each of its endpoints belong to an optimal solution. Even with weak
-  predictions where each bit is only $\varepsilon$-correlated with the true solution,
-  this information allows us to break approximation barriers in the standard setting.
-  We develop algorithms with improved approximation ratios for MaxCut, Vertex Cover,
-  Set Cover, and Maximum Independent Set problems (among others). Across these problems,
-  our algorithms share a unifying theme, where we separately satisfy constraints related
-  to high degree vertices (using predictions) and low-degree vertices (without using
-  predictions) and carefully combine the answers.
+authors: Anders Aamand, Justin Y. Chen, Siddharth Gollapudi, Sandeep Silwal, Hao Wu
+abstract: We design improved approximation algorithms for NP-hard graph problems by incorporating predictions (e.g., learned
+  from past data). Our prediction model builds upon and extends the $\varepsilon$-prediction framework by Cohen-Addad, d'Orsi,
+  Gupta, Lee, and Panigrahi (NeurIPS 2024). We consider an edge-based version of this model, where each edge provides two
+  bits of information, corresponding to predictions about whether each of its endpoints belong to an optimal solution. Even
+  with weak predictions where each bit is only $\varepsilon$-correlated with the true solution, this information allows us
+  to break approximation barriers in the standard setting. We develop algorithms with improved approximation ratios for MaxCut,
+  Vertex Cover, Set Cover, and Maximum Independent Set problems (among others). Across these problems, our algorithms share
+  a unifying theme, where we separately satisfy constraints related to high degree vertices (using predictions) and low-degree
+  vertices (without using predictions) and carefully combine the answers.
 labels:
 - approximation
 - graph problems
@@ -22,3 +18,15 @@ publications:
   year: 2025
   month: 5
   day: 29
+- name: ICML
+  dblp_key: conf/icml/AamandCGSW25
+  url: https://dblp.org/rec/conf/icml/AamandCGSW25
+  bibtex: "@inproceedings{DBLP:conf/icml/AamandCGSW25,\n  author       = {Anders Aamand and\n                  Justin Y. Chen\
+    \ and\n                  Siddharth Gollapudi and\n                  Sandeep Silwal and\n                  Hao Wu},\n \
+    \ title        = {Improved Approximations for Hard Graph Problems using Predictions},\n  booktitle    = {Forty-second\
+    \ International Conference on Machine Learning, {ICML}\n                  2025, Vancouver, BC, Canada, July 13-19, 2025},\n\
+    \  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=5QMJZiHuGn},\n\
+    \  timestamp    = {Wed, 10 Dec 2025 08:08:40 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/AamandCGSW25.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+  year: 2025
+s2_id: ed5edf57efb14bef17f62ed986813c4c2ecebcbe

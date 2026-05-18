@@ -1,0 +1,17 @@
+title: 'LACK: Adaptive -means clustering with learning-augmented policy for approximate
+  k nearest neighbor search'
+authors: Chen, Lin, Li, Liu
+year: 2026
+s2_id: 42fd7269b333fa1971a12e9f4d6a0ad00c557a2a
+labels:
+- clustering
+publications:
+- name: Information Sciences
+  url: https://doi.org/10.1016/j.ins.2026.123077
+  year: 2026
+- name: Inf. Sci.
+  url: https://doi.org/10.1016/j.ins.2026.123077
+  year: 2026
+  dblp_key: journals/isci/ChenLLL26
+  bibtex: "@article{DBLP:journals/isci/ChenLLL26,\n  author    = {Zhihao Chen and Junnuo Lin and Lingli Li and Yongnan Liu},\n  title     = {LACK: Adaptive k -means clustering with learning-augmented policy for approximate K nearest neighbor search},\n  journal   = {Inf. Sci.},\n  year      = {2026},\n  url       = {https://doi.org/10.1016/j.ins.2026.123077},\n}"
+

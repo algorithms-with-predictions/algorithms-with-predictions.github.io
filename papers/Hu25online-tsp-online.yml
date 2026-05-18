@@ -19,6 +19,11 @@ publications:
 - name: IJOC
   url: https://doi.org/10.1287/ijoc.2023.0478
   year: 2025
+- name: INFORMS J. Comput.
+  url: https://doi.org/10.1287/ijoc.2023.0478
+  year: 2026
+  dblp_key: journals/informs/HuWLCL26
+  bibtex: "@article{DBLP:journals/informs/HuWLCL26,\n  author    = {Hsiao-Yu Hu and Hao-Ting Wei and Meng-Hsi Li and Kai-Min Chung and Chung-Shou Liao},\n  title     = {Online TSP and Online Dial-a-Ride with Predictions},\n  journal   = {INFORMS J. Comput.},\n  year      = {2026},\n  url       = {https://doi.org/10.1287/ijoc.2023.0478},\n}"
 s2_id: 900e35a769fa6a336939fd3439060c9c530c89ef
 labels:
 - routing / TSP

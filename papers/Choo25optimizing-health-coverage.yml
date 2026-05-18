@@ -1,0 +1,40 @@
+title: 'Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and Persistent Proportionality Under an Online
+  Budget'
+authors: Davin Choo, Yohai Trabelsi, Fentabil Getnet, Samson Warkaye Lamma, Wondesen Nigatu, Kasahun Sime, Lisa Matay, Milind
+  Tambe, Stéphane Verguet
+year: 2025
+s2_id: f9ed40c0f2a1119a690f056cdc81cd3a4ddebcf6
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2509.00135
+  year: 2025
+  month: 8
+  day: 29
+  dblp_key: journals/corr/abs-2509-00135
+  bibtex: "@article{DBLP:journals/corr/abs-2509-00135,\n  author       = {Davin Choo and\n                  Yohai Trabelsi\
+    \ and\n                  Fentabil Getnet and\n                  Samson Warkaye Lamma and\n                  Wondesen Nigatu\
+    \ and\n                  Kasahun Sime and\n                  Lisa Matay and\n                  Milind Tambe and\n    \
+    \              St{\\'{e}}phane Verguet},\n  title        = {Optimizing Health Coverage in Ethiopia: {A} Learning-augmented\
+    \ Approach\n                  and Persistent Proportionality Under an Online Budget},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2509.00135},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2509.00135},\n\
+    \  doi          = {10.48550/ARXIV.2509.00135},\n  eprinttype    = {arXiv},\n  eprint       = {2509.00135},\n  timestamp\
+    \    = {Wed, 08 Oct 2025 13:18:21 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2509-00135.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: AAAI
+  url: https://doi.org/10.1609/aaai.v40i45.41171
+  year: 2026
+  dblp_key: conf/aaai/ChooTGLNSMTV26
+  bibtex: "@inproceedings{DBLP:conf/aaai/ChooTGLNSMTV26,\n  author    = {Davin Choo and Yohai Trabelsi and Fentabil Getnet and Samson Warkaye Lamma and Wondesen Nigatu and Kasahun Sime and Lisa Matay and Milind Tambe and Stéphane Verguet},\n  title     = {Optimizing Health Coverage in Ethiopia: A Learning-augmented Approach and Persistent Proportionality Under an Online Budget},\n  booktitle = {AAAI},\n  year      = {2026},\n  url       = {https://doi.org/10.1609/aaai.v40i45.41171},\n}"
+arxiv: '2509.00135'
+abstract: 'As part of nationwide efforts aligned with the United Nations''Sustainable Development Goal 3 on Universal Health
+  Coverage, Ethiopia''s Ministry of Health is strengthening health posts to expand access to essential healthcare services.
+  However, only a fraction of this health system strengthening effort can be implemented each year due to limited budgets
+  and other competing priorities, thus the need for an optimization framework to guide prioritization across the regions of
+  Ethiopia. In this paper, we develop a tool, Health Access Resource Planner (HARP), based on a principled decision-support
+  optimization framework for sequential facility planning that aims to maximize population coverage under budget uncertainty
+  while satisfying region-specific proportionality targets at every time step. We then propose two algorithms: (i) a learning-augmented
+  approach that improves upon expert recommendations at any single-step; and (ii) a greedy algorithm for multi-step planning,
+  both with strong worst-case approximation estimation. In collaboration with the Ethiopian Public Health Institute and Ministry
+  of Health, we demonstrated the empirical efficacy of our method on three regions across various planning scenarios.'
+labels:
+- online

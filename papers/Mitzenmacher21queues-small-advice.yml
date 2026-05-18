@@ -1,17 +1,13 @@
 title: Queues with Small Advice
-authors: M. Mitzenmacher
-abstract: Motivated by recent work on scheduling with predicted job sizes, we consider
-  the performance of scheduling algorithms with minimal advice, namely a single bit.
-  Besides demonstrating the power of very limited advice, such schemes are quite natural.
-  In the prediction setting, one bit of advice can be used to model a simple prediction
-  as to whether a job is "large" or "small"; that is, whether a job is above or below
-  a given threshold. Further, one-bit advice schemes can correspond to mechanisms
-  that tell whether to put a job at the front or the back for the queue, a limitation
-  which may be useful in many implementation settings. Finally, queues with a single
-  bit of advice have a simple enough state that they can be analyzed in the limiting
-  mean-field analysis framework for the power of two choices. Our work follows in
-  the path of recent work by showing that even small amounts of even possibly inaccurate
-  information can greatly improve scheduling performance.
+authors: Michael Mitzenmacher
+abstract: Motivated by recent work on scheduling with predicted job sizes, we consider the performance of scheduling algorithms
+  with minimal advice, namely a single bit. Besides demonstrating the power of very limited advice, such schemes are quite
+  natural. In the prediction setting, one bit of advice can be used to model a simple prediction as to whether a job is "large"
+  or "small"; that is, whether a job is above or below a given threshold. Further, one-bit advice schemes can correspond to
+  mechanisms that tell whether to put a job at the front or the back for the queue, a limitation which may be useful in many
+  implementation settings. Finally, queues with a single bit of advice have a simple enough state that they can be analyzed
+  in the limiting mean-field analysis framework for the power of two choices. Our work follows in the path of recent work
+  by showing that even small amounts of even possibly inaccurate information can greatly improve scheduling performance.
 labels:
 - online
 - queueing
@@ -20,10 +16,9 @@ publications:
   url: https://epubs.siam.org/doi/pdf/10.1137/1.9781611976830.1
   year: 2021
   dblp_key: conf/acda/Mitzenmacher21
-  bibtex: "@inproceedings{DBLP:conf/acda/Mitzenmacher21,\n  author       = {Michael\
-    \ Mitzenmacher},\n  title        = {Queues with Small Advice},\n  booktitle  \
-    \  = {{ACDA}},\n  pages        = {1--12},\n  publisher    = {{SIAM}},\n  year\
-    \         = {2021}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/acda/Mitzenmacher21,\n  author       = {Michael Mitzenmacher},\n  title        = {Queues\
+    \ with Small Advice},\n  booktitle    = {{ACDA}},\n  pages        = {1--12},\n  publisher    = {{SIAM}},\n  year     \
+    \    = {2021}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2006.15463
   year: 2020
@@ -31,3 +26,4 @@ publications:
   day: 27
 arxiv: 2006.15463
 s2_id: 5a4266ce2cea7b9ed14ee2a703d754f83c30d9f0
+year: 2021

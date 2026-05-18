@@ -1,0 +1,13 @@
+title: "Queueing, Predictions, and LLMs: Challenges and Open Problems"
+authors: Michael Mitzenmacher, Rana Shahout
+labels:
+- scheduling
+- queueing
+- caching / paging
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2503.07545
+  year: 2025
+year: 2025
+arxiv: 2503.07545
+s2_id: e37c37b6379d50c407203aeeb98b66d9d5b1668e

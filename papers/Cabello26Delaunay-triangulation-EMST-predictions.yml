@@ -1,0 +1,13 @@
+title: Delaunay Triangulations with Predictions
+authors: Sergio Cabello, Timothy M. Chan, Panos Giannopoulos
+labels:
+- running time
+- graph problems
+- computational geometry
+publications:
+- name: ITCS
+  url: https://doi.org/10.4230/LIPIcs.ITCS.2026.31
+  year: 2026
+- name: arXiv
+  url: https://doi.org/10.48550/arXiv.2601.08106
+  year: 2025

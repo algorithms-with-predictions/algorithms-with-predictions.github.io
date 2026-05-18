@@ -4,6 +4,8 @@ publications:
 - name: arXiv
   url: https://doi.org/10.48550/arXiv.2302.04182
   year: 2023
+  month: 2
+  day: 8
   dblp_key: journals/corr/abs-2302-04182
   bibtex: "@article{DBLP:journals/corr/abs-2302-04182,\n  author       = {Lixing Lyu\
     \ and\n                  Wang Chi Cheung},\n  title        = {Non-Stationary Bandits\

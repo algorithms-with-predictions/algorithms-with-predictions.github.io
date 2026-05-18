@@ -1,5 +1,5 @@
 title: Repetition- and Linearity-Aware Rank/Select Dictionaries
-authors: Ferragina, Manzini, Vinciguerra
+authors: Paolo Ferragina, Giovanni Manzini, Giorgio Vinciguerra
 labels:
 - dynamic / data structure
 publications:
@@ -11,3 +11,5 @@ publications:
     \  Giorgio Vinciguerra},\n  title        = {Repetition- and Linearity-Aware Rank/Select Dictionaries},\n  booktitle  \
     \  = {{ISAAC}},\n  series       = {LIPIcs},\n  volume       = {212},\n  pages        = {64:1--64:16},\n  publisher   \
     \ = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},\n  year         = {2021}\n}\n"
+year: 2021
+s2_id: 85fa213f694f463798b9b40dc8337367687a0604

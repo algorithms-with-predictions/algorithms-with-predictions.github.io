@@ -11,3 +11,4 @@ publications:
   bibtex: "@inproceedings{DBLP:conf/iclr/HuangFH00025,\n  author       = {Junyu Huang and\n  Qilong Feng and\n  Ziyun Huang\
     \ and\n  Zhen Zhang and\n  Jinhui Xu and\n  Jianxin Wang},\n  title        = {New Algorithms for the Learning-Augmented\
     \ k-means Problem},\n  booktitle    = {{ICLR}},\n  publisher    = {OpenReview.net},\n  year         = {2025}\n}\n"
+s2_id: 4a131bcf0aa5132a1d20bef6d502ba2f4adeabfb

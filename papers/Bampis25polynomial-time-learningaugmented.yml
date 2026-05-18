@@ -1,13 +1,11 @@
 title: Polynomial Time Learning-Augmented Algorithms for NP-hard Permutation Problems
-authors: Bampis, Escoffier, Fotakis, Patsilinakos, Xefteris
-abstract: We consider a learning-augmented framework for NP-hard permutation problems.
-  The algorithm has access to predictions telling, given a pair $u,v$ of elements,
-  whether $u$ is before $v$ or not in an optimal solution. Building on the work of
-  Braverman and Mossel (SODA 2008), we show that for a class of optimization problems
-  including scheduling, network design and other graph permutation problems, these
-  predictions allow to solve them in polynomial time with high probability, provided
-  that predictions are true with probability at least $1/2+\epsilon$. Moreover, this
-  can be achieved with a parsimonious access to the predictions.
+authors: Evripidis Bampis, Bruno Escoffier, Dimitris Fotakis, Panagiotis Patsilinakos, Michalis Xefteris
+abstract: We consider a learning-augmented framework for NP-hard permutation problems. The algorithm has access to predictions
+  telling, given a pair $u,v$ of elements, whether $u$ is before $v$ or not in an optimal solution. Building on the work of
+  Braverman and Mossel (SODA 2008), we show that for a class of optimization problems including scheduling, network design
+  and other graph permutation problems, these predictions allow to solve them in polynomial time with high probability, provided
+  that predictions are true with probability at least $1/2+\epsilon$. Moreover, this can be achieved with a parsimonious access
+  to the predictions.
 labels:
 - approximation
 - auctions
@@ -15,8 +13,34 @@ labels:
 - routing / TSP
 - scheduling
 publications:
+- name: ICML
+  url: https://proceedings.mlr.press/v267/bampis25a.html
+  year: 2025
+  bibtex: "@InProceedings{pmlr-v267-bampis25a,\n\
+  \  title =      {Polynomial Time Learning Augmented Algorithms for {NP}-hard Permutation Problems},\n\
+  \  author =     {Bampis, Evripidis and Escoffier, Bruno and Fotakis, Dimitris and Patsilinakos, Panagiotis and Xefteris, Michalis},\n\
+  \  booktitle =  {Proceedings of the 42nd International Conference on Machine Learning},\n\
+  \  pages =      {2790--2800},\n\
+  \  year =       {2025},\n\
+  \  editor =     {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},\n\
+  \  volume =     {267},\n\
+  \  series =     {Proceedings of Machine Learning Research},\n\
+  \  month =      {13--19 Jul},\n\
+  \  publisher =  {PMLR},\n\
+  \  pdf =        {https://raw.githubusercontent.com/mlresearch/v267/main/assets/bampis25a/bampis25a.pdf},\n\
+  \  url =        {https://proceedings.mlr.press/v267/bampis25a.html}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2502.00841
   year: 2025
   month: 2
   day: 2
+  dblp_key: journals/corr/abs-2502-00841
+  bibtex: "@article{DBLP:journals/corr/abs-2502-00841,\n  author       = {Evripidis Bampis and\n                  Bruno Escoffier\
+    \ and\n                  Dimitris Fotakis and\n                  Panagiotis Patsilinakos and\n                  Michalis\
+    \ Xefteris},\n  title        = {Polynomial Time Learning-Augmented Algorithms for NP-hard Permutation\n              \
+    \    Problems},\n  journal      = {CoRR},\n  volume       = {abs/2502.00841},\n  year         = {2025},\n  url       \
+    \   = {https://doi.org/10.48550/arXiv.2502.00841},\n  doi          = {10.48550/ARXIV.2502.00841},\n  eprinttype    = {arXiv},\n\
+    \  eprint       = {2502.00841},\n  timestamp    = {Sat, 31 May 2025 23:14:47 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2502-00841.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2025
+s2_id: dba61da2555aa732ca28e6affc506ad29e8401ab

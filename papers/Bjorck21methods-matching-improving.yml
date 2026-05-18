@@ -1,43 +1,32 @@
-title: 'Learning Augmented Methods for Matching: Improving Invasive Species Management
-  and Urban Mobility'
-authors: Johan Bjorck, Qinru Shi, Carrie Brown‐Lima, Jennifer Dean, Angela K. Fuller,
-  Carla P. Gomes
-abstract: With the success of machine learning, integrating learned models into real-world
-  systems has become a critical challenge. Naively applying predictions to combinatorial
-  optimization problems can incur high costs, which has motivated researchers to consider
-  learning augmented algorithms that can make use of faulty or incomplete predictions.
-  Inspired by two matching problems in computational sustainability where data is
-  abundant, we consider the learning augmented min weight matching problem where some
-  nodes are revealed online while others are known a priori, e.g., by being predicted
-  by machine learning. We develop an algorithm that is able to make use of this extra
-  information and provably improves upon pessimistic online algorithms. We evaluate
-  our algorithm on two settings from computational sustainability -- the coordination
-  of unreliable citizen scientists for invasive species management, and the matching
-  between taxis and riders under uncertain trip duration predictions. In both cases,
-  we perform extensive experiments on real-world datasets and find that our method
-  outperforms baselines, showing how learning augmented algorithms can reliably improve
-  solutions for problems in computational sustainability.
+title: 'Learning Augmented Methods for Matching: Improving Invasive Species Management and Urban Mobility'
+authors: Johan Bjorck, Qinru Shi, Carrie Brown-Lima, Jennifer Dean, Angela Fuller, Carla P. Gomes
+abstract: With the success of machine learning, integrating learned models into real-world systems has become a critical challenge.
+  Naively applying predictions to combinatorial optimization problems can incur high costs, which has motivated researchers
+  to consider learning augmented algorithms that can make use of faulty or incomplete predictions. Inspired by two matching
+  problems in computational sustainability where data is abundant, we consider the learning augmented min weight matching
+  problem where some nodes are revealed online while others are known a priori, e.g., by being predicted by machine learning.
+  We develop an algorithm that is able to make use of this extra information and provably improves upon pessimistic online
+  algorithms. We evaluate our algorithm on two settings from computational sustainability -- the coordination of unreliable
+  citizen scientists for invasive species management, and the matching between taxis and riders under uncertain trip duration
+  predictions. In both cases, we perform extensive experiments on real-world datasets and find that our method outperforms
+  baselines, showing how learning augmented algorithms can reliably improve solutions for problems in computational sustainability.
 publications:
 - name: AAAI
   url: https://doi.org/10.1609/aaai.v35i17.17727
   year: 2021
   dblp_key: conf/aaai/BjorckSBDFG21
-  bibtex: "@inproceedings{DBLP:conf/aaai/BjorckSBDFG21,\n  author       = {Johan Bjorck\
-    \ and\n                  Qinru Shi and\n                  Carrie Brown{-}Lima\
-    \ and\n                  Jennifer Dean and\n                  Angela Fuller and\n\
-    \                  Carla P. Gomes},\n  title        = {Learning Augmented Methods\
-    \ for Matching: Improving Invasive Species\n                  Management and Urban\
-    \ Mobility},\n  booktitle    = {Thirty-Fifth {AAAI} Conference on Artificial Intelligence,\
-    \ {AAAI}\n                  2021, Thirty-Third Conference on Innovative Applications\
-    \ of Artificial\n                  Intelligence, {IAAI} 2021, The Eleventh Symposium\
-    \ on Educational Advances\n                  in Artificial Intelligence, {EAAI}\
-    \ 2021, Virtual Event, February 2-9,\n                  2021},\n  pages      \
-    \  = {14702--14710},\n  publisher    = {{AAAI} Press},\n  year         = {2021},\n\
-    \  url          = {https://doi.org/10.1609/aaai.v35i17.17727},\n  doi        \
-    \  = {10.1609/AAAI.V35I17.17727},\n  timestamp    = {Sat, 21 Oct 2023 10:46:20\
-    \ +0200},\n  biburl       = {https://dblp.org/rec/conf/aaai/BjorckSBDFG21.bib},\n\
+  bibtex: "@inproceedings{DBLP:conf/aaai/BjorckSBDFG21,\n  author       = {Johan Bjorck and\n                  Qinru Shi and\n\
+    \                  Carrie Brown{-}Lima and\n                  Jennifer Dean and\n                  Angela Fuller and\n\
+    \                  Carla P. Gomes},\n  title        = {Learning Augmented Methods for Matching: Improving Invasive Species\n\
+    \                  Management and Urban Mobility},\n  booktitle    = {Thirty-Fifth {AAAI} Conference on Artificial Intelligence,\
+    \ {AAAI}\n                  2021, Thirty-Third Conference on Innovative Applications of Artificial\n                 \
+    \ Intelligence, {IAAI} 2021, The Eleventh Symposium on Educational Advances\n                  in Artificial Intelligence,\
+    \ {EAAI} 2021, Virtual Event, February 2-9,\n                  2021},\n  pages        = {14702--14710},\n  publisher \
+    \   = {{AAAI} Press},\n  year         = {2021},\n  url          = {https://doi.org/10.1609/aaai.v35i17.17727},\n  doi\
+    \          = {10.1609/AAAI.V35I17.17727},\n  timestamp    = {Sat, 21 Oct 2023 10:46:20 +0200},\n  biburl       = {https://dblp.org/rec/conf/aaai/BjorckSBDFG21.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
 s2_id: 1e81916e659f0367d4281d89a0c81974f78072b6
 labels:
 - online
 - allocation / matching
+year: 2021

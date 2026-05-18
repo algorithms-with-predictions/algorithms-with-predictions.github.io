@@ -1,5 +1,5 @@
 title: Untrusted Predictions Improve Trustable Query Policies
-authors: Erlebach, Hoffmann, de Lima, Megow, Schlöter
+authors: Thomas Erlebach, Michael Hoffmann, Murilo S. de Lima, Nicole Megow, Jens Schlöter
 labels:
 - explorable uncertainty
 - online
@@ -7,3 +7,14 @@ publications:
 - name: arXiv
   url: https://arxiv.org/pdf/2011.07385.pdf
   year: 2020
+  month: 11
+  day: 14
+  dblp_key: journals/corr/abs-2011-07385
+  bibtex: "@article{DBLP:journals/corr/abs-2011-07385,\n  author       = {Thomas Erlebach and\n                  Michael Hoffmann\
+    \ and\n                  Murilo S. de Lima and\n                  Nicole Megow and\n                  Jens Schl{\\\"{o}}ter},\n\
+    \  title        = {Untrusted Predictions Improve Trustable Query Policies},\n  journal      = {CoRR},\n  volume      \
+    \ = {abs/2011.07385},\n  year         = {2020},\n  url          = {https://arxiv.org/abs/2011.07385},\n  eprinttype  \
+    \  = {arXiv},\n  eprint       = {2011.07385},\n  timestamp    = {Wed, 18 Nov 2020 16:48:35 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2011-07385.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2020
+s2_id: 48d16c64080c5aeafe7a4bf9083beaa7926afc47

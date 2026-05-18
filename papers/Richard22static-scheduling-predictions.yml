@@ -4,6 +4,8 @@ publications:
 - name: arXiv
   url: https://doi.org/10.48550/arXiv.2205.15695
   year: 2022
+  month: 5
+  day: 31
   dblp_key: journals/corr/abs-2205-15695
   bibtex: "@article{DBLP:journals/corr/abs-2205-15695,\n  author       = {Hugo Richard\
     \ and\n                  Flore Sentenac and\n                  Corentin Odic and\n\

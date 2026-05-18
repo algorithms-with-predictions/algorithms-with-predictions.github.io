@@ -1,25 +1,18 @@
-title: 'Online Search with Predictions: Pareto-optimal Algorithm and its Applications
-  in Energy Markets'
-authors: Russell Lee, Bo Sun, John C.S. Lui, M. Hajiesmaili
-abstract: This paper develops learning-augmented algorithms for energy trading in
-  volatile electricity markets. The basic problem is to sell (or buy) k units of energy
-  for the highest revenue (lowest cost) over uncertain time-varying prices, which
-  can framed as a classic online search problem in the literature of competitive analysis.
-  State-of-the-art algorithms assume no knowledge about future market prices when
-  they make trading decisions in each time slot, and aim for guaranteeing the performance
-  for the worst-case price sequence. In practice, however, predictions about future
-  prices become commonly available by leveraging machine learning. This paper aims
-  to incorporate machine-learned predictions to design competitive algorithms for
-  online search problems. An important property of our algorithms is that they achieve
-  performances competitive with the offline algorithm in hindsight when the predictions
-  are accurate (i.e., consistency) and also provide worst-case guarantees when the
-  predictions are arbitrarily wrong (i.e., robustness). The proposed algorithms achieve
-  the Pareto-optimal trade-off between consistency and robustness, where no other
-  algorithms for online search can improve on the consistency for a given robustness.
-  Further, we extend the basic online search problem to a more general inventory management
-  setting that can capture storage-assisted energy trading in electricity markets.
-  In empirical evaluations using traces from real-world applications, our learning-augmented
-  algorithms improve the average empirical performance compared to benchmark algorithms,
+title: 'Online Search with Predictions: Pareto-optimal Algorithm and its Applications in Energy Markets'
+authors: Russell Lee, Bo Sun, Mohammad Hajiesmaili, John C. S. Lui
+abstract: This paper develops learning-augmented algorithms for energy trading in volatile electricity markets. The basic
+  problem is to sell (or buy) k units of energy for the highest revenue (lowest cost) over uncertain time-varying prices,
+  which can framed as a classic online search problem in the literature of competitive analysis. State-of-the-art algorithms
+  assume no knowledge about future market prices when they make trading decisions in each time slot, and aim for guaranteeing
+  the performance for the worst-case price sequence. In practice, however, predictions about future prices become commonly
+  available by leveraging machine learning. This paper aims to incorporate machine-learned predictions to design competitive
+  algorithms for online search problems. An important property of our algorithms is that they achieve performances competitive
+  with the offline algorithm in hindsight when the predictions are accurate (i.e., consistency) and also provide worst-case
+  guarantees when the predictions are arbitrarily wrong (i.e., robustness). The proposed algorithms achieve the Pareto-optimal
+  trade-off between consistency and robustness, where no other algorithms for online search can improve on the consistency
+  for a given robustness. Further, we extend the basic online search problem to a more general inventory management setting
+  that can capture storage-assisted energy trading in electricity markets. In empirical evaluations using traces from real-world
+  applications, our learning-augmented algorithms improve the average empirical performance compared to benchmark algorithms,
   while also providing improved worst-case performance.
 labels:
 - online
@@ -29,11 +22,10 @@ publications:
   url: https://doi.org/10.1145/3632775.3639590
   year: 2024
   dblp_key: conf/eenergy/Lee0HL24
-  bibtex: "@inproceedings{DBLP:conf/eenergy/Lee0HL24,\n  author       = {Russell Lee\
-    \ and\n  Bo Sun and\n  Mohammad Hajiesmaili and\n  John C. S. Lui},\n  title \
-    \       = {Online Search with Predictions: Pareto-optimal Algorithm and its Applications\n\
-    \  in Energy Markets},\n  booktitle    = {e-Energy},\n  pages        = {50--71},\n\
-    \  publisher    = {{ACM}},\n  year         = {2024}\n}\n"
+  bibtex: "@inproceedings{DBLP:conf/eenergy/Lee0HL24,\n  author       = {Russell Lee and\n  Bo Sun and\n  Mohammad Hajiesmaili\
+    \ and\n  John C. S. Lui},\n  title        = {Online Search with Predictions: Pareto-optimal Algorithm and its Applications\n\
+    \  in Energy Markets},\n  booktitle    = {e-Energy},\n  pages        = {50--71},\n  publisher    = {{ACM}},\n  year  \
+    \       = {2024}\n}\n"
 - name: arXiv
   url: https://arxiv.org/abs/2211.06567
   year: 2022
@@ -41,3 +33,4 @@ publications:
   day: 12
 arxiv: 2211.06567
 s2_id: d1cb1d5ae07fa8e4599b7cc0c9c650e3794b3c5e
+year: 2024

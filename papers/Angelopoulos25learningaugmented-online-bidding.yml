@@ -1,0 +1,29 @@
+title: Learning-Augmented Online Bidding in Stochastic Settings
+authors: Spyros Angelopoulos, Bertrand Simon
+year: 2025
+s2_id: 7654004263678271b4fd0acec4249444be6a07df
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2510.25582
+  year: 2025
+  month: 10
+  day: 29
+  dblp_key: journals/corr/abs-2510-25582
+  bibtex: "@article{DBLP:journals/corr/abs-2510-25582,\n  author       = {Spyros Angelopoulos and\n                  Bertrand\
+    \ Simon},\n  title        = {Learning-Augmented Online Bidding in Stochastic Settings},\n  journal      = {CoRR},\n  volume\
+    \       = {abs/2510.25582},\n  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2510.25582},\n\
+    \  doi          = {10.48550/ARXIV.2510.25582},\n  eprinttype    = {arXiv},\n  eprint       = {2510.25582},\n  timestamp\
+    \    = {Mon, 17 Nov 2025 13:36:14 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2510-25582.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+arxiv: '2510.25582'
+abstract: Online bidding is a classic optimization problem, with several applications in online decision-making, the design
+  of interruptible systems, and the analysis of approximation algorithms. In this work, we study online bidding under learning-augmented
+  settings that incorporate stochasticity, in either the prediction oracle or the algorithm itself. In the first part, we
+  study bidding under distributional predictions, and find Pareto-optimal algorithms that offer the best-possible tradeoff
+  between the consistency and the robustness of the algorithm. In the second part, we study the power and limitations of randomized
+  bidding algorithms, by presenting upper and lower bounds on the consistency/robustness tradeoffs. Previous works focused
+  predominantly on oracles that do not leverage stochastic information on the quality of the prediction, and deterministic
+  algorithms.
+labels:
+- online
+- rent-or-buy

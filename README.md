@@ -19,7 +19,7 @@ amount of results and publications in this field.
 
 The sources and data for this webpage are available on
 [GitHub](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io). It
-uses [Vite](https://vitejs.dev/) + [React 18](https://react.dev/) to build a static site and is
+uses [Vite](https://vitejs.dev/) + [React 19](https://react.dev/) to build a static site and is
 hosted via [GitHub Pages](https://pages.github.com/).
 
 Everyone is very welcome to contribute:
@@ -68,23 +68,6 @@ Request or send us the file via [e-mail](mailto:alps-web@uni-bremen.de). In case
 paper, please try to find a unique filename (as in the example above; but there are no strict
 conventions).
 
-## Automated Publication Fetching
-
-It is also possible to only add the title and labels of a paper:
-
-```yml
-title: Competitive Caching with Machine Learned Advice
-labels:
-  - online
-  - caching/paging
-```
-
-We use an
-[automated procedure](https://github.com/algorithms-with-predictions/algorithms-with-predictions.github.io/blob/main/scripts/updateData.mjs)
-to fetch the authors last names and all publications which have an (almost) matching title from
-[DBLP](https://dblp.org) and [arXiv](https://arxiv.org). In this example, all three publications of
-this paper can be added automatically.
-
 ## Local Development
 
 Prerequisites: Node.js >= 18 and npm >= 8.
@@ -107,9 +90,9 @@ The site will be available at `http://localhost:3000`.
 
 ## 🛠️ Technology Stack
 
-- **Build Tool**: [Vite 5](https://vitejs.dev/)
-- **Framework**: [React 18](https://react.dev/)
-- **UI Library**: [Material-UI (MUI) v5](https://mui.com/)
+- **Build Tool**: [Vite 6](https://vitejs.dev/)
+- **Framework**: [React 19](https://react.dev/)
+- **UI Library**: [Material-UI (MUI) v7](https://mui.com/)
 - **Styling**: [Emotion](https://emotion.sh/)
 - **Content**: Markdown files in `public/content/*.md`
 - **Data Processing**: Node.js scripts for YAML and JSON generation (`scripts/`)
@@ -128,11 +111,12 @@ npm run format          # Format code with Prettier
 npm run format:check    # Check formatting without writing
 npm run lint            # Run ESLint checks
 npm run lint:fix        # Fix lint issues automatically
-npm run type-check      # Run TypeScript type checks
 npm run clean           # Clean build cache (dist and Vite cache)
 npm run clean:all       # Remove dist, node_modules, and lockfile
-npm run update-data     # Update paper metadata from external sources
 npm run deploy          # Deploy to GitHub Pages (branch: deploy)
+npm run test            # Run tests with Vitest
+npm run test:coverage   # Run tests with coverage report
+npm run test:ui         # Run tests with UI
 ```
 
 ## 🤝 Contributing

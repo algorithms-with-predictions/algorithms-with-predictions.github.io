@@ -1,17 +1,13 @@
 title: Fast and Simple Densest Subgraph with Predictions
-authors: Bui, Vu
-abstract: We study the densest subgraph problem and its variants through the lens
-  of learning-augmented algorithms. For this problem, the greedy algorithm by Charikar
-  (APPROX 2000) provides a linear-time $ 1/2 $-approximation, while computing the
-  exact solution typically requires solving a linear program or performing maximum
-  flow computations.We show that given a partial solution, i.e., one produced by a
-  machine learning classifier that captures at least a $ (1 - \epsilon) $-fraction
-  of nodes in the optimal subgraph, it is possible to design an extremely simple linear-time
-  algorithm that achieves a provable $ (1 - \epsilon) $-approximation. Our approach
-  also naturally extends to the directed densest subgraph problem and several NP-hard
-  variants.An experiment on the Twitch Ego Nets dataset shows that our learning-augmented
-  algorithm outperforms Charikar's greedy algorithm and a baseline that directly returns
-  the predicted densest subgraph without additional algorithmic processing.
+authors: Thai Bui, Hoa T. Vu
+abstract: We study the densest subgraph problem and its variants through the lens of learning-augmented algorithms. For this
+  problem, the greedy algorithm by Charikar (APPROX 2000) provides a linear-time $ 1/2 $-approximation, while computing the
+  exact solution typically requires solving a linear program or performing maximum flow computations.We show that given a
+  partial solution, i.e., one produced by a machine learning classifier that captures at least a $ (1 - \epsilon) $-fraction
+  of nodes in the optimal subgraph, it is possible to design an extremely simple linear-time algorithm that achieves a provable
+  $ (1 - \epsilon) $-approximation. Our approach also naturally extends to the directed densest subgraph problem and several
+  NP-hard variants.An experiment on the Twitch Ego Nets dataset shows that our learning-augmented algorithm outperforms Charikar's
+  greedy algorithm and a baseline that directly returns the predicted densest subgraph without additional algorithmic processing.
 labels:
 - graph problems
 - running time
@@ -21,3 +17,12 @@ publications:
   year: 2025
   month: 5
   day: 19
+  dblp_key: journals/corr/abs-2505-12600
+  bibtex: "@article{DBLP:journals/corr/abs-2505-12600,\n  author       = {Thai Bui and\n                  Hoa T. Vu},\n  title\
+    \        = {Fast and Simple Densest Subgraph with Predictions},\n  journal      = {CoRR},\n  volume       = {abs/2505.12600},\n\
+    \  year         = {2025},\n  url          = {https://doi.org/10.48550/arXiv.2505.12600},\n  doi          = {10.48550/ARXIV.2505.12600},\n\
+    \  eprinttype    = {arXiv},\n  eprint       = {2505.12600},\n  timestamp    = {Wed, 25 Jun 2025 08:29:00 +0200},\n  biburl\
+    \       = {https://dblp.org/rec/journals/corr/abs-2505-12600.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
+year: 2025
+s2_id: acf6cf0d8a91d8da9422c18b9f6525fa4c6f78b4

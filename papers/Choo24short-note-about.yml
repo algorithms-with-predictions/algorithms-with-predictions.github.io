@@ -1,13 +1,11 @@
 title: A short note about the learning-augmented secretary problem
-authors: Choo, Ling
-abstract: We consider the secretary problem through the lens of learning-augmented
-  algorithms. As it is known that the best possible expected competitive ratio is
-  $1/e$ in the classic setting without predictions, a natural goal is to design algorithms
-  that are 1-consistent and $1/e$-robust. Unfortunately, [FY24] provided hardness
-  constructions showing that such a goal is not attainable when the candidates' true
-  values are allowed to scale with $n$. Here, we provide a simple and explicit alternative
-  hardness construction showing that such a goal is not achievable even when the candidates'
-  true values are constants that do not scale with $n$.
+authors: Davin Choo, Chun Kai Ling
+abstract: We consider the secretary problem through the lens of learning-augmented algorithms. As it is known that the best
+  possible expected competitive ratio is $1/e$ in the classic setting without predictions, a natural goal is to design algorithms
+  that are 1-consistent and $1/e$-robust. Unfortunately, [FY24] provided hardness constructions showing that such a goal is
+  not attainable when the candidates' true values are allowed to scale with $n$. Here, we provide a simple and explicit alternative
+  hardness construction showing that such a goal is not achievable even when the candidates' true values are constants that
+  do not scale with $n$.
 labels:
 - online
 - secretary
@@ -17,3 +15,12 @@ publications:
   year: 2024
   month: 10
   day: 9
+  dblp_key: journals/corr/abs-2410-06583
+  bibtex: "@article{DBLP:journals/corr/abs-2410-06583,\n  author       = {Davin Choo and\n                  Chun Kai Ling},\n\
+    \  title        = {A short note about the learning-augmented secretary problem},\n  journal      = {CoRR},\n  volume \
+    \      = {abs/2410.06583},\n  year         = {2024},\n  url          = {https://doi.org/10.48550/arXiv.2410.06583},\n\
+    \  doi          = {10.48550/ARXIV.2410.06583},\n  eprinttype    = {arXiv},\n  eprint       = {2410.06583},\n  timestamp\
+    \    = {Mon, 18 Nov 2024 14:52:13 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2410-06583.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+year: 2024
+s2_id: dc501902f0f651ec48f655455d441eda83ac3b5d

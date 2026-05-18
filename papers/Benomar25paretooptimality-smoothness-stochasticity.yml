@@ -1,17 +1,13 @@
 title: Pareto-Optimality, Smoothness, and Stochasticity in Learning-Augmented One-Max-Search
-authors: Benomar, Croissant, Perchet, Angelopoulos
-abstract: 'One-max search is a classic problem in online decision-making, in which
-  a trader acts on a sequence of revealed prices and accepts one of them irrevocably
-  to maximise its profit. The problem has been studied both in probabilistic and in
-  worst-case settings, notably through competitive analysis, and more recently in
-  learning-augmented settings in which the trader has access to a prediction on the
-  sequence. However, existing approaches either lack smoothness, or do not achieve
-  optimal worst-case guarantees: they do not attain the best possible trade-off between
-  the consistency and the robustness of the algorithm. We close this gap by presenting
-  the first algorithm that simultaneously achieves both of these important objectives.
-  Furthermore, we show how to leverage the obtained smoothness to provide an analysis
-  of one-max search in stochastic learning-augmented settings which capture randomness
-  in both the observed prices and the prediction.'
+authors: Ziyad Benomar, Lorenzo Croissant, Vianney Perchet, Spyros Angelopoulos
+abstract: 'One-max search is a classic problem in online decision-making, in which a trader acts on a sequence of revealed
+  prices and accepts one of them irrevocably to maximise its profit. The problem has been studied both in probabilistic and
+  in worst-case settings, notably through competitive analysis, and more recently in learning-augmented settings in which
+  the trader has access to a prediction on the sequence. However, existing approaches either lack smoothness, or do not achieve
+  optimal worst-case guarantees: they do not attain the best possible trade-off between the consistency and the robustness
+  of the algorithm. We close this gap by presenting the first algorithm that simultaneously achieves both of these important
+  objectives. Furthermore, we show how to leverage the obtained smoothness to provide an analysis of one-max search in stochastic
+  learning-augmented settings which capture randomness in both the observed prices and the prediction.'
 labels:
 - online
 - search
@@ -21,3 +17,15 @@ publications:
   year: 2025
   month: 2
   day: 8
+- name: ICML
+  dblp_key: conf/icml/BenomarCP025
+  url: https://dblp.org/rec/conf/icml/BenomarCP025
+  bibtex: "@inproceedings{DBLP:conf/icml/BenomarCP025,\n  author       = {Ziyad Benomar and\n                  Lorenzo Croissant\
+    \ and\n                  Vianney Perchet and\n                  Spyros Angelopoulos},\n  title        = {Pareto-Optimality,\
+    \ Smoothness, and Stochasticity in Learning-Augmented\n                  One-Max-Search},\n  booktitle    = {Forty-second\
+    \ International Conference on Machine Learning, {ICML}\n                  2025, Vancouver, BC, Canada, July 13-19, 2025},\n\
+    \  publisher    = {OpenReview.net},\n  year         = {2025},\n  url          = {https://openreview.net/forum?id=ZTOVlPC5Vf},\n\
+    \  timestamp    = {Fri, 05 Dec 2025 16:19:11 +0100},\n  biburl       = {https://dblp.org/rec/conf/icml/BenomarCP025.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+  year: 2025
+s2_id: none

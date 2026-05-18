@@ -1,20 +1,15 @@
 title: Learning-Augmented Private Algorithms for Multiple Quantile Release
-authors: M. Khodak, Kareem Amin, Travis Dick, Sergei Vassilvitskii
-abstract: When applying differential privacy to sensitive data, we can often improve
-  performance using external information such as other sensitive data, public data,
-  or human priors. We propose to use the learning-augmented algorithms (or algorithms
-  with predictions) framework -- previously applied largely to improve time complexity
-  or competitive ratios -- as a powerful way of designing and analyzing privacy-preserving
-  methods that can take advantage of such external information to improve utility.
-  This idea is instantiated on the important task of multiple quantile release, for
-  which we derive error guarantees that scale with a natural measure of prediction
-  quality while (almost) recovering state-of-the-art prediction-independent guarantees.
-  Our analysis enjoys several advantages, including minimal assumptions about the
-  data, a natural way of adding robustness, and the provision of useful surrogate
-  losses for two novel ``meta"algorithms that learn predictions from other (potentially
-  sensitive) data. We conclude with experiments on challenging tasks demonstrating
-  that learning predictions across one or more instances can lead to large error reductions
-  while preserving privacy.
+authors: Mikhail Khodak, Kareem Amin, Travis Dick, Sergei Vassilvitskii
+abstract: When applying differential privacy to sensitive data, we can often improve performance using external information
+  such as other sensitive data, public data, or human priors. We propose to use the learning-augmented algorithms (or algorithms
+  with predictions) framework -- previously applied largely to improve time complexity or competitive ratios -- as a powerful
+  way of designing and analyzing privacy-preserving methods that can take advantage of such external information to improve
+  utility. This idea is instantiated on the important task of multiple quantile release, for which we derive error guarantees
+  that scale with a natural measure of prediction quality while (almost) recovering state-of-the-art prediction-independent
+  guarantees. Our analysis enjoys several advantages, including minimal assumptions about the data, a natural way of adding
+  robustness, and the provision of useful surrogate losses for two novel ``meta"algorithms that learn predictions from other
+  (potentially sensitive) data. We conclude with experiments on challenging tasks demonstrating that learning predictions
+  across one or more instances can lead to large error reductions while preserving privacy.
 labels:
 - differential privacy
 - online
@@ -23,5 +18,20 @@ publications:
   url: http://arxiv.org/abs/2210.11222v2
   year: 2022
   month: 10
+  day: 20
+- name: ICML
+  dblp_key: conf/icml/Khodak0DV23
+  url: https://dblp.org/rec/conf/icml/Khodak0DV23
+  bibtex: "@inproceedings{DBLP:conf/icml/Khodak0DV23,\n  author       = {Mikhail Khodak and\n                  Kareem Amin\
+    \ and\n                  Travis Dick and\n                  Sergei Vassilvitskii},\n  editor       = {Andreas Krause and\n\
+    \                  Emma Brunskill and\n                  Kyunghyun Cho and\n                  Barbara Engelhardt and\n\
+    \                  Sivan Sabato and\n                  Jonathan Scarlett},\n  title        = {Learning-augmented private\
+    \ algorithms for multiple quantile release},\n  booktitle    = {International Conference on Machine Learning, {ICML} 2023,\
+    \ 23-29 July\n                  2023, Honolulu, Hawaii, {USA}},\n  series       = {Proceedings of Machine Learning Research},\n\
+    \  volume       = {202},\n  pages        = {16344--16376},\n  publisher    = {{PMLR}},\n  year         = {2023},\n  url\
+    \          = {https://proceedings.mlr.press/v202/khodak23a.html},\n  timestamp    = {Mon, 28 Aug 2023 17:23:08 +0200},\n\
+    \  biburl       = {https://dblp.org/rec/conf/icml/Khodak0DV23.bib},\n  bibsource    = {dblp computer science bibliography,\
+    \ https://dblp.org}\n}\n\n"
+  year: 2023
 arxiv: 2210.11222
 s2_id: 71cfe54cb46cb01fc9310c900c5adb74f0d2a306

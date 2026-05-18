@@ -1,0 +1,39 @@
+title: Robust Dynamic Staffing with Predictions
+authors: Yiding Feng, Vahideh H. Manshadi, Rad Niazadeh, Saba Neyshabouri
+publications:
+- name: EC
+  year: 2025
+  url: https://dl.acm.org/doi/10.1145/3736252.3742496
+  dblp_key: conf/sigecom/FengMNN25
+  bibtex: "@inproceedings{DBLP:conf/sigecom/FengMNN25,\n  author       = {Yiding Feng and\n                  Vahideh H. Manshadi\
+    \ and\n                  Rad Niazadeh and\n                  Saba Neyshabouri},\n  editor       = {Itai Ashlagi and\n\
+    \                  Aaron Roth},\n  title        = {Robust Dynamic Staffing with Predictions},\n  booktitle    = {Proceedings\
+    \ of the 26th {ACM} Conference on Economics and Computation,\n                  {EC} 2025, Stanford University, Stanford,\
+    \ CA, USA, July 7-10, 2025},\n  pages        = {87},\n  publisher    = {{ACM}},\n  year         = {2025},\n  url     \
+    \     = {https://doi.org/10.1145/3736252.3742496},\n  doi          = {10.1145/3736252.3742496},\n  timestamp    = {Sat,\
+    \ 09 Aug 2025 12:13:59 +0200},\n  biburl       = {https://dblp.org/rec/conf/sigecom/FengMNN25.bib},\n  bibsource    =\
+    \ {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: arXiv
+  year: 2025
+  month: 10
+  day: 18
+  url: https://arxiv.org/abs/2510.16663
+labels:
+- online
+year: 2025
+abstract: Motivated by the challenges in last-mile delivery operations, we consider a natural dynamic staffing problem in
+  which a decision-maker sequentially hires staff over a finite time horizon to meet an unknown target demand at the end.
+  The decision-maker also receives a sequence of predictions about the demand that become increasingly more accurate over
+  time. Consequently, the decision-maker prefers to delay hiring decisions to avoid overstaffing. However, workers' availability
+  decreases over time, resulting in a fundamental trade-off between securing staff early (thus risking overstaffing) versus
+  hiring later based on more accurate predictions (but risking understaffing). We study the above problem when predictions
+  take the form of uncertainty intervals that encompass the true demand. The goal of the decision-maker is to minimize the
+  staffing imbalance cost at the end of the horizon against any sequence of prediction intervals being chosen by an adversary.
+  Our main result is the characterization of a simple and computationally efficient online algorithm that obtains the optimal
+  worst-case imbalance cost; said differently, it is minimax optimal. At a high level, our algorithm relies on identifying
+  a restricted adversary against which we can characterize the minimax optimal cost by solving a certain offline LP. We then
+  show how to emulate the LP solution in a general instance to obtain a cost bounded above by the LP's objective. Besides
+  the base model of staffing for one target demand, We show how to extend our LP-based emulator minimax optimal policy to
+  various generalizations with (i) multiple target demands, (ii) costly hiring and releasing with budgets, and (iii) jointly
+  minimizing the cost of hiring and over-/under-staffing. A full version of this paper can be found at http://dx.doi.org/10.2139/ssrn.4732158.
+s2_id: 1f1f8583d4271e398e01f0349bcda5d8dae13054
