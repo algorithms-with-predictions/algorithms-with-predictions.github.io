@@ -1,9 +1,5 @@
-title: Facility Location Mechanism Design: Breaking The Deterministic Barrier
+title: "Facility Location Mechanism Design: Breaking The Deterministic Barrier"
 authors: Zohar Barak
-abstract: We study the facility location mechanism design problem where $n$ agents report their locations in Euclidean space, and the output is a single facility location. The cost function of each agent is the distance from the returned facility, and the objective is to minimize the social cost function (the sum of agent costs) in a strategyproof way.
-  Our contributions: 1. Breaking the deterministic barrier. For $\mathbb{R}^2$, we give a random strategyproof mechanism (RR-CWM) achieving an expected approximation ratio of $\frac{4}{\pi} \approx 1.27$, which strictly improves upon the best deterministic strategyproof mechanism (which has a $\sqrt{2} \approx 1.41$ ratio). This closes the open problem of separating deterministic and random mechanisms for utilitarian facility location mechanism design in $\mathbb{R}^2$. For $\mathbb{R}^d$, we show that the expected approximation ratio of our mechanism is in $[1.41 - O(1/\sqrt{d}), 1.547]$.
-  2. Improved learning augmented mechanisms through randomization. We show our ideas can achieve better performance in the learning augmented setting in $\mathbb{R}^2$, where in addition to the input the mechanism also receives predictions. For the output prediction model of Agrawal et al. 2022 we show an improved expected consistency-robustness trade-off. Our results also imply improved performance for the input MAC predictions model of Barak et al. 2024.
-  3. The limitations of Random Dictators. We show a lower bound for the common mechanism class of GRD (Generalized Random Dictator) mechanisms, where only locations reported by the agents may be returned. We show that any GRD mechanism has a larger expected approximation ratio than our RR-CWM mechanism, as our lower bound for $\mathbb{R}^2$ is $\frac{4}{\pi}$ (matching the upper bound of RR-CWM, which is not a GRD mechanism). For $\mathbb{R}^d$, we show a lower bound of $\sqrt{2} - O(1/d)$.
 labels:
 - facility location
 - game theory / mechanism design
