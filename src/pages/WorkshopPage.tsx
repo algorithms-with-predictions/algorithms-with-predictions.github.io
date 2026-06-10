@@ -38,14 +38,106 @@ const organizers = [
   },
   {
     name: 'William Umboh',
-    affiliation: 'U Melbourne',
+    affiliation: 'University of Melbourne',
   },
 ];
 
 const participants = [
   {
-    name: 'Participant Name',
-    affiliation: 'Affiliation',
+    name: 'Antonios Antoniadis',
+    affiliation: 'University of Twente',
+  },
+  {
+    name: 'Sebastian Bruchold',
+    affiliation: 'TU Berlin',
+  },
+  {
+    name: 'Christian Coester',
+    affiliation: 'University of Oxford',
+  },
+  {
+    name: 'Romain Cosson',
+    affiliation: 'New York University',
+  },
+  {
+    name: 'Julien Dallot',
+    affiliation: 'TU Berlin',
+  },
+  {
+    name: 'Ekin Ergen',
+    affiliation: 'TU Berlin',
+  },
+  {
+    name: 'Marek Eliáš',
+    affiliation: 'Bocconi University',
+  },
+  {
+    name: 'Franziska Eberle',
+    affiliation: 'TU Berlin',
+  },
+  {
+    name: 'Lene Favrholdt',
+    affiliation: 'University of Southern Denmark',
+  },
+  {
+    name: 'Denise Graafsma',
+    affiliation: 'University of Twente',
+  },
+  {
+    name: 'Ruben Hoeksma',
+    affiliation: 'University of Twente',
+  },
+  {
+    name: 'Gerald Huang',
+    affiliation: 'University of Melbourne',
+  },
+  {
+    name: 'Alexander Lindermayr',
+    affiliation: 'TU Berlin',
+  },
+  {
+    name: 'Guido Schäfer',
+    affiliation: 'CWI',
+  },
+  {
+    name: 'Stefan Schmid',
+    affiliation: 'TU Berlin',
+  },
+  {
+    name: 'Jonas Schmidt',
+    affiliation: 'Bocconi University',
+  },
+  {
+    name: 'Jens Schlöter',
+    affiliation: 'CWI',
+  },
+  {
+    name: 'Yongho Shin',
+    affiliation: 'University of Wrocław',
+  },
+  {
+    name: 'Bertrand Simon',
+    affiliation: 'CNRS, LIG Grenoble',
+  },
+  {
+    name: 'Martin Skutella',
+    affiliation: 'TU Berlin',
+  },
+  {
+    name: 'Xiao Sun',
+    affiliation: 'University of Melbourne',
+  },
+  {
+    name: 'Alexa Tudose',
+    affiliation: 'University of Oxford',
+  },
+  {
+    name: 'William Umboh',
+    affiliation: 'University of Melbourne',
+  },
+  {
+    name: 'Yixiang Wang',
+    affiliation: 'University of Melbourne',
   },
 ];
 
@@ -170,10 +262,10 @@ const WorkshopPage: React.FC = () => {
           </SectionHeading>
           <Typography paragraph>
             The workshop will take place at the TU Berlin in the new IMoS
-            Building on Campus Charlottenburg.
+            building on Campus Charlottenburg.
           </Typography>
           <Typography color="text.secondary">
-            Detailed directions will be provided.
+            Detailed directions will be provided later.
           </Typography>
         </Box>
 
