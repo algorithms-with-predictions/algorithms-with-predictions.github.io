@@ -43,18 +43,10 @@ const organizers = [
 ];
 
 const participants = [
-  // {
-  //   name: 'Participant Name 1',
-  //   affiliation: 'Affiliation',
-  // },
-  // {
-  //   name: 'Participant Name 2',
-  //   affiliation: 'Affiliation',
-  // },
-  // {
-  //   name: 'Participant Name 3',
-  //   affiliation: 'Affiliation',
-  // },
+  {
+    name: 'Participant Name',
+    affiliation: 'Affiliation',
+  },
 ];
 
 const funderLogos = [
