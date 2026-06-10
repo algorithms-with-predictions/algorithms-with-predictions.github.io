@@ -15,6 +15,7 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContributePage = lazy(() => import('./pages/ContributePage'));
 const AuthorGraphPage = lazy(() => import('./pages/AuthorGraphPage'));
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
+const WorkshopPage = lazy(() => import('./pages/WorkshopPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 /**
@@ -60,6 +61,7 @@ const App: React.FC = () => {
               <Route path="/material" element={<MaterialPage />} />
               <Route path="/contribute" element={<ContributePage />} />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="/workshop2026" element={<WorkshopPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/authors" element={<AuthorGraphPage />} />
               <Route path="*" element={<NotFoundPage />} />
