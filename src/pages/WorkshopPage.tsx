@@ -219,7 +219,7 @@ const WorkshopPage: React.FC = () => {
           }}
         >
           <Typography variant="h3" component="h1" gutterBottom>
-            New Frontiers in Learning-augmented Algorithms
+            New Frontiers in Learning-Augmented Algorithms
           </Typography>
           <Typography variant="h6" component="p" color="text.secondary">
             August 24 to 28, 2026
