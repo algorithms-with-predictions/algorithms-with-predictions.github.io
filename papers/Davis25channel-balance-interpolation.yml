@@ -13,7 +13,7 @@ abstract: The Bitcoin Lightning Network is a Layer 2 payment protocol that addre
   split baseline where both edges are assigned half of the channel capacity.
 labels:
 - experimental evaluation
-- routing
+- routing / TSP
 - running time
 - search
 publications:

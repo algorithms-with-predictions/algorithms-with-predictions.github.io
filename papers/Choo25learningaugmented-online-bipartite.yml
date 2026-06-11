@@ -11,7 +11,7 @@ abstract: Online bipartite matching is a fundamental problem in online optimizat
   tradeoff that is attainable by any algorithm. We empirically validate our algorithms through experiments on synthetic and
   real-world data.
 labels:
-- matching / allocation
+- allocation / matching
 - online
 publications:
 - name: arXiv

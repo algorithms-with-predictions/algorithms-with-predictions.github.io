@@ -14,6 +14,7 @@ PAPERS_DIR = ROOT_DIR / "papers"
 TOOLS_DIR = ROOT_DIR / "tools"
 CACHE_DIR = TOOLS_DIR / ".cache"
 REPORTS_DIR = TOOLS_DIR / "reports"
+LABEL_VOCABULARY_PATH = TOOLS_DIR / "label_vocabulary.yml"
 
 # ── Semantic Scholar ───────────────────────────────────────────────────
 S2_API_BASE = "https://api.semanticscholar.org/graph/v1"

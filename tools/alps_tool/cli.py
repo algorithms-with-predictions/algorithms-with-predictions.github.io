@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+from pathlib import Path
 
 import click
 from rich.console import Console
@@ -89,6 +90,36 @@ def label(ctx: click.Context, file_filter: str | None, relabel_all: bool, model:
         model=model,
         verbose=ctx.obj["verbose"],
         cache=ctx.obj["cache"],
+    )
+
+
+@cli.command("label-audit")
+@click.option(
+    "-o",
+    "--output",
+    type=click.Path(path_type=Path),
+    help="Markdown report path (default: tools/reports/label-audit.md)",
+)
+@click.option(
+    "--low-count",
+    default=2,
+    show_default=True,
+    help="Flag labels used at most this many times.",
+)
+@click.option(
+    "--max-keyword-hints",
+    default=80,
+    show_default=True,
+    help="Maximum keyword-based missing-label hints to include.",
+)
+def label_audit(output: Path | None, low_count: int, max_keyword_hints: int) -> None:
+    """Audit label taxonomy and write an editorial review report."""
+    from alps_tool.commands.label_audit import run_label_audit
+
+    run_label_audit(
+        output=output,
+        low_count=low_count,
+        max_keyword_hints=max_keyword_hints,
     )
 
 
