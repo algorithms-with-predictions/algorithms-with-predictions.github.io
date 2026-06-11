@@ -1,0 +1,194 @@
+version: 1
+description: >
+  Controlled vocabulary used by the ALPS label audit. Labels are intentionally
+  conservative: aliases are safe mechanical replacements, broad labels need
+  policy review, and review labels should be checked before mass editing.
+
+type_labels:
+  - dynamic / data structure
+  - online
+  - running time
+  - approximation
+  - streaming
+  - game theory / mechanism design
+  - differential privacy
+  - survey
+
+prior_label: prior / related work
+
+aliases:
+  matching / allocation: allocation / matching
+  routing: routing / TSP
+
+broad_labels:
+  online: Too common to be useful as a topic by itself; keep as a type label only if the UI treats it separately.
+  learning: Too generic for this collection; replace with a more specific problem/domain label.
+  graph problems: Broad umbrella; useful only if paired with a more specific graph/domain label where possible.
+
+review_labels:
+  MDP: Check whether this should be merged into control/optimization or kept as a small topic.
+  SDP: Singleton and acronym-heavy; check whether a broader optimization label is better.
+  convex body chasing: Singleton but likely legitimate.
+  convex optimization: Singleton; check relationship with smoothed/online optimization papers.
+  hashing: Singleton; check whether it belongs under streaming/data structures.
+  knapsack: Singleton; check whether it belongs under packing.
+  list labeling: Singleton but likely legitimate data-structure topic.
+  ms: Unknown abbreviation; likely incorrect.
+  robustness: Too generic as a standalone label.
+  submodular maximization: Singleton; check whether it belongs under approximation/optimization.
+  voting: Singleton; check whether it should be social choice.
+
+canonical_topics:
+  - allocation / matching
+  - auctions
+  - caching / paging
+  - clustering
+  - computational geometry
+  - covering
+  - distributed algorithms
+  - distribution learning
+  - experimental evaluation
+  - explorable uncertainty
+  - exploration
+  - facility location
+  - k-server / MTS
+  - linear quadratic control
+  - matroid
+  - multiple predictions
+  - network design
+  - packing
+  - parsimonious / succinct
+  - prophet inequality
+  - queueing
+  - real-time
+  - rent-or-buy
+  - routing / TSP
+  - sample complexity
+  - scheduling
+  - search
+  - secretary
+  - shortest path
+  - social choice
+  - sorting
+  - two-oracle
+
+keyword_hints:
+  allocation / matching:
+    - matching
+    - allocation
+    - adwords
+    - assignment
+  auctions:
+    - auction
+    - bidding
+    - pricing
+    - revenue management
+  caching / paging:
+    - cache
+    - caching
+    - paging
+  clustering:
+    - clustering
+    - k-means
+    - k-medians
+  computational geometry:
+    - delaunay
+    - geometric
+    - euclidean
+  covering:
+    - covering
+    - set cover
+  differential privacy:
+    - differential privacy
+    - private
+    - privacy
+  distribution learning:
+    - distribution learning
+    - gaussian
+  dynamic / data structure:
+    - dynamic
+    - data structure
+    - data structures
+  facility location:
+    - facility location
+  game theory / mechanism design:
+    - mechanism
+    - strategyproof
+    - strategic
+    - game
+  graph problems:
+    - graph
+    - spanning tree
+    - connected component
+    - coloring
+  k-server / MTS:
+    - k-server
+    - metrical task system
+    - MTS
+  linear quadratic control:
+    - linear quadratic
+    - LQR
+  matroid:
+    - matroid
+  multiple predictions:
+    - multiple predictions
+    - prediction portfolio
+  network design:
+    - network design
+    - datacenter
+  packing:
+    - packing
+    - bin packing
+    - knapsack
+  parsimonious / succinct:
+    - parsimonious
+    - succinct
+    - advice complexity
+  prophet inequality:
+    - prophet
+  queueing:
+    - queue
+    - queueing
+  rent-or-buy:
+    - ski rental
+    - rent-or-buy
+    - online bidding
+    - power management
+  routing / TSP:
+    - routing
+    - TSP
+    - traveling salesman
+    - travelling salesman
+    - canadian traveller
+  running time:
+    - running time
+    - faster
+    - speedup
+  sample complexity:
+    - sample complexity
+  scheduling:
+    - scheduling
+    - flow time
+    - makespan
+    - preemption
+    - deadline
+  search:
+    - search
+    - binary search
+  secretary:
+    - secretary
+  shortest path:
+    - shortest path
+    - bellman-ford
+  social choice:
+    - social choice
+    - fair division
+    - voting
+    - lottery
+  sorting:
+    - sorting
+    - sort
+  streaming:
+    - streaming
+    - frequency estimation
+    - bloom filter
