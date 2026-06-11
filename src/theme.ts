@@ -20,8 +20,8 @@ export const createCustomTheme = (mode: ResolvedThemeMode) => {
       ? { main: '#d99562', light: '#33251f', dark: '#edbd96' }
       : { main: '#bd6a3f', light: '#f8e3d4', dark: '#934f2e' },
     labels: isDark
-      ? { main: '#8fabc9', light: '#202934', dark: '#bdcede' }
-      : { main: '#466b82', light: '#e9eff2', dark: '#355469' },
+      ? { main: '#95b6ae', light: '#202c2a', dark: '#c1d6d1' }
+      : { main: '#4e746d', light: '#e6eeeb', dark: '#3b5c56' },
     typeLabels: isDark
       ? { main: '#d99a6a', light: '#342922', dark: '#efc29f' }
       : { main: '#c46f43', light: '#fae5d6', dark: '#98512f' },
