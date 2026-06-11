@@ -119,7 +119,7 @@ export const ThemeContextProvider: React.FC<ThemeContextProviderProps> = ({
           savedMode === 'dark' ||
           savedMode === 'system')
       ) {
-        setMode(savedMode as ThemeMode);
+        setMode(savedMode);
       }
       // Default to 'system' if no saved preference (already set as initial state)
     }

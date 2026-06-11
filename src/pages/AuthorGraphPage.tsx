@@ -97,14 +97,7 @@ const AuthorGraphPage: React.FC = () => {
 
     // Restart simulation with properly configured forces
     fg.d3ReheatSimulation();
-  }, [
-    // Include config values so callback updates on HMR
-    GRAPH_CONFIG.CHARGE_STRENGTH,
-    GRAPH_CONFIG.LINK_DISTANCE_BASE,
-    GRAPH_CONFIG.LINK_DISTANCE_FACTOR,
-    GRAPH_CONFIG.COLLISION_RADIUS_MULTIPLIER,
-    GRAPH_CONFIG.COLLISION_STRENGTH,
-  ]);
+  }, []);
 
   // Enforce boundaries on every tick - only prevents nodes from flying to infinity
   const enforceBoundaries = useCallback(() => {
@@ -133,7 +126,7 @@ const AuthorGraphPage: React.FC = () => {
         }
       }
     }
-  }, [graphData, GRAPH_CONFIG.BOUNDARY_STRENGTH]);
+  }, [graphData]);
 
   // Combined tick handler - configure forces on first tick, enforce boundaries on all ticks
   const handleEngineTick = useCallback(() => {
@@ -141,23 +134,14 @@ const AuthorGraphPage: React.FC = () => {
     enforceBoundaries();
   }, [configureForces, enforceBoundaries]);
 
-  // Reset forces configured flag when constants change (for HMR support)
+  // Reset forces configured flag when the force callback changes.
   useEffect(() => {
     forcesConfiguredRef.current = false;
     initialZoomDoneRef.current = false;
     if (fgRef.current) {
       configureForces();
     }
-  }, [
-    configureForces,
-    // Include all config values to trigger reconfiguration on HMR
-    GRAPH_CONFIG.CHARGE_STRENGTH,
-    GRAPH_CONFIG.LINK_DISTANCE_BASE,
-    GRAPH_CONFIG.LINK_DISTANCE_FACTOR,
-    GRAPH_CONFIG.COLLISION_RADIUS_MULTIPLIER,
-    GRAPH_CONFIG.COLLISION_STRENGTH,
-    GRAPH_CONFIG.BOUNDARY_STRENGTH,
-  ]);
+  }, [configureForces]);
 
   // Handle window resize
   useEffect(() => {

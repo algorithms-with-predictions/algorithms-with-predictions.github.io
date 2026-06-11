@@ -59,7 +59,7 @@ beforeEach(() => {
   global.IntersectionObserver = class {
     constructor(callback: IntersectionObserverCallback) {
       mockObserver = new MockIntersectionObserver(callback);
-      return mockObserver as unknown as IntersectionObserver;
+      return mockObserver;
     }
   } as unknown as typeof IntersectionObserver;
 });
