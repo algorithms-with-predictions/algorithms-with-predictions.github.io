@@ -28,12 +28,15 @@ const MetricItem: React.FC<MetricItemProps> = ({
   <Stack direction="row" alignItems="center" spacing={1.5} sx={{ flex: 1 }}>
     <Box
       sx={{
-        p: { xs: 0.6, sm: 1 },
-        borderRadius: 1.5,
+        width: { xs: 26, sm: 32 },
+        height: { xs: 26, sm: 32 },
+        borderRadius: 1,
         bgcolor: `${color}.light`,
-        color: `${color}.contrastText`,
+        color: `${color}.dark`,
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
+        flexShrink: 0,
       }}
     >
       <Icon sx={{ fontSize: { xs: 14, sm: 18 } }} />
@@ -46,6 +49,7 @@ const MetricItem: React.FC<MetricItemProps> = ({
         sx={{
           fontSize: { xs: '1rem', sm: '1.75rem' },
           lineHeight: 1.2,
+          fontWeight: 700,
         }}
       >
         {value}
@@ -94,10 +98,14 @@ const StatCard: React.FC<StatCardProps> = ({
     elevation={0}
     sx={{
       height: '100%',
-      borderRadius: 2,
+      borderRadius: 1,
       border: 1,
       borderColor: 'divider',
-      transition: 'all 0.3s ease',
+      bgcolor: 'background.paper',
+      transition: 'border-color 0.2s ease',
+      '&:hover': {
+        borderColor: `${color}.main`,
+      },
     }}
   >
     <CardContent sx={{ py: { xs: 1.5, sm: 2 }, px: { xs: 1.5, sm: 2 } }}>
@@ -177,10 +185,14 @@ const TopVenuesCard: React.FC<TopVenuesCardProps> = ({ venues }) => {
       elevation={0}
       sx={{
         height: '100%',
-        borderRadius: 2,
+        borderRadius: 1,
         border: 1,
         borderColor: 'divider',
-        transition: 'all 0.3s ease',
+        bgcolor: 'background.paper',
+        transition: 'border-color 0.2s ease',
+        '&:hover': {
+          borderColor: 'secondary.main',
+        },
       }}
     >
       <CardContent
@@ -256,15 +268,13 @@ const TopVenuesCard: React.FC<TopVenuesCardProps> = ({ venues }) => {
                     sm: `${Math.max((venue.count / maxCount) * 65, 6)}px`,
                   },
                   backgroundColor: theme => theme.palette.secondary.main,
-                  borderRadius: '4px 4px 0 0',
-                  transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+                  borderRadius: '3px 3px 0 0',
+                  transition: 'background-color 0.2s ease, transform 0.2s ease',
                   cursor: 'pointer',
                   '&:hover': {
                     backgroundColor: theme => theme.palette.secondary.dark,
-                    transform: 'scaleY(1.05)',
+                    transform: 'scaleY(1.04)',
                     transformOrigin: 'bottom',
-                    filter: 'brightness(1.1)',
-                    boxShadow: '0 -2px 8px rgba(0,0,0,0.15)',
                   },
                 }}
               />
@@ -312,10 +322,14 @@ const YearDistributionChart: React.FC<YearDistributionChartProps> = ({
       elevation={0}
       sx={{
         height: '100%',
-        borderRadius: 2,
+        borderRadius: 1,
         border: 1,
         borderColor: 'divider',
-        transition: 'all 0.3s ease',
+        bgcolor: 'background.paper',
+        transition: 'border-color 0.2s ease',
+        '&:hover': {
+          borderColor: 'primary.main',
+        },
       }}
     >
       <CardContent
@@ -392,15 +406,13 @@ const YearDistributionChart: React.FC<YearDistributionChartProps> = ({
                     sm: `${Math.max(((yearData[year] || 0) / maxCount) * 65, 6)}px`,
                   },
                   backgroundColor: theme => theme.palette.primary.main,
-                  borderRadius: '4px 4px 0 0',
-                  transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+                  borderRadius: '3px 3px 0 0',
+                  transition: 'background-color 0.2s ease, transform 0.2s ease',
                   cursor: 'pointer',
                   '&:hover': {
                     backgroundColor: theme => theme.palette.primary.dark,
-                    transform: 'scaleY(1.05)',
+                    transform: 'scaleY(1.04)',
                     transformOrigin: 'bottom',
-                    filter: 'brightness(1.1)',
-                    boxShadow: '0 -2px 8px rgba(0,0,0,0.15)',
                   },
                 }}
               />

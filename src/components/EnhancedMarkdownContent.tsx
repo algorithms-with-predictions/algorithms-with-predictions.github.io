@@ -178,37 +178,43 @@ const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
           },
           '& h1': {
             fontSize: '2.5rem',
-            fontWeight: 'bold',
-            mb: 2,
+            fontWeight: 700,
+            mb: 2.5,
             mt: 3,
             color: 'text.primary',
-            borderBottom: theme => `3px solid ${theme.palette.primary.main}`,
-            paddingBottom: 1,
           },
           '& h2': {
             fontSize: '2rem',
-            fontWeight: 'bold',
+            fontWeight: 700,
             mb: 2,
             mt: 4,
-            color: 'primary.main',
-            borderBottom: theme => `2px solid ${theme.palette.primary.light}`,
-            paddingBottom: 0.5,
+            pt: 3,
+            color: 'text.primary',
+            borderTop: theme => `1px solid ${theme.palette.divider}`,
           },
           '& h3': {
             fontSize: '1.5rem',
-            fontWeight: 'bold',
+            fontWeight: 700,
             mb: 1.5,
             mt: 3,
             color: 'text.primary',
-            borderBottom: theme => `1px solid ${theme.palette.divider}`,
-            paddingBottom: 0.5,
           },
           '& h4': {
             fontSize: '1.25rem',
-            fontWeight: 'bold',
+            fontWeight: 700,
             mb: 1,
             mt: 2,
             color: 'text.primary',
+          },
+          '& hr': {
+            border: 0,
+            borderTop: theme => `1px solid ${theme.palette.divider}`,
+            my: 3.5,
+          },
+          '& hr + h2': {
+            borderTop: 0,
+            pt: 0,
+            mt: 0,
           },
           '& p': {
             mb: 2,
@@ -294,12 +300,6 @@ const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
                   transition: 'all 0.2s ease',
                   '&:hover': {
                     color: 'primary.dark',
-                  },
-                  '&:after': {
-                    content: '" ↗"',
-                    fontSize: '0.8em',
-                    opacity: 0.7,
-                    marginLeft: '2px',
                   },
                 }}
               >

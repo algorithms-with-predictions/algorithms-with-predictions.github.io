@@ -43,9 +43,14 @@ const ThemeToggle: React.FC = () => {
         color="inherit"
         sx={{
           ml: 1,
-          transition: 'all 0.3s ease-in-out',
+          color: 'text.secondary',
+          border: 1,
+          borderColor: 'divider',
+          borderRadius: 1,
+          transition: 'background-color 0.2s ease, color 0.2s ease',
           '&:hover': {
-            transform: 'rotate(180deg)',
+            color: 'primary.dark',
+            bgcolor: 'primary.light',
           },
         }}
         aria-label={`Current: ${mode} mode. Switch to ${nextMode} mode`}

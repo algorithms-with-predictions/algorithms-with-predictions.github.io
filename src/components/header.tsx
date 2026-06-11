@@ -12,7 +12,7 @@ import {
   Stack,
 } from '@mui/material';
 import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
 
 const pages = [
@@ -25,6 +25,7 @@ const pages = [
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const theme = useTheme();
+  const location = useLocation();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleMobileMenuToggle = () => {
@@ -36,18 +37,34 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" color="primary" elevation={2}>
-      <Toolbar disableGutters sx={{ px: 2 }}>
+    <AppBar
+      position="static"
+      elevation={0}
+      sx={{
+        bgcolor: 'background.paper',
+        color: 'text.primary',
+        borderBottom: 1,
+        borderColor: 'divider',
+      }}
+    >
+      <Toolbar
+        disableGutters
+        sx={{
+          minHeight: { xs: 56, md: 64 },
+          px: { xs: 2, md: 3 },
+        }}
+      >
         <Typography
           variant={isMobile ? 'h6' : 'h5'}
           noWrap
           component="div"
           sx={{
             mr: { xs: 1, md: 4 },
-            fontWeight: 600,
-            letterSpacing: '-0.02em',
+            fontWeight: 700,
+            letterSpacing: 0,
             flexGrow: 1,
             fontSize: { xs: '1.1rem', sm: '1.25rem', md: '1.5rem' },
+            color: 'primary.main',
           }}
         >
           {isMobile ? 'ALPS' : 'Algorithms with Predictions'}
@@ -55,34 +72,39 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
-          {pages.map(page => (
-            <Button
-              key={page.name}
-              component={RouterLink}
-              to={page.href}
-              sx={{
-                mr: 1,
-                px: 2,
-                py: 1,
-                borderRadius: 2,
-                color: 'white !important',
-                textDecoration: 'none !important',
-                fontSize: '1.1rem',
-                '&:hover': {
-                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                  transform: 'translateY(-1px)',
-                  color: 'white !important',
-                },
-                '&:visited': {
-                  color: 'white !important',
-                },
-                transition: 'all 0.2s ease-in-out',
-              }}
-              color="inherit"
-            >
-              {page.name}
-            </Button>
-          ))}
+          {pages.map(page => {
+            const isActive = location.pathname === page.href;
+
+            return (
+              <Button
+                key={page.name}
+                component={RouterLink}
+                to={page.href}
+                sx={{
+                  mr: 0.5,
+                  px: 1.5,
+                  py: 0.75,
+                  borderRadius: 1,
+                  color: isActive ? 'primary.dark' : 'text.secondary',
+                  bgcolor: isActive ? 'primary.light' : 'transparent',
+                  textDecoration: 'none !important',
+                  fontSize: '0.95rem',
+                  fontWeight: isActive ? 700 : 650,
+                  '&:hover': {
+                    bgcolor: isActive ? 'primary.light' : 'action.hover',
+                    color: 'primary.dark',
+                  },
+                  '&:visited': {
+                    color: isActive ? 'primary.dark' : 'text.secondary',
+                  },
+                  transition: 'background-color 0.2s ease, color 0.2s ease',
+                }}
+                color="inherit"
+              >
+                {page.name}
+              </Button>
+            );
+          })}
           <ThemeToggle />
         </Box>
 
@@ -113,56 +135,45 @@ const Header = () => {
       >
         <Box
           sx={{
-            bgcolor:
-              theme.palette.mode === 'dark'
-                ? 'background.paper'
-                : 'primary.dark',
+            bgcolor: 'background.paper',
             borderTop: 1,
-            borderColor:
-              theme.palette.mode === 'dark' ? 'divider' : 'primary.light',
+            borderColor: 'divider',
           }}
         >
           <Stack spacing={0}>
-            {pages.map(page => (
-              <Button
-                key={page.name}
-                component={RouterLink}
-                to={page.href}
-                color="inherit"
-                onClick={handleMobileMenuClose}
-                sx={{
-                  justifyContent: 'flex-start',
-                  px: 3,
-                  py: 1.5,
-                  borderRadius: 0,
-                  color:
-                    theme.palette.mode === 'dark'
-                      ? 'text.primary'
-                      : 'white !important',
-                  textDecoration: 'none !important',
-                  '&:hover': {
-                    backgroundColor:
-                      theme.palette.mode === 'dark'
-                        ? 'action.hover'
-                        : 'rgba(255, 255, 255, 0.1)',
-                    color:
-                      theme.palette.mode === 'dark'
-                        ? 'text.primary'
-                        : 'white !important',
-                  },
-                  '&:visited': {
-                    color:
-                      theme.palette.mode === 'dark'
-                        ? 'text.primary'
-                        : 'white !important',
-                  },
-                  fontSize: '1rem',
-                  fontWeight: 500,
-                }}
-              >
-                {page.name}
-              </Button>
-            ))}
+            {pages.map(page => {
+              const isActive = location.pathname === page.href;
+
+              return (
+                <Button
+                  key={page.name}
+                  component={RouterLink}
+                  to={page.href}
+                  color="inherit"
+                  onClick={handleMobileMenuClose}
+                  sx={{
+                    justifyContent: 'flex-start',
+                    px: 3,
+                    py: 1.5,
+                    borderRadius: 0,
+                    color: isActive ? 'primary.dark' : 'text.primary',
+                    bgcolor: isActive ? 'primary.light' : 'transparent',
+                    textDecoration: 'none !important',
+                    '&:hover': {
+                      bgcolor: isActive ? 'primary.light' : 'action.hover',
+                      color: 'primary.dark',
+                    },
+                    '&:visited': {
+                      color: isActive ? 'primary.dark' : 'text.primary',
+                    },
+                    fontSize: '1rem',
+                    fontWeight: isActive ? 700 : 650,
+                  }}
+                >
+                  {page.name}
+                </Button>
+              );
+            })}
           </Stack>
         </Box>
       </Collapse>

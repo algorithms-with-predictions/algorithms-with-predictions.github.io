@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-import { grey, blue, orange } from '@mui/material/colors';
 
 /**
  * Theme mode type (user preference)
@@ -11,82 +10,84 @@ export type ThemeMode = 'light' | 'dark' | 'system';
  */
 export type ResolvedThemeMode = 'light' | 'dark';
 
-/**
- * Creates a custom Material-UI theme with consistent blue-orange color palette
- *
- * @param mode - 'light' or 'dark' resolved theme mode
- * @returns MUI Theme object with custom color palette and component overrides
- *
- * Features:
- * - Blue primary color (professional, academic)
- * - Orange secondary color (warmth, highlights)
- * - Custom label colors for paper categorization
- * - Markdown link styling
- * - Dark mode optimized backgrounds
- */
 export const createCustomTheme = (mode: ResolvedThemeMode) => {
   const isDark = mode === 'dark';
+  const colors = {
+    primary: isDark
+      ? { main: '#75bdb6', light: '#202c2c', dark: '#afd8d3' }
+      : { main: '#2d6f6b', light: '#e1ede9', dark: '#245955' },
+    secondary: isDark
+      ? { main: '#d99562', light: '#33251f', dark: '#edbd96' }
+      : { main: '#bd6a3f', light: '#f8e3d4', dark: '#934f2e' },
+    labels: isDark
+      ? { main: '#8fabc9', light: '#202934', dark: '#bdcede' }
+      : { main: '#466b82', light: '#e9eff2', dark: '#355469' },
+    typeLabels: isDark
+      ? { main: '#d99a6a', light: '#342922', dark: '#efc29f' }
+      : { main: '#c46f43', light: '#fae5d6', dark: '#98512f' },
+    surface: isDark
+      ? { default: '#101111', paper: '#171818', raised: '#1d1f1f' }
+      : { default: '#f5f6f2', paper: '#fffef9', raised: '#ffffff' },
+    text: isDark
+      ? { primary: '#ecefed', secondary: '#b3b8b6', muted: '#8e9491' }
+      : { primary: '#202927', secondary: '#63706b', muted: '#7d8783' },
+    border: isDark ? '#303433' : '#d9ded9',
+  };
 
   return createTheme({
     palette: {
       mode,
       primary: {
-        main: isDark ? '#42A5F5' : '#1976D2', // Rich blue
-        light: isDark ? '#80D6FF' : '#42A5F5',
-        dark: isDark ? '#1565C0' : '#0D47A1',
+        ...colors.primary,
+        contrastText: isDark ? '#10201e' : '#fffefa',
       },
       secondary: {
-        main: isDark ? orange[500] : orange[700], // Orange secondary
-        light: isDark ? orange[400] : orange[500],
-        dark: isDark ? orange[700] : orange[900],
+        ...colors.secondary,
+        contrastText: isDark ? '#1f120c' : '#fffefa',
       },
       background: {
-        default: isDark ? '#0a0a0a' : '#f8faff', // Slightly blue-tinted background
-        paper: isDark ? '#1a1a1a' : '#ffffff',
+        default: colors.surface.default,
+        paper: colors.surface.paper,
       },
       text: {
-        primary: isDark ? '#ffffff' : '#1a1a1a',
-        secondary: isDark ? grey[400] : grey[600],
+        primary: colors.text.primary,
+        secondary: colors.text.secondary,
       },
-      // Custom colors for paper labels - cohesive blue-orange palette
       labels: {
-        light: isDark ? blue[300] : blue[400],
-        main: isDark ? blue[400] : blue[600],
-        dark: isDark ? blue[600] : blue[800],
-        contrastText: '#ffffff',
+        ...colors.labels,
+        contrastText: isDark ? '#101716' : '#fffefa',
       },
       typeLabels: {
-        light: isDark ? orange[400] : orange[500], // Orange for type labels (highlight)
-        main: isDark ? orange[500] : orange[700],
-        dark: isDark ? orange[700] : orange[900],
-        contrastText: '#ffffff',
+        ...colors.typeLabels,
+        contrastText: isDark ? '#101716' : '#fffefa',
       },
       success: {
-        main: isDark ? '#4CAF50' : '#2E7D32', // Consistent with theme
-        light: isDark ? '#81C784' : '#4CAF50',
-        dark: isDark ? '#2E7D32' : '#1B5E20',
+        main: isDark ? '#7fc48f' : '#2f7653',
+        light: isDark ? '#20422f' : '#dff0e5',
+        dark: isDark ? '#aad8b5' : '#22583d',
       },
       warning: {
-        main: isDark ? orange[500] : orange[700], // Orange warnings match secondary
-        light: isDark ? orange[400] : orange[500],
-        dark: isDark ? orange[700] : orange[900],
+        main: colors.secondary.main,
+        light: colors.secondary.light,
+        dark: colors.secondary.dark,
       },
-      // Custom link colors for markdown content
       link: {
-        main: isDark ? '#64B5F6' : '#1976D2', // Bright blue for dark mode, standard blue for light
-        hover: isDark ? '#90CAF9' : '#1565C0',
-        visited: isDark ? '#BA68C8' : '#7B1FA2', // Purple tint for visited links
+        main: isDark ? '#8acbc2' : '#286d69',
+        hover: isDark ? '#b9e1db' : '#174c4a',
+        visited: isDark ? '#c4a386' : '#74432d',
       },
+      divider: colors.border,
     },
     typography: {
-      fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+      fontFamily:
+        'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
       h1: {
         fontWeight: 600,
-        letterSpacing: '-0.01em',
+        letterSpacing: 0,
       },
       h2: {
         fontWeight: 600,
-        letterSpacing: '-0.01em',
+        letterSpacing: 0,
       },
       h5: {
         fontWeight: 600,
@@ -117,18 +118,18 @@ export const createCustomTheme = (mode: ResolvedThemeMode) => {
       },
     },
     shape: {
-      borderRadius: 2, // Consistent with updated design
+      borderRadius: 4,
     },
     components: {
       MuiButton: {
         styleOverrides: {
           root: {
             textTransform: 'none',
-            borderRadius: 2,
-            fontWeight: 500,
+            borderRadius: 4,
+            fontWeight: 650,
+            boxShadow: 'none',
             '&:hover': {
-              transform: 'translateY(-1px)',
-              transition: 'all 0.2s ease-in-out',
+              boxShadow: 'none',
             },
           },
         },
@@ -136,15 +137,25 @@ export const createCustomTheme = (mode: ResolvedThemeMode) => {
       MuiChip: {
         styleOverrides: {
           root: {
-            borderRadius: 2, // Consistent with theme
-            fontWeight: 500,
+            borderRadius: 4,
+            fontWeight: 650,
+          },
+        },
+      },
+      MuiCard: {
+        defaultProps: {
+          elevation: 0,
+        },
+        styleOverrides: {
+          root: {
+            backgroundImage: 'none',
           },
         },
       },
       MuiPaper: {
         styleOverrides: {
           root: {
-            backgroundImage: 'none', // Remove MUI's default gradient in dark mode
+            backgroundImage: 'none',
           },
         },
       },
@@ -152,25 +163,31 @@ export const createCustomTheme = (mode: ResolvedThemeMode) => {
         styleOverrides: {
           root: {
             backgroundImage: 'none',
-            backgroundColor: isDark ? '#1a1a1a' : undefined,
+            boxShadow: 'none',
           },
         },
       },
-      // Global CSS for markdown content links
       MuiCssBaseline: {
         styleOverrides: {
+          body: {
+            backgroundColor: colors.surface.default,
+          },
+          '::selection': {
+            backgroundColor: isDark ? '#315e5a' : '#d9ece7',
+            color: colors.text.primary,
+          },
           a: {
-            color: isDark ? '#64B5F6' : '#1976D2',
+            color: colors.primary.main,
             textDecoration: 'none',
             transition: 'color 0.2s ease-in-out',
             '&:hover': {
-              color: isDark ? '#90CAF9' : '#1565C0',
+              color: colors.primary.dark,
             },
             '&:visited': {
-              color: isDark ? '#64B5F6' : '#1976D2',
+              color: colors.primary.main,
             },
             '&:visited:hover': {
-              color: isDark ? '#90CAF9' : '#1565C0',
+              color: colors.primary.dark,
             },
           },
         },

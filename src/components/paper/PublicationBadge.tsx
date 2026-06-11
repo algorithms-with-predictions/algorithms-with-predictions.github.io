@@ -43,15 +43,22 @@ const PublicationBadge: React.FC<PublicationBadgeProps> = ({
         onClick={handleClick}
         sx={{
           cursor: url ? 'pointer' : 'default',
+          borderRadius: 1,
+          borderWidth: 1,
+          bgcolor: isArxiv ? 'action.hover' : 'primary.light',
+          borderColor: isArxiv ? 'divider' : 'primary.light',
+          color: isArxiv ? 'text.primary' : 'primary.dark',
           '&:hover': url
             ? {
-                transform: 'scale(1.05)',
+                bgcolor: isArxiv ? 'background.paper' : 'background.paper',
+                borderColor: isArxiv ? 'text.secondary' : 'primary.main',
               }
             : {},
-          transition: 'transform 0.2s',
+          transition:
+            'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease',
           height: 20,
           fontSize: '0.75rem',
-          fontWeight: 600,
+          fontWeight: 700,
         }}
       />
     </Tooltip>

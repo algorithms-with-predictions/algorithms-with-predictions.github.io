@@ -8,18 +8,23 @@ import { sortLabels } from '../../utils/labelUtils';
 import type { PaperCardProps } from './PaperCard';
 
 const StyledCard = styled(Card)(({ theme }) => ({
-  borderRadius: 2,
+  borderRadius: 4,
   border: `1px solid ${theme.palette.divider}`,
-  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+  backgroundColor: theme.palette.background.paper,
+  boxShadow: 'inset 3px 0 0 transparent',
+  transition:
+    'background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease',
   margin: 0,
   '&:hover': {
     borderColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.mode === 'dark' ? '#1d1f1f' : '#fffdf6',
+    boxShadow: `inset 3px 0 0 ${theme.palette.primary.main}`,
   },
 }));
 
 const PaperTitle = styled(Typography)(() => ({
-  fontWeight: 600,
-  lineHeight: 1.1,
+  fontWeight: 700,
+  lineHeight: 1.25,
   fontSize: '1rem',
 }));
 
@@ -45,8 +50,8 @@ const PaperCardMobile: React.FC<PaperCardProps> = ({
           sx={{
             display: 'block',
             mb: 0.75,
-            fontWeight: 600,
-            lineHeight: 1.3,
+            fontWeight: 700,
+            lineHeight: 1.25,
           }}
         >
           {paper.title}

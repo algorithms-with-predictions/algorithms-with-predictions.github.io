@@ -100,8 +100,10 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
               sx={{
                 py: 1,
                 px: 2,
-                bgcolor: 'action.hover',
-                borderRadius: 2,
+                bgcolor: 'background.paper',
+                border: 1,
+                borderColor: 'divider',
+                borderRadius: 1,
               }}
             >
               <Typography variant="body2" color="text.secondary">
@@ -140,11 +142,11 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
                         startIcon={<Clear />}
                         onClick={handleClearFilters}
                         sx={{
-                          color: 'secondary.main',
-                          fontWeight: 500,
+                          color: 'secondary.dark',
+                          fontWeight: 700,
                           '&:hover': {
                             bgcolor: 'secondary.light',
-                            color: 'secondary.contrastText',
+                            color: 'secondary.dark',
                           },
                         }}
                       >
@@ -156,10 +158,10 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
                           size="small"
                           onClick={handleClearFilters}
                           sx={{
-                            color: 'secondary.main',
+                            color: 'secondary.dark',
                             '&:hover': {
                               bgcolor: 'secondary.light',
-                              color: 'secondary.contrastText',
+                              color: 'secondary.dark',
                             },
                           }}
                         >
@@ -179,10 +181,14 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
                       size="small"
                       onClick={() => exportBibtex(sortedData)}
                       sx={{
-                        color: 'primary.main',
+                        color: 'primary.dark',
+                        border: 1,
+                        borderColor: 'divider',
+                        borderRadius: 1,
                         '&:hover': {
                           bgcolor: 'primary.light',
-                          color: 'primary.contrastText',
+                          color: 'primary.dark',
+                          borderColor: 'primary.light',
                         },
                       }}
                     >

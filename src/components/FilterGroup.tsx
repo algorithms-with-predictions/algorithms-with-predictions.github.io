@@ -43,7 +43,7 @@ const FilterGroup: React.FC<FilterGroupProps> = ({
           fontWeight: 600,
           textTransform: 'uppercase',
           fontSize: '0.65rem',
-          letterSpacing: '0.5px',
+          letterSpacing: 0,
         }}
       >
         {title}
@@ -89,19 +89,46 @@ const FilterGroup: React.FC<FilterGroupProps> = ({
                   trackFilter(trackCategory, `add_${label}`);
                 }
               }}
-              sx={{
-                height: 28,
-                fontSize: '0.75rem',
-                borderRadius: 2,
-                '& .MuiChip-label': { px: 1.5 },
-                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                '&:hover': {
-                  transform: 'translateY(-2px) scale(1.02)',
-                  boxShadow: 3,
-                },
-                '&:active': {
-                  transform: 'translateY(0) scale(0.98)',
-                },
+              sx={theme => {
+                const palette =
+                  labelColor === 'typeLabels'
+                    ? theme.palette.typeLabels
+                    : labelColor === 'labels'
+                      ? theme.palette.labels
+                      : null;
+
+                const baseColors = palette
+                  ? {
+                      bgcolor: isSelected ? palette.main : palette.light,
+                      color: isSelected ? palette.contrastText : palette.dark,
+                      borderColor: isSelected ? palette.main : palette.light,
+                    }
+                  : {
+                      bgcolor: isSelected ? 'text.secondary' : 'action.hover',
+                      color: isSelected ? 'background.paper' : 'text.secondary',
+                      borderColor: 'divider',
+                    };
+
+                return {
+                  ...baseColors,
+                  height: 28,
+                  fontSize: '0.75rem',
+                  borderRadius: 1,
+                  '& .MuiChip-label': { px: 1.5 },
+                  transition:
+                    'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease',
+                  '&:hover': {
+                    borderColor:
+                      labelColor === 'typeLabels'
+                        ? 'typeLabels.main'
+                        : labelColor === 'labels'
+                          ? 'labels.main'
+                          : 'text.secondary',
+                  },
+                  '&:active': {
+                    opacity: 0.85,
+                  },
+                };
               }}
             />
           );

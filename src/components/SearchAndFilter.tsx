@@ -132,15 +132,29 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
           }}
           sx={{
             '& .MuiOutlinedInput-root': {
-              borderRadius: 2,
+              borderRadius: 1,
               backgroundColor: 'background.paper',
-              transition: 'all 0.3s ease',
+              transition:
+                'border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease',
+              '& fieldset': {
+                borderColor: 'divider',
+              },
               '&:hover': {
-                boxShadow: theme => theme.shadows[1],
+                backgroundColor: 'background.paper',
+                '& fieldset': {
+                  borderColor: 'primary.main',
+                },
               },
               '&.Mui-focused': {
                 boxShadow: theme =>
-                  `0 0 0 3px ${theme.palette.mode === 'dark' ? 'rgba(66, 165, 245, 0.1)' : 'rgba(25, 118, 210, 0.1)'}, ${theme.shadows[2]}`,
+                  `0 0 0 3px ${
+                    theme.palette.mode === 'dark'
+                      ? 'rgba(102, 184, 173, 0.16)'
+                      : 'rgba(40, 109, 105, 0.12)'
+                  }`,
+                '& fieldset': {
+                  borderColor: 'primary.main',
+                },
               },
             },
           }}
@@ -154,9 +168,8 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
                 sx={{
                   p: 2,
                   bgcolor: 'background.paper',
-                  borderRadius: 2,
+                  borderRadius: 1,
                   border: theme => `1px solid ${theme.palette.divider}`,
-                  boxShadow: 1,
                 }}
               >
                 <Stack spacing={1.5}>
@@ -193,6 +206,9 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
                       mt: 1.5,
                       py: 0.5,
                       fontSize: '0.75rem',
+                      borderRadius: 1,
+                      bgcolor: 'primary.light',
+                      color: 'primary.dark',
                       '& .MuiAlert-message': {
                         fontSize: '0.75rem',
                       },

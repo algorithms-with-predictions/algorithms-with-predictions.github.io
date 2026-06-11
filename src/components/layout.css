@@ -3,12 +3,3 @@
 div[dangerouslySetInnerHTML] a {
   font-weight: 500;
 }
-
-/* External link indicator */
-.markdown-content a[target='_blank']::after,
-div[dangerouslySetInnerHTML] a[target='_blank']::after {
-  content: ' ↗';
-  font-size: 0.8em;
-  opacity: 0.7;
-  margin-left: 2px;
-}

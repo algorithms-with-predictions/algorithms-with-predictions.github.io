@@ -56,18 +56,22 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
   return (
     <Fade in={showBanner}>
       <Paper
-        elevation={8}
-        sx={{
+        elevation={0}
+        sx={theme => ({
           position: 'fixed',
           bottom: 16,
           right: 16,
           maxWidth: 400,
           p: 2,
           zIndex: 2000,
-          borderRadius: 2,
+          borderRadius: 1,
           backgroundColor: 'background.paper',
-          border: theme => `1px solid ${theme.palette.divider}`,
-        }}
+          border: `1px solid ${theme.palette.divider}`,
+          boxShadow:
+            theme.palette.mode === 'dark'
+              ? '0 16px 40px rgba(0, 0, 0, 0.32)'
+              : '0 16px 40px rgba(32, 45, 42, 0.14)',
+        })}
       >
         <Box sx={{ position: 'relative' }}>
           <IconButton
@@ -78,6 +82,7 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
               top: -4,
               right: -4,
               backgroundColor: 'background.default',
+              borderRadius: 1,
               '&:hover': { backgroundColor: 'action.hover' },
             }}
           >
@@ -114,7 +119,7 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
               variant="contained"
               onClick={handleAccept}
               size="small"
-              sx={{ minWidth: 100 }}
+              sx={{ minWidth: 100, borderRadius: 1 }}
             >
               Accept
             </Button>
@@ -122,7 +127,7 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
               variant="outlined"
               onClick={handleDecline}
               size="small"
-              sx={{ minWidth: 100 }}
+              sx={{ minWidth: 100, borderRadius: 1 }}
             >
               Decline
             </Button>

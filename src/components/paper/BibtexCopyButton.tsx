@@ -52,10 +52,21 @@ const BibtexCopyButton: React.FC<BibtexCopyButtonProps> = ({
         size={size}
         sx={{
           p: 0.5,
-          transition: 'all 0.3s ease',
+          color: 'text.secondary',
+          border: 1,
+          borderColor: 'divider',
+          borderRadius: 1,
+          transition:
+            'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease',
+          '&:hover': {
+            color: 'primary.dark',
+            bgcolor: 'primary.light',
+            borderColor: 'primary.light',
+          },
           ...(copied && {
-            color: 'success.main',
+            color: 'success.dark',
             backgroundColor: 'success.light',
+            borderColor: 'success.light',
             '&:hover': {
               backgroundColor: 'success.light',
             },

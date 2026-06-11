@@ -54,23 +54,51 @@ const LabelChip: React.FC<LabelChipProps> = ({
       role="button"
       aria-label={`${isSelected ? 'Remove' : 'Add'} filter for ${label}`}
       aria-pressed={isSelected}
-      sx={{
-        borderRadius: 2,
-        fontSize: '0.75rem',
-        height: 22,
-        cursor: 'pointer',
-        transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
-        '&:hover': {
-          transform: 'scale(1.05)',
-          boxShadow: 2,
-        },
-        '&:active': {
-          transform: 'scale(0.98)',
-        },
-        ...(isSelected && {
-          fontWeight: 600,
-          boxShadow: 1,
-        }),
+      sx={theme => {
+        const palette =
+          labelColor === 'typeLabels'
+            ? theme.palette.typeLabels
+            : labelColor === 'labels'
+              ? theme.palette.labels
+              : null;
+
+        const baseColors = palette
+          ? {
+              bgcolor: isSelected ? palette.main : palette.light,
+              color: isSelected ? palette.contrastText : palette.dark,
+              borderColor: isSelected ? palette.main : palette.light,
+            }
+          : {
+              bgcolor: isSelected ? 'text.secondary' : 'action.hover',
+              color: isSelected ? 'background.paper' : 'text.secondary',
+              borderColor: 'divider',
+            };
+
+        return {
+          ...baseColors,
+          borderRadius: 1,
+          fontSize: '0.75rem',
+          height: 22,
+          px: 0.25,
+          borderWidth: 1,
+          cursor: 'pointer',
+          transition:
+            'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease',
+          '&:hover': {
+            borderColor:
+              labelColor === 'typeLabels'
+                ? 'typeLabels.main'
+                : labelColor === 'labels'
+                  ? 'labels.main'
+                  : 'text.secondary',
+          },
+          '&:active': {
+            opacity: 0.85,
+          },
+          ...(isSelected && {
+            fontWeight: 700,
+          }),
+        };
       }}
     />
   );

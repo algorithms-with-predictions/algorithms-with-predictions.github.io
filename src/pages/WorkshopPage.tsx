@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  Divider,
   Link,
   Paper,
   Stack,
@@ -188,6 +187,12 @@ const schedule = [
   },
 ];
 
+const sectionSx = {
+  pt: { xs: 3, md: 3.5 },
+  borderTop: 1,
+  borderColor: 'divider',
+};
+
 const SectionHeading = ({
   id,
   icon,
@@ -207,8 +212,8 @@ const SectionHeading = ({
 
 const WorkshopPage: React.FC = () => {
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 3, md: 5 } }}>
-      <Stack spacing={4.5} sx={{ maxWidth: 1120, mx: 'auto' }}>
+    <Container maxWidth="xl" sx={{ py: { xs: 3, md: 5 } }}>
+      <Stack spacing={{ xs: 3.5, md: 4 }} sx={{ maxWidth: 1280, mx: 'auto' }}>
         <Box
           component="header"
           sx={{
@@ -229,9 +234,11 @@ const WorkshopPage: React.FC = () => {
           </Typography>
         </Box>
 
-        <Divider />
-
-        <Box component="section" aria-labelledby="organizers-heading">
+        <Box
+          component="section"
+          aria-labelledby="organizers-heading"
+          sx={sectionSx}
+        >
           <SectionHeading
             id="organizers-heading"
             icon={<PersonIcon aria-hidden="true" />}
@@ -253,7 +260,7 @@ const WorkshopPage: React.FC = () => {
           </Box>
         </Box>
 
-        <Box component="section" aria-labelledby="venue-heading">
+        <Box component="section" aria-labelledby="venue-heading" sx={sectionSx}>
           <SectionHeading
             id="venue-heading"
             icon={<LocationOnIcon aria-hidden="true" />}
@@ -269,7 +276,11 @@ const WorkshopPage: React.FC = () => {
           </Typography>
         </Box>
 
-        <Box component="section" aria-labelledby="schedule-heading">
+        <Box
+          component="section"
+          aria-labelledby="schedule-heading"
+          sx={sectionSx}
+        >
           <SectionHeading
             id="schedule-heading"
             icon={<ScheduleIcon aria-hidden="true" />}
@@ -308,7 +319,11 @@ const WorkshopPage: React.FC = () => {
           </TableContainer>
         </Box>
 
-        <Box component="section" aria-labelledby="participants-heading">
+        <Box
+          component="section"
+          aria-labelledby="participants-heading"
+          sx={sectionSx}
+        >
           <SectionHeading
             id="participants-heading"
             icon={<GroupsIcon aria-hidden="true" />}
@@ -330,7 +345,11 @@ const WorkshopPage: React.FC = () => {
           </Box>
         </Box>
 
-        <Box component="section" aria-labelledby="contact-heading">
+        <Box
+          component="section"
+          aria-labelledby="contact-heading"
+          sx={sectionSx}
+        >
           <SectionHeading
             id="contact-heading"
             icon={<MailOutlineIcon aria-hidden="true" />}
@@ -346,7 +365,11 @@ const WorkshopPage: React.FC = () => {
           </Typography>
         </Box>
 
-        <Box component="section" aria-labelledby="funders-heading">
+        <Box
+          component="section"
+          aria-labelledby="funders-heading"
+          sx={sectionSx}
+        >
           <SectionHeading
             id="funders-heading"
             icon={<AccountBalanceIcon aria-hidden="true" />}
