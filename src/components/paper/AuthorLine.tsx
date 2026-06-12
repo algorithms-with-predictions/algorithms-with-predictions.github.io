@@ -27,7 +27,7 @@ const AuthorLine: React.FC<AuthorLineProps> = ({ authors, sx = {} }) => {
         ...sx,
       }}
     >
-      By {formattedAuthors}
+      {formattedAuthors}
     </Typography>
   );
 
