@@ -87,10 +87,6 @@ const participants = [
     affiliation: 'University of Twente',
   },
   {
-    name: 'Gerald Huang',
-    affiliation: 'University of Melbourne',
-  },
-  {
     name: 'Alexander Lindermayr',
     affiliation: 'TU Berlin',
   },
