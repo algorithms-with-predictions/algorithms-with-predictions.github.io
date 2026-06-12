@@ -1,0 +1,21 @@
+title: Learning-Augmented Approximation for Unrelated-Machines Makespan Scheduling
+authors: Kaito Baba, Evripidis Bampis, Giorgos Mitropoulos
+abstract: 'Recently, Antoniadis et al. (ICLR 2025) proposed a framework for incorporating predictions to approximate NP-hard
+  selection problems. Despite its simplicity, this approach tightly matches theoretical lower bounds, making its generalization
+  highly compelling. We address an open question raised in the work of Antoniadis et al., concerning the extension of this
+  approach to other important problems outside the class of selection problems, such as scheduling. We develop a learning-augmented
+  algorithm for the makespan minimization problem on unrelated machines, denoted by $R\|C_{\max}$. By using predictions of
+  heavy job assignments, we achieve a polynomial-time $(1+\varepsilon)$-approximation for accurate predictions that smoothly
+  degrades to a worst-case 2-approximation as the error increases. We conclude our work with an empirical analysis of our
+  method.'
+labels:
+- approximation
+- scheduling
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2606.13133
+  year: 2026
+  month: 6
+  day: 11
+year: 2026
+arxiv: 2606.13133
