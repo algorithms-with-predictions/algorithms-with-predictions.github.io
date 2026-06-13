@@ -9,21 +9,23 @@ export interface PaperCardProps {
   paper: Paper;
   selectedLabels?: string[];
   onLabelClick?: ((label: string) => void) | null;
+  layout?: 'desktop' | 'mobile';
+}
+
+interface TrackedPaperCardProps extends PaperCardProps {
+  isMobile: boolean;
 }
 
 /**
- * Responsive PaperCard wrapper
- * Renders desktop or mobile layout based on screen size
+ * PaperCard wrapper with viewport tracking
  * Uses Intersection Observer to track only visible papers
  */
-const PaperCard: React.FC<PaperCardProps> = ({
+const TrackedPaperCard: React.FC<TrackedPaperCardProps> = ({
   paper,
   selectedLabels = [],
   onLabelClick = null,
+  isMobile,
 }) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
   // Refs for viewport tracking
   const cardRef = useRef<HTMLDivElement>(null);
   const hasTrackedRef = useRef(false);
@@ -87,6 +89,26 @@ const PaperCard: React.FC<PaperCardProps> = ({
 };
 
 /**
+ * Responsive wrapper used when a caller does not already know the layout.
+ */
+const ResponsivePaperCard: React.FC<PaperCardProps> = props => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
+  return <TrackedPaperCard {...props} isMobile={isMobile} />;
+};
+
+const PaperCard: React.FC<PaperCardProps> = props => {
+  if (props.layout) {
+    return (
+      <TrackedPaperCard {...props} isMobile={props.layout === 'mobile'} />
+    );
+  }
+
+  return <ResponsivePaperCard {...props} />;
+};
+
+/**
  * Efficiently compare two string arrays for equality
  */
 const areStringArraysEqual = (
@@ -138,6 +160,7 @@ const arePropsEqual = (
   if (
     prevProps.paper === nextProps.paper &&
     prevProps.onLabelClick === nextProps.onLabelClick &&
+    prevProps.layout === nextProps.layout &&
     prevSelectedLabels.length === nextSelectedLabels.length &&
     prevSelectedLabels.every((label, idx) => label === nextSelectedLabels[idx])
   ) {
@@ -162,7 +185,12 @@ const arePropsEqual = (
   // Compare onLabelClick function reference
   const callbackEqual = prevProps.onLabelClick === nextProps.onLabelClick;
 
-  return paperEqual && labelsEqual && callbackEqual;
+  return (
+    paperEqual &&
+    labelsEqual &&
+    callbackEqual &&
+    prevProps.layout === nextProps.layout
+  );
 };
 
 export default memo(PaperCard, arePropsEqual);

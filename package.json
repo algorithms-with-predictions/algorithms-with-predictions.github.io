@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "node scripts/composeData.js && vite",
     "start": "npm run dev",
-    "build": "tsc --noEmit && node scripts/composeData.js && vite build && cp dist/index.html dist/404.html",
+    "build": "tsc --noEmit && node scripts/composeData.js && NODE_ENV=production vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "serve": "vite preview",
     "type-check": "tsc --noEmit",

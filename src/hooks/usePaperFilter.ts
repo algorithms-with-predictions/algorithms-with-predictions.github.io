@@ -9,6 +9,78 @@ function stringCmp(a: string, b: string): number {
   return a.toLowerCase().localeCompare(b.toLowerCase());
 }
 
+const EMPTY_PUBLICATION: Publication = {
+  name: '',
+  year: 0,
+  month: 0,
+  day: 0,
+};
+
+const isArxiv = (pub: Publication): boolean =>
+  pub.name.toLowerCase() === 'arxiv';
+
+const comparePubDate = (a: Publication, b: Publication): number => {
+  const yearDiff = (a.year || 0) - (b.year || 0);
+  if (yearDiff !== 0) return yearDiff;
+  const monthDiff = (a.month || 0) - (b.month || 0);
+  if (monthDiff !== 0) return monthDiff;
+  return (a.day || 0) - (b.day || 0);
+};
+
+const getLatestPublication = (paper: Paper): Publication => {
+  if (!paper.publications || paper.publications.length === 0) {
+    return EMPTY_PUBLICATION;
+  }
+
+  let latestPublication: Publication | undefined;
+  let latestNonArxivPublication: Publication | undefined;
+
+  for (const publication of paper.publications) {
+    if (
+      !latestPublication ||
+      comparePubDate(publication, latestPublication) > 0
+    ) {
+      latestPublication = publication;
+    }
+
+    if (
+      !isArxiv(publication) &&
+      (!latestNonArxivPublication ||
+        comparePubDate(publication, latestNonArxivPublication) > 0)
+    ) {
+      latestNonArxivPublication = publication;
+    }
+  }
+
+  return latestNonArxivPublication ?? latestPublication ?? EMPTY_PUBLICATION;
+};
+
+const comparePapersByDateThenTitle = (a: Paper, b: Paper): number => {
+  const pubA = getLatestPublication(a);
+  const pubB = getLatestPublication(b);
+
+  // Compare year (descending)
+  const yearDiff = (pubB.year || 0) - (pubA.year || 0);
+  if (yearDiff !== 0) return yearDiff;
+
+  // Same year - papers with month/day come first (descending)
+  const hasDateA = (pubA.month || 0) > 0 || (pubA.day || 0) > 0;
+  const hasDateB = (pubB.month || 0) > 0 || (pubB.day || 0) > 0;
+
+  if (hasDateA && !hasDateB) return -1;
+  if (!hasDateA && hasDateB) return 1;
+
+  if (hasDateA && hasDateB) {
+    const monthDiff = (pubB.month || 0) - (pubA.month || 0);
+    if (monthDiff !== 0) return monthDiff;
+
+    const dayDiff = (pubB.day || 0) - (pubA.day || 0);
+    if (dayDiff !== 0) return dayDiff;
+  }
+
+  return stringCmp(a.title || '', b.title || '');
+};
+
 /**
  * Return type for usePaperFilter hook
  */
@@ -90,56 +162,7 @@ export const usePaperFilter = (data: Paper[] | null): PaperFilterResult => {
       );
     }
 
-    // Sort by year (newest first), then month/day (newest first), then title (alphabetically)
-    return filtered.sort((a, b) => {
-      const isArxiv = (pub: Publication) => pub.name.toLowerCase() === 'arxiv';
-
-      const comparePubDate = (a: Publication, b: Publication): number => {
-        const yearDiff = (a.year || 0) - (b.year || 0);
-        if (yearDiff !== 0) return yearDiff;
-        const monthDiff = (a.month || 0) - (b.month || 0);
-        if (monthDiff !== 0) return monthDiff;
-        return (a.day || 0) - (b.day || 0);
-      };
-
-      const getLatestPublication = (paper: Paper): Publication => {
-        if (!paper.publications || paper.publications.length === 0) {
-          return { name: '', year: 0, month: 0, day: 0 };
-        }
-        const sorted = [...paper.publications].sort((a, b) =>
-          comparePubDate(b, a)
-        );
-        // Prefer the latest non-arxiv publication; fall back to arxiv if that's all there is
-        const nonArxiv = sorted.find(pub => !isArxiv(pub));
-        return nonArxiv ?? sorted[0]!;
-      };
-
-      const pubA = getLatestPublication(a);
-      const pubB = getLatestPublication(b);
-
-      // Compare year (descending)
-      const yearDiff = (pubB.year || 0) - (pubA.year || 0);
-      if (yearDiff !== 0) return yearDiff;
-
-      // Same year - papers with month/day come first (descending)
-      const hasDateA = (pubA.month || 0) > 0 || (pubA.day || 0) > 0;
-      const hasDateB = (pubB.month || 0) > 0 || (pubB.day || 0) > 0;
-
-      if (hasDateA && !hasDateB) return -1; // A has date, comes first
-      if (!hasDateA && hasDateB) return 1; // B has date, comes first
-
-      if (hasDateA && hasDateB) {
-        // Both have dates, compare month then day (descending)
-        const monthDiff = (pubB.month || 0) - (pubA.month || 0);
-        if (monthDiff !== 0) return monthDiff;
-
-        const dayDiff = (pubB.day || 0) - (pubA.day || 0);
-        if (dayDiff !== 0) return dayDiff;
-      }
-
-      // Same date or both missing date - sort alphabetically by title
-      return stringCmp(a.title || '', b.title || '');
-    });
+    return [...filtered].sort(comparePapersByDateThenTitle);
   }, [data, searchQuery, selLabels]);
 
   const handleClearFilters = (): void => {

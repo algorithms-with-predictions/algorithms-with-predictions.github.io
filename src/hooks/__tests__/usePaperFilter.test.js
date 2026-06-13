@@ -46,6 +46,30 @@ describe('usePaperFilter', () => {
         'Online Algorithms with Predictions'
       );
     });
+
+    it('does not mutate the source data while sorting', () => {
+      const papers = [
+        {
+          title: 'Older Paper',
+          authors: 'A',
+          labels: [],
+          publications: [{ name: 'SODA', year: 2021 }],
+        },
+        {
+          title: 'Newer Paper',
+          authors: 'B',
+          labels: [],
+          publications: [{ name: 'ICML', year: 2024 }],
+        },
+      ];
+
+      renderHook(() => usePaperFilter(papers));
+
+      expect(papers.map(paper => paper.title)).toEqual([
+        'Older Paper',
+        'Newer Paper',
+      ]);
+    });
   });
 
   describe('distinctLabels', () => {

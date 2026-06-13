@@ -30,6 +30,7 @@ interface PaperListProps {
 const PaperList: React.FC<PaperListProps> = ({ data }) => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
+  const isCardMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const {
     searchQuery,
@@ -225,9 +226,16 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
             ) : (
               <Stack spacing={1}>
                 {sortedData.map((paper, index) => (
-                  <Box key={`${paper.title || 'untitled'}-${index}`}>
+                  <Box
+                    key={`${paper.title || 'untitled'}-${index}`}
+                    sx={{
+                      contentVisibility: 'auto',
+                      containIntrinsicSize: isCardMobile ? '180px' : '72px',
+                    }}
+                  >
                     <PaperCard
                       paper={paper}
+                      layout={isCardMobile ? 'mobile' : 'desktop'}
                       selectedLabels={selLabels}
                       onLabelClick={handleLabelClick}
                     />

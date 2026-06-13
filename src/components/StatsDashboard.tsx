@@ -9,6 +9,7 @@ import {
 } from '@mui/material';
 import { School, People, Business } from '@mui/icons-material';
 import type { SvgIconComponent } from '@mui/icons-material';
+import { useMemo } from 'react';
 import { calculateStats } from '../utils/statsUtils';
 import type { Paper } from '@/types/paper';
 
@@ -451,7 +452,7 @@ const StatsDashboard: React.FC<StatsDashboardProps> = ({ data }) => {
     totalVenues,
     yearDistribution,
     venueStats,
-  } = calculateStats(data);
+  } = useMemo(() => calculateStats(data), [data]);
 
   return (
     <Box sx={{ mb: { xs: 0.5, sm: 0.75 } }}>
