@@ -87,6 +87,10 @@ const participants = [
     affiliation: 'University of Twente',
   },
   {
+    name: 'Kim Skak Larsen',
+    affiliation: 'University of Southern Denmark',
+  },
+  {
     name: 'Alexander Lindermayr',
     affiliation: 'TU Berlin',
   },
