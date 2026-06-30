@@ -87,6 +87,10 @@ const participants = [
     affiliation: 'University of Twente',
   },
   {
+    name: 'Danish Kashaev',
+    affiliation: 'University of Oxford',
+  },
+  {
     name: 'Kim Skak Larsen',
     affiliation: 'University of Southern Denmark',
   },
@@ -269,7 +273,15 @@ const WorkshopPage: React.FC = () => {
           </SectionHeading>
           <Typography paragraph>
             The workshop will take place at the TU Berlin in the new IMoS
-            building on Campus Charlottenburg.
+            building (
+            <Link
+              href="https://maps.app.goo.gl/xx7si4CLjCaNL2in9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fasanenstraße 90, 10623 Berlin
+            </Link>
+            ) on Campus Charlottenburg.
           </Typography>
           <Typography color="text.secondary">
             Detailed directions will be provided later.
