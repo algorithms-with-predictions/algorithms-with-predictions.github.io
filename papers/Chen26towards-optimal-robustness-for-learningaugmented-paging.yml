@@ -1,0 +1,14 @@
+title: Towards Optimal Robustness in Learning-Augmented Paging
+authors: Peng Chen, Hailiang Zhao, Xueyan Tang, Yixuan Wang, Shuiguang Deng
+labels:
+- online
+- caching / paging
+publications:
+- name: ICML
+  url: https://icml.cc/virtual/2026/poster/65351
+  year: 2026
+- name: arXiv
+  url: https://arxiv.org/pdf/2606.01342
+  year: 2026
+  month: 6
+  day: 8
