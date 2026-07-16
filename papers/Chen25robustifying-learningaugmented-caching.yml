@@ -12,6 +12,9 @@ labels:
 - online
 - caching / paging
 publications:
+- name: NeurIPS
+  url: https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1e7f61f40d68b2177857bfcb195a507-Abstract-Conference.html
+  year: 2025
 - name: arXiv
   url: https://arxiv.org/abs/2507.16242
   year: 2025
