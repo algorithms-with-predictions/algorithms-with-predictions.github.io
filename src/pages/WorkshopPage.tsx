@@ -47,7 +47,7 @@ const participants = [
     affiliation: 'University of Twente',
   },
   {
-    name: 'Sebastian Bruchold',
+    name: 'Sebastian Bruchhold',
     affiliation: 'TU Berlin',
   },
   {
