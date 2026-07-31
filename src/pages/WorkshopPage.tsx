@@ -25,6 +25,7 @@ import mathplusLogo from '../../workshop/mathplus.png';
 import tuBerlinLogo from '../../workshop/tuberlin.png';
 import buaLogo from '../../workshop/bua.png';
 import melbourneLogo from '../../workshop/melbourne.jpg';
+import directionsImage from '../../workshop/directions.png';
 
 const organizers = [
   {
@@ -166,30 +167,137 @@ const funderLogos = [
 const schedule = [
   {
     date: 'Monday, August 24',
-    time: '09:00-17:00',
-    session: 'TBA',
+    time: '09:00-09:30',
+    session: 'Get together',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '09:30-10:30',
+    session: 'Lene Favrholdt',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '10:30-11:00',
+    session: 'Coffee',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '11:00-11:30',
+    session: 'Talk',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '11:30-12:00',
+    session: 'Talk',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '12:00-14:30',
+    session: 'Lunch and free time',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '14:30-15:00',
+    session: 'Talk',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '15:00-15:30',
+    session: 'Talk',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '15:30-16:00',
+    session: 'Coffee',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '16:00-16:30',
+    session: 'PhD Short Talks',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '16:30-17:00',
+    session: 'Talk',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '17:00-17:30',
+    session: 'Talk',
   },
   {
     date: 'Tuesday, August 25',
-    time: '09:00-17:00',
-    session: 'TBA',
+    time: '09:00-10:00',
+    session: 'Christian Coester',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '10:00-10:30',
+    session: 'Coffee',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '10:30-11:00',
+    session: 'Talk',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '11:00-11:30',
+    session: 'Talk',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '11:30-12:00',
+    session: 'Talk',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '12:00-14:30',
+    session: 'Lunch and free time',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '14:30-15:00',
+    session: 'Talk',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '15:00-15:30',
+    session: 'Talk',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '15:30-16:00',
+    session: 'Coffee',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '16:00-17:30',
+    session: 'Open Problem Session and Discussion',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '19:00',
+    session: 'Workshop Dinner',
   },
   {
     date: 'Wednesday, August 26',
     time: '09:00-17:00',
-    session: 'TBA',
+    session: 'Working Groups',
   },
   {
     date: 'Thursday, August 27',
     time: '09:00-17:00',
-    session: 'TBA',
+    session: 'Working Groups',
   },
   {
     date: 'Friday, August 28',
     time: '09:00-12:00',
-    session: 'TBA',
+    session: 'Working Groups and Wrap-up / Discussions',
   },
 ];
+
+const scheduleDays = [...new Set(schedule.map(item => item.date))];
 
 const sectionSx = {
   pt: { xs: 3, md: 3.5 },
@@ -284,7 +392,13 @@ const WorkshopPage: React.FC = () => {
             ) on Campus Charlottenburg.
           </Typography>
           <Typography color="text.secondary">
-            Detailed directions will be provided later.
+            <Link
+              href={directionsImage}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Access via Müller-Breslau-Straße
+            </Link>
           </Typography>
         </Box>
 
@@ -299,36 +413,87 @@ const WorkshopPage: React.FC = () => {
           >
             Schedule
           </SectionHeading>
-          <TableContainer
-            component={Paper}
-            variant="outlined"
-            sx={{ borderRadius: 1 }}
-          >
-            <Table aria-label="Workshop schedule" size="small">
-              <TableHead>
-                <TableRow>
-                  <TableCell sx={{ width: { xs: 140, sm: 200 } }}>
-                    Date
-                  </TableCell>
-                  <TableCell sx={{ width: { xs: 110, sm: 140 } }}>
-                    Time
-                  </TableCell>
-                  <TableCell>Session</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {schedule.map(item => (
-                  <TableRow key={item.date}>
-                    <TableCell component="th" scope="row">
-                      {item.date}
-                    </TableCell>
-                    <TableCell>{item.time}</TableCell>
-                    <TableCell>{item.session}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
+          <Stack spacing={2}>
+            {scheduleDays.map(date => {
+              const daySchedule = schedule.filter(item => item.date === date);
+
+              return (
+                <Paper
+                  key={date}
+                  variant="outlined"
+                  sx={{ borderRadius: 2, overflow: 'hidden' }}
+                >
+                  <Box
+                    sx={{
+                      px: { xs: 2, sm: 2.5 },
+                      py: 1.25,
+                      bgcolor: 'primary.main',
+                      color: 'primary.contrastText',
+                    }}
+                  >
+                    <Typography variant="h6" component="h3">
+                      {date}
+                    </Typography>
+                  </Box>
+                  <TableContainer>
+                    <Table aria-label={`Schedule for ${date}`} size="small">
+                      <TableHead>
+                        <TableRow>
+                          <TableCell sx={{ width: { xs: 120, sm: 170 } }}>
+                            Time
+                          </TableCell>
+                          <TableCell>Session</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {daySchedule.map(item => {
+                          const isBreak =
+                            item.session === 'Coffee' ||
+                            item.session.startsWith('Lunch');
+
+                          return (
+                            <TableRow
+                              key={item.time}
+                              sx={{
+                                bgcolor: isBreak
+                                  ? 'action.hover'
+                                  : 'transparent',
+                                '&:last-child td, &:last-child th': {
+                                  borderBottom: 0,
+                                },
+                              }}
+                            >
+                              <TableCell
+                                component="th"
+                                scope="row"
+                                sx={{
+                                  whiteSpace: 'nowrap',
+                                  fontWeight: 600,
+                                  fontVariantNumeric: 'tabular-nums',
+                                }}
+                              >
+                                {item.time}
+                              </TableCell>
+                              <TableCell
+                                sx={{
+                                  color: isBreak
+                                    ? 'text.secondary'
+                                    : 'text.primary',
+                                  fontStyle: isBreak ? 'italic' : 'normal',
+                                }}
+                              >
+                                {item.session}
+                              </TableCell>
+                            </TableRow>
+                          );
+                        })}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </Paper>
+              );
+            })}
+          </Stack>
         </Box>
 
         <Box
