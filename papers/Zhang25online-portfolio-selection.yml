@@ -1,0 +1,35 @@
+title: Online Portfolio Selection with ML Predictions
+authors: Ziliang Zhang, Tianming Zhao, Albert Y. Zomaya
+labels:
+- online
+publications:
+- name: NeurIPS
+  url: https://papers.neurips.cc/paper_files/paper/2025/hash/76981cb7a06b5ad53639f5bbe9924388-Abstract-Conference.html
+  year: 2025
+  dblp_key: conf/nips/ZhangZZ25
+  bibtex: |
+    @inproceedings{DBLP:conf/nips/ZhangZZ25,
+      author       = {Ziliang Zhang and
+                      Tianming Zhao and
+                      Albert Y. Zomaya},
+      editor       = {Danielle Belgrave and
+                      Cheng Zhang and
+                      Laura N. Montoya and
+                      Hsuan{-}Tien Lin and
+                      Razvan Pascanu and
+                      Piotr Koniusz and
+                      Marzyeh Ghassemi and
+                      Nancy Chen and
+                      Iv{\'{a}}n Vladimir Meza Ru{\'{\i}}z and
+                      Arturo Loaiza{-}Bonilla},
+      title        = {Online Portfolio Selection with {ML} Predictions},
+      booktitle    = {Advances in Neural Information Processing Systems 38:
+                      Annual Conference on Neural Information Processing Systems 2025,
+                      NeurIPS 2025, San Diego, CA, USA, December 2-7, 2025 /
+                      Mexico City, Mexico, November 30 - December 5, 2025},
+      year         = {2025},
+      url          = {http://papers.nips.cc/paper_files/paper/2025/hash/76981cb7a06b5ad53639f5bbe9924388-Abstract-Conference.html},
+      timestamp    = {Fri, 10 Jul 2026 07:39:50 +0200},
+      biburl       = {https://dblp.org/rec/conf/nips/ZhangZZ25.bib},
+      bibsource    = {dblp computer science bibliography, https://dblp.org}
+    }

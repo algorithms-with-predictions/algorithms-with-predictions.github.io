@@ -1,0 +1,28 @@
+title: Competitive Fair Scheduling with Predictions
+authors: Tianming Zhao, Chunqiu Xia, Xiaomin Chang, Chunhao Li, Wei Li, Albert Y. Zomaya
+labels:
+- online
+- scheduling
+publications:
+- name: ICLR
+  url: https://proceedings.iclr.cc/paper_files/paper/2025/hash/a6927363c85138bf64e2450b1d105a2b-Abstract-Conference.html
+  year: 2025
+  dblp_key: conf/iclr/0002XCL0Z25
+  bibtex: |
+    @inproceedings{DBLP:conf/iclr/0002XCL0Z25,
+      author       = {Tianming Zhao and
+                      Chunqiu Xia and
+                      Xiaomin Chang and
+                      Chunhao Li and
+                      Wei Li and
+                      Albert Y. Zomaya},
+      title        = {Competitive Fair Scheduling with Predictions},
+      booktitle    = {The Thirteenth International Conference on Learning Representations,
+                      {ICLR} 2025, Singapore, April 24-28, 2025},
+      publisher    = {OpenReview.net},
+      year         = {2025},
+      url          = {https://openreview.net/forum?id=jBYQAtzp5Z},
+      timestamp    = {Thu, 15 May 2025 17:19:06 +0200},
+      biburl       = {https://dblp.org/rec/conf/iclr/0002XCL0Z25.bib},
+      bibsource    = {dblp computer science bibliography, https://dblp.org}
+    }
