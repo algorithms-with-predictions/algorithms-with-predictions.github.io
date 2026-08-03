@@ -1,0 +1,18 @@
+title: On Smoothness Bounds for Non-Clairvoyant Scheduling with Predictions
+authors: Tianming Zhao, Albert Y. Zomaya
+labels:
+- online
+- scheduling
+publications:
+- name: ICLR
+  url: https://openreview.net/forum?id=Zcn4n57lHg
+  year: 2026
+  bibtex: |
+    @inproceedings{ZhaoZ26Smoothness,
+      author    = {Tianming Zhao and Albert Y. Zomaya},
+      title     = {On Smoothness Bounds for Non-Clairvoyant Scheduling with Predictions},
+      booktitle = {The Fourteenth International Conference on Learning Representations},
+      year      = {2026},
+      publisher = {OpenReview.net},
+      url       = {https://openreview.net/forum?id=Zcn4n57lHg}
+    }

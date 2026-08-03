@@ -1,0 +1,21 @@
+title: 'ATLAS: Alibaba Dataset and Benchmark for Learning-Augmented Scheduling'
+authors: Zhiyun Jiang, Tianming Zhao, Chunqiu Xia, Albert Y. Zomaya
+labels:
+- experimental evaluation
+- scheduling
+publications:
+- name: ICLR
+  url: https://openreview.net/forum?id=QBvxXzHdZx
+  year: 2026
+  bibtex: |
+    @inproceedings{JiangZ26ATLAS,
+      author    = {Zhiyun Jiang and
+                   Tianming Zhao and
+                   Chunqiu Xia and
+                   Albert Y. Zomaya},
+      title     = {{ATLAS}: Alibaba Dataset and Benchmark for Learning-Augmented Scheduling},
+      booktitle = {The Fourteenth International Conference on Learning Representations},
+      year      = {2026},
+      publisher = {OpenReview.net},
+      url       = {https://openreview.net/forum?id=QBvxXzHdZx}
+    }
