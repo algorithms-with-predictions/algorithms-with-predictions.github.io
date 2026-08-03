@@ -26,4 +26,8 @@ publications:
     \ and\n  Wei Li and\n  Albert Y. Zomaya},\n  title        = {Uniform Machine Scheduling\
     \ with Predictions},\n  booktitle    = {{ICAPS}},\n  pages        = {413--422},\n\
     \  publisher    = {{AAAI} Press},\n  year         = {2022}\n}\n"
+- name: IEEE Trans. Computers
+  url: https://doi.org/10.1109/TC.2024.3441856
+  year: 2024
+  bibtex: "@article{Zhao_2024,\n  author    = {Tianming Zhao and Wei Li and Albert Y. Zomaya},\n  title     = {Learning-Augmented Scheduling},\n  journal   = {IEEE Transactions on Computers},\n  volume    = {73},\n  number    = {11},\n  pages     = {2548--2562},\n  year      = {2024},\n  month     = nov,\n  doi       = {10.1109/TC.2024.3441856},\n  url       = {https://doi.org/10.1109/TC.2024.3441856}\n}\n"
 s2_id: 5e8fdfa2ed2cfdf4fe002c5afe083d33993dd1b6
