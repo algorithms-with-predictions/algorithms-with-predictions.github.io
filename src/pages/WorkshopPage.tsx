@@ -193,7 +193,7 @@ const schedule = [
   {
     date: 'Monday, August 24',
     time: '12:00-14:30',
-    session: 'Lunch and free time',
+    session: 'Lunch',
   },
   {
     date: 'Monday, August 24',
@@ -253,7 +253,7 @@ const schedule = [
   {
     date: 'Tuesday, August 25',
     time: '12:00-14:30',
-    session: 'Lunch and free time',
+    session: 'Lunch',
   },
   {
     date: 'Tuesday, August 25',
@@ -282,18 +282,73 @@ const schedule = [
   },
   {
     date: 'Wednesday, August 26',
-    time: '09:00-17:00',
-    session: 'Working Groups',
+    time: '09:00-10:00',
+    session: 'Get together & Open Problems',
+  },
+  {
+    date: 'Wednesday, August 26',
+    time: '10:00-12:00',
+    session: 'Collaboration Time w/ Coffee',
+  },
+  {
+    date: 'Wednesday, August 26',
+    time: '12:00-14:00',
+    session: 'Lunch',
+  },
+  {
+    date: 'Wednesday, August 26',
+    time: '14:00',
+    session: 'Get together & Discussion',
+  },
+  {
+    date: 'Wednesday, August 26',
+    time: '14:00-17:00',
+    session: 'Collaboration Time w/ Coffee',
   },
   {
     date: 'Thursday, August 27',
-    time: '09:00-17:00',
-    session: 'Working Groups',
+    time: '09:00',
+    session: 'Get together & Discussion',
+  },
+  {
+    date: 'Thursday, August 27',
+    time: '09:00-12:00',
+    session: 'Collaboration Time w/ Coffee',
+  },
+  {
+    date: 'Thursday, August 27',
+    time: '12:00-14:00',
+    session: 'Lunch',
+  },
+  {
+    date: 'Thursday, August 27',
+    time: '14:00',
+    session: 'Get together & Discussion',
+  },
+  {
+    date: 'Thursday, August 27',
+    time: '14:00-17:00',
+    session: 'Collaboration Time w/ Coffee',
   },
   {
     date: 'Friday, August 28',
-    time: '09:00-12:00',
-    session: 'Working Groups and Wrap-up / Discussions',
+    time: '09:00',
+    session: 'Get together & Discussion',
+  },
+  {
+    date: 'Friday, August 28',
+    time: '09:00-11:00',
+    session: 'Collaboration Time w/ Coffee',
+  },
+  {
+    date: 'Friday, August 28',
+    time: '11:00-12:00',
+    session: 'Wrap-Up',
+  },
+  {
+    date: 'Friday, August 28',
+    time: '12:00',
+    session: 'Lunch',
   },
 ];
 
@@ -413,6 +468,26 @@ const WorkshopPage: React.FC = () => {
           >
             Schedule
           </SectionHeading>
+          <Box
+            sx={{
+              mb: 2,
+              px: 2,
+              py: 1.5,
+              borderRadius: 1.5,
+              bgcolor: 'action.hover',
+              color: 'text.secondary',
+            }}
+          >
+            <Typography variant="body2">
+              <Box
+                component="span"
+                sx={{ fontWeight: 600, color: 'text.primary' }}
+              >
+                Catered lunch:
+              </Box>{' '}
+              Vegan bowls will be provided at the venue. There will be additional time for a walk or ice cream.
+            </Typography>
+          </Box>
           <Stack spacing={2}>
             {scheduleDays.map(date => {
               const daySchedule = schedule.filter(item => item.date === date);
