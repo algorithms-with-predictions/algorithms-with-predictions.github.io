@@ -1,0 +1,15 @@
+title: 'Knowing Who, Not How Much: Learning-Augmented Mechanisms for Consumer Utility Maximization'
+authors: Kira Goldner, Divyarthi Mohan, Thodoris Tsilivis
+labels:
+- online
+- game theory / mechanism design
+- auctions
+publications:
+- name: ICML
+  url: https://icml.cc/virtual/2026/poster/61658
+  year: 2026
+- name: arXiv
+  url: https://arxiv.org/abs/2607.00175
+  year: 2026
+  month: 6
+  day: 30
