@@ -1,0 +1,9 @@
+title: Lossless Robustification of Packet Scheduling Algorithms
+authors: Azar, Vardi
+publications:
+  - name: SPAA
+    year: 2026
+    url: https://dl.acm.org/doi/10.1145/3816782.3819186
+labels:
+  - online
+  - scheduling
