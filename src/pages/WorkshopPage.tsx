@@ -64,6 +64,10 @@ const participants = [
     affiliation: 'TU Berlin',
   },
   {
+    name: 'Laura Eichelberger',
+    affiliation: 'TU Berlin',
+  },
+  {
     name: 'Ekin Ergen',
     affiliation: 'TU Berlin',
   },
@@ -213,7 +217,7 @@ const schedule = [
   {
     date: 'Monday, August 24',
     time: '16:00-16:30',
-    session: 'PhD Short Talks',
+    session: 'Short Talks: Sebastian Bruchhold, Denise Graafsma, Yixiang Wang',
   },
   {
     date: 'Monday, August 24',
