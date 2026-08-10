@@ -177,7 +177,7 @@ const schedule = [
   {
     date: 'Monday, August 24',
     time: '09:30-10:30',
-    session: 'Lene Favrholdt',
+    session: 'Lene Favrholdt: On the Complexity of Online Problems with Predictions',
   },
   {
     date: 'Monday, August 24',
