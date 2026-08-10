@@ -225,11 +225,6 @@ const schedule = [
     session: 'Talk',
   },
   {
-    date: 'Monday, August 24',
-    time: '17:00-17:30',
-    session: 'Talk',
-  },
-  {
     date: 'Tuesday, August 25',
     time: '09:00-10:00',
     session: 'Christian Coester',
