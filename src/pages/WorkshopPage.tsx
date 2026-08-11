@@ -176,18 +176,18 @@ const schedule = [
   },
   {
     date: 'Monday, August 24',
-    time: '09:30-10:30',
+    time: '09:30-10:00',
+    session: 'Introduction',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '10:00-11:00',
     session: 'Lene Favrholdt: On the Complexity of Online Problems with Predictions',
   },
   {
     date: 'Monday, August 24',
-    time: '10:30-11:00',
-    session: 'Coffee',
-  },
-  {
-    date: 'Monday, August 24',
     time: '11:00-11:30',
-    session: 'Talk',
+    session: 'Coffee',
   },
   {
     date: 'Monday, August 24',
@@ -196,7 +196,12 @@ const schedule = [
   },
   {
     date: 'Monday, August 24',
-    time: '12:00-14:30',
+    time: '12:00-12:30',
+    session: 'Talk',
+  },
+  {
+    date: 'Monday, August 24',
+    time: '12:30-14:30',
     session: 'Lunch',
   },
   {
@@ -216,28 +221,23 @@ const schedule = [
   },
   {
     date: 'Monday, August 24',
-    time: '16:00-16:30',
-    session: 'Short Talks: Sebastian Bruchhold, Denise Graafsma, Yixiang Wang',
+    time: '16:00-16:40',
+    session: 'Short Talks: Xiao Sun, Sebastian Bruchhold, Denise Graafsma, Yixiang Wang',
   },
   {
     date: 'Monday, August 24',
-    time: '16:30-17:00',
+    time: '16:40-17:10',
     session: 'Talk',
   },
   {
     date: 'Tuesday, August 25',
-    time: '09:00-10:00',
+    time: '09:30-10:30',
     session: 'Christian Coester',
   },
   {
     date: 'Tuesday, August 25',
-    time: '10:00-10:30',
-    session: 'Coffee',
-  },
-  {
-    date: 'Tuesday, August 25',
     time: '10:30-11:00',
-    session: 'Talk',
+    session: 'Coffee',
   },
   {
     date: 'Tuesday, August 25',
@@ -251,7 +251,12 @@ const schedule = [
   },
   {
     date: 'Tuesday, August 25',
-    time: '12:00-14:30',
+    time: '12:00-12:30',
+    session: 'Talk',
+  },
+  {
+    date: 'Tuesday, August 25',
+    time: '12:30-14:30',
     session: 'Lunch',
   },
   {
