@@ -232,7 +232,7 @@ const schedule = [
   {
     date: 'Tuesday, August 25',
     time: '09:30-10:30',
-    session: 'Christian Coester',
+    session: 'Christian Coester: Learning-Augmented Online Minimization with Dual Predictions',
   },
   {
     date: 'Tuesday, August 25',
