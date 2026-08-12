@@ -182,7 +182,8 @@ const schedule = [
   {
     date: 'Monday, August 24',
     time: '10:00-11:00',
-    session: 'Lene Favrholdt: On the Complexity of Online Problems with Predictions',
+    session:
+      'Lene Favrholdt: On the Complexity of Online Problems with Predictions',
   },
   {
     date: 'Monday, August 24',
@@ -192,12 +193,13 @@ const schedule = [
   {
     date: 'Monday, August 24',
     time: '11:30-12:00',
-    session: 'Talk',
+    session:
+      'Yongho Shin: Learning-Augmented Online Bipartite Fractional Matching',
   },
   {
     date: 'Monday, August 24',
     time: '12:00-12:30',
-    session: 'Talk',
+    session: 'Danish Kashaev: Improved Online Load Balancing in the Two-Norm',
   },
   {
     date: 'Monday, August 24',
@@ -207,12 +209,14 @@ const schedule = [
   {
     date: 'Monday, August 24',
     time: '14:30-15:00',
-    session: 'Talk',
+    session:
+      'Jonas Schmidt: Warm-Starting All-Pairs Shortest Paths with Predictions',
   },
   {
     date: 'Monday, August 24',
     time: '15:00-15:30',
-    session: 'Talk',
+    session:
+      'Marek Elias: TSP with Predictions: Heatmap to Tour with Provable Guarantees',
   },
   {
     date: 'Monday, August 24',
@@ -222,17 +226,20 @@ const schedule = [
   {
     date: 'Monday, August 24',
     time: '16:00-16:40',
-    session: 'Short Talks: Xiao Sun, Sebastian Bruchhold, Denise Graafsma, Yixiang Wang',
+    session:
+      'Short Talks: Xiao Sun, Sebastian Bruchhold, Denise Graafsma, Yixiang Wang',
   },
   {
     date: 'Monday, August 24',
     time: '16:40-17:10',
-    session: 'Talk',
+    session:
+      'Romain Cosson: An Average-Case Perspective on Average-Case Analysis',
   },
   {
     date: 'Tuesday, August 25',
     time: '09:30-10:30',
-    session: 'Christian Coester: Learning-Augmented Online Minimization with Dual Predictions',
+    session:
+      'Christian Coester: Learning-Augmented Online Minimization with Dual Predictions',
   },
   {
     date: 'Tuesday, August 25',
@@ -242,17 +249,17 @@ const schedule = [
   {
     date: 'Tuesday, August 25',
     time: '11:00-11:30',
-    session: 'Talk',
+    session: 'Alexa Tudose: Stochastic Metrical Task Systems',
   },
   {
     date: 'Tuesday, August 25',
     time: '11:30-12:00',
-    session: 'Talk',
+    session: 'Julien Dallot: Online Algorithms with Unreliable Guidance',
   },
   {
     date: 'Tuesday, August 25',
     time: '12:00-12:30',
-    session: 'Talk',
+    session: 'Guido Schäfer: TBA',
   },
   {
     date: 'Tuesday, August 25',
@@ -262,12 +269,14 @@ const schedule = [
   {
     date: 'Tuesday, August 25',
     time: '14:30-15:00',
-    session: 'Talk',
+    session:
+      'Jens Schlöter: Better Late Than Never: Online Flow Time Scheduling with Online Estimates',
   },
   {
     date: 'Tuesday, August 25',
     time: '15:00-15:30',
-    session: 'Talk',
+    session:
+      'Seeun William Umboh: Learning-Augmented Online Algorithms for Nonclairvoyant Joint Replenishment Problem with Deadlines',
   },
   {
     date: 'Tuesday, August 25',
@@ -357,6 +366,37 @@ const schedule = [
 ];
 
 const scheduleDays = [...new Set(schedule.map(item => item.date))];
+
+const formatScheduleSession = (session: string) => {
+  const separatorIndex = session.indexOf(':');
+
+  if (separatorIndex === -1) {
+    return session;
+  }
+
+  const label = session.slice(0, separatorIndex);
+  const details = session.slice(separatorIndex + 1).trim();
+
+  if (label === 'Short Talks') {
+    return (
+      <>
+        {label}:{' '}
+        <Box component="span" sx={{ fontWeight: 600 }}>
+          {details}
+        </Box>
+      </>
+    );
+  }
+
+  return (
+    <>
+      <Box component="span" sx={{ fontWeight: 600 }}>
+        {label}
+      </Box>
+      : {details}
+    </>
+  );
+};
 
 const sectionSx = {
   pt: { xs: 3, md: 3.5 },
@@ -489,7 +529,8 @@ const WorkshopPage: React.FC = () => {
               >
                 Catered lunch:
               </Box>{' '}
-              Vegan bowls will be provided at the venue. There will be additional time for a walk or ice cream.
+              Vegan bowls will be provided at the venue. There will be
+              additional time for a walk or ice cream.
             </Typography>
           </Box>
           <Stack spacing={2}>
@@ -561,7 +602,7 @@ const WorkshopPage: React.FC = () => {
                                   fontStyle: isBreak ? 'italic' : 'normal',
                                 }}
                               >
-                                {item.session}
+                                {formatScheduleSession(item.session)}
                               </TableCell>
                             </TableRow>
                           );
