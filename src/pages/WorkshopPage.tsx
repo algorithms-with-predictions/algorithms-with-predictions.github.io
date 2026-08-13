@@ -490,14 +490,17 @@ const WorkshopPage: React.FC = () => {
             </Link>
             ) on Campus Charlottenburg.
           </Typography>
-          <Typography color="text.secondary">
+          <Typography color="text.secondary" paragraph>
             <Link
               href={directionsImage}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Access via Müller-Breslau-Straße
+              The only access (due to ongoing construction work) is via Müller-Breslau-Straße.
             </Link>
+          </Typography>
+          <Typography>
+            The closest stations for public transport (S-Bahn, U-Bahn) are Tiergarten and Zoologischer Garten.
           </Typography>
         </Box>
 
