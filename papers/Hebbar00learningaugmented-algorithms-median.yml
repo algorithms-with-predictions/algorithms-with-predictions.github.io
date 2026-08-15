@@ -9,6 +9,3 @@ publications:
   year: 2026
   url: https://proceedings.neurips.cc/paper_files/paper/2025/hash/b8e2046160a568145af6d42eeef199f4-Abstract-Conference.html
 s2_id: 33f5bc5f2eebceac615eb7cd7a155c899b139461
-labels:
-  - online
-  - clustering
