@@ -3,4 +3,10 @@ authors: Richard Cole, Anupam Gupta, Pranav Jangir
 labels:
 - scheduling
 - game theory / mechanism design
+publictions:
+- name: NeurIPS
+  year: 2026
+  url: https://proceedings.neurips.cc/paper_files/paper/2025/hash/8ff9d4ce7c7f4dcb18d6e174414aff8c-Abstract-Conference.html
+- scheduling
+- game theory / mechanism design
 s2_id: 23f52dc181621f50be737ab59748339f0c673f3d
