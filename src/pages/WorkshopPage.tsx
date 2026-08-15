@@ -259,7 +259,7 @@ const schedule = [
   {
     date: 'Tuesday, August 25',
     time: '12:00-12:30',
-    session: 'Guido Schäfer: TBA',
+    session: 'Guido Schäfer: Improved Bounds for Facility Location Mechanisms',
   },
   {
     date: 'Tuesday, August 25',
