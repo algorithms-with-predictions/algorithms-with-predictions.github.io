@@ -8,7 +8,6 @@ import {
   TableBody,
   TableCell,
   TableContainer,
-  TableHead,
   TableRow,
   Typography,
 } from '@mui/material';
@@ -559,15 +558,12 @@ const WorkshopPage: React.FC = () => {
                     </Typography>
                   </Box>
                   <TableContainer>
-                    <Table aria-label={`Schedule for ${date}`} size="small">
-                      <TableHead>
-                        <TableRow>
-                          <TableCell sx={{ width: { xs: 120, sm: 170 } }}>
-                            Time
-                          </TableCell>
-                          <TableCell>Session</TableCell>
-                        </TableRow>
-                      </TableHead>
+                    <Table
+                      aria-label={`Schedule for ${date}`}
+                      size="small"
+                      sx={{ tableLayout: 'fixed' }}
+                    >
+
                       <TableBody>
                         {daySchedule.map(item => {
                           const isBreak =
@@ -590,6 +586,7 @@ const WorkshopPage: React.FC = () => {
                                 component="th"
                                 scope="row"
                                 sx={{
+                                  width: { xs: 120, sm: 140 },
                                   whiteSpace: 'nowrap',
                                   fontWeight: 600,
                                   fontVariantNumeric: 'tabular-nums',
