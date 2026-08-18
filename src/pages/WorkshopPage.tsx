@@ -225,15 +225,15 @@ const schedule = [
   },
   {
     date: 'Monday, August 24',
-    time: '16:00-16:40',
+    time: '16:00-16:30',
     session:
-      'Short Talks: Xiao Sun, Sebastian Bruchhold, Denise Graafsma, Yixiang Wang',
+      'Romain Cosson: An Average-Case Perspective on Average-Case Analysis',
   },
   {
     date: 'Monday, August 24',
-    time: '16:40-17:10',
+    time: '16:30-17:20',
     session:
-      'Romain Cosson: An Average-Case Perspective on Average-Case Analysis',
+      'Short Talks: Xiao Sun, Sebastian Bruchhold, Denise Graafsma, Yixiang Wang, Ekin Ergen',
   },
   {
     date: 'Tuesday, August 25',
