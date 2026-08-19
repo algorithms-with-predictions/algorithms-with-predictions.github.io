@@ -294,17 +294,17 @@ const schedule = [
   },
   {
     date: 'Wednesday, August 26',
-    time: '09:00-10:00',
+    time: '09:30-10:30',
     session: 'Get together & Open Problems',
   },
   {
     date: 'Wednesday, August 26',
-    time: '10:00-12:00',
+    time: '10:30-12:30',
     session: 'Collaboration Time w/ Coffee',
   },
   {
     date: 'Wednesday, August 26',
-    time: '12:00-14:00',
+    time: '12:30-14:00',
     session: 'Lunch',
   },
   {
@@ -319,17 +319,17 @@ const schedule = [
   },
   {
     date: 'Thursday, August 27',
-    time: '09:00',
+    time: '09:30',
     session: 'Get together & Discussion',
   },
   {
     date: 'Thursday, August 27',
-    time: '09:00-12:00',
+    time: '09:30-12:30',
     session: 'Collaboration Time w/ Coffee',
   },
   {
     date: 'Thursday, August 27',
-    time: '12:00-14:00',
+    time: '12:30-14:00',
     session: 'Lunch',
   },
   {
@@ -344,12 +344,12 @@ const schedule = [
   },
   {
     date: 'Friday, August 28',
-    time: '09:00',
+    time: '09:30',
     session: 'Get together & Discussion',
   },
   {
     date: 'Friday, August 28',
-    time: '09:00-11:00',
+    time: '09:30-11:00',
     session: 'Collaboration Time w/ Coffee',
   },
   {
