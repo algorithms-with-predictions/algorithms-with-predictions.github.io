@@ -230,9 +230,9 @@ const schedule = [
   },
   {
     date: 'Monday, August 24',
-    time: '16:30-17:20',
+    time: '16:30-17:30',
     session:
-      'Short Talks: Xiao Sun, Denise Graafsma, Yixiang Wang, Ekin Ergen, Alexander Lindermayr',
+      'Short Talks: Xiao Sun, Denise Graafsma, Yixiang Wang, Ekin Ergen, Alexander Lindermayr, Franziska Eberle',
   },
   {
     date: 'Tuesday, August 25',
