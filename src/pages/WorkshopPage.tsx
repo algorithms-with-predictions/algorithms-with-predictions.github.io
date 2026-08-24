@@ -232,7 +232,7 @@ const schedule = [
     date: 'Monday, August 24',
     time: '16:30-17:20',
     session:
-      'Short Talks: Xiao Sun, Sebastian Bruchhold, Denise Graafsma, Yixiang Wang, Ekin Ergen',
+      'Short Talks: Xiao Sun, Denise Graafsma, Yixiang Wang, Ekin Ergen, Alexander Lindermayr',
   },
   {
     date: 'Tuesday, August 25',
@@ -258,7 +258,7 @@ const schedule = [
   {
     date: 'Tuesday, August 25',
     time: '12:00-12:30',
-    session: 'Guido Schäfer: Improved Bounds for Facility Location Mechanisms',
+    session: 'Sebastian Bruchhold: Online Demand Strip Packing',
   },
   {
     date: 'Tuesday, August 25',
