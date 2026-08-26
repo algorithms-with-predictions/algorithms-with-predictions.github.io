@@ -25,6 +25,7 @@ import tuBerlinLogo from '../../workshop/tuberlin.png';
 import buaLogo from '../../workshop/bua.png';
 import melbourneLogo from '../../workshop/melbourne.jpg';
 import directionsImage from '../../workshop/directions.png';
+import groupPhoto from '../../workshop/group.webp';
 
 const organizers = [
   {
@@ -442,6 +443,29 @@ const WorkshopPage: React.FC = () => {
           <Typography variant="h6" component="p" color="text.secondary">
             TU Berlin, Germany
           </Typography>
+        </Box>
+
+        <Box
+          component="figure"
+          sx={{
+            m: 0,
+            width: '100%',
+            maxWidth: 700,
+            mx: 'auto',
+            alignSelf: 'center',
+          }}
+        >
+          <Box
+            component="img"
+            src={groupPhoto}
+            alt="Participants of the New Frontiers in Learning-Augmented Algorithms workshop"
+            sx={{
+              display: 'block',
+              width: '100%',
+              height: 'auto',
+              borderRadius: 2,
+            }}
+          />
         </Box>
 
         <Box
