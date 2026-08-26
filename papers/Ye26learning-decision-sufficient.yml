@@ -1,0 +1,19 @@
+title: Learning Decision-Sufficient Representations for Linear Optimization
+authors: Yuhan Ye, Saurabh Amin, Asuman Özdağlar
+labels:
+- parsimonious / succinct
+- running time
+- sample complexity
+publications:
+- name: COLT
+  url: https://proceedings.mlr.press/v336/ye26a.html
+  year: 2026
+  dblp_key: conf/colt/YeAO26
+- name: arXiv
+  url: https://arxiv.org/abs/2603.18551
+  year: 2026
+  month: 3
+  day: 19
+  dblp_key: journals/corr/abs-2603-18551
+year: 2026
+arxiv: "2603.18551"
