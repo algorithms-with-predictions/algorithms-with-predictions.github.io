@@ -3,5 +3,9 @@ authors: Michael T. Goodrich, Yan Gu
 labels:
 - sorting
 - running time
+publications:
+- name: IPDPS
+  year: 2026
+  url: https://ieeexplore.ieee.org/document/11575386
 year: 2026
 s2_id: 4a66d6de0ce50753c206ac52e6e1a0dbf0003c54

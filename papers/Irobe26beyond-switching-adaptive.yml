@@ -2,9 +2,10 @@ title: "Beyond Switching: Adaptive Weighted Integration for Learning-Augmented C
 authors: Hiroo Irobe, Takafumi Kanamori
 labels:
 - caching / paging
-- graph problems
-- rent-or-buy
-- learning
-- scheduling
+- online
 year: 2026
+publications:
+- name: IEEE Access
+  year: 2026
+  url: https://ieeexplore.ieee.org/document/11552614
 s2_id: 72bbadd0d6fac7a0fad94024e81750ecd2e91c86
