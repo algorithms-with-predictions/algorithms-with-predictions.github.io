@@ -1,0 +1,10 @@
+title: A Learning-Augmented Dynamic Programming Approach for Orienteering Problem with Time Windows
+authors: Guansheng Peng, Lining Xing, Fuyan Ma, Aldy Gunawan, Guopeng Song, Pieter Vansteenwegen
+labels:
+- running time
+- routing / TSP
+publications:
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2025/hash/04925c3dfec88f98c6c61031aac05ba5-Abstract-Conference.html
+  year: 2025
+year: 2025

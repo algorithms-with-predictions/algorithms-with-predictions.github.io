@@ -25,7 +25,10 @@ publications:
     \  doi          = {10.48550/ARXIV.2505.24503},\n  eprinttype    = {arXiv},\n  eprint       = {2505.24503},\n  timestamp\
     \    = {Tue, 01 Jul 2025 06:55:30 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2505-24503.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
-arxiv: 2505.24503
+- name: ICML
+  url: https://proceedings.mlr.press/v306/neoh26a.html
+  year: 2026
+arxiv: '2505.24503'
 s2_id: bfbac6e008b0be55b5cf05835cd5280aa5c4d0b9
 labels:
 - online

@@ -1,0 +1,17 @@
+title: 'Learning-Augmented Heuristics: Simple, yet Smart, Robust and Interpretable Cache Eviction'
+authors: Haocheng Xia, William Nixon, Bintang Dwi Marthen, Pranav Bhandari, Juncheng Yang
+labels:
+- online
+- caching / paging
+- experimental evaluation
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2608.27975
+  year: 2026
+  month: 8
+  day: 28
+- name: OSDI
+  url: https://www.usenix.org/conference/osdi26/presentation/xia
+  year: 2026
+year: 2026
+arxiv: '2608.27975'

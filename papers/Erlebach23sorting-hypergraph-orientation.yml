@@ -16,7 +16,7 @@ labels:
 - sorting
 publications:
 - name: IJCAI
-  url: http://proceedings.mlr.press/v80/lykouris18a/lykouris18a.pdf
+  url: https://www.ijcai.org/proceedings/2023/619
   year: 2023
   dblp_key: conf/ijcai/ErlebachLMS23
   bibtex: "@inproceedings{DBLP:conf/ijcai/ErlebachLMS23,\n  author       = {Thomas Erlebach and\n  Murilo S. de Lima and\n\

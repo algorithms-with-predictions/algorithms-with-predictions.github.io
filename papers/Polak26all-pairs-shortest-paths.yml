@@ -1,0 +1,17 @@
+title: Warm-Starting All-Pairs Shortest Paths with Predictions
+authors: Adam Polak, Jonas Schmidt
+labels:
+- running time
+- graph problems
+- shortest path
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2607.00857
+  year: 2026
+  month: 7
+  day: 1
+- name: ESA
+  url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2026.62
+  year: 2026
+year: 2026
+arxiv: '2607.00857'

@@ -17,7 +17,7 @@ publications:
   day: 17
 - name: AAAI
   url: https://doi.org/10.1609/aaai.v39i25.34903
-  year: 2021
+  year: 2025
   dblp_key: conf/aaai/0001GGPT25
   bibtex: "@inproceedings{DBLP:conf/aaai/0001GGPT25,\n  author       = {Dimitris Fotakis and\n                  Evangelia\
     \ Gergatsouli and\n                  Themistoklis Gouleakis and\n                  Nikolas Patris and\n              \
@@ -28,7 +28,7 @@ publications:
     \       = {https://doi.org/10.1609/aaai.v39i25.34903},\n  doi          = {10.1609/AAAI.V39I25.34903},\n  timestamp   \
     \ = {Thu, 17 Apr 2025 17:08:58 +0200},\n  biburl       = {https://dblp.org/rec/conf/aaai/0001GGPT25.bib},\n  bibsource\
     \    = {dblp computer science bibliography, https://dblp.org}\n}\n"
-arxiv: 2107.08277
+arxiv: '2107.08277'
 s2_id: 2e270b1c86e039fdd60fc5773a907316554317ed
 labels:
 - online

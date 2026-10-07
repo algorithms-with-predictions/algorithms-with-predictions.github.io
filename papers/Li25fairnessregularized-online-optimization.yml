@@ -3,6 +3,7 @@ authors: Pengfei Li, Yuelin Han, Adam Wierman, Shaolei Ren
 s2_id: bdce62f1e92f8fdadea277f6f091ce9f582a110b
 labels:
 - online
+- convex optimization
 abstract: Fairness and action smoothness are two crucial considerations in many online optimization problems, but they have
   yet to be addressed simultaneously. In this paper, we study a new and challenging setting of fairness-regularized smoothed
   online convex optimization with switching costs. First, to highlight the fundamental challenges introduced by the long-term
@@ -20,7 +21,10 @@ abstract: Fairness and action smoothness are two crucial considerations in many 
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2512.11131v1
-  arxiv_id: 2512.11131v1
   year: 2025
   month: 12
   day: 11
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2025/hash/1bd359b32ab8b2a6bbafa1ed2856cf40-Abstract-Conference.html
+  year: 2025
+arxiv: '2512.11131'

@@ -1,0 +1,16 @@
+title: Sensitivity Sampling with Predictions for k-Means Clustering
+authors: Cristian Boldrin, Fabio Vandin
+labels:
+- running time
+- clustering
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2607.04949
+  year: 2026
+  month: 7
+  day: 6
+- name: ECML PKDD
+  url: https://link.springer.com/chapter/10.1007/978-3-032-37657-2_2
+  year: 2026
+year: 2026
+arxiv: '2607.04949'

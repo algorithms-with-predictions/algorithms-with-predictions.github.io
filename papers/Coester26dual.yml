@@ -8,5 +8,8 @@ publications:
   - name: arXiv
     url: https://arxiv.org/abs/2606.05380
     year: 2026
-    month: 5
-    day: 24
+    month: 6
+    day: 3
+  - name: ICML
+    url: https://proceedings.mlr.press/v306/coester26a.html
+    year: 2026

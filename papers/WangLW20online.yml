@@ -16,5 +16,19 @@ publications:
   year: 2020
   month: 2
   day: 13
+- name: AAMAS (Extended Abstract)
+  year: 2020
+  dblp_key: conf/atal/WangL20
+  bibtex: "@inproceedings{DBLP:conf/atal/WangL20,\n  author       = {Shufan Wang and\n                  Jian Li},\n  editor\
+    \       = {Amal El Fallah Seghrouchni and\n                  Gita Sukthankar and\n                  Bo An and\n      \
+    \            Neil Yorke{-}Smith},\n  title        = {Online Algorithms for Multi-shop Ski Rental with Machine Learned\
+    \ Predictions},\n  booktitle    = {Proceedings of the 19th International Conference on Autonomous Agents\n           \
+    \       and Multiagent Systems, {AAMAS} '20, Auckland, New Zealand, May 9-13,\n                  2020},\n  pages     \
+    \   = {2035--2037},\n  publisher    = {International Foundation for Autonomous Agents and Multiagent Systems},\n  year\
+    \         = {2020},\n  url          = {https://dl.acm.org/doi/10.5555/3398761.3399066},\n  doi          = {10.5555/3398761.3399066},\n\
+    \  timestamp    = {Tue, 26 Jul 2022 17:09:52 +0200},\n  biburl       = {https://dblp.org/rec/conf/atal/WangL20.bib},\n\
+    \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n"
+  url: https://ifaamas.org/Proceedings/aamas2020/pdfs/p2035.pdf
 year: 2020
 s2_id: e216bd7c0268cd02a2034157b1cd080edfae5f03
+arxiv: '2002.05808'

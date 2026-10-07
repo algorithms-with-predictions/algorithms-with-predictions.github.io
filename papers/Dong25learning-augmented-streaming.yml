@@ -24,9 +24,14 @@ publications:
     \    = {arXiv},\n  eprint       = {2510.10705},\n  timestamp    = {Wed, 12 Nov 2025 14:27:30 +0100},\n  biburl       =\
     \ {https://dblp.org/rec/journals/corr/abs-2510-10705.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
     }\n\n"
-arxiv: 2510.10705
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2025/hash/e482e1c0581af762dc3e01c722f8038d-Abstract-Conference.html
+  year: 2025
+arxiv: '2510.10705'
 s2_id: b7ce88da6d7f43dc0927aa68fccc5e1cc21c8bdf
 labels:
 - streaming
 - graph problems
+- clustering
+- approximation
 year: 2025

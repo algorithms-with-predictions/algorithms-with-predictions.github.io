@@ -1,0 +1,15 @@
+title: Optimal Prediction-Augmented Algorithms for Testing Independence of Distributions
+authors: Maryam Aliakbarpour, Alireza Azizi, Ria Stevens
+labels:
+- sample complexity
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2603.04635
+  year: 2026
+  month: 3
+  day: 4
+- name: COLT
+  url: https://proceedings.mlr.press/v336/aliakbarpour26a.html
+  year: 2026
+year: 2026
+arxiv: '2603.04635'

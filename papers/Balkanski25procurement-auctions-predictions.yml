@@ -22,7 +22,10 @@ labels:
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2512.09367v1
-  arxiv_id: 2512.09367v1
   year: 2025
   month: 12
   day: 10
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2025/hash/cd95c576f58d8db84887bc6211b09895-Abstract-Conference.html
+  year: 2025
+arxiv: '2512.09367'

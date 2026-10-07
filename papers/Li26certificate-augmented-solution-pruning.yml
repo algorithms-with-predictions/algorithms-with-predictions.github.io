@@ -1,0 +1,14 @@
+title: 'CASP: Learning-Augmented Offline Approximation with Verifiable Certificates and Bounded-Loss PAC Guarantees'
+authors: Haifeng Li, Mo Hai
+labels:
+- approximation
+- running time
+- sample complexity
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2607.14545
+  year: 2026
+  month: 7
+  day: 16
+year: 2026
+arxiv: '2607.14545'

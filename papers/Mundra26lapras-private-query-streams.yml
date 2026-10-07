@@ -1,0 +1,16 @@
+title: 'LAPRAS : Learning-Augmented PRivate Answering for linear query Streams'
+authors: Pranay Mundra, Adam Sealfon, Ziteng Sun, Quanquan C. Liu
+labels:
+- online
+- differential privacy
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2605.01960
+  year: 2026
+  month: 5
+  day: 3
+- name: ICML
+  url: https://proceedings.mlr.press/v306/mundra26a.html
+  year: 2026
+year: 2026
+arxiv: '2605.01960'

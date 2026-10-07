@@ -1,0 +1,18 @@
+title: Predictions Can Only Help! Communication Efficient Byzantine Agreement with Predictions
+authors: Marc Dufay, Muhammad Ayaz Dzulfikar, Seth Gilbert
+labels:
+- distributed algorithms
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2605.12935
+  year: 2026
+  month: 5
+  day: 13
+- name: DISC
+  url: https://www.disc-conference.org/wp/disc2026/detailed-program/
+  year: 2026
+- name: PODC (Brief Announcement)
+  url: https://www.podc.org/podc2026/list-of-accepted-papers/
+  year: 2026
+year: 2026
+arxiv: '2605.12935'

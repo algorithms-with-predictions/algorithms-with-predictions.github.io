@@ -15,6 +15,9 @@ publications:
     \  doi          = {10.48550/ARXIV.2510.25582},\n  eprinttype    = {arXiv},\n  eprint       = {2510.25582},\n  timestamp\
     \    = {Mon, 17 Nov 2025 13:36:14 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2510-25582.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2025/hash/618f396e2df006be25412505a793879a-Abstract-Conference.html
+  year: 2025
 arxiv: '2510.25582'
 abstract: Online bidding is a classic optimization problem, with several applications in online decision-making, the design
   of interruptible systems, and the analysis of approximation algorithms. In this work, we study online bidding under learning-augmented

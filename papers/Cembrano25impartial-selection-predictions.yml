@@ -16,7 +16,7 @@ abstract: We study the selection of agents based on mutual nominations, a theore
   achieved with little to no sacrifice in terms of robustness.
 labels:
 - game theory / mechanism design
-- voting
+- social choice
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2510.19002
@@ -30,5 +30,8 @@ publications:
     \  doi          = {10.48550/ARXIV.2510.19002},\n  eprinttype    = {arXiv},\n  eprint       = {2510.19002},\n  timestamp\
     \    = {Sat, 15 Nov 2025 15:31:52 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2510-19002.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2025/hash/b284a0813b6a33fd534cd1c0285643f0-Abstract-Conference.html
+  year: 2025
 year: 2025
 s2_id: 6aa733847199993851142b9f2db6e5111f47adee

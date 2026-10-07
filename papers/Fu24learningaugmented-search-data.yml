@@ -19,7 +19,7 @@ publications:
   month: 2
   day: 16
 - name: ICLR
-  year: 2024
+  year: 2025
   dblp_key: conf/iclr/FuNSZZ25
   bibtex: "@inproceedings{DBLP:conf/iclr/FuNSZZ25,\n  author       = {Chunkai Fu and\n                  Brandon G. Nguyen\
     \ and\n                  Jung Hoon Seo and\n                  Ryan S. Zesch and\n                  Samson Zhou},\n  title\
@@ -28,7 +28,8 @@ publications:
     \  year         = {2025},\n  url          = {https://openreview.net/forum?id=N4rYbQowE3},\n  timestamp    = {Thu, 15 May\
     \ 2025 17:19:05 +0200},\n  biburl       = {https://dblp.org/rec/conf/iclr/FuNSZZ25.bib},\n  bibsource    = {dblp computer\
     \ science bibliography, https://dblp.org}\n}\n"
-arxiv: 2402.10457
+  url: https://openreview.net/forum?id=N4rYbQowE3
+arxiv: '2402.10457'
 s2_id: 5be825b686180e5e8dc434dc34df0fe6d75041e9
 labels:
 - search

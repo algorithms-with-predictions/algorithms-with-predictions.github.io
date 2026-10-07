@@ -10,8 +10,9 @@ abstract: 'We study the dynamic pricing problem with knapsack, addressing the ch
   and robustness of our algorithms across various scenarios. This work advances the understanding of online resource allocation
   and dynamic pricing, offering practical solutions adaptable to different informational structures.'
 labels:
-- learning
 - online
+- allocation / matching
+- packing
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2501.14155
@@ -26,5 +27,8 @@ publications:
     \  eprinttype    = {arXiv},\n  eprint       = {2501.14155},\n  timestamp    = {Fri, 28 Feb 2025 18:55:15 +0100},\n  biburl\
     \       = {https://dblp.org/rec/journals/corr/abs-2501-14155.bib},\n  bibsource    = {dblp computer science bibliography,\
     \ https://dblp.org}\n}\n\n"
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2025/hash/83995c2acef585ae0f0d647154cfdd85-Abstract-Conference.html
+  year: 2025
 year: 2025
 s2_id: none

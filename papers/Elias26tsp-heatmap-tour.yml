@@ -1,0 +1,16 @@
+title: 'TSP with Predictions: Heatmap to Tour with Provable Guarantees'
+authors: Marek Eliáš, Fabrizio Grandoni, Adam Polak, Eleonora Vercesi
+labels:
+- approximation
+- routing / TSP
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2607.03791
+  year: 2026
+  month: 7
+  day: 4
+- name: ICML
+  url: https://proceedings.mlr.press/v306/elias26a.html
+  year: 2026
+year: 2026
+arxiv: '2607.03791'

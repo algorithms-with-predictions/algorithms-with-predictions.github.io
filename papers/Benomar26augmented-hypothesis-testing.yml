@@ -1,0 +1,16 @@
+title: Augmented Hypothesis Testing with Persona-Based LLM Simulations
+authors: Ziyad Benomar, Aymen Al Marjani, Paul Missault, Saab Mansour
+labels:
+- sample complexity
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2609.24629
+  year: 2026
+  month: 9
+  day: 21
+# Accepted for 2026; proceedings forthcoming.
+- name: COLM Workshop on Agent Behavior
+  url: https://arxiv.org/abs/2609.24629
+  year: 2026
+year: 2026
+arxiv: '2609.24629'

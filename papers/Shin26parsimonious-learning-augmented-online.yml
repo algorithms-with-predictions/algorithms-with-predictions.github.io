@@ -8,6 +8,9 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2605.26886
   year: 2026
+- name: ICML
+  url: https://proceedings.mlr.press/v306/shin26e.html
+  year: 2026
 year: 2026
-arxiv: 2605.26886
+arxiv: '2605.26886'
 s2_id: 4cb3052300e888dcb835ec3db2cacceb47b7cecc

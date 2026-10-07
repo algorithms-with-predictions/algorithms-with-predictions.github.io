@@ -13,7 +13,7 @@ labels:
 - scheduling
 publications:
 - name: SODA
-  url: https://epubs.siam.org/doi/10.1137/1.9781611977073.3
+  url: https://epubs.siam.org/doi/10.1137/1.9781611977073.13
   year: 2022
   dblp_key: conf/soda/AzarLT22
   bibtex: "@inproceedings{DBLP:conf/soda/AzarLT22,\n  author       = {Yossi Azar and\n  Stefano Leonardi and\n  Noam Touitou},\n\

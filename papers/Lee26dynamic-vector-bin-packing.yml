@@ -1,0 +1,17 @@
+title: Evaluation of Dynamic Vector Bin Packing for Virtual Machine Placement
+authors: Zong Yu Lee, Xueyan Tang
+labels:
+- online
+- packing
+- experimental evaluation
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2602.14704
+  year: 2026
+  month: 2
+  day: 16
+- name: IPDPS
+  url: https://personal.ntu.edu.sg/asxytang/papers/ipdps2026.pdf
+  year: 2026
+year: 2026
+arxiv: '2602.14704'

@@ -7,6 +7,9 @@ publications:
 - name: arXiv
   url: https://arxiv.org/abs/2605.09382
   year: 2026
+- name: ICML
+  url: https://proceedings.mlr.press/v306/yavlovich26a.html
+  year: 2026
 year: 2026
-arxiv: 2605.09382
+arxiv: '2605.09382'
 s2_id: 65fd7af1dbb43f481fe6eaef9f2d74b19a74b9f0

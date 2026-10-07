@@ -1,0 +1,17 @@
+title: Online Allocation with Unknown Shared Supply
+authors: Tzeh Yuan Neoh, Davin Choo, Mengchu Yue, Milind Tambe
+labels:
+- online
+- allocation / matching
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2605.07080
+  year: 2026
+  month: 5
+  day: 8
+# Accepted for 2026; proceedings forthcoming.
+- name: NeurIPS
+  url: https://neurips.cc/virtual/2026/poster/151416
+  year: 2026
+year: 2026
+arxiv: '2605.07080'

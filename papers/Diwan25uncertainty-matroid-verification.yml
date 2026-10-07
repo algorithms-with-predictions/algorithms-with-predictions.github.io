@@ -1,0 +1,16 @@
+title: Optimal Verification of a Minimum-Weight Basis in an Uncertainty Matroid
+authors: Haya Diwan, Lisa Hellerstein, Nicole Megow, Jens Schlöter
+labels:
+- explorable uncertainty
+- matroid
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2512.17116
+  year: 2025
+  month: 12
+  day: 18
+- name: STACS
+  url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2026.32
+  year: 2026
+year: 2025
+arxiv: '2512.17116'

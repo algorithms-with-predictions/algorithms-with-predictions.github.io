@@ -10,6 +10,7 @@ publications:
 - name: Proc. ACM Meas. Anal. Comput. Syst.
   url: https://doi.org/10.1145/3508038
   year: 2022
+  dblp_key: journals/pomacs/LiYQSYWL22
 - name: SIGMETRICS
   url: https://doi.org/10.1145/3489048.3522658
   year: 2022
@@ -25,3 +26,4 @@ publications:
   day: 17
 year: 2022
 s2_id: 28a2792491b3a0bff8bb8dab88c6c80edaea40d0
+arxiv: '2106.09659'

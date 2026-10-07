@@ -1,14 +1,17 @@
-title: "Facility Location Mechanism Design: Breaking The Deterministic Barrier"
+title: 'Facility Location Mechanism Design: Breaking The Deterministic Barrier'
 authors: Zohar Barak
 labels:
 - facility location
-- auctions
-- scheduling
-- rent-or-buy
+- game theory / mechanism design
 publications:
+- name: EC
+  year: 2026
+  url: https://ec26.sigecom.org/program/accepted-papers/
 - name: arXiv
   url: https://arxiv.org/abs/2605.24750
   year: 2026
+  month: 5
+  day: 23
 year: 2026
-arxiv: 2605.24750
+arxiv: '2605.24750'
 s2_id: 68740026e1b34766072f10404fd49aa25be4c427

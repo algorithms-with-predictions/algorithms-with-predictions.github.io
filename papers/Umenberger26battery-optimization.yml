@@ -1,0 +1,16 @@
+title: Robust and learning-augmented algorithms for degradation-aware battery optimization
+authors: Jack Umenberger, Anna Osguthorpe Rasmussen
+labels:
+- online
+- allocation / matching
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2601.17193
+  year: 2026
+  month: 1
+  day: 23
+- name: ECC
+  url: https://controls.papercept.net/conferences/conferences/ECC26/program/ECC26_ContentListWeb_2.html
+  year: 2026
+year: 2026
+arxiv: '2601.17193'

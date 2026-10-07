@@ -1,0 +1,12 @@
+title: A Learning-Augmented Approach to Online Allocation Problems
+authors: Ilan Reuven Cohen, Debmalya Panigrahi
+labels:
+- online
+- allocation / matching
+- scheduling
+- routing / TSP
+publications:
+- name: NeurIPS
+  url: https://papers.nips.cc/paper_files/paper/2025/hash/eded464db02ad5b5138970efe194050a-Abstract-Conference.html
+  year: 2025
+year: 2025

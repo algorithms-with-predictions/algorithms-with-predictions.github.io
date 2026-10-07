@@ -10,6 +10,7 @@ labels:
 - allocation / matching
 - packing
 - parsimonious / succinct
+- knapsack
 publications:
 - name: arXiv
   url: https://arxiv.org/abs/2406.18752
@@ -32,3 +33,4 @@ publications:
   dblp_key: conf/icml/DaneshvaramoliK25
 year: 2025
 s2_id: 9b3a9dbbfdef9ea2819adfe24eb9888c46aac68f
+arxiv: '2406.18752'
