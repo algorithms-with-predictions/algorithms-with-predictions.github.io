@@ -56,7 +56,7 @@ beforeEach(() => {
   vi.useFakeTimers();
 
   // Create a new mock observer for each test
-  global.IntersectionObserver = class {
+  globalThis.IntersectionObserver = class {
     constructor(callback: IntersectionObserverCallback) {
       mockObserver = new MockIntersectionObserver(callback);
       return mockObserver;

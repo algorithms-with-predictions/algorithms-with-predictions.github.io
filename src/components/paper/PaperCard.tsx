@@ -29,7 +29,7 @@ const TrackedPaperCard: React.FC<TrackedPaperCardProps> = ({
   // Refs for viewport tracking
   const cardRef = useRef<HTMLDivElement>(null);
   const hasTrackedRef = useRef(false);
-  const visibilityTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const visibilityTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Track paper view only when it becomes visible in viewport
   useEffect(() => {
