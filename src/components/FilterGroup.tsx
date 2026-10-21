@@ -60,7 +60,14 @@ const FilterGroup: React.FC<FilterGroupProps> = ({
           </Box>
         )}
       </Typography>
-      <Stack direction="row" spacing={0.5} flexWrap="wrap" sx={{ gap: 0.5 }}>
+      <Stack
+        direction="row"
+        spacing={0.5}
+        sx={{
+          flexWrap: 'wrap',
+          gap: 0.5,
+        }}
+      >
         {labels.map((label: string) => {
           const isSelected = selectedLabels.includes(label);
 

@@ -13,11 +13,19 @@ const NotFoundPage: React.FC = () => {
         variant="h4"
         component="h2"
         gutterBottom
-        color="text.secondary"
+        sx={{
+          color: 'text.secondary',
+        }}
       >
         Page Not Found
       </Typography>
-      <Typography variant="body1" sx={{ mb: 4 }} color="text.secondary">
+      <Typography
+        variant="body1"
+        sx={{
+          color: 'text.secondary',
+          mb: 4,
+        }}
+      >
         Sorry, we couldn&apos;t find the page you&apos;re looking for.
       </Typography>
       <Button

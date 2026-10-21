@@ -64,14 +64,12 @@ const AuthorGraphPage: React.FC = () => {
 
     // Configure charge (repulsion) - stronger to spread nodes apart
     const chargeForce = fg.d3Force('charge') as
-      | ForceManyBody<AuthorNode>
-      | undefined;
+      ForceManyBody<AuthorNode> | undefined;
     chargeForce?.strength(GRAPH_CONFIG.CHARGE_STRENGTH);
 
     // Configure link distance
     const linkForce = fg.d3Force('link') as
-      | ForceLink<AuthorNode, CollaborationLink>
-      | undefined;
+      ForceLink<AuthorNode, CollaborationLink> | undefined;
     linkForce?.distance(
       (link: CollaborationLink) =>
         GRAPH_CONFIG.LINK_DISTANCE_BASE +
@@ -184,12 +182,14 @@ const AuthorGraphPage: React.FC = () => {
   if (loading) {
     return (
       <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="60vh"
-        gap={2}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '60vh',
+          gap: 2,
+        }}
       >
         <Skeleton variant="circular" width={60} height={60} />
         <Skeleton variant="text" width={200} height={24} />
@@ -200,10 +200,12 @@ const AuthorGraphPage: React.FC = () => {
   if (error) {
     return (
       <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="60vh"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '60vh',
+        }}
       >
         <Typography color="error">
           Failed to load papers. Please try again later.
@@ -215,12 +217,18 @@ const AuthorGraphPage: React.FC = () => {
   if (!graphData || graphData.nodes.length === 0) {
     return (
       <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="60vh"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '60vh',
+        }}
       >
-        <Typography color="text.secondary">
+        <Typography
+          sx={{
+            color: 'text.secondary',
+          }}
+        >
           No author data available.
         </Typography>
       </Box>
@@ -254,10 +262,12 @@ const AuthorGraphPage: React.FC = () => {
       <Suspense
         fallback={
           <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            minHeight="60vh"
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              minHeight: '60vh',
+            }}
           >
             <CircularProgress aria-label="Loading graph visualization" />
           </Box>

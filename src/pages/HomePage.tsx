@@ -30,12 +30,14 @@ const HomePage: React.FC = () => {
   if (error) {
     return (
       <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="60vh"
         role="alert"
         aria-live="assertive"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '60vh',
+        }}
       >
         <Typography color="error">
           Failed to load papers. Please try again later.
@@ -47,10 +49,12 @@ const HomePage: React.FC = () => {
   if (!data) {
     return (
       <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="60vh"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '60vh',
+        }}
       >
         <Typography>No papers found.</Typography>
       </Box>

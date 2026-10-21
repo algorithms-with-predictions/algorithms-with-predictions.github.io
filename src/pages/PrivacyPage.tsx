@@ -27,7 +27,7 @@ const PrivacyPage: React.FC = () => {
             Data Collection and Usage
           </Typography>
 
-          <Typography paragraph>
+          <Typography sx={{ mb: 2 }}>
             The ALPS (Algorithms with Predictions) website collects anonymous
             usage data to help us understand how researchers use our resource
             and which papers are most valuable to the community.
@@ -63,7 +63,7 @@ const PrivacyPage: React.FC = () => {
           <Typography variant="h6" gutterBottom>
             Cookies and Tracking
           </Typography>
-          <Typography paragraph>
+          <Typography sx={{ mb: 2 }}>
             We use Google Analytics 4 with enhanced privacy settings. Cookies
             are only set with your explicit consent. You can withdraw consent at
             any time.
@@ -74,7 +74,7 @@ const PrivacyPage: React.FC = () => {
           <Typography variant="h6" gutterBottom>
             Data Retention
           </Typography>
-          <Typography paragraph>
+          <Typography sx={{ mb: 2 }}>
             Analytics data is automatically deleted after 14 months. We do not
             retain personal data beyond what&apos;s necessary for understanding
             website usage.
@@ -85,7 +85,7 @@ const PrivacyPage: React.FC = () => {
           <Typography variant="h6" gutterBottom>
             Your Rights
           </Typography>
-          <Typography paragraph>
+          <Typography sx={{ mb: 2 }}>
             You can opt out of tracking at any time by declining cookies or
             changing your browser settings. For questions about data usage,
             contact the site administrator.

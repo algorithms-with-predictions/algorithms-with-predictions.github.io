@@ -75,12 +75,25 @@ const TableOfContentsComponent: React.FC<TableOfContentsProps> = ({
       <Box sx={{ p: 2 }}>
         <Stack
           direction="row"
-          alignItems="center"
-          justifyContent="space-between"
+          sx={{
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
         >
-          <Stack direction="row" alignItems="center" spacing={1}>
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              alignItems: 'center',
+            }}
+          >
             <Toc color="primary" />
-            <Typography variant="h6" fontWeight="bold">
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 'bold',
+              }}
+            >
               Table of Contents
             </Typography>
           </Stack>
@@ -104,9 +117,13 @@ const TableOfContentsComponent: React.FC<TableOfContentsProps> = ({
                 >
                   <ListItemText
                     primary={heading.text}
-                    primaryTypographyProps={{
-                      variant: heading.level <= 2 ? 'body1' : 'body2',
-                      fontWeight: heading.level <= 2 ? 'medium' : 'normal',
+                    slotProps={{
+                      primary: {
+                        variant: heading.level <= 2 ? 'body1' : 'body2',
+                        sx: {
+                          fontWeight: heading.level <= 2 ? 'medium' : 'normal',
+                        },
+                      },
                     }}
                   />
                 </ListItemButton>
@@ -348,7 +365,7 @@ const EnhancedMarkdownContent: React.FC<EnhancedMarkdownContentProps> = ({
               </Typography>
             ),
             p: ({ children }: { children?: ReactNode }) => (
-              <Typography variant="body1" paragraph>
+              <Typography variant="body1" sx={{ mb: 2 }}>
                 {children}
               </Typography>
             ),

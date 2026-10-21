@@ -1,6 +1,6 @@
 import { Component, ReactNode, ErrorInfo } from 'react';
 import { Box, Typography, Button, Paper, Container } from '@mui/material';
-import { ErrorOutline } from '@mui/icons-material';
+import { ErrorOutlined } from '@mui/icons-material';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -61,13 +61,15 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
       return (
         <Container maxWidth="md">
           <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-            minHeight="60vh"
-            textAlign="center"
-            p={3}
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              minHeight: '60vh',
+              textAlign: 'center',
+              p: 3,
+            }}
           >
             <Paper
               elevation={3}
@@ -77,13 +79,19 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
                 maxWidth: 600,
               }}
             >
-              <ErrorOutline color="error" sx={{ fontSize: 64, mb: 2 }} />
+              <ErrorOutlined color="error" sx={{ fontSize: 64, mb: 2 }} />
 
               <Typography variant="h4" gutterBottom color="error">
                 Oops! Something went wrong
               </Typography>
 
-              <Typography variant="body1" color="text.secondary" paragraph>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: 'text.secondary',
+                  mb: 2,
+                }}
+              >
                 We encountered an unexpected error while rendering this page.
                 Please try reloading the page.
               </Typography>

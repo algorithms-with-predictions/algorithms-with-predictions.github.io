@@ -145,7 +145,6 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => {
           p: ({ children }) => (
             <Typography
               variant="body1"
-              paragraph
               sx={{ mb: 2, lineHeight: 1.6, fontSize: '1rem' }}
             >
               {children}

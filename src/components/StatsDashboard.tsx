@@ -26,7 +26,14 @@ const MetricItem: React.FC<MetricItemProps> = ({
   title,
   color = 'primary',
 }) => (
-  <Stack direction="row" alignItems="center" spacing={1.5} sx={{ flex: 1 }}>
+  <Stack
+    direction="row"
+    spacing={1.5}
+    sx={{
+      alignItems: 'center',
+      flex: 1,
+    }}
+  >
     <Box
       sx={{
         width: { xs: 26, sm: 32 },
@@ -45,9 +52,8 @@ const MetricItem: React.FC<MetricItemProps> = ({
     <Box sx={{ flex: 1 }}>
       <Typography
         variant="h4"
-        fontWeight="bold"
-        color="text.primary"
         sx={{
+          color: 'text.primary',
           fontSize: { xs: '1rem', sm: '1.75rem' },
           lineHeight: 1.2,
           fontWeight: 700,
@@ -57,8 +63,10 @@ const MetricItem: React.FC<MetricItemProps> = ({
       </Typography>
       <Typography
         variant="body2"
-        color="text.secondary"
-        sx={{ fontSize: { xs: '0.7rem', sm: '0.8rem' } }}
+        sx={{
+          color: 'text.secondary',
+          fontSize: { xs: '0.7rem', sm: '0.8rem' },
+        }}
       >
         {title}
       </Typography>
@@ -145,8 +153,11 @@ const StatCard: React.FC<StatCardProps> = ({
         {subtitle && (
           <Typography
             variant="caption"
-            color="text.secondary"
-            sx={{ textAlign: 'center', mt: 1 }}
+            sx={{
+              color: 'text.secondary',
+              textAlign: 'center',
+              mt: 1,
+            }}
           >
             {subtitle}
           </Typography>
@@ -208,8 +219,8 @@ const TopVenuesCard: React.FC<TopVenuesCardProps> = ({ venues }) => {
         <Typography
           variant="h6"
           gutterBottom
-          fontWeight="bold"
           sx={{
+            fontWeight: 'bold',
             fontSize: { xs: '0.9rem', sm: '1.25rem' },
             mb: { xs: 0.75, sm: 1.5 },
             flexShrink: 0,
@@ -346,8 +357,8 @@ const YearDistributionChart: React.FC<YearDistributionChartProps> = ({
         <Typography
           variant="h6"
           gutterBottom
-          fontWeight="bold"
           sx={{
+            fontWeight: 'bold',
             fontSize: { xs: '0.9rem', sm: '1.25rem' },
             mb: { xs: 0.75, sm: 1.5 },
             flexShrink: 0,

@@ -95,10 +95,10 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
           <Box>
             <Stack
               direction={{ xs: 'column', sm: 'row' }}
-              justifyContent="space-between"
-              alignItems={{ xs: 'flex-start', sm: 'center' }}
               spacing={1}
               sx={{
+                justifyContent: 'space-between',
+                alignItems: { xs: 'flex-start', sm: 'center' },
                 py: 1,
                 px: 2,
                 bgcolor: 'background.paper',
@@ -107,7 +107,12 @@ const PaperList: React.FC<PaperListProps> = ({ data }) => {
                 borderRadius: 1,
               }}
             >
-              <Typography variant="body2" color="text.secondary">
+              <Typography
+                variant="body2"
+                sx={{
+                  color: 'text.secondary',
+                }}
+              >
                 Showing{' '}
                 <strong>
                   {sortedData.length} of {data?.length ?? 0}

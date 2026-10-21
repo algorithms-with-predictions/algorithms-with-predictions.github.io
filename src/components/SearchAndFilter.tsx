@@ -74,62 +74,6 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
           placeholder="Search papers by title, authors, or keywords..."
           value={localSearchQuery}
           onChange={handleInputChange}
-          inputProps={{
-            'aria-label': 'Search papers by title, authors, or keywords',
-            'data-search-bar': true,
-          }}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <Search color="action" sx={{ fontSize: 20 }} />
-              </InputAdornment>
-            ),
-            endAdornment: (
-              <InputAdornment position="end">
-                <Stack direction="row" spacing={0.5} alignItems="center">
-                  {/* Quick Keyword Select Toggle - Now visible on all devices */}
-                  {(availableLabels.length > 0 || specialLabels.length > 0) && (
-                    <Tooltip
-                      title={
-                        isKeywordSelectOpen
-                          ? 'Hide keyword filters'
-                          : 'Show keyword filters'
-                      }
-                    >
-                      <IconButton
-                        edge="end"
-                        onClick={() =>
-                          setIsKeywordSelectOpen(!isKeywordSelectOpen)
-                        }
-                        size="small"
-                        sx={{
-                          color: isKeywordSelectOpen
-                            ? 'primary.main'
-                            : 'action.active',
-                          transform: isKeywordSelectOpen
-                            ? 'rotate(180deg)'
-                            : 'rotate(0)',
-                          transition: 'all 0.3s ease',
-                          '&:hover': {
-                            color: 'primary.main',
-                            bgcolor: 'action.hover',
-                          },
-                        }}
-                      >
-                        <FilterList sx={{ fontSize: 20 }} />
-                      </IconButton>
-                    </Tooltip>
-                  )}
-
-                  {localSearchQuery && (
-                    <IconButton edge="end" onClick={handleClear} size="small">
-                      <Clear sx={{ fontSize: 18 }} />
-                    </IconButton>
-                  )}
-                </Stack>
-              </InputAdornment>
-            ),
-          }}
           sx={{
             '& .MuiOutlinedInput-root': {
               borderRadius: 1,
@@ -156,6 +100,72 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
                   borderColor: 'primary.main',
                 },
               },
+            },
+          }}
+          slotProps={{
+            input: {
+              startAdornment: (
+                <InputAdornment position="start">
+                  <Search color="action" sx={{ fontSize: 20 }} />
+                </InputAdornment>
+              ),
+              endAdornment: (
+                <InputAdornment position="end">
+                  <Stack
+                    direction="row"
+                    spacing={0.5}
+                    sx={{
+                      alignItems: 'center',
+                    }}
+                  >
+                    {/* Quick Keyword Select Toggle - Now visible on all devices */}
+                    {(availableLabels.length > 0 ||
+                      specialLabels.length > 0) && (
+                      <Tooltip
+                        title={
+                          isKeywordSelectOpen
+                            ? 'Hide keyword filters'
+                            : 'Show keyword filters'
+                        }
+                      >
+                        <IconButton
+                          edge="end"
+                          onClick={() =>
+                            setIsKeywordSelectOpen(!isKeywordSelectOpen)
+                          }
+                          size="small"
+                          sx={{
+                            color: isKeywordSelectOpen
+                              ? 'primary.main'
+                              : 'action.active',
+                            transform: isKeywordSelectOpen
+                              ? 'rotate(180deg)'
+                              : 'rotate(0)',
+                            transition: 'all 0.3s ease',
+                            '&:hover': {
+                              color: 'primary.main',
+                              bgcolor: 'action.hover',
+                            },
+                          }}
+                        >
+                          <FilterList sx={{ fontSize: 20 }} />
+                        </IconButton>
+                      </Tooltip>
+                    )}
+
+                    {localSearchQuery && (
+                      <IconButton edge="end" onClick={handleClear} size="small">
+                        <Clear sx={{ fontSize: 18 }} />
+                      </IconButton>
+                    )}
+                  </Stack>
+                </InputAdornment>
+              ),
+            },
+
+            htmlInput: {
+              'aria-label': 'Search papers by title, authors, or keywords',
+              'data-search-bar': true,
             },
           }}
         />

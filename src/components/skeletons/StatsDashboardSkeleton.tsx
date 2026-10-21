@@ -20,7 +20,13 @@ const StatsDashboardSkeleton: React.FC = () => (
           <CardContent sx={{ py: { xs: 1.5, sm: 2 }, px: { xs: 1.5, sm: 2 } }}>
             <Stack spacing={{ xs: 0.5, sm: 1 }}>
               {/* Primary metric */}
-              <Stack direction="row" alignItems="center" spacing={1.5}>
+              <Stack
+                direction="row"
+                spacing={1.5}
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
                 <Skeleton variant="rounded" width={32} height={32} />
                 <Box sx={{ flex: 1 }}>
                   <Skeleton variant="text" width="50%" height={28} />
@@ -28,7 +34,13 @@ const StatsDashboardSkeleton: React.FC = () => (
                 </Box>
               </Stack>
               {/* Secondary metric */}
-              <Stack direction="row" alignItems="center" spacing={1.5}>
+              <Stack
+                direction="row"
+                spacing={1.5}
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
                 <Skeleton variant="rounded" width={32} height={32} />
                 <Box sx={{ flex: 1 }}>
                   <Skeleton variant="text" width="50%" height={28} />
@@ -36,7 +48,13 @@ const StatsDashboardSkeleton: React.FC = () => (
                 </Box>
               </Stack>
               {/* Tertiary metric */}
-              <Stack direction="row" alignItems="center" spacing={1.5}>
+              <Stack
+                direction="row"
+                spacing={1.5}
+                sx={{
+                  alignItems: 'center',
+                }}
+              >
                 <Skeleton variant="rounded" width={32} height={32} />
                 <Box sx={{ flex: 1 }}>
                   <Skeleton variant="text" width="50%" height={28} />
@@ -63,8 +81,10 @@ const StatsDashboardSkeleton: React.FC = () => (
             <Stack
               direction="row"
               spacing={0.5}
-              alignItems="flex-end"
-              sx={{ height: 100 }}
+              sx={{
+                alignItems: 'flex-end',
+                height: 100,
+              }}
             >
               {[60, 80, 100, 70, 90, 85, 95, 75].map((height, i) => (
                 <Skeleton
@@ -97,8 +117,10 @@ const StatsDashboardSkeleton: React.FC = () => (
             <Stack
               direction="row"
               spacing={1}
-              alignItems="flex-end"
-              sx={{ height: 100 }}
+              sx={{
+                alignItems: 'flex-end',
+                height: 100,
+              }}
             >
               {[100, 85, 70, 60, 50].map((height, i) => (
                 <Skeleton

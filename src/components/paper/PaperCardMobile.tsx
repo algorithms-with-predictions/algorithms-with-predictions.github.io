@@ -63,11 +63,12 @@ const PaperCardMobile: React.FC<PaperCardProps> = ({
         {/* Labels and publication badges wrapped together */}
         <Stack
           direction="row"
-          alignItems="center"
           spacing={0.75}
           sx={{
+            alignItems: 'center',
             flexWrap: 'wrap',
             gap: 0.75,
+
             '& > *': {
               minHeight: '32px', // Ensure adequate touch targets
             },

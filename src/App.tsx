@@ -23,10 +23,12 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
  */
 const RouteLoader: React.FC = () => (
   <Box
-    display="flex"
-    justifyContent="center"
-    alignItems="center"
-    minHeight="60vh"
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '60vh',
+    }}
   >
     <CircularProgress />
   </Box>

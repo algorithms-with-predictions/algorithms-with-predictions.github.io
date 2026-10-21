@@ -70,8 +70,11 @@ const EmptyState: React.FC<EmptyStateProps> = ({
         {/* Message */}
         <Typography
           variant="body1"
-          color="text.secondary"
-          sx={{ maxWidth: 500, mb: 3 }}
+          sx={{
+            color: 'text.secondary',
+            maxWidth: 500,
+            mb: 3,
+          }}
         >
           {message}
         </Typography>

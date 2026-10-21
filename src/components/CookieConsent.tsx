@@ -93,7 +93,13 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
             Cookie Notice
           </Typography>
 
-          <Typography variant="body2" color="text.secondary" paragraph>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'text.secondary',
+              mb: 2,
+            }}
+          >
             We use cookies to analyze website traffic and improve your
             experience.{' '}
             <Link
@@ -135,8 +141,11 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
 
           <Typography
             variant="caption"
-            color="text.disabled"
-            sx={{ mt: 1, display: 'block' }}
+            sx={{
+              color: 'text.disabled',
+              mt: 1,
+              display: 'block',
+            }}
           >
             You can change your preferences anytime in your browser settings.
           </Typography>

@@ -15,7 +15,7 @@ import {
   AccountBalance as AccountBalanceIcon,
   Groups as GroupsIcon,
   LocationOn as LocationOnIcon,
-  MailOutline as MailOutlineIcon,
+  MailOutlined as MailOutlineIcon,
   Person as PersonIcon,
   Schedule as ScheduleIcon,
 } from '@mui/icons-material';
@@ -413,7 +413,14 @@ const SectionHeading = ({
   icon: ReactNode;
   children: ReactNode;
 }) => (
-  <Stack direction="row" spacing={1.25} alignItems="center" sx={{ mb: 1.5 }}>
+  <Stack
+    direction="row"
+    spacing={1.25}
+    sx={{
+      alignItems: 'center',
+      mb: 1.5,
+    }}
+  >
     <Box sx={{ color: 'primary.main', display: 'flex' }}>{icon}</Box>
     <Typography id={id} variant="h5" component="h2">
       {children}
@@ -437,10 +444,22 @@ const WorkshopPage: React.FC = () => {
           <Typography variant="h3" component="h1" gutterBottom>
             New Frontiers in Learning-Augmented Algorithms
           </Typography>
-          <Typography variant="h6" component="p" color="text.secondary">
+          <Typography
+            variant="h6"
+            component="p"
+            sx={{
+              color: 'text.secondary',
+            }}
+          >
             August 24 to 28, 2026
           </Typography>
-          <Typography variant="h6" component="p" color="text.secondary">
+          <Typography
+            variant="h6"
+            component="p"
+            sx={{
+              color: 'text.secondary',
+            }}
+          >
             TU Berlin, Germany
           </Typography>
         </Box>
@@ -485,7 +504,12 @@ const WorkshopPage: React.FC = () => {
                 <Typography component="span" sx={{ fontWeight: 500 }}>
                   {organizer.name}
                 </Typography>
-                <Typography component="span" color="text.secondary">
+                <Typography
+                  component="span"
+                  sx={{
+                    color: 'text.secondary',
+                  }}
+                >
                   {' '}
                   ({organizer.affiliation})
                 </Typography>
@@ -501,7 +525,7 @@ const WorkshopPage: React.FC = () => {
           >
             Venue
           </SectionHeading>
-          <Typography paragraph>
+          <Typography sx={{ mb: 2 }}>
             The workshop will take place at the TU Berlin in the new IMoS
             building (
             <Link
@@ -513,17 +537,24 @@ const WorkshopPage: React.FC = () => {
             </Link>
             ) on Campus Charlottenburg.
           </Typography>
-          <Typography color="text.secondary" paragraph>
+          <Typography
+            sx={{
+              color: 'text.secondary',
+              mb: 2,
+            }}
+          >
             <Link
               href={directionsImage}
               target="_blank"
               rel="noopener noreferrer"
             >
-              The only access (due to ongoing construction work) is via Müller-Breslau-Straße.
+              The only access (due to ongoing construction work) is via
+              Müller-Breslau-Straße.
             </Link>
           </Typography>
           <Typography>
-            The closest stations for public transport (S-Bahn, U-Bahn) are Tiergarten and Zoologischer Garten.
+            The closest stations for public transport (S-Bahn, U-Bahn) are
+            Tiergarten and Zoologischer Garten.
           </Typography>
         </Box>
 
@@ -587,7 +618,6 @@ const WorkshopPage: React.FC = () => {
                       size="small"
                       sx={{ tableLayout: 'fixed' }}
                     >
-
                       <TableBody>
                         {daySchedule.map(item => {
                           const isBreak =
@@ -657,7 +687,12 @@ const WorkshopPage: React.FC = () => {
                 <Typography component="span" sx={{ fontWeight: 500 }}>
                   {participant.name}
                 </Typography>
-                <Typography component="span" color="text.secondary">
+                <Typography
+                  component="span"
+                  sx={{
+                    color: 'text.secondary',
+                  }}
+                >
                   {' '}
                   ({participant.affiliation})
                 </Typography>
