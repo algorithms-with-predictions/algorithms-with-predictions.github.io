@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import yaml from 'js-yaml';
+import { load } from 'js-yaml';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -39,7 +39,7 @@ const paper_objs = papers
     let paperData;
     try {
       const fileContents = fs.readFileSync(filePath, { encoding: 'utf-8' });
-      paperData = yaml.load(fileContents);
+      paperData = load(fileContents);
     } catch (error) {
       console.error(`❌ Failed to parse ${file}:`, error.message);
       issues.parseErrors.push(file);
