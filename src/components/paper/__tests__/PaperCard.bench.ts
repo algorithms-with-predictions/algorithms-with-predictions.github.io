@@ -1,9 +1,9 @@
 /**
  * Benchmark comparing JSON.stringify vs optimized array comparison
- * Run with: npm test -- --run --reporter=verbose PaperCard.bench.ts
+ * Run with: npx vitest bench --run PaperCard
  */
 
-import { bench, describe } from 'vitest';
+import { describe, test } from 'vitest';
 
 // Simulate paper data
 const labels = [
@@ -71,23 +71,25 @@ const comparePublicationsOptimized = (
 };
 
 describe('PaperCard comparison performance', () => {
-  describe('String array comparison', () => {
-    bench('JSON.stringify approach', () => {
-      compareWithJsonStringify(labels, [...labels]);
-    });
-
-    bench('Optimized approach', () => {
-      compareArraysOptimized(labels, [...labels]);
-    });
+  test('String array comparison', async ({ bench }) => {
+    await bench.compare(
+      bench('JSON.stringify approach', () => {
+        compareWithJsonStringify(labels, [...labels]);
+      }),
+      bench('Optimized approach', () => {
+        compareArraysOptimized(labels, [...labels]);
+      })
+    );
   });
 
-  describe('Publication array comparison', () => {
-    bench('JSON.stringify approach', () => {
-      comparePublicationsWithJsonStringify(publications, [...publications]);
-    });
-
-    bench('Optimized approach', () => {
-      comparePublicationsOptimized(publications, [...publications]);
-    });
+  test('Publication array comparison', async ({ bench }) => {
+    await bench.compare(
+      bench('JSON.stringify approach', () => {
+        comparePublicationsWithJsonStringify(publications, [...publications]);
+      }),
+      bench('Optimized approach', () => {
+        comparePublicationsOptimized(publications, [...publications]);
+      })
+    );
   });
 });
