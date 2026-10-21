@@ -71,6 +71,23 @@ const getSystemPreference = (): ResolvedThemeMode => {
 };
 
 /**
+ * Read the saved theme preference, defaulting to 'system'
+ */
+const getSavedMode = (): ThemeMode => {
+  if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+    const savedMode = localStorage.getItem('themeMode');
+    if (
+      savedMode === 'light' ||
+      savedMode === 'dark' ||
+      savedMode === 'system'
+    ) {
+      return savedMode;
+    }
+  }
+  return 'system';
+};
+
+/**
  * Resolve theme mode to actual light/dark value
  */
 const resolveThemeMode = (
@@ -90,7 +107,6 @@ const resolveThemeMode = (
  * - Persists theme preference to localStorage
  * - Supports system mode that follows OS preference
  * - Listens for system preference changes when in system mode
- * - SSR-safe with hydration handling (prevents mismatch)
  * - Provides MUI ThemeProvider with custom theme
  *
  * @param props - Provider props
@@ -98,32 +114,9 @@ const resolveThemeMode = (
 export const ThemeContextProvider: React.FC<ThemeContextProviderProps> = ({
   children,
 }) => {
-  const [mode, setMode] = useState<ThemeMode>('system');
+  const [mode, setMode] = useState<ThemeMode>(getSavedMode);
   const [systemPreference, setSystemPreference] =
-    useState<ResolvedThemeMode>('light');
-  const [isHydrated, setIsHydrated] = useState(false);
-
-  // Load saved theme preference and detect system preference on mount
-  useEffect(() => {
-    setIsHydrated(true);
-
-    // Detect current system preference
-    setSystemPreference(getSystemPreference());
-
-    // Load saved preference from localStorage
-    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
-      const savedMode = localStorage.getItem('themeMode');
-      if (
-        savedMode &&
-        (savedMode === 'light' ||
-          savedMode === 'dark' ||
-          savedMode === 'system')
-      ) {
-        setMode(savedMode);
-      }
-      // Default to 'system' if no saved preference (already set as initial state)
-    }
-  }, []);
+    useState<ResolvedThemeMode>(getSystemPreference);
 
   // Listen for system preference changes
   useEffect(() => {
@@ -143,16 +136,12 @@ export const ThemeContextProvider: React.FC<ThemeContextProviderProps> = ({
     return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
-  // Save theme preference when changed (only after hydration)
+  // Save theme preference when changed
   useEffect(() => {
-    if (
-      isHydrated &&
-      typeof window !== 'undefined' &&
-      typeof localStorage !== 'undefined'
-    ) {
+    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
       localStorage.setItem('themeMode', mode);
     }
-  }, [mode, isHydrated]);
+  }, [mode]);
 
   const cycleTheme = useCallback((): void => {
     setMode(prevMode => {
@@ -169,19 +158,11 @@ export const ThemeContextProvider: React.FC<ThemeContextProviderProps> = ({
     });
   }, []);
 
-  // Use light theme during SSR and initial render to prevent hydration mismatch
-  const effectiveSystemPreference: ResolvedThemeMode = isHydrated
-    ? systemPreference
-    : 'light';
-  const effectiveMode: ThemeMode = isHydrated ? mode : 'system';
-  const resolvedMode = resolveThemeMode(
-    effectiveMode,
-    effectiveSystemPreference
-  );
+  const resolvedMode = resolveThemeMode(mode, systemPreference);
   const theme = createCustomTheme(resolvedMode);
 
   const value: ThemeContextValue = {
-    mode: effectiveMode,
+    mode,
     resolvedMode,
     cycleTheme,
     isDark: resolvedMode === 'dark',

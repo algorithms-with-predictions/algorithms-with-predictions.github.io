@@ -105,6 +105,8 @@ const AuthorGraphPage: React.FC = () => {
     const maxDistance = 2000;
     const strength = GRAPH_CONFIG.BOUNDARY_STRENGTH;
 
+    // d3-force simulates by mutating node positions in place, so this is intended
+    /* eslint-disable react-hooks/immutability */
     for (const node of graphData.nodes) {
       if (node.x !== undefined && node.y !== undefined) {
         const dist = Math.sqrt(node.x * node.x + node.y * node.y);
@@ -124,6 +126,7 @@ const AuthorGraphPage: React.FC = () => {
         }
       }
     }
+    /* eslint-enable react-hooks/immutability */
   }, [graphData]);
 
   // Combined tick handler - configure forces on first tick, enforce boundaries on all ticks

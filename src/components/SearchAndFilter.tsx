@@ -31,12 +31,14 @@ const SearchAndFilter: React.FC<SearchAndFilterProps> = ({
   specialLabels = [],
 }) => {
   const [localSearchQuery, setLocalSearchQuery] = useState(searchQuery);
+  const [prevSearchQuery, setPrevSearchQuery] = useState(searchQuery);
   const [isKeywordSelectOpen, setIsKeywordSelectOpen] = useState(false);
 
   // Update local state when external searchQuery changes
-  useEffect(() => {
+  if (searchQuery !== prevSearchQuery) {
+    setPrevSearchQuery(searchQuery);
     setLocalSearchQuery(searchQuery);
-  }, [searchQuery]);
+  }
 
   // Handle input change with debouncing
   useEffect(() => {
