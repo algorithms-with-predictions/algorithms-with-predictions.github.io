@@ -14,6 +14,9 @@ labels:
 - online
 - prophet inequality
 publications:
+- name: EC
+  year: 2026
+  url: https://ec26.sigecom.org/program/accepted-papers/
 - name: arXiv
   url: https://arxiv.org/abs/2511.03289
   year: 2025
@@ -27,5 +30,5 @@ publications:
     \    = {Thu, 27 Nov 2025 20:57:29 +0100},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2511-03289.bib},\n\
     \  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n\n"
 arxiv: 2511.03289
-year: 2025
+year: 2026
 s2_id: d98861f8365dddb93a7f68257c0f25af4075b433
