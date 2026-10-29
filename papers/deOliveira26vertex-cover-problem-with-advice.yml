@@ -1,0 +1,28 @@
+title: Vertex Cover Problem with Advice
+authors:
+- Lucas de Oliveira Silva, Lehilton Lelis Chaves Pedrosa
+labels:
+- approximation
+- graph problems
+- vertex cover
+publications:
+- name: arXiv
+  url: https://arxiv.org/abs/2610.03906
+  year: 2026
+abstract: 'We study the minimum Vertex Cover problem under two non-adaptive offline
+  advice models, where predictions about a fixed optimum solution are provided once
+  as part of the input. These prediction models were introduced independently by
+  Cohen-Addad, d''Orsi, Gupta, Lee, and Panigrahi (2024) and by Ghoshal, Makarychev,
+  and Makarychev (2025). In the Partial Predictions model, independently revealed
+  vertices are given correct membership labels. For every sufficiently small fixed
+  ε > 0, we give a randomized polynomial-time algorithm with expected approximation
+  ratio at most 2 - (2 - o(1)) log log(1/ε) / log(1/ε). In the Noisy Predictions
+  model, each vertex instead receives a mutually independent noisy membership label
+  of bias ε. For every sufficiently small fixed ε > 0, we give a randomized
+  polynomial-time algorithm with expected approximation ratio at most
+  2 - (1 - o(1)) log log(1/ε) / log(1/ε). The latter bound matches the leading
+  asymptotic improvement below 2 obtained by Aamand, Chen, Gollapudi, Silwal, and
+  Wu (2025), while requiring only one noisy label per vertex rather than a separate
+  independent label for each endpoint of every incident edge. Both bounds are
+  strictly below 2 as ε tends to 0, improving on the optimal approximation threshold
+  for minimum Vertex Cover without advice under the Unique Games Conjecture.'
